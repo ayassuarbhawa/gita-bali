@@ -712,10 +712,18 @@
     body.chapter-reader-mode { height:100vh; height:100dvh; overflow:hidden; }
     body.chapter-reader-mode .site-header,
     body.chapter-reader-mode .site-footer,
-    body.chapter-reader-mode .chapter-hero,
+    body.chapter-reader-mode #chapter-hero,
     body.chapter-reader-mode .sources { display:none; }
     body.chapter-reader-mode main { width:100%; }
-    body.chapter-reader-mode .reader-shell { height:100vh; height:100dvh; padding:0; }
+    body.chapter-reader-mode .reader-shell {
+      position:fixed;
+      z-index:11;
+      inset:0;
+      height:100vh;
+      height:100dvh;
+      padding:0;
+      background:var(--paper);
+    }
     body.chapter-reader-mode .toolbar {
       position:fixed;
       z-index:20;
