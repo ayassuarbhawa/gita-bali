@@ -308,7 +308,8 @@
   .sloka-list { display: grid; gap: 1rem; }
   .random-feed { display:block; height:calc(100vh - 5rem); overflow-y:auto; scroll-snap-type:y mandatory; scrollbar-width:none; }
   .random-feed::-webkit-scrollbar { display:none; }
-  .random-feed .sloka { display:grid; height:100%; min-height:100%; align-content:center; scroll-snap-align:start; border-radius:0; box-shadow:none; overflow-y:auto; }
+  .random-feed .sloka { display:grid; height:100%; min-height:100%; align-content:center; scroll-snap-align:start; scroll-snap-stop:always; border-radius:0; box-shadow:none; overflow-y:auto; }
+  .random-controls { position: static; }
   .explore-intro { grid-column:1 / -1; margin:0 0 .5rem; text-align:center; }
   .explore-intro h2 { margin:0; color:var(--accent-dark); font-size:clamp(2rem,5vw,3.5rem); font-weight:400; }
   .explore-intro p { max-width:40rem; margin:.75rem auto 0; color:var(--muted); }
@@ -433,6 +434,49 @@
     .chapter-overview { width: 100%; }
     .chapter-grid { grid-template-columns: 1fr; }
     .app-grid { grid-template-columns:1fr; }
+    body.random-mode { height:100vh; height:100dvh; overflow:hidden; }
+    body.random-mode .site-header,
+    body.random-mode .site-footer { display:none; }
+    body.random-mode main { width:100%; }
+    body.random-mode .reader-shell { height:100vh; height:100dvh; padding:0; }
+    body.random-mode .random-controls {
+      position:fixed;
+      z-index:20;
+      top:max(.65rem, env(safe-area-inset-top));
+      right:.65rem;
+      left:.65rem;
+      grid-template-columns:minmax(0, 1fr) auto;
+      align-items:center;
+      gap:.45rem;
+      margin:0;
+      padding:.45rem;
+      border-radius:.85rem;
+      box-shadow:0 8px 30px rgba(65,48,31,.16);
+    }
+    body.random-mode .random-controls .language-switch { display:grid; grid-template-columns:repeat(3, 1fr); }
+    body.random-mode .random-controls .language-switch button { min-height:2.45rem; padding:.4rem .45rem; font-size:.68rem; }
+    body.random-mode .random-controls > .verse-action { min-height:2.45rem; white-space:nowrap; }
+    body.random-mode .random-feed {
+      height:100vh;
+      height:100dvh;
+      overscroll-behavior-y:contain;
+      scroll-snap-type:y mandatory;
+    }
+    body.random-mode .random-feed .sloka {
+      height:100vh;
+      height:100dvh;
+      min-height:100vh;
+      min-height:100dvh;
+      padding:max(5.25rem, calc(4.6rem + env(safe-area-inset-top))) 1.2rem max(1.25rem, env(safe-area-inset-bottom));
+      border:0;
+      background:transparent;
+    }
+    body.random-mode .random-feed .sloka-number { display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
+    body.random-mode .random-feed .verse-status { margin:0; }
+    body.random-mode .random-feed .devanagari { font-size:clamp(1.12rem, 5vw, 1.4rem); line-height:1.55; }
+    body.random-mode .random-feed .iast { margin-top:.65rem; font-size:.94rem; line-height:1.5; }
+    body.random-mode .random-feed .translation { margin-top:1rem; padding-top:1rem; font-size:.98rem; line-height:1.55; }
+    body.random-mode .random-feed .verse-actions { margin-top:1rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -840,8 +884,9 @@
     var keys = Object.keys(chapters);
     Promise.all(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); })).then(function(all){
       var verses=[]; all.forEach(function(data){ data.sloka.forEach(function(s){ if(readable(s)) verses.push({data:data, sloka:s}); }); });
+      document.body.classList.add("random-mode");
       home.hidden=true; chapterHero.hidden=true; reader.hidden=false; toolbar.hidden=true; resultMeta.hidden=true; list.classList.add("random-feed"); list.replaceChildren();
-      var controls=make("div", "toolbar"); controls.style.position="static";
+      var controls=make("div", "toolbar random-controls");
       var randomLanguages=make("div", "language-switch");
       [{key:"id",label:"Indonesia"},{key:"ban",label:"Bali"},{key:"en",label:"English"}].forEach(function(language){
         var languageButton=make("button", "", language.label); languageButton.type="button";
@@ -859,7 +904,7 @@
         if (reset) list.replaceChildren();
         for (var i=0;i<6;i++) { var pick=verses[Math.floor(Math.random()*verses.length)]; state.data=pick.data; list.append(renderVerse(pick.sloka)); }
       }
-      shuffle.addEventListener("click", function(){ addBatch(true); window.scrollTo({top:0,behavior:"smooth"}); });
+      shuffle.addEventListener("click", function(){ addBatch(true); list.scrollTo({top:0,behavior:"smooth"}); });
       addBatch(true);
       list.addEventListener("scroll", function(){ if (list.clientHeight + list.scrollTop >= list.scrollHeight - 300) addBatch(false); }, { passive:true });
     }).catch(function(){ showState("Belum dapat memuat sloka", "Buka halaman melalui server lokal, lalu coba lagi.", true); });
