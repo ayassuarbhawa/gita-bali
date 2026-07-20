@@ -370,6 +370,28 @@
   .prayer-meaning strong { display:block; margin-bottom:.3rem; color:var(--accent); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
   .prayer-source { margin:2rem auto 0; color:var(--muted); font:.75rem/1.6 system-ui,sans-serif; text-align:center; }
   .prayer-source a { color:var(--accent-dark); }
+  .upakara-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
+  .upakara-header { max-width:45rem; margin:0 auto 2.5rem; text-align:center; }
+  .upakara-header h1 { margin:.25rem 0 0; color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
+  .upakara-header > p:last-child { margin:1rem auto 0; color:var(--muted); }
+  .upakara-back { display:inline-flex; align-items:center; gap:.45rem; margin-bottom:1.5rem; color:var(--accent-dark); font:700 .72rem/1.2 system-ui,sans-serif; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
+  .upakara-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .upakara-grid.is-five .app-card:last-child { grid-column:1 / -1; width:calc(50% - .5rem); justify-self:center; }
+  .upakara-grid .app-card { display:flex; min-height:14rem; flex-direction:column; }
+  .upakara-grid .app-card p { line-height:1.65; }
+  .upakara-grid .app-card .card-action { display:block; margin-top:auto; padding-top:1.2rem; color:var(--accent); font:700 .68rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .ritual-notice { margin:0 0 1.25rem; padding:1rem 1.1rem; border:1px solid rgba(182,139,58,.35); border-radius:1rem; color:#655b4d; background:#fbf5e5; font:.82rem/1.65 system-ui,sans-serif; }
+  .ritual-sections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .ritual-section { padding:1.35rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.04); }
+  .ritual-section.is-wide { grid-column:1 / -1; }
+  .ritual-section h2 { margin:0 0 .7rem; color:var(--accent-dark); font-size:1.25rem; }
+  .ritual-section p { margin:.55rem 0 0; color:var(--muted); font-size:.94rem; }
+  .ritual-section ul, .ritual-section ol { margin:.65rem 0 0; padding-left:1.25rem; color:var(--muted); font-size:.92rem; line-height:1.65; }
+  .ritual-section li + li { margin-top:.42rem; }
+  .ritual-mantra { margin-top:.85rem !important; padding:1rem; border-left:3px solid var(--gold); color:var(--ink) !important; background:#f8f2e7; font-size:1.02rem !important; font-style:italic; line-height:1.75; white-space:pre-line; }
+  .ritual-meaning { padding-top:.8rem; border-top:1px solid var(--line); }
+  .ritual-sources { margin:1.5rem 0 0; color:var(--muted); font:.74rem/1.65 system-ui,sans-serif; text-align:center; }
+  .ritual-sources a { color:var(--accent-dark); }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -793,6 +815,12 @@
     .prayer-list { grid-template-columns:1fr; }
     .prayer-page { margin:2.5rem auto; }
     .prayer-header { margin-bottom:1.5rem; }
+    .upakara-page { margin:2.5rem auto; }
+    .upakara-header { margin-bottom:1.5rem; }
+    .upakara-grid, .ritual-sections { grid-template-columns:1fr; }
+    .upakara-grid.is-five .app-card:last-child { grid-column:auto; width:auto; }
+    .upakara-grid .app-card { min-height:11rem; }
+    .ritual-section.is-wide { grid-column:auto; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
     .calendar-layout { grid-template-columns:1fr; }
@@ -1057,7 +1085,7 @@
         <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
         <a class="app-card" href="?mode=saved"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
         <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
-        <a class="app-card" href="?mode=prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Kumpulan doa Hindu Bali untuk mengawali dan menutup aktivitas harian, lengkap dengan artinya.</p></a>
+        <a class="app-card" href="?mode=upakara"><span class="app-icon">❋</span><strong>Upakara &amp; Doa</strong><p>Pelajari Panca Yadnya, sarana upakara, alur umum pelaksanaannya, serta doa Hindu sehari-hari.</p></a>
         <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
@@ -1744,7 +1772,171 @@
     a.append(make("span", "app-icon", "→"), make("strong", "", title), make("p", "", text));
     return a;
   }
-  function showPrayers() {
+  function upakaraCard(title, text, href) {
+    var item = card(title, text, href);
+    item.append(make("span", "card-action", "Buka bagian →"));
+    return item;
+  }
+  function prepareUpakaraPage(className) {
+    document.querySelector(".home-inner").hidden = true;
+    appView.hidden = false;
+    appView.className = className || "upakara-page";
+    appView.replaceChildren();
+  }
+  function showUpakaraHub() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Tradisi Hindu Bali"),
+      make("h1", "", "Upakara & Doa"),
+      make("p", "", "Pilih panduan Panca Yadnya atau kumpulan doa yang menyertai kegiatan sehari-hari.")
+    );
+    var grid = make("div", "upakara-grid");
+    grid.append(
+      upakaraCard("Panca Yadnya", "Kenali lima bentuk persembahan suci, sarana banten dasar, alur umum upacara, dan doa pengantar.", "?mode=yadnya"),
+      upakaraCard("Doa Sehari-hari", "Kumpulan mantra Hindu untuk mengawali dan menutup kegiatan harian, lengkap dengan artinya.", "?mode=daily-prayers")
+    );
+    appView.append(header, grid);
+    document.title = "Upakara & Doa — Gītā Bali";
+  }
+  var yadnyaGuides = {
+    dewa: {
+      title:"Dewa Yadnya",
+      subtitle:"Persembahan kepada Ida Sang Hyang Widhi Wasa beserta manifestasi-Nya.",
+      examples:"Puja harian, Purnama, Tilem, Galungan, Kuningan, dan piodalan.",
+      offerings:[
+        "Canang sari, bunga atau kwangen, dupa, air suci (tirta), dan bija untuk persembahyangan sederhana.",
+        "Pejati dapat dipakai sebagai persembahan pokok pada kegiatan yang lebih lengkap; susunan dan pelengkapnya mengikuti tradisi pura atau desa setempat.",
+        "Buah, daun, bunga, air, dan hasil bumi dapat dipersembahkan dengan ketulusan sesuai kemampuan."
+      ],
+      steps:[
+        "Bersihkan diri, tempat persembahyangan, dan sarana yang akan dipakai.",
+        "Atur banten pada pelinggih yang dituju, lalu nyalakan dupa dengan sikap tenang.",
+        "Lakukan puja pembuka, Tri Sandhya atau Kramaning Sembah sesuai kebiasaan keluarga dan pura.",
+        "Persembahkan bunga atau kwangen, kemudian mohon tirta dan bija sebagai penutup."
+      ],
+      mantra:"Om Nama Deva Adhisthanaya\nSarva Vyapi Vaisivaya\nPadmasana Eka Pratisthaya\nArdhanarisvaryai Namo Namah",
+      meaning:"Hormat kepada Tuhan yang berstana, meresapi seluruh alam, dan dipuja pada Padmasana. Ini merupakan doa pengantar pemujaan; puja khusus piodalan mengikuti pemangku atau sulinggih."
+    },
+    pitra: {
+      title:"Pitra Yadnya",
+      subtitle:"Persembahan bakti kepada leluhur dan penyucian perjalanan atma orang yang telah meninggal.",
+      examples:"Penghormatan leluhur, atiwa-tiwa atau ngaben, nyekah, dan memukur.",
+      offerings:[
+        "Untuk penghormatan sederhana: canang, dupa, bunga atau kwangen, tirta, serta hidangan simbolis sesuai kebiasaan keluarga.",
+        "Salah satu contoh sarana pada tahap makingsan ring geni ialah pejati, nasi angkeb, bubuh pitara, dan dius kamaligi beserta pelengkap menurut dresta.",
+        "Upacara pengabenan dan memukur memiliki sarana bertingkat dan tidak dapat diseragamkan; susun bersama serati serta sulinggih."
+      ],
+      steps:[
+        "Keluarga bermusyawarah dengan pemangku, sulinggih, dan prajuru adat mengenai tingkatan upacara serta hari pelaksanaan.",
+        "Lakukan penyucian tempat, keluarga, dan sarana sesuai petunjuk pemimpin upacara.",
+        "Haturkan persembahan kepada Ida Sang Hyang Widhi dan leluhur, lalu jalankan rangkaian inti sesuai dresta setempat.",
+        "Akhiri dengan puja, tirta, bija, dan rangkaian lanjutan yang telah ditetapkan pemimpin upacara."
+      ],
+      mantra:"Om Atma Tattvatma Suddhamam Svaha",
+      meaning:"Semoga atma disucikan dan kembali menuju hakikatnya. Mantra ini hanya doa pengantar keluarga; mantra inti Pitra Yadnya wajib mengikuti sulinggih yang memimpin."
+    },
+    rsi: {
+      title:"Rsi Yadnya",
+      subtitle:"Penghormatan kepada sulinggih, guru rohani, dan sumber ilmu pengetahuan suci.",
+      examples:"Punia kepada sulinggih, pawintenan, penghormatan guru, dan diksa.",
+      offerings:[
+        "Canang, dupa, bunga, tirta, pejati atau daksina, serta punia yang diberikan dengan tulus.",
+        "Untuk pawintenan dapat digunakan sayut Saraswati dan sayut pawintenan beserta sarana lain yang ditentukan pemimpin upacara.",
+        "Diksa dan upacara kepanditaan memiliki sarana khusus yang hanya disusun melalui petunjuk sulinggih dan serati."
+      ],
+      steps:[
+        "Siapkan diri dan sarana dengan bersih, lalu sampaikan maksud kepada guru atau sulinggih.",
+        "Lakukan pemujaan serta serahkan daksina atau punia dengan sikap hormat.",
+        "Untuk pawintenan, rangkaian umumnya mencakup penyucian, melukat, merajah, mejaya-jaya, pamuspaan, dan natab banten.",
+        "Terima wejangan, tirta, bija, serta wangsuhpada sebagai penutup sesuai arahan pemimpin upacara."
+      ],
+      mantra:"Om Pra No Devi Sarasvati\nVajebhir Vajinivati Dhinam Avinyavantu",
+      meaning:"Semoga Saraswati, sumber pengetahuan, menjaga kecerdasan dan memberi inspirasi yang bermanfaat. Puja khusus kepada guru atau pada diksa mengikuti sulinggih."
+    },
+    manusa: {
+      title:"Manusa Yadnya",
+      subtitle:"Penyucian dan pendampingan perjalanan manusia sejak dalam kandungan hingga berumah tangga.",
+      examples:"Magedong-gedongan, kelahiran, tiga bulanan, otonan, pawintenan, metatah, dan pawiwahan.",
+      offerings:[
+        "Sarana dasar dapat mencakup canang sari, dupa, tirta, bija, pejati, peras, daksina, dan sesayut yang sesuai dengan jenis upacara.",
+        "Byakala, durmanggala, prayascita, atau sarana melukat dipakai apabila memang menjadi bagian rangkaian yang ditetapkan pemimpin upacara.",
+        "Jenis sesayut, jumlah banten, serta kelengkapannya berbeda untuk otonan, metatah, dan pawiwahan; pastikan melalui serati atau pemangku."
+      ],
+      steps:[
+        "Tentukan jenis, tingkatan, tempat, dan hari upacara bersama keluarga serta pemimpin adat atau agama.",
+        "Siapkan peserta dan sarana, lalu lakukan penyucian awal seperti byakala atau melukat bila termasuk dalam rangkaian.",
+        "Jalankan inti samskara—misalnya natab saat otonan atau rangkaian pawiwahan—sesuai dresta dan arahan pemimpin upacara.",
+        "Tutup dengan persembahyangan, tirta, bija, dan doa bersama keluarga."
+      ],
+      mantra:"Om Avighnam Astu Namo Siddham\nOm Siddhirastu Tad Astu Svaha",
+      meaning:"Semoga upacara bebas dari halangan dan mencapai keberhasilan. Doa khusus tiap tahap kehidupan mengikuti pemangku atau sulinggih."
+    },
+    bhuta: {
+      title:"Bhuta Yadnya",
+      subtitle:"Persembahan untuk menjaga keharmonisan manusia, alam, dan unsur-unsur Panca Maha Bhuta.",
+      examples:"Yadnya Sesa atau saiban, segehan, caru, dan tawur.",
+      offerings:[
+        "Untuk persembahan sederhana dapat digunakan segehan atau nasi dalam porsi kecil, canang, dupa, dan tetabuhan sesuai kebiasaan keluarga.",
+        "Bawang, jahe, garam, serta lauk sederhana dapat menjadi pelengkap segehan menurut tradisi setempat.",
+        "Caru dan tawur yang lebih besar memiliki jenis serta jumlah sarana khusus; pelaksanaannya harus diarahkan pemangku, sulinggih, dan serati."
+      ],
+      steps:[
+        "Bersihkan area dan siapkan persembahan tanpa mengganggu kesucian tempat.",
+        "Letakkan segehan pada titik yang ditentukan keluarga atau desa—misalnya halaman atau pintu masuk—sesuai dresta.",
+        "Haturkan dupa dan tetabuhan sambil memohon keharmonisan seluruh makhluk serta unsur alam.",
+        "Akhiri dengan sikap hormat; penanganan sisa persembahan mengikuti kebiasaan setempat."
+      ],
+      mantra:"Om Sarva Bhuta Sukha Pretebhyah Svaha",
+      meaning:"Semoga semua makhluk menerima kedamaian dan kebahagiaan. Untuk caru atau tawur, gunakan mantra yang ditetapkan pemimpin upacara."
+    }
+  };
+  function showPancaYadnya() {
+    prepareUpakaraPage("upakara-page");
+    var back = make("a", "upakara-back", "← Upakara & Doa"); back.href = "?mode=upakara";
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Lima persembahan suci"),
+      make("h1", "", "Panca Yadnya"),
+      make("p", "", "Pilih satu bagian untuk mengenal tujuan, contoh banten dasar, alur umum upacara, dan doa pengantarnya.")
+    );
+    var grid = make("div", "upakara-grid is-five");
+    Object.keys(yadnyaGuides).forEach(function (key) {
+      var guide = yadnyaGuides[key];
+      grid.append(upakaraCard(guide.title, guide.subtitle + " Contoh: " + guide.examples, "?mode=yadnya&type=" + key));
+    });
+    var notice = make("p", "ritual-notice", "Catatan penting: bentuk dan kelengkapan upakara mengikuti desa, kala, patra; tingkat kanistama, madyama, utama; kemampuan keluarga; serta dresta setempat. Gunakan halaman ini sebagai pengenalan, lalu pastikan susunan banten dan mantra inti kepada pemangku, sulinggih, atau serati yang memahami tradisi wilayahmu.");
+    appView.append(back, header, notice, grid);
+    document.title = "Panca Yadnya — Gītā Bali";
+  }
+  function showYadnyaDetail(type) {
+    var guide = yadnyaGuides[type];
+    if (!guide) { showPancaYadnya(); return; }
+    prepareUpakaraPage("upakara-page");
+    var back = make("a", "upakara-back", "← Panca Yadnya"); back.href = "?mode=yadnya";
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Panduan pengantar"), make("h1", "", guide.title), make("p", "", guide.subtitle));
+    var notice = make("p", "ritual-notice", "Panduan ini menjelaskan bentuk dasar dan bukan resep baku. Nama, jumlah, susunan banten, urutan upacara, dan mantra dapat berbeda menurut dresta serta tingkat upacara. Untuk pelaksanaan nyata, mintalah tuntunan pemangku, sulinggih, dan serati setempat.");
+    var sections = make("div", "ritual-sections");
+    var about = make("section", "ritual-section");
+    about.append(make("h2", "", "Tentang upacara"), make("p", "", guide.subtitle), make("p", "", "Contoh pelaksanaan: " + guide.examples));
+    var offerings = make("section", "ritual-section");
+    offerings.append(make("h2", "", "Banten & sarana dasar"));
+    var offeringList = make("ul"); guide.offerings.forEach(function (item) { offeringList.append(make("li", "", item)); }); offerings.append(offeringList);
+    var procedure = make("section", "ritual-section is-wide");
+    procedure.append(make("h2", "", "Alur umum pelaksanaan"));
+    var stepList = make("ol"); guide.steps.forEach(function (item) { stepList.append(make("li", "", item)); }); procedure.append(stepList);
+    var prayer = make("section", "ritual-section is-wide");
+    prayer.append(make("h2", "", "Doa pengantar"), make("p", "", "Ucapkan dengan tenang sesuai tuntunan keluarga atau pemimpin upacara."), make("p", "ritual-mantra", guide.mantra), make("p", "ritual-meaning", guide.meaning));
+    sections.append(about, offerings, procedure, prayer);
+    var sources = make("p", "ritual-sources", "Rujukan pengantar: Direktorat Jenderal Bimbingan Masyarakat Hindu Kementerian Agama dan Kantor Wilayah Kementerian Agama Provinsi Bali. ");
+    var sourceOne = make("a", "", "Pengertian Panca Yadnya"); sourceOne.href = "https://kemenag.go.id/en/nasional/memahami-tiga-kerangka-dasar-agama-hindu-jj2rif";
+    var sourceTwo = make("a", "", "Pedoman desa, kala, patra"); sourceTwo.href = "https://bali.kemenag.go.id/bangli/berita/26507/pembinaan-serati-banten";
+    sources.append(sourceOne, " · ", sourceTwo);
+    appView.append(back, header, notice, sections, sources);
+    document.title = guide.title + " — Gītā Bali";
+  }
+  function showDailyPrayers() {
     var prayers = [
       {
         title:"Bangun Pagi",
@@ -1853,6 +2045,8 @@
     var sourceLink = make("a", "", "Buku Doa dalam Agama Hindu — Pemerintah Provinsi Bali");
     sourceLink.href = "https://dpma.baliprov.go.id/wp-content/uploads/2022/03/PAKIS-Bali_Buku-Doa-Dalam-Agama-Hindu_compressed.pdf";
     source.append(sourceLink, ". Ejaan ditata agar nyaman dibaca tanpa mengubah maksud doa.");
+    var back = make("a", "upakara-back", "← Upakara & Doa"); back.href = "?mode=upakara";
+    appView.prepend(back);
     appView.append(header, prayerList, source);
     document.title = "Doa Sehari-hari — Gītā Bali";
   }
@@ -2264,7 +2458,9 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
-  if (mode === "prayers") { showPrayers(); return; }
+  if (mode === "upakara" || mode === "prayers") { showUpakaraHub(); return; }
+  if (mode === "daily-prayers") { showDailyPrayers(); return; }
+  if (mode === "yadnya") { showYadnyaDetail(new URLSearchParams(window.location.search).get("type")); return; }
   if (mode === "calendar") { showCalendar(); return; }
   if (mode === "explore") { showExplore(); return; }
   if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
