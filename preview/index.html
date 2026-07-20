@@ -351,6 +351,26 @@
   .app-card strong { display:block; margin:.8rem 0 .3rem; color:var(--accent-dark); font-size:1.3rem; }
   .app-card p { margin:0; color:var(--muted); font-size:.92rem; }
   .app-icon { color:var(--accent); font:1.6rem/1 system-ui,sans-serif; }
+  .prayer-entry-card { grid-column:1 / -1; min-height:10rem; }
+  .prayer-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
+  .prayer-header { max-width:42rem; margin:0 auto 2.5rem; text-align:center; }
+  .prayer-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
+  .prayer-header > p:last-of-type { margin:1rem auto 0; color:var(--muted); }
+  .prayer-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .prayer-card { border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); overflow:hidden; }
+  .prayer-card summary { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:.8rem; min-height:5.4rem; padding:1rem 1.15rem; color:var(--accent-dark); cursor:pointer; list-style:none; }
+  .prayer-card summary::-webkit-details-marker { display:none; }
+  .prayer-number { display:grid; width:2.25rem; height:2.25rem; place-items:center; border:1px solid rgba(138,61,47,.24); border-radius:50%; color:var(--accent); font:700 .68rem/1 system-ui,sans-serif; }
+  .prayer-title { font-size:1.08rem; }
+  .prayer-card summary::after { color:var(--accent); content:"+"; font:400 1.35rem/1 system-ui,sans-serif; }
+  .prayer-card[open] summary::after { content:"−"; }
+  .prayer-content { padding:0 1.15rem 1.25rem; border-top:1px solid var(--line); }
+  .prayer-context { margin:1rem 0 .7rem; color:var(--muted); font:700 .64rem/1.4 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  .prayer-mantra { margin:0; color:var(--ink); font-size:1.03rem; font-style:italic; line-height:1.75; white-space:pre-line; }
+  .prayer-meaning { margin:1rem 0 0; padding-top:1rem; border-top:1px solid var(--line); color:var(--muted); font-size:.94rem; }
+  .prayer-meaning strong { display:block; margin-bottom:.3rem; color:var(--accent); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .prayer-source { margin:2rem auto 0; color:var(--muted); font:.75rem/1.6 system-ui,sans-serif; text-align:center; }
+  .prayer-source a { color:var(--accent-dark); }
   .verse-actions { display:flex; gap:.5rem; margin-top:1.25rem; }
   .verse-action { padding:.45rem .65rem; border:1px solid var(--line); border-radius:.5rem; background:transparent; color:var(--accent-dark); cursor:pointer; font:700 .7rem/1 system-ui,sans-serif; }
   .note-box { width:100%; min-height:5rem; margin-top:.8rem; padding:.65rem; border:1px solid var(--line); border-radius:.5rem; background:#fffdf8; color:var(--ink); font:inherit; }
@@ -719,6 +739,9 @@
     .chapter-overview { width: 100%; }
     .chapter-grid { grid-template-columns: 1fr; }
     .app-grid { grid-template-columns:1fr; }
+    .prayer-list { grid-template-columns:1fr; }
+    .prayer-page { margin:2.5rem auto; }
+    .prayer-header { margin-bottom:1.5rem; }
     body.chapter-reader-mode { height:100vh; height:100dvh; overflow:hidden; }
     body.chapter-reader-mode .site-header,
     body.chapter-reader-mode .site-footer,
@@ -976,6 +999,7 @@
         <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
         <a class="app-card" href="?mode=saved"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
         <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
+        <a class="app-card prayer-entry-card" href="?mode=prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Kumpulan doa Hindu Bali untuk mengawali dan menutup aktivitas harian, lengkap dengan artinya.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -1660,6 +1684,118 @@
     a.append(make("span", "app-icon", "→"), make("strong", "", title), make("p", "", text));
     return a;
   }
+  function showPrayers() {
+    var prayers = [
+      {
+        title:"Bangun Pagi",
+        context:"Saat memulai hari",
+        mantra:"Om Jagrasca Prabhata Kalasca Ya Namah Svaha",
+        meaning:"Ya Hyang Widhi, hamba memuja-Mu dan bersyukur telah bangun pagi dalam keadaan selamat."
+      },
+      {
+        title:"Mencuci Muka",
+        context:"Saat membersihkan wajah",
+        mantra:"Om Cam Camani Ya Namah Svaha\nOm Waktra Parisuddhaya Namah Svaha",
+        meaning:"Ya Hyang Widhi, sucikan dan bersihkanlah wajah hamba."
+      },
+      {
+        title:"Mandi",
+        context:"Saat menyucikan diri",
+        mantra:"Om Gangga Amrthasudha Mam Svaha\nOm Sarira Parisudha Mam Svaha",
+        meaning:"Ya Hyang Widhi, sumber kehidupan abadi yang suci, semoga tubuh dan diri hamba menjadi bersih serta suci."
+      },
+      {
+        title:"Berpakaian",
+        context:"Saat mengenakan pakaian",
+        mantra:"Om Tam Mahadewaya Namah Svaha\nOm Bhusanam Sarirabhyo Parisudhamam Svaha",
+        meaning:"Ya Hyang Widhi dalam wujud Mahadewa Yang Maha Agung, semoga pakaian yang hamba kenakan bersih dan suci."
+      },
+      {
+        title:"Sebelum Makan",
+        context:"Sebelum menikmati makanan",
+        mantra:"Om Ang Kang Kasolkaya Isana Ya Namah\nSvasti-svasti Sarva Deva Bhuta Sukha\nPradhana Purusa Sang Yoga Ya Namah",
+        meaning:"Ya Hyang Widhi dalam kemuliaan-Mu sebagai Isana, makanan ini hamba persembahkan kepada-Mu. Semoga semua makhluk berbahagia."
+      },
+      {
+        title:"Mulai Makan",
+        context:"Saat mulai makan",
+        mantra:"Om Anugraha Amertadi Sanjivani Ya Namah Svaha",
+        meaning:"Ya Hyang Widhi, semoga makanan ini menjadi sumber kehidupan lahir dan batin yang suci."
+      },
+      {
+        title:"Selesai Makan",
+        context:"Setelah makan",
+        mantra:"Om Dirghayur Astu, Avighnam Astu, Subham Astu\nOm Sriyam Bhavantu, Sukham Bhavantu\nPurnam Bhavantu, Ksama Sampurna Ya Namah Svaha",
+        meaning:"Ya Hyang Widhi, semoga makanan ini memberi kekuatan, keselamatan, umur panjang, kebahagiaan, dan kehidupan yang bebas dari rintangan."
+      },
+      {
+        title:"Memulai Belajar",
+        context:"Sebelum belajar",
+        mantra:"Om Agne Naya Supatha Raye Asman\nVisvani Deva Vayunani Vidvan\nYuyodhyasmaj Juhuranam Eno\nBhuyistham Te Namauktim Vidhema",
+        meaning:"Ya Hyang Widhi, tuntunlah kami menuju jalan yang benar dan sejahtera. Jauhkan kekeliruan yang menyengsarakan dan terimalah pemujaan kami."
+      },
+      {
+        title:"Memohon Inspirasi",
+        context:"Saat membutuhkan kejernihan pikiran",
+        mantra:"Om Pra No Devi Sarasvati\nVajebhir Vajinivati Dhinam Avinyavantu",
+        meaning:"Ya Hyang Widhi dalam wujud Saraswati, sumber ilmu pengetahuan, peliharalah kecerdasan kami dan anugerahkan inspirasi yang berguna."
+      },
+      {
+        title:"Memulai Kegiatan",
+        context:"Sebelum bekerja atau berkegiatan",
+        mantra:"Om Avighnam Astu Namo Siddham\nOm Siddhirastu Tad Astu Svaha",
+        meaning:"Ya Hyang Widhi, semoga kegiatan ini bebas dari halangan, berjalan baik, dan mencapai keberhasilan."
+      },
+      {
+        title:"Selesai Berkegiatan",
+        context:"Setelah menyelesaikan pekerjaan",
+        mantra:"Om Deva Suksma Parama Acintya Ya Namah Svaha\nSarva Karya Prasidhantam\nOm Santih Santih Santih Om",
+        meaning:"Ya Hyang Widhi Yang Maha Gaib dan Maha Karya, terima kasih atas selesainya pekerjaan ini. Semoga kedamaian senantiasa menyertai kami."
+      },
+      {
+        title:"Sebelum Tidur",
+        context:"Saat menutup hari",
+        mantra:"Om Yajjagrato Duram Udaiti Daivam\nTad U Suptasya Tathaivaiti\nDurangamam Jyotisam Jyotir Ekam\nTan Me Manah Siva Samkalpam Astu",
+        meaning:"Ya Hyang Widhi, Engkaulah cahaya utama bagi mereka yang terjaga maupun tertidur. Semoga pikiran kami selalu mengarah kepada-Mu dan kepada kebaikan."
+      }
+    ];
+    document.querySelector(".home-inner").hidden = true;
+    appView.hidden = false;
+    appView.className = "prayer-page";
+    appView.replaceChildren();
+
+    var header = make("header", "prayer-header");
+    header.append(
+      make("p", "eyebrow", "Puja Harian"),
+      make("h1", "", "Doa Sehari-hari"),
+      make("p", "", "Mantra yang digunakan dalam keseharian umat Hindu Bali, disertai arti Bahasa Indonesia. Pilih satu doa untuk membacanya.")
+    );
+    var prayerList = make("div", "prayer-list");
+    prayers.forEach(function (prayer, index) {
+      var details = make("details", "prayer-card");
+      var summary = document.createElement("summary");
+      summary.append(
+        make("span", "prayer-number", String(index + 1).padStart(2, "0")),
+        make("strong", "prayer-title", prayer.title)
+      );
+      var content = make("div", "prayer-content");
+      var meaning = make("p", "prayer-meaning", prayer.meaning);
+      meaning.prepend(make("strong", "", "Artinya"));
+      content.append(
+        make("p", "prayer-context", prayer.context),
+        make("p", "prayer-mantra", prayer.mantra),
+        meaning
+      );
+      details.append(summary, content);
+      prayerList.append(details);
+    });
+    var source = make("p", "prayer-source", "Rujukan: ");
+    var sourceLink = make("a", "", "Buku Doa dalam Agama Hindu — Pemerintah Provinsi Bali");
+    sourceLink.href = "https://dpma.baliprov.go.id/wp-content/uploads/2022/03/PAKIS-Bali_Buku-Doa-Dalam-Agama-Hindu_compressed.pdf";
+    source.append(sourceLink, ". Ejaan ditata agar nyaman dibaca tanpa mengubah maksud doa.");
+    appView.append(header, prayerList, source);
+    document.title = "Doa Sehari-hari — Gītā Bali";
+  }
   function showExplore() {
     document.querySelector(".home-inner").hidden = true;
     var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
@@ -1860,6 +1996,7 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "prayers") { showPrayers(); return; }
   if (mode === "explore") { showExplore(); return; }
   if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
   if (mode === "saved") { showCollection("saved"); return; }
