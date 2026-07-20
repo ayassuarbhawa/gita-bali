@@ -351,7 +351,6 @@
   .app-card strong { display:block; margin:.8rem 0 .3rem; color:var(--accent-dark); font-size:1.3rem; }
   .app-card p { margin:0; color:var(--muted); font-size:.92rem; }
   .app-icon { color:var(--accent); font:1.6rem/1 system-ui,sans-serif; }
-  .prayer-entry-card { grid-column:1 / -1; min-height:10rem; }
   .prayer-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .prayer-header { max-width:42rem; margin:0 auto 2.5rem; text-align:center; }
   .prayer-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -371,6 +370,44 @@
   .prayer-meaning strong { display:block; margin-bottom:.3rem; color:var(--accent); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
   .prayer-source { margin:2rem auto 0; color:var(--muted); font:.75rem/1.6 system-ui,sans-serif; text-align:center; }
   .prayer-source a { color:var(--accent-dark); }
+  .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
+  .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
+  .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
+  .calendar-header > p:last-child { margin:1rem auto 0; color:var(--muted); }
+  .calendar-layout { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(18rem,.95fr); align-items:start; gap:1rem; }
+  .calendar-panel, .calendar-detail { border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); }
+  .calendar-panel { padding:1rem; }
+  .calendar-month-nav { display:grid; grid-template-columns:2.7rem 1fr 2.7rem; align-items:center; gap:.5rem; margin-bottom:1rem; }
+  .calendar-month-nav h2 { margin:0; color:var(--accent-dark); font-size:1.35rem; font-weight:400; text-align:center; }
+  .calendar-nav-button { width:2.7rem; height:2.7rem; border:1px solid var(--line); border-radius:50%; color:var(--accent-dark); background:transparent; cursor:pointer; font:1.15rem/1 system-ui,sans-serif; }
+  .calendar-nav-button:hover { background:#f3ecdf; }
+  .calendar-weekdays, .calendar-days { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.35rem; }
+  .calendar-weekdays span { padding:.35rem 0; color:var(--muted); font:700 .61rem/1.2 system-ui,sans-serif; letter-spacing:.05em; text-align:center; text-transform:uppercase; }
+  .calendar-day, .calendar-blank { aspect-ratio:1; }
+  .calendar-day { position:relative; display:grid; place-items:center; border:1px solid transparent; border-radius:.7rem; color:var(--ink); background:transparent; cursor:pointer; font:700 .82rem/1 system-ui,sans-serif; }
+  .calendar-day:hover { border-color:var(--line); background:#f7f1e6; }
+  .calendar-day.is-good-day::before { position:absolute; top:.35rem; right:.35rem; width:.3rem; height:.3rem; border-radius:50%; background:#728b63; content:""; }
+  .calendar-day.is-today::after { position:absolute; bottom:.35rem; width:.25rem; height:.25rem; border-radius:50%; background:var(--gold); content:""; }
+  .calendar-day.is-selected { color:#fff; background:var(--accent); }
+  .calendar-day.is-selected::after { background:#fff1cc; }
+  .calendar-legend { display:flex; justify-content:center; gap:1rem; margin:1rem 0 0; color:var(--muted); font:.68rem/1.4 system-ui,sans-serif; }
+  .calendar-legend span::before { display:inline-block; width:.42rem; height:.42rem; margin-right:.35rem; border-radius:50%; background:#728b63; content:""; vertical-align:.05rem; }
+  .calendar-detail { min-height:24rem; padding:1.25rem; }
+  .calendar-detail-date { margin:0; color:var(--accent); font:700 .68rem/1.4 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  .calendar-detail h2 { margin:.35rem 0 .25rem; color:var(--accent-dark); font-size:1.65rem; font-weight:400; line-height:1.15; }
+  .calendar-bali-day { margin:0 0 1.1rem; color:var(--muted); font-size:.9rem; }
+  .calendar-loading { display:grid; min-height:15rem; place-items:center; color:var(--muted); font:.82rem/1.5 system-ui,sans-serif; text-align:center; }
+  .calendar-group + .calendar-group { margin-top:1.2rem; }
+  .calendar-group h3 { margin:0 0 .55rem; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  .calendar-event { position:relative; margin:.45rem 0; padding:.7rem .75rem .7rem 1.65rem; border-radius:.7rem; background:#f8f3e9; font-size:.84rem; line-height:1.48; }
+  .calendar-event::before { position:absolute; top:1.02rem; left:.75rem; width:.42rem; height:.42rem; border-radius:50%; content:""; }
+  .calendar-event.is-good::before { background:#728b63; }
+  .calendar-event.is-avoid::before { background:#a75b4b; }
+  .calendar-event.is-neutral::before { background:#b68b3a; }
+  .calendar-event strong { display:block; color:var(--accent-dark); }
+  .calendar-event p { margin:.18rem 0 0; color:var(--muted); }
+  .calendar-note { max-width:48rem; margin:1.5rem auto 0; color:var(--muted); font:.75rem/1.65 system-ui,sans-serif; text-align:center; }
+  .calendar-note a { color:var(--accent-dark); }
   .verse-actions { display:flex; gap:.5rem; margin-top:1.25rem; }
   .verse-action { padding:.45rem .65rem; border:1px solid var(--line); border-radius:.5rem; background:transparent; color:var(--accent-dark); cursor:pointer; font:700 .7rem/1 system-ui,sans-serif; }
   .note-box { width:100%; min-height:5rem; margin-top:.8rem; padding:.65rem; border:1px solid var(--line); border-radius:.5rem; background:#fffdf8; color:var(--ink); font:inherit; }
@@ -742,6 +779,12 @@
     .prayer-list { grid-template-columns:1fr; }
     .prayer-page { margin:2.5rem auto; }
     .prayer-header { margin-bottom:1.5rem; }
+    .calendar-page { margin:2.5rem auto; }
+    .calendar-header { margin-bottom:1.5rem; }
+    .calendar-layout { grid-template-columns:1fr; }
+    .calendar-panel { padding:.8rem; }
+    .calendar-weekdays, .calendar-days { gap:.18rem; }
+    .calendar-day { border-radius:.55rem; }
     body.chapter-reader-mode { height:100vh; height:100dvh; overflow:hidden; }
     body.chapter-reader-mode .site-header,
     body.chapter-reader-mode .site-footer,
@@ -999,7 +1042,8 @@
         <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
         <a class="app-card" href="?mode=saved"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
         <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
-        <a class="app-card prayer-entry-card" href="?mode=prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Kumpulan doa Hindu Bali untuk mengawali dan menutup aktivitas harian, lengkap dengan artinya.</p></a>
+        <a class="app-card" href="?mode=prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Kumpulan doa Hindu Bali untuk mengawali dan menutup aktivitas harian, lengkap dengan artinya.</p></a>
+        <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -1136,6 +1180,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.7"></script>
+<script src="https://unpkg.com/balinese-date-js-lib@0.4.3/umd/balinese-date-js-lib.min.js"></script>
 <script>
 (function () {
   "use strict";
@@ -1796,6 +1841,178 @@
     appView.append(header, prayerList, source);
     document.title = "Doa Sehari-hari — Gītā Bali";
   }
+  function showCalendar() {
+    var today = new Date();
+    var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+    var selectedDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    var weekdayNames = ["Redite", "Soma", "Anggara", "Buda", "Wraspati", "Sukra", "Saniscara"];
+    var positiveEkaJala = new Set(["Bahu Putra", "Bahu Astawa", "Buat Suka", "Kamertaan", "Kasobagian", "Kinasihan Amerta", "Kinasihan Jana", "Langgeng Kayohanaan", "Luwih Bagia", "Manggih Bagia", "Manggih Suka", "Rahayu", "Sidha Kasobagian", "Subagia", "Suka Kapanggih", "Suka Pinanggih", "Suka Rahayu", "Werdhi Putra", "Werdhi Sarwa Mule"]);
+    var negativeEkaJala = new Set(["Bagna Mapasah", "Buat Kingking", "Buat Lara", "Buat Merang", "Buat Sebet", "Dahat Kingking", "Kameranan", "Patining Amerta", "Tininggaling Suka"]);
+    var positivePancaSuda = new Set(["Wisesa Segara", "Tunggak Semi", "Satria Wibawa", "Sumur Sinaba"]);
+    var negativePancaSuda = new Set(["Lebu Katiup Angin", "Satria Wirang"]);
+    var pancaDescriptions = {
+      "Wisesa Segara":"Watak luas, kuat, dan berwibawa.",
+      "Tunggak Semi":"Melambangkan pertumbuhan dan kesinambungan.",
+      "Satria Wibawa":"Melambangkan kewibawaan dan kepemimpinan.",
+      "Sumur Sinaba":"Melambangkan pengetahuan dan tempat mencari pertimbangan.",
+      "Bumi Kapetak":"Hari bersifat terbatas; perlu pertimbangan sesuai tujuan kegiatan.",
+      "Satria Wirang":"Perlu kehati-hatian dalam menjaga martabat dan hubungan.",
+      "Lebu Katiup Angin":"Hasil dinilai mudah tercerai; kegiatan penting perlu pertimbangan lebih lanjut."
+    };
+
+    function pad(value) { return String(value).padStart(2, "0"); }
+    function dateKey(date) { return date.getFullYear() + "-" + pad(date.getMonth() + 1) + "-" + pad(date.getDate()); }
+    function sameDate(first, second) { return dateKey(first) === dateKey(second); }
+    function sourceUrl(date) { return "https://m.kalenderbali.org/alaayu.php?bl=" + (date.getMonth() + 1) + "&tg=" + date.getDate() + "&th=" + date.getFullYear(); }
+    function calendarInfo(date) {
+      if (!window.BalineseDate) return null;
+      var balineseDate = new window.BalineseDate.BalineseDate(date);
+      var ekaName = balineseDate.ekaJalaRsi.name;
+      var pancaName = balineseDate.pancaSuda.name;
+      var quality = negativeEkaJala.has(ekaName) || negativePancaSuda.has(pancaName)
+        ? "avoid"
+        : (positiveEkaJala.has(ekaName) && positivePancaSuda.has(pancaName) ? "good" : "neutral");
+      var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(balineseDate).map(function (item) { return item.name; });
+      return { date:balineseDate, quality:quality, rahinan:rahinan };
+    }
+
+    document.querySelector(".home-inner").hidden = true;
+    appView.hidden = false;
+    appView.className = "calendar-page";
+    appView.replaceChildren();
+
+    var header = make("header", "calendar-header");
+    header.append(
+      make("p", "eyebrow", "Wariga Bali"),
+      make("h1", "", "Kalender Bali"),
+      make("p", "", "Pilih tanggal untuk membaca pawukon, rahinan, indikator watak hari, dan mengakses rincian ala ayuning dewasa sesuai kebutuhan.")
+    );
+
+    var layout = make("div", "calendar-layout");
+    var panel = make("section", "calendar-panel");
+    panel.setAttribute("aria-label", "Kalender bulanan");
+    var monthNav = make("div", "calendar-month-nav");
+    var previous = make("button", "calendar-nav-button", "←");
+    previous.type = "button";
+    previous.setAttribute("aria-label", "Bulan sebelumnya");
+    var monthTitle = make("h2", "", "");
+    var next = make("button", "calendar-nav-button", "→");
+    next.type = "button";
+    next.setAttribute("aria-label", "Bulan berikutnya");
+    monthNav.append(previous, monthTitle, next);
+    var weekdays = make("div", "calendar-weekdays");
+    weekdayNames.forEach(function (name) { weekdays.append(make("span", "", name)); });
+    var days = make("div", "calendar-days");
+    var legend = make("p", "calendar-legend");
+    legend.append(make("span", "", "Indikasi baik secara umum"));
+    panel.append(monthNav, weekdays, days, legend);
+
+    var detail = make("section", "calendar-detail");
+    detail.setAttribute("aria-live", "polite");
+    layout.append(panel, detail);
+
+    var note = make("p", "calendar-note");
+    note.append(document.createTextNode("Penanda hijau menunjukkan dua indikator pendukung berdasarkan Panca Suda dan Eka Jala Rsi, bukan penetapan dewasa untuk semua keperluan. Untuk pawiwahan, ngaben, pembangunan, dan upacara besar, sesuaikan dengan desa kala patra serta arahan sulinggih atau pemangku. Perhitungan pawukon memakai "));
+    var libraryReference = make("a", "", "pustaka terbuka BalineseDate");
+    libraryReference.href = "https://github.com/peradnya/balinese-date-js-lib";
+    note.append(libraryReference, " dan dapat dibandingkan dengan ");
+    var reference = make("a", "", "Kalender Bali Digital");
+    reference.href = "https://kalenderbali.org";
+    note.append(reference, ".");
+    appView.append(header, layout, note);
+
+    function renderCalendar() {
+      monthTitle.textContent = monthNames[visibleMonth.getMonth()] + " " + visibleMonth.getFullYear();
+      days.replaceChildren();
+      var firstWeekday = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1).getDay();
+      var dayCount = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 0).getDate();
+      for (var blank = 0; blank < firstWeekday; blank++) {
+        var spacer = make("span", "calendar-blank");
+        spacer.setAttribute("aria-hidden", "true");
+        days.append(spacer);
+      }
+      for (var number = 1; number <= dayCount; number++) {
+        (function (dayNumber) {
+          var date = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth(), dayNumber);
+          var button = make("button", "calendar-day", String(dayNumber));
+          button.type = "button";
+          button.setAttribute("aria-label", dayNumber + " " + monthNames[visibleMonth.getMonth()] + " " + visibleMonth.getFullYear());
+          var info = calendarInfo(date);
+          if (info && info.quality === "good") button.classList.add("is-good-day");
+          if (sameDate(date, today)) button.classList.add("is-today");
+          if (sameDate(date, selectedDate)) button.classList.add("is-selected");
+          button.addEventListener("click", function () {
+            selectedDate = date;
+            renderCalendar();
+            loadDay(date, true);
+          });
+          days.append(button);
+        })(number);
+      }
+    }
+
+    function renderGroup(title, items, quality) {
+      if (!items.length) return null;
+      var group = make("section", "calendar-group");
+      group.append(make("h3", "", title));
+      items.forEach(function (item) {
+        var event = make("article", "calendar-event is-" + quality);
+        event.append(make("strong", "", item.name), make("p", "", item.description || "Keterangan wariga untuk tanggal ini."));
+        group.append(event);
+      });
+      return group;
+    }
+
+    function loadDay(date, moveToDetail) {
+      if (moveToDetail && window.matchMedia("(max-width: 42rem)").matches) {
+        detail.scrollIntoView({ behavior:"smooth", block:"start" });
+      }
+      var info = calendarInfo(date);
+      if (!info) {
+        detail.replaceChildren(make("div", "calendar-loading", "Perhitungan Kalender Bali belum dapat dimuat. Periksa koneksi lalu coba lagi."));
+        return;
+      }
+      var data = info.date;
+      var formattedDate = new Intl.DateTimeFormat("id-ID", { weekday:"long", day:"numeric", month:"long", year:"numeric" }).format(date);
+      var dateLabel = make("p", "calendar-detail-date", formattedDate);
+      var title = make("h2", "", info.quality === "good" ? "Indikator Hari Mendukung" : (info.quality === "avoid" ? "Perlu Pertimbangan" : "Hari Bersifat Netral"));
+      var baliDay = make("p", "calendar-bali-day", data.saptaWara.name + " " + data.pancaWara.name + " · Wuku " + data.wuku.name);
+      var primaryQuality = info.quality === "good" ? "good" : (info.quality === "avoid" ? "avoid" : "neutral");
+      var primary = [
+        { name:"Eka Jala Rsi · " + data.ekaJalaRsi.name, description:positiveEkaJala.has(data.ekaJalaRsi.name) ? "Mengandung isyarat kerahayuan atau hasil yang mendukung." : (negativeEkaJala.has(data.ekaJalaRsi.name) ? "Mengandung isyarat agar kegiatan penting dipertimbangkan kembali." : "Watak hari perlu disesuaikan dengan jenis kegiatan."), quality:primaryQuality },
+        { name:"Panca Suda · " + data.pancaSuda.name, description:pancaDescriptions[data.pancaSuda.name] || "Salah satu dasar membaca watak hari dalam wariga.", quality:primaryQuality }
+      ];
+      var rahinan = info.rahinan.map(function (name) { return { name:name, description:"Rahinan atau hari suci pada penanggalan Bali.", quality:"neutral" }; });
+      var wariga = [
+        { name:"Sasih", description:data.sasihDayInfo.name + " " + data.sasihDay + " · Sasih " + data.sasih.name + " · Tahun Saka " + data.saka },
+        { name:"Triwara · Sadwara", description:data.triWara.name + " · " + data.sadWara.name },
+        { name:"Pararasan · Lintang", description:data.pararasan.name + " · " + data.lintang.name },
+        { name:"Ingkel · Pratiti", description:data.ingkel.name + " · " + data.pratithiSamutPada.name }
+      ].map(function (item) { item.quality = "neutral"; return item; });
+      var primaryHeading = info.quality === "good" ? "Indikasi baik secara umum" : (info.quality === "avoid" ? "Pertimbangan hari" : "Watak hari");
+      var groups = [renderGroup(primaryHeading, primary, primaryQuality)];
+      if (rahinan.length) groups.push(renderGroup("Rahinan", rahinan, "neutral"));
+      groups.push(renderGroup("Rincian penanggalan", wariga, "neutral"));
+      var sourceLink = make("a", "state-action", "Lihat Ala Ayuning lengkap");
+      sourceLink.href = sourceUrl(date);
+      detail.replaceChildren(dateLabel, title, baliDay);
+      groups.forEach(function (group) { if (group) detail.append(group); });
+      detail.append(sourceLink);
+    }
+
+    function changeMonth(offset) {
+      visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + offset, 1);
+      selectedDate = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1);
+      renderCalendar();
+      loadDay(selectedDate, false);
+    }
+    previous.addEventListener("click", function () { changeMonth(-1); });
+    next.addEventListener("click", function () { changeMonth(1); });
+    renderCalendar();
+    loadDay(selectedDate, false);
+    document.title = "Kalender Bali — Gītā Bali";
+  }
   function showExplore() {
     document.querySelector(".home-inner").hidden = true;
     var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
@@ -1997,6 +2214,7 @@
   }
   authReady = initializeAuth();
   if (mode === "prayers") { showPrayers(); return; }
+  if (mode === "calendar") { showCalendar(); return; }
   if (mode === "explore") { showExplore(); return; }
   if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
   if (mode === "saved") { showCollection("saved"); return; }
