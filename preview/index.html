@@ -87,6 +87,86 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+  .auth-trigger {
+    min-height:2.35rem;
+    padding:.55rem .85rem;
+    border:1px solid rgba(138,61,47,.32);
+    border-radius:999px;
+    color:var(--accent-dark);
+    background:rgba(255,253,248,.7);
+    cursor:pointer;
+    font:700 .7rem/1 system-ui,sans-serif;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+  }
+  .auth-trigger:hover { background:var(--surface); }
+  .auth-dialog {
+    width:min(calc(100% - 2rem), 28rem);
+    padding:0;
+    border:1px solid var(--line);
+    border-radius:1.25rem;
+    color:var(--ink);
+    background:var(--surface);
+    box-shadow:0 28px 80px rgba(39,35,30,.24);
+  }
+  .auth-dialog::backdrop { background:rgba(39,35,30,.42); backdrop-filter:blur(5px); }
+  .auth-card { position:relative; padding:clamp(1.5rem,6vw,2.4rem); }
+  .auth-close {
+    position:absolute;
+    top:.8rem;
+    right:.8rem;
+    width:2.3rem;
+    height:2.3rem;
+    border:0;
+    border-radius:50%;
+    color:var(--muted);
+    background:#f2ecdf;
+    cursor:pointer;
+    font:1.2rem/1 system-ui,sans-serif;
+  }
+  .auth-card h2 { margin:.15rem 0 .6rem; color:var(--accent-dark); font-size:clamp(1.8rem,6vw,2.5rem); font-weight:400; line-height:1.1; }
+  .auth-copy { margin:0 0 1.3rem; color:var(--muted); font-size:.94rem; }
+  .auth-form { display:grid; gap:.7rem; }
+  .auth-form label { color:var(--muted); font:700 .68rem/1.3 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .auth-form input {
+    width:100%;
+    min-height:3.15rem;
+    padding:.7rem .9rem;
+    border:1px solid var(--line);
+    border-radius:.7rem;
+    color:var(--ink);
+    background:#fff;
+  }
+  .auth-submit, .auth-logout {
+    min-height:3.1rem;
+    padding:.7rem 1rem;
+    border:0;
+    border-radius:.7rem;
+    color:#fff;
+    background:var(--accent);
+    cursor:pointer;
+    font:700 .78rem/1 system-ui,sans-serif;
+  }
+  .auth-submit:disabled { cursor:wait; opacity:.65; }
+  .auth-message { min-height:1.4rem; margin:.25rem 0 0; color:var(--muted); font:.8rem/1.5 system-ui,sans-serif; }
+  .auth-message.is-error { color:var(--accent); }
+  .account-email { margin:.5rem 0 1.3rem; overflow-wrap:anywhere; color:var(--accent-dark); font:700 .9rem/1.5 system-ui,sans-serif; }
+  .sync-note { margin:1rem 0 0; color:var(--muted); font:.78rem/1.5 system-ui,sans-serif; }
+  .toast {
+    position:fixed;
+    z-index:40;
+    right:1rem;
+    bottom:1rem;
+    max-width:min(24rem, calc(100% - 2rem));
+    padding:.75rem 1rem;
+    border:1px solid var(--line);
+    border-radius:.75rem;
+    color:var(--ink);
+    background:rgba(255,253,248,.94);
+    box-shadow:var(--shadow);
+    backdrop-filter:blur(12px);
+    font:.8rem/1.45 system-ui,sans-serif;
+  }
 
   .home {
     display: grid;
@@ -427,6 +507,8 @@
 
   @media (max-width: 42rem) {
     .nav-note, .nav-link { display: none; }
+    .nav-actions { gap:.5rem; }
+    .auth-trigger { min-height:2.2rem; padding:.5rem .7rem; }
     .toolbar { position: static; grid-template-columns: 1fr; }
     .language-switch { display: grid; grid-template-columns: repeat(3, 1fr); }
     .sloka { grid-template-columns: 1fr; gap: .7rem; }
@@ -522,9 +604,35 @@
     <div class="nav-actions">
       <a class="nav-link" href="./">Beranda</a>
       <span class="nav-note">Sanskrit · Indonesia · Bali · English</span>
+      <button class="auth-trigger" id="auth-trigger" type="button">Masuk</button>
     </div>
   </nav>
 </header>
+
+<dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-title">
+  <div class="auth-card">
+    <button class="auth-close" id="auth-close" type="button" aria-label="Tutup">×</button>
+    <section id="login-view">
+      <p class="eyebrow">Akun Gītā Bali</p>
+      <h2 id="auth-title">Simpan lintas perangkat.</h2>
+      <p class="auth-copy">Masukkan email. Kami akan mengirim tautan aman untuk masuk tanpa kata sandi.</p>
+      <form class="auth-form" id="auth-form">
+        <label for="auth-email">Alamat email</label>
+        <input id="auth-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nama@email.com" required>
+        <button class="auth-submit" id="auth-submit" type="submit">Kirim tautan masuk</button>
+        <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section id="account-view" hidden>
+      <p class="eyebrow">Akun aktif</p>
+      <h2>Catatanmu tersinkron.</h2>
+      <p class="account-email" id="account-email"></p>
+      <button class="auth-logout" id="auth-logout" type="button">Keluar dari akun</button>
+      <p class="sync-note">Sloka tersimpan dan catatan tersedia di perangkat lain setelah masuk dengan email yang sama.</p>
+    </section>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <main id="content">
   <section class="home" id="home" aria-labelledby="home-title">
@@ -672,6 +780,7 @@
   <a href="#content">Kembali ke atas</a>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.7"></script>
 <script>
 (function () {
   "use strict";
@@ -680,6 +789,11 @@
   var mode = new URLSearchParams(window.location.search).get("mode");
   var chapters = { "1": "../data/bab-01.json", "2": "../data/bab-02.json", "3": "../data/bab-03.json", "4": "../data/bab-04.json", "5": "../data/bab-05.json", "6": "../data/bab-06.json", "7": "../data/bab-07.json", "8": "../data/bab-08.json", "9": "../data/bab-09.json", "10": "../data/bab-10.json", "11": "../data/bab-11.json", "12": "../data/bab-12.json", "13": "../data/bab-13.json", "14": "../data/bab-14.json", "15": "../data/bab-15.json", "16": "../data/bab-16.json", "17": "../data/bab-17.json", "18": "../data/bab-18.json" };
   var state = { data: null, language: "id", query: "" };
+  var supabaseUrl = "https://vekrbbnuzzoawkfsyfdo.supabase.co";
+  var supabaseKey = "sb_publishable_6rzcP2Te_5oLb-_MxwHD9A_nLoIICMM";
+  var authClient = window.supabase ? window.supabase.createClient(supabaseUrl, supabaseKey) : null;
+  var account = { user: null, saved: new Set(), notes: new Map() };
+  var authReady = Promise.resolve();
   var list = document.getElementById("sloka-list");
   var stateBox = document.getElementById("state");
   var toolbar = document.getElementById("toolbar");
@@ -690,6 +804,15 @@
   var chapterHero = document.getElementById("chapter-hero");
   var reader = document.getElementById("reader");
   var appView = document.getElementById("app-view");
+  var authTrigger = document.getElementById("auth-trigger");
+  var authDialog = document.getElementById("auth-dialog");
+  var loginView = document.getElementById("login-view");
+  var accountView = document.getElementById("account-view");
+  var authForm = document.getElementById("auth-form");
+  var authSubmit = document.getElementById("auth-submit");
+  var authMessage = document.getElementById("auth-message");
+  var toast = document.getElementById("toast");
+  var toastTimer;
 
   function filled(value) {
     return typeof value === "string" && value.trim().length > 0;
@@ -700,6 +823,96 @@
     if (className) node.className = className;
     if (text !== undefined) node.textContent = text;
     return node;
+  }
+
+  function accountKey(chapterNumber, verseNumber) {
+    return String(chapterNumber) + "-" + String(verseNumber);
+  }
+
+  function notify(message) {
+    clearTimeout(toastTimer);
+    toast.textContent = message;
+    toast.hidden = false;
+    toastTimer = setTimeout(function () { toast.hidden = true; }, 3200);
+  }
+
+  function updateAuthUI() {
+    var signedIn = Boolean(account.user);
+    authTrigger.textContent = signedIn ? "Akun" : "Masuk";
+    loginView.hidden = signedIn;
+    accountView.hidden = !signedIn;
+    document.getElementById("account-email").textContent = signedIn ? account.user.email : "";
+  }
+
+  async function migrateLocalData() {
+    if (!account.user) return;
+    var marker = "gita-bali-migrated-" + account.user.id;
+    if (localStorage.getItem(marker) === "1") return;
+    var savedRows = [];
+    var noteRows = [];
+    var migratedKeys = [];
+    Object.keys(localStorage).forEach(function (key) {
+      var match = key.match(/^gita-bali-(\d+)-(\d+)-(liked|note)$/);
+      if (!match) return;
+      var chapterNumber = Number(match[1]);
+      var verseNumber = Number(match[2]);
+      var value = localStorage.getItem(key);
+      if (match[3] === "liked" && value === "1") {
+        savedRows.push({ user_id: account.user.id, chapter: chapterNumber, verse: verseNumber });
+        migratedKeys.push(key);
+      }
+      if (match[3] === "note" && filled(value)) {
+        noteRows.push({ user_id: account.user.id, chapter: chapterNumber, verse: verseNumber, content: value, updated_at: new Date().toISOString() });
+        migratedKeys.push(key);
+      }
+    });
+    var savedResult = savedRows.length ? await authClient.from("saved_slokas").upsert(savedRows, { onConflict: "user_id,chapter,verse" }) : { error: null };
+    var noteResult = noteRows.length ? await authClient.from("sloka_notes").upsert(noteRows, { onConflict: "user_id,chapter,verse" }) : { error: null };
+    if (savedResult.error || noteResult.error) {
+      notify("Data lama belum berhasil disinkronkan. Akan dicoba lagi saat masuk berikutnya.");
+      return;
+    }
+    migratedKeys.forEach(function (key) { localStorage.removeItem(key); });
+    localStorage.setItem(marker, "1");
+    if (migratedKeys.length) notify("Sloka dan catatan lama sudah dipindahkan ke akunmu.");
+  }
+
+  async function loadAccountData() {
+    account.saved.clear();
+    account.notes.clear();
+    if (!account.user) return;
+    await migrateLocalData();
+    var results = await Promise.all([
+      authClient.from("saved_slokas").select("chapter,verse"),
+      authClient.from("sloka_notes").select("chapter,verse,content")
+    ]);
+    if (results[0].error || results[1].error) {
+      notify("Data akun belum dapat dimuat. Silakan coba muat ulang halaman.");
+      return;
+    }
+    results[0].data.forEach(function (row) { account.saved.add(accountKey(row.chapter, row.verse)); });
+    results[1].data.forEach(function (row) { account.notes.set(accountKey(row.chapter, row.verse), row.content); });
+  }
+
+  async function applySession(session) {
+    account.user = session && session.user ? session.user : null;
+    await loadAccountData();
+    updateAuthUI();
+  }
+
+  async function initializeAuth() {
+    if (!authClient) {
+      authTrigger.disabled = true;
+      authTrigger.title = "Layanan akun belum dapat dimuat";
+      return;
+    }
+    var sessionResult = await authClient.auth.getSession();
+    if (sessionResult.error) notify("Sesi akun belum dapat diperiksa.");
+    await applySession(sessionResult.data.session);
+    authClient.auth.onAuthStateChange(function (event, session) {
+      if (event === "INITIAL_SESSION") return;
+      setTimeout(function () { applySession(session); }, 0);
+    });
   }
 
   function readable(sloka) {
@@ -762,12 +975,16 @@
   }
 
   function renderVerse(sloka) {
+    var chapterNumber = Number(state.data.bab);
+    var cloudKey = accountKey(chapterNumber, sloka.no);
+    var localKey = "gita-bali-" + chapterNumber + "-" + sloka.no;
+    var userId = account.user ? account.user.id : null;
     var article = make("article", "sloka");
-    article.id = "sloka-" + sloka.no;
-    article.setAttribute("aria-labelledby", "sloka-label-" + sloka.no);
+    article.id = "sloka-" + chapterNumber + "-" + sloka.no;
+    article.setAttribute("aria-labelledby", "sloka-label-" + chapterNumber + "-" + sloka.no);
 
     var number = make("div", "sloka-number", "Sloka " + sloka.no);
-    number.id = "sloka-label-" + sloka.no;
+    number.id = "sloka-label-" + chapterNumber + "-" + sloka.no;
     if (sloka.status && sloka.status[state.language] === "draf") {
       number.append(make("span", "verse-status", "Terjemahan draf"));
     }
@@ -786,15 +1003,31 @@
       translation.append(make("span", "unavailable", unavailableLabels[state.language]));
     }
     body.append(translation);
-    var key = "gita-bali-" + state.data.bab + "-" + sloka.no;
-    var liked = localStorage.getItem(key + "-liked") === "1";
+    var liked = userId ? account.saved.has(cloudKey) : localStorage.getItem(localKey + "-liked") === "1";
     var actions = make("div", "verse-actions");
     var like = make("button", "verse-action", liked ? "♥ Tersimpan" : "♡ Simpan");
     like.type = "button";
-    like.addEventListener("click", function () {
+    like.addEventListener("click", async function () {
+      var previous = liked;
       liked = !liked;
-      localStorage.setItem(key + "-liked", liked ? "1" : "0");
       like.textContent = liked ? "♥ Tersimpan" : "♡ Simpan";
+      if (!userId) {
+        localStorage.setItem(localKey + "-liked", liked ? "1" : "0");
+        notify("Tersimpan di perangkat ini. Masuk agar tersedia di perangkat lain.");
+        return;
+      }
+      if (liked) account.saved.add(cloudKey); else account.saved.delete(cloudKey);
+      var result = liked
+        ? await authClient.from("saved_slokas").upsert({ user_id: userId, chapter: chapterNumber, verse: sloka.no }, { onConflict: "user_id,chapter,verse" })
+        : await authClient.from("saved_slokas").delete().eq("user_id", userId).eq("chapter", chapterNumber).eq("verse", sloka.no);
+      if (result.error) {
+        liked = previous;
+        if (liked) account.saved.add(cloudKey); else account.saved.delete(cloudKey);
+        like.textContent = liked ? "♥ Tersimpan" : "♡ Simpan";
+        notify("Perubahan belum tersimpan. Periksa koneksi lalu coba lagi.");
+      } else {
+        notify(liked ? "Sloka disimpan ke akunmu." : "Sloka dihapus dari akunmu.");
+      }
     });
     var note = make("button", "verse-action", "✎ Catatan");
     note.type = "button";
@@ -804,8 +1037,27 @@
       var field = document.createElement("textarea");
       field.className = "note-box";
       field.placeholder = "Tulis refleksimu untuk sloka ini…";
-      field.value = localStorage.getItem(key + "-note") || "";
-      field.addEventListener("input", function () { localStorage.setItem(key + "-note", field.value); });
+      field.value = userId ? (account.notes.get(cloudKey) || "") : (localStorage.getItem(localKey + "-note") || "");
+      var saveTimer;
+      field.addEventListener("input", function () {
+        if (!userId) {
+          localStorage.setItem(localKey + "-note", field.value);
+          return;
+        }
+        account.notes.set(cloudKey, field.value);
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(async function () {
+          if (!account.user || account.user.id !== userId) return;
+          var result = await authClient.from("sloka_notes").upsert({
+            user_id: userId,
+            chapter: chapterNumber,
+            verse: sloka.no,
+            content: field.value,
+            updated_at: new Date().toISOString()
+          }, { onConflict: "user_id,chapter,verse" });
+          if (result.error) notify("Catatan belum tersimpan. Periksa koneksi lalu coba lagi.");
+        }, 650);
+      });
       body.append(field);
       field.focus();
     });
@@ -873,6 +1125,52 @@
     renderList();
   });
 
+  authTrigger.addEventListener("click", function () {
+    updateAuthUI();
+    authMessage.textContent = "";
+    authMessage.classList.remove("is-error");
+    authDialog.showModal();
+  });
+
+  document.getElementById("auth-close").addEventListener("click", function () { authDialog.close(); });
+  authDialog.addEventListener("click", function (event) {
+    if (event.target === authDialog) authDialog.close();
+  });
+
+  authForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    if (!authClient) return;
+    authSubmit.disabled = true;
+    authMessage.classList.remove("is-error");
+    authMessage.textContent = "Mengirim tautan masuk…";
+    var email = document.getElementById("auth-email").value.trim();
+    var redirectTo = location.protocol === "http:" || location.protocol === "https:"
+      ? location.origin + location.pathname + location.search
+      : "https://gita-bali.vercel.app/";
+    var result = await authClient.auth.signInWithOtp({
+      email: email,
+      options: { emailRedirectTo: redirectTo, shouldCreateUser: true }
+    });
+    authSubmit.disabled = false;
+    if (result.error) {
+      authMessage.classList.add("is-error");
+      authMessage.textContent = "Tautan belum dapat dikirim. Periksa email lalu coba lagi.";
+      return;
+    }
+    authMessage.textContent = "Tautan sudah dikirim. Buka emailmu untuk masuk.";
+    authForm.reset();
+  });
+
+  document.getElementById("auth-logout").addEventListener("click", async function () {
+    if (!authClient) return;
+    var result = await authClient.auth.signOut();
+    if (result.error) {
+      notify("Belum berhasil keluar. Silakan coba lagi.");
+      return;
+    }
+    window.location.reload();
+  });
+
   function card(title, text, href) {
     var a = make("a", "app-card"); a.href = href;
     a.append(make("span", "app-icon", "→"), make("strong", "", title), make("p", "", text));
@@ -912,7 +1210,8 @@
   }
   function showRandom() {
     var keys = Object.keys(chapters);
-    Promise.all(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); })).then(function(all){
+    Promise.all([authReady].concat(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); }))).then(function(results){
+      var all=results.slice(1);
       var verses=[]; all.forEach(function(data){ data.sloka.forEach(function(s){ if(readable(s)) verses.push({data:data, sloka:s}); }); });
       document.body.classList.add("random-mode");
       home.hidden=true; chapterHero.hidden=true; reader.hidden=false; toolbar.hidden=true; resultMeta.hidden=true; list.classList.add("random-feed"); list.replaceChildren();
@@ -947,6 +1246,7 @@
       }, { passive:true });
     }).catch(function(){ showState("Belum dapat memuat sloka", "Buka halaman melalui server lokal, lalu coba lagi.", true); });
   }
+  authReady = initializeAuth();
   if (mode === "explore") { showExplore(); return; }
   if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
   if (mode === "random") { showRandom(); return; }
@@ -959,8 +1259,9 @@
   chapterHero.hidden = false;
   reader.hidden = false;
 
-  fetch(chapters[chapter])
-    .then(function (response) {
+  Promise.all([authReady, fetch(chapters[chapter])])
+    .then(function (results) {
+      var response = results[1];
       if (!response.ok) throw new Error("HTTP " + response.status);
       return response.json();
     })
