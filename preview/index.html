@@ -148,6 +148,18 @@
     font:700 .78rem/1 system-ui,sans-serif;
   }
   .auth-submit:disabled { cursor:wait; opacity:.65; }
+  .auth-secondary, .auth-link {
+    min-height:2.55rem;
+    padding:.5rem .7rem;
+    border:1px solid var(--line);
+    border-radius:.65rem;
+    color:var(--accent-dark);
+    background:transparent;
+    cursor:pointer;
+    font:700 .74rem/1.3 system-ui,sans-serif;
+  }
+  .auth-link { min-height:auto; padding:.25rem; border:0; color:var(--muted); text-decoration:underline; text-underline-offset:.18rem; }
+  .auth-secondary:hover { background:#f5efe4; }
   .auth-message { min-height:1.4rem; margin:.25rem 0 0; color:var(--muted); font:.8rem/1.5 system-ui,sans-serif; }
   .auth-message.is-error { color:var(--accent); }
   .account-email { margin:.5rem 0 1.3rem; overflow-wrap:anywhere; color:var(--accent-dark); font:700 .9rem/1.5 system-ui,sans-serif; }
@@ -614,13 +626,34 @@
     <button class="auth-close" id="auth-close" type="button" aria-label="Tutup">×</button>
     <section id="login-view">
       <p class="eyebrow">Akun Gītā Bali</p>
-      <h2 id="auth-title">Simpan lintas perangkat.</h2>
-      <p class="auth-copy">Masukkan email. Kami akan mengirim tautan aman untuk masuk tanpa kata sandi.</p>
+      <h2 id="auth-title">Masuk ke akunmu.</h2>
+      <p class="auth-copy" id="auth-copy">Gunakan email dan password untuk membuka sloka serta catatanmu.</p>
       <form class="auth-form" id="auth-form">
         <label for="auth-email">Alamat email</label>
         <input id="auth-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nama@email.com" required>
-        <button class="auth-submit" id="auth-submit" type="submit">Kirim tautan masuk</button>
+        <label for="auth-password">Password</label>
+        <input id="auth-password" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="Minimal 8 karakter" required>
+        <div id="password-confirm-wrap" hidden>
+          <label for="auth-password-confirm">Ulangi password</label>
+          <input id="auth-password-confirm" name="password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder="Ketik ulang password">
+        </div>
+        <button class="auth-submit" id="auth-submit" type="submit">Masuk</button>
+        <button class="auth-secondary" id="auth-mode-toggle" type="button">Belum punya akun? Daftar</button>
+        <button class="auth-link" id="auth-forgot" type="button">Lupa password?</button>
         <p class="auth-message" id="auth-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section id="reset-view" hidden>
+      <p class="eyebrow">Pemulihan akun</p>
+      <h2>Buat password baru.</h2>
+      <p class="auth-copy">Masukkan password baru untuk akunmu.</p>
+      <form class="auth-form" id="reset-form">
+        <label for="reset-password">Password baru</label>
+        <input id="reset-password" type="password" minlength="8" autocomplete="new-password" placeholder="Minimal 8 karakter" required>
+        <label for="reset-password-confirm">Ulangi password baru</label>
+        <input id="reset-password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder="Ketik ulang password" required>
+        <button class="auth-submit" id="reset-submit" type="submit">Simpan password baru</button>
+        <p class="auth-message" id="reset-message" role="status" aria-live="polite"></p>
       </form>
     </section>
     <section id="account-view" hidden>
@@ -643,8 +676,8 @@
       <div class="app-grid" aria-label="Fitur utama">
         <a class="app-card" href="?mode=random"><span class="app-icon">✦</span><strong>Sloka Acak</strong><p>Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.</p></a>
         <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
-        <a class="app-card" href="?bab=1#reader"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Sloka yang diberi suka tersimpan di perangkat ini.</p></a>
-        <a class="app-card" href="?bab=1#reader"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka; catatan tersimpan lokal di perangkat.</p></a>
+        <a class="app-card" href="?bab=1#reader"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
+        <a class="app-card" href="?bab=1#reader"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -808,9 +841,11 @@
   var authDialog = document.getElementById("auth-dialog");
   var loginView = document.getElementById("login-view");
   var accountView = document.getElementById("account-view");
+  var resetView = document.getElementById("reset-view");
   var authForm = document.getElementById("auth-form");
   var authSubmit = document.getElementById("auth-submit");
   var authMessage = document.getElementById("auth-message");
+  var authMode = "signin";
   var toast = document.getElementById("toast");
   var toastTimer;
 
@@ -841,7 +876,25 @@
     authTrigger.textContent = signedIn ? "Akun" : "Masuk";
     loginView.hidden = signedIn;
     accountView.hidden = !signedIn;
+    resetView.hidden = true;
     document.getElementById("account-email").textContent = signedIn ? account.user.email : "";
+  }
+
+  function setAuthMode(modeName) {
+    authMode = modeName;
+    var signingUp = authMode === "signup";
+    document.getElementById("auth-title").textContent = signingUp ? "Buat akun baru." : "Masuk ke akunmu.";
+    document.getElementById("auth-copy").textContent = signingUp
+      ? "Daftar dengan email dan password agar catatanmu tersimpan lintas perangkat."
+      : "Gunakan email dan password untuk membuka sloka serta catatanmu.";
+    authSubmit.textContent = signingUp ? "Daftar akun" : "Masuk";
+    document.getElementById("auth-mode-toggle").textContent = signingUp ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar";
+    document.getElementById("auth-forgot").hidden = signingUp;
+    document.getElementById("password-confirm-wrap").hidden = !signingUp;
+    document.getElementById("auth-password-confirm").required = signingUp;
+    document.getElementById("auth-password").autocomplete = signingUp ? "new-password" : "current-password";
+    authMessage.textContent = "";
+    authMessage.classList.remove("is-error");
   }
 
   async function migrateLocalData() {
@@ -911,6 +964,16 @@
     await applySession(sessionResult.data.session);
     authClient.auth.onAuthStateChange(function (event, session) {
       if (event === "INITIAL_SESSION") return;
+      if (event === "PASSWORD_RECOVERY") {
+        setTimeout(async function () {
+          await applySession(session);
+          loginView.hidden = true;
+          accountView.hidden = true;
+          resetView.hidden = false;
+          if (!authDialog.open) authDialog.showModal();
+        }, 0);
+        return;
+      }
       setTimeout(function () { applySession(session); }, 0);
     });
   }
@@ -1127,8 +1190,7 @@
 
   authTrigger.addEventListener("click", function () {
     updateAuthUI();
-    authMessage.textContent = "";
-    authMessage.classList.remove("is-error");
+    if (!account.user) setAuthMode("signin");
     authDialog.showModal();
   });
 
@@ -1142,23 +1204,85 @@
     if (!authClient) return;
     authSubmit.disabled = true;
     authMessage.classList.remove("is-error");
-    authMessage.textContent = "Mengirim tautan masuk…";
+    authMessage.textContent = authMode === "signup" ? "Membuat akun…" : "Memeriksa akun…";
     var email = document.getElementById("auth-email").value.trim();
+    var password = document.getElementById("auth-password").value;
     var redirectTo = location.protocol === "http:" || location.protocol === "https:"
       ? location.origin + location.pathname + location.search
       : "https://gita-bali.vercel.app/";
-    var result = await authClient.auth.signInWithOtp({
-      email: email,
-      options: { emailRedirectTo: redirectTo, shouldCreateUser: true }
-    });
+    if (authMode === "signup" && password !== document.getElementById("auth-password-confirm").value) {
+      authSubmit.disabled = false;
+      authMessage.classList.add("is-error");
+      authMessage.textContent = "Kedua password belum sama.";
+      return;
+    }
+    var result = authMode === "signup"
+      ? await authClient.auth.signUp({ email: email, password: password, options: { emailRedirectTo: redirectTo } })
+      : await authClient.auth.signInWithPassword({ email: email, password: password });
     authSubmit.disabled = false;
     if (result.error) {
       authMessage.classList.add("is-error");
-      authMessage.textContent = "Tautan belum dapat dikirim. Periksa email lalu coba lagi.";
+      authMessage.textContent = authMode === "signup"
+        ? "Akun belum dapat dibuat. Pastikan email valid dan password minimal 8 karakter."
+        : "Email atau password tidak cocok.";
       return;
     }
-    authMessage.textContent = "Tautan sudah dikirim. Buka emailmu untuk masuk.";
-    authForm.reset();
+    if (authMode === "signup" && !result.data.session) {
+      authMessage.textContent = "Akun dibuat. Buka email sekali untuk mengonfirmasi pendaftaran, lalu masuk dengan password.";
+      authForm.reset();
+      return;
+    }
+    await applySession(result.data.session);
+    authDialog.close();
+    window.location.reload();
+  });
+
+  document.getElementById("auth-mode-toggle").addEventListener("click", function () {
+    setAuthMode(authMode === "signin" ? "signup" : "signin");
+  });
+
+  document.getElementById("auth-forgot").addEventListener("click", async function () {
+    if (!authClient) return;
+    var emailInput = document.getElementById("auth-email");
+    if (!emailInput.reportValidity()) return;
+    authMessage.classList.remove("is-error");
+    authMessage.textContent = "Mengirim email pemulihan…";
+    var redirectTo = location.protocol === "http:" || location.protocol === "https:"
+      ? location.origin + location.pathname + location.search
+      : "https://gita-bali.vercel.app/";
+    var result = await authClient.auth.resetPasswordForEmail(emailInput.value.trim(), { redirectTo: redirectTo });
+    if (result.error) {
+      authMessage.classList.add("is-error");
+      authMessage.textContent = "Email pemulihan belum dapat dikirim. Silakan coba lagi.";
+      return;
+    }
+    authMessage.textContent = "Email pemulihan sudah dikirim.";
+  });
+
+  document.getElementById("reset-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+    if (!authClient) return;
+    var password = document.getElementById("reset-password").value;
+    var confirmation = document.getElementById("reset-password-confirm").value;
+    var message = document.getElementById("reset-message");
+    if (password !== confirmation) {
+      message.classList.add("is-error");
+      message.textContent = "Kedua password belum sama.";
+      return;
+    }
+    document.getElementById("reset-submit").disabled = true;
+    message.classList.remove("is-error");
+    message.textContent = "Menyimpan password baru…";
+    var result = await authClient.auth.updateUser({ password: password });
+    document.getElementById("reset-submit").disabled = false;
+    if (result.error) {
+      message.classList.add("is-error");
+      message.textContent = "Password belum dapat diperbarui. Silakan coba lagi.";
+      return;
+    }
+    authDialog.close();
+    notify("Password berhasil diperbarui.");
+    window.location.reload();
   });
 
   document.getElementById("auth-logout").addEventListener("click", async function () {
