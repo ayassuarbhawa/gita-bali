@@ -557,7 +557,17 @@
     text-decoration:none;
     white-space:nowrap;
   }
-  .chapter-reader-mode .toolbar { grid-template-columns:auto auto minmax(12rem, 24rem); }
+  .verse-jump-select {
+    min-height:2.6rem;
+    padding:.45rem 2rem .45rem .75rem;
+    border:1px solid var(--line);
+    border-radius:.6rem;
+    color:var(--accent-dark);
+    background:var(--surface);
+    cursor:pointer;
+    font:700 .72rem/1 system-ui,sans-serif;
+  }
+  .chapter-reader-mode .toolbar { grid-template-columns:auto auto auto minmax(12rem, 24rem); }
   .random-controls { position: static; }
   .scroll-cue { display:none; }
   .explore-intro { grid-column:1 / -1; margin:0 0 .5rem; text-align:center; }
@@ -739,7 +749,8 @@
       box-shadow:0 8px 30px rgba(65,48,31,.16);
     }
     body.chapter-reader-mode .toolbar > div:last-child { display:none; }
-    body.chapter-reader-mode .toolbar .language-switch { display:grid; grid-template-columns:repeat(3, 1fr); }
+    body.chapter-reader-mode .toolbar .verse-jump-select { width:100%; min-height:2.45rem; }
+    body.chapter-reader-mode .toolbar .language-switch { display:grid; grid-column:1 / -1; grid-template-columns:repeat(3, 1fr); }
     body.chapter-reader-mode .toolbar .language-switch button { min-height:2.45rem; padding:.4rem .35rem; font-size:.66rem; }
     body.chapter-reader-mode .result-meta { display:none; }
     body.chapter-reader-mode .chapter-feed {
@@ -753,7 +764,7 @@
       height:100dvh;
       min-height:100vh;
       min-height:100dvh;
-      padding:max(5.25rem, calc(4.6rem + env(safe-area-inset-top))) 1.2rem max(1.25rem, env(safe-area-inset-bottom));
+      padding:max(7.8rem, calc(7.15rem + env(safe-area-inset-top))) 1.2rem max(1.25rem, env(safe-area-inset-bottom));
       border:0;
       border-radius:0;
       background:transparent;
@@ -1369,6 +1380,7 @@
     var userId = account.user ? account.user.id : null;
     var article = make("article", "sloka");
     article.id = "sloka-" + chapterNumber + "-" + sloka.no;
+    article.dataset.verse = sloka.no;
     article.setAttribute("aria-labelledby", "sloka-label-" + chapterNumber + "-" + sloka.no);
 
     var mixedCollection = mode === "saved" || mode === "notes" || mode === "random";
@@ -1500,6 +1512,8 @@
     var fragment = document.createDocumentFragment();
     filtered.forEach(function (sloka) { fragment.append(renderVerse(sloka)); });
     list.append(fragment);
+    var jumpSelect = toolbar.querySelector(".verse-jump-select");
+    if (jumpSelect && list.firstElementChild) jumpSelect.value = list.firstElementChild.dataset.verse;
   }
 
   document.querySelectorAll("[data-language]").forEach(function (button) {
@@ -1800,12 +1814,49 @@
     back.setAttribute("aria-label", "Kembali ke daftar bab");
     toolbar.prepend(back);
 
+    var jumpSelect = document.createElement("select");
+    jumpSelect.className = "verse-jump-select";
+    jumpSelect.setAttribute("aria-label", "Pilih nomor sloka");
+    data.sloka.filter(readable).forEach(function (sloka) {
+      var option = document.createElement("option");
+      option.value = sloka.no;
+      option.textContent = "Sloka " + sloka.no;
+      jumpSelect.append(option);
+    });
+    back.after(jumpSelect);
+    jumpSelect.addEventListener("change", function () {
+      if (state.query) {
+        search.value = "";
+        state.query = "";
+        clearSearch.hidden = true;
+        renderList();
+      }
+      var target = document.getElementById("sloka-" + chapterNumber + "-" + jumpSelect.value);
+      if (target) {
+        var targetTop = target.getBoundingClientRect().top - list.getBoundingClientRect().top + list.scrollTop;
+        list.scrollTo({ top:targetTop, behavior:"smooth" });
+      }
+    });
+
     var scrollCue = make("div", "scroll-cue");
     scrollCue.setAttribute("aria-hidden", "true");
     scrollCue.append(make("span", "", "↓"));
     document.body.append(scrollCue);
+    var updatePending = false;
     list.addEventListener("scroll", function () {
       scrollCue.classList.toggle("is-hidden", list.scrollTop > 24);
+      if (updatePending) return;
+      updatePending = true;
+      requestAnimationFrame(function () {
+        var closest = null;
+        var closestDistance = Infinity;
+        Array.prototype.forEach.call(list.children, function (verse) {
+          var distance = Math.abs(verse.getBoundingClientRect().top - list.getBoundingClientRect().top);
+          if (distance < closestDistance) { closest = verse; closestDistance = distance; }
+        });
+        if (closest && closest.dataset.verse) jumpSelect.value = closest.dataset.verse;
+        updatePending = false;
+      });
     }, { passive:true });
   }
   authReady = initializeAuth();
