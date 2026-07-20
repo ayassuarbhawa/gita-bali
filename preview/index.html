@@ -539,6 +539,25 @@
   .random-feed { display:block; height:calc(100vh - 5rem); overflow-y:auto; scroll-snap-type:y mandatory; scrollbar-width:none; }
   .random-feed::-webkit-scrollbar { display:none; }
   .random-feed .sloka { display:grid; height:100%; min-height:100%; align-content:center; scroll-snap-align:start; scroll-snap-stop:always; border-radius:0; box-shadow:none; overflow-y:auto; }
+  .chapter-feed { display:block; height:calc(100vh - 7rem); overflow-y:auto; scroll-snap-type:y mandatory; scrollbar-width:none; }
+  .chapter-feed::-webkit-scrollbar { display:none; }
+  .chapter-feed .sloka {
+    display:grid;
+    min-height:calc(100vh - 7rem);
+    align-content:center;
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+    overflow-y:auto;
+  }
+  .chapter-back {
+    align-self:center;
+    color:var(--accent-dark);
+    font:700 .72rem/1 system-ui,sans-serif;
+    letter-spacing:.06em;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  .chapter-reader-mode .toolbar { grid-template-columns:auto auto minmax(12rem, 24rem); }
   .random-controls { position: static; }
   .scroll-cue { display:none; }
   .explore-intro { grid-column:1 / -1; margin:0 0 .5rem; text-align:center; }
@@ -690,6 +709,77 @@
     .chapter-overview { width: 100%; }
     .chapter-grid { grid-template-columns: 1fr; }
     .app-grid { grid-template-columns:1fr; }
+    body.chapter-reader-mode { height:100vh; height:100dvh; overflow:hidden; }
+    body.chapter-reader-mode .site-header,
+    body.chapter-reader-mode .site-footer,
+    body.chapter-reader-mode .chapter-hero,
+    body.chapter-reader-mode .sources { display:none; }
+    body.chapter-reader-mode main { width:100%; }
+    body.chapter-reader-mode .reader-shell { height:100vh; height:100dvh; padding:0; }
+    body.chapter-reader-mode .toolbar {
+      position:fixed;
+      z-index:20;
+      top:max(.65rem, env(safe-area-inset-top));
+      right:.65rem;
+      left:.65rem;
+      grid-template-columns:auto minmax(0, 1fr);
+      align-items:center;
+      gap:.45rem;
+      margin:0;
+      padding:.45rem;
+      border-radius:.85rem;
+      box-shadow:0 8px 30px rgba(65,48,31,.16);
+    }
+    body.chapter-reader-mode .toolbar > div:last-child { display:none; }
+    body.chapter-reader-mode .toolbar .language-switch { display:grid; grid-template-columns:repeat(3, 1fr); }
+    body.chapter-reader-mode .toolbar .language-switch button { min-height:2.45rem; padding:.4rem .35rem; font-size:.66rem; }
+    body.chapter-reader-mode .result-meta { display:none; }
+    body.chapter-reader-mode .chapter-feed {
+      height:100vh;
+      height:100dvh;
+      overscroll-behavior-y:contain;
+      scroll-snap-type:y mandatory;
+    }
+    body.chapter-reader-mode .chapter-feed .sloka {
+      height:100vh;
+      height:100dvh;
+      min-height:100vh;
+      min-height:100dvh;
+      padding:max(5.25rem, calc(4.6rem + env(safe-area-inset-top))) 1.2rem max(1.25rem, env(safe-area-inset-bottom));
+      border:0;
+      border-radius:0;
+      background:transparent;
+      box-shadow:none;
+    }
+    body.chapter-reader-mode .chapter-feed .sloka-number { display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
+    body.chapter-reader-mode .chapter-feed .verse-status { margin:0; }
+    body.chapter-reader-mode .chapter-feed .devanagari { font-size:clamp(1.12rem, 5vw, 1.4rem); line-height:1.55; }
+    body.chapter-reader-mode .chapter-feed .iast { margin-top:.65rem; font-size:.94rem; line-height:1.5; }
+    body.chapter-reader-mode .chapter-feed .translation { margin-top:1rem; padding-top:1rem; font-size:.98rem; line-height:1.55; }
+    body.chapter-reader-mode .chapter-feed .verse-actions { margin-top:1rem; }
+    body.chapter-reader-mode .scroll-cue {
+      position:fixed;
+      z-index:18;
+      bottom:max(.8rem, env(safe-area-inset-bottom));
+      left:50%;
+      display:grid;
+      width:3rem;
+      height:3rem;
+      place-items:center;
+      border:1px solid rgba(255,253,248,.62);
+      border-radius:50%;
+      color:var(--accent-dark);
+      background:rgba(255,253,248,.62);
+      box-shadow:0 8px 28px rgba(65,48,31,.2);
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      pointer-events:none;
+      transform:translateX(-50%);
+      transition:opacity .25s ease, visibility .25s ease;
+      animation:scroll-cue-bounce 1.6s ease-in-out infinite;
+    }
+    body.chapter-reader-mode .scroll-cue.is-hidden { visibility:hidden; opacity:0; animation:none; }
+    body.chapter-reader-mode .scroll-cue span { font:700 1.3rem/1 system-ui,sans-serif; transform:translateY(-.08rem); }
     body.random-mode { height:100vh; height:100dvh; overflow:hidden; }
     body.random-mode .site-header,
     body.random-mode .site-footer { display:none; }
@@ -1689,6 +1779,27 @@
       }, { passive:true });
     }).catch(function(){ showState("Belum dapat memuat sloka", "Buka halaman melalui server lokal, lalu coba lagi.", true); });
   }
+  function setupChapterReader(data) {
+    var chapterNumber = Number(data.bab);
+    var groupNumber = chapterNumber <= 6 ? 1 : (chapterNumber <= 12 ? 2 : 3);
+    document.body.classList.add("chapter-reader-mode");
+    list.classList.add("chapter-feed");
+
+    var back = document.createElement("a");
+    back.className = "chapter-back";
+    back.href = "?mode=group&group=" + groupNumber;
+    back.textContent = "← Bab " + chapterNumber;
+    back.setAttribute("aria-label", "Kembali ke daftar bab");
+    toolbar.prepend(back);
+
+    var scrollCue = make("div", "scroll-cue");
+    scrollCue.setAttribute("aria-hidden", "true");
+    scrollCue.append(make("span", "", "↓"));
+    document.body.append(scrollCue);
+    list.addEventListener("scroll", function () {
+      scrollCue.classList.toggle("is-hidden", list.scrollTop > 24);
+    }, { passive:true });
+  }
   authReady = initializeAuth();
   if (mode === "explore") { showExplore(); return; }
   if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
@@ -1715,6 +1826,7 @@
         throw new Error("Format data bab tidak valid");
       }
       state.data = data;
+      setupChapterReader(data);
       renderHeader(data);
       renderSources(data);
       renderList();
