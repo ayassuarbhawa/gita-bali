@@ -424,6 +424,9 @@
   .explore-intro { grid-column:1 / -1; margin:0 0 .5rem; text-align:center; }
   .explore-intro h2 { margin:0; color:var(--accent-dark); font-size:clamp(2rem,5vw,3.5rem); font-weight:400; }
   .explore-intro p { max-width:40rem; margin:.75rem auto 0; color:var(--muted); }
+  .collection-header { max-width:42rem; margin:clamp(3rem,8vw,6rem) auto 2.5rem; text-align:center; }
+  .collection-header h1 { margin:0 auto; color:var(--accent-dark); font-size:clamp(2.5rem,7vw,4.5rem); }
+  .collection-header p:last-child { margin:1rem auto 0; color:var(--muted); }
   .sloka {
     display: grid;
     grid-template-columns: 5rem minmax(0, 1fr);
@@ -506,6 +509,7 @@
   }
   .state-card h2 { margin: 0 0 .6rem; font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 400; }
   .state-card p { max-width: 31rem; margin: 0 auto; color: var(--muted); }
+  .state-action { min-height:2.8rem; margin-top:1.25rem; padding:.6rem 1rem; border:0; border-radius:.65rem; color:#fff; background:var(--accent); cursor:pointer; font:700 .76rem/1 system-ui,sans-serif; }
   .error-card { border-color: rgba(138, 61, 47, .45); }
 
   .sources {
@@ -707,8 +711,8 @@
       <div class="app-grid" aria-label="Fitur utama">
         <a class="app-card" href="?mode=random"><span class="app-icon">✦</span><strong>Sloka Acak</strong><p>Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.</p></a>
         <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
-        <a class="app-card" href="?bab=1#reader"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
-        <a class="app-card" href="?bab=1#reader"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
+        <a class="app-card" href="?mode=saved"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
+        <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -950,6 +954,13 @@
     return fallback;
   }
 
+  function openAuthDialog() {
+    updateAuthUI();
+    if (!account.user) setAuthMode("signin");
+    hideAllPasswords();
+    if (!authDialog.open) authDialog.showModal();
+  }
+
   async function migrateLocalData() {
     if (!account.user) return;
     var marker = "gita-bali-migrated-" + account.user.id;
@@ -1091,16 +1102,16 @@
       .some(function (value) { return String(value == null ? "" : value).toLocaleLowerCase("id").includes(query); });
   }
 
-  function renderVerse(sloka) {
+  function renderVerse(sloka, showNote) {
     var chapterNumber = Number(state.data.bab);
     var cloudKey = accountKey(chapterNumber, sloka.no);
-    var localKey = "gita-bali-" + chapterNumber + "-" + sloka.no;
     var userId = account.user ? account.user.id : null;
     var article = make("article", "sloka");
     article.id = "sloka-" + chapterNumber + "-" + sloka.no;
     article.setAttribute("aria-labelledby", "sloka-label-" + chapterNumber + "-" + sloka.no);
 
-    var number = make("div", "sloka-number", "Sloka " + sloka.no);
+    var mixedCollection = mode === "saved" || mode === "notes" || mode === "random";
+    var number = make("div", "sloka-number", (mixedCollection ? "Bab " + chapterNumber + " · " : "") + "Sloka " + sloka.no);
     number.id = "sloka-label-" + chapterNumber + "-" + sloka.no;
     if (sloka.status && sloka.status[state.language] === "draf") {
       number.append(make("span", "verse-status", "Terjemahan draf"));
@@ -1120,19 +1131,19 @@
       translation.append(make("span", "unavailable", unavailableLabels[state.language]));
     }
     body.append(translation);
-    var liked = userId ? account.saved.has(cloudKey) : localStorage.getItem(localKey + "-liked") === "1";
+    var liked = userId ? account.saved.has(cloudKey) : false;
     var actions = make("div", "verse-actions");
     var like = make("button", "verse-action", liked ? "♥ Tersimpan" : "♡ Simpan");
     like.type = "button";
     like.addEventListener("click", async function () {
+      if (!userId) {
+        notify("Masuk untuk menyimpan sloka ke akunmu.");
+        openAuthDialog();
+        return;
+      }
       var previous = liked;
       liked = !liked;
       like.textContent = liked ? "♥ Tersimpan" : "♡ Simpan";
-      if (!userId) {
-        localStorage.setItem(localKey + "-liked", liked ? "1" : "0");
-        notify("Tersimpan di perangkat ini. Masuk agar tersedia di perangkat lain.");
-        return;
-      }
       if (liked) account.saved.add(cloudKey); else account.saved.delete(cloudKey);
       var result = liked
         ? await authClient.from("saved_slokas").upsert({ user_id: userId, chapter: chapterNumber, verse: sloka.no }, { onConflict: "user_id,chapter,verse" })
@@ -1144,42 +1155,55 @@
         notify("Perubahan belum tersimpan. Periksa koneksi lalu coba lagi.");
       } else {
         notify(liked ? "Sloka disimpan ke akunmu." : "Sloka dihapus dari akunmu.");
+        if (!liked && mode === "saved") {
+          article.remove();
+          updateCollectionCount("saved");
+        }
       }
     });
     var note = make("button", "verse-action", "✎ Catatan");
     note.type = "button";
-    note.addEventListener("click", function () {
+    function toggleNoteEditor(shouldFocus) {
+      if (!userId) {
+        notify("Masuk untuk menulis catatan pribadi.");
+        openAuthDialog();
+        return;
+      }
       var existing = body.querySelector("textarea");
       if (existing) { existing.remove(); return; }
       var field = document.createElement("textarea");
       field.className = "note-box";
       field.placeholder = "Tulis refleksimu untuk sloka ini…";
-      field.value = userId ? (account.notes.get(cloudKey) || "") : (localStorage.getItem(localKey + "-note") || "");
+      field.value = account.notes.get(cloudKey) || "";
       var saveTimer;
       field.addEventListener("input", function () {
-        if (!userId) {
-          localStorage.setItem(localKey + "-note", field.value);
-          return;
-        }
-        account.notes.set(cloudKey, field.value);
+        if (filled(field.value)) account.notes.set(cloudKey, field.value); else account.notes.delete(cloudKey);
         clearTimeout(saveTimer);
         saveTimer = setTimeout(async function () {
           if (!account.user || account.user.id !== userId) return;
-          var result = await authClient.from("sloka_notes").upsert({
-            user_id: userId,
-            chapter: chapterNumber,
-            verse: sloka.no,
-            content: field.value,
-            updated_at: new Date().toISOString()
-          }, { onConflict: "user_id,chapter,verse" });
+          var result = filled(field.value)
+            ? await authClient.from("sloka_notes").upsert({
+                user_id: userId,
+                chapter: chapterNumber,
+                verse: sloka.no,
+                content: field.value,
+                updated_at: new Date().toISOString()
+              }, { onConflict: "user_id,chapter,verse" })
+            : await authClient.from("sloka_notes").delete().eq("user_id", userId).eq("chapter", chapterNumber).eq("verse", sloka.no);
           if (result.error) notify("Catatan belum tersimpan. Periksa koneksi lalu coba lagi.");
+          if (!result.error && !filled(field.value) && mode === "notes") {
+            article.remove();
+            updateCollectionCount("notes");
+          }
         }, 650);
       });
       body.append(field);
-      field.focus();
-    });
+      if (shouldFocus) field.focus();
+    }
+    note.addEventListener("click", function () { toggleNoteEditor(true); });
     actions.append(like, note);
     body.append(actions);
+    if (showNote) toggleNoteEditor(false);
     article.append(number, body);
     return article;
   }
@@ -1242,12 +1266,7 @@
     renderList();
   });
 
-  authTrigger.addEventListener("click", function () {
-    updateAuthUI();
-    if (!account.user) setAuthMode("signin");
-    hideAllPasswords();
-    authDialog.showModal();
-  });
+  authTrigger.addEventListener("click", openAuthDialog);
 
   document.getElementById("auth-close").addEventListener("click", function () { authDialog.close(); });
   authDialog.addEventListener("click", function (event) {
@@ -1398,6 +1417,77 @@
     appView.hidden=false; appView.className="app-grid"; appView.replaceChildren(overview);
     for (var n=range[0]; n<=range[1]; n++) appView.append(card("Bab " + n, recaps[group][n - range[0]], "?bab=" + n + "#reader"));
   }
+  function showCollectionState(title, message, needsLogin) {
+    showState(title, message, false);
+    if (!needsLogin) return;
+    var button = make("button", "state-action", "Masuk ke akun");
+    button.type = "button";
+    button.addEventListener("click", openAuthDialog);
+    stateBox.querySelector(".state-card").append(button);
+  }
+  function updateCollectionCount(collectionType) {
+    var count = list.children.length;
+    resultMeta.hidden = false;
+    resultMeta.textContent = collectionType === "saved" ? count + " sloka tersimpan" : count + " catatan";
+    if (count > 0) {
+      stateBox.replaceChildren();
+      return;
+    }
+    showCollectionState(
+      collectionType === "saved" ? "Belum ada sloka tersimpan" : "Belum ada catatan",
+      collectionType === "saved"
+        ? "Tekan tombol Simpan pada sloka yang ingin kamu baca kembali."
+        : "Buka sebuah sloka lalu tekan Catatan untuk menulis refleksimu.",
+      false
+    );
+  }
+  function showCollection(collectionType) {
+    var collectionName = collectionType === "saved" ? "Sloka Tersimpan" : "Catatan";
+    home.hidden = true;
+    chapterHero.hidden = true;
+    reader.hidden = false;
+    toolbar.hidden = true;
+    resultMeta.hidden = true;
+    document.getElementById("sources").hidden = true;
+    list.classList.remove("random-feed");
+    list.replaceChildren();
+    stateBox.replaceChildren();
+    var header = make("section", "collection-header");
+    header.append(
+      make("p", "eyebrow", "Akun Gītā Bali"),
+      make("h1", "", collectionName),
+      make("p", "", collectionType === "saved"
+        ? "Kumpulan sloka yang kamu simpan untuk dibaca kembali."
+        : "Refleksi pribadi yang terhubung dengan setiap sloka.")
+    );
+    reader.insertBefore(header, toolbar);
+    document.title = collectionName + " — Gītā Bali";
+    authReady.then(function () {
+      if (!account.user) {
+        showCollectionState("Masuk untuk melihat " + collectionName.toLowerCase(), "Data fitur ini disimpan terpisah untuk setiap akun.", true);
+        return null;
+      }
+      return Promise.all(Object.keys(chapters).map(function (key) {
+        return fetch(chapters[key]).then(function (response) {
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          return response.json();
+        });
+      }));
+    }).then(function (all) {
+      if (!all) return;
+      all.forEach(function (data) {
+        state.data = data;
+        data.sloka.forEach(function (sloka) {
+          var key = accountKey(data.bab, sloka.no);
+          var included = collectionType === "saved" ? account.saved.has(key) : filled(account.notes.get(key));
+          if (included) list.append(renderVerse(sloka, collectionType === "notes"));
+        });
+      });
+      updateCollectionCount(collectionType);
+    }).catch(function () {
+      showCollectionState("Data belum dapat dimuat", "Periksa koneksi internet lalu muat ulang halaman.", false);
+    });
+  }
   function showRandom() {
     var keys = Object.keys(chapters);
     Promise.all([authReady].concat(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); }))).then(function(results){
@@ -1439,6 +1529,8 @@
   authReady = initializeAuth();
   if (mode === "explore") { showExplore(); return; }
   if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
+  if (mode === "saved") { showCollection("saved"); return; }
+  if (mode === "notes") { showCollection("notes"); return; }
   if (mode === "random") { showRandom(); return; }
   if (!chapters[chapter]) {
     document.title = "Gītā Bali — Ruang Baca";
