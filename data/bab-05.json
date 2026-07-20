@@ -1,0 +1,424 @@
+{
+  "bab": 5,
+  "judul": {
+    "sanskrit": "Karma-sannyāsa-yoga",
+    "id": "Karma Sannyāsa Yoga",
+    "ban": "Karma sannyasa yoga",
+    "en": "Karma Sannyasa Yoga"
+  },
+  "jumlah_sloka": 29,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 5",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "अर्जुन उवाच । संन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि । यच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम् ॥ ५.१ ॥",
+      "iast": "arjuna uvāca | saṃnyāsaṃ karmaṇāṃ kṛṣṇa punaryogaṃ ca śaṃsasi | yacchreya etayorekaṃ tanme brūhi suniścitam || 5.1 ||",
+      "id": "5.1 Arjuna berkata Penolakan perbuatan, ya Krishna, pujilah Engkau, dan sekali lagi Yoga. Katakan padaku secara meyakinkan mana yang lebih baik di antara keduanya.",
+      "ban": "5.1 Arjuna ngandika Penolakan laksana, duh Sang Kresna, muji Palungguh IRatu, tur malih Yoga. Orahang teken tiang secara konklusif, ane encen ane melahan di antarane makakalih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.1 Arjuna says Renunciation of actions, O Krishna, praise You, and again Yoga. Tell me conclusively which is better between the two."
+    },
+    {
+      "no": 2,
+      "devanagari": "श्रीभगवानुवाच । संन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ । तयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते ॥ ५.२ ॥",
+      "iast": "śrībhagavānuvāca | saṃnyāsaḥ karmayogaśca niḥśreyasakarāvubhau | tayostu karmasaṃnyāsātkarmayogo viśiṣyate || 5.2 ||",
+      "id": "5.2 Sang Bhagavā bersabda Penyerahan keduniawian dan tindakan Yoga keduanya menuntun menuju kebahagiaan tertinggi; namun di antara keduanya, Yoga tindakan lebih unggul daripada penolakan terhadap tindakan.",
+      "ban": "5.2 Ida Sang Hyang Widhi Wasa ngandika Penolakan jagat miwah ngamargiang Yoga makakalih ngawinang karahayuan sane pinih utama; nanging saking makakalih punika, Yoga parilaksana punika unggul ring penolakan parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.2 The Blessed One said Renunciation of the world and the practice of Yoga both lead to supreme happiness; but of the two, the Yoga of action is superior to the renunciation of action."
+    },
+    {
+      "no": 3,
+      "devanagari": "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति । निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते ॥ ५.३ ॥",
+      "iast": "jñeyaḥ sa nityasaṃnyāsī yo na dveṣṭi na kāṅkṣati | nirdvandvo hi mahābāho sukhaṃ bandhātpramucyate || 5.3 ||",
+      "id": "5.3 Ia harus dikenal sebagai Sannyasi abadi yang tidak membenci atau berkeinginan; karena, terbebas dari pasangan yang berlawanan, wahai Arjuna yang berlengan perkasa, ia dengan mudah terbebas dari belenggu.",
+      "ban": "5.3 Ida patut kauningin pinaka Sannyasi langgeng sane nenten geting utawi meled; santukan, kabebasang saking pasangan sane matungkalikan, duh Sang Arjuna sane mawisesa, ida dangan kabebasang saking ikatan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.3 He should be known as the eternal Sannyasi who does not hate or desire; for, freed from the pair of opposites, O mighty-armed Arjuna, he is easily freed from bondage."
+    },
+    {
+      "no": 4,
+      "devanagari": "साङ्ख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः । एकमप्यास्थितः सम्यगुभयोर्विन्दते फलम् ॥ ५.४ ॥",
+      "iast": "sāṅkhyayogau pṛthagbālāḥ pravadanti na paṇḍitāḥ | ekamapyāsthitaḥ samyagubhayorvindate phalam || 5.4 ||",
+      "id": "5.4 Anak-anak, bukan orang bijak, berbicara tentang pengetahuan dan Yoga tindakan atau pelaksanaan tindakan seolah-olah keduanya berbeda dan berbeda; dia yang benar-benar mantap pada satu hal akan memperoleh buah dari keduanya.",
+      "ban": "5.4 Anak alit, boya ja wiku, maosang indik kaweruhan miwah Yoga parilaksana utawi pamargin parilaksana sakadi mapasahan tur mabinayan; anake sane sujati-sujati matekad ring satunggil paindikan, ipun pacang molihang woh saking makakalih punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.4 Children, not sages, speak of knowledge and Yoga of action or performance of action as if they were separate and distinct; he who is truly determined in one thing will reap the fruits of both."
+    },
+    {
+      "no": 5,
+      "devanagari": "यत्साङ्ख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते । एकं साङ्ख्यं च योगं च यः पश्यति स पश्यति ॥ ५.५ ॥",
+      "iast": "yatsāṅkhyaiḥ prāpyate sthānaṃ tadyogairapi gamyate | ekaṃ sāṅkhyaṃ ca yogaṃ ca yaḥ paśyati sa paśyati || 5.5 ||",
+      "id": "5.5 Tempat yang dicapai oleh para Sankhya atau Jnani dicapai oleh para Yogi (Karma Yogi). Dia melihat, siapa yang melihat pengetahuan dan pelaksanaan tindakan (Karma Yoga) sebagai satu kesatuan.",
+      "ban": "5.5 Genah sane kacunduk olih para Sankhya utawi Jnani punika kacunduk olih para Yogi (Karma Yogi). Ida nyingakin, sane nyingakin kaweruhan lan pamargin parilaksana (Karma Yoga) dados siki satuan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.5 The place reached by the Sankhyas or Jnanis is reached by the Yogis (Karma Yogis). He sees, who sees knowledge and performance of action (Karma Yoga) as one unit."
+    },
+    {
+      "no": 6,
+      "devanagari": "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः । योगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति ॥ ५.६ ॥",
+      "iast": "saṃnyāsastu mahābāho duḥkhamāptumayogataḥ | yogayukto munirbrahma nacireṇādhigacchati || 5.6 ||",
+      "id": "5.6 Namun pelepasan keduniawian, wahai Arjuna yang berlengan perkasa, sulit dicapai tanpa Yoga; orang bijak yang selaras dengan Yoga dengan kejam pergi menemui Brahman.",
+      "ban": "5.6 Nanging panulak, duh Sang Arjuna sane mawisesa, meweh pacang kapolihang tan wenten Yoga; para resi sane anut ring Yoga kejam lunga matemu ring Brahman.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.6 But renunciation, O mighty-armed Arjuna, is difficult to achieve without Yoga; the sages in harmony with Yoga cruelly went to meet Brahman."
+    },
+    {
+      "no": 7,
+      "devanagari": "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः । सर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते ॥ ५.७ ॥",
+      "iast": "yogayukto viśuddhātmā vijitātmā jitendriyaḥ | sarvabhūtātmabhūtātmā kurvannapi na lipyate || 5.7 ||",
+      "id": "5.7 Dia yang mengabdi pada jalan perbuatan, yang pikirannya murni, yang telah mengendalikan diri, yang telah menundukkan inderanya dan yang menyadari Dirinya sebagai Diri dalam semua makhluk, meskipun bertindak, tidaklah ternoda.",
+      "ban": "5.7 Sang sane bakti ring pamargin laksana, sane pikayunannyane suci, sane sampun ngeret raga, sane sampun ngasorang indriya tur sane nyadarin raga pinaka Sang Hyang Atma ring sarwa prani, yadiastun malaksana, nenten leteh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.7 He who is devoted to the path of action, whose mind is pure, who has controlled himself, who has subdued his senses and who realizes Himself as the Self in all beings, despite acting, is not defiled."
+    },
+    {
+      "no": 8,
+      "devanagari": "नैव किञ्चित्करोमीति युक्तो मन्येत तत्त्ववित् । पश्यञ्शृण्वन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपञ्श्वसन् ॥ ५.८ ॥",
+      "iast": "naiva kiñcitkaromīti yukto manyeta tattvavit | paśyañśruṇvanspṛśañjighrannaśnangacchansvapañśvasan || 5.8 ||",
+      "id": "5.8 “Aku tidak melakukan apa pun,” demikianlah orang yang mengetahui Kebenaran akan berpikir melihat, mendengar, menyentuh, mencium, makan, pergi, tidur, bernapas.",
+      "ban": "5.8 “Tiang tusing nglaksanayang apa-apa,” keto anake ane nawang Kasujatian lakar makeneh ningalin, ningeh, ngusud, ngambu, ngajeng, majalan, pules, ngambekang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.8 “I do nothing,” so one who knows the Truth will think seeing, hearing, touching, smelling, eating, going, sleeping, breathing."
+    },
+    {
+      "no": 9,
+      "devanagari": "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि । इन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन् ॥ ५.९ ॥",
+      "iast": "pralapanvisṛjangṛhṇannunmiṣannimiṣannapi | indriyāṇīndriyārtheṣu vartanta iti dhārayan || 5.9 ||",
+      "id": "5.9 Berbicara, melepaskan, merampas, membuka dan menutup mata yakin bahwa indra-indra bergerak di antara objek-objek indera.",
+      "ban": "5.9 Mabebaosan, ngelepasin, ngerebut, mukak lan nutupin mata punika yakin yening indriya punika mamargi ring pantaraning benda indriya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.9 Talking, releasing, seizing, opening and closing the eyes is convinced that the senses move between sense objects."
+    },
+    {
+      "no": 10,
+      "devanagari": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥ ५.१० ॥",
+      "iast": "brahmaṇyādhāya karmāṇi saṅgaṃ tyaktvā karoti yaḥ | lipyate na sa pāpena padmapatramivāmbhasā || 5.10 ||",
+      "id": "5.10 Barangsiapa melakukan perbuatan, mempersembahkannya kepada Brahman, dan melepaskan kemelekatan, tidak ternoda oleh dosa, seperti halnya daun teratai tidak ternoda oleh air.",
+      "ban": "5.10 Sapasiraja sane ngamargiang parilaksana, ngaturang ring Brahman, tur ngelepasin rasa melekat, tan keni leteh antuk dosa, sakadi don teratai tan keni leteh antuk toya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.10 Whoever performs deeds, offers them to Brahman, and gives up attachment, is not stained by sin, just as a lotus leaf is not stained by water."
+    },
+    {
+      "no": 11,
+      "devanagari": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि । योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वात्मशुद्धये ॥ ५.११ ॥",
+      "iast": "kāyena manasā buddhyā kevalairindriyairapi | yoginaḥ karma kurvanti saṅgaṃ tyaktvātmaśuddhaye || 5.11 ||",
+      "id": "5.11 Para yogi, setelah meninggalkan keterikatan, melakukan tindakan hanya dengan tubuh, pikiran, kecerdasan, dan bahkan indera, untuk pemurnian diri.",
+      "ban": "5.11 Para yogi, sampun ninggalin rasa melekat, ngelaksanayang parilaksana wantah antuk angga, pikayunan, budi, lan malah indriya, anggen nyuciang raga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.11 Yogis, having abandoned attachment, perform actions solely with the body, mind, intellect, and even the senses, for self-purification."
+    },
+    {
+      "no": 12,
+      "devanagari": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम् । अयुक्तः कामकारेण फले सक्तो निबध्यते ॥ ५.१२ ॥",
+      "iast": "yuktaḥ karmaphalaṃ tyaktvā śāntimāpnoti naiṣṭhikīm | ayuktaḥ kāmakāreṇa phale sakto nibadhyate || 5.12 ||",
+      "id": "5.12 Orang yang bersatu (yang seimbang atau seimbang) yang telah meninggalkan buah perbuatan akan mencapai kedamaian abadi: hanya mereka yang tidak bersatu (yang tidak stabil atau tidak seimbang) yang terdorong oleh nafsu, melekat pada buahnya, yang terikat.",
+      "ban": "5.12 Sang sane masikian (sane seimbang utawi seimbang) sane sampun nilar woh-wohan parilaksana pacang ngamolihang sutrepti sane langgeng: wantah sang sane nenten masikian (sane nenten tegteg utawi nenten seimbang) sane kagentosin antuk nafsu, neket ring woh-wohannyane, sane kaiket.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.12 Those who are united (who are balanced or balanced) who have abandoned the fruits of action will attain eternal peace: only those who are not united (who are unstable or unbalanced) who are driven by passion, clinging to their fruits, are bound."
+    },
+    {
+      "no": 13,
+      "devanagari": "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी । नवद्वारे पुरे देही नैव कुर्वन्न कारयन् ॥ ५.१३ ॥",
+      "iast": "sarvakarmāṇi manasā saṃnyasyāste sukhaṃ vaśī | navadvāre pure dehī naiva kurvanna kārayan || 5.13 ||",
+      "id": "5.13 Secara mental meninggalkan segala tindakan dan mengendalikan diri, orang yang berwujud tersebut beristirahat dengan bahagia di kota sembilan gerbang, tidak bertindak atau menyebabkan orang lain (tubuh dan indera) bertindak.",
+      "ban": "5.13 Mental ninggalin sakancan parilaksana tur ngendaliang raga, sang sane kawujudang mararian bagia ring kota gapura sia, nenten malaksana utawi ngawinang anak tiosan (raga lan indriya) malaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.13 Mentally abandoning all action and controlling himself, the embodied person rests happily in the city of nine gates, neither acting nor causing others (body and senses) to act."
+    },
+    {
+      "no": 14,
+      "devanagari": "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः । न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते ॥ ५.१४ ॥",
+      "iast": "na kartṛtvaṃ na karmāṇi lokasya sṛjati prabhuḥ | na karmaphalasaṃyogaṃ svabhāvastu pravartate || 5.14 ||",
+      "id": "5.14 Tuhan tidak menciptakan hak pilihan atau tindakan bagi dunia, atau kesatuan dengan hasil tindakan. Namun Alamlah yang bertindak.",
+      "ban": "5.14 Ida Sang Hyang Widhi nenten ngardi agensi utawi parilaksana antuk jagate, utawi kasatuan sareng pikolih parilaksana. Nanging sane malaksana wantah Alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.14 God does not create agency or action for the world, or unity with the results of action. But it is Nature that acts."
+    },
+    {
+      "no": 15,
+      "devanagari": "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः । अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः ॥ ५.१५ ॥",
+      "iast": "nādatte kasyacitpāpaṃ na caiva sukṛtaṃ vibhuḥ | ajñānenāvṛtaṃ jñānaṃ tena muhyanti jantavaḥ || 5.15 ||",
+      "id": "5.15 Tuhan tidak mengambil kekurangan atau bahkan kebaikan siapa pun; pengetahuan diselimuti oleh ketidaktahuan, makhluk-makhluk itu tertipu.",
+      "ban": "5.15 Ida Sang Hyang Widi Wasa nenten ngicalang kakirangan wiadin kautaman sapasira ugi; kaweruhan punika kamendung antuk tan uning, sarwa prani sane katipu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.15 God does not take away anyone's shortcomings or even virtues; knowledge is clouded by ignorance, beings are deceived."
+    },
+    {
+      "no": 16,
+      "devanagari": "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः । तेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम् ॥ ५.१६ ॥",
+      "iast": "jñānena tu tadajñānaṃ yeṣāṃ nāśitamātmanaḥ | teṣāmādityavajjñānaṃ prakāśayati tatparam || 5.16 ||",
+      "id": "5.16 Tetapi bagi mereka yang ketidaktahuannya dihancurkan oleh pengetahuan tentang Diri, seperti matahari, pengetahuan mengungkapkan Yang Maha Kuasa (Brahman).",
+      "ban": "5.16 Nanging majeng ring sang sane tan uningnyane karusak antuk kaweruhan indik Raga, sakadi suryane, kaweruhan punika ngungkapang Sang Maha Wisesa (Brahman).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.16 But for those whose ignorance is destroyed by the knowledge of the Self, like the sun, knowledge reveals the Almighty (Brahman)."
+    },
+    {
+      "no": 17,
+      "devanagari": "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः । गच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः ॥ ५.१७ ॥",
+      "iast": "tadbuddhayastadātmānastanniṣṭhāstatparāyaṇāḥ | gacchantyapunarāvṛttiṃ jñānanirdhūtakalmaṣāḥ || 5.17 ||",
+      "id": "5.17 Kecerdasan mereka terserap dalam Itu, diri mereka adalah Itu, kokoh dalam Itu, dengan Itu sebagai tujuan tertinggi mereka, mereka pergi ke tempat yang tidak dapat kembali lagi, dosa-dosa mereka terhapuskan dengan pengetahuan.",
+      "ban": "5.17 Kawikanan ipun ngresep ring Ida, ipun ngraga Ida, mapaiketan ring Ida, antuk Ida pinaka tatujon sane pinih luhur, ipun lunga ka genah sane tan mawali, dosa-dosan ipun kacuci antuk kaweruhan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.17 Their intelligence is absorbed in It, they themselves are It, established in It, with It as their highest goal, they go to the place of no return, their sins are washed away by knowledge."
+    },
+    {
+      "no": 18,
+      "devanagari": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि । शुनि चैव श्वपाके च पण्डिताः समदर्शिनः ॥ ५.१८ ॥",
+      "iast": "vidyāvinayasampanne brāhmaṇe gavi hastini | śuni caiva śvapāke ca paṇḍitāḥ samadarśinaḥ || 5.18 ||",
+      "id": "5.18 Orang bijak memandang dengan tajam seorang Brahmana yang memiliki pembelajaran dan kerendahan hati, pada seekor sapi, pada seekor gajah, dan bahkan pada seekor anjing dan orang buangan.",
+      "ban": "5.18 Sang wicaksana nyingakin tajem ring Brahmana sane malajah tur ngasorang raga, ring sampi, ring gajah, lan taler ring asu lan anak sane katundung.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.18 The sage looks sharply at a Brahmana of learning and humility, at a cow, at an elephant, and even at a dog and an outcast."
+    },
+    {
+      "no": 19,
+      "devanagari": "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः । निर्दोषं हि समं ब्रह्म तस्माद् ब्रह्मणि ते स्थिताः ॥ ५.१९ ॥",
+      "iast": "ihaiva tairjitaḥ sargo yeṣāṃ sāmye sthitaṃ manaḥ | nirdoṣaṃ hi samaṃ brahma tasmād brahmaṇi te sthitāḥ || 5.19 ||",
+      "id": "5.19 Bahkan di sini (di dunia ini) kelahiran (segalanya) diatasi oleh mereka yang pikirannya bertumpu pada realitas; Brahman sungguh tak bernoda dan sempurna; oleh karena itu mereka mantap dalam Brahman.",
+      "ban": "5.19 Yadiastun iriki (ring jagate puniki) embas (sakancan sane wenten) kaon olih sang sane pikayunannyane magenah ring kasujatian; Brahman punika sujati tan paceda tur paripurna; punika mawinan ipun sareng sami kagenahang ring Brahman.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.19 Even here (in this world) the birth (of everything) is overcome by those whose minds rest on reality; Brahman is truly immaculate and perfect; therefore they are established in Brahman."
+    },
+    {
+      "no": 20,
+      "devanagari": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम् । स्थिरबुद्धिरसम्मूढो ब्रह्मविद् ब्रह्मणि स्थितः ॥ ५.२० ॥",
+      "iast": "na prahṛṣyetpriyaṃ prāpya nodvijetprāpya cāpriyam | sthirabuddhirasammūḍho brahmavid brahmaṇi sthitaḥ || 5.20 ||",
+      "id": "5.20 Beristirahat dalam Brahman, dengan kecerdasan yang mantap dan tidak tertipu, orang yang mengetahui Brahman tidak bergembira saat memperoleh apa yang menyenangkan atau bersedih karena memperoleh apa yang tidak menyenangkan.",
+      "ban": "5.20 Mararian ring Brahman, antuk pikayunan sane kukuh tur tan keni tipu, sang sane uning ring Brahman nenten seneng rikala ngamolihang sane ngranayang bagia taler nenten sedih rikala ngamolihang sane tan ngranayang bagia.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.20 Resting in Brahman, with a steady and undeceived intellect, one who knows Brahman does not rejoice when he obtains what is pleasant nor is sad when he obtains what is unpleasant."
+    },
+    {
+      "no": 21,
+      "devanagari": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम् । स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते ॥ ५.२१ ॥",
+      "iast": "bāhyasparśeṣvasaktātmā vindatyātmani yatsukham | sa brahmayogayuktātmā sukhamakṣayamaśnute || 5.21 ||",
+      "id": "5.21 Dengan diri yang tidak terikat pada kontak eksternal ia menemukan kebahagiaan dalam Diri; dengan diri terlibat dalam meditasi Brahman ia mencapai kebahagiaan tanpa akhir.",
+      "ban": "5.21 Antuk raga sane nenten mapaiketan sareng kontak jaba ipun manggihin karahayuan ring raga; antuk ngamargiang semedi Brahmana ida ngamolihang karahayuan sane nenten wenten telasnyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.21 With the self unattached to external contacts he finds happiness in the Self; by engaging in Brahman meditation he attains endless bliss."
+    },
+    {
+      "no": 22,
+      "devanagari": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते । आद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः ॥ ५.२२ ॥",
+      "iast": "ye hi saṃsparśajā bhogā duḥkhayonaya eva te | ādyantavantaḥ kaunteya na teṣu ramate budhaḥ || 5.22 ||",
+      "id": "5.22 Kenikmatan yang timbul dari kontak hanyalah penghasil rasa sakit, karena mereka mempunyai awal dan akhir, wahai Arjuna; orang bijak tidak bersukacita karenanya.",
+      "ban": "5.22 Kasukan sane metu saking kontak wantah ngawetuang rasa sakit, santukan wenten pangawit lan pamuput, duh Sang Arjuna; anake sane wicaksana nenten seneng ring indike punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.22 The pleasures arising from contact are only the producers of pain, for they have a beginning and an end, O Arjuna; the wise do not rejoice in it."
+    },
+    {
+      "no": 23,
+      "devanagari": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात् । कामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः ॥ ५.२३ ॥",
+      "iast": "śaknotīhaiva yaḥ soḍhuṃ prākśarīravimokṣaṇāt | kāmakrodhodbhavaṃ vegaṃ sa yuktaḥ sa sukhī naraḥ || 5.23 ||",
+      "id": "5.23 Dia yang mampu, ketika masih di sini (di dunia ini), untuk menahan, sebelum pembebasan dari tubuh, dorongan yang muncul dari nafsu dan kemarahan, dia adalah seorang Yogi, dia adalah orang yang bahagia.",
+      "ban": "5.23 Ida sane prasida, rikala kantun iriki (ring jagate puniki), ngengkebang, sadurung kabebasang saking angga, dorongan sane metu saking nafsu lan gedeg, ida wantah Yogi, ida wantah jadma sane bagia.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.23 He who is able, while still here (in this world), to restrain, before liberation from the body, impulses arising from lust and anger, he is a Yogi, he is a happy person."
+    },
+    {
+      "no": 24,
+      "devanagari": "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः । स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति ॥ ५.२४ ॥",
+      "iast": "yo|antaḥsukho|antarārāmastathāntarjyotireva yaḥ | sa yogī brahmanirvāṇaṃ brahmabhūto|adhigacchati || 5.24 ||",
+      "id": "5.24 Dia yang bahagia di dalam, yang bersukacita di dalam, dan yang diterangi di dalam, Yogi tersebut mencapai kebebasan mutlak atau Moksha, dirinya menjadi Brahman.",
+      "ban": "5.24 Sang sane bagia ring jero, sane bagia ring jero, tur sane tercerahkan ring jero, punika Yogi ngamolihang kabebasan mutlak utawi Moksha, ragannyane dados Brahman.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.24 He who is happy within, who is joyful within, and who is enlightened within, that Yogi attains absolute liberation or Moksha, himself becoming Brahman."
+    },
+    {
+      "no": 25,
+      "devanagari": "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः । छिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः ॥ ५.२५ ॥",
+      "iast": "labhante brahmanirvāṇamṛṣayaḥ kṣīṇakalmaṣāḥ | chinnadvaidhā yatātmānaḥ sarvabhūtahite ratāḥ || 5.25 ||",
+      "id": "5.25 Para resi (Resi) memperoleh kebebasan absolut atau Moksha, mereka yang dosa-dosanya telah dihancurkan, yang dualitasnya (persepsi dualitas atau pengalaman pasangan yang berlawanan) terkoyak, yang mampu mengendalikan diri, dan bertekad untuk kesejahteraan semua makhluk.",
+      "ban": "5.25 Para rishi (Rishi) ngamolihang kebebasan mutlak utawi Moksha, sang sane dosa-dosannyane sampun karusak, sane dualisme (persepsi dualisme utawi pengalaman pasangan sane matungkasan) sampun kagebug, sane prasida ngendaliang raga, tur sampun katentuang antuk karahayuan makasami makhluk.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.25 The rishis (Rishis) attain absolute freedom or Moksha, those whose sins have been destroyed, whose duality (perception of duality or experience of pairs of opposites) is shattered, who are capable of self-control, and are determined for the welfare of all beings."
+    },
+    {
+      "no": 26,
+      "devanagari": "कामक्रोधवियुक्तानां यतीनां यतचेतसाम् । अभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम् ॥ ५.२६ ॥",
+      "iast": "kāmakrodhaviyuktānāṃ yatīnāṃ yatacetasām | abhito brahmanirvāṇaṃ vartate viditātmanām || 5.26 ||",
+      "id": "5.26 Kebebasan mutlak (atau kebahagiaan Brahmik) ada di semua sisi bagi para petapa yang mampu mengendalikan diri, bebas dari nafsu dan amarah, yang telah mengendalikan pikiran mereka dan yang telah merealisasikan Jati Diri.",
+      "ban": "5.26 Kebebasan mutlak (utawi karahayuan Brahma) wenten ring sajebag sisi majeng ring para tapa sane sampun ngendaliang raga, bebas saking nafsu lan gedeg, sane sampun ngendaliang pikayunan lan sane sampun nyadarin Raga Sane Jati.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.26 Absolute freedom (or Brahmic bliss) exists on all sides for ascetics who are self-controlled, free from passion and anger, who have controlled their minds and who have realized the True Self."
+    },
+    {
+      "no": 27,
+      "devanagari": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः । प्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ ॥ ५.२७ ॥",
+      "iast": "sparśānkṛtvā bahirbāhyāṃścakṣuścaivāntare bhruvoḥ | prāṇāpānau samau kṛtvā nāsābhyantaracāriṇau || 5.27 ||",
+      "id": "5.27 Menutup (semua) kontak luar dan memusatkan pandangan di antara kedua alis, mengatur napas keluar dan masuk yang bergerak di dalam lubang hidung.",
+      "ban": "5.27 Nutup (makasami) kontak eksternal lan ngutamayang tatapan ring pantaraning alis, ngatur bayu sane medal lan sane ngranjing sane magerak ring jeroning bolong irung.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.27 Closing (all) external contacts and focusing the gaze between the eyebrows, regulates the outgoing and incoming breath moving within the nostrils."
+    },
+    {
+      "no": 28,
+      "devanagari": "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः । विगतेच्छाभयक्रोधो यः सदा मुक्त एव सः ॥ ५.२८ ॥",
+      "iast": "yatendriyamanobuddhirmunirmokṣaparāyaṇaḥ | vigatecchābhayakrodho yaḥ sadā mukta eva saḥ || 5.28 ||",
+      "id": "5.28 Dengan pengendalian indera, pikiran dan intelek (selalu), dengan kebebasan sebagai tujuan tertingginya, bebas dari keinginan, ketakutan dan kemarahan, orang bijak benar-benar terbebaskan selamanya.",
+      "ban": "5.28 Antuk ngendaliang indria, pikayunan lan budi (setata), antuk kabebasan pinaka tatujonnyane sane pinih luhur, bebas saking pikayunan, takut lan gedeg, sang wicaksana sujati kabebasang salami-laminipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.28 With control of the senses, mind and intellect (always), with liberation as his highest goal, free from desire, fear and anger, the wise man is truly liberated forever."
+    },
+    {
+      "no": 29,
+      "devanagari": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम् । सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति ॥ ५.२९ ॥",
+      "iast": "bhoktāraṃ yajñatapasāṃ sarvalokamaheśvaram | suhṛdaṃ sarvabhūtānāṃ jñātvā māṃ śāntimṛcchati || 5.29 ||",
+      "id": "5.29 Dia yang mengenal Aku sebagai penikmat pengorbanan dan pertapaan, Penguasa seluruh alam dan sahabat semua makhluk, akan mencapai kedamaian.",
+      "ban": "5.29 Sang sane uning ring Titiang pinaka sang sane ngrasayang yadnya lan tabung, Ida Sang Hyang Widhi Wasa jagat sami tur sawitran sakancan sarwa prani, pacang ngamolihang karahayuan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.29 He who knows Me as the enjoyer of sacrifice and austerity, Lord of all the worlds and friend of all creatures, will attain peace."
+    }
+  ]
+}

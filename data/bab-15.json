@@ -1,0 +1,298 @@
+{
+  "bab": 15,
+  "judul": {
+    "sanskrit": "Puruṣottama-yoga",
+    "id": "Puruṣottama Yoga",
+    "ban": "Yoga Purusottama",
+    "en": "Puruṣottama Yoga"
+  },
+  "jumlah_sloka": 20,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 15",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् । छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ॥ १५.१ ॥",
+      "iast": "śrībhagavānuvāca | ūrdhvamūlamadhaḥśākhamaśvatthaṃ prāhuravyayam | chandāṃsi yasya parṇāni yastaṃ veda sa vedavit || 15.1 ||",
+      "id": "15.1 Sang Bhagavā bersabda Mereka (yang bijaksana) berbicara tentang pohon peepul yang tidak dapat dihancurkan, yang akarnya berada di atas dan bercabang di bawah, yang daunnya berbentuk meteran atau himne: siapa pun yang mengetahuinya adalah orang yang mengetahui Veda.",
+      "ban": "15.1 Ida Sang Maha Suci ngandika Ipun (sang wicaksana) maosang indik wit peepul sane tan prasida karusak, sane akahnyane ring baduur lan carangnyane ring sor, sane donnyane marupa meter utawi kidung: sapasira sane uning punika wantah sang sane uning ring Weda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.1 The Blessed One said They (the wise) speak of the indestructible peepul tree, whose roots are above and branches below, whose leaves are in the form of meters or hymns: whoever knows it is one who knows the Vedas."
+    },
+    {
+      "no": 2,
+      "devanagari": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा गुणप्रवृद्धा विषयप्रवालाः । अधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके ॥ १५.२ ॥",
+      "iast": "adhaścordhvaṃ prasṛtāstasya śākhā guṇapravṛddhā viṣayapravālāḥ | adhaśca mūlānyanusantatāni karmānubandhīni manuṣyaloke || 15.2 ||",
+      "id": "15.2 Cabang-cabangnya menyebar ke bawah dan ke atas, diberi makan oleh Guna; objek-objek indra adalah tunasnya; dan di bawahnya, di dunia manusia, terbentang akar-akarnya, yang memulai tindakan.",
+      "ban": "15.2 Carang-carangnyane nglimbak ka sor miwah ka duur, kaajengang olih sang Guna; benda indera inggih punika tunasnyane; tur ring sornyane, ring jagat manusa, magenah akah, sane ngawitin parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.2 Its branches spread downwards and upwards, fed by the Guna; the sense objects are its shoots; and beneath it, in the human world, lie the roots, which initiate action."
+    },
+    {
+      "no": 3,
+      "devanagari": "न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा । अश्वत्थमेनं सुविरूढमूलं असङ्गशस्त्रेण दृढेन छित्त्वा ॥ १५.३ ॥",
+      "iast": "na rūpamasyeha tathopalabhyate nānto na cādirna ca sampratiṣṭhā | aśvatthamenaṃ suvirūḍhamūlaṃ asaṅgaśastreṇa dṛḍhena chittvā || 15.3 ||",
+      "id": "15.3 Bentuknya tidak dirasakan di sini seperti itu, baik ujungnya, asal usulnya, fondasinya, maupun tempat peristirahatannya: setelah menebang pohon peepul yang berakar kuat ini dengan kapak kuat tanpa keterikatan.",
+      "ban": "15.3 Wangunnyane nenten karasayang iriki kadi asapunika, nenten muncuknyane, witnyane, dasarnyane, nenten genahnyane masandekan: sampun nebas wit peepul sane mawit saking akahnyane sane kukuh puniki antuk kapak sane sakti tan wenten sane melekat.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.3 Its form is not perceived here as such, neither its tip, its origin, its foundation, nor its resting place: having cut down this firmly rooted peepul tree with a powerful ax without attachment."
+    },
+    {
+      "no": 4,
+      "devanagari": "ततः पदं तत्परिमार्गितव्यं यस्मिन्गता न निवर्तन्ति भूयः । तमेव चाद्यं पुरुषं प्रपद्ये । यतः प्रवृत्तिः प्रसृता पुराणी ॥ १५.४ ॥",
+      "iast": "tataḥ padaṃ tatparimārgitavyaṃ yasmingatā na nivartanti bhūyaḥ | tameva cādyaṃ puruṣaṃ prapadye | yataḥ pravṛttiḥ prasṛtā purāṇī || 15.4 ||",
+      "id": "15.4 Maka tujuan itu harus dicari, dan setelah pergi tidak ada yang kembali lagi. Saya berlindung pada Purusha Purba yang mengalirkan aktivitas atau energi kuno.",
+      "ban": "15.4 Dadosne tatujon punika patut karereh, tur yening sampun lunga nenten wenten malih sane mawali. Titiang masayuban ring Purusha Primordial sane ngalir kegiatan utawi energi kuno.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.4 So the goal must be sought, and once gone there is no return. I take refuge in the Primordial Purusha that flows ancient activity or energy."
+    },
+    {
+      "no": 5,
+      "devanagari": "निर्मानमोहा जितसङ्गदोषा अध्यात्मनित्या विनिवृत्तकामाः । द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्- गच्छन्त्यमूढाः पदमव्ययं तत् ॥ १५.५ ॥",
+      "iast": "nirmānamohā jitasaṅgadoṣā adhyātmanityā vinivṛttakāmāḥ | dvandvairvimuktāḥ sukhaduḥkhasaṃjñaira- gacchantyamūḍhāḥ padamavyayaṃ tat || 15.5 ||",
+      "id": "15.5 Bebas dari kesombongan dan khayalan, menang atas kejahatan kemelekatan, berdiam terus-menerus dalam Diri, keinginan-keinginan mereka telah sepenuhnya ditolak, terbebas dari pasangan-pasangan yang berlawanan yang dikenal sebagai kesenangan dan kesakitan, orang-orang yang tidak tertipu mencapai tujuan abadi.",
+      "ban": "15.5 Bebas saking sombong lan ilusi, menang ring kacorahan sane melekat, tetep tan mari ring Raga, pikayunan ipun sampun jangkep katulak, bebas saking pasangan sane matungkalikan sane kaloktah dados kesenengan lan rasa sakit, sane tan keni bobab ngamolihang tatujon sane langgeng.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.5 Free from pride and delusion, victorious over the evils of attachment, abiding continually in the Self, their desires having been completely rejected, freed from the pairs of opposites known as pleasure and pain, the undeceived attain the eternal goal."
+    },
+    {
+      "no": 6,
+      "devanagari": "न तद्भासयते सूर्यो न शशाङ्को न पावकः । यद्गत्वा न निवर्तन्ते तद्धाम परमं मम ॥ १५.६ ॥",
+      "iast": "na tadbhāsayate sūryo na śaśāṅko na pāvakaḥ | yadgatvā na nivartante taddhāma paramaṃ mama || 15.6 ||",
+      "id": "15.6 Baik matahari, bulan, maupun api tidak menerangi di sana; setelah pergi ke sana mereka tidak kembali; itulah tempat tinggalKu yang tertinggi.",
+      "ban": "15.6 Nenten wenten surya, bulan miwah geni sane nyunarin irika. sampun lunga mrika ipun nenten mawali; punika genah Titiange sane pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.6 Neither the sun, nor the moon, nor fire illuminates there; having gone there they did not return; that is My highest abode."
+    },
+    {
+      "no": 7,
+      "devanagari": "ममैवांशो जीवलोके जीवभूतः सनातनः । मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति ॥ १५.७ ॥",
+      "iast": "mamaivāṃśo jīvaloke jīvabhūtaḥ sanātanaḥ | manaḥṣaṣṭhānīndriyāṇi prakṛtisthāni karṣati || 15.7 ||",
+      "id": "15.7 Bagian kekal dari diri-Ku yang telah menjadi jiwa yang hidup di dunia kehidupan, menarik ke (lima) indera dengan pikiran untuk yang keenam, berdiam di Alam.",
+      "ban": "15.7 Bagian langgeng Titiang sane sampun dados atma sane maurip ring jagat sang maurip, ngaptiang (lima) indriya antuk pikayunan antuk sane kaping nem, magenah ring Alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.7 The eternal part of Me that has become a living soul in the world of the living, appealing to the (five) senses with the mind for the sixth, resides in Nature."
+    },
+    {
+      "no": 8,
+      "devanagari": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः । गृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात् ॥ १५.८ ॥",
+      "iast": "śarīraṃ yadavāpnoti yaccāpyutkrāmatīśvaraḥ | gṛhitvaitāni saṃyāti vāyurgandhānivāśayāt || 15.8 ||",
+      "id": "15.8 Ketika Tuhan (sebagai jiwa individu) memperoleh suatu tubuh dan ketika Dia meninggalkannya, Dia mengambilnya dan pergi (bersama mereka) seperti angin mengambil aroma dari tempat duduk mereka (bunga, dll.).",
+      "ban": "15.8 Rikala Ida Sang Hyang Widhi (dados jiwa soang-soang) ngamolihang angga tur rikala Ida ninggalin angga, Ida ngambil tur mamargi (sareng ipun) sakadi angin ngambil ambun linggih ipun (bunga, miwah sane lianan).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.8 When God (as an individual soul) acquires a body and when He leaves it, He takes it and goes (with them) as the wind takes the fragrance of their seat (flowers, etc.)."
+    },
+    {
+      "no": 9,
+      "devanagari": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च । अधिष्ठाय मनश्चायं विषयानुपसेवते ॥ १५.९ ॥",
+      "iast": "śrotraṃ cakṣuḥ sparśanaṃ ca rasanaṃ ghrāṇameva ca | adhiṣṭhāya manaścāyaṃ viṣayānupasevate || 15.9 ||",
+      "id": "15.9 Dengan menguasai telinga, mata, sentuhan, pengecapan dan penciuman, serta pikiran, ia menikmati objek-objek indera.",
+      "ban": "15.9 Antuk nguasayang kuping, panyingakan, sentuhan, rasa lan ambu, miwah pikayunan, ipun ngrasayang benda indera.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.9 By mastering the ears, eyes, touch, taste and smell, and the mind, he enjoys sense objects."
+    },
+    {
+      "no": 10,
+      "devanagari": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् । विमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः ॥ १५.१० ॥",
+      "iast": "utkrāmantaṃ sthitaṃ vāpi bhuñjānaṃ vā guṇānvitam | vimūḍhā nānupaśyanti paśyanti jñānacakṣuṣaḥ || 15.10 ||",
+      "id": "15.10 Orang yang tertipu tidak melihat Dia yang pergi, tinggal dan menikmati; tetapi mereka yang memiliki mata pengetahuan memandang Dia.",
+      "ban": "15.10 Anake sane katipu nenten nyingakin Ida sane mamargi, tetep tur ngrasayang; nanging anake sane madue panyingakan sane wicaksana, ipun pacang ngantenang Ida.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.10 The deceived do not see Him who goes, remains and enjoys; but those who have the eye of knowledge see Him."
+    },
+    {
+      "no": 11,
+      "devanagari": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् । यतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः ॥ १५.११ ॥",
+      "iast": "yatanto yoginaścainaṃ paśyantyātmanyavasthitam | yatanto|apyakṛtātmāno nainaṃ paśyantyacetasaḥ || 15.11 ||",
+      "id": "15.11 Para Yogi yang berjuang (untuk kesempurnaan) melihat Dia berdiam di dalam Diri; tetapi, orang yang tidak beradab dan tidak cerdas, meskipun berusaha keras, tidak melihat Dia.",
+      "ban": "15.11 Yogi sane mautsaha (mangda prasida paripurna) nyingakin Ida malingga ring sajeroning Raga; nanging, jadma sane nenten beradab lan nenten wikan, yadiastun sampun mautsaha, nenten nyingakin Ida.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.11 Yogis who strive (for perfection) see Him dwelling within the Self; but, uncivilized and unintelligent people, despite their best efforts, do not see Him."
+    },
+    {
+      "no": 12,
+      "devanagari": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् । यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम् ॥ १५.१२ ॥",
+      "iast": "yadādityagataṃ tejo jagadbhāsayate|akhilam | yaccandramasi yaccāgnau tattejo viddhi māmakam || 15.12 ||",
+      "id": "15.12 Cahaya yang berada di matahari menerangi seluruh dunia, cahaya yang ada di bulan dan di dalam api mengetahui bahwa cahaya itu adalah milik-Ku.",
+      "ban": "15.12 Galang sane wenten ring suryane nyunarin jagate sami, galang sane wenten ring bulan miwah ring genine uning mungguing galang punika druen Tiange.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.12 The light that is in the sun illuminates the whole world, the light that is in the moon and in the fire knows that the light is Mine."
+    },
+    {
+      "no": 13,
+      "devanagari": "गामाविश्य च भूतानि धारयाम्यहमोजसा । पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः ॥ १५.१३ ॥",
+      "iast": "gāmāviśya ca bhūtāni dhārayāmyahamojasā | puṣṇāmi cauṣadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ || 15.13 ||",
+      "id": "15.13 Menembus bumi Aku menopang semua makhluk dengan energi (Ku); dan setelah menjadi bulan berair, aku menyuburkan semua tumbuh-tumbuhan.",
+      "ban": "15.13 Nembus gumi Titiang ngajegang sakancan sarwa prani antuk (Titiang) tenaga; tur sampun dados bulan sane madaging toya, titiang ngapupuk sakancan entik-entikan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.13 Penetrating the earth I sustain all beings with (My) energy; and having become a watery moon, I fertilized all the plants."
+    },
+    {
+      "no": 14,
+      "devanagari": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः । प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम् ॥ १५.१४ ॥",
+      "iast": "ahaṃ vaiśvānaro bhūtvā prāṇināṃ dehamāśritaḥ | prāṇāpānasamāyuktaḥ pacāmyannaṃ caturvidham || 15.14 ||",
+      "id": "15.14 Setelah menjadi api Vaisvanara, Saya berdiam di dalam tubuh makhluk hidup dan, berhubungan dengan Prana dan Apana, mencerna empat jenis makanan.",
+      "ban": "15.14 Sampun dados geni Waiswanara, titiang magenah ring angga sarira sane maurip tur, mapaiketan sareng Prana lan Apana, nyedarang catur soroh ajeng-ajengan punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.14 Having become the fire of Vaisvanara, I resided in the body of a living being and, in contact with Prana and Apana, digested the four kinds of food."
+    },
+    {
+      "no": 15,
+      "devanagari": "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनञ्च । वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥ १५.१५ ॥",
+      "iast": "sarvasya cāhaṃ hṛdi sanniviṣṭo mattaḥ smṛtirjñānamapohanañca | vedaiśca sarvairahameva vedyo vedāntakṛdvedavideva cāham || 15.15 ||",
+      "id": "15.15 Dan aku duduk di hati semua orang; dari-Ku ada ingatan dan pengetahuan, serta ketidakhadirannya. Akulah yang sesungguhnya yang harus diketahui oleh semua Veda; Aku memang penulis Vedanta dan akulah yang mengetahui Veda.",
+      "ban": "15.15 Ulun malinggih di keneh manusane makejang. saking Titiang wenten eling lan kaweruhan, taler tan wentennyane. Titiang wantah sang sujati sane patut kauningin olih samian Weda; Titiang wiakti sang ngawi Wedanta taler titiang sane wikan ring Weda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.15 And I sit in the hearts of all people; from Me there is memory and knowledge, as well as their absence. I am the real one whom all the Vedas must know; I am indeed the author of Vedanta and I am the one who knows the Vedas."
+    },
+    {
+      "no": 16,
+      "devanagari": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च । क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते ॥ १५.१६ ॥",
+      "iast": "dvāvimau puruṣau loke kṣaraścākṣara eva ca | kṣaraḥ sarvāṇi bhūtāni kūṭastho|akṣara ucyate || 15.16 ||",
+      "id": "15.16 Ada dua Purusha di dunia ini, yang dapat binasa dan yang tidak dapat binasa. Semua makhluk begitu \nyang fana dan Kutastha yang tidak berubah disebut yang tidak dapat binasa.",
+      "ban": "15.16 Wenten kalih Purusha ring jagate puniki, sane rusak miwah sane tan rusak. Samian sarwa prani punika kadi asapunika . \nsane padem miwah sane tan mauwah Kutastha punika kabaos sane tan prasida rusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.16 There are two Purushas in this world, the perishable and the imperishable. All creatures are like that \nthe mortal and the changeless Kutastha are called the imperishable."
+    },
+    {
+      "no": 17,
+      "devanagari": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युधाहृतः । यो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः ॥ १५.१७ ॥",
+      "iast": "uttamaḥ puruṣastvanyaḥ paramātmetyudhāhṛtaḥ | yo lokatrayamāviśya bibhartyavyaya īśvaraḥ || 15.17 ||",
+      "id": "15.17 Namun yang berbeda adalah Purusha Tertinggi yang disebut Diri tertinggi, Tuhan yang tidak dapat dihancurkan, Yang meliputi tiga dunia, menopang mereka.",
+      "ban": "15.17 Nanging sane mabinayan wantah Sang Purusha sane pinih utama sane kabaos Sang Hyang Atma sane pinih utama, Sang Hyang Widhi Wasa sane nenten prasida karusak, sane nglikub jagat tetiga, ngajegang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.17 But what is different is the Supreme Purusha who is called the supreme Self, the indestructible Lord, Who pervades the three worlds, sustaining them."
+    },
+    {
+      "no": 18,
+      "devanagari": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः । अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः ॥ १५.१८ ॥",
+      "iast": "yasmātkṣaramatīto|ahamakṣarādapi cottamaḥ | ato|asmi loke vedeca prathitaḥ puruṣottamaḥ || 15.18 ||",
+      "id": "15.18 Karena saya melampaui apa yang dapat binasa dan bahkan lebih tinggi daripada apa yang tidak dapat binasa, saya dinyatakan sebagai Purusha tertinggi di dunia dan di dalam Veda.",
+      "ban": "15.18 Duaning titiang nglintangin sane prasida rusak turmaning luwih ring sane tan prasida rusak, titiang kabaosang pinaka Purusha sane pinih luhur ring jagate miwah ring Weda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.18 Because I am beyond the perishable and even superior to the imperishable, I am declared the supreme Purusha in the world and in the Vedas."
+    },
+    {
+      "no": 19,
+      "devanagari": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् । स सर्वविद्भजति मां सर्वभावेन भारत ॥ १५.१९ ॥",
+      "iast": "yo māmevamasammūḍho jānāti puruṣottamam | sa sarvavidbhajati māṃ sarvabhāvena bhārata || 15.19 ||",
+      "id": "15.19 Barang siapa yang tidak tertipu, mengenal Aku sebagai Purusha tertinggi, maka dia mengetahui segalanya, memuja Aku dengan segenap wujud (hatinya), wahai Arjuna.",
+      "ban": "15.19 Sapasira ja sane tan keni bobab, uning ring Titiang pinaka Purusha sane pinih utama, sinah ipun uning ring sarwa, ngaturang sembah ring Titiang antuk sakancan kawentenan (manahnyane), duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.19 Whoever is not deceived, knows Me as the supreme Purusha, then he knows everything, worships Me with all his being (his heart), O Arjuna."
+    },
+    {
+      "no": 20,
+      "devanagari": "इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ । एतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत ॥ १५.२० ॥",
+      "iast": "iti guhyatamaṃ śāstramidamuktaṃ mayānagha | etadbuddhvā buddhimānsyātkṛtakṛtyaśca bhārata || 15.20 ||",
+      "id": "15.20 Demikianlah ilmu yang paling rahasia ini telah Aku ajarkan, hai yang tak berdosa; dengan mengetahui hal ini, seseorang menjadi bijaksana, dan semua tugasnya terlaksana, wahai Arjuna.",
+      "ban": "15.20 Kadi asapunika indik kaweruhan sane pinih pingit puniki, ih anak sane tan padosa. antuk nguningin indike punika, dados pradnyan, turmaning sami swadharmannyane kapuputang, duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "15.20 Thus have I taught you this most secret knowledge, O sinless one; by knowing this, one becomes wise, and all his duties are accomplished, O Arjuna."
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "bab": 14,
+  "judul": {
+    "sanskrit": "Guṇatraya-vibhāga-yoga",
+    "id": "Guṇatraya Vibhāga Yoga",
+    "ban": "Gunatraya Vibhaga Yoga",
+    "en": "Guṇatraya Vibhāga Yoga"
+  },
+  "jumlah_sloka": 27,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 14",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । परं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम् । यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः ॥ १४.१ ॥",
+      "iast": "śrībhagavānuvāca | paraṃ bhūyaḥ pravakṣyāmi jñānānāṃ jñānamuttamam | yajjñātvā munayaḥ sarve parāṃ siddhimito gatāḥ || 14.1 ||",
+      "id": "14.1 Bhagavā bersabda Aku akan kembali menyatakan (kepadamu) pengetahuan tertinggi itu, pengetahuan terbaik dari segala pengetahuan, setelah mengetahui bahwa semua orang bijak telah mencapai kesempurnaan tertinggi setelah kehidupan ini.",
+      "ban": "14.1 Ida Bhatara ngandika titiang pacang malih ngungkapang (ring ragane) kaweruhan sane pinih luhur punika, sane pinih becik saking sakancan kaweruhan, sampun mlajahin indik samian wicaksana sampun ngamolihang kesempurnaan sane pinih luhur sesampun kauripan puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.1 The Lord said I will again reveal (to you) that highest knowledge, the best of all knowledge, having learned that all the wise have attained the highest perfection after this life."
+    },
+    {
+      "no": 2,
+      "devanagari": "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः । सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च ॥ १४.२ ॥",
+      "iast": "idaṃ jñānamupāśritya mama sādharmyamāgatāḥ | sarge|api nopajāyante pralaye na vyathanti ca || 14.2 ||",
+      "id": "14.2 Mereka yang berlindung pada ilmu ini dan mencapai kesatuan dengan-Ku, tidak dilahirkan pada saat penciptaan dan tidak pula terganggu pada saat kehancuran.",
+      "ban": "14.2 Sang sane masayuban ring kaweruhan puniki tur ngamolihang kasatuan sareng Titiang, nenten embas rikalaning ngardi utawi kagangguan rikalaning karusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.2 Those who take refuge in this knowledge and attain unity with Me, are neither born at the time of creation nor disturbed at the time of destruction."
+    },
+    {
+      "no": 3,
+      "devanagari": "मम योनिर्महद् ब्रह्म तस्मिन्गर्भं दधाम्यहम् । सम्भवः सर्वभूतानां ततो भवति भारत ॥ १४.३ ॥",
+      "iast": "mama yonirmahad brahma tasmingarbhaṃ dadhāmyaham | sambhavaḥ sarvabhūtānāṃ tato bhavati bhārata || 14.3 ||",
+      "id": "14.3 Rahimku adalah Brahma agung; di situlah aku meletakkan kumannya; dari situlah, wahai Arjuna, kelahiran semua makhluk.",
+      "ban": "14.3 Basang titiange wantah Brahma sane mautama; irika tiang ngenahang kuman; saking irika duh Sang Arjuna mijil sarwa pranine.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.3 My womb is the great Brahma; that's where I put the germs; from there, O Arjuna, was the birth of all creatures."
+    },
+    {
+      "no": 4,
+      "devanagari": "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः । तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता ॥ १४.४ ॥",
+      "iast": "sarvayoniṣu kaunteya mūrtayaḥ sambhavanti yāḥ | tāsāṃ brahma mahadyonirahaṃ bījapradaḥ pitā || 14.4 ||",
+      "id": "14.4 Apapun bentuk yang dihasilkan, wahai Arjuna, di dalam rahim apa pun, Brahma agung adalah rahimnya dan Akulah ayah pemberi benih.",
+      "ban": "14.4 Napi ja rupa sane kamedalang, duh Sang Arjuna, ring napi ja garba, Sang Brahma sane mautama wantah garba tur titiang wantah bapa sane ngembasang bibit.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.4 Whatever form is produced, O Arjuna, in whatever womb, the great Brahma is the womb and I am the seed-bearing father."
+    },
+    {
+      "no": 5,
+      "devanagari": "सत्त्वं रजस्तम इति गुणाः प्रकृतिसम्भवाः । निबध्नन्ति महाबाहो देहे देहिनमव्ययम् ॥ १४.५ ॥",
+      "iast": "sattvaṃ rajastama iti guṇāḥ prakṛtisambhavāḥ | nibadhnanti mahābāho dehe dehinamavyayam || 14.5 ||",
+      "id": "14.5 Kemurnian, nafsu dan kelambanan semua ini, wahai Arjuna, yang lahir dari Alam, terikat erat dalam tubuh, yang berwujud, yang tidak dapat dihancurkan.",
+      "ban": "14.5 Kasucian, nafsu miwah malas sami punika, duh Sang Arjuna, sane embas saking Alam, sampun raket kaiket ring angga, sane marupa, sane tan prasida karusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.5 Purity, lust and indolence all these, O Arjuna, born of Nature, are intimately bound up in the body, which is tangible, which is indestructible."
+    },
+    {
+      "no": 6,
+      "devanagari": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम् । सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ ॥ १४.६ ॥",
+      "iast": "tatra sattvaṃ nirmalatvātprakāśakamanāmayam | sukhasaṅgena badhnāti jñānasaṅgena cānagha || 14.6 ||",
+      "id": "14.6 Dari ketiganya, Sattva, yang dari kemurniannya bercahaya dan sehat, terikat oleh kemelekatan pada kebahagiaan dan kemelekatan pada pengetahuan, wahai yang tidak berdosa.",
+      "ban": "14.6 Saking tetiga punika, Sang Satva, sane saking kasuciannyane masunaran tur seger, kaiket antuk rasa lega ring karahayuan miwah lega ring kaweruhan, duh sang sane tan madosa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.6 Of these three, Sattva, who from his purity is radiant and healthy, is bound by attachment to happiness and attachment to knowledge, O sinless one."
+    },
+    {
+      "no": 7,
+      "devanagari": "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम् । तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम् ॥ १४.७ ॥",
+      "iast": "rajo rāgātmakaṃ viddhi tṛṣṇāsaṅgasamudbhavam | tannibadhnāti kaunteya karmasaṅgena dehinam || 14.7 ||",
+      "id": "14.7 Ketahuilah bahwa Anda adalah Raja yang memiliki sifat nafsu, sumber kehausan (akan kenikmatan indria) dan kemelekatan; ia mengikat dengan cepat, wahai Arjuna, yang mewujud melalui kemelekatan pada perbuatan.",
+      "ban": "14.7 Uningin, mungguing ragane wantah Raja sifat nafsu, sumber bedak (ring kesenengan indriya) lan keterkaitan; punika ngiket gelis, duh Sang Arjuna, sane metu malarapan antuk melekat ring parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.7 Know that you are the King of the nature of lust, the source of thirst (for sensual pleasures) and attachment; it binds quickly, O Arjuna, which comes into being through attachment to action."
+    },
+    {
+      "no": 8,
+      "devanagari": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम् । प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत ॥ १४.८ ॥",
+      "iast": "tamastvajñānajaṃ viddhi mohanaṃ sarvadehinām | pramādālasyanidrābhistannibadhnāti bhārata || 14.8 ||",
+      "id": "14.8 Tetapi ketahuilah bahwa Tama terlahir dari ketidaktahuan, menipu semua makhluk yang berwujud; ia mengikat dengan cepat, wahai Arjuna, melalui kelalaian, kelambanan, dan tidur.",
+      "ban": "14.8 Nanging uningin, Tama embas saking tan uning, ngapus sakancan makhluk sane marupa; punika ngiket gelis, duh Sang Arjuna, malarapan antuk lalai, kemalasan, miwah sirep.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.8 But know that Tama is born of ignorance, deceiving all embodied beings; it binds quickly, O Arjuna, through negligence, sloth, and sleep."
+    },
+    {
+      "no": 9,
+      "devanagari": "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत । ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत ॥ १४.९ ॥",
+      "iast": "sattvaṃ sukhe sañjayati rajaḥ karmaṇi bhārata | jñānamāvṛtya tu tamaḥ pramāde sañjayatyuta || 14.9 ||",
+      "id": "14.9 Sattva melekat pada kebahagiaan, Rajas pada tindakan, wahai Arjuna, sedangkan Tamas yang meliputi ilmu pengetahuan melekat pada kelalaian.",
+      "ban": "14.9 Satwa punika neket ring karahayuan, Raja ring parilaksana, duh Arjuna, sedengkan Tamas sane ngranjing ring kaweruhan punika neket ring lalai.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.9 Sattva is attached to happiness, Rajas to action, O Arjuna, while Tamas which includes knowledge is attached to negligence."
+    },
+    {
+      "no": 10,
+      "devanagari": "रजस्तमश्चाभिभूय सत्त्वं भवति भारत । रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा ॥ १४.१० ॥",
+      "iast": "rajastamaścābhibhūya sattvaṃ bhavati bhārata | rajaḥ sattvaṃ tamaścaiva tamaḥ sattvaṃ rajastathā || 14.10 ||",
+      "id": "14.10 Sekarang Sattva muncul (menang), wahai Arjuna, setelah mengalahkan Rajas dan Tamas; maupun Rajas, yang telah mengalahkan Sattva dan Tamas; dan sekarang Tamas, setelah mengalahkan Sattva dan Rajas.",
+      "ban": "14.10 Mangkin Sang Satwa medal (menang), duh Sang Arjuna, sampun ngaonang Sang Raja miwah Tamas; taler Raja, sane sampun ngaonang Sang Satwa miwah Tamas; tur mangkin Tamas, sampun ngaonang Sang Satwa miwah Sang Raja.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.10 Now Sattva appears (victorious), O Arjuna, having defeated Rajas and Tamas; nor Rajas, which has conquered Sattva and Tamas; and now Tamas, having conquered Sattva and Rajas."
+    },
+    {
+      "no": 11,
+      "devanagari": "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते । ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत ॥ १४.११ ॥",
+      "iast": "sarvadvāreṣu dehe|asminprakāśa upajāyate | jñānaṃ yadā tadā vidyādvivṛddhaṃ sattvamityuta || 14.11 ||",
+      "id": "14.11 Ketika melalui setiap gerbang (indera) dalam tubuh ini, cahaya kebijaksanaan bersinar, maka dapat diketahui bahwa Sattva lebih dominan.",
+      "ban": "14.11 Rikala nglintangin soang-soang gerbang (indera) ring angga puniki, galang kawicaksanaan masunaran, raris prasida kacingak Sang Satva sane nguasayang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.11 When through each gate (sense) in this body, the light of wisdom shines, then it can be seen that Sattva is predominant."
+    },
+    {
+      "no": 12,
+      "devanagari": "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा । रजस्येतानि जायन्ते विवृद्धे भरतर्षभ ॥ १४.१२ ॥",
+      "iast": "lobhaḥ pravṛttirārambhaḥ karmaṇāmaśamaḥ spṛhā | rajasyetāni jāyante vivṛddhe bharatarṣabha || 14.12 ||",
+      "id": "14.12 Keserakahan, aktivitas, pelaksanaan tindakan, kegelisahan, kerinduan, semua ini muncul ketika Rajas dominan, wahai Arjuna.",
+      "ban": "14.12 Loba, kegiatan, ngelaksanayang laksana, gelisah, kangen, samian punika metu rikala Rajas sampun dominan, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.12 Greed, activity, performance of actions, restlessness, longing, all these arise when Rajas is dominant, O Arjuna."
+    },
+    {
+      "no": 13,
+      "devanagari": "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च । तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन ॥ १४.१३ ॥",
+      "iast": "aprakāśo|apravṛttiśca pramādo moha eva ca | tamasyetāni jāyante vivṛddhe kurunandana || 14.13 ||",
+      "id": "14.13 Kegelapan, kelambanan, kelalaian dan khayalan, semua ini muncul ketika Tamas dominan, wahai Arjuna.",
+      "ban": "14.13 Peteng, kebodohan, tan rungu miwah iwang, samian punika metu rikala Tamas sampun ngamong, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.13 Darkness, sloth, heedlessness and delusion, all these arise when Tamas is dominant, O Arjuna."
+    },
+    {
+      "no": 14,
+      "devanagari": "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत् । तदोत्तमविदां लोकानमलान्प्रतिपद्यते ॥ १४.१४ ॥",
+      "iast": "yadā sattve pravṛddhe tu pralayaṃ yāti dehabhṛt | tadottamavidāṃ lokānamalānpratipadyate || 14.14 ||",
+      "id": "14.14 Jika makhluk yang berwujud menemui kematian ketika Sattva dominan, maka ia mencapai alam tak bernoda para ahli pengetahuan Yang Maha Tinggi.",
+      "ban": "14.14 Yening wenten makhluk sane marupa matemu ring pati rikala Sang Satva sane dominan, sinah ipun ngamolihang jagat sane tan paceda saking para guru kaweruhan Sang Maha Luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.14 If an embodied being meets death when Sattva is dominant, then he attains the immaculate realm of the masters of knowledge of the Supreme."
+    },
+    {
+      "no": 15,
+      "devanagari": "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते । तथा प्रलीनस्तमसि मूढयोनिषु जायते ॥ १४.१५ ॥",
+      "iast": "rajasi pralayaṃ gatvā karmasaṅgiṣu jāyate | tathā pralīnastamasi mūḍhayoniṣu jāyate || 14.15 ||",
+      "id": "14.15 Ketika menemui kematian di Rajas, ia terlahir di antara mereka yang terikat pada perbuatan; dan meninggal di Tamas, dia terlahir di dalam rahim orang yang tidak berakal.",
+      "ban": "14.15 Rikala ida matemu ring pati ring Rajas, ida embas ring pantaraning sang sane neket ring parilaksana; tur seda ring Tamas, ipun embas ring garba anak sane tan madue akal.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.15 When he meets death in Rajas, he is born among those who are attached to deeds; and died in Tamas, he was born in the womb of an unreasonable person."
+    },
+    {
+      "no": 16,
+      "devanagari": "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम् । रजसस्तु फलं दुःखमज्ञानं तमसः फलम् ॥ १४.१६ ॥",
+      "iast": "karmaṇaḥ sukṛtasyāhuḥ sāttvikaṃ nirmalaṃ phalam | rajasastu phalaṃ duḥkhamajñānaṃ tamasaḥ phalam || 14.16 ||",
+      "id": "14.16 Buah dari perbuatan baik, kata mereka, adalah Sattvic dan murni, buah dari Rajas adalah kesakitan, dan ketidaktahuan adalah buah dari Tamas.",
+      "ban": "14.16 Woh laksana sane becik, baos ipun, wantah Sattvic tur suci, woh Rajas wantah sakit, tur tan uning wantah woh Tamas.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.16 The fruit of good deeds, they say, is Sattvic and pure, the fruit of Rajas is pain, and ignorance is the fruit of Tamas."
+    },
+    {
+      "no": 17,
+      "devanagari": "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च । प्रमादमोहौ तमसो भवतोऽज्ञानमेव च ॥ १४.१७ ॥",
+      "iast": "sattvātsañjāyate jñānaṃ rajaso lobha eva ca | pramādamohau tamaso bhavato|ajñānameva ca || 14.17 ||",
+      "id": "14.17 Dari Sattva muncul pengetahuan, dan keserakahan dari Rajas; kelalaian dan khayalan muncul dari Tamas, dan juga ketidaktahuan.",
+      "ban": "14.17 Saking Sang Satva rauh kaweruhan, miwah loba saking Raja; lalai lan ilusi metu saking Tamas, tur taler tan uning.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.17 From Sattva comes knowledge, and greed from Rajas; negligence and delusion arise from Tamas, and also ignorance."
+    },
+    {
+      "no": 18,
+      "devanagari": "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः । जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः ॥ १४.१८ ॥",
+      "iast": "ūrdhvaṃ gacchanti sattvasthā madhye tiṣṭhanti rājasāḥ | jaghanyaguṇavṛttisthā adho gacchanti tāmasāḥ || 14.18 ||",
+      "id": "14.18 Mereka yang duduk dalam Sattva naik ke atas; suku Rajasic tinggal di tengah; dan Tamasic, yang menjalankan fungsi Guna terendah, turun ke bawah.",
+      "ban": "14.18 Sang sane malinggih ring Satwa munggah ka luhur; suku Rajasik sane magenah ring tengah; lan Tamasic, sane ngamargiang fungsi Guna sane pinih sor, tedun ka sor.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.18 Those who sit in Sattva ascend upward; the Rajasic tribe lived in the center; and Tamasic, which performs the function of the lowest Guna, descends to the bottom."
+    },
+    {
+      "no": 19,
+      "devanagari": "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति । गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति ॥ १४.१९ ॥",
+      "iast": "nānyaṃ guṇebhyaḥ kartāraṃ yadā draṣṭānupaśyati | guṇebhyaśca paraṃ vetti madbhāvaṃ so|adhigacchati || 14.19 ||",
+      "id": "14.19 Ketika pelihat tidak melihat agen selain Guna dan mengetahui Yang lebih tinggi dari mereka, dia mencapai Wujud-Ku.",
+      "ban": "14.19 Rikala sang sane nyingakin nenten nyingakin agen tiosan ring Guna tur uning ring Sang sane luwih saking ipun, ipun ngamolihang Kawentenan Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.19 When the seer sees no agency other than the Gunas and knows the Ones higher than them, he attains My Being."
+    },
+    {
+      "no": 20,
+      "devanagari": "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान् । जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते ॥ १४.२० ॥",
+      "iast": "guṇānetānatītya trīndehī dehasamudbhavān | janmamṛtyujarāduḥkhairvimukto|amṛtamaśnute || 14.20 ||",
+      "id": "14.20 Makhluk yang berwujud telah melampaui ketiga Guna yang menjadi asal mula tubuh ini, terbebas dari kelahiran, kematian, pembusukan dan kesakitan, dan mencapai keabadian.",
+      "ban": "14.20 Sang sane marupa sampun nglintangin tetiga Guna saking dija anggane mawit, sampun bebas saking embas, mati, rusak lan sakit, tur ngamolihang keabadian.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.20 The embodied being has transcended the three Gunas from which the body originates, is freed from birth, death, decay and pain, and attains immortality."
+    },
+    {
+      "no": 21,
+      "devanagari": "अर्जुन उवाच । कैर्लिङ्गैस्त्रीन्गुणानेतानतीतो भवति प्रभो । किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते ॥ १४.२१ ॥",
+      "iast": "arjuna uvāca | kairliṅgaistrīnguṇānetānatīto bhavati prabho | kimācāraḥ kathaṃ caitāṃstrīnguṇānativartate || 14.21 ||",
+      "id": "14.21 Arjuna berkata Apa saja ciri-ciri orang yang telah melampaui tiga alam, ya Tuhan? Bagaimana perilakunya dan bagaimana ia melampaui ketiga realitas ini?",
+      "ban": "14.21 Ida Sang Arjuna ngandika Napi ceciren jadmane sane sampun ngalangin jagat tigane duh Ratu Bhatara? Sapunapi parilaksanannyane lan sapunapi carane nglintangin tetiga kasujatian punika?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.21 Arjuna said What are the characteristics of a person who has transcended the three worlds, O Lord? How does he behave and how does he transcend these three realities?"
+    },
+    {
+      "no": 22,
+      "devanagari": "श्रीभगवानुवाच । प्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव । न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति ॥ १४.२२ ॥",
+      "iast": "śrībhagavānuvāca | prakāśaṃ ca pravṛttiṃ ca mohameva ca pāṇḍava | na dveṣṭi sampravṛttāni na nivṛttāni kāṅkṣati || 14.22 ||",
+      "id": "14.22 Bhagavā bersabda Ketika cahaya, aktivitas, dan khayalan muncul, Beliau tidak membencinya, juga tidak merindukannya ketika hal-hal tersebut tidak ada.",
+      "ban": "14.22 Ida Sang Hyang Widhi Wasa ngandika Rikala wenten galang, kegiatan lan ilusi, Ida nenten geting ring ipun, taler nenten kangen ring ipun rikala ipun nenten wenten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.22 The Blessed One said When light, activity and illusion arise, He does not hate them, nor does he yearn for them when they are absent."
+    },
+    {
+      "no": 23,
+      "devanagari": "उदासीनवदासीनो गुणैर्यो न विचाल्यते । गुणा वर्तन्त इत्येवं योऽवतिष्ठति नेङ्गते ॥ १४.२३ ॥",
+      "iast": "udāsīnavadāsīno guṇairyo na vicālyate | guṇā vartanta ityevaṃ yo|avatiṣṭhati neṅgate || 14.23 ||",
+      "id": "14.23 Orang yang duduk seperti orang yang tidak peduli, tidak tergerak oleh kelompok-kelompok lain, dan yang, mengetahui bahwa kelompok-kelompok itu aktif, menjadi egois dan tidak bergerak.",
+      "ban": "14.23 Sang sane malinggih punika sakadi jadma sane tan rungu, nenten kagerakang olih kelompok sane lianan, tur sane, uning kelompok-kelompok punika aktif, dados egois tur nenten kagerakang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.23 The person who sits is like an indifferent person, unmoved by other groups, and who, knowing that the groups are active, becomes selfish and does not move."
+    },
+    {
+      "no": 24,
+      "devanagari": "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः । तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः ॥ १४.२४ ॥",
+      "iast": "samaduḥkhasukhaḥ svasthaḥ samaloṣṭāśmakāñcanaḥ | tulyapriyāpriyo dhīrastulyanindātmasaṃstutiḥ || 14.24 ||",
+      "id": "14.24 Yang sama dalam kesenangan dan kesakitan, yang bersemayam dalam Diri, yang serupa dengan segumpal tanah, batu, dan emas, yang sama terhadap yang dikasihi dan yang tidak bersahabat, yang tegas, dan yang terhadap kecaman dan pujian adalah satu kesatuan.",
+      "ban": "14.24 Sane pateh ring suka lan sakit, sane magenah ring Raga, sane sekadi gumpalan tanah, batu, lan emas, sane pateh ring sang sane katresnain lan sane tan masawitra, sane pageh, tur sane pateh ring kritik lan pamuji punika asiki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.24 Who is equal in pleasure and pain, who resides in the Self, who is like a lump of earth, stone, and gold, who is equal to the beloved and the unfriendly, who is firm, and who is equal to criticism and praise is one."
+    },
+    {
+      "no": 25,
+      "devanagari": "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः । सर्वारम्भपरित्यागी गुणातीतः स उच्यते ॥ १४.२५ ॥",
+      "iast": "mānāpamānayostulyastulyo mitrāripakṣayoḥ | sarvārambhaparityāgī guṇātītaḥ sa ucyate || 14.25 ||",
+      "id": "14.25 Siapa yang sama dalam hal kehormatan dan ketidakhormatan, sama terhadap kawan dan lawan, dengan meninggalkan semua usaha, dikatakan bahwa ia telah melampaui segala hal.",
+      "ban": "14.25 Sapasiraja sane pateh ring kahormatan lan kaon, pateh ring sawitra lan musuh, nilar sakancan utsaha, kabaos sampun nglintangin sakancan parindikan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.25 Whoever is equal in honor and dishonor, equal towards friend and foe, abandoning all effort, is said to have transcended all things."
+    },
+    {
+      "no": 26,
+      "devanagari": "मां च योऽव्यभिचारेण भक्तियोगेन सेवते । स गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ॥ १४.२६ ॥",
+      "iast": "māṃ ca yo|avyabhicāreṇa bhaktiyogena sevate | sa guṇānsamatītyaitānbrahmabhūyāya kalpate || 14.26 ||",
+      "id": "14.26 Dan barangsiapa mengabdi kepada-Ku dengan pengabdian yang tak tergoyahkan, ia, setelah melampaui batas para dewa, layak menjadi Brahman.",
+      "ban": "14.26 Tur sapasiraja sane ngayahin Titiang antuk astiti bakti sane tan surud-surud, ipun, sampun nglintangin wates-wates para dewatane, patut dados Brahmana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.26 And whoever serves Me with unwavering devotion, he, having transcended the limits of the gods, is worthy to become Brahman."
+    },
+    {
+      "no": 27,
+      "devanagari": "ब्रह्मणो हि प्रतिष्ठाहममृतस्याव्ययस्य च । शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च ॥ १४.२७ ॥",
+      "iast": "brahmaṇo hi pratiṣṭhāhamamṛtasyāvyayasya ca | śāśvatasya ca dharmasya sukhasyaikāntikasya ca || 14.27 ||",
+      "id": "14.27 Karena Aku adalah tempat tinggal Brahman, yang abadi dan abadi, Dharma abadi dan kebahagiaan mutlak.",
+      "ban": "14.27 Santukan titiang wantah genah Brahman, langgeng tur tan pawates, Dharma langgeng tur karahayuan sane mutlak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "14.27 For I am the abode of Brahman, eternal and immutable, eternal Dharma and absolute bliss."
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "bab": 13,
+  "judul": {
+    "sanskrit": "Kṣetra-kṣetrajña-vibhāga-yoga",
+    "id": "Kṣetra Kṣetrajña Vibhāga Yoga",
+    "ban": "Ksetra Ksetrajna Vibhaga Yoga",
+    "en": "Kṣetra Kṣetrajña Vibhāga Yoga"
+  },
+  "jumlah_sloka": 35,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 13",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "अर्जुन उवाच । प्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च । एतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव ॥ १३.१ ॥",
+      "iast": "arjuna uvāca | prakṛtiṃ puruṣaṃ caiva kṣetraṃ kṣetrajñameva ca | etadveditumicchāmi jñānaṃ jñeyaṃ ca keśava || 13.1 ||",
+      "id": "13.1 Arjuna berkata aku ingin belajar tentang Alam (materi) dan Roh (jiwa), bidang dan yang mengetahui bidang, pengetahuan dan apa yang harus diketahui, wahai Kesava.",
+      "ban": "13.1 Sang Arjuna ngandika titiang meled malajah indik Alam (materi) miwah Roh (atma), tegal miwah sang sane uning ring tegal, kaweruhan miwah napi sane patut kauningin, duh Kesawa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.1 Arjuna said I want to learn about Nature (matter) and Spirit (soul), the field and the knower of the field, knowledge and what is to be known, O Kesava."
+    },
+    {
+      "no": 2,
+      "devanagari": "श्रीभगवानुवाच । इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते । एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥ १३.२ ॥",
+      "iast": "śrībhagavānuvāca | idaṃ śarīraṃ kaunteya kṣetramityabhidhīyate | etadyo vetti taṃ prāhuḥ kṣetrajña iti tadvidaḥ || 13.2 ||",
+      "id": "13.2 Sang Bhagavā bersabda Tubuh ini, wahai Arjuna, disebut ladang; dia yang mengetahuinya disebut yang mengetahui lapangan, oleh mereka yang mengetahuinya.",
+      "ban": "13.2 Ida Sang Hyang Widi Wasa ngandika angga puniki, duh Sang Arjuna, mawasta tegal; sang sane uning kabaos sang wikan ring tegal, olih sang sane uning.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.2 The Blessed One said this body, O Arjuna, is called a field; he who knows it is called the knower of the field, by those who know it."
+    },
+    {
+      "no": 3,
+      "devanagari": "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत । क्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम ॥ १३.३ ॥",
+      "iast": "kṣetrajñaṃ cāpi māṃ viddhi sarvakṣetreṣu bhārata | kṣetrakṣetrajñayorjñānaṃ yattajjñānaṃ mataṃ mama || 13.3 ||",
+      "id": "13.3 Apakah engkau juga mengenal Aku sebagai Yang Maha Mengetahui lapangan di segala bidang, wahai Arjuna. Pengetahuan mengenai bidang tersebut dan orang yang mengetahui bidang tersebut dianggap oleh-Ku sebagai “pengetahuan”.",
+      "ban": "13.3 Napike ragane taler uning ring Titiang pinaka Sang Maha Wikan ring tegal ring sakancan tegal, duh Sang Arjuna. Kawruhan indik widang punika miwah jadma sané uning ring widang punika kasengguh olih Titiang pinaka kaweruhan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.3 Do you also know Me as the All-Knower of the field in all fields, O Arjuna. Knowledge of that field and people who know that field are considered by Me to be \"knowledge\"."
+    },
+    {
+      "no": 4,
+      "devanagari": "तत्क्षेत्रं यच्च यादृक्च यद्विकारि यतश्च यत् । स च यो यत्प्रभावश्च तत्समासेन मे शृणु ॥ १३.४ ॥",
+      "iast": "tatkṣetraṃ yacca yādṛkca yadvikāri yataśca yat | sa ca yo yatprabhāvaśca tatsamāsena me śṛṇu || 13.4 ||",
+      "id": "13.4 Apa bidangnya dan apa sifatnya, apa modifikasinya dan dari mana asalnya dan juga siapa Dia dan apa kekuasaan-Nya dengarkan semua itu dari-Ku secara singkat.",
+      "ban": "13.4 Napi tegal Ida lan napi sifat Ida, napi modifikasi Ida lan saking dija Ida rauh lan taler sapasira Ida lan napi kawisesan Ida pirengang samian punika saking Titiang cutet.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.4 What is his field and what is his nature, what are his modifications and where does he come from and also who is He and what is His power hear all that from Me briefly."
+    },
+    {
+      "no": 5,
+      "devanagari": "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक् । ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्चितैः ॥ १३.५ ॥",
+      "iast": "ṛṣibhirbahudhā gītaṃ chandobhirvividhaiḥ pṛthak | brahmasūtrapadaiścaiva hetumadbhirviniścitaiḥ || 13.5 ||",
+      "id": "13.5 Para resi telah menyanyi dalam berbagai cara, dalam berbagai nyanyian khas dan juga dalam kata-kata sugestif yang menunjukkan Yang Mutlak, penuh penalaran dan tegas.",
+      "ban": "13.5 Para rishi sampun magending antuk makudang-kudang cara, antuk makudang-kudang kidung ciri tur taler antuk kruna-kruna sugestif sane nyihnayang Sang Mutlak, penuh antuk penalaran lan ketetapan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.5 The rishis have sung in various ways, in various characteristic chants and also in suggestive words denoting the Absolute, full of reasoning and decisiveness."
+    },
+    {
+      "no": 6,
+      "devanagari": "महाभूतान्यहंकारो बुद्धिरव्यक्तमेव च । इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः ॥ १३.६ ॥",
+      "iast": "mahābhūtānyahaṃkāro buddhiravyaktameva ca | indriyāṇi daśaikaṃ ca pañca cendriyagocarāḥ || 13.6 ||",
+      "id": "13.6 Unsur-unsur besar, egoisme, intelektualitas, dan juga Sifat Tak Terwujud, sepuluh indera dan satu (pikiran), dan lima objek indera.",
+      "ban": "13.6 Unsur-unsur sane mautama, egoisme, akal, lan taler Alam Tan Manifestasi, dasa indriya lan siki (pikiran), lan lima benda indriya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.6 The great elements, egoism, intellect, and also the Unmanifest Nature, the ten senses and one (mind), and the five sense objects."
+    },
+    {
+      "no": 7,
+      "devanagari": "इच्छा द्वेषः सुखं दुःखं संघातश्चेतना धृतिः । एतत्क्षेत्रं समासेन सविकारमुदाहृतम् ॥ १३.७ ॥",
+      "iast": "icchā dveṣaḥ sukhaṃ duḥkhaṃ saṃghātaścetanā dhṛtiḥ | etatkṣetraṃ samāsena savikāramudāhṛtam || 13.7 ||",
+      "id": "13.7 Keinginan, kebencian, kesenangan, kesakitan, kelompok unsur kehidupan (tubuh), kecerdasan, ketabahan, bidang ini telah dijelaskan secara singkat beserta modifikasinya.",
+      "ban": "13.7 Pikayunan, gedeg, seneng, sakit, agregat (raga), kecerdasan, kekuatan, wewidangan-wewidangan punika sampun katlatarang cutet antuk modifikasinyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.7 Desire, hatred, pleasure, pain, aggregates (body), intelligence, fortitude, these areas have been briefly explained with their modifications."
+    },
+    {
+      "no": 8,
+      "devanagari": "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम् । आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः ॥ १३.८ ॥",
+      "iast": "amānitvamadambhitvamahiṃsā kṣāntirārjavam | ācāryopāsanaṃ śaucaṃ sthairyamātmavinigrahaḥ || 13.8 ||",
+      "id": "13.8 Kerendahan hati, tidak bersahaja, tidak melukai, pemaaf, jujur, pengabdian kepada guru, kesucian, ketabahan, pengendalian diri.",
+      "ban": "13.8 Ngasorang raga, moderasi, tan nyakitin, ngampurayang, jujur, bakti ring guru, suci, teguh, ngendaliang raga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.8 Humility, moderation, non-injury, forgiveness, honesty, devotion to the teacher, purity, fortitude, self-control."
+    },
+    {
+      "no": 9,
+      "devanagari": "इन्द्रियार्थेषु वैराग्यमनहंकार एव च । जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम् ॥ १३.९ ॥",
+      "iast": "indriyārtheṣu vairāgyamanahaṃkāra eva ca | janmamṛtyujarāvyādhiduḥkhadoṣānudarśanam || 13.9 ||",
+      "id": "13.9 Ketidakpedulian terhadap objek indera dan juga tidak adanya egoisme; persepsi (atau refleksi) kejahatan dalam kelahiran, kematian, usia tua, penyakit dan kesakitan.",
+      "ban": "13.9 Tan rungu ring benda indriya lan taler nenten wenten egoisme; penampen (utawi refleksi) indik kaon ring embas, padem, tua, gering miwah sakit.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.9 Indifference to sense objects and also absence of egoism; perception (or reflection) of evil in birth, death, old age, disease and pain."
+    },
+    {
+      "no": 10,
+      "devanagari": "असक्तिरनभिष्वङ्गः पुत्रदारगृहादिषु । नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु ॥ १३.१० ॥",
+      "iast": "asaktiranabhiṣvaṅgaḥ putradāragṛhādiṣu | nityaṃ ca samacittatvamiṣṭāniṣṭopapattiṣu || 13.10 ||",
+      "id": "13.10 Tanpa keterikatan, tidak mengidentifikasi Diri dengan putra, istri, rumah dan yang lainnya, dan sikap seimbang yang terus-menerus dalam pencapaian apa yang diinginkan dan tidak diinginkan.",
+      "ban": "13.10 Pamisahan, tan ngidentifikasi sareng putra, rabi, umah miwah sane tiosan, tur tan mari seimbang ring sajeroning ngamolihang sane kaaptiang miwah sane nenten kaaptiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.10 Detachment, non-identification with son, wife, home and others, and constant equanimity in the attainment of the desired and undesired."
+    },
+    {
+      "no": 11,
+      "devanagari": "मयि चानन्ययोगेन भक्तिरव्यभिचारिणी । विविक्तदेशसेवित्वमरतिर्जनसंसदि ॥ १३.११ ॥",
+      "iast": "mayi cānanyayogena bhaktiravyabhicāriṇī | viviktadeśasevitvamaratirjanasaṃsadi || 13.11 ||",
+      "id": "13.11 Pengabdian yang tak tergoyahkan kepada-Ku melalui Yoga tanpa pemisahan, mengunjungi tempat-tempat terpencil, tidak menyukai perkumpulan manusia.",
+      "ban": "13.11 Bhakti tan surud-surud ring Titiang malarapan antuk Yoga tan pamisahan, ngrauhin genah-genah sane doh, gedeg ring pergaulan manusa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.11 Unwavering devotion to Me through Yoga without separation, visiting remote places, aversion to human company."
+    },
+    {
+      "no": 12,
+      "devanagari": "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम् । एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोऽन्यथा ॥ १३.१२ ॥",
+      "iast": "adhyātmajñānanityatvaṃ tattvajñānārthadarśanam | etajjñānamiti proktamajñānaṃ yadato|anyathā || 13.12 ||",
+      "id": "13.12 Keteguhan dalam Pengetahuan Diri, persepsi akhir dari pengetahuan sejati ini dinyatakan sebagai pengetahuan, dan yang menentangnya adalah ketidaktahuan.",
+      "ban": "13.12 Teguh ring Pengetahuan Diri, penampen pamuput puniki indik pengetahuan sane sujati kabaosang pinaka pengetahuan, lan sane nglawan punika wantah ketidaktahuan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.12 Firmness in Self-Knowledge, this final perception of true knowledge is declared as knowledge, and that which opposes it is ignorance."
+    },
+    {
+      "no": 13,
+      "devanagari": "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वामृतमश्नुते । अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते ॥ १३.१३ ॥",
+      "iast": "jñeyaṃ yattatpravakṣyāmi yajjñātvāmṛtamaśnute | anādi matparaṃ brahma na sattannāsaducyate || 13.13 ||",
+      "id": "13.13 Saya akan menyatakan apa yang harus diketahui, dengan mengetahui mana yang mencapai keabadian, Brahman tertinggi yang tak berawal, yang tidak disebut wujud atau pun tak wujud.",
+      "ban": "13.13 Titiang pacang nyatuayang napi sane patut kauningin, antuk uning sane ngamolihang keabadian, Sang Brahman sane pinih luhur tan pawit, sane kabaos nenten marupa, tan marupa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.13 I will state what is to be known, by knowing which attains immortality, the beginningless supreme Brahman, who is called neither form nor formlessness."
+    },
+    {
+      "no": 14,
+      "devanagari": "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम् । सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति ॥ १३.१४ ॥",
+      "iast": "sarvataḥ pāṇipādaṃ tatsarvato|akṣiśiromukham | sarvataḥ śrutimalloke sarvamāvṛtya tiṣṭhati || 13.14 ||",
+      "id": "13.14 Dengan tangan dan kaki di mana-mana, dengan mata, kepala dan mulut di mana-mana, dengan telinga di mana-mana, Dia ada di alam semesta menyelimuti semuanya.",
+      "ban": "13.14 Antuk tangan lan batis ring dija-dija, antuk panyingakan, sirah lan cangkem ring dija-dija, antuk kuping ring dija-dija, Ida wenten ring jagate nglikub samian.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.14 With hands and feet everywhere, with eyes, head and mouth everywhere, with ears everywhere, He is in the universe enveloping everything."
+    },
+    {
+      "no": 15,
+      "devanagari": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम् । असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च ॥ १३.१५ ॥",
+      "iast": "sarvendriyaguṇābhāsaṃ sarvendriyavivarjitam | asaktaṃ sarvabhṛccaiva nirguṇaṃ guṇabhoktṛ ca || 13.15 ||",
+      "id": "13.15 Bersinar karena fungsi semua indera, namun tanpa indera; tidak terikat, namun mendukung semuanya; tanpa alitas, namun mengalaminya.",
+      "ban": "13.15 Masunar santukan fungsi sakancan indriya, nanging tan wenten indriya; nenten kategul, nanging nunjang samian; tanpa kenyataan, nanging ngarasayang punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.15 Shines because of the function of all the senses, but without the senses; not tied down, but supporting everything; without reality, but experiencing it."
+    },
+    {
+      "no": 16,
+      "devanagari": "बहिरन्तश्च भूतानामचरं चरमेव च । सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥ १३.१६ ॥",
+      "iast": "bahirantaśca bhūtānāmacaraṃ carameva ca | sūkṣmatvāttadavijñeyaṃ dūrasthaṃ cāntike ca tat || 13.16 ||",
+      "id": "13.16 Di luar dan di dalam (semua) makhluk yang tidak bergerak dan juga yang bergerak; karena kehalusannya, tidak dapat diketahui; dan dekat dan jauh adalah Itu.",
+      "ban": "13.16 Ring jaba miwah ring jero (makasami) sarwa prani sane nenten magerak taler sane magerak; santukan alusnyane, nenten prasida kauningin; tur nampek tur doh punika Ida.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.16 Outside and within (all) creatures that do not move as well as those that move; because of its subtlety, it cannot be known; and near and far is That."
+    },
+    {
+      "no": 17,
+      "devanagari": "अविभक्तं च भूतेषु विभक्तमिव च स्थितम् । भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च ॥ १३.१७ ॥",
+      "iast": "avibhaktaṃ ca bhūteṣu vibhaktamiva ca sthitam | bhūtabhartṛ ca tajjñeyaṃ grasiṣṇu prabhaviṣṇu ca || 13.17 ||",
+      "id": "13.17 Dan tidak terbagi, namun Ia ada seolah-olah terbagi dalam wujud; Ia dikenal sebagai pendukung keberadaan; Ia melahap dan menghasilkan.",
+      "ban": "13.17 Tur nenten kepah, nanging Ida wenten sakadi kepah ring kawentenan; Ida kaloktah dados panunjang kawentenan; Punika sane ngamah tur ngasilang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.17 And is not divided, but He exists as if divided in being; He is known as a supporter of existence; It devours and produces."
+    },
+    {
+      "no": 18,
+      "devanagari": "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते । ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम् ॥ १३.१८ ॥",
+      "iast": "jyotiṣāmapi tajjyotistamasaḥ paramucyate | jñānaṃ jñeyaṃ jñānagamyaṃ hṛdi sarvasya viṣṭhitam || 13.18 ||",
+      "id": "13.18 Itu, Terang dari segala cahaya, dikatakan berada di luar kegelapan: pengetahuan, yang dapat diketahui dan tujuan pengetahuan, bersemayam di dalam hati semua orang.",
+      "ban": "13.18 Indike punika, Galang galang, kabaos nglintangin peteng: kaweruhan, sane prasida kauningin miwah tatujon kaweruhan, magenah ring manah manusane sami.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.18 That, the Light of lights, is said to be beyond darkness: knowledge, the knowable and the goal of knowledge, resides in the hearts of all men."
+    },
+    {
+      "no": 19,
+      "devanagari": "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः । मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते ॥ १३.१९ ॥",
+      "iast": "iti kṣetraṃ tathā jñānaṃ jñeyaṃ coktaṃ samāsataḥ | madbhakta etadvijñāya madbhāvāyopapadyate || 13.19 ||",
+      "id": "13.19 Demikianlah bidang, serta pengetahuan dan apa yang dapat diketahui telah dinyatakan secara singkat. PenyembahKu, mengetahui hal ini, masuk ke dalam KeberadaanKu.",
+      "ban": "13.19 Asapunika widang, taler kaweruhan miwah napi sane prasida kauningin sampun kabaosang cutet. Bhakta Titiang, uning ring indike punika, ngranjing ring Kawentenan Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.19 Thus the field, as well as knowledge and what can be known have been briefly stated. My devotee, knowing this, enters into My Being."
+    },
+    {
+      "no": 20,
+      "devanagari": "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि । विकारांश्च गुणांश्चैव विद्धि प्रकृतिसम्भवान् ॥ १३.२० ॥",
+      "iast": "prakṛtiṃ puruṣaṃ caiva viddhyanādi ubhāvapi | vikārāṃśca guṇāṃścaiva viddhi prakṛtisambhavān || 13.20 ||",
+      "id": "13.20 Ketahuilah bahwa Alam (materi) dan Roh keduanya tidak berawal; dan ketahuilah juga bahwa segala modifikasi dan alitas lahir dari Alam.",
+      "ban": "13.20 Uningin mungguing Alam (materi) miwah Roh makakalih nenten madue pangawit; tur uning taler indik samian modifikasi lan realitas sane metu saking Alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.20 Know that Nature (matter) and Spirit both have no beginning; and know also that all modifications and realities arise from Nature."
+    },
+    {
+      "no": 21,
+      "devanagari": "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते । पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते ॥ १३.२१ ॥",
+      "iast": "kāryakāraṇakartṛtve hetuḥ prakṛtirucyate | puruṣaḥ sukhaduḥkhānāṃ bhoktṛtve heturucyate || 13.21 ||",
+      "id": "13.21 Dalam produksi akibat dan sebab, Alam (materi) dikatakan sebagai sebab; dalam pengalaman senang dan sakit, dikatakan bahwa jiwalah penyebabnya.",
+      "ban": "13.21 Ring sajeroning ngawetuang efek lan penyebab, Alam (materi) kabaos dados penyebab; ring pengalaman suka lan sakit, kabaosang atma sane ngawinang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.21 In the production of effects and causes, Nature (matter) is said to be the cause; in experiences of pleasure and pain, it is said that the soul is the cause."
+    },
+    {
+      "no": 22,
+      "devanagari": "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान् । कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु ॥ १३.२२ ॥",
+      "iast": "puruṣaḥ prakṛtistho hi bhuṅkte prakṛtijānguṇān | kāraṇaṃ guṇasaṅgo|asya sadasadyonijanmasu || 13.22 ||",
+      "id": "13.22 Jiwa yang bersemayam di Alam mengalami realitas yang lahir dari Alam; keterikatan pada allities adalah penyebab kelahirannya di rahim yang baik dan yang jahat.",
+      "ban": "13.22 Atma sane magenah ring Alam ngarasayang kasujatian sane embas saking Alam; melekat ring allities punika sane ngawinang embas ring garba sane becik lan sane kaon.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.22 The soul residing in Nature experiences the reality born of Nature; attachment to allities is the cause of his birth in the womb of good and evil."
+    },
+    {
+      "no": 23,
+      "devanagari": "उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः । परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः ॥ १३.२३ ॥",
+      "iast": "upadraṣṭānumantā ca bhartā bhoktā maheśvaraḥ | paramātmeti cāpyukto dehe|asminpuruṣaḥ paraḥ || 13.23 ||",
+      "id": "13.23 Jiwa Yang Maha Tinggi dalam tubuh ini juga disebut sebagai pengamat, yang mengizinkan, yang mendukung, yang menikmati, Tuhan Yang Maha Esa, dan Diri Yang Maha Tinggi.",
+      "ban": "13.23 Sang Atma sane Maha Luhur ring angga puniki taler kabaos sang sane ngamatiang, sang sane ngicenin, sang sane ngajegang, sang sane ngrasayang, Sang Hyang Widhi Wasa, lan Sang Hyang Atma.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.23 The Supreme Soul in this body is also called the observer, the permitter, the sustainer, the enjoyer, the Supreme Lord, and the Supreme Self."
+    },
+    {
+      "no": 24,
+      "devanagari": "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैः सह । सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते ॥ १३.२४ ॥",
+      "iast": "ya evaṃ vetti puruṣaṃ prakṛtiṃ ca guṇaiḥ saha | sarvathā vartamāno|api na sa bhūyo|abhijāyate || 13.24 ||",
+      "id": "13.24 Barangsiapa mengetahui Roh dan Materi bersama-sama dengan para wujud, dalam kondisi apa pun dia berada, dia tidak dilahirkan kembali.",
+      "ban": "13.24 Sapasiraja sane uning ring Roh lan Materi sareng-sareng ring wangun, napi ja kahanannyane, ipun nenten embas malih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.24 Whoever knows Spirit and Matter together with forms, whatever state he may be in, he is not born again."
+    },
+    {
+      "no": 25,
+      "devanagari": "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना । अन्ये साङ्ख्येन योगेन कर्मयोगेन चापरे ॥ १३.२५ ॥",
+      "iast": "dhyānenātmani paśyanti kecidātmānamātmanā | anye sāṅkhyena yogena karmayogena cāpare || 13.25 ||",
+      "id": "13.25 Beberapa orang melalui meditasi melihat Diri di dalam diri dengan diri sendiri, yang lain melalui Yoga pengetahuan, dan yang lain lagi melalui Yoga tindakan.",
+      "ban": "13.25 Wenten jadma malarapan antuk semedi nyingakin Raga ring jeroning sareng raga, wenten malih malarapan antuk Yoga kaweruhan, lan wenten malih malarapan antuk Yoga parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.25 Some people through meditation see the Self within with oneself, others through the Yoga of knowledge, and still others through the Yoga of action."
+    },
+    {
+      "no": 26,
+      "devanagari": "अन्ये त्वेवमजानन्तः श्रुत्वान्येभ्य उपासते । तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः ॥ १३.२६ ॥",
+      "iast": "anye tvevamajānantaḥ śrutvānyebhya upāsate | te|api cātitarantyeva mṛtyuṃ śrutiparāyaṇāḥ || 13.26 ||",
+      "id": "13.26 Yang lain juga, tanpa menyadarinya, beribadah, setelah mendengar tentang Itu dari orang lain; mereka juga melampaui kematian, menganggap apa yang mereka dengar sebagai perlindungan tertinggi.",
+      "ban": "13.26 Anake sane lianan, tan uning, ipun nyumbah, santukan sampun miragi indik Idane saking anake lianan. ipun taler nglintangin pati, nganggep napi sane kapireng pinaka perlindungan sane pinih utama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.26 Others also, without realizing it, worshipped, having heard about It from others; they also transcend death, considering what they hear as the ultimate protection."
+    },
+    {
+      "no": 27,
+      "devanagari": "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम् । क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ ॥ १३.२७ ॥",
+      "iast": "yāvatsañjāyate kiñcitsattvaṃ sthāvarajaṅgamam | kṣetrakṣetrajñasaṃyogāttadviddhi bharatarṣabha || 13.27 ||",
+      "id": "13.27 Di mana pun makhluk dilahirkan, baik yang tidak bergerak maupun yang bergerak, ketahuilah, wahai para Bharata (Arjuna) yang terbaik, bahwa ia berasal dari penyatuan antara ladang dan yang mengetahuinya.",
+      "ban": "13.27 Ring dija ja wenten sane embas, yadiastun tan magerak utawi magerak, uningin, duh para Bharata (Arjuna) sane pinih becik, mungguing ipun mawit saking pasawitran lapangan miwah sang sane uning.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.27 Wherever beings are born, whether motionless or moving, know, O best of Bharatas (Arjunas), that they originate from the union of the field and the knower."
+    },
+    {
+      "no": 28,
+      "devanagari": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम् । विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति ॥ १३.२८ ॥",
+      "iast": "samaṃ sarveṣu bhūteṣu tiṣṭhantaṃ parameśvaram | vinaśyatsvavinaśyantaṃ yaḥ paśyati sa paśyati || 13.28 ||",
+      "id": "13.28 Siapa yang melihat Tuhan Yang Maha Esa, yang selalu ada dalam semua makhluk, ia melihat yang tidak binasa di dalam yang binasa.",
+      "ban": "13.28 Sapasirake sane nyingakin Ida Sang Hyang Widhi Wasa, sane setata wenten ring sakancan sarwa prani, ipun nyingakin sane tan rusak ring sane tan rusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.28 Whoever sees the Supreme Lord, who is ever present in all creatures, sees the imperishable in the perishable."
+    },
+    {
+      "no": 29,
+      "devanagari": "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम् । न हिनस्त्यात्मनात्मानं ततो याति परां गतिम् ॥ १३.२९ ॥",
+      "iast": "samaṃ paśyanhi sarvatra samavasthitamīśvaram | na hinastyātmanātmānaṃ tato yāti parāṃ gatim || 13.29 ||",
+      "id": "13.29 Karena dia yang melihat Tuhan yang sama berdiam di mana-mana tidak menghancurkan Diri dengan sendirinya; dia pergi ke tujuan tertinggi.",
+      "ban": "13.29 Santukan anake sane nyingakin Ida Sang Hyang Widi Wasa sane pateh magenah ring dija-dija, ipun nenten ngusak asik ragan ipune. ida lunga ka tetujon sane pinih tegeh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.29 For he who sees the same God dwelling everywhere does not destroy the Self of himself; he goes to the highest goal."
+    },
+    {
+      "no": 30,
+      "devanagari": "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः । यः पश्यति तथात्मानमकर्तारं स पश्यति ॥ १३.३० ॥",
+      "iast": "prakṛtyaiva ca karmāṇi kriyamāṇāni sarvaśaḥ | yaḥ paśyati tathātmānamakartāraṃ sa paśyati || 13.30 ||",
+      "id": "13.30 Ia melihat, yang melihat bahwa semua tindakan hanya dilakukan oleh Alam dan bahwa Diri tidak mempunyai tindakan.",
+      "ban": "13.30 Ida nyingakin, sane nyingakin samian parilaksana wantah kamargiang olih Alam turmaning Sang Atma nenten madue parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.30 He sees, who sees that all action is performed only by Nature and that the Self has no action."
+    },
+    {
+      "no": 31,
+      "devanagari": "यदा भूतपृथग्भावमेकस्थमनुपश्यति । तत एव च विस्तारं ब्रह्म सम्पद्यते तदा ॥ १३.३१ ॥",
+      "iast": "yadā bhūtapṛthagbhāvamekasthamanupaśyati | tata eva ca vistāraṃ brahma sampadyate tadā || 13.31 ||",
+      "id": "13.31 Ketika seseorang melihat seluruh ragam makhluk bersemayam di dalam Yang Esa, dan menyebar dari Yang Esa saja, ia kemudian menjadi Brahman.",
+      "ban": "13.31 Rikala anake nyingakin sakancan soroh sarwa prani sane magenah ring Sang Satunggil, tur metu saking Sang Satunggil kemanten, ipun raris dados Brahman.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.31 When one sees all the variety of beings residing in the One, and emanating from the One alone, he then becomes Brahman."
+    },
+    {
+      "no": 32,
+      "devanagari": "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः । शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते ॥ १३.३२ ॥",
+      "iast": "anāditvānnirguṇatvātparamātmāyamavyayaḥ | śarīrastho|api kaunteya na karoti na lipyate || 13.32 ||",
+      "id": "13.32 Karena tidak mempunyai permulaan dan tidak mempunyai sifat-sifat (apapun), Diri Yang Paling Utama, tidak dapat binasa, meskipun berdiam di dalam tubuh, wahai Arjuna, tidak bertindak dan tidak ternoda.",
+      "ban": "13.32 Tan madue pangawit tur tan madue sifat (saking soroh napi kemanten), Sang Hyang Widhi Wasa, tan prasida ical, yadiastun malinggih ring angga, duh Sang Arjuna, tan malaksana tur tan paceda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.32 Having no beginning and no qualities (of any kind), the Supreme Self, cannot perish, though dwelling in the body, O Arjuna, does not act and is undefiled."
+    },
+    {
+      "no": 33,
+      "devanagari": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते । सर्वत्रावस्थितो देहे तथात्मा नोपलिप्यते ॥ १३.३३ ॥",
+      "iast": "yathā sarvagataṃ saukṣmyādākāśaṃ nopalipyate | sarvatrāvasthito dehe tathātmā nopalipyate || 13.33 ||",
+      "id": "13.33 Sebagaimana eter yang berada di mana-mana tidak ternoda, karena kehalusannya, demikian pula Diri yang berada di mana-mana di dalam tubuh juga tidak ternoda.",
+      "ban": "13.33 Sakadi eter sane wenten ring dija-dija tan paceda, sangkaning halusnyane, asapunika taler Sang Hyang Atma sane wenten ring dija-dija ring angga sarira taler tan paceda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.33 Just as the omnipresent ether is untainted, because of its subtlety, so the Self which is omnipresent in the body is also undefiled."
+    },
+    {
+      "no": 34,
+      "devanagari": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः । क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत ॥ १३.३४ ॥",
+      "iast": "yathā prakāśayatyekaḥ kṛtsnaṃ lokamimaṃ raviḥ | kṣetraṃ kṣetrī tathā kṛtsnaṃ prakāśayati bhārata || 13.34 ||",
+      "id": "13.34 Sebagaimana matahari yang satu menerangi seluruh dunia, demikian pula Penguasa ladang (Diri Tertinggi) \nmenerangi seluruh lapangan, wahai Arjuna.",
+      "ban": "13.34 Sakadi suryane sane asiki nyunarin jagate sami, asapunika taler Ida Sang Hyang Widhi Wasa sane Maha Luhur. \nnyunarin tegale sami, duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.34 As the one sun illuminates the whole world, so does the Lord of the fields (Supreme Self) \nilluminate the entire field, O Arjuna."
+    },
+    {
+      "no": 35,
+      "devanagari": "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा । भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम् ॥ १३.३५ ॥",
+      "iast": "kṣetrakṣetrajñayorevamantaraṃ jñānacakṣuṣā | bhūtaprakṛtimokṣaṃ ca ye viduryānti te param || 13.35 ||",
+      "id": "13.35 Mereka yang, melalui mata pengetahuan, melihat perbedaan antara lapangan dan yang mengetahui dan juga kebebasan dari Hakikat keberadaan, pergi kepada Yang Maha Kuasa.",
+      "ban": "13.35 Sang sane, malarapan antuk panyingakan kaweruhan, nyingakin pabinayan tegal miwah sang sane uning tur taler kabebasan saking Jati kawentenan, lunga ring Sang Maha Wisesa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "13.35 Those who, through the eyes of knowledge, see the difference between the field and the knower and also the freedom from the Essence of existence, go to the Almighty."
+    }
+  ]
+}

@@ -122,12 +122,15 @@ for (let i = 0; i < data.sloka.length; i++) {
   if (!(typeof s.ban === "string" || s.ban === null)) {
     err(`sloka no ${s.no}: field "ban" harus string atau null.`);
   }
+  if (!(typeof s.en === "string" || s.en === null)) {
+    err(`sloka no ${s.no}: field "en" harus string atau null.`);
+  }
 
   // status
   if (!s.status || typeof s.status !== "object") {
     err(`sloka no ${s.no}: field "status" harus object.`);
   } else {
-    for (const k of ["id", "ban"]) {
+    for (const k of ["id", "ban", "en"]) {
       if (!validStatus.has(s.status[k])) {
         err(`sloka no ${s.no}: status.${k} = "${s.status[k]}" bukan nilai sah (kosong|draf|review|final).`);
       }

@@ -1,0 +1,606 @@
+{
+  "bab": 4,
+  "judul": {
+    "sanskrit": "Jñāna-karma-sannyāsa-yoga",
+    "id": "Jñāna Karma Sannyāsa Yoga",
+    "ban": "Jñana Karma Sannyasa Yoga",
+    "en": "Jñāna Karma Sannyāsa Yoga"
+  },
+  "jumlah_sloka": 42,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 4",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । इमं विवस्वते योगं प्रोक्तवानहमव्ययम् । विवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत् ॥ ४.१ ॥",
+      "iast": "śrībhagavānuvāca | imaṃ vivasvate yogaṃ proktavānahamavyayam | vivasvānmanave prāha manurikṣvākave|abravīt || 4.1 ||",
+      "id": "4.1 Sang Bhagavā berkata bahwa saya mengajarkan Yoga yang tidak dapat binasa ini kepada Vivasvan; dia menceritakannya pada Manu; Manu mengumumkannya kepada Ikshvaku.",
+      "ban": "4.1 Ida Sang Hyang Widhi Wasa ngandikayang titiang ngajahin Yoga sane nenten prasida ical puniki ring Sang Wiwaswan; ida nguningayang indike punika ring Manu; Manu nguningayang indike punika ring Ikswaku.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.1 The Blessed One said that I taught this imperishable Yoga to Vivasvan; he told it to Manu; Manu announced it to Ikshvaku."
+    },
+    {
+      "no": 2,
+      "devanagari": "एवं परम्पराप्राप्तमिमं राजर्षयो विदुः । स कालेनेह महता योगो नष्टः परन्तप ॥ ४.२ ॥",
+      "iast": "evaṃ paramparāprāptamimaṃ rājarṣayo viduḥ | sa kāleneha mahatā yogo naṣṭaḥ parantapa || 4.2 ||",
+      "id": "4.2 Hal ini, yang diwariskan secara berurutan, diketahui oleh para resi kerajaan. Yoga ini, setelah sekian lama, telah hilang di sini, wahai Parantapa (pembakar musuh).",
+      "ban": "4.2 Indike punika, sane katedunang nglantur, sampun kauningin olih para wiku kerajaan. Yoga puniki, risampun suwe, sampun ical iriki, duh parantapa (pembakar musuh).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.2 These, handed down in succession, were known to the royal sages. This Yoga, after a long time, has disappeared here, O Parantapa (burner of enemies)."
+    },
+    {
+      "no": 3,
+      "devanagari": "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः । भक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम् ॥ ४.३ ॥",
+      "iast": "sa evāyaṃ mayā te|adya yogaḥ proktaḥ purātanaḥ | bhakto|asi me sakhā ceti rahasyaṃ hyetaduttamam || 4.3 ||",
+      "id": "4.3 Yoga kuno yang sama saat ini telah Aku ajarkan kepadamu, karena engkau adalah penyembah dan sahabatKu; itu adalah rahasia tertinggi.",
+      "ban": "4.3 Yoga kuno sane pateh sane mangkin sampun ajahin titiang ring ragane, santukan ragane wantah bhakta lan sawitran Titiang; punika wantah rahasia sane pinih tegeh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.3 The same ancient Yoga I have now taught you, because you are My devotee and friend; it is the highest secret."
+    },
+    {
+      "no": 4,
+      "devanagari": "अर्जुन उवाच । अपरं भवतो जन्म परं जन्म विवस्वतः । कथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति ॥ ४.४ ॥",
+      "iast": "arjuna uvāca | aparaṃ bhavato janma paraṃ janma vivasvataḥ | kathametadvijānīyāṃ tvamādau proktavāniti || 4.4 ||",
+      "id": "4.4 Arjuna mengatakan Nanti adalah kelahiran-Mu, dan sebelum itu adalah kelahiran Vivasvan (Matahari); bagaimana aku bisa memahami bahwa Engkau mengajarkan Yoga ini pada awalnya?",
+      "ban": "4.4 Ida Sang Arjuna maosang Salanturnyane wantah embas Ida, tur sadurung punika embas Ida Sang Wiwaswan (Surya); sapunapi antuk titiang ngresepang mungguing Palungguh IRatu ngajahin Yoga puniki ring pangawit?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.4 Arjuna says Later is Your birth, and before that is the birth of Vivasvan (Sun); how can I understand that You taught this Yoga in the first place?"
+    },
+    {
+      "no": 5,
+      "devanagari": "श्रीभगवानुवाच । बहूनि मे व्यतीतानि जन्मानि तव चार्जुन । तान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप ॥ ४.५ ॥",
+      "iast": "śrībhagavānuvāca | bahūni me vyatītāni janmāni tava cārjuna | tānyahaṃ veda sarvāṇi na tvaṃ vettha parantapa || 4.5 ||",
+      "id": "4.5 Sang Bhagavā bersabda Banyak kelahiran-Ku yang telah berlalu begitu pula kelahiranmu, wahai Arjuna; Aku mengetahui semuanya tetapi engkau tidak mengetahuinya, wahai Parantapa (penghangus musuh).",
+      "ban": "4.5 Ida Sang Maha Suci ngandika, akeh embas titiange sampun lintang, kadi asapunika taler embas druene, duh Arjuna; Titiang uning samian nanging ragane nenten uning, duh Parantapa (pembakar musuh).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.5 The Blessed One said My many births have passed away and so have yours, O Arjuna; I know everything but you do not know, O Parantapa (scorcher of enemies)."
+    },
+    {
+      "no": 6,
+      "devanagari": "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन् । प्रकृतिं स्वामधिष्ठाय सम्भवाम्यात्ममायया ॥ ४.६ ॥",
+      "iast": "ajo|api sannavyayātmā bhūtānāmīśvaro|api san | prakṛtiṃ svāmadhiṣṭhāya sambhavāmyātmamāyayā || 4.6 ||",
+      "id": "4.6 Meskipun Aku belum dilahirkan, bersifat tidak dapat binasa, dan meskipun Aku adalah Penguasa segala makhluk, namun dengan mengatur Sifat-Ku sendiri, Aku dilahirkan oleh Maya-Ku sendiri.",
+      "ban": "4.6 Yadiastun titiang tan embas, tan pacang rusak, tur yadiastun titiang wantah Ida Sang Hyang Widhi Wasa, nanging antuk ngatur Sifat Titiang ngraga, Titiang embas olih Maya Titiang ngraga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.6 Although I am unborn, imperishable, and although I am the Lord of all creatures, yet by regulating My own Nature, I am born by My own Maya."
+    },
+    {
+      "no": 7,
+      "devanagari": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥ ४.७ ॥",
+      "iast": "yadā yadā hi dharmasya glānirbhavati bhārata | abhyutthānamadharmasya tadātmānaṃ sṛjāmyaham || 4.7 ||",
+      "id": "4.7 Kapan pun kebenaran menurun, wahai Arjuna, dan munculnya kejahatan, maka Aku mewujudkan diri-Ku.",
+      "ban": "4.7 Sabilang kapatutan rered, duh Sang Arjuna, tur metu kacorahan, irika Titiang nyinahang raga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.7 Whenever righteousness declines, O Arjuna, and evil arises, then I manifest Myself."
+    },
+    {
+      "no": 8,
+      "devanagari": "परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मसंस्थापनार्थाय सम्भवामि युगे युगे ॥ ४.८ ॥",
+      "iast": "paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām | dharmasaṃsthāpanārthāya sambhavāmi yuge yuge || 4.8 ||",
+      "id": "4.8 Untuk perlindungan orang baik, untuk penghancuran orang jahat dan untuk penegakan kebenaran, saya dilahirkan di setiap zaman.",
+      "ban": "4.8 Mangda prasida nyayubin jadmane sane becik, mangda prasida ngrusak jadmane sane corah miwah mangda prasida ngadegang kasujatian, titiang embas ring sabilang masa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.8 For the protection of good people, for the destruction of evil people and for the establishment of truth, I was born in every age."
+    },
+    {
+      "no": 9,
+      "devanagari": "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः । त्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन ॥ ४.९ ॥",
+      "iast": "janma karma ca me divyamevaṃ yo vetti tattvataḥ | tyaktvā dehaṃ punarjanma naiti māmeti so|arjuna || 4.9 ||",
+      "id": "4.9 Barangsiapa mengetahui, dalam terang sejatinya, kelahiran dan tindakan ilahi-Ku, setelah meninggalkan tubuh, tidak dilahirkan kembali, dia datang kepada-Ku, wahai Arjuna.",
+      "ban": "4.9 Sapasiraja uning, ring galangnyane sujati, embas lan laksanan titiange sane ilahi, sampun ninggalin angga, tan embas malih, ipun rauh ring Titiang, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.9 Whoever knows, in its true light, My divine birth and action, having left the body, is not born again, he comes to Me, O Arjuna."
+    },
+    {
+      "no": 10,
+      "devanagari": "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः । बहवो ज्ञानतपसा पूता मद्भावमागताः ॥ ४.१० ॥",
+      "iast": "vītarāgabhayakrodhā manmayā māmupāśritāḥ | bahavo jñānatapasā pūtā madbhāvamāgatāḥ || 4.10 ||",
+      "id": "4.10 Terbebas dari kemelekatan, rasa takut dan amarah, larut dalam diri-Ku, berlindung pada-Ku, disucikan oleh api pengetahuan, banyak orang telah mencapai Keberadaan-Ku.",
+      "ban": "4.10 Bebas saking keterikatan, takut lan duka, larut ring Titiang, masayuban ring Titiang, kasuciang antuk geni kaweruhan, akeh sane sampun ngamolihang Kawentenan Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.10 Freed from attachment, fear and anger, dissolved in Me, taking refuge in Me, purified by the fire of knowledge, many have attained My Being."
+    },
+    {
+      "no": 11,
+      "devanagari": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम् । मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥ ४.११ ॥",
+      "iast": "ye yathā māṃ prapadyante tāṃstathaiva bhajāmyaham | mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ || 4.11 ||",
+      "id": "4.11 Dengan cara apa pun manusia mendekati-Ku, Aku juga memberi imbalan kepada mereka; Jalanku dilalui manusia dalam segala hal, wahai Arjuna.",
+      "ban": "4.11 Sakancan cara anake nampekin Ulun, Ulun masih mapaica upah teken ia. Pemargin titiange kelangkungin olih i manusa ring sekancaning parindikan, duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.11 In whatever way people approach Me, I also reward them; My path is traversed by humans in all things, O Arjuna."
+    },
+    {
+      "no": 12,
+      "devanagari": "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः । क्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा ॥ ४.१२ ॥",
+      "iast": "kāṅkṣantaḥ karmaṇāṃ siddhiṃ yajanta iha devatāḥ | kṣipraṃ hi mānuṣe loke siddhirbhavati karmajā || 4.12 ||",
+      "id": "4.12 Mereka yang mendambakan kesuksesan dalam tindakan di dunia ini melakukan pengorbanan kepada para dewa; karena kesuksesan dicapai dengan susah payah oleh manusia melalui tindakan.",
+      "ban": "4.12 Sang sane meled kasuksesan ring parilaksana ring jagate puniki ngaturang aturan ring para dewata; santukan kasuksesan punika kapolihang antuk meweh pisan olih manusa malarapan antuk parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.12 Those who desire success in action in this world make sacrifices to the gods; because success is achieved with great difficulty by humans through action."
+    },
+    {
+      "no": 13,
+      "devanagari": "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः । तस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम् ॥ ४.१३ ॥",
+      "iast": "cāturvarṇyaṃ mayā sṛṣṭaṃ guṇakarmavibhāgaśaḥ | tasya kartāramapi māṃ viddhyakartāramavyayam || 4.13 ||",
+      "id": "4.13 Empat kasta telah Aku ciptakan berdasarkan pembedaan Guna dan Karma; meskipun Akulah pengarangnya, ketahuilah Aku sebagai yang tidak melakukan dan tidak dapat diubah.",
+      "ban": "4.13 Catur kasta sane sampun kakaryanin titiang madasar antuk pabinayan Guna lan Karma; yadiastun Titiang sane ngawi, uningin Titiang pinaka sane nenten ngamargiang tur nenten prasida kauwah.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.13 Four castes I have created based on the distinction between Guna and Karma; although I am the author, know Me as the one who does not do and cannot be changed."
+    },
+    {
+      "no": 14,
+      "devanagari": "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा । इति मां योऽभिजानाति कर्मभिर्न स बध्यते ॥ ४.१४ ॥",
+      "iast": "na māṃ karmāṇi limpanti na me karmaphale spṛhā | iti māṃ yo|abhijānāti karmabhirna sa badhyate || 4.14 ||",
+      "id": "4.14 Perbuatan tidak mencemari Aku, dan Aku juga tidak menginginkan hasil dari perbuatan. Barangsiapa mengenal Aku, ia tidak terikat oleh tindakan.",
+      "ban": "4.14 Parilaksana nenten ngletehin Titiang, taler Titiang nenten meled ring pikolih parilaksana. Sapasiraja sane uning ring Titiang, ipun nenten kaiket antuk parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.14 Actions do not pollute Me, nor do I desire the results of actions. Whoever knows Me is not bound by actions."
+    },
+    {
+      "no": 15,
+      "devanagari": "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः । कुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम् ॥ ४.१५ ॥",
+      "iast": "evaṃ jñātvā kṛtaṃ karma pūrvairapi mumukṣubhiḥ | kuru karmaiva tasmāttvaṃ pūrvaiḥ pūrvataraṃ kṛtam || 4.15 ||",
+      "id": "4.15 Mengetahui hal ini, para pencari kebebasan pada zaman dahulu juga melakukan tindakan; oleh karena itu lakukanlah juga perbuatanmu, seperti yang dilakukan orang-orang zaman dahulu pada zaman dahulu kala.",
+      "ban": "4.15 Uning ring indike punika, para jadma sane ngrereh kebebasan ring masa purba taler ngambil parilaksana; Duaning punika margiangja pakardin semetone, sakadi sane sampun kalaksanayang antuk anake sane nguni-nguni.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.15 Knowing this, freedom seekers in ancient times also took action; therefore also do your deeds, as the ancients did in ancient times."
+    },
+    {
+      "no": 16,
+      "devanagari": "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः । तत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात् ॥ ४.१६ ॥",
+      "iast": "kiṃ karma kimakarmeti kavayo|apyatra mohitāḥ | tatte karma pravakṣyāmi yajjñātvā mokṣyase|aśubhāt || 4.16 ||",
+      "id": "4.16 Apakah tindakan itu? Apa itu kelambanan? Mengenai hal ini bahkan orang bijak pun bingung. Oleh karena itu saya akan mengajarimu tindakan tersebut (sifat tindakan dan tidak bertindak) dengan mengetahui bahwa kamu akan terbebas dari kejahatan (dari Samsara, roda kelahiran dan kematian).",
+      "ban": "4.16 Napi sane kabaos parilaksana? Napi sane kabaos tan malaksana? Ngeninin indik parindikan punika yadiastun jadmane sane wicaksana sami bingung. Punika mawinan titiang pacang ngajahin ragane indik parilaksana punika (sifat tindakan lan ketidakberbuatan) uning ragane pacang bebas saking kacorahan (saking Samsara, roda embas lan mati).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.16 What is action? What is inaction? Regarding this matter even wise people are confused. Therefore I will teach you those actions (the nature of action and inaction) knowing that you will be free from evil (from Samsara, the wheel of birth and death)."
+    },
+    {
+      "no": 17,
+      "devanagari": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः । अकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः ॥ ४.१७ ॥",
+      "iast": "karmaṇo hyapi boddhavyaṃ boddhavyaṃ ca vikarmaṇaḥ | akarmaṇaśca boddhavyaṃ gahanā karmaṇo gatiḥ || 4.17 ||",
+      "id": "4.17 Karena sesungguhnya (sifat sebenarnya) suatu perbuatan (yang diperintahkan oleh kitab suci) harus diketahui, juga (bahwa) \ntindakan yang dilarang (atau melanggar hukum), dan tidak adanya tindakan; sulit dipahami adalah hakikat (jalan) tindakan.",
+      "ban": "4.17 Santukan sujati (sifat sane sujati) saking parilaksana (sane kapituduhang antuk buku suci) patut kauningin, taler (mangda) . \nparilaksana sane kalarang (utawi tan manut ring awig-awig), miwah tan malaksana; meweh karesepang inggih punika sifat (pamargi) parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.17 For indeed (the true nature) of an action (commanded by the holy book) must be known, also (that) \nprohibited (or unlawful) actions, and inaction; difficult to understand is the nature (path) of action."
+    },
+    {
+      "no": 18,
+      "devanagari": "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः । स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ॥ ४.१८ ॥",
+      "iast": "karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ | sa buddhimānmanuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt || 4.18 ||",
+      "id": "4.18 Dia yang melihat kelambanan dalam tindakan dan tindakan dalam kelambanan, dia bijaksana di antara manusia; dia adalah seorang Yogi dan pelaku segala tindakan.",
+      "ban": "4.18 Sang sane nyingakin kelesuan ring parilaksana miwah parilaksana ring kelesuan, ipun wicaksana ring pantaraning manusa; ida wantah Yogi tur sang ngamargiang sakancan parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.18 He who sees indolence in action and action in indolence, he is wise among men; he is a Yogi and doer of all actions."
+    },
+    {
+      "no": 19,
+      "devanagari": "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः । ज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ॥ ४.१९ ॥",
+      "iast": "yasya sarve samārambhāḥ kāmasaṅkalpavarjitāḥ | jñānāgnidagdhakarmāṇaṃ tamāhuḥ paṇḍitaṃ budhāḥ || 4.19 ||",
+      "id": "4.19 Barangsiapa yang semua usahanya tidak memiliki keinginan dan tujuan (egois), dan tindakannya telah dibakar oleh api pengetahuan, maka orang bijak menyebutnya sebagai orang bijak.",
+      "ban": "4.19 Sapasiraja sakancan utsahanyane nenten madue pikayunan lan tatujon (egois), tur parilaksanannyane sampun kageseng antuk geni kaweruhan, sang wicaksana nyambat ipun jadma wicaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.19 Whoever all his efforts have no desires and goals (selfish), and whose actions have been burned by the fire of knowledge, the wise call him a wise man."
+    },
+    {
+      "no": 20,
+      "devanagari": "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः । कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥ ४.२० ॥",
+      "iast": "tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ | karmaṇyabhipravṛtto|api naiva kiñcitkaroti saḥ || 4.20 ||",
+      "id": "4.20 Setelah meninggalkan kemelekatan terhadap hasil perbuatan, selalu merasa puas, tidak bergantung pada apa pun, ia tidak melakukan apa pun meskipun terlibat dalam aktivitas.",
+      "ban": "4.20 Sampun nilar keterkaitan ring pikolih parilaksana, setata puas, nenten gumantung ring napi-napi, ipun nenten ngamargiang napi-napi yadiastun ipun ngemargiang parikrama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.20 Having abandoned attachment to the results of actions, always content, does not depend on anything, he does not do anything even though he is engaged in activity."
+    },
+    {
+      "no": 21,
+      "devanagari": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः । शारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥ ४.२१ ॥",
+      "iast": "nirāśīryatacittātmā tyaktasarvaparigrahaḥ | śārīraṃ kevalaṃ karma kurvannāpnoti kilbiṣam || 4.21 ||",
+      "id": "4.21 Tanpa harapan dan dengan pikiran serta pengendalian diri, setelah meninggalkan segala ketamakan, hanya melakukan perbuatan jasmani, ia tidak melakukan dosa.",
+      "ban": "4.21 Tan madue pangajap-ajap miwah antuk pikayunan miwah ngendaliang raga, sampun nilar sakancan loba, wantah ngamargiang parilaksana ring raga, tan ngamargiang dosa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.21 Without hope and with thought and self-control, having abandoned all covetousness, performing only bodily actions, he commits no sin."
+    },
+    {
+      "no": 22,
+      "devanagari": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः । समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥ ४.२२ ॥",
+      "iast": "yadṛcchālābhasantuṣṭo dvandvātīto vimatsaraḥ | samaḥ siddhāvasiddhau ca kṛtvāpi na nibadhyate || 4.22 ||",
+      "id": "4.22 Puas dengan apa yang datang kepadanya tanpa usaha, bebas dari pasangan yang bertolak belakang dan iri hati, berpikiran seimbang dalam keberhasilan dan kegagalan, dalam bertindak pun ia tidak terikat.",
+      "ban": "4.22 Wareg ring napi sane rauh ring ipun tan wenten utsaha, bebas saking pasangan sane matungkasan lan iri hati, seimbang ring kasuksesan lan kegagalan, ring maparilaksana ipun nenten kaiket.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.22 Satisfied with what comes to him without effort, free from conflicting partners and envy, balanced-minded in success and failure, in acting he is not bound."
+    },
+    {
+      "no": 23,
+      "devanagari": "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः । यज्ञायाचरतः कर्म समग्रं प्रविलीयते ॥ ४.२३ ॥",
+      "iast": "gatasaṅgasya muktasya jñānāvasthitacetasaḥ | yajñāyācarataḥ karma samagraṃ pravilīyate || 4.23 ||",
+      "id": "4.23 Bagi seseorang yang terbebas dari kemelekatan, yang terbebaskan, yang pikirannya kokoh dalam pengetahuan, yang bekerja demi pengorbanan (demi Tuhan), seluruh tindakannya lenyap.",
+      "ban": "4.23 Antuk sang sane bebas saking keterkaitan, sane sampun kabebasang, sane pikayunannyane sampun mapaiketan ring kaweruhan, sane makarya demi yadnya (demi Ida Sang Hyang Widhi), sakancan parilaksanane wusan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.23 For one who is free from attachment, who is liberated, whose mind is established in knowledge, who works for the sake of sacrifice (for the sake of God), all actions cease."
+    },
+    {
+      "no": 24,
+      "devanagari": "ब्रह्मार्पणं ब्रह्म हविर्ब्रह्माग्नौ ब्रह्मणा हुतम् । ब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना ॥ ४.२४ ॥",
+      "iast": "brahmārpaṇaṃ brahma havirbrahmāgnau brahmaṇā hutam | brahmaiva tena gantavyaṃ brahmakarmasamādhinā || 4.24 ||",
+      "id": "4.24 Brahman adalah persembahan; Brahman adalah mentega cair (ghee); oleh Brahman persembahan dituangkan ke dalam api Brahman; Brahman sesungguhnya akan dapat dijangkau oleh orang yang selalu melihat Brahman beraksi.",
+      "ban": "4.24 Brahman punika pinaka aturan; Brahmana inggih punika mentega sane sampun leleh (ghee); olih Brahman aturan punika kacemplungang ring geni Brahman; Brahman sujatinnyane pacang prasida kaakses olih sang sane setata nyingakin Brahman ring parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.24 Brahman is an offering; Brahman is melted butter (ghee); by Brahman the offering is poured into the fire of Brahman; Brahman will actually be accessible to those who always see Brahman in action."
+    },
+    {
+      "no": 25,
+      "devanagari": "दैवमेवापरे यज्ञं योगिनः पर्युपासते । ब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति ॥ ४.२५ ॥",
+      "iast": "daivamevāpare yajñaṃ yoginaḥ paryupāsate | brahmāgnāvapare yajñaṃ yajñenaivopajuhvati || 4.25 ||",
+      "id": "4.25 Beberapa Yogi melakukan pengorbanan hanya kepada para dewa; sementara yang lain (yang telah menyadari Diri) mempersembahkan diri sebagai pengorbanan oleh Diri dalam api Brahman saja.",
+      "ban": "4.25 Wenten Yogi sane ngamargiang yadnya wantah ring para dewata kemanten; sedengkan sane lianan (sane sampun nyadarin Atma) ngaturang raga dados yadnya olih Atma ring geni Brahmana kemanten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.25 Some Yogis perform sacrifices only to the gods; while others (who have realized the Self) offer themselves as sacrifices by the Self in the fire of Brahman alone."
+    },
+    {
+      "no": 26,
+      "devanagari": "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति । शब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति ॥ ४.२६ ॥",
+      "iast": "śrotrādīnīndriyāṇyanye saṃyamāgniṣu juhvati | śabdādīnviṣayānanya indriyāgniṣu juhvati || 4.26 ||",
+      "id": "4.26 Beberapa lagi mempersembahkan organ pendengaran dan indera lainnya sebagai korban dalam api pengendalian; yang lain mempersembahkan suara dan objek indera lainnya sebagai pengorbanan dalam api indera.",
+      "ban": "4.26 Sane tiosan ngaturang pendengaran miwah indriya sane tiosan pinaka aturan ring geni pengendalian; sane lianan ngaturang suara miwah benda indriya sane lianan pinaka yadnya ring geni indriya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.26 Others offer the hearing and other sense organs as sacrifices in the fire of control; others offer sounds and other sense objects as sacrifices in the fire of the senses."
+    },
+    {
+      "no": 27,
+      "devanagari": "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे । आत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते ॥ ४.२७ ॥",
+      "iast": "sarvāṇīndriyakarmāṇi prāṇakarmāṇi cāpare | ātmasaṃyamayogāgnau juhvati jñānadīpite || 4.27 ||",
+      "id": "4.27 Yang lain lagi-lagi mengorbankan seluruh fungsi indera dan fungsi pernafasan (energi vital atau Prana) dalam api Yoga pengendalian diri yang dinyalakan oleh pengetahuan.",
+      "ban": "4.27 Sane lianan malih ngorbanin samian indriya lan fungsi pernapasan (energi vital utawi Prana) ring api Yoga pengendalian diri sane kaencegang olih kaweruhan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.27 Others again sacrifice all sense and respiratory functions (vital energy or Prana) in the Yoga fire of self-control kindled by knowledge."
+    },
+    {
+      "no": 28,
+      "devanagari": "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे । स्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः ॥ ४.२८ ॥",
+      "iast": "dravyayajñāstapoyajñā yogayajñāstathāpare | svādhyāyajñānayajñāśca yatayaḥ saṃśitavratāḥ || 4.28 ||",
+      "id": "4.28 Yang lain lagi-lagi mempersembahkan kekayaan, pertapaan, dan Yoga sebagai pengorbanan, sementara petapa yang menahan diri dan sumpah yang kaku mempersembahkan pembelajaran kitab suci dan pengetahuan sebagai pengorbanan.",
+      "ban": "4.28 Sane lianan malih ngaturang arta brana, tapa, miwah Yoga pinaka yadnya, sakemaon para tapa sane ngengkebang raga miwah sumpah kaku ngaturang paplajahan miwah kaweruhan kitab suci pinaka yadnya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.28 Others again offer wealth, austerities, and Yoga as sacrifices, while ascetics of self-restraint and rigid vows offer scriptural learning and knowledge as sacrifices."
+    },
+    {
+      "no": 29,
+      "devanagari": "अपाने जुह्वति प्राणं प्राणेऽपानं तथापरे । प्राणापानगती रुद्ध्वा प्राणायामपरायणाः ॥ ४.२९ ॥",
+      "iast": "apāne juhvati prāṇaṃ prāṇe|apānaṃ tathāpare | prāṇāpānagatī ruddhvā prāṇāyāmaparāyaṇāḥ || 4.29 ||",
+      "id": "4.29 Yang lain mempersembahkan sebagai korban napas keluar pada napas masuk, dan napas masuk pada napas keluar, dengan menahan jalannya napas keluar dan napas masuk, semata-mata terserap dalam pengendalian napas.",
+      "ban": "4.29 Sane lianan ngaturang pinaka kurban bayu sane medal ring bayu sane ngranjing, lan bayu sane ngranjing ring bayu sane metu, nahanin pamargin bayu sane medal lan bayu sane ngranjing, wantah kaserep ring kontrol bayu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.29 Others offer as sacrifice the out-breath on the in-breath, and the in-breath on the out-breath, holding the course of the out-breath and the in-breath, simply absorbed in the control of the breath."
+    },
+    {
+      "no": 30,
+      "devanagari": "अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति । सर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः ॥ ४.३० ॥",
+      "iast": "apare niyatāhārāḥ prāṇānprāṇeṣu juhvati | sarve|apyete yajñavido yajñakṣapitakalmaṣāḥ || 4.30 ||",
+      "id": "4.30 Orang lain yang mengatur pola makannya memberikan nafas kehidupan. Mereka semua adalah orang-orang yang mengetahui pengorbanan, yang dosa-dosanya dihapuskan melalui pengorbanan.",
+      "ban": "4.30 Jadma sane lianan sane ngatur ajengannyane ngicenin bayu kauripan. Ipun sami wantah jadma sane uning ring aturan, sane dosa-dosannyane kacuci malantaran aturan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.30 Other people who regulate their diet give the breath of life. They were all people who knew sacrifice, whose sins were washed away through sacrifice."
+    },
+    {
+      "no": 31,
+      "devanagari": "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम् । नायं लोकोऽस्त्ययज्ञस्य कुतोऽन्यः कुरुसत्तम ॥ ४.३१ ॥",
+      "iast": "yajñaśiṣṭāmṛtabhujo yānti brahma sanātanam | nāyaṃ loko|astyayajñasya kuto|anyaḥ kurusattama || 4.31 ||",
+      "id": "4.31 Mereka yang memakan sisa-sisa pengorbanan, yang seperti nektar, pergi menuju Brahman yang kekal. Dunia ini bukan untuk orang yang tidak melakukan kurban; lalu bagaimana dia bisa mendapatkan yang lain, wahai Arjuna?",
+      "ban": "4.31 Sang sane ngajengang sisan-sisan yadnya, sane sekadi amerta, lunga ka Brahman niskala. Jagat puniki boya ja kaanggen jadma sane nenten ngamargiang yadnya; raris asapunapi antuk Ida ngamolihang sane tiosan, inggih Sang Arjuna?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.31 Those who eat the remains of sacrifices, which are like nectar, go to eternal Brahman. This world is not for people who do not make sacrifices; then how can he get another, O Arjuna?"
+    },
+    {
+      "no": 32,
+      "devanagari": "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे । कर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे ॥ ४.३२ ॥",
+      "iast": "evaṃ bahuvidhā yajñā vitatā brahmaṇo mukhe | karmajānviddhi tānsarvānevaṃ jñātvā vimokṣyase || 4.32 ||",
+      "id": "4.32 Dengan demikian, banyak korban disebarkan di hadapan Brahman (secara harfiah) di mulut atau wajah Brahman). Ketahuilah semua itu lahir dari tindakan dan dengan mengetahui hal ini, Anda akan terbebaskan.",
+      "ban": "4.32 Asapunika, akeh yadnya sane kagenahang ring ajeng Brahman (secara harfiah) ring cangkem utawi prarain Brahman). Uningin ipun embas saking parilaksana tur antuk uning ring indike punika, ragane pacang kabebasang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.32 Thus, many sacrifices were spread before Brahman (literally) on Brahman's mouth or face). Know that they are born of action and by knowing this, you will be liberated."
+    },
+    {
+      "no": 33,
+      "devanagari": "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप । सर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते ॥ ४.३३ ॥",
+      "iast": "śreyāndravyamayādyajñājjñānayajñaḥ parantapa | sarvaṃ karmākhilaṃ pārtha jñāne parisamāpyate || 4.33 ||",
+      "id": "Swami Sivananda tidak mengomentari sloka ini",
+      "ban": "Swami Siwananda nenten ngicenin komentar indik sloka puniki .",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Swami Sivananda does not comment on this sloka"
+    },
+    {
+      "no": 34,
+      "devanagari": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया । उपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः ॥ ४.३४ ॥",
+      "iast": "tadviddhi praṇipātena paripraśnena sevayā | upadekṣyanti te jñānaṃ jñāninastattvadarśinaḥ || 4.34 ||",
+      "id": "4.34 Ketahuilah Itu Dengan Sujud Panjang, Dengan Berusaha Dan Dengan Melayani; orang bijak yang telah menyadari Kebenaran akan mengajarimu ilmu (itu).",
+      "ban": "4.34 Uningin Indik Sujud sane Panjang, Antuk Utsaha Lan Antuk Ngayahin; jadma sane wicaksana sane sampun ngrasayang Kasujatian pacang ngajahin ragane (indik) kaweruhan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.34 Know That By Long Prostrations, By Effort And By Serving; wise people who have realized the Truth will teach you (that) knowledge."
+    },
+    {
+      "no": 35,
+      "devanagari": "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव । येन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि (var अशेषाणि) ॥ ४.३५ ॥",
+      "iast": "yajjñātvā na punarmohamevaṃ yāsyasi pāṇḍava | yena bhūtānyaśeṣāṇi drakṣyasyātmanyatho mayi || 4.35 ||",
+      "id": "4.35 Mengetahui “bahwa” engkau tidak boleh, wahai Arjuna, lagi-lagi tertipu seperti ini; dan dengan itu engkau akan melihat semua makhluk di dalam Dirimu dan juga di dalam Aku.",
+      "ban": "4.35 Uning “indike punika” tan dados, duh Sang Arjuna, malih keni bobab kadi asapuniki; tur antuk punika ragane pacang nyingakin sakancan sarwa prani ring Ragane lan taler ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.35 Knowing “that” you must not, O Arjuna, be again deceived like this; and with that you will see all creatures in You and also in Me."
+    },
+    {
+      "no": 36,
+      "devanagari": "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः । सर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि ॥ ४.३६ ॥",
+      "iast": "api cedasi pāpebhyaḥ sarvebhyaḥ pāpakṛttamaḥ | sarvaṃ jñānaplavenaiva vṛjinaṃ santariṣyasi || 4.36 ||",
+      "id": "4.36 Sekalipun engkau adalah orang yang paling berdosa di antara semua pendosa, namun sesungguhnya engkau harus melintasi segala dosa dengan sekoci pengetahuan.",
+      "ban": "4.36 Yadiastun ragane pinih madosa saking sakancan jadma madosa, nanging ragane patut nglintangin sakancan dosa antuk jukung kaweruhan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.36 Even though you are the most sinful of all sinners, yet you must cross all sins with the boat of knowledge."
+    },
+    {
+      "no": 37,
+      "devanagari": "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन । ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥ ४.३७ ॥",
+      "iast": "yathaidhāṃsi samiddho|agnirbhasmasātkurute|arjuna | jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā || 4.37 ||",
+      "id": "4.37 Seperti api yang berkobar-kobar mengubah bahan bakar menjadi abu, wahai Arjuna, demikian pula api pengetahuan mengubah segala perbuatan menjadi abu.",
+      "ban": "4.37 Sakadi geni sane ngendih ngubah bahan bakar dados abu, duh Sang Arjuna, asapunika taler geni kaweruhan ngubah sakancan parilaksana dados abu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.37 As a blazing fire turns fuel into ashes, O Arjuna, so the fire of knowledge turns all actions into ashes."
+    },
+    {
+      "no": 38,
+      "devanagari": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते । तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥ ४.३८ ॥",
+      "iast": "na hi jñānena sadṛśaṃ pavitramiha vidyate | tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati || 4.38 ||",
+      "id": "4.38 Sesungguhnya di dunia ini tidak ada pembersih yang melebihi ilmu pengetahuan. Dia yang sempurna dalam Yoga menemukannya dalam Diri pada waktunya.",
+      "ban": "4.38 Wiakti ring jagate puniki nenten wenten sane bersih sane unggul ring ilmu pengetahuan. Ida sane paripurna ring Yoga manggihin ring Atma ring galahe sane patut.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.38 Indeed, in this world there is no cleaner that is superior to science. He who is perfect in Yoga finds it in the Self in due time."
+    },
+    {
+      "no": 39,
+      "devanagari": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः । ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ॥ ४.३९ ॥",
+      "iast": "śraddhāvā|Nllabhate jñānaṃ tatparaḥ saṃyatendriyaḥ | jñānaṃ labdhvā parāṃ śāntimacireṇādhigacchati || 4.39 ||",
+      "id": "4.39 Orang yang beriman, yang mengabdi padanya, dan yang menundukkan inderanya, memperoleh ilmu (ini); dan setelah memperoleh pengetahuan, ia segera mencapai kedamaian tertinggi.",
+      "ban": "4.39 Sang sane pracaya, sane ngayahin, tur sane ngasorang indriya, ngamolihang (puniki) kaweruhan; tur sampun ngamolihang kaweruhan, digelis ida ngamolihang karahayuan sane pinih utama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.39 Those who believe, who serve it, and who subdue their senses, acquire (this) knowledge; and having acquired knowledge, he soon attained supreme peace."
+    },
+    {
+      "no": 40,
+      "devanagari": "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति । नायं लोकोऽस्ति न परो न सुखं संशयात्मनः ॥ ४.४० ॥",
+      "iast": "ajñaścāśraddadhānaśca saṃśayātmā vinaśyati | nāyaṃ loko|asti na paro na sukhaṃ saṃśayātmanaḥ || 4.40 ||",
+      "id": "4.40 Orang yang bodoh, orang yang tidak beriman, orang yang ragu-ragu menuju kehancuran; tidak ada dunia ini atau dunia lain, dan tidak ada kebahagiaan bagi orang yang ragu-ragu.",
+      "ban": "4.40 Anake sane tan uning, anake sane tan pracaya, anake sane sangsaya, ngawinang karusakan; tan wenten jagat puniki wiadin sane lianan, tur tan wenten karahayuan ring sang sane sangsaya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.40 The ignorant, the disbelievers, the doubters lead to destruction; there is no this world or another, and there is no happiness for the doubter."
+    },
+    {
+      "no": 41,
+      "devanagari": "योगसंन्यस्तकर्माणं ज्ञानसञ्छिन्नसंशयम् । आत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय ॥ ४.४१ ॥",
+      "iast": "yogasaṃnyastakarmāṇaṃ jñānasañchinnasaṃśayam | ātmavantaṃ na karmāṇi nibadhnanti dhanañjaya || 4.41 ||",
+      "id": "4.41 Barangsiapa yang telah meninggalkan perbuatan-perbuatan Yoga, yang keragu-raguannya terkoyak oleh pengetahuan, dan yang menguasai perbuatan-perbuatan, tidak mengikatnya, wahai Arjuna.",
+      "ban": "4.41 Sapasiraja sane sampun nilar parilaksana Yoga, sane sangsayane kagebug antuk kaweruhan, tur sane nguasayang parilaksana, tan ngiket, duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.41 Whoever has abandoned the actions of Yoga, whose doubts are shattered by knowledge, and who is master of the actions, does not bind them, O Arjuna."
+    },
+    {
+      "no": 42,
+      "devanagari": "तस्मादज्ञानसम्भूतं हृत्स्थं ज्ञानासिनात्मनः । छित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत ॥ ४.४२ ॥",
+      "iast": "tasmādajñānasambhūtaṃ hṛtsthaṃ jñānāsinātmanaḥ | chittvainaṃ saṃśayaṃ yogamātiṣṭhottiṣṭha bhārata || 4.42 ||",
+      "id": "4.42 Oleh karena itu dengan pedang pengetahuan (tentang Diri) potonglah keraguan diri yang lahir dari ketidaktahuan, bersemayam di dalam hatimu, dan berlindunglah pada Yoga. Bangkitlah wahai Arjuna.",
+      "ban": "4.42 Duaning asapunika antuk pedang kaweruhan (ring Raga) getepja rasa sangsaya ring raga sane embas saking tan uning, sane magenah ring manah, tur masayuban ring Yoga. Matangija duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "4.42 Therefore with the sword of knowledge (of the Self) cut off the self-doubt born of ignorance, residing in your heart, and take refuge in Yoga. Arise, O Arjuna."
+    }
+  ]
+}

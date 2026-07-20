@@ -1,0 +1,354 @@
+{
+  "bab": 16,
+  "judul": {
+    "sanskrit": "Daivāsura-sampad-vibhāga-yoga",
+    "id": "Daivāsura Sampad Vibhāga Yoga",
+    "ban": "Yoga Vibhaga Sampad",
+    "en": "Daivāsura Sampad Vibhāga Yoga"
+  },
+  "jumlah_sloka": 24,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 16",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः । दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥ १६.१ ॥",
+      "iast": "śrībhagavānuvāca | abhayaṃ sattvasaṃśuddhirjñānayogavyavasthitiḥ | dānaṃ damaśca yajñaśca svādhyāyastapa ārjavam || 16.1 ||",
+      "id": "16.1 Bhagavā bersabda Keberanian, kemurnian hati, ketabahan dalam pengetahuan dan Yoga, sedekah, pengendalian indera, pengorbanan, pembelajaran kitab suci, pertapaan dan keterusterangan.",
+      "ban": "16.1 Ida Bhatara ngandika Kewanitaan, kesucian hati, teguh ring kaweruhan lan Yoga, sedekah, ngekang indriya, kurban, malajah kitab suci, tepat lan jujur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.1 The Lord said Courage, purity of heart, steadfastness in knowledge and Yoga, almsgiving, restraint of the senses, sacrifice, study of the scriptures, austerity and candor."
+    },
+    {
+      "no": 2,
+      "devanagari": "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम् । दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम् ॥ १६.२ ॥",
+      "iast": "ahiṃsā satyamakrodhastyāgaḥ śāntirapaiśunam | dayā bhūteṣvaloluptvaṃ mārdavaṃ hrīracāpalam || 16.2 ||",
+      "id": "16.2 Ketidakberbahayaan, kebenaran, tidak adanya kemarahan, penolakan, kedamaian, tidak adanya kebengkokan, belas kasihan terhadap makhluk, tidak tamak, lemah lembut, rendah hati, tidak adanya plin-plan.",
+      "ban": "16.2 Tan baya, patut, tan wenten pidukan, nulak, dame, tan wenten bengkot, welas asih ring sarwa prani, tan loba, alus, ngasorang raga, tan wenten ngraos.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.2 Harmlessness, righteousness, absence of anger, renunciation, peace, absence of crookedness, compassion for creatures, non-covetousness, meekness, humility, absence of fickleness."
+    },
+    {
+      "no": 3,
+      "devanagari": "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता । भवन्ति सम्पदं दैवीमभिजातस्य भारत ॥ १६.३ ॥",
+      "iast": "tejaḥ kṣamā dhṛtiḥ śaucamadroho nātimānitā | bhavanti sampadaṃ daivīmabhijātasya bhārata || 16.3 ||",
+      "id": "16.3 Semangat, pengampunan, ketabahan, kesucian, tidak adanya kebencian, tidak adanya kesombongan, semua ini adalah milik orang yang terlahir di alam ketuhanan, wahai Arjuna.",
+      "ban": "16.3 Semangat, pangampura, teguh, kasucian, tan wenten gedeg, tan wenten sombong, samian punika druwen sang sane embas ring jagat ilahi, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.3 Zeal, forgiveness, fortitude, purity, absence of hatred, absence of arrogance, all these belong to one who is born in the divine realm, O Arjuna."
+    },
+    {
+      "no": 4,
+      "devanagari": "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च । अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम् ॥ १६.४ ॥",
+      "iast": "dambho darpo|abhimānaśca krodhaḥ pāruṣyameva ca | ajñānaṃ cābhijātasya pārtha sampadamāsurīm || 16.4 ||",
+      "id": "16.4 Kemunafikan, kesombongan dan kesombongan, kemarahan dan juga kekerasan dan ketidaktahuan, adalah milik orang yang dilahirkan dalam keadaan setan, wahai Partha (Arjuna).",
+      "ban": "16.4 Kemunafikan, sombong lan sombong, gedeg taler kekerasan lan tan uning, druwen sang sane embas ring kahanan setan, duh Partha (Arjuna).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.4 Hypocrisy, arrogance and arrogance, anger as well as violence and ignorance, belong to one who is born in a demonic state, O Partha (Arjuna)."
+    },
+    {
+      "no": 5,
+      "devanagari": "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता । मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव ॥ १६.५ ॥",
+      "iast": "daivī sampadvimokṣāya nibandhāyāsurī matā | mā śucaḥ sampadaṃ daivīmabhijāto|asi pāṇḍava || 16.5 ||",
+      "id": "16.5 Sifat ilahi dianggap mendukung pembebasan, dan sifat jahat dianggap mendukung perbudakan. Jangan bersedih, wahai Arjuna, engkau dilahirkan dengan anugerah ilahi.",
+      "ban": "16.5 Sifat ilahi kabaosang ngaptiang kabebasan, tur sifat corah kabaosang ngaptiang perbudakan. Sampunang I Dewa sungsut Sang Arjuna, I Dewa embas antuk pasuecan Hyang Widhi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.5 The divine nature is thought to favor liberation, and the evil nature is thought to favor slavery. Do not be sad, O Arjuna, you were born with divine grace."
+    },
+    {
+      "no": 6,
+      "devanagari": "द्वौ भूतसर्गौ लोकेऽस्मिन्दैव आसुर एव च । दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे शृणु ॥ १६.६ ॥",
+      "iast": "dvau bhūtasargau loke|asmindaiva āsura eva ca | daivo vistaraśaḥ prokta āsuraṃ pārtha me śṛṇu || 16.6 ||",
+      "id": "16.6 Ada dua jenis makhluk di dunia ini, makhluk ilahi dan makhluk jahat; yang ilahi telah dijelaskan secara panjang lebar; dengarlah dariKu, wahai Arjuna, yang kerasukan setan.",
+      "ban": "16.6 Ring jagate puniki wenten kalih soroh, inggih punika sang ilahi miwah sang sane corah; sang ilahi sampun katlatarang panjang lebar; Pirengang saking Titiang, duh Sang Arjuna, sane karangsukan detya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.6 There are two kinds of beings in this world, divine beings and evil beings; the divine has been explained at length; Hear from Me, O Arjuna, who is possessed by the devil."
+    },
+    {
+      "no": 7,
+      "devanagari": "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः । न शौचं नापि चाचारो न सत्यं तेषु विद्यते ॥ १६.७ ॥",
+      "iast": "pravṛttiṃ ca nivṛttiṃ ca janā na vidurāsurāḥ | na śaucaṃ nāpi cācāro na satyaṃ teṣu vidyate || 16.7 ||",
+      "id": "16.7 Orang yang kerasukan setan tidak tahu apa yang harus dilakukan dan apa yang harus dihindari; tidak ada kemurnian, perilaku benar, atau kebenaran yang ditemukan di dalamnya.",
+      "ban": "16.7 Anake sane keni setan nenten uning napi sane patut kalaksanayang miwah napi sane patut ngelidin; tan wenten kasucian, parilaksana sane patut, wiadin kapatutan sane pacang kapanggihin ring tengahnyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.7 A person possessed by a demon does not know what to do and what to avoid; there is no purity, right conduct, or righteousness to be found in it."
+    },
+    {
+      "no": 8,
+      "devanagari": "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम् । अपरस्परसम्भूतं किमन्यत्कामहैतुकम् ॥ १६.८ ॥",
+      "iast": "asatyamapratiṣṭhaṃ te jagadāhuranīśvaram | aparasparasambhūtaṃ kimanyatkāmahaitukam || 16.8 ||",
+      "id": "16.8 Mereka berkata, \"Alam semesta ini tanpa kebenaran, tanpa landasan (moral), tanpa Tuhan, yang tercipta karena kesatuan bersama, dengan nafsu pada tujuannya; apa lagi?\"",
+      "ban": "16.8 Ipun mabaos sapuniki: \"Alam semesta puniki tan wenten kasujatian, tan wenten dasar (moral), tan wenten Ida Sang Hyang Widi Wasa, kakardi antuk saling asiki, antuk rasa meled ring tatujonnyane; napi malih?\"",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.8 They said, \"This universe is without truth, without (moral) foundations, without God, created by mutual unity, with passion for its purpose; what else?\""
+    },
+    {
+      "no": 9,
+      "devanagari": "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः । प्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः ॥ १६.९ ॥",
+      "iast": "etāṃ dṛṣṭimavaṣṭabhya naṣṭātmāno|alpabuddhayaḥ | prabhavantyugrakarmāṇaḥ kṣayāya jagato|ahitāḥ || 16.9 ||",
+      "id": "16.9 Dengan berpegang pada pandangan ini, jiwa-jiwa yang hancur karena kecerdasan yang kecil dan perbuatan yang kejam, muncul sebagai musuh dunia yang akan menghancurkannya.",
+      "ban": "16.9 Ngagem pamineh punika, atma sane karusak antuk akidik kawicaksanaan miwah parilaksana sane kejam, kacingak dados meseh jagate sane pacang ngusak-asik ipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.9 Holding to this view, souls destroyed by little intelligence and cruel deeds, appear as enemies of the world who will destroy them."
+    },
+    {
+      "no": 10,
+      "devanagari": "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः । मोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः ॥ १६.१० ॥",
+      "iast": "kāmamāśritya duṣpūraṃ dambhamānamadānvitāḥ | mohādgṛhītvāsadgrāhānpravartante|aśucivratāḥ || 16.10 ||",
+      "id": "16.10 Dipenuhi dengan keinginan yang tak terpuaskan, penuh kemunafikan, kesombongan dan kecongkakan, berpegang pada gagasan jahat melalui khayalan, mereka bekerja dengan tekad yang tidak murni.",
+      "ban": "16.10 Kabekin antuk pikayunan sane nenten prasida kenyang, bek antuk rasa munafik, sombong miwah sombong, ipun pada neket ring pikayunan sane corah malantaran iwang, ipun makarya antuk tetujon sane tan suci.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.10 Filled with insatiable desires, full of hypocrisy, pride and arrogance, clinging to evil ideas through delusion, they work with impure determination."
+    },
+    {
+      "no": 11,
+      "devanagari": "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः । कामोपभोगपरमा एतावदिति निश्चिताः ॥ १६.११ ॥",
+      "iast": "cintāmaparimeyāṃ ca pralayāntāmupāśritāḥ | kāmopabhogaparamā etāvaditi niścitāḥ || 16.11 ||",
+      "id": "16.11 Menyerahkan diri mereka pada berbagai kekhawatiran yang hanya berakhir dengan kematian, menganggap pemuasan nafsu sebagai tujuan tertinggi mereka, dan merasa yakin bahwa itu saja.",
+      "ban": "16.11 Nyerahang raga ring rasa jejeh sane wantah puput ring pati, nganggep ngledangin nafsunyane dados tatujon sane pinih tegeh, tur yakin mungguing wantah punika kemanten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.11 Giving themselves over to worries that only end in death, considering the gratification of their passions to be their highest goal, and being convinced that that is all."
+    },
+    {
+      "no": 12,
+      "devanagari": "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः । ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान् ॥ १६.१२ ॥",
+      "iast": "āśāpāśaśatairbaddhāḥ kāmakrodhaparāyaṇāḥ | īhante kāmabhogārthamanyāyenārthasañcayān || 16.12 ||",
+      "id": "16.12 Terikat oleh seratus ikatan pengharapan, menyerah pada nafsu dan kemarahan, mereka berusaha untuk memperoleh kekayaan demi kenikmatan indria dengan cara yang tidak sah.",
+      "ban": "16.12 Kaiket antuk satus ikatan pangajap-ajap, ngrereh nafsu miwah duka, ipun ngrereh kasugihan antuk pamargi sane tan patut.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.12 Bound by a hundred bonds of hope, yielding to lust and anger, they seek to obtain wealth for the sake of sensual pleasures by illegitimate means."
+    },
+    {
+      "no": 13,
+      "devanagari": "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम् । इदमस्तीदमपि मे भविष्यति पुनर्धनम् ॥ १६.१३ ॥",
+      "iast": "idamadya mayā labdhamimaṃ prāpsye manoratham | idamastīdamapi me bhaviṣyati punardhanam || 16.13 ||",
+      "id": "16.13 \"Ini telah aku peroleh hari ini; keinginanku ini akan aku penuhi; ini milikku dan kekayaan ini juga akan menjadi milikku di masa depan.\"",
+      "ban": "16.13 \"Puniki sane sampun polih titiang ring rahinane mangkin, pakarsan titiange puniki pacang titiang laksanayang; puniki druen titiange tur kasugihan puniki taler pacang dados druen titiange benjang pungkur.\"",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.13 \"This I have obtained today; this desire of mine I will fulfill; this is mine and this wealth will also be mine in the future.\""
+    },
+    {
+      "no": 14,
+      "devanagari": "असौ मया हतः शत्रुर्हनिष्ये चापरानपि । ईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी ॥ १६.१४ ॥",
+      "iast": "asau mayā hataḥ śatrurhaniṣye cāparānapi | īśvaro|ahamahaṃ bhogī siddho|ahaṃ balavānsukhī || 16.14 ||",
+      "id": "16.14 \"Musuh itu telah kubunuh; dan yang lain juga akan kubunuh. Akulah penguasanya. Aku menikmatinya. Aku sempurna, kuat, dan bahagia.\"",
+      "ban": "16.14 \"Meseh ento suba matiang tiang, tur ane lenan masih lakar matiang tiang. Tiang ane mrentah. Tiang ngrasayang. Tiang sampurna, kuat tur bagia.\"",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.14 \"That enemy I have killed; and the other I will also kill. I am the ruler. I enjoy it. I am perfect, strong, and happy.\""
+    },
+    {
+      "no": 15,
+      "devanagari": "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया । यक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः ॥ १६.१५ ॥",
+      "iast": "āḍhyo|abhijanavānasmi ko|anyo|asti sadṛśo mayā | yakṣye dāsyāmi modiṣya ityajñānavimohitāḥ || 16.15 ||",
+      "id": "16.15 \"Aku kaya dan terlahir dalam keluarga bangsawan. Siapa lagi yang setara denganku? Aku akan melakukan pengorbanan. Aku akan memberi (sedekah). Aku akan bersukacita,\" sehingga tertipu oleh ketidaktahuan.",
+      "ban": "16.15 \"Titiang sugih tur embas ring kulawarga sane luhur. Sapasirake malih sane pateh ring titiang? Titiang pacang ngaturang yadnya. Titiang pacang ngicenin (sedekah). Titiang pacang bagia,\" kadi asapunika katipu antuk tan uning.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.15 \"I am rich and born into a noble family. Who else is equal to me? I will make sacrifices. I will give (alms). I will rejoice,\" thus being deceived by ignorance."
+    },
+    {
+      "no": 16,
+      "devanagari": "अनेकचित्तविभ्रान्ता मोहजालसमावृताः । प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ ॥ १६.१६ ॥",
+      "iast": "anekacittavibhrāntā mohajālasamāvṛtāḥ | prasaktāḥ kāmabhogeṣu patanti narake|aśucau || 16.16 ||",
+      "id": "16.16 Karena dibingungkan oleh banyak khayalan, terjerat dalam perangkap khayalan, kecanduan pada pemuasan nafsu, mereka terjatuh ke dalam neraka yang kotor.",
+      "ban": "16.16 Kabingungan antuk akeh iwang, kejepit ring jebag iwang, kecanduan antuk ngledangin nafsu, ipun runtuh ring neraka sane leteh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.16 Bewildered by many delusions, entangled in the traps of delusion, addicted to the gratification of lust, they fall into a filthy hell."
+    },
+    {
+      "no": 17,
+      "devanagari": "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः । यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम् ॥ १६.१७ ॥",
+      "iast": "ātmasambhāvitāḥ stabdhā dhanamānamadānvitāḥ | yajante nāmayajñaiste dambhenāvidhipūrvakam || 16.17 ||",
+      "id": "16.17 Karena sombong, keras kepala, penuh dengan kesombongan dan mabuk kekayaan, mereka melakukan pengorbanan atas nama karena pamer, bertentangan dengan tata cara kitab suci.",
+      "ban": "16.17 Ipun sumbung, bengkung, sumbung tur punyah antuk kasugihan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.17 Being proud, stubborn, full of arrogance and drunk on riches, they performed sacrifices in the name of showing off, contrary to the ordinances of the scriptures."
+    },
+    {
+      "no": 18,
+      "devanagari": "अहंकारं बलं दर्पं कामं क्रोधं च संश्रिताः । मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः ॥ १६.१८ ॥",
+      "iast": "ahaṃkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ ca saṃśritāḥ | māmātmaparadeheṣu pradviṣanto|abhyasūyakāḥ || 16.18 ||",
+      "id": "16.18 Karena egoisme, kekuasaan, keangkuhan, nafsu dan kemarahan, orang-orang jahat ini membenci Aku dalam tubuh mereka sendiri dan tubuh orang lain.",
+      "ban": "16.18 Ulian egoisme, kawisesan, sombong, napsu muah gedeg, anake corah ene geting teken Ulun di awakne padidi muah di awak anake lenan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.18 Because of egoism, power, arrogance, lust and anger, these evil people hate Me in their own bodies and the bodies of others."
+    },
+    {
+      "no": 19,
+      "devanagari": "तानहं द्विषतः क्रुरान्संसारेषु नराधमान् । क्षिपाम्यजस्रमशुभानासुरीष्वेव योनिषु ॥ १६.१९ ॥",
+      "iast": "tānahaṃ dviṣataḥ krurānsaṃsāreṣu narādhamān | kṣipāmyajasramaśubhānāsurīṣveva yoniṣu || 16.19 ||",
+      "id": "16.19 Para pembenci yang kejam, yang terburuk di antara manusia di dunia, Aku melemparkan para pelaku kejahatan itu ke dalam rahim setan saja.",
+      "ban": "16.19 Parapemeseh sane kejam, sane pinih kaon ring pantaran manusane ring jagate, tiang ngentungang jadmane sane dursila ring garba Ratun Setane padidi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.19 The cruel haters, the worst among men in the world, I cast the evildoers into the womb of Satan alone."
+    },
+    {
+      "no": 20,
+      "devanagari": "आसुरीं योनिमापन्ना मूढा जन्मनि जन्मनि । मामप्राप्यैव कौन्तेय ततो यान्त्यधमां गतिम् ॥ १६.२० ॥",
+      "iast": "āsurīṃ yonimāpannā mūḍhā janmani janmani | māmaprāpyaiva kaunteya tato yāntyadhamāṃ gatim || 16.20 ||",
+      "id": "16.20 Memasuki rahim setan dan tertipu, kelahiran demi kelahiran, tanpa mencapai Aku, mereka jatuh, wahai Arjuna, ke dalam kondisi yang lebih rendah dari itu.",
+      "ban": "16.20 Ngranjing ring garba setan tur keni tipu, embas sesampun embas, tan rauh ring Titiang, sami runtuh, duh Sang Arjuna, ring kahanan sane andap saking punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.20 Entering the womb of the devil and being deceived, birth after birth, without reaching Me, they fell, O Arjuna, into a condition lower than that."
+    },
+    {
+      "no": 21,
+      "devanagari": "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः । कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ॥ १६.२१ ॥",
+      "iast": "trividhaṃ narakasyedaṃ dvāraṃ nāśanamātmanaḥ | kāmaḥ krodhastathā lobhastasmādetattrayaṃ tyajet || 16.21 ||",
+      "id": "16.21 Tiga pintu gerbang neraka ini, penghancur nafsu diri, kemarahan dan keserakahan; oleh karena itu seseorang harus meninggalkan ketiga hal ini.",
+      "ban": "16.21 Tetiga gapura neraka puniki, ngrusak nafsu raga, pidukan miwah loba; punika mawinan patut nilar tetiga parindikan punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.21 These three gates of hell, destroyer of self-lust, anger and greed; therefore one must abandon these three things."
+    },
+    {
+      "no": 22,
+      "devanagari": "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः । आचरत्यात्मनः श्रेयस्ततो याति परां गतिम् ॥ १६.२२ ॥",
+      "iast": "etairvimuktaḥ kaunteya tamodvāraistribhirnaraḥ | ācaratyātmanaḥ śreyastato yāti parāṃ gatim || 16.22 ||",
+      "id": "16.22 Seseorang yang terbebas dari ketiga gerbang kegelapan ini, wahai Arjuna, mempraktikkan apa yang baik baginya dan dengan demikian mencapai Tujuan Tertinggi.",
+      "ban": "16.22 Sang sane sampun bebas saking tetiga gapura peteng punika, duh Sang Arjuna, nglaksanayang napi sane becik ring ragannyane tur antuk punika ngamolihang Tetujon sane Maha Luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.22 One who is free from these three gates of darkness, O Arjuna, practices what is good for him and thereby attains the Supreme Goal."
+    },
+    {
+      "no": 23,
+      "devanagari": "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः । न स सिद्धिमवाप्नोति न सुखं न परां गतिम् ॥ १६.२३ ॥",
+      "iast": "yaḥ śāstravidhimutsṛjya vartate kāmakārataḥ | na sa siddhimavāpnoti na sukhaṃ na parāṃ gatim || 16.23 ||",
+      "id": "16.23 Barangsiapa, setelah mengesampingkan aturan-aturan kitab suci, bertindak berdasarkan dorongan nafsu, tidak akan mencapai kesempurnaan, kebahagiaan, atau Tujuan Tertinggi.",
+      "ban": "16.23 Sapasiraja, risampune nglepasin pidabdab-pidabdab sane wenten ring kitab suci, malaksana manut ring dorongan nafsu, tan pacang ngamolihang kesempurnaan, karahayuan, utawi Tetujon sane Maha Luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.23 Whoever, after setting aside the precepts of the scriptures, acts on the impulse of lust, will not attain perfection, happiness, or the Supreme Goal."
+    },
+    {
+      "no": 24,
+      "devanagari": "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ । ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि ॥ १६.२४ ॥",
+      "iast": "tasmācchāstraṃ pramāṇaṃ te kāryākāryavyavasthitau | jñātvā śāstravidhānoktaṃ karma kartumihārhasi || 16.24 ||",
+      "id": "16.24 Oleh karena itu, biarlah kitab suci menjadi otoritas Anda dalam menentukan apa yang boleh dilakukan dan apa yang tidak boleh dilakukan. Setelah mengetahui apa yang dikatakan dalam tata cara kitab suci, engkau harus bertindak di dunia ini.",
+      "ban": "16.24 Duaning punika, banggayang cakepan-cakepan Sucine punika dados wewenang semetone buat nentuang napi sane patut laksanayang miwah sane nenten patut laksanayang semeton. Sesampune uning napi sane kabawos ring pidabdab sastra, patut melaksana ring jagate puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "16.24 Therefore, let the scriptures be your authority in determining what to do and what not to do. After knowing what is said in the ordinances of the scriptures, you must act in this world."
+    }
+  ]
+}

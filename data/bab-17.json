@@ -1,0 +1,410 @@
+{
+  "bab": 17,
+  "judul": {
+    "sanskrit": "Śraddhā-traya-vibhāga-yoga",
+    "id": "Śraddhā Traya Vibhāga Yoga",
+    "ban": "Ida Sang Prabu Traya Vibhaga Yoga",
+    "en": "Śraddhā Traya Vibhāga Yoga"
+  },
+  "jumlah_sloka": 28,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 17",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "अर्जुन उवाच । ये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः । तेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः ॥ १७.१ ॥",
+      "iast": "arjuna uvāca | ye śāstravidhimutsṛjya yajante śraddhayānvitāḥ | teṣāṃ niṣṭhā tu kā kṛṣṇa sattvamāho rajastamaḥ || 17.1 ||",
+      "id": "17.1 Arjuna berkata Mereka yang mengesampingkan tata cara kitab suci, melakukan pengorbanan dengan keyakinan, bagaimana kondisinya, wahai Krishna? Apakah Sattva, Rajas atau Tamas?",
+      "ban": "17.1 Sang Arjuna ngandika Sang sane nyisipang pidabdab-pidabdab kitab suci, ngamargiang yadnya antuk kapercayaan, napike kahanannyane, duh Sang Kresna? Napi sane kabaos Satwa, Raja utawi Tamas?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.1 Arjuna said Those who set aside scriptural ordinances, perform sacrifices with faith, what is their condition, O Krishna? What is Sattva, Rajas or Tamas?"
+    },
+    {
+      "no": 2,
+      "devanagari": "श्रीभगवानुवाच । त्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा । सात्त्विकी राजसी चैव तामसी चेति तां शृणु ॥ १७.२ ॥",
+      "iast": "śrībhagavānuvāca | trividhā bhavati śraddhā dehināṃ sā svabhāvajā | sāttvikī rājasī caiva tāmasī ceti tāṃ śṛṇu || 17.2 ||",
+      "id": "17.2 Bhagavā bersabda Tiga tingkat adalah keyakinan dari yang berwujud, yang melekat dalam sifat mereka yaitu Sattvic (murni), Rajasic (bersemangat) dan Tamasic (gelap). Apakah kamu mendengarnya?",
+      "ban": "17.2 Ida Sang Hyang Widhi Wasa ngandika Tigang undagan punika wantah kapercayaan wangun-wangun, sane melekat ring sifatnyane inggih punika Sattvic (murni), Rajasic (berpihak) lan Tamasic (gelap). Napike semeton sampun miragi indike punika?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.2 The Blessed One said The three levels are the beliefs of the forms, which are inherent in their nature namely Sattvic (pure), Rajasic (ardent) and Tamasic (dark). Did you hear that?"
+    },
+    {
+      "no": 3,
+      "devanagari": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत । श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ॥ १७.३ ॥",
+      "iast": "sattvānurūpā sarvasya śraddhā bhavati bhārata | śraddhāmayo|ayaṃ puruṣo yo yacchraddhaḥ sa eva saḥ || 17.3 ||",
+      "id": "17.3 Keimanan setiap orang sesuai dengan fitrahnya, wahai Arjuna. Manusia terdiri dari imannya; sebagaimana iman seseorang, demikian pula dia.",
+      "ban": "17.3 Kapracayan asing-asing jadma punika manut ring kawentenan ipun, duh Sang Arjuna. Manusa kawangun antuk kapracayannyane; sakadi kapercayaan jadmane, kadi asapunika taler ipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.3 Every person's faith is in accordance with his nature, O Arjuna. Man consists of his faith; as a person's faith is, so is he."
+    },
+    {
+      "no": 4,
+      "devanagari": "यजन्ते सात्त्विका देवान्यक्षरक्षांसि राजसाः । प्रेतान्भूतगणांश्चान्ये यजन्ते तामसा जनाः ॥ १७.४ ॥",
+      "iast": "yajante sāttvikā devānyakṣarakṣāṃsi rājasāḥ | pretānbhūtagaṇāṃścānye yajante tāmasā janāḥ || 17.4 ||",
+      "id": "17.4 Sattvic atau manusia suci menyembah para dewa; Rajasic atau pemujaan yang penuh gairah terhadap Yaksha dan Rakshasa; yang lain (orang Tamasic atau orang-orang yang tertipu) memuja hantu dan roh alam.",
+      "ban": "17.4 Sattvic utawi anak lanang sane suci ngaturang sembah ring para dewata; Rajasik utawi pamujaan sane semangat ring Yaksa lan Raksasa; sane lianan (jadma Tamasic utawi jadma sane tertipu) ngaturang sembah ring beburon lan roh alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.4 Sattvic or holy men worship the gods; Rajasic or passionate worship of Yakshas and Rakshasas; others (Tamasic people or deluded people) worship ghosts and nature spirits."
+    },
+    {
+      "no": 5,
+      "devanagari": "अशास्त्रविहितं घोरं तप्यन्ते ये तपो जनाः । दम्भाहंकारसंयुक्ताः कामरागबलान्विताः ॥ १७.५ ॥",
+      "iast": "aśāstravihitaṃ ghoraṃ tapyante ye tapo janāḥ | dambhāhaṃkārasaṃyuktāḥ kāmarāgabalānvitāḥ || 17.5 ||",
+      "id": "17.5 Orang-orang yang mempraktikkan pertapaan hebat yang tidak diperintahkan oleh kitab suci, cenderung bersikap munafik dan egois, didorong oleh kekuatan nafsu dan kemelekatan.",
+      "ban": "17.5 Sang sane ngamargiang tapa sane mautama nenten kapituduhang antuk kitab suci, cenderung munafik lan egois, kasokong olih kekuatan nafsu lan keterkaitan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.5 Those who practice great austerities not commanded by the scriptures, tend to be hypocritical and selfish, driven by the forces of lust and attachment."
+    },
+    {
+      "no": 6,
+      "devanagari": "कर्षयन्तः शरीरस्थं भूतग्राममचेतसः । मां चैवान्तःशरीरस्थं तान्विद्ध्यासुरनिश्चयान् ॥ १७.६ ॥",
+      "iast": "karṣayantaḥ śarīrasthaṃ bhūtagrāmamacetasaḥ | māṃ caivāntaḥśarīrasthaṃ tānviddhyāsuraniścayān || 17.6 ||",
+      "id": "17.6 Tidak masuk akal, menyiksa semua unsur di dalam tubuh dan Aku juga, Yang berdiam di dalam tubuh, mengetahui bahwa engkau semua ini berasal dari ketetapan setan.",
+      "ban": "17.6 Tan masuk akal, nyiksa sakancan unsur-unsur ring angga tur titiang taler, Sane magenah ring angga, uning mungguing semeton sami puniki mawit saking pakarsan Setan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.6 Unreasonable, torturing all the elements in the body and I too, Who dwell in the body, know that you all this comes from the decree of Satan."
+    },
+    {
+      "no": 7,
+      "devanagari": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः । यज्ञस्तपस्तथा दानं तेषां भेदमिमं शृणु ॥ १७.७ ॥",
+      "iast": "āhārastvapi sarvasya trividho bhavati priyaḥ | yajñastapastathā dānaṃ teṣāṃ bhedamimaṃ śṛṇu || 17.7 ||",
+      "id": "17.7 Makanan yang disayangi setiap orang ada tiga jenisnya, begitu pula pengorbanan, pertapaan, dan sedekah. Dengarkanlah perbedaannya.",
+      "ban": "17.7 Ajengan sane kasenengin olih sakancan jadma wenten tigang soroh, minakadi yadnya, tepat miwah sedekah. Pirenginja pabinayannyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.7 The food that everyone loves is of three kinds, as are sacrifice, austerity and almsgiving. Listen to the difference."
+    },
+    {
+      "no": 8,
+      "devanagari": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः । रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः ॥ १७.८ ॥",
+      "iast": "āyuḥsattvabalārogyasukhaprītivivardhanāḥ | rasyāḥ snigdhāḥ sthirā hṛdyā āhārāḥ sāttvikapriyāḥ || 17.8 ||",
+      "id": "17.8 Makanan yang meningkatkan kehidupan, kemurnian, kekuatan, kesehatan, kegembiraan dan keceriaan (nafsu makan yang baik), yang gurih dan berminyak, banyak dan menyenangkan, disukai oleh orang-orang Sattvic (murni).",
+      "ban": "17.8 Ajengan sane ngajegang kauripan, kasucian, kekuatan, kesehatan, sukacita lan girang (nafsu makan sane becik), sane gurih lan berminyak, akeh lan nyenengin, punika kasenengin olih jadma Sattvic (murni).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.8 Food that promotes life, purity, strength, health, joy and cheerfulness (good appetite), which is savory and oily, plentiful and pleasant, is loved by Sattvic (pure) people."
+    },
+    {
+      "no": 9,
+      "devanagari": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः । आहारा राजसस्येष्टा दुःखशोकामयप्रदाः ॥ १७.९ ॥",
+      "iast": "kaṭvamlalavaṇātyuṣṇatīkṣṇarūkṣavidāhinaḥ | āhārā rājasasyeṣṭā duḥkhaśokāmayapradāḥ || 17.9 ||",
+      "id": "17.9 Makanan yang pahit, asam, asin, terlalu panas, pedas, kering dan terbakar, disukai oleh Rajas dan menghasilkan kesakitan, kesedihan dan penyakit.",
+      "ban": "17.9 Ajengan sane pait, asem, asin, kaliwat panes, pedas, tuh tur ngendih, punika kasenengin olih Raja tur ngawetuang sakit, sedih miwah gering.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.9 Food that is bitter, sour, salty, too hot, spicy, dry and burning, is loved by Rajas and produces pain, sorrow and disease."
+    },
+    {
+      "no": 10,
+      "devanagari": "यातयामं गतरसं पूति पर्युषितं च यत् । उच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम् ॥ १७.१० ॥",
+      "iast": "yātayāmaṃ gatarasaṃ pūti paryuṣitaṃ ca yat | ucchiṣṭamapi cāmedhyaṃ bhojanaṃ tāmasapriyam || 17.10 ||",
+      "id": "17.10 Makanan yang tidak enak, tidak berasa, busuk, busuk, sampah dan tidak murni, adalah makanan yang disukai oleh orang Tamasic.",
+      "ban": "17.10 Ajengan sane nenten becik, tan rasa, busuk, busuk, sampah lan leteh, inggih punika ajengan sane kasenengin olih krama Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.10 Food that is unpalatable, tasteless, rotten, putrid, rubbish and impure, is the food preferred by the Tamasic people."
+    },
+    {
+      "no": 11,
+      "devanagari": "अफलाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते । यष्टव्यमेवेति मनः समाधाय स सात्त्विकः ॥ १७.११ ॥",
+      "iast": "aphalāṅkṣibhiryajño vidhidṛṣṭo ya ijyate | yaṣṭavyameveti manaḥ samādhāya sa sāttvikaḥ || 17.11 ||",
+      "id": "17.11 Pengorbanan yang dipersembahkan oleh manusia tanpa menginginkan imbalan seperti yang diperintahkan oleh tata cara (kitab suci), dengan keyakinan teguh bahwa melakukan hal tersebut adalah suatu kewajiban, adalah Sattvic atau murni.",
+      "ban": "17.11 Yadnya sane kaaturang olih manusa tan meled polih pahala sakadi sane sampun katetapang olih awig-awig (kitab suci), antuk kapercayaan sane kukuh, mungguing ngamargiang punika wantah kewajiban, punika Sattvic utawi murni.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.11 Sacrifices offered by humans without wanting any reward as prescribed by the ordinances (scriptures), in the firm belief that doing so is an obligation, are Sattvic or pure."
+    },
+    {
+      "no": 12,
+      "devanagari": "अभिसन्धाय तु फलं दम्भार्थमपि चैव यत् । इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम् ॥ १७.१२ ॥",
+      "iast": "abhisandhāya tu phalaṃ dambhārthamapi caiva yat | ijyate bharataśreṣṭha taṃ yajñaṃ viddhi rājasam || 17.12 ||",
+      "id": "17.12 Pengorbanan yang dipersembahkan, wahai Arjuna, untuk mencari pahala dan untuk pamer, ketahuilah bahwa itu adalah Yajna Raja.",
+      "ban": "17.12 Yadnya sane katur duh Sang Arjuna, ngaruruh phala muah pamer, uningin punika Yajna Sang Raja.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.12 The sacrifice offered, O Arjuna, to seek reward and to show off, know that it is the Raja's Yajna."
+    },
+    {
+      "no": 13,
+      "devanagari": "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम् । श्रद्धाविरहितं यज्ञं तामसं परिचक्षते ॥ १७.१३ ॥",
+      "iast": "vidhihīnamasṛṣṭānnaṃ mantrahīnamadakṣiṇam | śraddhāvirahitaṃ yajñaṃ tāmasaṃ paricakṣate || 17.13 ||",
+      "id": "17.13 Mereka menyatakan bahwa pengorbanan itu adalah Tamasic yang bertentangan dengan tata cara kitab suci, di mana tidak ada makanan yang dibagikan, tanpa Mantra, pemberian dan keyakinan.",
+      "ban": "17.13 Ipun maosang, yadnya punika wantah Tamasic sane matungkasan ring upacara kitab suci, ring dija nenten wenten ajengan sane kabagi, nenten wenten Mantra, paica lan kapercayaan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.13 They stated that the sacrifice was Tamasic which is contrary to the scriptural rites, where no food is distributed, without Mantras, gifts and beliefs."
+    },
+    {
+      "no": 14,
+      "devanagari": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम् । ब्रह्मचर्यमहिंसा च शारीरं तप उच्यते ॥ १७.१४ ॥",
+      "iast": "devadvijaguruprājñapūjanaṃ śaucamārjavam | brahmacaryamahiṃsā ca śārīraṃ tapa ucyate || 17.14 ||",
+      "id": "17.14 Pemujaan terhadap para dewa, kelahiran dua kali, guru dan kebijaksanaan, kemurnian, keterusterangan, selibat dan tidak melukai disebut pertapaan tubuh.",
+      "ban": "17.14 Puja ring dewa, ping kalih embas, guru lan kawicaksanaan, kasucian, langsung, lajang lan tan tatu punika kabaos hemat raga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.14 Worship of the gods, twice birth, guru and wisdom, purity, directness, celibacy and non-injury is called bodily austerity."
+    },
+    {
+      "no": 15,
+      "devanagari": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत् । स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते ॥ १७.१५ ॥",
+      "iast": "anudvegakaraṃ vākyaṃ satyaṃ priyahitaṃ ca yat | svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate || 17.15 ||",
+      "id": "17.15 Ucapan yang tidak menimbulkan kegembiraan, jujur, menyenangkan dan bermanfaat, praktik mempelajari Veda, disebut pertapaan ucapan.",
+      "ban": "17.15 Bebaosan sane tan bagia, sujati, ngranayang bagia tur seger, parilaksana malajahin weda, punika sane kabaos hemat bebaosan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.15 Joyless, truthful, pleasant and wholesome speech, the practice of studying the Vedas, is called speech austerity."
+    },
+    {
+      "no": 16,
+      "devanagari": "मनः प्रसादः सौम्यत्वं मौनमात्मविनिग्रहः । भावसंशुद्धिरित्येतत्तपो मानसमुच्यते ॥ १७.१६ ॥",
+      "iast": "manaḥ prasādaḥ saumyatvaṃ maunamātmavinigrahaḥ | bhāvasaṃśuddhirityetattapo mānasamucyate || 17.16 ||",
+      "id": "17.16 Ketenangan pikiran, kebaikan hati, pengendalian diri, kemurnian alam inilah yang disebut pertapaan mental.",
+      "ban": "17.16 Tenang manah, welas asih, ngendaliang raga, kasucian alam punika sane kabaos hemat mental.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.16 Peace of mind, kindness, self-control, purity of nature is what is called mental austerity."
+    },
+    {
+      "no": 17,
+      "devanagari": "श्रद्धया परया तप्तं तपस्तत्त्रिविधं नरैः । अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते ॥ १७.१७ ॥",
+      "iast": "śraddhayā parayā taptaṃ tapastattrividhaṃ naraiḥ | aphalākāṅkṣibhiryuktaiḥ sāttvikaṃ paricakṣate || 17.17 ||",
+      "id": "17.17 Tiga jenis pertapaan ini, yang dilakukan oleh orang-orang yang teguh, dengan keyakinan penuh, tanpa menginginkan imbalan, mereka sebut Sattvic.",
+      "ban": "17.17 Tetiga soroh tapa punika, kamargiang olih jadma sane pageh, antuk kapercayaan sane jangkep, tan wenten sane ngarsayang pahala, ipun mawasta Sattvic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.17 These three types of austerities, performed by steadfast people, with complete faith, without wanting any reward, they call Sattvic."
+    },
+    {
+      "no": 18,
+      "devanagari": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत् । क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम् ॥ १७.१८ ॥",
+      "iast": "satkāramānapūjārthaṃ tapo dambhena caiva yat | kriyate tadiha proktaṃ rājasaṃ calamadhruvam || 17.18 ||",
+      "id": "17.18 Pertapaan yang dilakukan dengan tujuan mendapatkan penerimaan yang baik, kehormatan dan ibadah, dan dengan kemunafikan, di sini dikatakan bersifat Rajasik, tidak stabil dan bersifat sementara.",
+      "ban": "17.18 Tapa sane kamargiang antuk tatujon mangda polih panampi sane becik, kahormatan lan puja, tur antuk munafik, iriki kabaos Rajasik, nenten ajeg tur sementara.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.18 Austerities performed with the aim of gaining good acceptance, honor and worship, and with hypocrisy, are here said to be Rajasik, unstable and temporary."
+    },
+    {
+      "no": 19,
+      "devanagari": "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः । परस्योत्सादनार्थं वा तत्तामसमुदाहृतम् ॥ १७.१९ ॥",
+      "iast": "mūḍhagrāheṇātmano yatpīḍayā kriyate tapaḥ | parasyotsādanārthaṃ vā tattāmasamudāhṛtam || 17.19 ||",
+      "id": "17.19 Pertapaan yang dilakukan atas dasar pemikiran bodoh, dengan penyiksaan diri, atau dengan tujuan menghancurkan orang lain, dinyatakan sebagai Tamasic.",
+      "ban": "17.19 Tatapan sane kamargiang sangkaning pikayunan sane belog, antuk ngamademang raga, utawi matetujon ngrusak anak tiosan, kabaos Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.19 Austerities performed out of foolish thoughts, with self-mortification, or with the aim of destroying others, are declared Tamasic."
+    },
+    {
+      "no": 20,
+      "devanagari": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे । देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम् ॥ १७.२० ॥",
+      "iast": "dātavyamiti yaddānaṃ dīyate|anupakāriṇe | deśe kāle ca pātre ca taddānaṃ sāttvikaṃ smṛtam || 17.20 ||",
+      "id": "17.20 Pemberian yang diberikan kepada seseorang yang tidak memberikan imbalan apa pun, karena mengetahui bahwa pemberian tersebut merupakan kewajiban pada tempat dan waktu yang tepat kepada orang yang layak, pemberian tersebut dianggap Sattvic.",
+      "ban": "17.20 Paica sane kaicen ring jadma sane nenten ngicenin napi-napi pinaka balesan, uning paica punika wantah kewajiban ring genah lan galah sane patut majeng ring jadma sane patut, kabaos Sattvic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.20 A gift given to a person who does not give anything in return, knowing that the gift is an obligation at the right place and time to a worthy person, is considered Sattvic."
+    },
+    {
+      "no": 21,
+      "devanagari": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः । दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम् ॥ १७.२१ ॥",
+      "iast": "yattu pratyupakārārthaṃ phalamuddiśya vā punaḥ | dīyate ca parikliṣṭaṃ taddānaṃ rājasaṃ smṛtam || 17.21 ||",
+      "id": "17.21 Dan, pemberian yang diberikan dengan tujuan untuk menerima sesuatu sebagai balasannya, atau mencari imbalan, atau dengan enggan, dianggap bersifat Rajasik.",
+      "ban": "17.21 Tur, paica sane kaicen antuk tatujon pacang nampi napi-napi pinaka pawalian, utawi ngrereh pahala, utawi tan purun, kabaos Rajasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.21 And, gifts given with the intention of receiving something in return, or seeking reward, or reluctantly, are considered Rajasic."
+    },
+    {
+      "no": 22,
+      "devanagari": "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते । असत्कृतमवज्ञातं तत्तामसमुदाहृतम् ॥ १७.२२ ॥",
+      "iast": "adeśakāle yaddānamapātrebhyaśca dīyate | asatkṛtamavajñātaṃ tattāmasamudāhṛtam || 17.22 ||",
+      "id": "17.22 Pemberian yang diberikan di tempat dan waktu yang salah, kepada orang yang tidak layak, tanpa rasa hormat atau dengan penghinaan, dinyatakan sebagai Tamasic.",
+      "ban": "17.22 Paica sane kaicen ring genah sane iwang lan ring galah sane iwang, ring anak sane tan patut, tan wenten rasa hormat utawi tan ngajiang, kabaos Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.22 Gifts given in the wrong place and at the wrong time, to an unworthy person, without respect or with contempt, are declared Tamasic."
+    },
+    {
+      "no": 23,
+      "devanagari": "ॐतत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः । ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा ॥ १७.२३ ॥",
+      "iast": "OMtatsaditi nirdeśo brahmaṇastrividhaḥ smṛtaḥ | brāhmaṇāstena vedāśca yajñāśca vihitāḥ purā || 17.23 ||",
+      "id": "17.23 \"Om Tat Sat\": Ini telah dinyatakan sebagai tiga sebutan untuk Brahman. Dengan itu diciptakanlah dahulu Brahmana, Veda, dan pengorbanan.",
+      "ban": "17.23 “Om Tat Sat” : Punika sampun kabaosang dados tetiga wastan Brahman. Antuk punika raris kawentenang Brahmana, Weda miwah yadnya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.23 \"Om Tat Sat\": These have been stated to be the three names for Brahman. With that, Brahmins, Vedas and sacrifices were created."
+    },
+    {
+      "no": 24,
+      "devanagari": "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः । प्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम् ॥ १७.२४ ॥",
+      "iast": "tasmādomityudāhṛtya yajñadānatapaḥkriyāḥ | pravartante vidhānoktāḥ satataṃ brahmavādinām || 17.24 ||",
+      "id": "17.24 Oleh karena itu, dengan pengucapan \"Om\" adalah tindakan pengorbanan, pemberian dan pertapaan seperti yang diperintahkan dalam kitab suci, selalu dimulai oleh siswa Brahman.",
+      "ban": "17.24 Duaning asapunika antuk nguncarang “Om” inggih punika parilaksana yadnya, punia lan tepat sekadi sane sampun kapituduhang ring sastra suci, setata kakawitin olih sisia Brahman.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.24 Therefore, with the chanting of \"Om\" is the act of sacrifice, giving and austerity as enjoined in the scriptures, always initiated by the disciple of Brahman."
+    },
+    {
+      "no": 25,
+      "devanagari": "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः । दानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षिभिः ॥ १७.२५ ॥",
+      "iast": "tadityanabhisandhāya phalaṃ yajñatapaḥkriyāḥ | dānakriyāśca vividhāḥ kriyante mokṣakāṅkṣibhiḥ || 17.25 ||",
+      "id": "17.25 Mengucapkan ï1Tatï1, tanpa bertujuan pada buahnya, adalah tindakan pengorbanan dan pertapaan serta berbagai tindakan pemberian yang dilakukan oleh para pencari pembebasan.",
+      "ban": "17.25 Makidung ï1Tatï1, tan matetujon ring buahnyane, wantah parilaksana kurban lan hemat lan makudang-kudang parilaksana paica sane kamargiang olih sang sane ngrereh kabebasan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.25 Chanting ï1Tatï1, without aiming at its fruition, is an act of sacrifice and austerity and various acts of giving performed by seekers of liberation."
+    },
+    {
+      "no": 26,
+      "devanagari": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते । प्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते ॥ १७.२६ ॥",
+      "iast": "sadbhāve sādhubhāve ca sadityetatprayujyate | praśaste karmaṇi tathā sacchabdaḥ pārtha yujyate || 17.26 ||",
+      "id": "17.26 Kata ï1Satï1 digunakan dalam arti realitas dan kebaikan; dan demikian pula, wahai Arjuna, kata ï1Satï1 digunakan dalam arti tindakan yang membawa keberuntungan.",
+      "ban": "17.26 Kruna ï1Satï1 kaanggen ring arti kasujatian lan kabecikan; tur asapunika taler duh Sang Arjuna, kruna ï1Satï1 punika kaanggen ring arti parilaksana sane ngawinang rahayu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.26 The word ï1Satï1 is used in the sense of reality and goodness; and likewise, O Arjuna, the word ï1Satï1 is used in the sense of an auspicious action."
+    },
+    {
+      "no": 27,
+      "devanagari": "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते । कर्म चैव तदर्थीयं सदित्येवाभिधीयते ॥ १७.२७ ॥",
+      "iast": "yajñe tapasi dāne ca sthitiḥ saditi cocyate | karma caiva tadarthīyaṃ sadityevābhidhīyate || 17.27 ||",
+      "id": "17.27 Ketabahan dalam pengorbanan, pertapaan dan pemberian, juga disebut 'Sat' dan juga tindakan sehubungan dengan hal-hal ini (atau demi Yang Mahakuasa) disebut 'Sat'.",
+      "ban": "17.27 Teguh ring yadnya, hemat lan paica, taler kabaos ‘Sat’ tur taler parilaksana sane mapaiketan ring indike punika (utawi demi Sang Maha Kuasa) kabaos ‘Sat’.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.27 Steadfastness in sacrifice, austerity and giving, is also called 'Sat' and also action in connection with these things (or for the sake of the Almighty) is called 'Sat'."
+    },
+    {
+      "no": 28,
+      "devanagari": "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत् । असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह ॥ १७.२८ ॥",
+      "iast": "aśraddhayā hutaṃ dattaṃ tapastaptaṃ kṛtaṃ ca yat | asadityucyate pārtha na ca tatprepya no iha || 17.28 ||",
+      "id": "17.28 Apapun yang dikorbankan, diberikan atau dilakukan, dan apapun pertapaan yang dilakukan tanpa keyakinan, itu disebut 'Asat', wahai Arjuna; tidak ada gunanya di sini atau di akhirat (setelah kematian).",
+      "ban": "17.28 Saluiring sane katurang, kaicen utawi kamargiang, miwah napi-napi sane kamargiang tan paguna, punika sane kabaos ‘Asat’, duh Sang Arjuna; tan wenten pikenohnyane iriki utawi ring akhirat (sesampun padem).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "17.28 Whatever is sacrificed, given or performed, and whatever austerities are performed without faith, it is called 'Asat', O Arjuna; it is of no use here or in the afterlife (after death)."
+    }
+  ]
+}

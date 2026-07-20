@@ -3,13 +3,15 @@
   "judul": {
     "sanskrit": "Sāṅkhya-yoga",
     "id": "Sāṅkhya Yoga (Yoga Pengetahuan)",
-    "ban": null
+    "ban": "Yoga Sāṅkhya (Yoga Kaweruhan)",
+    "en": "Sāṅkhya Yoga (Yoga of Knowledge)"
   },
   "jumlah_sloka": 72,
   "sumber": {
     "sanskrit": "Gita Supersite, IIT Kanpur — Śrīmad Bhagavadgītā, Bab 2",
     "terjemahan_id": "Draf editorial proyek, diterjemahkan langsung dari teks Sanskrit; perlu telaah ahli sebelum publikasi.",
-    "terjemahan_ban": ""
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
   },
   "sloka": [
     {
@@ -17,864 +19,1008 @@
       "devanagari": "सञ्जय उवाच । तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् । विषीदन्तमिदं वाक्यमुवाच मधुसूदनः ॥ २.१ ॥",
       "iast": "sañjaya uvāca | taṃ tathā kṛpayāviṣṭam aśrupūrṇākulekṣaṇam | viṣīdantam idaṃ vākyam uvāca madhusūdanaḥ || 2.1 ||",
       "id": "Sañjaya berkata: Kepada Arjuna yang demikian diliputi belas kasihan, dengan mata penuh air mata dan hati yang muram, Madhusūdana mengucapkan kata-kata ini.",
-      "ban": null,
+      "ban": "Sang Sañjaya ngandika: Majeng ring Sang Arjuna sane kadi asapunika kaon antuk welas asih, antuk panyingakan sane bek madaging yeh mata tur manahnyane suram, Ida Sang Madhusūdana ngandikayang sabda punika.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Sañjaya said: To Arjuna who was thus overcome with pity, with eyes full of tears and heart somber, Madhusūdana spoke these words."
     },
     {
       "no": 2,
       "devanagari": "श्रीभगवानुवाच । कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् । अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन ॥ २.२ ॥",
       "iast": "śrībhagavān uvāca | kutas tvā kaśmalam idaṃ viṣame samupasthitam | anāryajuṣṭam asvargyam akīrtikaram arjuna || 2.2 ||",
       "id": "Śrī Bhagavān bersabda: Dari mana datang kelemahan yang mengotori dirimu pada saat genting ini, Arjuna? Itu tidak layak bagi pribadi mulia, tidak mengantar ke surga, dan membawa aib.",
-      "ban": null,
+      "ban": "Ida Sang Sri Bhagavān ngandika: Saking dija kelemahan puniki sane ngawinang setan ring ragane ring galah sane mabuat puniki, Arjuna? Nenten pantes antuk jadma sane mautama, nenten ngatehang suarga, tur ngawe nista.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Śrī Bhagavān said: Where does this weakness come from that bedevils you at this crucial moment, Arjuna? It is not worthy of a noble person, does not lead to heaven, and brings disgrace."
     },
     {
       "no": 3,
       "devanagari": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते । क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥ २.३ ॥",
       "iast": "klaibyaṃ mā sma gamaḥ pārtha naitat tvayy upapadyate | kṣudraṃ hṛdayadaurbalyaṃ tyaktvottiṣṭha paraṃtapa || 2.3 ||",
       "id": "Jangan menyerah pada kepengecutan, Pārtha; itu tidak pantas bagimu. Tinggalkan kelemahan hati yang hina itu; bangkitlah, penakluk musuh.",
-      "ban": null,
+      "ban": "Sampunangja nyerah ring rasa pengecut, Pārtha; punika nenten patut antuk semeton. Tinggalin kelemahan manah sane dasar punika; bangkit, sang sane ngaonang meseh-meseh.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Don't give in to cowardice, Pārtha; it's not appropriate for you. Leave behind that base weakness of heart; arise, conqueror of enemies."
     },
     {
       "no": 4,
       "devanagari": "अर्जुन उवाच । कथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन । इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥ २.४ ॥",
       "iast": "arjuna uvāca | kathaṃ bhīṣmam ahaṃ saṅkhye droṇaṃ ca madhusūdana | iṣubhiḥ pratiyotsyāmi pūjārhāv arisūdana || 2.4 ||",
       "id": "Arjuna berkata: Wahai Madhusūdana, bagaimana aku dapat bertempur dengan panah melawan Bhīṣma dan Droṇa di medan perang, padahal keduanya patut kuhormati, wahai penghancur musuh?",
-      "ban": null,
+      "ban": "Ida Sang Arjuna ngandika: Uduh Sang Madhusūdana, sapunapi antuk titiang mayuda antuk panah majeng ring Ida Bhagawan Bhīshma miwah Ida Bhagawan Droṇa ring genah payudan, rikalaning makakalih patut kahormatin titiang, duh sang ngarusak meseh?",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Arjuna said: O Madhusūdana, how can I fight with arrows against Bhīṣma and Droṇa on the battlefield, when both of them are worthy of my respect, O destroyer of enemies?"
     },
     {
       "no": 5,
       "devanagari": "गुरूनहत्वा हि महानुभावान् श्रेयो भोक्तुं भैक्ष्यमपीह लोके । हत्वार्थकामांस्तु गुरूनिहैव भुञ्जीय भोगान् रुधिरप्रदिग्धान् ॥ २.५ ॥",
       "iast": "gurūn ahatvā hi mahānubhāvān śreyo bhoktuṃ bhaikṣyam apīha loke | hatvārthakāmāṃs tu gurūn ihaiva bhuñjīya bhogān rudhirapradigdhān || 2.5 ||",
       "id": "Lebih baik aku hidup mengemis di dunia ini daripada membunuh para guru yang agung itu. Jika membunuh mereka, kenikmatan dan harta yang kunikmati di sini akan berlumur darah.",
-      "ban": null,
+      "ban": "Tiang meled idup ngidih-ngidih ring jagate puniki, bandingang ring ngamademang guru-guru sane mautama punika. Yening tiang ngamademang ipun, kasukan miwah arta brana sane karasayang tiang iriki pacang kacemar antuk rah.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "I would rather live begging in this world than kill those great teachers. If I kill them, the pleasures and treasures I enjoy here will be stained with blood."
     },
     {
       "no": 6,
       "devanagari": "न चैतद्विद्मः कतरन्नो गरीयो यद्वा जयेम यदि वा नो जयेयुः । यानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥ २.६ ॥",
       "iast": "na caitad vidmaḥ kataran no garīyo yad vā jayema yadi vā no jayeyuḥ | yān eva hatvā na jijīviṣāmas te 'vasthitāḥ pramukhe dhārtarāṣṭrāḥ || 2.6 ||",
       "id": "Kami tidak tahu mana yang lebih baik bagi kami: mengalahkan mereka atau dikalahkan mereka. Sesudah membunuh mereka, kami pun tidak ingin hidup; namun putra-putra Dhṛtarāṣṭra itu berdiri di hadapan kami.",
-      "ban": null,
+      "ban": "Iraga tusing nawang ane encen ane melahan buat iraga: ngalahin ia wiadin kagebug baan ia. Sasampune ipun kapademang, iraga taler nenten kayun urip; nanging putran-putran Ida Sang Dhṛtarāshtra ngadeg ring ajeng iragane.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "We don't know which is better for us: beating them or being beaten by them. After killing them, we didn't want to live either; but the sons of Dhṛtarāṣṭra stood before us."
     },
     {
       "no": 7,
       "devanagari": "कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः । यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥ २.७ ॥",
       "iast": "kārpaṇyadoṣopahatasvabhāvaḥ pṛcchāmi tvāṃ dharmasaṃmūḍhacetāḥ | yac chreyaḥ syān niścitaṃ brūhi tan me śiṣyas te 'haṃ śādhi māṃ tvāṃ prapannam || 2.7 ||",
       "id": "Sifatku dilumpuhkan oleh kelemahan dan pikiranku bingung tentang dharma. Katakan dengan pasti apa yang terbaik bagiku. Aku murid-Mu; bimbinglah aku yang telah berlindung kepada-Mu.",
-      "ban": null,
+      "ban": "Sifat titiange lumpuh sangkaning kelemahan tur pikayunan titiange bingung indik dharma. Orahang teken tiang apa ane paling melah buat tiang. Titiang puniki sisian Palungguh IRatu; tuntun titiang sane sampun masayuban ring Palungguh IRatu.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "My nature was paralyzed by weakness and my mind was confused about the dharma. Tell me exactly what is best for me. I am Your disciple; guide me who has taken refuge in You."
     },
     {
       "no": 8,
       "devanagari": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् । अवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम् ॥ २.८ ॥",
       "iast": "na hi prapaśyāmi mamāpanudyād yac chokam ucchoṣaṇam indriyāṇām | avāpya bhūmāv asapatnam ṛddhaṃ rājyaṃ surāṇām api cādhipatyam || 2.8 ||",
       "id": "Aku tidak melihat apa pun yang dapat menyingkirkan dukacita yang mengeringkan indraku ini, sekalipun aku memperoleh kerajaan yang makmur dan tak tertandingi di bumi, bahkan kekuasaan atas para dewa.",
-      "ban": null,
+      "ban": "Titiang nenten nyingakin napi-napi sane prasida ngicalang sedih puniki sane nguras indriane, yadiastun titiang ngamolihang kerajaan sane sukerta tur nenten wenten sane nyandingin ring jagate, yadiastun ngamong para dewata.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "I saw nothing that could remove this sorrow that drained my senses, even if I obtained a prosperous and unsurpassed kingdom on earth, even dominion over the gods."
     },
     {
       "no": 9,
       "devanagari": "सञ्जय उवाच । एवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप । न योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह ॥ २.९ ॥",
       "iast": "sañjaya uvāca | evam uktvā hṛṣīkeśaṃ guḍākeśaḥ paraṃtapaḥ | na yotsya iti govindam uktvā tūṣṇīṃ babhūva ha || 2.9 ||",
       "id": "Sañjaya berkata: Setelah berkata demikian kepada Hṛṣīkeśa, Guḍākeśa, penakluk musuh, berkata kepada Govinda, “Aku tidak akan bertempur,” lalu ia terdiam.",
-      "ban": null,
+      "ban": "Sang Sañjaya ngandika: Sampun asapunika matur ring Sang Hṛṣīkeśa, Sang Guḍākeśa, sang ngaonang meseh, matur ring Ida Sang Prabu Winda, “Titiang nenten pacang mayuda,” raris Ida meneng.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Sañjaya said: Having thus spoken to Hṛṣīkeśa, Guḍākeśa, the conqueror of enemies, said to Govinda, “I will not fight,” and he fell silent."
     },
     {
       "no": 10,
       "devanagari": "तमुवाच हृषीकेशः प्रहसन्निव भारत । सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः ॥ २.१० ॥",
       "iast": "tam uvāca hṛṣīkeśaḥ prahasann iva bhārata | senayor ubhayor madhye viṣīdantam idaṃ vacaḥ || 2.10 ||",
       "id": "Wahai Bhārata, kepada Arjuna yang berduka di antara kedua pasukan itu, Hṛṣīkeśa seolah-olah tersenyum lalu mengucapkan kata-kata berikut.",
-      "ban": null,
+      "ban": "Duh Bharata, majeng ring Ida Sang Arjuna sane sedih ring pantaraning wadua balane makakalih, Ida Sang Hṛṣīkeśa sakadi makenyem tur ngandika sekadi ring sor puniki.",
       "status": {
         "id": "draf",
-        "ban": "kosong"
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O Bhārata, to the grieving Arjuna between the two armies, Hṛṣīkeśa seemed to smile and said the following words."
     },
     {
       "no": 11,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "श्रीभगवानुवाच । अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे । गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥ २.११ ॥",
+      "iast": "śrībhagavān uvāca | aśocyān anvaśocas tvaṃ prajñāvādāṃś ca bhāṣase | gatāsūn agatāsūṃś ca nānuśocanti paṇḍitāḥ || 2.11 ||",
+      "id": "Śrī Bhagavān bersabda: Engkau berduka atas mereka yang tidak patut diratapi, tetapi mengucapkan kata-kata seakan bijaksana. Orang bijak tidak berduka bagi yang telah mati maupun yang masih hidup.",
+      "ban": "Ida Sang Śrī Bhagavān ngandika: Cening masesambatan teken anake ane tusing pantes masesambatan, nanging ngomongin baos buka anak wicaksana. Anake ane wicaksana tusingja mangelingin anak ane suba mati wiadin ane idup.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Śrī Bhagavān said: You mourn for those who are not worthy of mourning, but speak words as if they were wise. A wise man mourns neither the dead nor the living."
     },
     {
       "no": 12,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः । न चैव न भविष्यामः सर्वे वयमतः परम् ॥ २.१२ ॥",
+      "iast": "na tv evāhaṃ jātu nāsaṃ na tvaṃ neme janādhipāḥ | na caiva na bhaviṣyāmaḥ sarve vayam ataḥ param || 2.12 ||",
+      "id": "Tidak pernah ada saat ketika Aku tidak ada, engkau tidak ada, atau para raja ini tidak ada; dan sesudah ini pun kita semua tidak akan berhenti ada.",
+      "ban": "Nenten naenin wenten galah titiang nenten wenten, ragane nenten wenten, utawi para ratu puniki nenten wenten; tur sesampun punika iraga sareng sami nenten pacang wusan wenten.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "There was never a time when I did not exist, you did not exist, or these kings did not exist; and after this we all will not cease to exist."
     },
     {
       "no": 13,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा । तथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥ २.१३ ॥",
+      "iast": "dehino 'smin yathā dehe kaumāraṃ yauvanaṃ jarā | tathā dehāntaraprāptir dhīras tatra na muhyati || 2.13 ||",
+      "id": "Sebagaimana jiwa yang bersemayam dalam tubuh ini mengalami masa kanak-kanak, masa muda, dan masa tua, demikian pula ia memperoleh tubuh lain. Orang bijaksana tidak tertipu oleh hal itu.",
+      "ban": "Sakadi atma sane magenah ring angga puniki ngarasayang masa alit, truna, lan tua, asapunika taler ngamolihang angga sane tiosan. Anake sane wicaksana nenten keni kabelog-belog antuk indike punika.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Just as the soul residing in this body experiences childhood, youth, and old age, so too does it acquire another body. Wise people are not fooled by that."
     },
     {
       "no": 14,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः । आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥ २.१४ ॥",
+      "iast": "mātrāsparśās tu kaunteya śītoṣṇasukhaduḥkhadāḥ | āgamāpāyino 'nityās tāṃs titikṣasva bhārata || 2.14 ||",
+      "id": "Sentuhan indra dengan objeknya, wahai putra Kuntī, menimbulkan dingin dan panas, suka dan duka. Semuanya datang dan pergi, tidak kekal; karena itu hadapilah dengan tabah, wahai Bhārata.",
+      "ban": "Kontak indriya sareng benda-bendanyane, duh putra Kuntī, ngawinang dingin lan panes, suka lan duka. Makejang teka tur pesu, tusing langgeng; punika mawinan arepja antuk pageh, duh Bharata.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The contact of the senses with their objects, O son of Kuntī, gives rise to cold and heat, joy and sorrow. Everything comes and goes, impermanent; therefore face it steadfastly, O Bharata."
     },
     {
       "no": 15,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ । समदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥ २.१५ ॥",
+      "iast": "yaṃ hi na vyathayanty ete puruṣaṃ puruṣarṣabha | samaduḥkhasukhaṃ dhīraṃ so 'mṛtatvāya kalpate || 2.15 ||",
+      "id": "Sebab orang yang tidak diguncangkan oleh semuanya itu, wahai terbaik di antara manusia, yang seimbang dalam duka dan suka serta teguh, layak mencapai keabadian.",
+      "ban": "Santukan sang sane tan kaguncang antuk samian punika, duh manusa sane pinih becik, sane seimbang ring sedih lan suka turmaning pageh, patut ngamolihang keabadian.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "For the one who is not shaken by all this, O best of men, who is balanced in sorrow and joy and is steadfast, deserves to attain immortality."
     },
     {
       "no": 16,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "नासतो विद्यते भावो नाभावो विद्यते सतः । उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥ २.१६ ॥",
+      "iast": "nāsato vidyate bhāvo nābhāvo vidyate sataḥ | ubhayor api dṛṣṭo 'ntas tv anayos tattvadarśibhiḥ || 2.16 ||",
+      "id": "Yang tidak nyata tidak memiliki keberadaan, dan yang nyata tidak pernah tiada. Batas keduanya telah dipahami oleh para penatap kebenaran.",
+      "ban": "Sane nenten nyata nenten wenten, lan sane nyata nenten naenin wenten. Wates-wates makakalih sampun karesepang olih sang sane ngrereh kasujatian.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The unreal has no existence, and the real never exists. The boundaries of both have been understood by those who gaze at the truth."
     },
     {
       "no": 17,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् । विनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति ॥ २.१७ ॥",
+      "iast": "avināśi tu tad viddhi yena sarvam idaṃ tatam | vināśam avyayasyāsya na kaścit kartum arhati || 2.17 ||",
+      "id": "Ketahuilah bahwa yang meliputi seluruh ini tidak dapat dimusnahkan. Tidak seorang pun mampu memusnahkan yang tak berubah itu.",
+      "ban": "Uningin, sane nglikub sami puniki nenten prasida karusak. Nenten wenten anak sane mrasidayang nyirnayang sane tan obah.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Know that this all-pervading cannot be destroyed. No one is able to destroy the changeless."
     },
     {
       "no": 18,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः । अनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत ॥ २.१८ ॥",
+      "iast": "antavanta ime dehā nityasyoktāḥ śarīriṇaḥ | anāśino 'prameyasya tasmād yudhyasva bhārata || 2.18 ||",
+      "id": "Tubuh-tubuh ini dikatakan akan berakhir; sedangkan jiwa yang mendiami tubuh itu kekal, tidak dapat dimusnahkan, dan tak terukur. Karena itu bertempurlah, wahai Bhārata.",
+      "ban": "Awak-awak punika kabaos pacang puput; sedeng atma sane magenah ring angga sarira punika langgeng, nenten prasida karusak, tur nenten prasida kaukur. Duaning asapunika mayuda duh sang Bharata.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "These bodies are said to come to an end; while the soul that inhabits the body is eternal, indestructible, and immeasurable. Therefore fight, O Bharata."
     },
     {
       "no": 19,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् । उभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥ २.१९ ॥",
+      "iast": "ya enaṃ vetti hantāraṃ yaś cainaṃ manyate hatam | ubhau tau na vijānīto nāyaṃ hanti na hanyate || 2.19 ||",
+      "id": "Orang yang mengira jiwa ini membunuh, dan orang yang mengira jiwa ini dibunuh, keduanya tidak memahami. Jiwa ini tidak membunuh dan tidak dapat dibunuh.",
+      "ban": "Jadma sane ngaden atma puniki ngamademang, taler sang sane ngaden atma puniki kapademang, makakalih nenten ngerti. Atma puniki nenten ngamademang tur nenten prasida kapademang.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The person who thinks this soul kills, and the person who thinks this soul is killed, both do not understand. This soul does not kill and cannot be killed."
     },
     {
       "no": 20,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः । अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥ २.२० ॥",
+      "iast": "na jāyate mriyate vā kadācin nāyaṃ bhūtvā bhavitā vā na bhūyaḥ | ajo nityaḥ śāśvato 'yaṃ purāṇo na hanyate hanyamāne śarīre || 2.20 ||",
+      "id": "Jiwa tidak pernah lahir dan tidak pernah mati. Ia tidak menjadi ada lalu kemudian tidak ada lagi. Ia tidak dilahirkan, kekal, abadi, dan purba; ia tidak terbunuh ketika tubuh dibunuh.",
+      "ban": "Atmane nenten naenin embas tur nenten naenin padem. Punika nenten wenten tur salanturnyane wusan wenten. Ida nenten embas, langgeng, tan padem, tur kuno; ida nenten kapademang rikalaning layone kapademang.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The soul is never born and never dies. It does not come into existence and then cease to exist. He is unborn, eternal, immortal, and ancient; he is not killed when the body is killed."
     },
     {
       "no": 21,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "वेदाविनाशिनं नित्यं य एनमजमव्ययम् । कथं स पुरुषः पार्थ कं घातयति हन्ति कम् ॥ २.२१ ॥",
+      "iast": "vedāvināśinaṃ nityaṃ ya enam ajam avyayam | kathaṃ sa puruṣaḥ pārtha kaṃ ghātayati hanti kam || 2.21 ||",
+      "id": "Wahai Pārtha, bagaimana orang yang mengetahui jiwa ini tak dapat musnah, kekal, tak dilahirkan, dan tak berubah, dapat membunuh seseorang atau menyebabkan seseorang dibunuh?",
+      "ban": "Duh Pārtha, sapunapi antuk sang sane uning atma puniki nenten prasida rusak, langgeng, nenten embas lan nenten mauwah, prasida ngamademang anak utawi ngawinang anak kapademang?",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O Pārtha, how can one who knows this soul to be imperishable, eternal, unborn and changeless, kill someone or cause someone to be killed?"
     },
     {
       "no": 22,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि । तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥ २.२२ ॥",
+      "iast": "vāsāṃsi jīrṇāni yathā vihāya navāni gṛhṇāti naro 'parāṇi | tathā śarīrāṇi vihāya jīrṇāny anyāni saṃyāti navāni dehī || 2.22 ||",
+      "id": "Seperti seseorang menanggalkan pakaian usang dan mengenakan yang baru, demikian jiwa meninggalkan tubuh-tubuh yang usang dan memasuki tubuh-tubuh yang baru.",
+      "ban": "Sakadi anake sane ngutang pangangge sane sampun sue tur nganggen pangangge sane anyar, kadi asapunika taler atmane nilar angga sane sampun tua tur ngranjing ring angga sane anyar.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "As one puts off old clothes and puts on new ones, so the soul leaves old bodies and enters new ones."
     },
     {
       "no": 23,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः । न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥ २.२३ ॥",
+      "iast": "nainaṃ chindanti śastrāṇi nainaṃ dahati pāvakaḥ | na cainaṃ kledayanty āpo na śoṣayati mārutaḥ || 2.23 ||",
+      "id": "Senjata tidak dapat memotong jiwa ini, api tidak dapat membakarnya; air tidak dapat membasahinya, dan angin tidak dapat mengeringkannya.",
+      "ban": "Sanjata nenten prasida ngetep atma puniki, api nenten prasida ngeseng; toyane nenten mrasidayang ngebesang, tur angine nenten mrasidayang ngetuhang.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Weapons cannot cut this soul, fire cannot burn it; water cannot wet it, and wind cannot dry it."
     },
     {
       "no": 24,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च । नित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः ॥ २.२४ ॥",
+      "iast": "acchedyo 'yam adāhyo 'yam akledyo 'śoṣya eva ca | nityaḥ sarvagataḥ sthāṇur acalo 'yaṃ sanātanaḥ || 2.24 ||",
+      "id": "Jiwa ini tidak dapat dipotong, dibakar, dibasahi, ataupun dikeringkan. Ia kekal, hadir di mana-mana, teguh, tak bergerak, dan abadi.",
+      "ban": "Atma puniki nenten dados kagetep, katunjel, kabasahin, utawi kakering. Punika langgeng, wenten ring dija-dija, kukuh, nenten magingsir, tur langgeng.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "This soul cannot be cut, burned, wet, or dried. It is eternal, omnipresent, steadfast, unmoving, and eternal."
     },
     {
       "no": 25,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते । तस्मादेवं विदित्वैनं नानुशोचितुमर्हसि ॥ २.२५ ॥",
+      "iast": "avyakto 'yam acintyo 'yam avikāryo 'yam ucyate | tasmād evaṃ viditvainaṃ nānuśocitum arhasi || 2.25 ||",
+      "id": "Jiwa ini dikatakan tidak tampak, tak terpikirkan, dan tak berubah. Dengan mengetahui demikian, engkau tidak patut berduka.",
+      "ban": "Atma puniki kabaosang nenten kacingak, nenten prasida kapikayunin, lan nenten obah. Uning indike punika, ragane nenten perlu sedih.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "This soul is said to be invisible, unthinkable, and unchanging. Knowing this, you don't have to grieve."
     },
     {
       "no": 26,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् । तथापि त्वं महाबाहो नैवं शोचितुमर्हसि ॥ २.२६ ॥",
+      "iast": "atha cainaṃ nityajātaṃ nityaṃ vā manyase mṛtam | tathāpi tvaṃ mahābāho naivaṃ śocitum arhasi || 2.26 ||",
+      "id": "Sekalipun engkau menganggap jiwa ini senantiasa lahir dan senantiasa mati, wahai yang berlengan perkasa, engkau tetap tidak patut berduka demikian.",
+      "ban": "Yadiastun idewa mikayunin mungguing atmane puniki setata embas tur setata padem, duh sang sane mawisesa, idewa kantun nenten pantes masesambatan kadi asapunika.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Even if you think that this soul is always born and always dies, O mighty-armed one, you still do not deserve to grieve like that."
     },
     {
       "no": 27,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च । तस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥ २.२७ ॥",
+      "iast": "jātasya hi dhruvo mṛtyur dhruvaṃ janma mṛtasya ca | tasmād aparihārye 'rthe na tvaṃ śocitum arhasi || 2.27 ||",
+      "id": "Bagi yang lahir, kematian adalah pasti; dan bagi yang mati, kelahiran adalah pasti. Karena itu, engkau tidak patut berduka atas perkara yang tidak terelakkan.",
+      "ban": "Majeng ring anake sane embas, sampun pastika padem; tur pabuat anake sane sampun padem, embasnyane sampun pastika. Duaning punika, sampunang pisan semeton sedih ring paindikan sane tan sida antuk ngelidin.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "For those who are born, death is certain; and for the dead, birth is certain. Therefore, you should not grieve over things that are inevitable."
     },
     {
       "no": 28,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत । अव्यक्तनिधनान्येव तत्र का परिदेवना ॥ २.२८ ॥",
+      "iast": "avyaktādīni bhūtāni vyaktamadhyāni bhārata | avyaktanidhanāny eva tatra kā paridevanā || 2.28 ||",
+      "id": "Makhluk-makhluk tidak tampak pada awalnya, tampak di tengahnya, dan tidak tampak kembali pada akhirnya, wahai Bhārata. Maka untuk apa meratap?",
+      "ban": "Sang Hyang Widhi tan kanten ring pangawit, kanten ring tengah, taler tan kanten malih ring pamuput, duh Bharata. Dados napi mawinan sedih?",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Beings do not appear at the beginning, appear in the middle, and do not appear again at the end, O Bharata. So why mourn?"
     },
     {
       "no": 29,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "आश्चर्यवत्पश्यति कश्चिदेनमाश्चर्यवद्वदति तथैव चान्यः । आश्चर्यवच्चैनमन्यः शृणोति श्रुत्वाप्येनं वेद न चैव कश्चित् ॥ २.२९ ॥",
+      "iast": "āścaryavat paśyati kaścid enam āścaryavad vadati tathaiva cānyaḥ | āścaryavac cainam anyaḥ śṛṇoti śrutvāpy enaṃ veda na caiva kaścit || 2.29 ||",
+      "id": "Seseorang memandang jiwa ini sebagai keajaiban; yang lain membicarakannya sebagai keajaiban; yang lain lagi mendengarnya sebagai keajaiban. Namun, sekalipun mendengarnya, hampir tak seorang pun benar-benar memahaminya.",
+      "ban": "Anake nganggep atma puniki pinaka keajaiban; sane lianan maosang indike punika pinaka mukti; kantun wenten sane miragi indike punika pinaka mukti. Nanging, yadiastun ipun miragi, meh-mehan nenten wenten sane sujati ngresepang.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "One views this soul as a miracle; others speak of it as a miracle; still others hear it as a miracle. However, even if they hear it, almost no one really understands it."
     },
     {
       "no": 30,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत । तस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि ॥ २.३० ॥",
+      "iast": "dehī nityam avadhyo 'yaṃ dehe sarvasya bhārata | tasmāt sarvāṇi bhūtāni na tvaṃ śocitum arhasi || 2.30 ||",
+      "id": "Jiwa yang bersemayam dalam setiap tubuh selamanya tidak dapat dibunuh, wahai Bhārata. Karena itu, engkau tidak patut berduka atas makhluk mana pun.",
+      "ban": "Sang atma sane magenah ring sakancan angga nenten prasida kapademang salami-laminipun duh Bharata. Punika mawinan, nenten dados sedih ring sarwa prani.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The soul residing in every body cannot be killed forever, O Bharata. Therefore, you should not grieve for any creature."
     },
     {
       "no": 31,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि । धर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते ॥ २.३१ ॥",
+      "iast": "svadharmam api cāvekṣya na vikampitum arhasi | dharmyād dhi yuddhāc chreyo 'nyat kṣatriyasya na vidyate || 2.31 ||",
+      "id": "Dengan mempertimbangkan dharmamu sendiri, engkau tidak patut goyah. Bagi seorang kṣatriya, tidak ada yang lebih baik daripada perang yang sesuai dengan dharma.",
+      "ban": "Mapaiketan ring dharma ragane padidi, sampunang ragane ngreredang. Majeng ring kṣatriya, nenten wenten sane becikan saking payudan sane manut ring dharma.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Considering your own dharma, you should not waver. For a kṣatriya, there is nothing better than war in accordance with dharma."
     },
     {
       "no": 32,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् । सुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम् ॥ २.३२ ॥",
+      "iast": "yadṛcchayā copapannaṃ svargadvāram apāvṛtam | sukhinaḥ kṣatriyāḥ pārtha labhante yuddham īdṛśam || 2.32 ||",
+      "id": "Wahai Pārtha, berbahagialah para kṣatriya yang memperoleh perang seperti ini, yang datang dengan sendirinya sebagai pintu surga yang terbuka.",
+      "ban": "Duh Pārtha, rahayu para kṣatriya sane ngamolihang payudan sakadi puniki, sane rauh antuk ragannyane pinaka kori swargan sane mabuka.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O Pārtha, blessed are the kṣatriyas who obtain this kind of war, which comes by itself as the open door of heaven."
     },
     {
       "no": 33,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अथ चेत्त्वमिमं धर्म्यं सङ्ग्रामं न करिष्यसि । ततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि ॥ २.३३ ॥",
+      "iast": "atha cet tvam imaṃ dharmyaṃ saṅgrāmaṃ na kariṣyasi | tataḥ svadharmaṃ kīrtiṃ ca hitvā pāpam avāpsyasi || 2.33 ||",
+      "id": "Namun, jika engkau tidak menjalankan pertempuran yang sesuai dharma ini, engkau akan meninggalkan dharmamu dan kehormatanmu, lalu menanggung akibat buruk.",
+      "ban": "Sakéwanten, yéning nénten mayuda manut ring dharma punika, sinah pacang nilar dharma miwah kahormatan ragané tur pacang nandang panglalah sané nénten becik.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "However, if you do not fight in accordance with this dharma, you will abandon your dharma and your honor and suffer bad consequences."
     },
     {
       "no": 34,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् । सम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते ॥ २.३४ ॥",
+      "iast": "akīrtiṃ cāpi bhūtāni kathayiṣyanti te 'vyayām | saṃbhāvitasya cākīrtir maraṇād atiricyate || 2.34 ||",
+      "id": "Orang-orang akan membicarakan aibmu untuk waktu yang lama; bagi orang yang dihormati, aib lebih buruk daripada kematian.",
+      "ban": "Anake lakar makelo ngorahang unduk kanistan ibane; ring anake sane kahormatin, nista punika langkungan ring padem.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "People will talk about your disgrace for a long time; for a respected person, disgrace is worse than death."
     },
     {
       "no": 35,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः । येषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम् ॥ २.३५ ॥",
+      "iast": "bhayād raṇād uparataṃ maṃsyante tvāṃ mahārathāḥ | yeṣāṃ ca tvaṃ bahumato bhūtvā yāsyasi lāghavam || 2.35 ||",
+      "id": "Para pejuang besar akan mengira engkau mundur dari perang karena takut. Di mata mereka yang dahulu menghargaimu, engkau akan dipandang rendah.",
+      "ban": "Paraprajurite sane luih-luih pacang mitaenang mungguing semeton mundur saking payudan malantaran ajerih. Ring panyingakan anake sane naenin ngajiang ragane, ragane pacang kanistayang.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The great warriors will think that you withdrew from the war out of fear. In the eyes of those who once respected you, you will be looked down upon."
     },
     {
       "no": 36,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अवाच्यवादांश्च बहून्वदिष्यन्ति तवाहिताः । निन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम् ॥ २.३६ ॥",
+      "iast": "avācyavādāṃś ca bahūn vadiṣyanti tavāhitāḥ | nindantas tava sāmarthyaṃ tato duḥkhataraṃ nu kim || 2.36 ||",
+      "id": "Musuh-musuhmu akan mengucapkan banyak kata yang tak patut, merendahkan kemampuanmu. Adakah yang lebih menyakitkan daripada itu?",
+      "ban": "Meseh-meseh semetone pacang akeh mabaos sane nenten patut, sane ngletehin kabisan semetone. Napike wenten sane nyakitin langkungan ring punika?",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Your enemies will say many inappropriate words, denigrating your abilities. Is there anything more painful than that?"
     },
     {
       "no": 37,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम् । तस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः ॥ २.३७ ॥",
+      "iast": "hato vā prāpsyasi svargaṃ jitvā vā bhokṣyase mahīm | tasmād uttiṣṭha kaunteya yuddhāya kṛtaniścayaḥ || 2.37 ||",
+      "id": "Jika gugur, engkau akan mencapai surga; jika menang, engkau akan menikmati bumi. Karena itu bangkitlah, wahai putra Kuntī, dengan tekad untuk bertempur.",
+      "ban": "Yening ragane labuh, ragane pacang rauh ring suargan; yen cening menang, cening lakar muponin gumi. Bangun antuk punika, duh putran Kuntī, mapikayun pacang mayuda.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "If you fall, you will reach heaven; if you win, you will enjoy the earth. Arise therefore, O son of Kuntī, determined to fight."
     },
     {
       "no": 38,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ । ततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥ २.३८ ॥",
+      "iast": "sukhaduḥkhe same kṛtvā lābhālābhau jayājayau | tato yuddhāya yujyasva naivaṃ pāpam avāpsyasi || 2.38 ||",
+      "id": "Dengan menyamakan suka dan duka, untung dan rugi, menang dan kalah, bersiaplah untuk bertempur. Dengan sikap demikian, engkau tidak akan menanggung dosa.",
+      "ban": "Antuk menyamakan suka lan duka, bati lan rugi, menang lan rugi, sayagayang pacang mayuda. Antuk solah sane kadi asapunika, ragane nenten pacang nanggung dosa.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "By equalizing joy and sorrow, profit and loss, win and loss, prepare to fight. With such an attitude, you will not bear sin."
     },
     {
       "no": 39,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "एषा तेऽभिहिता साङ्ख्ये बुद्धिर्योगे त्विमां शृणु । बुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि ॥ २.३९ ॥",
+      "iast": "eṣā te 'bhihitā sāṅkhye buddhir yoge tv imāṃ śṛṇu | buddhyā yukto yayā pārtha karmabandhaṃ prahāsyasi || 2.39 ||",
+      "id": "Inilah pemahaman yang telah Kuuraikan kepadamu menurut Sāṅkhya. Kini dengarkan pemahaman menurut yoga; dengan memadukannya, wahai Pārtha, engkau akan melepaskan ikatan karma.",
+      "ban": "Punika pangresepan sane sampun katelatarang titiang ring semeton manut ring Sāṅkhya. Sane mangkin pirengang pangresepan manut yoga; antuk ngadungang ipun, duh Pārtha, ragane pacang ngluputang ikatan karma.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "This is the understanding that I have explained to you according to the Sāṅkhya. Now listen to the understanding according to yoga; by combining them, O Pārtha, you will liberate the bonds of karma."
     },
     {
       "no": 40,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते । स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥ २.४० ॥",
+      "iast": "nehābhikramanāśo 'sti pratyavāyo na vidyate | svalpam apy asya dharmasya trāyate mahato bhayāt || 2.40 ||",
+      "id": "Dalam jalan ini tidak ada usaha yang sia-sia dan tidak ada akibat yang merugikan. Bahkan sedikit pelaksanaan dharma ini menyelamatkan seseorang dari ketakutan besar.",
+      "ban": "Ring pamargi puniki nenten wenten utsaha sane sia-sia tur nenten wenten pikobet sane ngrusak. Yadiastun akidik ngelaksanayang dharma puniki ngluputang jadma saking rasa jejeh sane ageng.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "In this path there is no wasted effort and no detrimental consequences. Even a little implementation of this dharma saves one from great fear."
     },
     {
       "no": 41,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन । बहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम् ॥ २.४१ ॥",
+      "iast": "vyavasāyātmikā buddhir ekeha kurunandana | bahuśākhā hy anantāś ca buddhayo 'vyavasāyinām || 2.41 ||",
+      "id": "Wahai Kurunandana, budi yang teguh memiliki satu arah; pikiran orang yang tidak teguh bercabang banyak dan tak berujung.",
+      "ban": "Duh Kurunandana, pikayunan sane kukuh madue arah asiki; pikayunan jadma sane nenten tegteg punika marupa makudang-kudang cabang tur nenten wenten telasnyane.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O Kurunandana, a firm mind has one direction; the mind of an unsteady person is multi-branched and endless."
     },
     {
       "no": 42,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः । वेदवादरताः पार्थ नान्यदस्तीति वादिनः ॥ २.४२ ॥",
+      "iast": "yām imāṃ puṣpitāṃ vācaṃ pravadanty avipaścitaḥ | vedavādaratāḥ pārtha nānyad astīti vādinaḥ || 2.42 ||",
+      "id": "Wahai Pārtha, orang yang kurang memahami namun terpikat pada kata-kata indah kitab suci berkata bahwa tidak ada jalan lain selain itu.",
+      "ban": "Duh Pārtha, sang sane kirang pangresepan nanging kapikat antuk sabda-kruna sane becik saking kitab suci maosang nenten wenten pamargi tiosan ring punika.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O Pārtha, one who lacks understanding but is captivated by the beautiful words of the scriptures says that there is no other way than that."
     },
     {
       "no": 43,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम् । क्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति ॥ २.४३ ॥",
+      "iast": "kāmātmānaḥ svargaparā janmakarmaphalapradām | kriyāviśeṣabahulāṃ bhogaiśvaryagatiṃ prati || 2.43 ||",
+      "id": "Digerakkan oleh keinginan dan mengejar surga, mereka mengajarkan banyak laku yang menghasilkan kelahiran dan buah karma, demi kenikmatan serta kemakmuran.",
+      "ban": "Kasokong antuk pikayunan miwah nguber swargan, ipun ngajahin akeh parilaksana sane ngawetuang embas miwah woh-wohan karma, anggen kasukan miwah karahayuan.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Driven by desire and the pursuit of heaven, they teach many practices that produce birth and the fruits of karma, for enjoyment and prosperity."
     },
     {
       "no": 44,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम् । व्यवसायात्मिका बुद्धिः समाधौ न विधीयते ॥ २.४४ ॥",
+      "iast": "bhogaiśvaryaprasaktānāṃ tayāpahṛtacetasām | vyavasāyātmikā buddhiḥ samādhau na vidhīyate || 2.44 ||",
+      "id": "Bagi mereka yang terpaut pada kenikmatan dan kekayaan, serta pikirannya terseret oleh ajaran itu, budi yang teguh untuk samādhi tidak tumbuh.",
+      "ban": "Majeng ring sang sane ngranjing ring kasukan miwah kasugihan, tur pikayunannyane kacabut antuk ajah-ajahan punika, pikayunan sane kukuh antuk samādhi nenten mentik.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "For those who are attached to pleasure and wealth, and whose minds are drawn away by those teachings, a firm mind for samādhi does not grow."
     },
     {
       "no": 45,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन । निर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान् ॥ २.४५ ॥",
+      "iast": "traiguṇyaviṣayā vedā nistraiguṇyo bhavārjuna | nirdvandvo nityasattvastho niryogakṣema ātmavān || 2.45 ||",
+      "id": "Kitab-kitab membahas tiga guṇa. Wahai Arjuna, lampauilah ketiganya; bebaslah dari pasangan berlawanan, teguh dalam kemurnian, bebas dari kecemasan memiliki dan mempertahankan, serta bersemayam dalam diri.",
+      "ban": "Kitab suci maosang indik tigang guna. Inggih Sang Arjuna, nglintangin tetiga punika; bebas saking pasangan sane matungkasan, pageh ring kasucian, bebas saking rasa jejeh ngelah lan miara, tur tetep ring jeroning raga.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The scriptures discuss three guṇas. O Arjuna, surpass these three; be free from pairs of opposites, be firm in purity, be free from the anxiety of possessing and maintaining, and abide within yourself."
     },
     {
       "no": 46,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यावानर्थ उदपाने सर्वतः सम्प्लुतोदके । तावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः ॥ २.४६ ॥",
+      "iast": "yāvān artha udapāne sarvataḥ samplutodake | tāvān sarveṣu vedeṣu brāhmaṇasya vijānataḥ || 2.46 ||",
+      "id": "Sebagaimana kegunaan sebuah sumur tercakup ketika air melimpah di segala arah, demikian pula seluruh Veda tercakup bagi orang yang memahami Brahman.",
+      "ban": "Sakadi kawigunan semer katutupin rikala toyane akeh ring sakancan arah, asapunika taler makasami Weda katutupin antuk sang sane ngresepang Brahman.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "As the usefulness of a well is covered when water abounds in all directions, so the entire Veda is covered for one who understands Brahman."
     },
     {
       "no": 47,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥ २.४७ ॥",
+      "iast": "karmaṇy evādhikāras te mā phaleṣu kadācana | mā karmaphalahetur bhūr mā te saṅgo 'stv akarmaṇi || 2.47 ||",
+      "id": "Engkau berhak atas tindakanmu, tetapi tidak pernah atas hasilnya. Jangan menjadikan hasil sebagai motif tindakanmu; jangan pula melekat pada ketidakbertindakan.",
+      "ban": "Ragane madue hak ring parilaksanan ragane, nanging nenten naenin ring pikolihnyane. Sampunangja pikolih punika dados motif parilaksanan semetone; taler nenten neket ring tan malaksana.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "You are entitled to your actions, but never to their results. Don't make results the motive for your actions; nor cling to inaction."
     },
     {
       "no": 48,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय । सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥ २.४८ ॥",
+      "iast": "yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya | siddhyasiddhyoḥ samo bhūtvā samatvaṃ yoga ucyate || 2.48 ||",
+      "id": "Bersemayamlah dalam yoga dan lakukan tindakanmu dengan melepas keterikatan, wahai Dhanañjaya. Seimbangkan dirimu dalam berhasil maupun gagal; keseimbangan itulah yang disebut yoga.",
+      "ban": "Tetep ring yoga tur laksanayang parilaksana antuk ngelepasin keterikatan, duh Dhanañjaya. Imbangang raga ring kasuksesan lan kegagalan; keseimbangan punika sane kabaos yoga.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Abide in yoga and perform your actions by letting go of attachment, O Dhanañjaya. Balance yourself in success and failure; balance is what is called yoga."
     },
     {
       "no": 49,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय । बुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः ॥ २.४९ ॥",
+      "iast": "dūreṇa hy avaraṃ karma buddhiyogād dhanañjaya | buddhau śaraṇam anviccha kṛpaṇāḥ phalahetavaḥ || 2.49 ||",
+      "id": "Tindakan yang semata-mata mengejar hasil jauh lebih rendah daripada yoga budi, wahai Dhanañjaya. Berlindunglah pada budi; mereka yang menjadikan hasil sebagai tujuan adalah orang yang sempit pandangannya.",
+      "ban": "Parilaksana sane wantah nguber pikolih doh andap ring yoga pikayunan, duh Dhanañjaya. Pasayubanja ring kabecikan; Sang sane ngawinang pikolih tatujonnyane inggih punika jadma sane madue pandangan sane cupit.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Actions that merely pursue results are far inferior to the yoga of mind, O Dhanañjaya. Take refuge in goodness; Those who make results their goal are people with a narrow view."
     },
     {
       "no": 50,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते । तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥ २.५० ॥",
+      "iast": "buddhiyukto jahātīha ubhe sukṛtaduṣkṛte | tasmād yogāya yujyasva yogaḥ karmasu kauśalam || 2.50 ||",
+      "id": "Orang yang berpadu dengan budi meninggalkan di dunia ini baik akibat perbuatan baik maupun buruk. Karena itu tekunilah yoga; yoga adalah kecakapan dalam bertindak.",
+      "ban": "Jadma sane masikian antuk kawicaksanan matilar saking jagate puniki sangkaning parilaksana sane becik miwah sane kaon. Duaning punika pagehja ring yoga; Yoga punika kawagedan ring parilaksana.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "People who are united with wisdom leave this world due to both good and bad deeds. Therefore persevere in yoga; Yoga is skill in action."
     },
     {
       "no": 51,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः । जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥ २.५१ ॥",
+      "iast": "karmajaṃ buddhiyuktā hi phalaṃ tyaktvā manīṣiṇaḥ | janmabandhavinirmuktāḥ padaṃ gacchanty anāmayam || 2.51 ||",
+      "id": "Orang bijaksana yang berpadu dengan budi melepaskan buah tindakan dan bebas dari ikatan kelahiran; mereka mencapai keadaan yang bebas dari penderitaan.",
+      "ban": "Sang wicaksana sane masikian ring pikayunan nulak woh-wohan parilaksana tur bebas saking paiketan embas; ipun ngamolihang kahanan sane bebas saking kasangsaran.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The wise person who is united with the mind renounces the fruits of action and is free from the bondage of birth; they attain a state free from suffering."
     },
     {
       "no": 52,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति । तदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च ॥ २.५२ ॥",
+      "iast": "yadā te mohakalilaṃ buddhir vyatitariṣyati | tadā gantāsi nirvedaṃ śrotavyasya śrutasya ca || 2.52 ||",
+      "id": "Ketika budimu telah menyeberangi rimba kebingungan, engkau akan menjadi tidak lagi terikat pada apa yang telah didengar maupun yang masih akan didengar.",
+      "ban": "Rikala pikayunan ragane sampun nglintangin alas bingung, ragane nenten malih pacang neket ring napi sane sampun kapireng utawi napi sane durung kapireng.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "When your mind has crossed the jungle of confusion, you will no longer be attached to what you have heard or what is yet to be heard."
     },
     {
       "no": 53,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला । समाधावचला बुद्धिस्तदा योगमवाप्स्यसि ॥ २.५३ ॥",
+      "iast": "śrutivipratipannā te yadā sthāsyati niścalā | samādhāv acalā buddhis tadā yogam avāpsyasi || 2.53 ||",
+      "id": "Saat budimu yang semula terseret oleh berbagai ajaran menjadi tak goyah dan teguh dalam samādhi, saat itulah engkau mencapai yoga.",
+      "ban": "Rikala pikayunan ragane sane dumun kaseret olih makudang-kudang ajah-ajahan, dados nenten ngreredang tur pageh ring samādhi, punika rikala ragane ngamolihang yoga.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "When your mind, which was originally dragged down by various teachings, becomes unwavering and steadfast in samādhi, that is when you attain yoga."
     },
     {
       "no": 54,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "अर्जुन उवाच । स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव । स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम् ॥ २.५४ ॥",
+      "iast": "arjuna uvāca | sthitaprajñasya kā bhāṣā samādhisthasya keśava | sthitadhīḥ kiṃ prabhāṣeta kim āsīta vrajeta kim || 2.54 ||",
+      "id": "Arjuna berkata: Wahai Keśava, bagaimana ciri orang yang kebijaksanaannya teguh dan bersemayam dalam samādhi? Bagaimana ia berbicara, duduk, dan berjalan?",
+      "ban": "Sang Arjuna ngandika: Inggih Sang Keśwa, napike ceciren sang sane kawicaksanannyane kukuh tur ajeg ring samādhi? Sapunapi carane ipun mabebaosan, negak, miwah mamargi?",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Arjuna said: O Keśava, what is the characteristic of one whose wisdom is firm and abides in samādhi? How does he talk, sit, and walk?"
     },
     {
       "no": 55,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "श्रीभगवानुवाच । प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान् । आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥ २.५५ ॥",
+      "iast": "śrībhagavān uvāca | prajahāti yadā kāmān sarvān pārtha manogatān | ātmany evātmanā tuṣṭaḥ sthitaprajñas tadocyate || 2.55 ||",
+      "id": "Śrī Bhagavān bersabda: Wahai Pārtha, ketika seseorang melepaskan semua keinginan yang muncul dalam pikiran dan berpuas dalam diri oleh diri, ia disebut teguh dalam kebijaksanaan.",
+      "ban": "Ida Sang Sri Bhagavān ngandika: Inggih Sang Pārtha, rikalaning ida dane ngelepasin sakancan pikayunan sane metu ring pikayunan tur sampun wareg ring raga, ida kabaos kukuh ring kawicaksanaan.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Śrī Bhagavān said: O Pārtha, when one gives up all the desires that arise in the mind and is satisfied with the self, he is said to be firm in wisdom."
     },
     {
       "no": 56,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः । वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥ २.५६ ॥",
+      "iast": "duḥkheṣv anudvignamanāḥ sukheṣu vigataspṛhaḥ | vītarāgabhayakrodhaḥ sthitadhīr munir ucyate || 2.56 ||",
+      "id": "Orang yang pikirannya tidak terguncang dalam duka, tidak mendambakan suka, dan telah bebas dari keterikatan, takut, serta marah, disebut muni yang teguh dalam kebijaksanaan.",
+      "ban": "Anake sane pikayunannyane nenten kagebug antuk sedih, nenten ngidam suka, tur luput saking rasa jejeh, takut miwah brangti, punika kawastanin muni sane pageh ring kawicaksanaan.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "One whose mind is not shaken by sorrow, does not crave joy, and is free from attachment, fear and anger, is called a muni who is steadfast in wisdom."
     },
     {
       "no": 57,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम् । नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता ॥ २.५७ ॥",
+      "iast": "yaḥ sarvatrānabhisnehas tat tat prāpya śubhāśubham | nābhinandati na dveṣṭi tasya prajñā pratiṣṭhitā || 2.57 ||",
+      "id": "Orang yang tidak melekat pada apa pun, dan ketika menerima yang baik atau buruk tidak bersukacita berlebihan maupun membenci, kebijaksanaannya teguh.",
+      "ban": "Anake sane nenten neket ring napi-napi, tur rikala nampi becik wiadin kaon nenten kalintang bagia wiadin geting, kawicaksanannyane kukuh.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "One who does not cling to anything, and when receiving good or bad neither rejoices excessively nor hates, his wisdom is firm."
     },
     {
       "no": 58,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ २.५८ ॥",
+      "iast": "yadā saṃharate cāyaṃ kūrmo 'ṅgānīva sarvaśaḥ | indriyāṇīndriyārthebhyas tasya prajñā pratiṣṭhitā || 2.58 ||",
+      "id": "Ketika seseorang menarik indra-indranya dari objek-objek indra, seperti kura-kura menarik anggota tubuhnya dari segala sisi, kebijaksanaannya teguh.",
+      "ban": "Rikala jadmane ngrereh indriya saking benda indriya, sakadi penyu ngrereh angga saking sakancan sisi, kawicaksanannyane kukuh.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "When a person withdraws his senses from sense objects, as a tortoise withdraws his limbs from all sides, his wisdom is firm."
     },
     {
       "no": 59,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "विषया विनिवर्तन्ते निराहारस्य देहिनः । रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते ॥ २.५९ ॥",
+      "iast": "viṣayā vinivartante nirāhārasya dehinaḥ | rasavarjaṃ raso 'py asya paraṃ dṛṣṭvā nivartate || 2.59 ||",
+      "id": "Objek indra menjauh dari orang yang menahan diri, tetapi rasa keterikatan masih tinggal. Bahkan rasa itu pun lenyap setelah ia menyaksikan Yang Tertinggi.",
+      "ban": "Objek indriya punika ngejohang raga saking jadma sane kateken, nanging rasa melekat punika tetep wenten. Yadiastun raos punika ical risampune Ida nyaksiang Sang Maha Suci.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The objects of the senses move away from the restrained person, but the feeling of attachment still remains. Even that feeling disappeared after he witnessed the Supreme."
     },
     {
       "no": 60,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः । इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ॥ २.६० ॥",
+      "iast": "yatato hy api kaunteya puruṣasya vipaścitaḥ | indriyāṇi pramāthīni haranti prasabhaṃ manaḥ || 2.60 ||",
+      "id": "Wahai putra Kuntī, bahkan dari orang bijaksana yang berusaha mengendalikan diri, indra yang gelisah dapat menyeret pikiran dengan paksa.",
+      "ban": "Duh putran Kuntī, yadiastun saking jadma wicaksana sane mautsaha ngendaliang raga, indriya sane gelisah prasida nyeret pikayunan antuk paksa.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O son of Kuntī, even of a wise man who tries to control himself, the restless senses can drag down the mind by force."
     },
     {
       "no": 61,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः । वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता ॥ २.६१ ॥",
+      "iast": "tāni sarvāṇi saṃyamya yukta āsīta matparaḥ | vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā || 2.61 ||",
+      "id": "Kendalikan semua indra dan bersemayamlah dalam yoga dengan Aku sebagai tujuan tertinggi; orang yang menguasai indranya memiliki kebijaksanaan teguh.",
+      "ban": "Ngawasin sakancan indriya tur tetep ring yoga sareng Titiang pinaka tatujon sane pinih luhur; anake sane nguasayang indriya madue kawicaksanaan sane kukuh.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Control all the senses and abide in yoga with Me as the highest goal; a person who masters his senses has firm wisdom."
     },
     {
       "no": 62,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते । सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते ॥ २.६२ ॥",
+      "iast": "dhyāyato viṣayān puṃsaḥ saṅgas teṣūpajāyate | saṅgāt sañjāyate kāmaḥ kāmāt krodho 'bhijāyate || 2.62 ||",
+      "id": "Memikirkan objek indra menumbuhkan keterikatan; dari keterikatan lahir keinginan, dan dari keinginan lahir kemarahan.",
+      "ban": "Mapikayun indik objek indra punika ngalimbakang rasa melekat; saking rasa melekat metu pikayunan, tur saking pikayunan metu gedeg.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Thinking about sense objects fosters attachment; from attachment comes desire, and from desire comes anger."
     },
     {
       "no": 63,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः । स्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ २.६३ ॥",
+      "iast": "krodhād bhavati sammohaḥ sammohāt smṛtivibhramaḥ | smṛtibhraṃśād buddhināśo buddhināśāt praṇaśyati || 2.63 ||",
+      "id": "Dari kemarahan muncul kebingungan; dari kebingungan hilang ingatan; budi rusak, dan seseorang pun jatuh binasa.",
+      "ban": "Saking gedeg punika metu kabingungan; saking bingung ilang ingatan; pikayunane sampun rusak, tur jadmane punika runtuh ring karusakan.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "From anger comes confusion; from confusion loss of memory; the mind is corrupted, and a person falls into perdition."
     },
     {
       "no": 64,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "रागद्वेषविमुक्तैस्तु विषयानिन्द्रियैश्चरन् । आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति ॥ २.६४ ॥",
+      "iast": "rāgadveṣavimuktais tu viṣayān indriyaiś caran | ātmavaśyair vidheyātmā prasādam adhigacchati || 2.64 ||",
+      "id": "Orang yang bebas dari suka dan benci, dengan indra yang terkendali, mencapai ketenangan batin.",
+      "ban": "Sang sane bebas saking seneng lan geting, antuk indriya sane terkendali, ngamolihang ketenangan batin.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "One who is free from likes and hates, with the senses under control, attains inner tranquility."
     },
     {
       "no": 65,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "प्रसादे सर्वदुःखानां हानिरस्योपजायते । प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥ २.६५ ॥",
+      "iast": "prasāde sarvaduḥkhānāṃ hānir asyopajāyate | prasannacetaso hy āśu buddhiḥ paryavatiṣṭhate || 2.65 ||",
+      "id": "Dalam ketenangan batin, dukacita mulai lenyap dan budi segera menjadi teguh.",
+      "ban": "Ring sutrepti batin, sedih ngawit ical tur pikayunan langsung dados kukuh.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "In inner peace, sorrow begins to disappear and the mind immediately becomes firm."
     },
     {
       "no": 66,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना । न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥ २.६६ ॥",
+      "iast": "nāsti buddhir ayuktasya na cāyuktasya bhāvanā | na cābhāvayataḥ śāntir aśāntasya kutaḥ sukham || 2.66 ||",
+      "id": "Tanpa yoga tidak ada budi atau perenungan yang benar; tanpa kedamaian, dari mana datang kebahagiaan?",
+      "ban": "Tan wenten yoga tan wenten pikayunan utawi refleksi sane patut; tan wenten sutrepti, saking dijake rauh karahayuan?",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Without yoga there is no right mind or reflection; without peace, where does happiness come from?"
     },
     {
       "no": 67,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते । तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥ २.६७ ॥",
+      "iast": "indriyāṇāṃ hi caratāṃ yan mano 'nuvidhīyate | tad asya harati prajñāṃ vāyur nāvam ivāmbhasi || 2.67 ||",
+      "id": "Pikiran yang mengikuti indra yang mengembara merampas kebijaksanaan seperti angin menghanyutkan perahu.",
+      "ban": "Pikayunan sane ngiring indriya sane ngelintang ngrampok kawicaksanaan sakadi angin ngaba jukung.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "The mind that follows wandering senses robs wisdom like the wind carries away a boat."
     },
     {
       "no": 68,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः । इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ २.६८ ॥",
+      "iast": "tasmād yasya mahābāho nigṛhītāni sarvaśaḥ | indriyāṇīndriyārthebhyas tasya prajñā pratiṣṭhitā || 2.68 ||",
+      "id": "Orang yang mengendalikan indra sepenuhnya dari objek indra memiliki kebijaksanaan yang teguh.",
+      "ban": "Sang sane madue kontrol sane jangkep ring benda-benda indra madue kawicaksanaan sane kukuh.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "One who has complete control over the sense objects has firm wisdom."
     },
     {
       "no": 69,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी । यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः ॥ २.६९ ॥",
+      "iast": "yā niśā sarvabhūtānāṃ tasyāṃ jāgarti saṃyamī | yasyāṃ jāgrati bhūtāni sā niśā paśyato muneḥ || 2.69 ||",
+      "id": "Apa yang seperti malam bagi semua makhluk adalah saat orang terkendali terjaga; sebaliknya bagi muni yang melihat.",
+      "ban": "Sane sekadi wengi ring sakancan sarwa prani inggih punika rikala sang sane katahan sampun matangi; tungkalikannyane majeng ring muni sane nyingakin.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "What is like night to all creatures is when the restrained person is awake; vice versa for the muni who sees."
     },
     {
       "no": 70,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत् । तद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी ॥ २.७० ॥",
+      "iast": "āpūryamāṇam acalapratiṣṭhaṃ samudram āpaḥ praviśanti yadvat | tadvat kāmā yaṃ praviśanti sarve sa śāntim āpnoti na kāmakāmī || 2.70 ||",
+      "id": "Seperti sungai memasuki samudra yang tetap tenang, keinginan memasuki orang yang teguh; dialah yang mencapai damai, bukan pengejar keinginan.",
+      "ban": "Sakadi tukad ngranjing ring samudra sane tetep anteng, pikayunan ngranjing ring jadma sane pageh; ida sane ngamolihang sutrepti, boya ja sane nguber pikayunan.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "Like a river enters an ocean that remains calm, desire enters a steadfast person; he is the one who achieves peace, not the chaser of desires."
     },
     {
       "no": 71,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः । निर्ममो निरहङ्कारः स शान्तिमधिगच्छति ॥ २.७१ ॥",
+      "iast": "vihāya kāmān yaḥ sarvān pumāṃś carati niḥspṛhaḥ | nirmamo nirahaṅkāraḥ sa śāntim adhigacchati || 2.71 ||",
+      "id": "Orang yang melepaskan semua keinginan, hidup tanpa dahaga, tanpa rasa memiliki dan tanpa keakuan, mencapai kedamaian.",
+      "ban": "Sang sane ngelepasin sakancan pikayunan, idup tan bedak, tan rasa posesif lan tan ego, ngamolihang karahayuan.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "One who gives up all desires, lives without thirst, without sense of possessiveness and without ego, attains peace."
     },
     {
       "no": 72,
-      "devanagari": "",
-      "iast": "",
-      "id": "",
-      "ban": null,
+      "devanagari": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति । स्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति ॥ २.७२ ॥",
+      "iast": "eṣā brāhmī sthitiḥ pārtha naināṃ prāpya vimuhyati | sthitvāsyām antakāle 'pi brahmanirvāṇam ṛcchati || 2.72 ||",
+      "id": "Wahai Pārtha, inilah keadaan Brahman. Setelah mencapainya seseorang tidak lagi bingung; bahkan bila teguh di dalamnya pada akhir hayat, ia mencapai pembebasan dalam Brahman.",
+      "ban": "Inggih sang Pārtha, puniki kawentenan Ida Sang Brahman. Sampun ngamolihang punika jadmane nenten malih bingung; yadiastun pageh ring sajeroning punika ring panguntat urip, ida ngamolihang kabebasan ring Brahman.",
       "status": {
-        "id": "kosong",
-        "ban": "kosong"
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
       },
-      "catatan": ""
+      "catatan": "",
+      "en": "O Pārtha, this is the state of Brahman. Having attained it one is no longer confused; even if steadfast in it at the end of life, he attains liberation in Brahman."
     }
   ]
 }

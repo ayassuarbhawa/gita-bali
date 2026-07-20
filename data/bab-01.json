@@ -1,43 +1,676 @@
 {
   "bab": 1,
   "judul": {
-    "sanskrit": "Arjuna-vishada-yoga",
-    "id": "Arjuna Vishada Yoga",
-    "ban": null
+    "sanskrit": "Arjuna-viṣāda-yoga",
+    "id": "Arjuna Viṣāda Yoga (Kesedihan Arjuna)",
+    "ban": "Arjuna Wisāda Yoga (Kasedihan Ida Sang Arjuna)",
+    "en": "Arjuna Viṣāda Yoga (Arjuna's Sorrow)"
   },
   "jumlah_sloka": 47,
   "sumber": {
-    "sanskrit": "Vickramasila",
-    "terjemahan_id": "Penerbit Penerbit Indonesia",
-    "terjemahan_ban": "Penerbit Penerbit Bali"
+    "sanskrit": "Gita Supersite, IIT Kanpur — Śrīmad Bhagavadgītā, Bab 1",
+    "terjemahan_id": "Draf editorial proyek, diterjemahkan langsung dari teks Sanskrit; perlu telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
   },
   "sloka": [
     {
       "no": 1,
-      "devanagari": "श्रीपरमात्मनं दृष्ट्वा देहेभ्यो मह्यमानं कृतवान्",
-      "iast": "śrīparamātmānaṃ dṛṣṭvā dehebhya mahimānaṃ kṛtavān",
-      "id": "Setelah melihat Mahātmāna di dalam diri (Jiwa),\nArjuna bebas dari keraguan dan rasa takut.",
-      "ban": null,
-      "status": {"id": "kosong", "ban": "kosong"},
-      "catatan": ""
+      "devanagari": "धृतराष्ट्र उवाच । धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥ १.१ ॥",
+      "iast": "dhṛtarāṣṭra uvāca | dharmakṣetre kurukṣetre samavetā yuyutsavaḥ | māmakāḥ pāṇḍavāś caiva kim akurvata sañjaya || 1.1 ||",
+      "id": "Dhṛtarāṣṭra berkata: Wahai Sañjaya, setelah berkumpul di Kurukṣetra, medan dharma, apakah yang dilakukan putra-putraku dan putra-putra Pāṇḍu yang berhasrat untuk berperang?",
+      "ban": "Sang Dhṛtarāshtra ngandika: Inggih Sang Sañjaya, sampun mapupul ring Kurukṣetra, tegal dharma, napi sane kalaksanayang olih putran-putran titiange miwah putran-putran Paṇḍu sane meled mayuda?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Dhṛtarāṣṭra said: O Sañjaya, having gathered in Kurukṣetra, the field of dharma, what did my sons and the sons of Pāṇḍu who were eager to fight do?"
     },
     {
       "no": 2,
-      "devanagari": "कथम्यामण्याध्यायेद्दनानं दिदृक्षया ज्ञानचक्षुषा",
-      "iast": "kathamya-māṇyādhyāyed danānāṃ didṛkṣayā jñānacakṣuṣā",
-      "id": "Dengan penglihatan terang (Yoga), melalui mata pengetahuan,\nPelajaran tersebut akhirnya terlihat.",
-      "ban": null,
-      "status": {"id": "kosong", "ban": "kosong"},
-      "catatan": ""
+      "devanagari": "सञ्जय उवाच । दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा । आचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ॥ १.२ ॥",
+      "iast": "sañjaya uvāca | dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanas tadā | ācāryam upasaṅgamya rājā vacanam abravīt || 1.2 ||",
+      "id": "Sañjaya berkata: Melihat pasukan Pāṇḍawa yang tersusun dalam formasi, Raja Duryodhana mendatangi gurunya lalu berkata.",
+      "ban": "Sang Sañjaya ngandika: Manggihin wadua balan Pāṇḍawa kadabdabang antuk formasi, Ida Sang Prabu Duryodhana rauh ring gurun idane tur matur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Sañjaya said: Seeing the Pāṇḍava army arranged in formation, King Duryodhana came to his teacher and said."
     },
     {
       "no": 3,
-      "devanagari": "कुरुक्षेत्रंवचाकीर-येदुर्भिक्षाद्वचपदाराम्",
-      "iast": "kurukṣetreṁvacaḥ kīrīyād urbhikṣād vacaḥ padārāma",
-      "id": "Di dalam kurukshetra, yang disebut lapangan asosiasi,\nKata-kata turun seperti burung nyanyikan terhadap pohon.",
-      "ban": null,
-      "status": {"id": "kosong", "ban": "kosong"},
-      "catatan": ""
+      "devanagari": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् । व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ॥ १.३ ॥",
+      "iast": "paśyaitāṃ pāṇḍuputrāṇām ācārya mahatīṃ camūm | vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā || 1.3 ||",
+      "id": "Wahai Ācārya, lihatlah pasukan besar putra-putra Pāṇḍu ini, yang disusun oleh putra Drupada, muridmu yang cerdas.",
+      "ban": "Duh Ācārya, cingakin wadua bala ageng puniki saking putran-putran Pāṇḍu, kapupulang olih putran Drupada, sisia druene sane wikan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "O Ācārya, behold this great army of the sons of Pāṇḍu, assembled by the son of Drupada, your intelligent disciple."
+    },
+    {
+      "no": 4,
+      "devanagari": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि । युयुधानो विराटश्च द्रुपदश्च महारथः ॥ १.४ ॥",
+      "iast": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi | yuyudhāno virāṭaś ca drupadaś ca mahārathaḥ || 1.4 ||",
+      "id": "Di sini ada para pahlawan pemanah besar yang setara Bhīma dan Arjuna dalam perang: Yuyudhāna, Virāṭa, dan Drupada, para pejuang besar.",
+      "ban": "Iriki wenten pahlawan panah sane mautama sane pateh ring Ida Sang Bhima lan Arjuna ring payudan: Sang Yuyudhana, Sang Wiraṭa, miwah Sang Drupada, para prajurit sane mautama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Here were the great archer heroes who were equals to Bhīma and Arjuna in war: Yuyudhāna, Virāṭa, and Drupada, the great warriors."
+    },
+    {
+      "no": 5,
+      "devanagari": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् । पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ॥ १.५ ॥",
+      "iast": "dhṛṣṭaketuś cekitānaḥ kāśirājaś ca vīryavān | purujit kuntibhojaś ca śaibyaś ca narapuṅgavaḥ || 1.5 ||",
+      "id": "Di sana juga Dṛṣṭaketu, Cekitāna, raja Kāśī yang gagah, Purujit, Kuntibhoja, dan Śaibya, yang utama di antara manusia.",
+      "ban": "Wenten taler Drishṭaketu, Cekitāna, raja Kasi sane mawisesa, Purujit, Kuntibhoja, miwah Saibya, pamucuk ring pantaraning manusa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "There were also Dṛṣṭaketu, Cekitāna, the mighty Kāśī king, Purujit, Kuntibhoja, and Śaibya, chief among men."
+    },
+    {
+      "no": 6,
+      "devanagari": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान् । सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः ॥ १.६ ॥",
+      "iast": "yudhāmanyuś ca vikrānta uttamaujāś ca vīryavān | saubhadro draupadeyāś ca sarva eva mahārathāḥ || 1.6 ||",
+      "id": "Juga Yudhāmanyu yang gagah, Uttamaujā yang perkasa, putra Subhadrā, serta putra-putra Draupadī; semuanya pejuang besar.",
+      "ban": "Taler sang Yudhāmanyu sakti, sang Uttamaujā sakti, putran Ida Sang Subhadra, miwah putran Ida Sang Draupadī; sami dados prajurit sane mautama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Also the mighty Yudhāmanyu, the mighty Uttamaujā, the sons of Subhadrā, and the sons of Draupadī; all were great warriors."
+    },
+    {
+      "no": 7,
+      "devanagari": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम । नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ॥ १.७ ॥",
+      "iast": "asmākaṃ tu viśiṣṭā ye tān nibodha dvijottama | nāyakā mama sainyasya saṃjñārthaṃ tān bravīmi te || 1.7 ||",
+      "id": "Namun ketahuilah pula para pemimpin terkemuka di pihak kami, wahai yang terbaik di antara para brahmana. Demi pengenalan, akan kusebutkan para pemimpin pasukanku kepadamu.",
+      "ban": "Nanging uningin taler para pamimpin sane kasub ring sisi titiange, duh para brahmana sane pinih becik. Anggen pengenalan, titiang jagi nyambatang para pemimpin regu titiange majeng ring semeton.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "But know also the eminent leaders on our side, O best of the brahmins. For the sake of introduction, I will mention the leaders of my squad to you."
+    },
+    {
+      "no": 8,
+      "devanagari": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः । अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च ॥ १.८ ॥",
+      "iast": "bhavān bhīṣmaś ca karṇaś ca kṛpaś ca samitiṃjayaḥ | aśvatthāmā vikarṇaś ca saumadattis tathaiva ca || 1.8 ||",
+      "id": "Ada engkau sendiri, Bhīṣma, Karṇa, Kṛpa sang pemenang pertempuran, Aśvatthāmā, Vikarṇa, dan putra Somadatta.",
+      "ban": "Irika wantah ragane kemanten, Ida Bhagawan Bhisma, Ida Sang Karna, Ida Sang Kṛpa sang sane menang ring payudan, Ida Sang Aswattama, Ida Sang Wikarna, miwah putran Ida Sang Somadatta.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "There are you alone, Bhīṣma, Karṇa, Kṛpa the battle-winner, Aśvatthāmā, Vikarṇa, and Somadatta's son."
+    },
+    {
+      "no": 9,
+      "devanagari": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः । नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः ॥ १.९ ॥",
+      "iast": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ | nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ || 1.9 ||",
+      "id": "Masih banyak pahlawan lain yang siap menyerahkan nyawa demi diriku. Mereka bersenjata beragam dan semuanya mahir berperang.",
+      "ban": "Akeh malih pahlawan sane lianan sane sampun sayaga nyerahang uripnyane pabuat titiang. Dane sareng sami pada ngagem sanjata mawarni-warni tur sami waged mayuda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "There are many other heroes who are ready to lay down their lives for me. They were armed with various weapons and were all skilled at fighting."
+    },
+    {
+      "no": 10,
+      "devanagari": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम् । पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम् ॥ १.१० ॥",
+      "iast": "aparyāptaṃ tad asmākaṃ balaṃ bhīṣmābhirakṣitam | paryāptaṃ tv idam eteṣāṃ balaṃ bhīmābhirakṣitam || 1.10 ||",
+      "id": "Pasukan kami yang dijaga Bhīṣma tampak tak terbatas, sedangkan pasukan mereka yang dijaga Bhīma tampak terbatas.",
+      "ban": "Wadua bala iraga sane kajaga olih Ida Sang Bhīshma kacingak nenten wenten watesnyane, nanging wadua bala ipun sane kajaga olih Ida Sang Bhīma kacingak kawatesin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Our army guarded by Bhīṣma seemed unlimited, while their army guarded by Bhīma seemed limited."
+    },
+    {
+      "no": 11,
+      "devanagari": "अयनेषु च सर्वेषु यथाभागमवस्थिताः । भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि ॥ १.११ ॥",
+      "iast": "ayaneṣu ca sarveṣu yathābhāgam avasthitāḥ | bhīṣmam evābhirakṣantu bhavantaḥ sarva eva hi || 1.11 ||",
+      "id": "Karena itu, dengan tetap berada pada posisi masing-masing di semua barisan, hendaknya kalian semua melindungi Bhīṣma dari segala arah.",
+      "ban": "Punika mawinan, tetep ring genah semetone soang-soang ring sakancan jajaran, semeton sareng sami patut nyaga Bhīṣma saking sakancan sisi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Therefore, remaining in your respective positions in all ranks, you should all protect Bhīṣma from all sides."
+    },
+    {
+      "no": 12,
+      "devanagari": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः । सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान् ॥ १.१२ ॥",
+      "iast": "tasya sañjanayan harṣaṃ kuruvṛddhaḥ pitāmahaḥ | siṃhanādaṃ vinadyocchaiḥ śaṅkhaṃ dadhmau pratāpavān || 1.12 ||",
+      "id": "Untuk membangkitkan semangatnya, sesepuh Kuru yang agung, Bhīṣma, mengaum keras seperti singa lalu meniup sangkakala.",
+      "ban": "Mangda prasida ngangkat semangat, panglingsir Kuru sane mautama, Bhīṣma, ngamuk keras sakadi singa tur ngupin trompetnyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "To raise his spirits, the great Kuru elder, Bhīṣma, roared loudly like a lion and blew his trumpet."
+    },
+    {
+      "no": 13,
+      "devanagari": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः । सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत् ॥ १.१३ ॥",
+      "iast": "tataḥ śaṅkhāś ca bheryaś ca paṇavānakagomukhāḥ | sahasaivābhyahanyanta sa śabdas tumulo 'bhavat || 1.13 ||",
+      "id": "Kemudian sangkakala, genderang besar, gendang, tabuh, dan terompet ditiup serentak; bunyinya menjadi sangat menggemuruh.",
+      "ban": "Raris trompet, kendang, kendang, kendang, miwah kulkul punika kamunyiang sinarengan; suarane punika dados guntur sane kalintang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Then the trumpets, drums, drums, drums, and trumpets were blown simultaneously; the sound became very thunderous."
+    },
+    {
+      "no": 14,
+      "devanagari": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ । माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः ॥ १.१४ ॥",
+      "iast": "tataḥ śvetair hayair yukte mahati syandane sthitau | mādhavaḥ pāṇḍavaś caiva divyau śaṅkhau pradadhmatuḥ || 1.14 ||",
+      "id": "Kemudian Mādhava dan putra Pāṇḍu, yang berdiri di kereta besar yang ditarik kuda-kuda putih, meniup sangkakala suci mereka.",
+      "ban": "Raris Sang Madhawa miwah putran Sang Paṇdu, ngadeg ring kreta ageng sane kagebug olih kuda putih, ngupin trompet sucinyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Then Mādhava and the son of Pāṇḍu, standing in a great chariot drawn by white horses, blew their sacred trumpets."
+    },
+    {
+      "no": 15,
+      "devanagari": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः । पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः ॥ १.१५ ॥",
+      "iast": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ | pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ || 1.15 ||",
+      "id": "Hṛṣīkeśa meniup Pāñcajanya; Dhanañjaya meniup Devadatta; sedangkan Vṛkodara, yang berperbuatan dahsyat, meniup sangkakala besar Pauṇḍra.",
+      "ban": "Sang Hṛshikeśa nguncarang Pañcaja Idane; Sang Dhanañjaya ngampehang Ida Sang Dewadatta; sedeng Sang Vṛkodara, saking parilaksana sane mawisesa, nguncarang trompet ageng Pauṇḍra.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Hṛṣīkeśa blew his Pāñcaja; Dhanañjaya blew away Devadatta; while Vṛkodara, of mighty deeds, blew the great trumpet Pauṇḍra."
+    },
+    {
+      "no": 16,
+      "devanagari": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः । नकुलः सहदेवश्च सुघोषमणिपुष्पकौ ॥ १.१६ ॥",
+      "iast": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ | nakulaḥ sahadevaś ca sughoṣamaṇipuṣpakau || 1.16 ||",
+      "id": "Raja Yudhiṣṭhira, putra Kuntī, meniup Anantavijaya; Nakula dan Sahadeva meniup Sughoṣa dan Maṇipuṣpaka.",
+      "ban": "Ida Sang Prabhu Yudhistira, putran Ida Sang Kunti, ngampehang Ida Sang Anantawijaya; Ida Sang Nakula miwah Ida Sang Sahadewa nyimpen Sang Sughosana miwah Sang Manipuṣpaka.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "King Yudhiṣṭhira, son of Kuntī, blew away Anantavijaya; Nakula and Sahadeva blew Sughoṣa and Maṇipuṣpaka."
+    },
+    {
+      "no": 17,
+      "devanagari": "काश्यश्च परमेष्वासः शिखण्डी च महारथः । धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ॥ १.१७ ॥",
+      "iast": "kāśyaś ca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ | dhṛṣṭadyumno virāṭaś ca sātyakiś cāparājitaḥ || 1.17 ||",
+      "id": "Raja Kāśī, pemanah agung; Śikhaṇḍī, pejuang besar; Dṛṣṭadyumna, Virāṭa, dan Sātyaki yang tak terkalahkan juga meniup sangkakala mereka.",
+      "ban": "Sang Prabu Kāśī, sang sane dados pamanah sane mautama; Śikhaṇḍī, prajurit sane mautama; Ida Sang Drishtadyumna, Ida Sang Wirata, miwah Ida Sang Satyaki taler nyuarayang trompetnyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "King Kāśī, the great archer; Śikhaṇḍī, great warrior; The invincible Dṛṣṭadyumna, Virāṭa, and Sātyaki also blew their trumpets."
+    },
+    {
+      "no": 18,
+      "devanagari": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते । सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक् ॥ १.१८ ॥",
+      "iast": "drupado draupadeyāś ca sarvaśaḥ pṛthivīpate | saubhadraś ca mahābāhuḥ śaṅkhān dadhmuḥ pṛthak pṛthak || 1.18 ||",
+      "id": "Drupada, para putra Draupadī, dan Saubhadra yang berlengan perkasa, wahai raja, masing-masing meniup sangkakala mereka.",
+      "ban": "Ida Sang Drupada, putran Ida Sang Draupadī, miwah Sang Saubhadra sané mawisesa, singgih ratu, soang-soang nyuarayang kulkul.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Drupada, the sons of Draupadī, and the mighty-armed Saubhadra, O king, each blew their trumpets."
+    },
+    {
+      "no": 19,
+      "devanagari": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् । नभश्च पृथिवीं चैव तुमुलो व्यनुनादयन् ॥ १.१९ ॥",
+      "iast": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat | nabhaś ca pṛthivīṃ caiva tumulo vyanunādayan || 1.19 ||",
+      "id": "Bunyi yang menggemuruh itu mengguncang hati putra-putra Dhṛtarāṣṭra, sambil menggema di langit dan di bumi.",
+      "ban": "Suaran krebeke punika ngejerang manah putran-putran Ida Sang Dhṛtarāṣṭra, masuara ring akasa miwah ring jagate.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "The thunderous sound shook the hearts of Dhṛtarāṣṭra's sons, resounding in the heavens and the earth."
+    },
+    {
+      "no": 20,
+      "devanagari": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः । प्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः ॥ १.२० ॥",
+      "iast": "atha vyavasthitān dṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ | pravṛtte śastrasaṃpāte dhanur udyamya pāṇḍavaḥ || 1.20 ||",
+      "id": "Kemudian Arjuna, yang lambangnya kera, melihat putra-putra Dhṛtarāṣṭra telah berbaris. Saat senjata-senjata siap dilepaskan, ia mengangkat busurnya.",
+      "ban": "Ngeraris Ida Sang Arjuna sane lambangnyane wantah bojog, ngaksiang putran-putran Ida Sang Dhṛtarāṣṭra majajar. Rikala sanjatane sampun sayaga jaga kamedalang, ida raris ngangkat panah idane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Then Arjuna, whose symbol was the monkey, saw Dhṛtarāṣṭra's sons lined up. When the weapons were ready to be released, he raised his bow."
+    },
+    {
+      "no": 21,
+      "devanagari": "अर्जुन उवाच । सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत ॥ १.२१ ॥",
+      "iast": "arjuna uvāca | senayor ubhayor madhye rathaṃ sthāpaya me 'cyuta || 1.21 ||",
+      "id": "Arjuna berkata: Wahai Acyuta, tempatkan keretaku di antara kedua pasukan.",
+      "ban": "Ida Sang Arjuna ngandika: Uduh Sang Acyuta, genahang keretan titiange ring pantaraning wadwa kalih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Arjuna said: O Acyuta, place my chariot between the two armies."
+    },
+    {
+      "no": 22,
+      "devanagari": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान् । कैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे ॥ १.२२ ॥",
+      "iast": "yāvad etān nirīkṣe 'haṃ yoddhukāmān avasthitān | kair mayā saha yoddhavyam asmin raṇasamudyame || 1.22 ||",
+      "id": "Agar aku dapat memandang mereka yang berdiri siap bertempur dan mengetahui dengan siapa aku harus bertarung dalam perang ini.",
+      "ban": "Mangda titiang mrasidayang nyingakin anake sane ngadeg sayaga jaga mayuda tur uning ring sapasira sane patut sareng-sareng mayuda ring payudane puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "So that I can look at those who stand ready to fight and know who I must fight with in this war."
+    },
+    {
+      "no": 23,
+      "devanagari": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः । धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः ॥ १.२३ ॥",
+      "iast": "yotsyamānān avekṣe 'haṃ ya ete 'tra samāgatāḥ | dhārtarāṣṭrasya durbuddher yuddhe priyacikīrṣavaḥ || 1.23 ||",
+      "id": "Aku ingin melihat mereka yang berkumpul di sini untuk bertempur demi menyenangkan putra Dhṛtarāṣṭra yang berpikiran jahat.",
+      "ban": "Titiang mapikayun nyingakin sang sané sampun mapupul iriki mayuda pacang ngledangin putran Ida Sang Dhṛtarāṣṭra sané mabudi corah.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "I wish to see those who have gathered here to fight to please the evil-minded son of Dhṛtarāṣṭra."
+    },
+    {
+      "no": 24,
+      "devanagari": "सञ्जय उवाच । एवमुक्तो हृषीकेशो गुडाकेशेन भारत । सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ॥ १.२४ ॥",
+      "iast": "sañjaya uvāca | evam ukto hṛṣīkeśo guḍākeśena bhārata | senayor ubhayor madhye sthāpayitvā rathottamam || 1.24 ||",
+      "id": "Sañjaya berkata: Setelah diminta demikian oleh Guḍākeśa, wahai Bhārata, Hṛṣīkeśa menempatkan kereta yang unggul itu di antara kedua pasukan.",
+      "ban": "Sang Sañjaya ngandika: Sampun kadi asapunika katunasin olih Sang Gudakesha, duh Bharata, Sang Hṛṣīkesha ngenahang kreta sane unggul punika ring pantaraning kalih wadua bala.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Sañjaya said: Having been thus requested by Guḍākeśa, O Bhārata, Hṛṣīkeśa placed that superior chariot between the two armies."
+    },
+    {
+      "no": 25,
+      "devanagari": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् । उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ॥ १.२५ ॥",
+      "iast": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām | uvāca pārtha paśyaitān samavetān kurūn iti || 1.25 ||",
+      "id": "Di hadapan Bhīṣma, Droṇa, dan semua raja, Ia berkata: “Wahai Pārtha, lihatlah para Kuru yang telah berkumpul ini.”",
+      "ban": "Ring ajeng Ida Bhagawan Bhīshma, Ida Bhagawan Drona, miwah para ratune sami, Ida ngandika: “Uduh Ida Sang Pārtha, cingakinja para Kuru puniki sane sampun mapupul.”",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "In the presence of Bhīṣma, Droṇa, and all the kings, He said: “O Pārtha, look at these Kurus who have gathered.”"
+    },
+    {
+      "no": 26,
+      "devanagari": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान् । आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा । श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि ॥ १.२६ ॥",
+      "iast": "tatrāpaśyat sthitān pārthaḥ pitṝn atha pitāmahān | ācāryān mātulān bhrātṝn putrān pautrān sakhīṃs tathā | śvaśurān suhṛdaś caiva senayor ubhayor api || 1.26 ||",
+      "id": "Di sana Pārtha melihat ayah-ayah, kakek-kakek, guru-guru, paman-paman, saudara-saudara, putra-putra, cucu-cucu, sahabat, mertua, dan kerabatnya berdiri di kedua pihak.",
+      "ban": "Irika Ida Sang Pārtha nyingakin aji, kakek, guru, paman, semeton, putra, putun, sawitra, mertua miwah nyama brayannyane ngadeg ring kalih sisi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "There Pārtha saw his fathers, grandfathers, teachers, uncles, brothers, sons, grandsons, friends, in-laws and relatives standing on both sides."
+    },
+    {
+      "no": 27,
+      "devanagari": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान् । कृपया परयाविष्टो विषीदन्निदमब्रवीत् ॥ १.२७ ॥",
+      "iast": "tān samīkṣya sa kaunteyaḥ sarvān bandhūn avasthitān | kṛpayā parayāviṣṭo viṣīdann idam abravīt || 1.27 ||",
+      "id": "Melihat semua kerabatnya berdiri di sana, putra Kuntī itu dipenuhi belas kasih dan berkata dengan hati yang muram.",
+      "ban": "Manggihin samian nyama-nyamaannyane ngadeg irika, putran Kuntīne kabekin antuk rasa welas asih tur matur antuk manah sane suram.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Seeing all his relatives standing there, Kuntī's son was filled with compassion and spoke with a somber heart."
+    },
+    {
+      "no": 28,
+      "devanagari": "अर्जुन उवाच । दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् । सीदन्ति मम गात्राणि मुखं च परिशुष्यति ॥ १.२८ ॥",
+      "iast": "arjuna uvāca | dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam | sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati || 1.28 ||",
+      "id": "Arjuna berkata: Wahai Kṛṣṇa, melihat sanak keluargaku berdiri siap bertempur, anggota tubuhku melemah dan mulutku menjadi kering.",
+      "ban": "Ida Sang Arjuna ngandika: Uduh Sang Kṛṣṇa, nyingak sameton titiange ngadeg sayaga pacang mayuda, anggan titiange lemet tur cangkem titiange tuh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Arjuna said: O Kṛṣṇa, seeing my relatives standing ready to fight, my limbs weakened and my mouth became dry."
+    },
+    {
+      "no": 29,
+      "devanagari": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते । गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते ॥ १.२९ ॥",
+      "iast": "vepathuś ca śarīre me romaharṣaś ca jāyate | gāṇḍīvaṃ sraṃsate hastāt tvak caiva paridahyate || 1.29 ||",
+      "id": "Tubuhku gemetar dan bulu kudukku berdiri. Gāṇḍīwa terlepas dari tanganku, dan kulitku terasa terbakar.",
+      "ban": "Awak tiange ngejer tur bulun tiange di ungkur baong tiange ngadeg. Gāṇḍīwa nglebur saking tangan titiange, tur kulit titiange ngendih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "My body trembled and the hairs on the back of my neck stood up. Gāṇḍīwa slipped from my hand, and my skin burned."
+    },
+    {
+      "no": 30,
+      "devanagari": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः । निमित्तानि च पश्यामि विपरीतानि केशव ॥ १.३० ॥",
+      "iast": "na ca śaknomy avasthātuṃ bhramatīva ca me manaḥ | nimittāni ca paśyāmi viparītāni keśava || 1.30 ||",
+      "id": "Aku tidak sanggup tetap berdiri; pikiranku seperti berputar. Wahai Keśava, aku melihat pertanda-pertanda yang buruk.",
+      "ban": "Tiang tusing nyidayang tetep ngadeg; pikayunan tiange sakadi maputa-puta. Duh Keśwa, titiang nyingakin pertanda sane kaon.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "I couldn't stay standing; my mind seemed to be spinning. O Keśava, I see bad omens."
+    },
+    {
+      "no": 31,
+      "devanagari": "न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे । न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च ॥ १.३१ ॥",
+      "iast": "na ca śreyo 'nupaśyāmi hatvā svajanam āhave | na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca || 1.31 ||",
+      "id": "Aku tidak melihat kebaikan dalam membunuh keluargaku sendiri di medan perang. Wahai Kṛṣṇa, aku tidak menginginkan kemenangan, kerajaan, maupun kenikmatan.",
+      "ban": "Tiang nenten manggihin pikenohnyane ngamademang kulawargan tiange ngraga ring payudan. Duh Krishna, titiang nenten meled ring kajayaan, kerajaan utawi kasukan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "I see no good in killing my own family on the battlefield. O Kṛṣṇa, I do not desire victory, kingdom or enjoyment."
+    },
+    {
+      "no": 32,
+      "devanagari": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा । येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च ॥ १.३२ ॥",
+      "iast": "kiṃ no rājyena govinda kiṃ bhogair jīvitena vā | yeṣām arthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca || 1.32 ||",
+      "id": "Wahai Govinda, untuk apa kerajaan, kenikmatan, atau bahkan kehidupan bagi kami, jika orang-orang yang menjadi alasan kami menginginkan semuanya itu berada di sini?",
+      "ban": "Duh Govinda, napi gunane kerajaan, kasukan, utawi yadiastun kahuripan ring iraga, yening jadma sane kaaptiang iraga wenten iriki?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "O Govinda, of what use are kingdoms, pleasures, or even life to us, if the people for whom we desire them are here?"
+    },
+    {
+      "no": 33,
+      "devanagari": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च । त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च ॥ १.३३ ॥",
+      "iast": "yeṣām arthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca | ta ime 'vasthitā yuddhe prāṇāṃs tyaktvā dhanāni ca || 1.33 ||",
+      "id": "Merekalah orang-orang demi siapa kami menginginkan kerajaan, kenikmatan, dan kebahagiaan; kini mereka berdiri di medan perang, siap mempertaruhkan hidup dan harta.",
+      "ban": "Punika jadma sane sangkaning ipun iraga meled ring kaprabon, kasukan, miwah karahayuan; sane mangkin ipun ngadeg ring medan payudan, sayaga pacang ngetohang urip miwah arta branannyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "These are the people for whose sake we desire kingdom, enjoyment, and happiness; now they stand on the battlefield, ready to risk their lives and property."
+    },
+    {
+      "no": 34,
+      "devanagari": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः । मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा ॥ १.३४ ॥",
+      "iast": "ācāryāḥ pitaraḥ putrās tathaiva ca pitāmahāḥ | mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinas tathā || 1.34 ||",
+      "id": "Di sana ada guru-guru, ayah-ayah, putra-putra, kakek-kakek, paman-paman, mertua, cucu-cucu, ipar, dan kerabat lainnya.",
+      "ban": "Irika wenten guru, bapa, putra, pekak, paman, ipar, cucu, mertua miwah semeton sane lianan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "There were teachers, fathers, sons, grandfathers, uncles, in-laws, grandchildren, in-laws and other relatives."
+    },
+    {
+      "no": 35,
+      "devanagari": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन । अपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते ॥ १.३५ ॥",
+      "iast": "etān na hantum icchāmi ghnato 'pi madhusūdana | api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte || 1.35 ||",
+      "id": "Wahai Madhusūdana, aku tidak ingin membunuh mereka, sekalipun mereka membunuhku; bahkan demi kekuasaan atas tiga dunia, apalagi demi bumi ini.",
+      "ban": "Duh Madhusūdana, titiang tan purun ngamademang ipun, yadiastun ipun ngamademang titiang; yadiastun buat ngamong tetiga jagat, napi malih buat jagate puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "O Madhusūdana, I do not wish to kill them, even if they kill me; even for the sake of dominion over the three worlds, let alone for the sake of this earth."
+    },
+    {
+      "no": 36,
+      "devanagari": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन । पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः ॥ १.३६ ॥",
+      "iast": "nihatya dhārtarāṣṭrān naḥ kā prītiḥ syāj janārdana | pāpam evāśrayed asmān hatvaitān ātatāyinaḥ || 1.36 ||",
+      "id": "Wahai Janārdana, kegembiraan apa yang kami peroleh dengan membunuh putra Dhṛtarāṣṭra? Dosa justru akan menimpa kami.",
+      "ban": "Duh Janardana, napike suka sane kapolihang iraga antuk ngamademang putran Ida Sang Dhṛtarashtra? Dosane sujati pacang nibenin iraga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "O Janārdana, what joy do we gain by killing Dhṛtarāṣṭra's son? Sin will actually befall us."
+    },
+    {
+      "no": 37,
+      "devanagari": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान् । स्वजनं हि कथं हत्वा सुखिनः स्याम माधव ॥ १.३७ ॥",
+      "iast": "tasmān nārhā vayaṃ hantuṃ dhārtarāṣṭrān svabāndhavān | svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava || 1.37 ||",
+      "id": "Karena itu kami tidak patut membunuh kerabat kami, putra Dhṛtarāṣṭra. Wahai Mādhava, bagaimana kami dapat bahagia setelah membunuh keluarga sendiri?",
+      "ban": "Punika mawinan iraga nenten patut ngamademang nyama brayan iraga, putran Ida Sang Dhṛtarāṣṭra. Duh Sang Mādhava, sapunapi antuk iraga bagia sesampun ngamademang kulawarga iraga padidi?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Therefore we should not kill our relative, the son of Dhṛtarāṣṭra. O Mādhava, how can we be happy after killing our own family?"
+    },
+    {
+      "no": 38,
+      "devanagari": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः । कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम् ॥ १.३८ ॥",
+      "iast": "yad apy ete na paśyanti lobhopahatacetasaḥ | kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam || 1.38 ||",
+      "id": "Walaupun mereka, yang pikirannya dikuasai keserakahan, tidak melihat kesalahan dalam menghancurkan keluarga dan mengkhianati sahabat,",
+      "ban": "Yadiastun ipun, sane pikayunannyane kakuasain antuk loba, nenten nyingakin iwang ring sajeroning ngusak-asik kulawarga miwah ngayahin sawitra,",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Although they, whose minds are dominated by greed, see nothing wrong in destroying families and betraying friends,"
+    },
+    {
+      "no": 39,
+      "devanagari": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम् । कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन ॥ १.३९ ॥",
+      "iast": "kathaṃ na jñeyam asmābhiḥ pāpād asmān nivartitum | kulakṣayakṛtaṃ doṣaṃ prapaśyadbhir janārdana || 1.39 ||",
+      "id": "mengapa kami yang memahami kesalahan akibat kehancuran keluarga tidak menjauhi dosa ini, wahai Janārdana?",
+      "ban": "napi mawinan iraga sane ngresepang dosa sane metu saking karusakan kulawarga nenten ngelidin dosa puniki, duh Janārdana?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "why do we who understand the guilt resulting from the destruction of the family not shun this sin, O Janārdana?"
+    },
+    {
+      "no": 40,
+      "devanagari": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः । धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत ॥ १.४० ॥",
+      "iast": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ | dharme naṣṭe kulaṃ kṛtsnam adharmo 'bhibhavaty uta || 1.40 ||",
+      "id": "Ketika keluarga hancur, dharma keluarga yang lestari ikut musnah; ketika dharma lenyap, adharma menguasai keluarga.",
+      "ban": "Yening wenten kulawarga sane rusak, dharma kulawarga sane langgeng punika rusak; rikala dharma ical, adharma ngambil alih kulawarga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "When a family is destroyed, the enduring family dharma is destroyed; when dharma disappears, adharma takes over the family."
+    },
+    {
+      "no": 41,
+      "devanagari": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः । स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः ॥ १.४१ ॥",
+      "iast": "adharmābhibhavāt kṛṣṇa praduṣyanti kulastriyaḥ | strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ || 1.41 ||",
+      "id": "Saat adharma berkuasa, wahai Kṛṣṇa, perempuan-perempuan dalam keluarga menjadi terancam dan tatanan sosial menjadi kacau.",
+      "ban": "Rikala adharma mrentah, duh Krishna, para istri ring kulawarga dados terancam lan tatanan sosial dados kacau.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "When adharma reigns supreme, O Kṛṣṇa, the women of the family become threatened and the social order becomes chaotic."
+    },
+    {
+      "no": 42,
+      "devanagari": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च । पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः ॥ १.४२ ॥",
+      "iast": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca | patanti pitaro hy eṣāṃ luptapiṇḍodakakriyāḥ || 1.42 ||",
+      "id": "Kekacauan itu membawa kehancuran bagi para penghancur keluarga dan keluarganya; persembahan bagi leluhur pun terhenti.",
+      "ban": "Kacau balau punika ngawetuang karusakan ring sang sane ngrusak kulawarga miwah kulawargannyane; aturan ring leluhur sampun mararian.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "The chaos brings destruction to the family destroyers and their families; offerings to ancestors stopped."
+    },
+    {
+      "no": 43,
+      "devanagari": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः । उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः ॥ १.४३ ॥",
+      "iast": "doṣair etaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ | utsādyante jātidharmāḥ kuladharmāś ca śāśvatāḥ || 1.43 ||",
+      "id": "Kesalahan para penghancur keluarga yang menimbulkan kekacauan ini memusnahkan dharma masyarakat dan dharma keluarga yang lestari.",
+      "ban": "Kaiwangan para pengrusak keluarga sane ngranayang aor ngusak-asik dharma masyarakat lan dharma keluarga sane lestari.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "The mistakes of family destroyers who cause chaos destroy the dharma of society and the dharma of a sustainable family."
+    },
+    {
+      "no": 44,
+      "devanagari": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन । नरके नियतं वासो भवतीत्यनुशुश्रुम ॥ १.४४ ॥",
+      "iast": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana | narake niyataṃ vāso bhavatīty anuśuśruma || 1.44 ||",
+      "id": "Wahai Janārdana, kami telah mendengar bahwa bagi manusia yang dharma keluarganya musnah, tempat tinggal di neraka menjadi pasti.",
+      "ban": "Duh Janārdana, iraga sampun miragi, mungguing manusa sane dharma kulawargannyane rusak, magenah ring neraka sampun pastika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "O Janārdana, we have heard that for humans whose family dharma is destroyed, abode in hell is certain."
+    },
+    {
+      "no": 45,
+      "devanagari": "अहो बत महत्पापं कर्तुं व्यवसिता वयम् । यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः ॥ १.४५ ॥",
+      "iast": "aho bata mahat pāpaṃ kartuṃ vyavasitā vayam | yad rājyasukhalobhena hantuṃ svajanam udyatāḥ || 1.45 ||",
+      "id": "Sungguh, betapa besar dosa yang hendak kami lakukan: karena tamak akan kebahagiaan kerajaan, kami siap membunuh keluarga sendiri.",
+      "ban": "Wiakti, dosa sane ageng pisan pacang laksanayang iraga: loba ring karahayuan kerajaan, iraga sayaga pacang ngamademang kulawargan iragane niri.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Indeed, what a great sin we are about to commit: greedy for the happiness of the kingdom, we are ready to kill our own family."
+    },
+    {
+      "no": 46,
+      "devanagari": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः । धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत् ॥ १.४६ ॥",
+      "iast": "yadi mām apratīkāram aśastraṃ śastrapāṇayaḥ | dhārtarāṣṭrā raṇe hanyus tan me kṣemataraṃ bhavet || 1.46 ||",
+      "id": "Jika putra-putra Dhṛtarāṣṭra yang bersenjata membunuhku ketika aku tidak melawan dan tidak bersenjata, itu akan lebih baik bagiku.",
+      "ban": "Yening putran-putran Ida Sang Dhṛtarāṣṭra sane masenjata ngamademang titiang rikala titiang nenten nglawan tur nenten masenjata, pastika sampun becikan antuk titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "If the armed sons of Dhṛtarāṣṭra killed me when I did not resist and was unarmed, it would have been better for me."
+    },
+    {
+      "no": 47,
+      "devanagari": "सञ्जय उवाच । एवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत् । विसृज्य सशरं चापं शोकसंविग्नमानसः ॥ १.४७ ॥",
+      "iast": "sañjaya uvāca | evam uktvārjunaḥ saṅkhye rathopastha upāviśat | visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ || 1.47 ||",
+      "id": "Sañjaya berkata: Setelah berkata demikian di medan perang, Arjuna duduk di kereta, meletakkan busur dan anak panahnya, dengan hati yang terguncang oleh duka.",
+      "ban": "Ida Sang Sañjaya matur: Sampun kadi asapunika atur Ida Sang Arjuna malinggih ring kretane, nyisipang panah lan panah idane, antuk manah sane engsek sangkaning sedih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Sañjaya said: Having thus spoken on the battlefield, Arjuna sat down in the chariot, laying aside his bow and arrows, with a heart shaken by grief."
     }
   ]
 }

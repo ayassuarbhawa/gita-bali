@@ -1,0 +1,1110 @@
+{
+  "bab": 18,
+  "judul": {
+    "sanskrit": "Mokṣa-sannyāsa-yoga",
+    "id": "Mokṣa Sannyāsa Yoga",
+    "ban": "Yoga Moksa Sannyasa",
+    "en": "Mokṣa Sannyāsa Yoga"
+  },
+  "jumlah_sloka": 78,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 18",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "अर्जुन उवाच । संन्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम् । त्यागस्य च हृषीकेश पृथक्केशिनिषूदन ॥ १८.१ ॥",
+      "iast": "arjuna uvāca | saṃnyāsasya mahābāho tattvamicchāmi veditum | tyāgasya ca hṛṣīkeśa pṛthakkeśiniṣūdana || 18.1 ||",
+      "id": "18.1 Arjuna berkata aku ingin mengetahui secara mendalam, wahai yang bersenjata perkasa, esensi atau kebenaran dari pelepasan keduniawian, wahai Hrishikesa, juga tentang pengabaian, wahai pembunuh Kesi.",
+      "ban": "18.1 Ida Sang Arjuna ngandika, titiang meled uning teleb, duh sang mawisesa, unteng utawi kasujatian panulak, duh Hrishikesa, taler indik panulak, duh sang ngamademang Kesi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.1 Arjuna said I wish to know deeply, O mighty-armed one, the essence or truth of renunciation, O Hrishikesa, as well as of renunciation, O slayer of Kesi."
+    },
+    {
+      "no": 2,
+      "devanagari": "श्रीभगवानुवाच । काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः । सर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः ॥ १८.२ ॥",
+      "iast": "śrībhagavānuvāca | kāmyānāṃ karmaṇāṃ nyāsaṃ saṃnyāsaṃ kavayo viduḥ | sarvakarmaphalatyāgaṃ prāhustyāgaṃ vicakṣaṇāḥ || 18.2 ||",
+      "id": "18.2 Bhagavā bersabda Para resi memahami Sannyasa sebagai penolakan perbuatan yang disertai nafsu; orang bijak menyatakan ditinggalkannya buah dari segala tindakan sebagai Tyaga.",
+      "ban": "18.2 Ida Bhatara ngandika Para rishi ngresepang Sannyasa pinaka panulak parilaksana sane nafsu; para resi nguningayang indik ninggalin woh-wohan sakancan parilaksana pinaka Tyaga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.2 The Lord said The rishis understand Sannyasa as the renunciation of lustful actions; the sages declared the abandonment of the fruits of all actions as Tyaga."
+    },
+    {
+      "no": 3,
+      "devanagari": "त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिणः । यज्ञदानतपःकर्म न त्याज्यमिति चापरे ॥ १८.३ ॥",
+      "iast": "tyājyaṃ doṣavadityeke karma prāhurmanīṣiṇaḥ | yajñadānatapaḥkarma na tyājyamiti cāpare || 18.3 ||",
+      "id": "18.3 Beberapa filsuf menyatakan bahwa tindakan harus ditinggalkan karena dianggap sebagai kejahatan; sementara yang lain (menyatakan) bahwa tindakan pengorbanan, pemberian dan pertapaan tidak boleh ditinggalkan.",
+      "ban": "18.3 Wenten para filsuf sane maosang parilaksana punika patut katilar santukan kaanggep kaon; sedeng sane lianan (nyatayang) indik parilaksana yadnya, mapaica lan hemat nenten dados katilar.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.3 Some philosophers claim that actions should be abandoned because they are considered evil; while others (state) that acts of sacrifice, giving and austerity should not be abandoned."
+    },
+    {
+      "no": 4,
+      "devanagari": "निश्चयं शृणु मे तत्र त्यागे भरतसत्तम । त्यागो हि पुरुषव्याघ्र त्रिविधः सम्प्रकीर्तितः ॥ १८.४ ॥",
+      "iast": "niścayaṃ śṛṇu me tatra tyāge bharatasattama | tyāgo hi puruṣavyāghra trividhaḥ samprakīrtitaḥ || 18.4 ||",
+      "id": "18.4 Dengarkanlah dariKu kesimpulan atau kebenaran akhir tentang pengabaian ini, hai para Bharata yang terbaik; pengabaian, sesungguhnya wahai manusia yang terbaik, telah dinyatakan ada tiga macam.",
+      "ban": "18.4 Pirengang saking Titiang pamuput utawi kasujatian indik nilar puniki, duh para Bharata sane pinih becik; Lali, sujatinnyane, duh manusa sane pinih becik, sampun kabaosang wenten tigang soroh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.4 Hear from Me the final conclusion or truth of this abandonment, O best of Bharatas; Neglect, indeed, O best of men, has been stated to be of three kinds."
+    },
+    {
+      "no": 5,
+      "devanagari": "यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत् । यज्ञो दानं तपश्चैव पावनानि मनीषिणाम् ॥ १८.५ ॥",
+      "iast": "yajñadānatapaḥkarma na tyājyaṃ kāryameva tat | yajño dānaṃ tapaścaiva pāvanāni manīṣiṇām || 18.5 ||",
+      "id": "18.5 Tindakan pengorbanan, pemberian dan pertapaan tidak boleh ditinggalkan, namun harus dilakukan; pengorbanan, pemberian, dan juga pertapaan adalah penyuci bagi para bijaksana.",
+      "ban": "18.5 Parilaksana yadnya, mapaica miwah matata tan dados katinggalin, nanging patut kamargiang; yadnya, paica, miwah taler tabung punika wantah penyucian majeng ring sang sane wicaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.5 Acts of sacrifice, giving and austerity must not be abandoned, but must be performed; sacrifice, giving, and also austerity are purification for the wise."
+    },
+    {
+      "no": 6,
+      "devanagari": "एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च । कर्तव्यानीति मे पार्थ निश्चितं मतमुत्तमम् ॥ १८.६ ॥",
+      "iast": "etānyapi tu karmāṇi saṅgaṃ tyaktvā phalāni ca | kartavyānīti me pārtha niścitaṃ matamuttamam || 18.6 ||",
+      "id": "18.6 Namun tindakan ini pun harus dilakukan dengan mengesampingkan keterikatan dan keinginan akan imbalan, wahai Arjuna; inilah keyakinan-Ku yang pasti dan terbaik.",
+      "ban": "18.6 Nanging yadiastun parilaksana puniki patut kamargiang antuk nyisipang rasa tresna miwah pikayunan pacang polih pahala, duh Sang Arjuna; puniki wantah kapercayaan Titiang sane pastika tur pinih becik.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.6 But even this action must be done by setting aside attachment and desire for reward, O Arjuna; this is My sure and best belief."
+    },
+    {
+      "no": 7,
+      "devanagari": "नियतस्य तु संन्यासः कर्मणो नोपपद्यते । मोहात्तस्य परित्यागस्तामसः परिकीर्तितः ॥ १८.७ ॥",
+      "iast": "niyatasya tu saṃnyāsaḥ karmaṇo nopapadyate | mohāttasya parityāgastāmasaḥ parikīrtitaḥ || 18.7 ||",
+      "id": "18.7 Sesungguhnya penolakan terhadap perbuatan wajib adalah tidak tepat; ditinggalkannya hal yang sama dari khayalan dinyatakan sebagai Tamasic.",
+      "ban": "18.7 Wiakti, panulak parilaksana sane wajib nenten patut; ninggalin sane pateh saking delusi punika kabaosang dados Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.7 Indeed, rejection of obligatory actions is inappropriate; the abandonment of the same from delusion is declared to be Tamasic."
+    },
+    {
+      "no": 8,
+      "devanagari": "दुःखमित्येव यत्कर्म कायक्लेशभयात्त्यजेत् । स कृत्वा राजसं त्यागं नैव त्यागफलं लभेत् ॥ १८.८ ॥",
+      "iast": "duḥkhamityeva yatkarma kāyakleśabhayāttyajet | sa kṛtvā rājasaṃ tyāgaṃ naiva tyāgaphalaṃ labhet || 18.8 ||",
+      "id": "18.8 Dia yang meninggalkan perbuatan karena takut akan masalah fisik (karena menyakitkan), tidak memperoleh manfaat pelepasan keduniawian dengan melakukan pelepasan keduniawian Rajas tersebut.",
+      "ban": "18.8 Sang sane nilar parilaksana sangkaning jejeh ring pikobet ring angga (santukan nyakitin), tan ngamolihang pikenoh penolakan antuk ngamargiang penolakan Rajas.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.8 He who abandons actions for fear of physical problems (because they are painful), does not gain the benefit of renunciation by undertaking the Rajas renunciation."
+    },
+    {
+      "no": 9,
+      "devanagari": "कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन । सङ्गं त्यक्त्वा फलं चैव स त्यागः सात्त्विको मतः ॥ १८.९ ॥",
+      "iast": "kāryamityeva yatkarma niyataṃ kriyate|arjuna | saṅgaṃ tyaktvā phalaṃ caiva sa tyāgaḥ sāttviko mataḥ || 18.9 ||",
+      "id": "18.9 Apapun kewajiban yang dilakukan, wahai Arjuna, hanya karena hal itu memang harus dilakukan, dengan meninggalkan kemelekatan dan juga keinginan akan imbalan, maka pelepasan keduniawian tersebut dianggap sebagai Sattvic (murni).",
+      "ban": "18.9 Napi ja swadharma sane kamargiang, duh Sang Arjuna, wantah sangkaning patut kamargiang, antuk nilar rasa tresna tur taler pikayunan pacang ngamolihang pahala, panulakan kadi punika kabaos Sattvic (murni).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.9 Whatever duties are undertaken, O Arjuna, just because they must be performed, by abandoning attachment and also the desire for reward, such renunciation is considered Sattvic (pure)."
+    },
+    {
+      "no": 10,
+      "devanagari": "न द्वेष्ट्यकुशलं कर्म कुशले नानुषज्जते । त्यागी सत्त्वसमाविष्टो मेधावी छिन्नसंशयः ॥ १८.१० ॥",
+      "iast": "na dveṣṭyakuśalaṃ karma kuśale nānuṣajjate | tyāgī sattvasamāviṣṭo medhāvī chinnasaṃśayaḥ || 18.10 ||",
+      "id": "18.10 Orang yang meninggalkan keduniawian, diliputi oleh kemurnian, cerdas, dan keraguannya terpotong-potong, tidak membenci pekerjaan yang tidak menyenangkan dan tidak melekat pada pekerjaan yang menyenangkan.",
+      "ban": "18.10 Anake sane medal, kabekin antuk kasucian, wikan, tur sampun kacunduk ring sangsaya, nenten geting ring pakaryan sane nenten becik tur nenten neket ring pakaryan sane becik.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.10 One who goes forth, is filled with purity, is intelligent, and has his doubts cut short, does not hate unpleasant work and does not cling to pleasant work."
+    },
+    {
+      "no": 11,
+      "devanagari": "न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः । यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते ॥ १८.११ ॥",
+      "iast": "na hi dehabhṛtā śakyaṃ tyaktuṃ karmāṇyaśeṣataḥ | yastu karmaphalatyāgī sa tyāgītyabhidhīyate || 18.11 ||",
+      "id": "18.11 Sesungguhnya, tidaklah mungkin bagi makhluk yang berwujud untuk meninggalkan tindakan sepenuhnya; tetapi orang yang melepaskan pahala dari perbuatannya disebut orang yang meninggalkan keduniawian.",
+      "ban": "18.11 Sujatinnyane, tan sida antuk sang sane marupa manusa pacang ninggalin parilaksana jangkep; nanging anake sane nyerahang pahala laksanannyane kabaos sang sane nulak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.11 In fact, it is impossible for an embodied being to abandon action completely; but a person who gives up the reward of his actions is called a renouncer."
+    },
+    {
+      "no": 12,
+      "devanagari": "अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मणः फलम् । भवत्यत्यागिनां प्रेत्य न तु संन्यासिनां क्वचित् ॥ १८.१२ ॥",
+      "iast": "aniṣṭamiṣṭaṃ miśraṃ ca trividhaṃ karmaṇaḥ phalam | bhavatyatyāgināṃ pretya na tu saṃnyāsināṃ kvacit || 18.12 ||",
+      "id": "18.12 Tiga buah perbuatan (jahat, baik, dan campur aduk) diperoleh setelah kematian bagi mereka yang tidak meninggalkan, namun tidak pernah bagi mereka yang meninggalkan.",
+      "ban": "18.12 Tigang parilaksana (kaon, becik, lan campuran) ngamolihang sesampun padem antuk sang sane nenten nulak, nanging nenten naenin antuk sang sane nulak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.12 The three deeds (evil, good, and mixed) obtain after death for those who do not renounce, but never for those who renounce."
+    },
+    {
+      "no": 13,
+      "devanagari": "पञ्चैतानि महाबाहो कारणानि निबोध मे । साङ्ख्ये कृतान्ते प्रोक्तानि सिद्धये सर्वकर्मणाम् ॥ १८.१३ ॥",
+      "iast": "pañcaitāni mahābāho kāraṇāni nibodha me | sāṅkhye kṛtānte proktāni siddhaye sarvakarmaṇām || 18.13 ||",
+      "id": "18.13 Belajarlah dari-Ku, wahai Arjuna yang berlengan perkasa, lima penyebab ini sebagaimana dinyatakan dalam sistem Sankhya untuk tercapainya segala perbuatan.",
+      "ban": "18.13 Malajah saking Titiang, duh Sang Arjuna sane mawisesa, limang panyangkan punika sakadi sane kabaosang ring sistem Sankhya anggen muputang sakancan parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.13 Learn from Me, O mighty-armed Arjuna, these five causes as stated in the Sankhya system for the accomplishment of all actions."
+    },
+    {
+      "no": 14,
+      "devanagari": "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम् । विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम् ॥ १८.१४ ॥",
+      "iast": "adhiṣṭhānaṃ tathā kartā karaṇaṃ ca pṛthagvidham | vividhāśca pṛthakceṣṭā daivaṃ caivātra pañcamam || 18.14 ||",
+      "id": "18.14 Tempat kedudukan (tubuh), pelaku, berbagai indera, berbagai fungsi yang berbeda-beda, dan dewa yang memimpin, juga yang kelima.",
+      "ban": "18.14 Linggih (angga), agen, makudang-kudang indriya, makudang-kudang fungsi, miwah dewata sane ngamong, taler sane kaping lima.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.14 The seat (of the body), the agent, the various senses, the various functions, and the presiding deity, is also the fifth."
+    },
+    {
+      "no": 15,
+      "devanagari": "शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः । न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः ॥ १८.१५ ॥",
+      "iast": "śarīravāṅmanobhiryatkarma prārabhate naraḥ | nyāyyaṃ vā viparītaṃ vā pañcaite tasya hetavaḥ || 18.15 ||",
+      "id": "18.15 Apapun perbuatan yang dilakukan seseorang dengan tubuh, ucapan dan pikirannya baik benar atau sebaliknya, kelima hal ini adalah penyebabnya.",
+      "ban": "18.15 Napi ja parilaksana sane kalaksanayang olih jadmane antuk angga, baos lan pikayunan, yadiastun patut utawi nenten, limang parindikan punika sane dados jalaran.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.15 Whatever actions a person performs with his body, speech and mind, whether right or otherwise, these five things are the cause."
+    },
+    {
+      "no": 16,
+      "devanagari": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः । पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः ॥ १८.१६ ॥",
+      "iast": "tatraivaṃ sati kartāramātmānaṃ kevalaṃ tu yaḥ | paśyatyakṛtabuddhitvānna sa paśyati durmatiḥ || 18.16 ||",
+      "id": "18.16 Sekarang, jika demikian halnya, sesungguhnya dia yang karena pemahamannya yang tidak terlatih memandang Dirinya, yang terisolasi, sebagai agen, yang memiliki kecerdasan menyimpang, tidak melihatnya.",
+      "ban": "18.16 Mangkin, yan kadi asapunika, sujatinnyane sang sane sangkaning pangresepannyane sane nenten terlatih nyingakin Raga, terisolasi, pinaka agen, sane kacumawisang antuk kawicaksanaan sane terdistorsi, nenten nyingakin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.16 Now, if this is so, indeed he who because of his untrained understanding views his Self, isolated, as an agent, endowed with distorted intelligence, does not see it."
+    },
+    {
+      "no": 17,
+      "devanagari": "यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते । हत्वाऽपि स इमाँल्लोकान्न हन्ति न निबध्यते ॥ १८.१७ ॥",
+      "iast": "yasya nāhaṃkṛto bhāvo buddhiryasya na lipyate | hatvā|api sa imā|Nllokānna hanti na nibadhyate || 18.17 ||",
+      "id": "18.17 Orang yang bebas dari gagasan egois, yang kecerdasannya tidak ternoda (oleh kebaikan atau kejahatan), \nwalaupun dia membunuh orang-orang ini, dia tidak membunuh dan dia tidak terikat (dengan perbuatannya).",
+      "ban": "18.17 Sang sane bebas saking pikayunan sane ngranayang dewek padidi, sane kawikanannyane tan kaletehin (antuk becik wiadin kaon), \nyadiastun ida ngamademang jadmane punika, ida nenten ngamademang tur ida nenten kaiket (antuk parilaksanan idane).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.17 One who is free from selfish ideas, whose intelligence is untainted (by good or evil), \neven though he killed these people, he did not kill and he was not bound (by his actions)."
+    },
+    {
+      "no": 18,
+      "devanagari": "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना । करणं कर्म कर्तेति त्रिविधः कर्मसंग्रहः ॥ १८.१८ ॥",
+      "iast": "jñānaṃ jñeyaṃ parijñātā trividhā karmacodanā | karaṇaṃ karma karteti trividhaḥ karmasaṃgrahaḥ || 18.18 ||",
+      "id": "18.18 Pengetahuan, yang dapat diketahui dan yang mengetahui membentuk tiga dorongan untuk bertindak; organ, tindakan, dan agen membentuk tiga dasar tindakan.",
+      "ban": "18.18 Kaweruhan, sane kauningin lan sane kauningin ngawentuk tetiga dorongan maparilaksana; organ, parilaksana, miwah agen ngwangun tetiga dasar parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.18 Knowledge, the knowable and the knower form the three impulses to action; organ, action, and agent form the three basics of action."
+    },
+    {
+      "no": 19,
+      "devanagari": "ज्ञानं कर्म च कर्ताच त्रिधैव गुणभेदतः । प्रोच्यते गुणसङ्ख्याने यथावच्छृणु तान्यपि ॥ १८.१९ ॥",
+      "iast": "jñānaṃ karma ca kartāca tridhaiva guṇabhedataḥ | procyate guṇasaṅkhyāne yathāvacchṛṇu tānyapi || 18.19 ||",
+      "id": "18.19 Pengetahuan, tindakan dan pelaku dinyatakan dalam ilmu Guna (filsafat Sankhya) menjadi tiga jenis saja, sesuai dengan pembedaan Guna. Tentang hal ini juga, dengarkanlah dengan sepatutnya.",
+      "ban": "18.19 Kaweruhan, parilaksana lan sang sane ngamargiang kabaosang ring ilmu Guna (filsafat Sankhya) dados tigang soroh kemanten, manut ring pabinayan Guna. Indike punika taler, pirengang patut.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.19 Knowledge, action and doer are stated in Guna science (Sankhya philosophy) into three types only, in accordance with the distinction of Guna. Of this also, listen duly."
+    },
+    {
+      "no": 20,
+      "devanagari": "सर्वभूतेषु येनैकं भावमव्ययमीक्षते । अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम् ॥ १८.२० ॥",
+      "iast": "sarvabhūteṣu yenaikaṃ bhāvamavyayamīkṣate | avibhaktaṃ vibhakteṣu tajjñānaṃ viddhi sāttvikam || 18.20 ||",
+      "id": "18.20 Dengan melihat satu Realitas yang tidak dapat dihancurkan dalam semua makhluk, tidak terpisah dalam semua makhluk yang terpisah, ketahuilah bahwa pengetahuan itu adalah Sattvic.",
+      "ban": "18.20 Manggihin Realitas sane asiki tan prasida karusak ring sakancan makhluk, tan kepah ring sakancan makhluk sane mabinayan, uningin kaweruhan punika Sattvic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.20 Seeing the one Reality indestructible in all beings, indivisible in all separate beings, know that knowledge is Sattvic."
+    },
+    {
+      "no": 21,
+      "devanagari": "पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान् । वेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम् ॥ १८.२१ ॥",
+      "iast": "pṛthaktvena tu yajjñānaṃ nānābhāvānpṛthagvidhān | vetti sarveṣu bhūteṣu tajjñānaṃ viddhi rājasam || 18.21 ||",
+      "id": "18.21 Namun pengetahuan yang melihat pada semua makhluk berbagai entitas dari jenis yang berbeda sebagai berbeda satu sama lain, mengetahui bahwa pengetahuan itu bersifat Rajas.",
+      "ban": "18.21 Nanging kaweruhan sane nyingakin ring sakancan sarwa prani makudang-kudang entitas sane mabinayan sorohnyane mabinayan sareng sane lianan, uning ring kaweruhan punika dados Rajas.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.21 But knowledge which sees in all beings the various entities of different kinds as distinct from each other, knows that knowledge to be Rajas."
+    },
+    {
+      "no": 22,
+      "devanagari": "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम् । अतत्त्वार्थवदल्पं च तत्तामसमुदाहृतम् ॥ १८.२२ ॥",
+      "iast": "yattu kṛtsnavadekasminkārye saktamahaitukam | atattvārthavadalpaṃ ca tattāmasamudāhṛtam || 18.22 ||",
+      "id": "18.22 Namun apa yang melekat pada satu akibat tunggal seolah-olah merupakan keseluruhan, tanpa alasan, tanpa landasan dalam Kebenaran, dan sepele itulah yang dinyatakan sebagai Tamasic.",
+      "ban": "18.22 Nanging napi sane neket ring efek tunggal punika sakadi sane jangkep, tan wenten alasan, tan madasar ring Kasujatian, tur sepele punika sane kabaos Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.22 But what is attached to a single effect is as if it were the whole, without reason, without foundation in Truth, and triviality is what is declared Tamasic."
+    },
+    {
+      "no": 23,
+      "devanagari": "नियतं सङ्गरहितमरागद्वेषतः कृतम् । अफलप्रेप्सुना कर्म यत्तत्सात्त्विकमुच्यते ॥ १८.२३ ॥",
+      "iast": "niyataṃ saṅgarahitamarāgadveṣataḥ kṛtam | aphalaprepsunā karma yattatsāttvikamucyate || 18.23 ||",
+      "id": "18.23 Suatu tindakan yang ditahbiskan, yang bebas dari keterikatan, dan yang dilakukan tanpa rasa cinta atau benci oleh seseorang yang tidak menginginkan imbalan apa pun, tindakan tersebut dinyatakan sebagai Sattvic.",
+      "ban": "18.23 Parilaksana sane sampun katetapang, sane bebas saking keterkaitan, tur sane kamargiang tan wenten tresna utawi gedeg olih sang sane tan meled polih pahala, parilaksana kadi punika kabawos Sattvic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.23 An act which is ordained, which is free from attachment, and which is performed without love or hate by one who does not desire any reward, such act is declared to be Sattvic."
+    },
+    {
+      "no": 24,
+      "devanagari": "यत्तु कामेप्सुना कर्म साहंकारेण वा पुनः । क्रियते बहुलायासं तद्राजसमुदाहृतम् ॥ १८.२४ ॥",
+      "iast": "yattu kāmepsunā karma sāhaṃkāreṇa vā punaḥ | kriyate bahulāyāsaṃ tadrājasamudāhṛtam || 18.24 ||",
+      "id": "18.24 Namun tindakan yang dilakukan oleh seseorang yang mendambakan pemenuhan keinginan atau keuntungan dengan egoisme atau dengan banyak usaha, dinyatakan sebagai Rajasik (bersemangat).",
+      "ban": "18.24 Nanging parilaksana sane kamargiang olih jadma sane meled nagingin pikayunan utawi pikolih antuk egoisme utawi antuk akeh utsaha, kabaos Rajasik (semangat).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.24 But the actions performed by a person who desires fulfillment of desire or gain with egoism or with much effort, are declared as Rajasik (zealous)."
+    },
+    {
+      "no": 25,
+      "devanagari": "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम् । मोहादारभ्यते कर्म यत्तत्तामसमुच्यते ॥ १८.२५ ॥",
+      "iast": "anubandhaṃ kṣayaṃ hiṃsāmanapekṣya ca pauruṣam | mohādārabhyate karma yattattāmasamucyate || 18.25 ||",
+      "id": "18.25 Perbuatan yang dilakukan karena khayalan, tanpa memperhatikan akibat, kerugian, cedera dan kemampuan (sendiri) yang dinyatakan Tamasic (gelap).",
+      "ban": "18.25 Parilaksana sane kamargiang sangkaning ilusi, tan nglinguang konsekuensi, karugian, tatu lan (dewek) kemampuan sane kawarahang Tamasic (peteng).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.25 Actions committed out of delusion, without regard to consequences, losses, injuries and (own) capabilities which are declared Tamasic (dark)."
+    },
+    {
+      "no": 26,
+      "devanagari": "मुक्तसङ्गोऽनहंवादी धृत्युत्साहसमन्वितः । सिद्ध्यसिद्ध्योर्निर्विकारः कर्ता सात्त्विक उच्यते ॥ १८.२६ ॥",
+      "iast": "muktasaṅgo|anahaṃvādī dhṛtyutsāhasamanvitaḥ | siddhyasiddhyornirvikāraḥ kartā sāttvika ucyate || 18.26 ||",
+      "id": "18.26 Agen yang bebas dari keterikatan, tidak egois, memiliki keteguhan dan antusiasme, dan tidak terpengaruh oleh keberhasilan atau kegagalan, disebut Sattvic (murni).",
+      "ban": "18.26 Agen sane bebas saking keterkaitan, nenten egois, madue keteguhan lan semangat, lan nenten keni pengaruh keberhasilan utawi kegagalan, kawastanin Sattvic (murni).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.26 An agent who is free from attachment, unselfish, has steadfastness and enthusiasm, and is not affected by success or failure, is called Sattvic (pure)."
+    },
+    {
+      "no": 27,
+      "devanagari": "रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचिः । हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः ॥ १८.२७ ॥",
+      "iast": "rāgī karmaphalaprepsurlubdho hiṃsātmako|aśuciḥ | harṣaśokānvitaḥ kartā rājasaḥ parikīrtitaḥ || 18.27 ||",
+      "id": "18.27 Bersemangat, ingin mendapatkan pahala atas perbuatannya, serakah, kejam, tidak murni, tergerak oleh suka dan duka, agen seperti itu dikatakan Rajasik (bersemangat).",
+      "ban": "18.27 Semangat, jejeh pacang ngamolihang upah saking parilaksanannyane, loba, kejam, nenten suci, kagentosin antuk suka lan duka, agen kadi punika kabaos Rajasik (semangat).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.27 Zealous, anxious to gain reward for his actions, greedy, cruel, impure, moved by joy and sorrow, such an agent is said to be Rajasik (zealous)."
+    },
+    {
+      "no": 28,
+      "devanagari": "अयुक्तः प्राकृतः स्तब्धः शठो नैष्कृतिकोऽलसः । विषादी दीर्घसूत्री च कर्ता तामस उच्यते ॥ १८.२८ ॥",
+      "iast": "ayuktaḥ prākṛtaḥ stabdhaḥ śaṭho naiṣkṛtiko|alasaḥ | viṣādī dīrghasūtrī ca kartā tāmasa ucyate || 18.28 ||",
+      "id": "18.28 Agen yang goyah, vulgar, tidak patuh, curang, jahat, malas, putus asa, dan suka menunda-nunda disebut Tamasic.",
+      "ban": "18.28 Agen sane nenten tegteg, vulgar, nenten satinut, melog-melog, corah, males, nenten purun, lan tunda-tunda kawastanin Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.28 An agent who is unsteady, vulgar, disobedient, deceitful, evil, lazy, discouraged, and procrastinating is called Tamasic."
+    },
+    {
+      "no": 29,
+      "devanagari": "बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं शृणु । प्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय ॥ १८.२९ ॥",
+      "iast": "buddherbhedaṃ dhṛteścaiva guṇatastrividhaṃ śṛṇu | procyamānamaśeṣeṇa pṛthaktvena dhanañjaya || 18.29 ||",
+      "id": "18.29 Dengarkanlah engkau tiga pembagian kecerdasan dan keteguhan menurut Guna, sebagaimana aku nyatakan secara lengkap dan jelas, wahai Arjuna.",
+      "ban": "18.29 Pirengang tetiga pah-pahan kapradnyanan miwah pageh manut Guna, sakadi sane baosang titiang jangkep tur tatas, duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.29 Listen to the three divisions of intelligence and steadfastness according to Guna, as I state completely and clearly, O Arjuna."
+    },
+    {
+      "no": 30,
+      "devanagari": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये । बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी ॥ १८.३० ॥",
+      "iast": "pravṛttiṃ ca nivṛttiṃ ca kāryākārye bhayābhaye | bandhaṃ mokṣaṃ ca yā vetti buddhiḥ sā pārtha sāttvikī || 18.30 ||",
+      "id": "18.30 Akal yang mengetahui jalan kerja dan pelepasan, apa yang harus dilakukan dan apa yang tidak boleh dilakukan, rasa takut dan tidak kenal takut, belenggu dan pembebasan, akal itu adalah Sattvic (murni), wahai Arjuna.",
+      "ban": "18.30 Pikayunan sane uning ring pamargin pakaryan miwah nulak, napi sane patut kamargiang miwah sane tan patut kamargiang, takut miwah tan takut, ikatan miwah kabebasan, pikayunan punika Sattvic (suci), duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.30 The mind that knows the path of work and renunciation, what to do and what not to do, fear and fearlessness, bondage and liberation, that mind is Sattvic (pure), O Arjuna."
+    },
+    {
+      "no": 31,
+      "devanagari": "यया धर्ममधर्मं च कार्यं चाकार्यमेव च । अयथावत्प्रजानाति बुद्धिः सा पार्थ राजसी ॥ १८.३१ ॥",
+      "iast": "yayā dharmamadharmaṃ ca kāryaṃ cākāryameva ca | ayathāvatprajānāti buddhiḥ sā pārtha rājasī || 18.31 ||",
+      "id": "18.31 Bahwa, dengan salah memahami Dharma dan Adharma dan juga apa yang harus dilakukan dan apa yang tidak boleh dilakukan, maka kecerdasan itu, wahai Arjuna, adalah Rajasik (bersemangat).",
+      "ban": "18.31 Indike punika, antuk iwang ngresepang Dharma miwah Adharma tur taler napi sane patut kamargiang miwah napi sane nenten patut kamargiang, punika kawicaksanaan, duh Arjuna, wantah Rajasik (semangat).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.31 That, by misunderstanding Dharma and Adharma and also what to do and what not to do, that intelligence, O Arjuna, is Rajasik (zealous)."
+    },
+    {
+      "no": 32,
+      "devanagari": "अधर्मं धर्ममिति या मन्यते तमसावृता । सर्वार्थान्विपरीतांश्च बुद्धिः सा पार्थ तामसी ॥ १८.३२ ॥",
+      "iast": "adharmaṃ dharmamiti yā manyate tamasāvṛtā | sarvārthānviparītāṃśca buddhiḥ sā pārtha tāmasī || 18.32 ||",
+      "id": "18.32 Yang, diselubungi kegelapan, memandang Adharma sebagai Dharma dan segala sesuatu yang memutarbalikkan akal itu, wahai Arjuna, adalah Tamasic (gelap).",
+      "ban": "18.32 Sane, kaselimutin antuk peteng, nyingakin Adharma pinaka Dharma miwah sakancan sane ngrusak akal punika, duh Arjuna, wantah Tamasic (peteng).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.32 Who, shrouded in darkness, views Adharma as Dharma and everything that perverts that reason, O Arjuna, is Tamasic (dark)."
+    },
+    {
+      "no": 33,
+      "devanagari": "धृत्या यया धारयते मनःप्राणेन्द्रियक्रियाः । योगेनाव्यभिचारिण्या धृतिः सा पार्थ सात्त्विकी ॥ १८.३३ ॥",
+      "iast": "dhṛtyā yayā dhārayate manaḥprāṇendriyakriyāḥ | yogenāvyabhicāriṇyā dhṛtiḥ sā pārtha sāttvikī || 18.33 ||",
+      "id": "18.33 Keteguhan yang tak tergoyahkan yang melalui Yoga, fungsi pikiran, daya hidup dan indera dikendalikan. Keteguhan itu, wahai Arjuna, adalah Sattvic (murni).",
+      "ban": "18.33 Ketegasan sane nenten surud-surud sane malarapan antuk Yoga fungsi pikayunan, daya hidup lan indriya punika kakendaliang. Teguh punika, duh Sang Arjuna, wantah Satvic (murni).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.33 The unwavering firmness with which through Yoga the functions of the mind, life force and senses are controlled. That steadfastness, O Arjuna, is Sattvic (pure)."
+    },
+    {
+      "no": 34,
+      "devanagari": "यया तु धर्मकामार्थान्धृत्या धारयतेऽर्जुन । प्रसङ्गेन फलाकाङ्क्षी धृतिः सा पार्थ राजसी ॥ १८.३४ ॥",
+      "iast": "yayā tu dharmakāmārthāndhṛtyā dhārayate|arjuna | prasaṅgena phalākāṅkṣī dhṛtiḥ sā pārtha rājasī || 18.34 ||",
+      "id": "18.34 Tetapi, wahai Arjuna, yang karena kemelekatan dan keinginan akan pahala, seseorang berpegang teguh pada Dharma (kewajiban), menikmati kesenangan dan memperoleh kekayaan, keteguhan itu, wahai Arjuna, adalah Rajasik (nafsu).",
+      "ban": "18.34 Nanging, duh Sang Arjuna, sangkaning melekat tur meled ring pahala, jadmane ngagem Dharma (swadharma), ngrasayang kasukan tur ngamolihang kasugihan, punika kateguh, duh Sang Arjuna, wantah Rajasik (nafsu).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.34 But, O Arjuna, because of attachment and desire for reward, one holds fast to Dharma (duty), enjoys pleasure and acquires wealth, that steadfastness, O Arjuna, is Rajasik (lust)."
+    },
+    {
+      "no": 35,
+      "devanagari": "यया स्वप्नं भयं शोकं विषादं मदमेव च । न विमुञ्चति दुर्मेधा धृतिः सा पार्थ तामसी ॥ १८.३५ ॥",
+      "iast": "yayā svapnaṃ bhayaṃ śokaṃ viṣādaṃ madameva ca | na vimuñcati durmedhā dhṛtiḥ sā pārtha tāmasī || 18.35 ||",
+      "id": "18.35 Sesuatu yang membuat orang bodoh tidak meninggalkan tidur, ketakutan, kesedihan, keputusasaan dan juga kesombongan, keteguhan itu, wahai Arjuna, adalah Tamasic.",
+      "ban": "18.35 Sane ngawinang sang tan uning tan nilar sirep, takut, sedih, putus asa miwah taler sombong, punika teguh, duh Arjuna, punika Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.35 That which makes the ignorant not abandon sleep, fear, sorrow, despair and also pride, that steadfastness, O Arjuna, is Tamasic."
+    },
+    {
+      "no": 36,
+      "devanagari": "सुखं त्विदानीं त्रिविधं शृणु मे भरतर्षभ । अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति ॥ १८.३६ ॥",
+      "iast": "sukhaṃ tvidānīṃ trividhaṃ śṛṇu me bharatarṣabha | abhyāsādramate yatra duḥkhāntaṃ ca nigacchati || 18.36 ||",
+      "id": "18.36 Dan sekarang dengarkanlah dariKu, wahai Arjuna, tentang tiga kesenangan yang di dalamnya seseorang bergembira dengan berlatih dan pasti akan mencapai akhir dari kesakitan.",
+      "ban": "18.36 Sane mangkin pirengang saking Titiang, duh Sang Arjuna, indik tetiga kasukan sane ngawinang seneng ring latihan tur pastika pacang ngamolihang pamuput rasa sakit.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.36 And now hear from Me, O Arjuna, of the three pleasures in which one delights in training and is sure to attain the end of pain."
+    },
+    {
+      "no": 37,
+      "devanagari": "यत्तदग्रे विषमिव परिणामेऽमृतोपमम् । तत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम् ॥ १८.३७ ॥",
+      "iast": "yattadagre viṣamiva pariṇāme|amṛtopamam | tatsukhaṃ sāttvikaṃ proktamātmabuddhiprasādajam || 18.37 ||",
+      "id": "18.37 Sesuatu yang pada awalnya seperti racun tetapi pada akhirnya seperti nektar, kebahagiaan dinyatakan sebagai Sattvic, lahir dari kemurnian pikiran seseorang karena Realisasi Diri.",
+      "ban": "18.37 Sane pangawitnyane sakadi racun nanging pamuputnyane sakadi nektar, karahayuan punika kabaosang dados Sattvic, embas saking kasucian pikayunan sangkaning Realisasi Diri.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.37 That which is at first like poison but ultimately like nectar, bliss is declared to be Sattvic, born from the purity of one's mind due to Self-Realization."
+    },
+    {
+      "no": 38,
+      "devanagari": "विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम् । परिणामे विषमिव तत्सुखं राजसं स्मृतम् ॥ १८.३८ ॥",
+      "iast": "viṣayendriyasaṃyogādyattadagre|amṛtopamam | pariṇāme viṣamiva tatsukhaṃ rājasaṃ smṛtam || 18.38 ||",
+      "id": "18.38 Kebahagiaan yang muncul dari kontak organ-organ indera dengan objek-objek, yang mula-mula seperti nektar, dan pada akhirnya seperti racun yang dinyatakan bersifat Rajasik.",
+      "ban": "18.38 Rahayu sane metu saking kontak organ indriya sareng benda, sane kapertama sakadi nektar, lan pamuputnyane sakadi racun kabaos Rajasic ring alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.38 The bliss that arises from the contact of the sense organs with objects, which are first like nectar, and ultimately like poison is said to be Rajasic in nature."
+    },
+    {
+      "no": 39,
+      "devanagari": "यदग्रे चानुबन्धे च सुखं मोहनमात्मनः । निद्रालस्यप्रमादोत्थं तत्तामसमुदाहृतम् ॥ १८.३९ ॥",
+      "iast": "yadagre cānubandhe ca sukhaṃ mohanamātmanaḥ | nidrālasyapramādotthaṃ tattāmasamudāhṛtam || 18.39 ||",
+      "id": "18.39 Kebahagiaan yang pada mulanya maupun di dalam diri menipu diri, dan yang muncul dari tidur, kelambanan dan kecerobohan yang dinyatakan sebagai Tamasic.",
+      "ban": "18.39 Rahayu sane wenten ring pangawit miwah ring raga, punika ngapus raga, tur sane metu saking sirep, kemalasan miwah tan rungu sane kabaos Tamasic.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.39 Happiness which is both in the beginning and in the self is self-deceptive, and which arises from sleep, sloth and carelessness which is declared Tamasic."
+    },
+    {
+      "no": 40,
+      "devanagari": "न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुनः । सत्त्वं प्रकृतिजैर्मुक्तं यदेभिः स्यात्त्रिभिर्गुणैः ॥ १८.४० ॥",
+      "iast": "na tadasti pṛthivyāṃ vā divi deveṣu vā punaḥ | sattvaṃ prakṛtijairmuktaṃ yadebhiḥ syāttribhirguṇaiḥ || 18.40 ||",
+      "id": "18.40 Tidak ada makhluk di bumi atau di surga di antara para dewa, yang terbebas dari tiga realitas yang lahir dari Alam.",
+      "ban": "18.40 Tan wenten sane wenten ring jagate utawi ring suargan ring pantaraning para dewata, sane bebas saking tetiga kasujatian sane embas saking Alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.40 There is no being on earth or in heaven among the gods, who is free from the three realities born of Nature."
+    },
+    {
+      "no": 41,
+      "devanagari": "ब्राह्मणक्षत्रियविशां शूद्राणां च परन्तप । कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः ॥ १८.४१ ॥",
+      "iast": "brāhmaṇakṣatriyaviśāṃ śūdrāṇāṃ ca parantapa | karmāṇi pravibhaktāni svabhāvaprabhavairguṇaiḥ || 18.41 ||",
+      "id": "18.41 Bagi para Brahmana, Ksatria, dan Waisya, serta para Sudra, wahai Arjuna, tugas-tugasnya dibagikan menurut sifat-sifat yang lahir dari sifat mereka sendiri.",
+      "ban": "18.41 Majeng ring para Brahmana, Ksatriya, lan Vaisya, taler para sudra, duh Arjuna, swadharma kabagi manut sifat-sifat sane embas saking sifatnyane soang-soang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.41 For the Brahmins, Kshatriyas, and Vaisyas, as well as the Sudras, O Arjuna, duties are distributed according to the qualities born of their own nature."
+    },
+    {
+      "no": 42,
+      "devanagari": "शमो दमस्तपः शौचं क्षान्तिरार्जवमेव च । ज्ञानं विज्ञानमास्तिक्यं ब्रह्मकर्म स्वभावजम् ॥ १८.४२ ॥",
+      "iast": "śamo damastapaḥ śaucaṃ kṣāntirārjavameva ca | jñānaṃ vijñānamāstikyaṃ brahmakarma svabhāvajam || 18.42 ||",
+      "id": "18.42 Ketenangan, pengendalian diri, pertapaan, kemurnian, pengampunan dan juga kejujuran, pengetahuan, realisasi dan kepercayaan kepada Tuhan adalah tugas para Brahmana, yang lahir dari sifat (mereka sendiri).",
+      "ban": "18.42 Kesopanan, pengendalian diri, pertapaan, kesucian, pengampura taler kejujuran, pengetahuan, realisasi lan keyakinan ring Ida Sang Hyang Widhi Wasa, punika swadharma brahmana, embas saking sifat (raga).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.42 Sobriety, self-control, asceticism, purity, forgiveness as well as honesty, knowledge, realization and belief in God are the duties of Brahmins, born of (their own) nature."
+    },
+    {
+      "no": 43,
+      "devanagari": "शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम् । दानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम् ॥ १८.४३ ॥",
+      "iast": "śauryaṃ tejo dhṛtirdākṣyaṃ yuddhe cāpyapalāyanam | dānamīśvarabhāvaśca kṣātraṃ karma svabhāvajam || 18.43 ||",
+      "id": "18.43 Kecakapan, kemegahan, keteguhan, ketangkasan dan juga tidak lari dari pertempuran, kemurahan hati dan keagungan adalah tugas para Kshatriya, yang lahir dari sifat (mereka sendiri).",
+      "ban": "18.43 Kesaktian, kemegahan, kekuatan, ketangkasan lan taler nenten malaib saking payudan, keagungan lan keagungan punika swadharmaning Ksatriya, sane embas saking sifat (nyane).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.43 Prowess, splendor, steadfastness, dexterity and also not running away from battle, magnanimity and greatness are the duties of Kshatriyas, born of (their own) nature."
+    },
+    {
+      "no": 44,
+      "devanagari": "कृषिगौरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम् । परिचर्यात्मकं कर्म शूद्रस्यापि स्वभावजम् ॥ १८.४४ ॥",
+      "iast": "kṛṣigaurakṣyavāṇijyaṃ vaiśyakarma svabhāvajam | paricaryātmakaṃ karma śūdrasyāpi svabhāvajam || 18.44 ||",
+      "id": "18.44 Pertanian, peternakan dan perdagangan adalah tugas para Vaisya (pedagang), yang lahir dari sifat (mereka sendiri); dan tindakan yang terdiri dari pelayanan adalah tugas Sudra (kelas pelayan), yang lahir dari sifat (mereka sendiri).",
+      "ban": "18.44 Pertanian, peternakan miwah madagang wantah swadharmaning para Vaisya (dagang), embas saking sifat (ragane); tur parilaksana sane kawangun antuk ngayah inggih punika swadharma para Shudra (kelas abdi), sane embas saking (sifatnyane ngraga).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.44 Agriculture, animal husbandry and trade are the duties of the Vaisyas (merchants), born of (their own) nature; and the acts which comprise service are the duties of the Shudras (servant class), born of (their own) nature."
+    },
+    {
+      "no": 45,
+      "devanagari": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः । स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु ॥ १८.४५ ॥",
+      "iast": "sve sve karmaṇyabhirataḥ saṃsiddhiṃ labhate naraḥ | svakarmanirataḥ siddhiṃ yathā vindati tacchṛṇu || 18.45 ||",
+      "id": "5.10 Barangsiapa melakukan perbuatan, mempersembahkannya kepada Brahman, dan melepaskan kemelekatan, tidak ternoda oleh dosa, seperti halnya daun teratai tidak ternoda oleh air.",
+      "ban": "5.10 Sapasiraja sane ngamargiang parilaksana, ngaturang ring Brahman, tur ngelepasin rasa melekat, tan keni leteh antuk dosa, sakadi don teratai tan keni leteh antuk toya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "5.10 Whoever performs deeds, offers them to Brahman, and gives up attachment, is not stained by sin, just as a lotus leaf is not stained by water."
+    },
+    {
+      "no": 46,
+      "devanagari": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् । स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः ॥ १८.४६ ॥",
+      "iast": "yataḥ pravṛttirbhūtānāṃ yena sarvamidaṃ tatam | svakarmaṇā tamabhyarcya siddhiṃ vindati mānavaḥ || 18.46 ||",
+      "id": "18.46 Dia yang darinya semua makhluk berevolusi dan yang dengannya semua makhluk ini meresap, memuja Dia dengan tugasnya sendiri, manusia mencapai kesempurnaan.",
+      "ban": "18.46 Ida sane saking sakancan sarwa prani punika maevolusi tur sareng Ida sakancan sarwa prani punika ngresep, ngaturang sembah ring Ida antuk swadharmannyane ngraga, manusa ngamolihang kesempurnaan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.46 He from whom all creatures evolved and with whom all these creatures are permeated, worshiping Him with his own duties, man attains perfection."
+    },
+    {
+      "no": 47,
+      "devanagari": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥ १८.४७ ॥",
+      "iast": "śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svabhāvaniyataṃ karma kurvannāpnoti kilbiṣam || 18.47 ||",
+      "id": "18.47 Lebih baik tugas seseorang (walaupun) tidak bermanfaat, daripada tugas orang lain yang dilaksanakan dengan baik. Barangsiapa melakukan tugas yang ditetapkan oleh kodratnya sendiri, tidak berdosa.",
+      "ban": "18.47 Becikan tugas anak adiri (yadiastun) tan mawiguna, bandingang ring tugas anak tiosan kalaksanayang becik. Sapasiraja sane ngemargiang swadarma sane sampun kapastikayang antuk jatinnyane, nenten madosa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.47 It is better for one person's task (even though) to be useless, than another person's task to be carried out well. Whoever performs the duties prescribed by his own nature, does not sin."
+    },
+    {
+      "no": 48,
+      "devanagari": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत् । सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः ॥ १८.४८ ॥",
+      "iast": "sahajaṃ karma kaunteya sadoṣamapi na tyajet | sarvārambhā hi doṣeṇa dhūmenāgnirivāvṛtāḥ || 18.48 ||",
+      "id": "18.48 Janganlah seseorang meninggalkan, wahai Arjuna, kewajiban yang sudah menjadi tanggung jawabnya, meskipun salah; karena semua usaha diselimuti oleh kejahatan, seperti api di dalam asap.",
+      "ban": "18.48 Sampunang wenten anak sane ninggalin, duh Sang Arjuna, kewajiban sane sampun dados tanggung jawabnyane, yadiastun iwang; santukan sakancan utsaha sampun katutupin antuk kacorahan, sakadi geni sane madaging andus.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.48 Let no one abandon, O Arjuna, an obligation which has become his responsibility, even if it is wrong; for all endeavors are shrouded in evil, like fire in smoke."
+    },
+    {
+      "no": 49,
+      "devanagari": "असक्तबुद्धिः सर्वत्र जितात्मा विगतस्पृहः । नैष्कर्म्यसिद्धिं परमां संन्यासेनाधिगच्छति ॥ १८.४९ ॥",
+      "iast": "asaktabuddhiḥ sarvatra jitātmā vigataspṛhaḥ | naiṣkarmyasiddhiṃ paramāṃ saṃnyāsenādhigacchati || 18.49 ||",
+      "id": "18.49 Barangsiapa yang kecerdasannya tidak terikat di mana-mana, yang telah menundukkan dirinya sendiri, yang nafsunya telah hilang, ia dengan pelepasan keduniawian mencapai keadaan kebebasan tertinggi dari tindakan.",
+      "ban": "18.49 Sapasiraja sane kawikanannyane nenten kaiket ring dija-dija, sane sampun ngasorang raga, sane sampun ical nafsunyane, ipun antuk penolakan ngamolihang kahanan kebebasan bertindak sane pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.49 Whoever whose intelligence is not tied down everywhere, who has subdued himself, whose passions have disappeared, he by renunciation attains the state of supreme freedom of action."
+    },
+    {
+      "no": 50,
+      "devanagari": "सिद्धिं प्राप्तो यथा ब्रह्म तथाप्नोति निबोध मे । समासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा ॥ १८.५० ॥",
+      "iast": "siddhiṃ prāpto yathā brahma tathāpnoti nibodha me | samāsenaiva kaunteya niṣṭhā jñānasya yā parā || 18.50 ||",
+      "id": "18.50 Belajarlah dari-Ku secara singkat, wahai Arjuna, bagaimana orang yang telah mencapai kesempurnaan mencapai Brahman (Yang Abadi), tingkat pengetahuan tertinggi itu.",
+      "ban": "18.50 Plajahinja ring Titiang cutet, duh Sang Arjuna, sapunapi sang sane sampun ngamolihang paripurna ngamolihang Brahman (sane Langgeng), kahanan kaweruhan sane pinih luhur punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.50 Learn from Me briefly, O Arjuna, how one who has attained perfection attains Brahman (the Eternal), that highest state of knowledge."
+    },
+    {
+      "no": 51,
+      "devanagari": "बुद्ध्या विशुद्धया युक्तो धृत्यात्मानं नियम्य च । शब्दादीन्विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च ॥ १८.५१ ॥",
+      "iast": "buddhyā viśuddhayā yukto dhṛtyātmānaṃ niyamya ca | śabdādīnviṣayāṃstyaktvā rāgadveṣau vyudasya ca || 18.51 ||",
+      "id": "18.51 Diberkahi dengan kecerdasan yang murni, mengendalikan diri dengan keteguhan, menghilangkan suara dan benda-benda lain serta meninggalkan ketertarikan dan kebencian.",
+      "ban": "18.51 Kacumawisang antuk kawicaksanaan sane murni, ngendaliang raga antuk teguh, ngicalang suara miwah benda sane tiosan tur ninggalin daya tarik lan rasa nenten seneng.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.51 Endowed with pure intelligence, controlling oneself with steadfastness, eliminating sounds and other objects and abandoning attraction and aversion."
+    },
+    {
+      "no": 52,
+      "devanagari": "विविक्तसेवी लघ्वाशी यतवाक्कायमानसः । ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः ॥ १८.५२ ॥",
+      "iast": "viviktasevī laghvāśī yatavākkāyamānasaḥ | dhyānayogaparo nityaṃ vairāgyaṃ samupāśritaḥ || 18.52 ||",
+      "id": "18.52 Berdiam dalam kesendirian, makan sedikit, dengan ucapan, tubuh dan pikiran tenang, selalu tekun dalam meditasi dan konsentrasi, menggunakan kebosanan.",
+      "ban": "18.52 Meneng ring kesepian, ngajeng akidik, antuk bebaosan, raga lan pikayunan anteng, setata ngamargiang semedi lan konsentrasi, nganggen tan pawates.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.52 Dwelling in solitude, eating little, with speech, body and mind calm, always engaged in meditation and concentration, using dispassion."
+    },
+    {
+      "no": 53,
+      "devanagari": "अहंकारं बलं दर्पं कामं क्रोधं परिग्रहम् । विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते ॥ १८.५३ ॥",
+      "iast": "ahaṃkāraṃ balaṃ darpaṃ kāmaṃ krodhaṃ parigraham | vimucya nirmamaḥ śānto brahmabhūyāya kalpate || 18.53 ||",
+      "id": "18.53 Setelah meninggalkan egoisme, kekuatan, kesombongan, keinginan, kemarahan dan ketamakan, dan bebas dari gagasan 'milikku' dan kedamaian, ia layak menjadi Brahman.",
+      "ban": "18.53 Sampun ninggalin egoisme, kawisesan, sombong, pikayunan, gedeg miwah loba, tur sampun bebas saking pikayunan ‘minang’ miwah dame, ida patut dados Brahmana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.53 Having abandoned egoism, power, pride, desire, anger and greed, and being free from the notion of 'mine' and peace, he is worthy of becoming Brahman."
+    },
+    {
+      "no": 54,
+      "devanagari": "ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति । समः सर्वेषु भूतेषु मद्भक्तिं लभते पराम् ॥ १८.५४ ॥",
+      "iast": "brahmabhūtaḥ prasannātmā na śocati na kāṅkṣati | samaḥ sarveṣu bhūteṣu madbhaktiṃ labhate parām || 18.54 ||",
+      "id": "18.54 Dengan menjadi Brahman, tenteram dalam Dirinya, ia tidak bersedih atau berkeinginan, sama terhadap semua makhluk, ia memperoleh pengabdian tertinggi kepada-Ku.",
+      "ban": "18.54 Antuk dados Brahman, sutrepti ring sajeroning raga, tan sedih utawi meled, pateh ring sakancan sarwa prani, ipun ngamolihang bhakti sane pinih utama ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.54 By becoming Brahman, at peace within Himself, he does not grieve or desire, equal to all creatures, he attains supreme devotion to Me."
+    },
+    {
+      "no": 55,
+      "devanagari": "भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः । ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम् ॥ १८.५५ ॥",
+      "iast": "bhaktyā māmabhijānāti yāvānyaścāsmi tattvataḥ | tato māṃ tattvato jñātvā viśate tadanantaram || 18.55 ||",
+      "id": "18.55 Dengan pengabdian dia mengenal Aku dengan sebenarnya, apa dan siapa Aku; kemudian setelah mengenal-Ku dengan sebenarnya, dia segera memasuki Yang Mahakuasa.",
+      "ban": "18.55 Antuk bhakti, Ida uning ring Titiang sujati, napi miwah sapasira Titiang; raris risampune sujati uning ring Titiang, Ida digelis ngranjing ring Sang Maha Wisesa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.55 With devotion he knows Me truly, what and who I am; then after truly knowing Me, he immediately enters the Almighty."
+    },
+    {
+      "no": 56,
+      "devanagari": "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः । मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम् ॥ १८.५६ ॥",
+      "iast": "sarvakarmāṇyapi sadā kurvāṇo madvyapāśrayaḥ | matprasādādavāpnoti śāśvataṃ padamavyayam || 18.56 ||",
+      "id": "18.56 Melakukan segala perbuatan dengan selalu berlindung kepada-Ku, dengan karunia-Ku dia memperoleh wujud kekal yang tidak dapat dihancurkan.",
+      "ban": "18.56 Ngelaksanayang sakancan parilaksana setata masayuban ring Titiang, antuk sih pasuecan Titiang ida ngamolihang rupa langgeng sane tan sida karusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.56 Performing all deeds always taking refuge in Me, by My grace he obtains an eternal form that cannot be destroyed."
+    },
+    {
+      "no": 57,
+      "devanagari": "चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः । बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव ॥ १८.५७ ॥",
+      "iast": "cetasā sarvakarmāṇi mayi saṃnyasya matparaḥ | buddhiyogamupāśritya maccittaḥ satataṃ bhava || 18.57 ||",
+      "id": "18.57 Dengan secara mental meninggalkan segala perbuatan pada-Ku, menjadikan Aku sebagai tujuan tertinggi, melakukan Yoga diskriminasi apakah engkau selalu memusatkan pikiran pada-Ku.",
+      "ban": "18.57 Antuk mental nilar sakancan parilaksana majeng ring Titiang, ngawinang Titiang dados tatujon sane pinih luhur, ngelaksanayang Yoga diskriminasi napike ragane setata mecikang pikayunan ragane ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.57 By mentally abandoning all actions to Me, making Me the highest goal, performing the Yoga of discrimination do you always fix your mind on Me."
+    },
+    {
+      "no": 58,
+      "devanagari": "मच्चित्तः सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि । अथ चेत्त्वमहंकारान्न श्रोष्यसि विनङ्क्ष्यसि ॥ १८.५८ ॥",
+      "iast": "maccittaḥ sarvadurgāṇi matprasādāttariṣyasi | atha cettvamahaṃkārānna śroṣyasi vinaṅkṣyasi || 18.58 ||",
+      "id": "18.58 Dengan memusatkan pikiranmu pada-Ku, dengan kasih karunia-Ku kamu akan mengatasi segala rintangan; tetapi jika karena egoisme kamu tidak mau mendengarkan Aku, kamu akan binasa.",
+      "ban": "18.58 Antuk ngutamayang pikayunan ragane ring Titiang, antuk sih pasuecan Titiang ragane pacang ngaonang sakancan pikobet; nanging yen kita tusing nyak madingehang sabdan Ulune uli krana dewek kitane, kita lakar mati.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.58 By concentrating your mind on Me, by My grace you will overcome all obstacles; but if because of selfishness you will not listen to Me, you will perish."
+    },
+    {
+      "no": 59,
+      "devanagari": "यदहंकारमाश्रित्य न योत्स्य इति मन्यसे । मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति ॥ १८.५९ ॥",
+      "iast": "yadahaṃkāramāśritya na yotsya iti manyase | mithyaiṣa vyavasāyaste prakṛtistvāṃ niyokṣyati || 18.59 ||",
+      "id": "18.59 Jika, dengan penuh egoisme, engkau berpikir: \"Aku tidak akan berperang\", sia-sialah tekadmu; Alam akan memaksamu.",
+      "ban": "18.59 Yening, bek antuk egoisme, ragane makeneh: “Tiang tusing lakar mayuda”, tekad ragane sia-sia; Alam pacang maksa semeton.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.59 If, full of egoism, you think: \"I will not fight\", your resolve is in vain; Nature will force you."
+    },
+    {
+      "no": 60,
+      "devanagari": "स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा । कर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोपि तत् ॥ १८.६० ॥",
+      "iast": "svabhāvajena kaunteya nibaddhaḥ svena karmaṇā | kartuṃ necchasi yanmohātkariṣyasyavaśopi tat || 18.60 ||",
+      "id": "18.60 Wahai Arjuna, terikat oleh Karma (tindakan)mu sendiri yang lahir dari sifatmu sendiri, apa yang karena khayalan tidak ingin engkau lakukan, bahkan hal itu harus engkau lakukan tanpa daya.",
+      "ban": "18.60 Inggih Sang Arjuna, kaiket antuk Karma (parilaksana) ragane ngraga sane embas saking sifat ragane, napi sangkaning ilusi ragane nenten kayun nglaksanayang, yadiastun indike punika ragane patut nglaksanayang tan pawates.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.60 O Arjuna, bound by your own Karma (actions) born of your own nature, what because of delusion you do not want to do, even that thing you have to do helplessly."
+    },
+    {
+      "no": 61,
+      "devanagari": "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति । भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया ॥ १८.६१ ॥",
+      "iast": "īśvaraḥ sarvabhūtānāṃ hṛddeśe|arjuna tiṣṭhati | bhrāmayansarvabhūtāni yantrārūḍhāni māyayā || 18.61 ||",
+      "id": "18.61 Tuhan berdiam di dalam hati semua makhluk, wahai Arjuna, menyebabkan semua makhluk, dengan kekuatan ilusi-Nya, berputar seolah-olah menaiki sebuah mesin.",
+      "ban": "18.61 Ida Sang Hyang Widhi Wasa malingga ring manah sarwa prani, duh Sang Arjuna, ngawinang sarwa prani, antuk kawisesan ilusi Idane, maputa-puta sakadi ring mesin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.61 God resides in the hearts of all beings, O Arjuna, causing all beings, by the power of His illusion, to spin as if on a machine."
+    },
+    {
+      "no": 62,
+      "devanagari": "तमेव शरणं गच्छ सर्वभावेन भारत । तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम् ॥ १८.६२ ॥",
+      "iast": "tameva śaraṇaṃ gaccha sarvabhāvena bhārata | tatprasādātparāṃ śāntiṃ sthānaṃ prāpsyasi śāśvatam || 18.62 ||",
+      "id": "18.62 Terbanglah kepada-Nya untuk berlindung dengan seluruh keberadaanmu, wahai Arjuna; dengan rahmat-Nya engkau akan memperoleh kedamaian tertinggi (dan) tempat tinggal yang kekal.",
+      "ban": "18.62 Makeberja ka Ida mangda masayuban antuk sakancan raga, duh Arjuna; antuk sih pasuecan Ida ragane pacang ngamolihang karahayuan sane pinih luhur (lan) genah sane langgeng.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.62 Fly to Him for refuge with your whole being, O Arjuna; by His grace you will obtain supreme peace (and) eternal abode."
+    },
+    {
+      "no": 63,
+      "devanagari": "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया । विमृश्यैतदशेषेण यथेच्छसि तथा कुरु ॥ १८.६३ ॥",
+      "iast": "iti te jñānamākhyātaṃ guhyādguhyataraṃ mayā | vimṛśyaitadaśeṣeṇa yathecchasi tathā kuru || 18.63 ||",
+      "id": "18.63 Demikianlah hikmat, yang lebih rahasia daripada rahasia itu sendiri, telah Kuberitakan kepadamu; setelah merenungkannya sepenuhnya, maka bertindaklah sesuai keinginanmu.",
+      "ban": "18.63 Kadi asapunika kawicaksanane punika, sane pinih pingit bandingang ring paindikan sane pingit, sampun nyinahang ring semeton. Sesampune jangkep ngresepang, raris malaksana manut ring pikayunan ragane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.63 Thus wisdom, more secret than the mystery itself, I have made known to you; After pondering it fully, then act according to your wishes."
+    },
+    {
+      "no": 64,
+      "devanagari": "सर्वगुह्यतमं भूयः शृणु मे परमं वचः । इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम् ॥ १८.६४ ॥",
+      "iast": "sarvaguhyatamaṃ bhūyaḥ śṛṇu me paramaṃ vacaḥ | iṣṭo|asi me dṛḍhamiti tato vakṣyāmi te hitam || 18.64 ||",
+      "id": "18.64 Dengarkanlah lagi firman-Ku yang tertinggi, yang paling rahasia dari semuanya; karena engkau sangat dikasihi-Ku, maka Aku akan memberitahumu apa yang baik.",
+      "ban": "18.64 Pirengangja malih sabdan Ulune ane paling tegeha, ane paling rahasia uli makejang. sawireh cening kalintang tresnain Ulun, Ulun lakar ngorahin cening apa ane melah.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.64 Hear again My highest word, the most secret of all; because you are so loved by Me, I will tell you what is good."
+    },
+    {
+      "no": 65,
+      "devanagari": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु । मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे ॥ १८.६५ ॥",
+      "iast": "manmanā bhava madbhakto madyājī māṃ namaskuru | māmevaiṣyasi satyaṃ te pratijāne priyo|asi me || 18.65 ||",
+      "id": "18.65 Pusatkan pikiranmu pada-Ku, dengan berbakti kepada-Ku, berkorban kepada-Ku, bersujud kepada-Ku. Engkau harus datang kepada-Ku; sesungguhnya Aku berjanji kepadamu, (karena) engkau sayang kepada-Ku.",
+      "ban": "18.65 Tetepangja keneh ceninge teken Ulun, malantaran ngayahin Ulun, ngaturang aturan teken Ulun, sujud teken Ulun. Cening patut teka sig Ulune; sujatine Tiang majanji teken cening, (sawireh) cening tresna teken Tiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.65 Concentrate your thoughts on Me, by serving Me, making sacrifices to Me, prostrating yourself to Me. You must come to Me; verily I promise you, (because) you love Me."
+    },
+    {
+      "no": 66,
+      "devanagari": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥ १८.६६ ॥",
+      "iast": "sarvadharmānparityajya māmekaṃ śaraṇaṃ vraja | ahaṃ tvāṃ sarvapāpebhyo mokṣyayiṣyāmi mā śucaḥ || 18.66 ||",
+      "id": "18.66 Tinggalkan segala kewajiban, berlindunglah kepada-Ku saja: Aku akan membebaskanmu dari segala dosa; jangan bersedih.",
+      "ban": "18.66 Ninggalin sakancan kewajiban, masayubanja teken Ulun dogen: Ulun lakar ngluputang cening uli sakancan dosane; Sampunangja semeton sedih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.66 Abandon all obligations, take refuge in Me alone: ​​I will free you from all sins; Do not be sad."
+    },
+    {
+      "no": 67,
+      "devanagari": "इदं ते नातपस्काय नाभक्ताय कदाचन । न चाशुश्रूषवे वाच्यं न च मां योऽभ्यसूयति ॥ १८.६७ ॥",
+      "iast": "idaṃ te nātapaskāya nābhaktāya kadācana | na cāśuśrūṣave vācyaṃ na ca māṃ yo|abhyasūyati || 18.67 ||",
+      "id": "18.67 Jangan sekali-kali engkau mengucapkan hal ini kepada orang yang tidak melakukan pertapaan atau pengabdian, atau kepada orang yang tidak memberikan pelayanan atau tidak mau mendengarkan, atau kepada orang yang mencaci-maki Aku.",
+      "ban": "18.67 Sampunang pisan-pisan mabaos kadi asapunika ring anak sane tan ngamargiang upacara utawi ngaturang bakti, wiadin ring anak sane nenten ngaturang ayah utawi nenten mirengang, wiadin ring anak sane nganistayang Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.67 Never say this to someone who does not perform austerities or devotion, or to someone who does not provide service or does not listen, or to someone who insults Me."
+    },
+    {
+      "no": 68,
+      "devanagari": "य इदं परमं गुह्यं मद्भक्तेष्वभिधास्यति । भक्तिं मयि परां कृत्वा मामेवैष्यत्यसंशयः ॥ १८.६८ ॥",
+      "iast": "ya idaṃ paramaṃ guhyaṃ madbhakteṣvabhidhāsyati | bhaktiṃ mayi parāṃ kṛtvā māmevaiṣyatyasaṃśayaḥ || 18.68 ||",
+      "id": "18.68 Barangsiapa yang dengan pengabdiannya yang tinggi kepada-Ku mengajarkan rahasia tertinggi ini kepada para penyembah-Ku, pasti akan datang kepada-Ku.",
+      "ban": "18.68 Sapasiraja, antuk astiti bakti sane ageng ring Titiang, ngajahin rahasia sane pinih luhur puniki ring para bhakta Titiang, pastika pacang rauh ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.68 Whoever, with great devotion to Me, teaches this supreme secret to My devotees, will surely come to Me."
+    },
+    {
+      "no": 69,
+      "devanagari": "न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तमः । भविता न च मे तस्मादन्यः प्रियतरो भुवि ॥ १८.६९ ॥",
+      "iast": "na ca tasmānmanuṣyeṣu kaścinme priyakṛttamaḥ | bhavitā na ca me tasmādanyaḥ priyataro bhuvi || 18.69 ||",
+      "id": "18.69 Tidak ada seorang pun di antara manusia yang lebih mengabdi kepada-Ku, dan tidak ada orang lain di dunia ini yang lebih disayangi-Ku daripada dia.",
+      "ban": "18.69 Tusing ada anak di pantaran manusane ane lebih bakti teken Ulun, tur tusing ada anak lenan di gumine ene ane lebih sayang teken Ulun teken ia.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.69 There is no one among humanity who is more devoted to Me, and there is no other person in this world who is dearer to Me than him."
+    },
+    {
+      "no": 70,
+      "devanagari": "अध्येष्यते च य इमं धर्म्यं संवादमावयोः । ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः ॥ १८.७० ॥",
+      "iast": "adhyeṣyate ca ya imaṃ dharmyaṃ saṃvādamāvayoḥ | jñānayajñena tenāhamiṣṭaḥ syāmiti me matiḥ || 18.70 ||",
+      "id": "18.70 Dan barangsiapa mempelajari dialog suci kita ini, olehnya aku akan dipuja dengan pengorbanan kebijaksanaan, demikianlah keyakinanku.",
+      "ban": "18.70 Tur sapasiraja sane mlajahin dialog suci iraga puniki, antuk ipun titiang pacang kahormatin antuk kurban kawicaksanaan, mawinan titiang percaya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.70 And whoever learns this sacred dialogue of ours, by him will I be honored with the sacrifice of wisdom, so I believe."
+    },
+    {
+      "no": 71,
+      "devanagari": "श्रद्धावाननसूयश्च शृणुयादपि यो नरः । सोऽपि मुक्तः शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम् ॥ १८.७१ ॥",
+      "iast": "śraddhāvānanasūyaśca śṛṇuyādapi yo naraḥ | so|api muktaḥ śubhā|Nllokānprāpnuyātpuṇyakarmaṇām || 18.71 ||",
+      "id": "18.71 Juga orang yang mendengar hal ini, dengan penuh keyakinan dan bebas dari kedengkian, dia juga, setelah terbebaskan, akan mencapai alam bahagia di mana orang-orang yang berbuat kebajikan.",
+      "ban": "18.71 Taler sang sane mirengang indike punika, antuk kapercayaan sane jangkep tur bebas saking kacorahan, ipun taler, yening sampun kabebasang, pacang ngamolihang genah sane bagia ring sang sane malaksana becik.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.71 Also the one who hears this, with full faith and free from malice, he too, once liberated, will attain the happy abode of those who do good."
+    },
+    {
+      "no": 72,
+      "devanagari": "कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा । कच्चिदज्ञानसम्मोहः प्रनष्टस्ते धनञ्जय ॥ १८.७२ ॥",
+      "iast": "kaccidetacchrutaṃ pārtha tvayaikāgreṇa cetasā | kaccidajñānasammohaḥ pranaṣṭaste dhanañjaya || 18.72 ||",
+      "id": "18.72 Pernahkah hal ini didengar, wahai Arjuna, dengan pikiran yang terpusat? Apakah khayalan ketidaktahuanmu telah dihancurkan, wahai Dhananjaya?",
+      "ban": "18.72 Napike indike punika naenin kapireng, duh Sang Arjuna, antuk pikayunan sane tunggal? Napike iwang-iwang druene sane tan uning sampun karusak, duh Sang Dhananjaya?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.72 Has this ever been heard, O Arjuna, with a single-minded mind? Have your delusions of ignorance been destroyed, O Dhananjaya?"
+    },
+    {
+      "no": 73,
+      "devanagari": "अर्जुन उवाच । नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत । स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव ॥ १८.७३ ॥",
+      "iast": "arjuna uvāca | naṣṭo mohaḥ smṛtirlabdhā tvatprasādānmayācyuta | sthito|asmi gatasandehaḥ kariṣye vacanaṃ tava || 18.73 ||",
+      "id": "18.73 Arjuna berkata Hancurlah khayalanku karena aku memperoleh ilmu (ingatan) melalui karunia-Mu, ya Krishna. Saya tetap terbebas dari keraguan. Aku akan bertindak sesuai dengan firman-Mu.",
+      "ban": "18.73 Ida Sang Arjuna ngandika Rusak-asikja pikayunan titiange santukan titiang sampun ngamolihang kaweruhan (ingatan) malarapan antuk sih pasuecan Palungguh IRatu, duh Sang Prabhu Kresna. Titiang tetep bebas saking sangsaya. Titiang jaga ngamargiang sapatitah Palungguh IRatune.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.73 Arjuna says Destroy my delusion for I have gained knowledge (memory) through Your grace, O Krishna. I remain free from doubt. I will act according to Your word."
+    },
+    {
+      "no": 74,
+      "devanagari": "सञ्जय उवाच । इत्यहं वासुदेवस्य पार्थस्य च महात्मनः । संवादमिममश्रौषमद्भुतं रोमहर्षणम् ॥ १८.७४ ॥",
+      "iast": "sañjaya uvāca | ityahaṃ vāsudevasya pārthasya ca mahātmanaḥ | saṃvādamimamaśrauṣamadbhutaṃ romaharṣaṇam || 18.74 ||",
+      "id": "18.74 Sanjaya berkata Demikianlah saya telah mendengar dialog indah antara Krishna dan Arjuna yang berjiwa besar, yang menyebabkan bulu kuduk berdiri.",
+      "ban": "18.74 Sanjaya ngandika Asapunika titiang sampun miragi bebaosan sane becik pantaraning Sang Kresna sane mautama atma lan Sang Arjuna, sane ngawinang rambut ring ungkur baong titiange ngadeg.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.74 Sanjaya said Thus I have heard a beautiful dialogue between the great-souled Krishna and Arjuna, which caused the hairs on the back of my neck to stand up."
+    },
+    {
+      "no": 75,
+      "devanagari": "व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम् । योगं योगेश्वरात्कृष्णात्साक्षात्कथयतः स्वयम् ॥ १८.७५ ॥",
+      "iast": "vyāsaprasādācchrutavānetadguhyamahaṃ param | yogaṃ yogeśvarātkṛṣṇātsākṣātkathayataḥ svayam || 18.75 ||",
+      "id": "18.75 Melalui karunia Vyasa saya telah mendengar Yoga tertinggi dan paling rahasia ini langsung dari Krishna, Penguasa Yoga, yang secara langsung menyatakannya.",
+      "ban": "18.75 Malarapan antuk pasuecan Ida Sang Vyasa titiang sampun miragi Yoga sane pinih luhur tur pinih pingit puniki langsung saking Ida Sang Kresna, Bhatara Yoga, sane langsung maosang indike punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.75 Through the grace of Vyasa I have heard this highest and most secret Yoga directly from Krishna, the Lord of Yoga, who directly stated it."
+    },
+    {
+      "no": 76,
+      "devanagari": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम् । केशवार्जुनयोः पुण्यं हृष्यामि च मुहुर्मुहुः ॥ १८.७६ ॥",
+      "iast": "rājansaṃsmṛtya saṃsmṛtya saṃvādamimamadbhutam | keśavārjunayoḥ puṇyaṃ hṛṣyāmi ca muhurmuhuḥ || 18.76 ||",
+      "id": "18.76 Wahai Raja, mengingat dialog yang indah dan suci antara Krishna dan Arjuna ini, aku bersukacita lagi dan lagi.",
+      "ban": "18.76 Inggih Ratu, eling ring bebaosan sane becik tur suci puniki pantaraning Ida Sang Kresna sareng Ida Sang Arjuna, titiang malih-malih rumasa bagia.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.76 O King, remembering this beautiful and holy dialogue between Krishna and Arjuna, I rejoice again and again."
+    },
+    {
+      "no": 77,
+      "devanagari": "तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः । विस्मयो मे महान् राजन्हृष्यामि च पुनः पुनः ॥ १८.७७ ॥",
+      "iast": "tacca saṃsmṛtya saṃsmṛtya rūpamatyadbhutaṃ hareḥ | vismayo me mahān rājanhṛṣyāmi ca punaḥ punaḥ || 18.77 ||",
+      "id": "18.77 Dan, mengingat lagi dan lagi, juga bentuk Hari yang paling menakjubkan itu, sungguh menakjubkan keajaibanku, ya Raja; dan aku bersukacita lagi dan lagi.",
+      "ban": "18.77 Tur, eling malih-malih, taler ring wangun Rahina sane pinih ngangobin punika, angobja katawahan titiange, duh Ratu; tur tiang malih-malih masuka rena.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.77 And, remembering again and again, also the form of that most wondrous Day, wonder my wonders, O King; and I rejoice again and again."
+    },
+    {
+      "no": 78,
+      "devanagari": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥ १८.७८ ॥",
+      "iast": "yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanurdharaḥ | tatra śrīrvijayo bhūtirdhruvā nītirmatirmama || 18.78 ||",
+      "id": "18.78 Dimanapun Krishna, Penguasa Yoga; dimanapun Arjuna, si pengguna busur; ada kemakmuran, kemenangan, kebahagiaan dan kebijakan yang tegas; begitulah keyakinan saya.",
+      "ban": "18.78 Ring dija ja Ida Sang Kresna, Bhatara Yoga; ring dija ja Sang Arjuna, sang ngambel panah; wenten kasukertan, kamenangan, karahayuan miwah kebijakan sane kukuh; punika kapercayaan titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "18.78 Wherever Krishna, Lord of Yoga; wherever Arjuna, the bow wielder; there is prosperity, victory, happiness and firm policy; that's my belief."
+    }
+  ]
+}

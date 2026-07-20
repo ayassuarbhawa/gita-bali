@@ -1,0 +1,606 @@
+{
+  "bab": 10,
+  "judul": {
+    "sanskrit": "Vibhūti-yoga",
+    "id": "Vibhūti Yoga",
+    "ban": "Vibhuti Yoga",
+    "en": "Vibhuti Yoga"
+  },
+  "jumlah_sloka": 42,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 10",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । भूय एव महाबाहो शृणु मे परमं वचः । यत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया ॥ १०.१ ॥",
+      "iast": "śrībhagavānuvāca | bhūya eva mahābāho śṛṇu me paramaṃ vacaḥ | yatte|ahaṃ prīyamāṇāya vakṣyāmi hitakāmyayā || 10.1 ||",
+      "id": "10.1 Sang Bhagavā berkata Sekali lagi, wahai Arjuna yang berlengan perkasa, dengarkanlah kata-kataku yang tertinggi yang akan kunyatakan kepadamu yang terkasih, demi kesejahteraanmu.",
+      "ban": "10.1 Ida Sang Maha Suci ngandika Malih apisan, duh Sang Arjuna sane mawisesa, pirengang atur titiange sane pinih utama sane pacang aturang titiang ring palungguh iratu sane tresnain titiang, anggen karahayuan palungguh iratu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.1 The Blessed One said Once again, O mighty-armed Arjuna, hear my supreme words which I shall proclaim to you beloved, for your welfare."
+    },
+    {
+      "no": 2,
+      "devanagari": "न मे विदुः सुरगणाः प्रभवं न महर्षयः । अहमादिर्हि देवानां महर्षीणां च सर्वशः ॥ १०.२ ॥",
+      "iast": "na me viduḥ suragaṇāḥ prabhavaṃ na maharṣayaḥ | ahamādirhi devānāṃ maharṣīṇāṃ ca sarvaśaḥ || 10.2 ||",
+      "id": "10.2 Baik para dewa maupun orang bijak tidak mengetahui asal usul-Ku; karena dalam segala hal aku adalah sumber dari semua dewa dan orang bijak agung.",
+      "ban": "10.2 Paradewata wiadin parawicaksanane nenten uning ring asal-usul Ulune. santukan ring sakancan parindikan titiang pinaka wit saking sakancan dewata miwah para wiku sane mautama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.2 Neither the gods nor the wise men know My origin; for in all things I am the source of all the gods and great sages."
+    },
+    {
+      "no": 3,
+      "devanagari": "यो मामजमनादिं च वेत्ति लोकमहेश्वरम् । असम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते ॥ १०.३ ॥",
+      "iast": "yo māmajamanādiṃ ca vetti lokamaheśvaram | asammūḍhaḥ sa martyeṣu sarvapāpaiḥ pramucyate || 10.3 ||",
+      "id": "10.3 Barangsiapa mengenal Aku sebagai yang belum dilahirkan dan tidak berawal, sebagai Penguasa alam semesta yang agung, ia, di antara manusia, tidak tertipu dan ia terbebas dari segala dosa.",
+      "ban": "10.3 Sapasiraja sane uning ring Titiang, sane durung embas tur tan madue pangawit, pinaka Sang Mahakuasa sane mautama ring jagate, ipun, ring pantaraning manusa, nenten keni bobab tur ipun bebas saking sakancan dosa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.3 Whoever knows Me as unborn and without beginning, as the great Ruler of the universe, he, among men, is not deceived and he is free from all sin."
+    },
+    {
+      "no": 4,
+      "devanagari": "बुद्धिर्ज्ञानमसम्मोहः क्षमा सत्यं दमः शमः । सुखं दुःखं भवोऽभावो भयं चाभयमेव च ॥ १०.४ ॥",
+      "iast": "buddhirjñānamasammohaḥ kṣamā satyaṃ damaḥ śamaḥ | sukhaṃ duḥkhaṃ bhavo|abhāvo bhayaṃ cābhayameva ca || 10.4 ||",
+      "id": "10.4 Kecerdasan, kebijaksanaan, tanpa khayalan, pengampunan, kebenaran, pengendalian diri, ketenangan, kebahagiaan, kesakitan, keberadaan atau kelahiran, ketidakberadaan atau kematian, ketakutan dan juga keberanian.",
+      "ban": "10.4 Kawicaksanaan, kawicaksanan, tan ilusi, pangampura, kasujatian, ngrajegang raga, anteng, bagia, sakit, wenten utawi embas, tan wenten utawi padem, takut tur taler wanen.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.4 Intelligence, wisdom, non-delusion, forgiveness, truth, self-control, calm, happiness, pain, existence or birth, non-existence or death, fear and also courage."
+    },
+    {
+      "no": 5,
+      "devanagari": "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः । भवन्ति भावा भूतानां मत्त एव पृथग्विधाः ॥ १०.५ ॥",
+      "iast": "ahiṃsā samatā tuṣṭistapo dānaṃ yaśo|ayaśaḥ | bhavanti bhāvā bhūtānāṃ matta eva pṛthagvidhāḥ || 10.5 ||",
+      "id": "10.5 Ketidak-cederaan, kebencian, kepuasan, pertapaan, kemurahan hati, ketenaran, ketenaran (ini) berbagai jenis makhluk yang muncul dari-Ku saja.",
+      "ban": "10.5 Tan nyakitin, nenten seneng, puas, bertapa, loba, kasub, kasub (punika) makudang-kudang soroh makhluk metu saking Titiang kemanten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.5 Non-injury, aversion, contentment, asceticism, generosity, fame, renown (these) various kinds of beings arise from Me alone."
+    },
+    {
+      "no": 6,
+      "devanagari": "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा । मद्भावा मानसा जाता येषां लोक इमाः प्रजाः ॥ १०.६ ॥",
+      "iast": "maharṣayaḥ sapta pūrve catvāro manavastathā | madbhāvā mānasā jātā yeṣāṃ loka imāḥ prajāḥ || 10.6 ||",
+      "id": "10.6 Tujuh orang bijak agung, empat orang bijak kuno dan juga Manu, yang memiliki kekuatan seperti Aku (karena pikiran mereka tertuju pada Aku), lahir dari pikiran (Ku); dari merekalah makhluk-makhluk ini lahir di dunia ini.",
+      "ban": "10.6 Sang wiku sane mautama pitung diri, sang wiku sane petang diri sane dumun tur taler Sang Manu, sane madue kawisesan sakadi Titiang (santukan pikayunan ipun sampun tetep ring Titiang), embas saking pikayunan (Titiang); saking ipun punika sane ngawinang sarwa prani punika embas ring jagate puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.6 The seven great sages, the four ancient sages and also Manu, who had powers like Me (because their minds were fixed on Me), were born from (My) mind; it was from them that these creatures were born in this world."
+    },
+    {
+      "no": 7,
+      "devanagari": "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः । सोऽविकम्पेन योगेन युज्यते नात्र संशयः ॥ १०.७ ॥",
+      "iast": "etāṃ vibhūtiṃ yogaṃ ca mama yo vetti tattvataḥ | so|avikampena yogena yujyate nātra saṃśayaḥ || 10.7 ||",
+      "id": "10.7 Dia yang mengetahui berbagai manifestasi Keberadaan-Ku dan kekuatan Yoga-Ku (ini) menjadi kokoh dalam Yoga yang tak tergoyahkan; tidak ada keraguan tentang hal itu.",
+      "ban": "10.7 Ida sane uning ring makudang-kudang manifestasi Kawentenan Titiang miwah kawisesan (punika) Yoga Titiang dados mapaiketan ring Yoga sane tan kagentosin; tan wenten sane patut kasangsayanin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.7 He who knows the various manifestations of My Being and the power of (this) My Yoga becomes established in unshakable Yoga; there is no doubt about it."
+    },
+    {
+      "no": 8,
+      "devanagari": "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते । इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥ १०.८ ॥",
+      "iast": "ahaṃ sarvasya prabhavo mattaḥ sarvaṃ pravartate | iti matvā bhajante māṃ budhā bhāvasamanvitāḥ || 10.8 ||",
+      "id": "10.8 Saya adalah sumber dari segalanya; dari-Ku segalanya berkembang; Dengan memahami demikian, orang bijaksana yang memiliki meditasi, menyembah Aku.",
+      "ban": "10.8 Ulun ene sumber saluiring paundukan; saking Titiang samian nglimbak; Ngresepang asapunika, para wicaksana sane madue semadi, sembah bakti ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.8 I am the source of everything; from Me everything develops; Understanding thus, wise men who have meditation, worship Me."
+    },
+    {
+      "no": 9,
+      "devanagari": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम् । कथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च ॥ १०.९ ॥",
+      "iast": "maccittā madgataprāṇā bodhayantaḥ parasparam | kathayantaśca māṃ nityaṃ tuṣyanti ca ramanti ca || 10.9 ||",
+      "id": "10.9 Dengan pikiran dan hidup mereka yang sepenuhnya terserap dalam diri-Ku, saling mencerahkan dan selalu berbicara tentang-Ku, mereka merasa puas dan gembira.",
+      "ban": "10.9 Antuk pikayunan lan kahuripannyane sane jangkep ngranjing ring Titiang, saling terang tur setata maosang indik Titiang, ipun rumasa bagia tur bagia.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.9 With their minds and lives completely absorbed in Me, enlightening each other and always talking about Me, they feel content and happy."
+    },
+    {
+      "no": 10,
+      "devanagari": "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम् । ददामि बुद्धियोगं तं येन मामुपयान्ति ते ॥ १०.१० ॥",
+      "iast": "teṣāṃ satatayuktānāṃ bhajatāṃ prītipūrvakam | dadāmi buddhiyogaṃ taṃ yena māmupayānti te || 10.10 ||",
+      "id": "10.10 Bagi mereka yang selalu tabah, memuja-Ku dengan cinta, Aku memberikan Yoga pembedaan yang dengannya mereka datang kepada-Ku.",
+      "ban": "10.10 Majeng ring sang sane setata pageh, ngaturang sembah ring Titiang antuk tresna, Titiang ngicenin Yoga diskriminasi sane kaanggen ipun rauh ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.10 To those who are always steadfast, worshiping Me with love, I give the Yoga of discrimination by which they come to Me."
+    },
+    {
+      "no": 11,
+      "devanagari": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः । नाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता ॥ १०.११ ॥",
+      "iast": "teṣāmevānukampārthamahamajñānajaṃ tamaḥ | nāśayāmyātmabhāvastho jñānadīpena bhāsvatā || 10.11 ||",
+      "id": "10.11 Hanya karena belas kasihan terhadap mereka, Aku, yang berdiam di dalam Diri mereka, menghancurkan kegelapan yang lahir dari ketidaktahuan dengan cahaya pelita pengetahuan.",
+      "ban": "10.11 Wantah sangkaning welas asih ring ipun, Ulun sane malingga ring ipun, ngusak-asik peteng dedete sane embas saking tan uning antuk galang lampu kaweruhan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.11 Only out of compassion for them, I, who dwell within them, destroy the darkness born of ignorance with the light of the lamp of knowledge."
+    },
+    {
+      "no": 12,
+      "devanagari": "अर्जुन उवाच । परं ब्रह्म परं धाम पवित्रं परमं भवान् । पुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम् ॥ १०.१२ ॥",
+      "iast": "arjuna uvāca | paraṃ brahma paraṃ dhāma pavitraṃ paramaṃ bhavān | puruṣaṃ śāśvataṃ divyamādidevamajaṃ vibhum || 10.12 ||",
+      "id": "10.12 Arjuna berkata Engkau adalah Brahman Tertinggi, tempat tinggal tertinggi (atau cahaya tertinggi), penyuci tertinggi, Pribadi ilahi yang kekal, Tuhan purba, yang tidak dilahirkan dan ada di mana-mana.",
+      "ban": "10.12 Arjuna ngandikayang Cening wantah Brahman Maha Luhur, genah linggih (utawi galang luhur), sang nyuciang luhur, Sang Hyang Ilahi sane langgeng, Ida Sang Hyang Widhi Wasa, sane nenten embas tur wenten ring dija-dija.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.12 Arjuna says You are the Supreme Brahman, the supreme abode (or supreme light), the supreme purifier, the eternal divine Person, the primordial God, who is unborn and omnipresent."
+    },
+    {
+      "no": 13,
+      "devanagari": "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा । असितो देवलो व्यासः स्वयं चैव ब्रवीषि मे ॥ १०.१३ ॥",
+      "iast": "āhustvāmṛṣayaḥ sarve devarṣirnāradastathā | asito devalo vyāsaḥ svayaṃ caiva bravīṣi me || 10.13 ||",
+      "id": "10.13 Semua orang bijak telah menyatakan Engkau, begitu pula orang bijak suci Narada; begitu juga Asita, Devala dan Vyasa; dan sekarang Engkau sendiri yang berkata demikian kepadaku.",
+      "ban": "10.13 Sakancan para wiku sampun nguningayang indik Palungguh IRatu, kadi asapunika taler sang wiku suci Narada; asapunika taler Sang Asita, Dewala miwah Sang Wiyasa; tur sane mangkin Palungguh IRatu ngraga sane ngandika kadi asapunika ring tiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.13 All the sages have declared Thee, so has the holy sage Narada; so did Asita, Devala and Vyasa; and now you yourself say so to me."
+    },
+    {
+      "no": 14,
+      "devanagari": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव । न हि ते भगवन्व्यक्तिं विदुर्देवा न दानवाः ॥ १०.१४ ॥",
+      "iast": "sarvametadṛtaṃ manye yanmāṃ vadasi keśava | na hi te bhagavanvyaktiṃ vidurdevā na dānavāḥ || 10.14 ||",
+      "id": "10.14 Aku percaya bahwa semua yang Engkau katakan kepadaku adalah benar, ya Krishna; sesungguhnya, ya Tuhan yang diberkati! baik para dewa maupun iblis tidak mengetahui manifestasi (asal usul)-Mu.",
+      "ban": "10.14 Titiang pracaya, sakancan sane sampun baosang Palungguh IRatu ring titiang, punika patut, duh Sang Kresna; sujatiné, duh Ida Sang Hyang Widi Wasa! dewa-dewa wiadin setan-setan nenten uning ring manifestasi (asal-usul) Palungguh IRatu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.14 I believe that everything You have told me is true, O Krishna; verily, O blessed God! neither the gods nor the demons know Your manifestation (origin)."
+    },
+    {
+      "no": 15,
+      "devanagari": "स्वयमेवात्मनात्मानं वेत्थ त्वं पुरुषोत्तम । भूतभावन भूतेश देवदेव जगत्पते ॥ १०.१५ ॥",
+      "iast": "svayamevātmanātmānaṃ vettha tvaṃ puruṣottama | bhūtabhāvana bhūteśa devadeva jagatpate || 10.15 ||",
+      "id": "Swami Sivananda tidak mengomentari sloka ini",
+      "ban": "Swami Siwananda nenten ngicenin komentar indik sloka puniki .",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Swami Sivananda does not comment on this sloka"
+    },
+    {
+      "no": 16,
+      "devanagari": "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः । याभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि ॥ १०.१६ ॥",
+      "iast": "vaktumarhasyaśeṣeṇa divyā hyātmavibhūtayaḥ | yābhirvibhūtibhirlokānimāṃstvaṃ vyāpya tiṣṭhasi || 10.16 ||",
+      "id": "10.16 Engkau seharusnya menceritakan, tanpa syarat, tentang keagungan ilahi-Mu yang melaluinya Engkau ada, meliputi seluruh dunia ini. (Tidak ada orang lain yang bisa melakukannya.)",
+      "ban": "10.16 Palungguh IRatu patut nyaritayang, tan pawates, indik kaluihan ilahi Palungguh IRatu sane malarapan antuk Palungguh IRatu wenten, sane nglikub jagate sami. (Tusing ada anak lenan ane nyidayang nglaksanayang.)",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.16 You should tell, without reservation, about Your divine majesty through which You exist, pervading the entire world. (No one else can do it.)"
+    },
+    {
+      "no": 17,
+      "devanagari": "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन् । केषु केषु च भावेषु चिन्त्योऽसि भगवन्मया ॥ १०.१७ ॥",
+      "iast": "kathaṃ vidyāmahaṃ yogiṃstvāṃ sadā paricintayan | keṣu keṣu ca bhāveṣu cintyo|asi bhagavanmayā || 10.17 ||",
+      "id": "10.17 Bagaimana aku, ketika bermeditasi, dapat mengenal-Mu, wahai Yogi? Dalam aspek atau hal apa, wahai berkah \nTuhan, apakah Engkau harus dipikirkan olehku?",
+      "ban": "10.17 Sapunapi antuk titiang, rikalaning matapa, uning ring Palungguh IRatu, duh Yogi? Ring aspek napi utawi parindikan, duh amertha \nRatu, napike Palungguh IRatu patut mikayunin titiang?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.17 How can I, when meditating, know You, O Yogi? In what aspect or matter, O blessing \nLord, do you have to think about me?"
+    },
+    {
+      "no": 18,
+      "devanagari": "विस्तरेणात्मनो योगं विभूतिं च जनार्दन । भूयः कथय तृप्तिर्हि शृण्वतो नास्ति मेऽमृतम् ॥ १०.१८ ॥",
+      "iast": "vistareṇātmano yogaṃ vibhūtiṃ ca janārdana | bhūyaḥ kathaya tṛptirhi śṛṇvato nāsti me|amṛtam || 10.18 ||",
+      "id": "10.18 Ceritakan lagi padaku secara rinci, wahai Krishna, tentang kekuatan dan kemuliaan Yoga-Mu; karena aku tidak puas dengan apa yang kudengar tentang ucapan-Mu yang memberi kehidupan dan seperti nektar.",
+      "ban": "10.18 Indayang tuturang malih sajangkepnyane, duh Sang Kresna, indik kawisesan miwah kaluihan Yoga Palungguh IRatu; santukan titiang nenten cumpu ring napi sane piragi titiang indik sabdan Palungguh IRatu sane ngicenin urip tur sakadi nektar.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.18 Tell me again in detail, O Krishna, about the power and glory of Your Yoga; for I am not satisfied with what I hear of Your life-giving and nectar-like words."
+    },
+    {
+      "no": 19,
+      "devanagari": "श्रीभगवानुवाच । हन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः । प्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे ॥ १०.१९ ॥",
+      "iast": "śrībhagavānuvāca | hanta te kathayiṣyāmi divyā hyātmavibhūtayaḥ | prādhānyataḥ kuruśreṣṭha nāstyanto vistarasya me || 10.19 ||",
+      "id": "10.19 Sang Bhagavā berkata Baiklah! Sekarang Aku akan menyatakan kepadamu keagungan Ilahi-Ku yang menonjol, wahai Arjuna; penjelasan rincinya tidak ada habisnya.",
+      "ban": "10.19 Ida Sang Hyang Widhi Wasa ngandika OK! Sane mangkin titiang pacang nyinahang kaluihan Ilahi titiang sane luih, duh Arjuna; panlataran sane jangkep nenten wenten watesnyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.19 The Blessed One said OK! Now I will reveal to you My outstanding Divine majesty, O Arjuna; the detailed explanations are endless."
+    },
+    {
+      "no": 20,
+      "devanagari": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः । अहमादिश्च मध्यं च भूतानामन्त एव च ॥ १०.२० ॥",
+      "iast": "ahamātmā guḍākeśa sarvabhūtāśayasthitaḥ | ahamādiśca madhyaṃ ca bhūtānāmanta eva ca || 10.20 ||",
+      "id": "10.20 Akulah Diri, O Gudakesa, yang bersemayam di hati semua makhluk; Akulah yang awal, yang tengah, dan yang akhir dari semua makhluk.",
+      "ban": "10.20 Titiang wantah Sang Hyang Atma, duh Gudakesa, sane malingga ring manah sarwa prani; Ulun ene pangawit, tengah muah pamuput sakancan ane ada di gumine.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.20 I am the Self, O Gudakesa, who resides in the hearts of all beings; I am the beginning, the middle, and the end of all creatures."
+    },
+    {
+      "no": 21,
+      "devanagari": "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान् । मरीचिर्मरुतामस्मि नक्षत्राणामहं शशी ॥ १०.२१ ॥",
+      "iast": "ādityānāmahaṃ viṣṇurjyotiṣāṃ raviraṃśumān | marīcirmarutāmasmi nakṣatrāṇāmahaṃ śaśī || 10.21 ||",
+      "id": "10.21 Di antara (dua belas) Aditya, saya Wisnu; di antara tokoh-tokoh termasyhur, matahari bersinar; Saya Marichi di antara (tujuh atau empat puluh sembilan) Marut; di antara bintang-bintang, bulan adalah aku.",
+      "ban": "10.21 Ring pantaraning (roras) Aditya, titiang wantah Wisnu; ring pantaraning sang sane masunaran, suryane masunaran; Titiang Marichi ring pantaraning (pitu utawi petang dasa sia) Marut; ring pantaraning bintang, bulane punika titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.21 Among the (twelve) Adityas, I am Vishnu; among the luminaries, the sun shines; I am Marichi among the (seven or forty-nine) Maruts; among the stars, the moon is me."
+    },
+    {
+      "no": 22,
+      "devanagari": "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः । इन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना ॥ १०.२२ ॥",
+      "iast": "vedānāṃ sāmavedo|asmi devānāmasmi vāsavaḥ | indriyāṇāṃ manaścāsmi bhūtānāmasmi cetanā || 10.22 ||",
+      "id": "10.22 Di antara Weda Aku adalah Sama-Veda; Aku adalah Vasava di antara para dewa; di antara indra-indra akulah pikiran; dan Aku adalah kecerdasan di antara makhluk hidup.",
+      "ban": "10.22 Ring pantaraning Weda titiang wantah Sama-Weda; Titiang wantah Wasawa ring pantaraning para dewa; saking indria titiang wantah pikayunan; tur titiang puniki kawicaksanan ring pantaraning sarwa prani.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.22 Among the Vedas I am Sama-Veda; I am Vasava among the gods; of the senses I am the mind; and I am intelligence among living creatures."
+    },
+    {
+      "no": 23,
+      "devanagari": "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम् । वसूनां पावकश्चास्मि मेरुः शिखरिणामहम् ॥ १०.२३ ॥",
+      "iast": "rudrāṇāṃ śaṅkaraścāsmi vitteśo yakṣarakṣasām | vasūnāṃ pāvakaścāsmi meruḥ śikhariṇāmaham || 10.23 ||",
+      "id": "10.23 Dan di antara para Rudra aku adalah Sankara; di antara para Yaksha dan Rakshasa, Penguasa kekayaan (Kubera); di antara para Vasus aku adalah Pavaka (api); dan di antara (tujuh) gunung akulah Meru.",
+      "ban": "10.23 Tur saking para Rudra titiang wantah Sankara; ring pantaraning Yaksa miwah Raksasa, Ida Bhatara kasugihan (Kubera); ring pantaraning para Vasus titiang wantah Pavaka (api); tur ring pantaraning (pitu) gunung punika titiang Meru.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.23 And of the Rudras I am Sankara; among the Yakshas and Rakshasas, the Lord of wealth (Kubera); among the Vasus I am Pavaka (fire); and among the (seven) mountains I am Meru."
+    },
+    {
+      "no": 24,
+      "devanagari": "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम् । सेनानीनामहं स्कन्दः सरसामस्मि सागरः ॥ १०.२४ ॥",
+      "iast": "purodhasāṃ ca mukhyaṃ māṃ viddhi pārtha bṛhaspatim | senānīnāmahaṃ skandaḥ sarasāmasmi sāgaraḥ || 10.24 ||",
+      "id": "10.24 Dan di antara para pendeta rumah tangga (raja), wahai Arjuna, ketahuilah Aku sebagai pemimpin, Brihaspati; di antara para jenderal angkatan darat saya Skana; di antara danau akulah lautan.\n'",
+      "ban": "10.24 Tur ring pantaraning para pandita puri (raja), duh Arjuna, uningin Titiang pinaka pamucuk, Ida Sang Brihaspati; ring pantaraning jenderal wadua balan titiange Skana; ring pantaraning danune titiang wantah samudra.\n'",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.24 And among the priests of the (king's) household, O Arjuna, know Me as the chief, Brihaspati; among my army generals Skana; among the lakes I am the ocean.\n'"
+    },
+    {
+      "no": 25,
+      "devanagari": "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम् । यज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः ॥ १०.२५ ॥",
+      "iast": "maharṣīṇāṃ bhṛgurahaṃ girāmasmyekamakṣaram | yajñānāṃ japayajño|asmi sthāvarāṇāṃ himālayaḥ || 10.25 ||",
+      "id": "10.25 Di antara para resi agung aku adalah Bhrigu; di antara kata-kata akulah satu suku kata (Om); di antara pengorbanan aku adalah pengorbanan pengulangan diam-diam; di antara benda-benda tak bergerak Aku adalah Himalaya.",
+      "ban": "10.25 Ring pantaraning para wiku sane mautama titiang wantah Bhrigu; ring pantaraning kruna-kruna titiang wantah asiki suku kata (Om); ring pantaraning yadnya titiange inggih punika yadnya pangulangan meneng; ring pantaraning sane nenten magingsir titiang wantah Himalaya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.25 Among the great sages I am Bhrigu; among the words I am one syllable (Om); among my sacrifices is the sacrifice of silent repetition; among immovable things I am the Himalayas."
+    },
+    {
+      "no": 26,
+      "devanagari": "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः । गन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः ॥ १०.२६ ॥",
+      "iast": "aśvatthaḥ sarvavṛkṣāṇāṃ devarṣīṇāṃ ca nāradaḥ | gandharvāṇāṃ citrarathaḥ siddhānāṃ kapilo muniḥ || 10.26 ||",
+      "id": "10.26 Di antara semua pohon (saya) Peepul; di antara para resi ilahi, saya adalah Narada; di antara Gandharwa, Chitraratha; di antara yang sempurna, orang bijak Kapila.",
+      "ban": "10.26 Ring pantaraning sakancan (tiang) punyan Peepul; ring pantaraning para resi ilahi, titiang wantah Narada; ring pantaraning para Gandharwa, inggih punika Chitraratha; ring pantaraning sane paripurna, sang resi Kapila.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.26 Among all (my) Peepul trees; among the divine sages, I am Narada; among the Gandharvas, Chitraratha; among the perfect, the sage Kapila."
+    },
+    {
+      "no": 27,
+      "devanagari": "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम् । ऐरावतं गजेन्द्राणां नराणां च नराधिपम् ॥ १०.२७ ॥",
+      "iast": "uccaiḥśravasamaśvānāṃ viddhi māmamṛtodbhavam | airāvataṃ gajendrāṇāṃ narāṇāṃ ca narādhipam || 10.27 ||",
+      "id": "10.27 Kenalilah Aku sebagai Ucchaisrava yang lahir dari nektar, di antara kuda; di antara gajah yang agung (saya) Airavata; dan, di antara manusia, raja.",
+      "ban": "10.27 Uningin Titiang pinaka Ucchaisrava sane embas saking nektar, ring pantaraning kuda; ring pantaraning gajah sane mautama (I) Airavata; tur, ring pantaraning manusa, pararatu.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.27 Know Me as Ucchaisrava born of nectar, among horses; among the great elephants (I) Airavata; and, among men, kings."
+    },
+    {
+      "no": 28,
+      "devanagari": "आयुधानामहं वज्रं धेनूनामस्मि कामधुक् । प्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः ॥ १०.२८ ॥",
+      "iast": "āyudhānāmahaṃ vajraṃ dhenūnāmasmi kāmadhuk | prajanaścāsmi kandarpaḥ sarpāṇāmasmi vāsukiḥ || 10.28 ||",
+      "id": "10.28 Di antara senjata Akulah petir; di antara sapi-sapi aku adalah sapi pengabul keinginan yang disebut Kamadhenu; Akulah nenek moyang, dewa cinta; di antara ular aku adalah Vasuki.",
+      "ban": "10.28 Ring pantaran sanjatane, Tiang puniki kilap. ring pantaraning sampi titiang wantah sampi sane nglaksanayang pangaptin sane mawasta Kamadhenu; Titiang leluhur, dewa tresna; ring pantaraning ula titiang wantah Vasuki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.28 Among weapons I am the thunderbolt; among cows I am the wish-fulfilling cow called Kamadhenu; I am the ancestor, the god of love; among snakes I am Vasuki."
+    },
+    {
+      "no": 29,
+      "devanagari": "अनन्तश्चास्मि नागानां वरुणो यादसामहम् । पितॄणामर्यमा चास्मि यमः संयमतामहम् ॥ १०.२९ ॥",
+      "iast": "anantaścāsmi nāgānāṃ varuṇo yādasāmaham | pitṝṇāmaryamā cāsmi yamaḥ saṃyamatāmaham || 10.29 ||",
+      "id": "10.29 Saya Ananta di antara para Naga; Aku adalah Varuna di antara para dewa air; Aku adalah Aryaman di antara Surai; Saya Yama di antara para gubernur.",
+      "ban": "10.29 Titiang puniki Ananta ring pantaraning wong Naga; Titiang puniki Sang Varuna ring pantaraning dewa-dewa toya; Titiang puniki Aryaman ring pantaraning Mane; Titiang puniki Yama ring pantaraning para gubernur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.29 I am Ananta among the Nagas; I am Varuna among the water gods; I am Aryaman among the Manes; I am Yama among the governors."
+    },
+    {
+      "no": 30,
+      "devanagari": "प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम् । मृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम् ॥ १०.३० ॥",
+      "iast": "prahlādaścāsmi daityānāṃ kālaḥ kalayatāmaham | mṛgāṇāṃ ca mṛgendro|ahaṃ vainateyaśca pakṣiṇām || 10.30 ||",
+      "id": "10.30 Dan aku adalah Prahlada di antara para setan, di antara para penghitung aku adalah waktu; di antara binatang aku adalah singa, dan Vainateya (Garuda) di antara burung.",
+      "ban": "10.30 Lan titiang Prahlada ring pantaraning setan, ring pantaraning konter titiang galah; ring pantaraning buron titiang wantah singa, miwah Vainateya (Garuda) ring pantaraning paksi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.30 And I am Prahlada among the devils, among the counters I am time; among animals I am a lion, and Vainateya (Garuda) among birds."
+    },
+    {
+      "no": 31,
+      "devanagari": "पवनः पवतामस्मि रामः शस्त्रभृतामहम् । झषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी ॥ १०.३१ ॥",
+      "iast": "pavanaḥ pavatāmasmi rāmaḥ śastrabhṛtāmaham | jhaṣāṇāṃ makaraścāsmi srotasāmasmi jāhnavī || 10.31 ||",
+      "id": "10.31 Di antara para pemurni (atau yang mempercepat) Akulah angin; Rama di antara para pejuang adalah aku; di antara ikan-ikan akulah hiu; di antara aliran-aliran akulah Gangga.",
+      "ban": "10.31 Saking sang sane nyuciang (utawi sane ngawinang urip) Tiang puniki angin. Rama ring pantaraning prajurit inggih punika titiang; ring pantaraning ulam titiang wantah hiu; ring pantaraning tukad-tukade titiang wantah Ganga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.31 Of the purifiers (or quickeners) I am the wind; Rama among warriors is I; among fish I am the shark; among the streams I am the Ganga."
+    },
+    {
+      "no": 32,
+      "devanagari": "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन । अध्यात्मविद्या विद्यानां वादः प्रवदतामहम् ॥ १०.३२ ॥",
+      "iast": "sargāṇāmādirantaśca madhyaṃ caivāhamarjuna | adhyātmavidyā vidyānāṃ vādaḥ pravadatāmaham || 10.32 ||",
+      "id": "10.32 Di antara ciptaan-ciptaan Akulah yang awal, tengah, dan juga akhir, wahai Arjuna; di antara ilmu-ilmu akulah ilmu tentang Diri; dan saya adalah logika di antara para kontroversialis.",
+      "ban": "10.32 Ring pantaraning pakardin titiang wantah pangawit, tengah miwah pamuput, duh Sang Arjuna; ring pantaraning ilmu-ilmu punika titiang wantah ilmu Sang Hyang Atma; tur titiang logika ring pantaraning kontroversialis.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.32 Among creations I am the beginning, the middle and the end, O Arjuna; among the sciences I am the science of the Self; and I am logic among controversialists."
+    },
+    {
+      "no": 33,
+      "devanagari": "अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च । अहमेवाक्षयः कालो धाताहं विश्वतोमुखः ॥ १०.३३ ॥",
+      "iast": "akṣarāṇāmakāro|asmi dvandvaḥ sāmāsikasya ca | ahamevākṣayaḥ kālo dhātāhaṃ viśvatomukhaḥ || 10.33 ||",
+      "id": "10.33 Di antara huruf-huruf abjad, terdapat huruf 'A' I dan rangkap di antara huruf majemuk. Akulah waktu yang tiada habisnya dan abadi; Akulah pemberi (hasil perbuatan) yang memiliki \nmenghadap ke segala arah.",
+      "ban": "10.33 Ring pantaraning aksara abjad, wenten aksara ‘A’ I lan ganda ring pantaraning aksara majemuk. Titiang puniki masa sane tan pawates tur langgeng; Titiang sane ngicenin (pikolih parilaksana) sane madue . \nmarep ring sakancan arah.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.33 Among the letters of the alphabet, there are letters 'A' I and doubles among compound letters. I am endless and eternal time; I am the giver (of the results of actions) who owns \nfacing all directions."
+    },
+    {
+      "no": 34,
+      "devanagari": "मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम् । कीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा ॥ १०.३४ ॥",
+      "iast": "mṛtyuḥ sarvaharaścāhamudbhavaśca bhaviṣyatām | kīrtiḥ śrīrvākca nārīṇāṃ smṛtirmedhā dhṛtiḥ kṣamā || 10.34 ||",
+      "id": "10.34 Dan Akulah Kematian yang melahap segalanya, dan kemakmuran bagi mereka yang menjadi makmur; di antara sifat-sifat feminin (Saya) ketenaran, kemakmuran, ucapan, ingatan, kecerdasan, keteguhan dan pengampunan.",
+      "ban": "10.34 Tur Ulun ene Pati ane ngrusak saluiring ane ada, tur Ulun ngrahayuang anake ane sugih. pantaraning sifat-sifat feminim (I) kasub, kasukertan, tutur, ingatan, kawicaksanaan, tetep lan pangampura.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.34 And I am Death who devours everything, and prosperity to those who prosper; among the feminine qualities (I) fame, prosperity, speech, memory, intelligence, constancy and forgiveness."
+    },
+    {
+      "no": 35,
+      "devanagari": "बृहत्साम तथा साम्नां गायत्री छन्दसामहम् । मासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः ॥ १०.३५ ॥",
+      "iast": "bṛhatsāma tathā sāmnāṃ gāyatrī chandasāmaham | māsānāṃ mārgaśīrṣo|ahamṛtūnāṃ kusumākaraḥ || 10.35 ||",
+      "id": "10.35 Di antara himne-himne tersebut juga saya adalah Brihatsaman; di antara meter Gayatri adalah aku; di antara bulan aku adalah Margasirsha; di antara musim-musim (saya) adalah musim berbunga-bunga.",
+      "ban": "10.35 Ring pantaraning kidung-kidung punika taler titiang dados Brihatsaman; ring pantaraning meter Gayatri punika titiang; ring pantaraning bulan titiang Margasirsha; ring pantaraning (tiang) musim inggih punika musim sekar.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.35 Among these hymns also I am Brihatsaman; among Gayatri's meters is me; among the moons I am Margasirsha; among (my) seasons is the season of flowers."
+    },
+    {
+      "no": 36,
+      "devanagari": "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम् । जयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम् ॥ १०.३६ ॥",
+      "iast": "dyūtaṃ chalayatāmasmi tejastejasvināmaham | jayo|asmi vyavasāyo|asmi sattvaṃ sattvavatāmaham || 10.36 ||",
+      "id": "10.36 Akulah perjudian para penipu; Akulah kemegahan dari keagungan; Akulah kemenangan; Akulah yang menentukan (dari orang-orang yang bertekad); Saya adalah kebaikan dari yang baik.",
+      "ban": "10.36 Tiang puniki judi parapenipu; Ulun ene kaluihan ane luih; Ulun ene kamenangan; Titiang sane mutusang (ring sang sane sampun matetujon); Tiang sane becik saking sane becik.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.36 I am the gambling of cheaters; I am the splendor of majesty; I am victory; I am the decisive one (of those who are determined); I am the good of the good."
+    },
+    {
+      "no": 37,
+      "devanagari": "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनञ्जयः । मुनीनामप्यहं व्यासः कवीनामुशना कविः ॥ १०.३७ ॥",
+      "iast": "vṛṣṇīnāṃ vāsudevo|asmi pāṇḍavānāṃ dhanañjayaḥ | munīnāmapyahaṃ vyāsaḥ kavīnāmuśanā kaviḥ || 10.37 ||",
+      "id": "10.37 Di antara para Vrishni aku adalah Vaasudeva; di antara para Pandawa aku adalah Arjuna; di antara orang bijak aku adalah Vyasa; di antara para Penyair aku adalah Usanas, sang penyair.",
+      "ban": "10.37 Ring pantaraning para Wisna titiang wantah Vaasudewa; ring pantaraning pandawane titiang Arjuna; ring pantaraning para resi titiang wantah Vyasa; ring pantaraning Para Kawi titiang Usanas, sang kawi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.37 Among the Vrishnis I am Vaasudeva; among the Pandavas I am Arjuna; among the sages I am Vyasa; among the Poets I am Usanas, the poet."
+    },
+    {
+      "no": 38,
+      "devanagari": "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम् । मौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम् ॥ १०.३८ ॥",
+      "iast": "daṇḍo damayatāmasmi nītirasmi jigīṣatām | maunaṃ caivāsmi guhyānāṃ jñānaṃ jñānavatāmaham || 10.38 ||",
+      "id": "10.38 Di antara mereka yang menghukum, akulah tongkatnya; di antara mereka yang mencari kemenangan, saya adalah negarawan; dan juga di antara rahasia, aku diam; pengetahuan di antara orang-orang yang mengetahui Aku.",
+      "ban": "10.38 Di pantaran anake ane ngukum, Ulun ene tungked. ring pantaraning sang sane ngrereh kamenangan, titiang dados negarawan; tur taler ring pantaran rahasia, titiang meneng; kaweruhan ring pantaran anake sane uning ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.38 Among those who punish, I am the rod; among those who seek victory, I am a statesman; and also among secrets, I am silent; knowledge among those who know Me."
+    },
+    {
+      "no": 39,
+      "devanagari": "यच्चापि सर्वभूतानां बीजं तदहमर्जुन । न तदस्ति विना यत्स्यान्मया भूतं चराचरम् ॥ १०.३९ ॥",
+      "iast": "yaccāpi sarvabhūtānāṃ bījaṃ tadahamarjuna | na tadasti vinā yatsyānmayā bhūtaṃ carācaram || 10.39 ||",
+      "id": "10.39 Dan apapun benih segala makhluk, itulah aku, wahai Arjuna; tidak ada makhluk, baik yang bergerak maupun yang tidak bergerak, yang dapat hidup tanpa Aku.",
+      "ban": "10.39 Tur napi ja sane dados bibit sarwa prani, punika titiang, duh Sang Arjuna; tan wenten sarwa prani, yadiastun sane magerak utawi sane nenten magerak, sane prasida maurip tanpa Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.39 And whatever is the seed of all creatures, that is I, O Arjuna; no creature, whether moving or immovable, can live without Me."
+    },
+    {
+      "no": 40,
+      "devanagari": "नान्तोऽस्ति मम दिव्यानां विभूतीनां परन्तप । एष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया ॥ १०.४० ॥",
+      "iast": "nānto|asti mama divyānāṃ vibhūtīnāṃ parantapa | eṣa tūddeśataḥ prokto vibhūtervistaro mayā || 10.40 ||",
+      "id": "10.40 Keagungan ketuhanan-Ku tiada habisnya, wahai Arjuna, namun inilah pernyataan singkat dari-Ku mengenai keistimewaan keagungan ketuhanan-Ku.",
+      "ban": "10.40 Kagungan Ida Sang Hyang Widhi Wasa tan wenten watesnyane, duh Arjuna, nanging puniki wantah baos cutet saking Titiang ngenenin indik ceciren khusus Ida Sang Hyang Widhi Wasa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.40 My divine majesty is endless, O Arjuna, but this is a brief statement from Me regarding the special features of My divine majesty."
+    },
+    {
+      "no": 41,
+      "devanagari": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा । तत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम् ॥ १०.४१ ॥",
+      "iast": "yadyadvibhūtimatsattvaṃ śrīmadūrjitameva vā | tattadevāvagaccha tvaṃ mama tejoṃśasambhavam || 10.41 ||",
+      "id": "10.41 Makhluk apa pun yang mulia, makmur atau berkuasa, ketahuilah bahwa engkau adalah perwujudan sebagian dari kemegahan-Ku.",
+      "ban": "10.41 Saluiring sarwa prani sane luhur, sugih utawi mawisesa, uningin ragane wantah perwujudan bagian saking kaluihan Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.41 Whatever beings are noble, prosperous or powerful, know that you are the embodiment of a portion of My splendor."
+    },
+    {
+      "no": 42,
+      "devanagari": "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन । विष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत् ॥ १०.४२ ॥",
+      "iast": "athavā bahunaitena kiṃ jñātena tavārjuna | viṣṭabhyāhamidaṃ kṛtsnamekāṃśena sthito jagat || 10.42 ||",
+      "id": "10.42 Namun, apa manfaatnya bagimu mengetahui semua rincian ini, wahai Arjuna? Aku ada, mendukung seluruh dunia ini dengan satu bagian dari DiriKu.",
+      "ban": "10.42 Nanging, napike pikenohnyane yening ragane uning ring sakancan parindikan punika, duh Sang Arjuna? Titiang wenten, ngadukung makasami jagat puniki antuk siki bagian Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "10.42 However, of what benefit will it be to you to know all these details, O Arjuna? I exist, supporting this entire world with one part of Me."
+    }
+  ]
+}

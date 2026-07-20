@@ -1,0 +1,676 @@
+{
+  "bab": 6,
+  "judul": {
+    "sanskrit": "Ātma-saṃyama-yoga",
+    "id": "Ātma Saṃyama Yoga",
+    "ban": "Yoga Atma Samyama",
+    "en": "Atma Saṃyama Yoga"
+  },
+  "jumlah_sloka": 47,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 6",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । अनाश्रितः कर्मफलं कार्यं कर्म करोति यः । स संन्यासी च योगी च न निरग्निर्न चाक्रियः ॥ ६.१ ॥",
+      "iast": "śrībhagavānuvāca | anāśritaḥ karmaphalaṃ kāryaṃ karma karoti yaḥ | sa saṃnyāsī ca yogī ca na niragnirna cākriyaḥ || 6.1 ||",
+      "id": "6.1 Bhagavā bersabda Dia yang melaksanakan kewajibannya tanpa bergantung pada hasil perbuatannya, dia adalah seorang Sannyasi dan Yogi; bukan dia yang tanpa api dan tanpa tindakan.",
+      "ban": "6.1 Ida Sang Hyang Widhi Wasa ngandika Ida sane ngamargiang swadharma tan ngandelang pikolih parilaksanannyane, Ida wantah Sannyasi lan Yogi; boya ja Ida sane tan madue geni tur tan madue parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.1 The Blessed One said He who performs his duties without depending on the results of his actions, he is a Sannyasi and Yogi; not he who is without fire and without action."
+    },
+    {
+      "no": 2,
+      "devanagari": "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव । न ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन ॥ ६.२ ॥",
+      "iast": "yaṃ saṃnyāsamiti prāhuryogaṃ taṃ viddhi pāṇḍava | na hyasaṃnyastasaṅkalpo yogī bhavati kaścana || 6.2 ||",
+      "id": "6.2 Apakah engkau, wahai Arjuna, mengetahui Yoga sebagai sesuatu yang mereka sebut pelepasan keduniawian; tak seorang pun benar-benar menjadi seorang Yogi jika ia tidak meninggalkan pikiran.",
+      "ban": "6.2 Napike ragane, duh Sang Arjuna, uning ring Yoga sane kabaos ipun penolakan; nenten wenten sane sujati dados Yogi yening nenten ninggalin pikayunan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.2 Do you, O Arjuna, know Yoga as what they call renunciation; no one truly becomes a Yogi if he does not abandon the mind."
+    },
+    {
+      "no": 3,
+      "devanagari": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते । योगारूढस्य तस्यैव शमः कारणमुच्यते ॥ ६.३ ॥",
+      "iast": "ārurukṣormuneryogaṃ karma kāraṇamucyate | yogārūḍhasya tasyaiva śamaḥ kāraṇamucyate || 6.3 ||",
+      "id": "6.3 Bagi seorang bijak yang ingin mencapai Yoga, tindakan dikatakan sebagai sarana; bagi orang bijak yang telah mencapai Yoga, kelambanan (iescence) dikatakan sebagai sarana.",
+      "ban": "6.3 Majeng ring sang wicaksana sane meled ngamolihang Yoga, parilaksana kabaos sarana; ring para resi sane sampun ngamolihang Yoga, kelesuan (iescence) kabaos pinaka sarana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.3 For a sage who wishes to attain Yoga, action is said to be a means; for sages who have attained Yoga, indolence (iescence) is said to be a means."
+    },
+    {
+      "no": 4,
+      "devanagari": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते । सर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते ॥ ६.४ ॥",
+      "iast": "yadā hi nendriyārtheṣu na karmasvanuṣajjate | sarvasaṅkalpasaṃnyāsī yogārūḍhastadocyate || 6.4 ||",
+      "id": "6.4 Ketika seseorang tidak melekat pada objek-objek indera atau pada tindakan, setelah meninggalkan semua pikiran, maka ia dikatakan telah mencapai Yoga.",
+      "ban": "6.4 Rikalaning anake tan mapaiketan ring benda indriya utawi ring parilaksana, sampun nilar sakancan pikayunan, raris kabaos sampun ngamolihang Yoga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.4 When one is not attached to sense objects or to action, having abandoned all thoughts, then he is said to have attained Yoga."
+    },
+    {
+      "no": 5,
+      "devanagari": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥ ६.५ ॥",
+      "iast": "uddharedātmanātmānaṃ nātmānamavasādayet | ātmaiva hyātmano bandhurātmaiva ripurātmanaḥ || 6.5 ||",
+      "id": "6.5 Seseorang harus membesarkan dirinya sendiri; janganlah ada orang yang merendahkan dirinya; karena Diri sendiri adalah sahabat bagi diri sendiri, dan Diri sendiri adalah musuh bagi diri sendiri.",
+      "ban": "6.5 Anake patut ngagungang raga; sampunang wenten anak sane ngasorang deweknyane; santukan titiang puniki sawitran titiange niri, tur titiang puniki meseh titiange niri.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.5 One must magnify oneself; let no one humble himself; because I am my own friend, and I am my own enemy."
+    },
+    {
+      "no": 6,
+      "devanagari": "बन्धुरात्मात्मनस्तस्य येनात्मैवात्मना जितः । अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत् ॥ ६.६ ॥",
+      "iast": "bandhurātmātmanastasya yenātmaivātmanā jitaḥ | anātmanastu śatrutve vartetātmaiva śatruvat || 6.6 ||",
+      "id": "6.6 Diri adalah teman dari diri orang yang dengannya diri telah dikepung oleh Diri, namun bagi diri yang tidak dikepung, Diri ini berada dalam posisi musuh, seperti musuh (eksternal).",
+      "ban": "6.6 Sang Atma inggih punika sawitran Sang Atma sang sane sareng Atma sampun kaiterin olih Atma, nanging majeng ring Atma sane nenten kaiterin, Atma puniki wenten ring posisi musuh, sakadi musuh (eksternal).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.6 The Self is the friend of the self of the person with whom the Self has been surrounded by the Self, but for the self who is not surrounded, this Self is in an enemy position, like an enemy (external)."
+    },
+    {
+      "no": 7,
+      "devanagari": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः । शीतोष्णसुखदुःखेषु तथा मानापमानयोः ॥ ६.७ ॥",
+      "iast": "jitātmanaḥ praśāntasya paramātmā samāhitaḥ | śītoṣṇasukhaduḥkheṣu tathā mānāpamānayoḥ || 6.7 ||",
+      "id": "6.7 Diri Tertinggi dari dia yang mampu mengendalikan diri dan damai seimbang dalam dingin dan panas, kesenangan dan kesakitan, serta dalam kehormatan dan ketidakhormatan.",
+      "ban": "6.7 Sang Hyang Widhi Wasa sane prasida ngendaliang raga tur trepti ngimbangin ring dingin lan panes, suka lan sakit, lan ring kahormatan lan kaon.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.7 The Supreme Self of him who is self-controlled and peacefully balanced in cold and heat, pleasure and pain, and in honor and dishonor."
+    },
+    {
+      "no": 8,
+      "devanagari": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः । युक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः ॥ ६.८ ॥",
+      "iast": "jñānavijñānatṛptātmā kūṭastho vijitendriyaḥ | yukta ityucyate yogī samaloṣṭāśmakāñcanaḥ || 6.8 ||",
+      "id": "6.8 Yogi yang puas dengan pengetahuan dan kebijaksanaan (Diri), yang telah memusatkan inderanya, dan yang menganggap sebongkah tanah, sepotong batu, dan emas adalah sama, dikatakan selaras (yaitu, dikatakan telah mencapai Nirvikalpa Samadhi).",
+      "ban": "6.8 Sang yogi sane sampun wareg antuk kaweruhan lan kawicaksanaan (Ida Sang Hyang Atma), sane sampun ngutamayang indriya, tur sane nganggep gumpalan tanah, batu, lan emas pateh, kabaos sampun harmonis (inggih punika, kabaos sampun ngamolihang Nirvikalpa Samadhi).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.8 The yogi who is satisfied with knowledge and wisdom (the Self), who has concentrated his senses, and who considers a lump of earth, a piece of stone, and gold to be the same, is said to be in harmony (i.e., is said to have attained Nirvikalpa Samadhi)."
+    },
+    {
+      "no": 9,
+      "devanagari": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु । साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते ॥ ६.९ ॥",
+      "iast": "suhṛnmitrāryudāsīnamadhyasthadveṣyabandhuṣu | sādhuṣvapi ca pāpeṣu samabuddhirviśiṣyate || 6.9 ||",
+      "id": "6.9 Siapa yang mempunyai pikiran yang sama terhadap orang yang baik hati, teman, musuh, yang acuh tak acuh, yang netral, yang penuh kebencian, yang kerabat, yang benar dan yang tidak benar, unggul.",
+      "ban": "6.9 Sapasirake sane madue pikayunan sane pateh marep ring sang sane becik, sawitra, musuh, sane tan rungu, sane netral, sane gedeg, sane masawitra, sane patut miwah sane nenten patut, punika sane unggul.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.9 Whoever has the same mind towards the benevolent, the friend, the enemy, the indifferent, the neutral, the hateful, the kindred, the righteous and the unrighteous, is superior."
+    },
+    {
+      "no": 10,
+      "devanagari": "योगी युञ्जीत सततमात्मानं रहसि स्थितः । एकाकी यतचित्तात्मा निराशीरपरिग्रहः ॥ ६.१० ॥",
+      "iast": "yogī yuñjīta satatamātmānaṃ rahasi sthitaḥ | ekākī yatacittātmā nirāśīraparigrahaḥ || 6.10 ||",
+      "id": "6.10 Biarlah Yogi berusaha terus-menerus menjaga pikiran tetap stabil, tetap berada dalam kesendirian, sendirian, dengan pikiran dan tubuh terkendali, dan bebas dari harapan dan ketamakan.",
+      "ban": "6.10 Mangda sang Yogi mautsaha tan mari mangda pikayunan tetep ajeg, tetep ring kesepian, padidian, antuk pikayunan lan angga sane terkendali, tur bebas saking pangapti lan loba.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.10 Let the Yogi strive constantly to keep the mind stable, remaining in solitude, alone, with mind and body under control, and free from hope and greed."
+    },
+    {
+      "no": 11,
+      "devanagari": "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः । नात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम् ॥ ६.११ ॥",
+      "iast": "śucau deśe pratiṣṭhāpya sthiramāsanamātmanaḥ | nātyucchritaṃ nātinīcaṃ cailājinakuśottaram || 6.11 ||",
+      "id": "6.11 Di tempat yang bersih, setelah mendirikan tempat duduknya sendiri yang kokoh, tidak terlalu tinggi dan tidak terlalu rendah, terbuat dari kain, kulit dan rumput Kusa, satu di atas yang lain.",
+      "ban": "6.11 Ring genah sane bersih, sampun ngadegang linggih nyane sane kukuh, nenten tegeh, nenten endep, kakaryanin antuk kain, kulit lan padang Kusa, asiki ring duur sane lianan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.11 In a clean place, having erected his own sturdy seat, neither too high nor too low, made of cloth, skin and Kusa grass, one on top of the other."
+    },
+    {
+      "no": 12,
+      "devanagari": "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः । उपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये ॥ ६.१२ ॥",
+      "iast": "tatraikāgraṃ manaḥ kṛtvā yatacittendriyakriyaḥ | upaviśyāsane yuñjyādyogamātmaviśuddhaye || 6.12 ||",
+      "id": "6.12 Di sana, setelah memusatkan pikiran, dengan tindakan pikiran dan indera terkendali, biarkan dia, sambil duduk di kursi, berlatih Yoga untuk pemurnian diri.",
+      "ban": "6.12 Irika, sampun ngutamayang pikayunan, antuk parilaksana pikayunan miwah indriya sane kakendaliang, mangda Ida, malinggih ring kursi, ngamargiang Yoga anggen nyuciang raga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.12 There, having concentrated the mind, with controlled action of the mind and senses, let him, sitting on a chair, practice Yoga for self-purification."
+    },
+    {
+      "no": 13,
+      "devanagari": "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः । सम्प्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन् ॥ ६.१३ ॥",
+      "iast": "samaṃ kāyaśirogrīvaṃ dhārayannacalaṃ sthiraḥ | samprekṣya nāsikāgraṃ svaṃ diśaścānavalokayan || 6.13 ||",
+      "id": "6.13 Biarkan dia dengan kuat menahan tubuh, kepala dan lehernya tegak dan diam, menatap ujung hidungnya, tanpa melihat sekeliling.",
+      "ban": "6.13 Depang ia pageh ngedeng awak, sirah lan baongne tegak tur tetep, ningalin muncuk irungne, tusing ningalin ngiterin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.13 Let him firmly hold the body, head and neck erect and still, looking at the tip of his nose, without looking around."
+    },
+    {
+      "no": 14,
+      "devanagari": "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः । मनः संयम्य मच्चित्तो युक्त आसीत मत्परः ॥ ६.१४ ॥",
+      "iast": "praśāntātmā vigatabhīrbrahmacārivrate sthitaḥ | manaḥ saṃyamya maccitto yukta āsīta matparaḥ || 6.14 ||",
+      "id": "6.14 Berpikiran tenang, tak kenal takut, teguh dalam sumpah seorang Brahmachari, setelah mengendalikan pikiran, memikirkan Aku dan pikiran seimbang, biarkan dia duduk, menjadikan Aku sebagai tujuan tertingginya.",
+      "ban": "6.14 Tenang pikayunan, tan jejeh, pageh ring sumpahnyane sang Brahmachari, sampun ngamong pikayunan, mikayunin Titiang miwah pikayunan pateh, ngiring ipun malinggih, ngawinang Titiang tatujonnyane sane pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.14 Calm-minded, fearless, firm in his vows a Brahmachari, having controlled the mind, thinking of Me and the mind equable, let him sit, making Me his highest goal."
+    },
+    {
+      "no": 15,
+      "devanagari": "युञ्जन्नेवं सदात्मानं योगी नियतमानसः । शान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति ॥ ६.१५ ॥",
+      "iast": "yuñjannevaṃ sadātmānaṃ yogī niyatamānasaḥ | śāntiṃ nirvāṇaparamāṃ matsaṃsthāmadhigacchati || 6.15 ||",
+      "id": "6.15 Dengan selalu menjaga keseimbangan pikiran, seorang Yogi, dengan pikiran yang terkendali, mencapai kedamaian yang tinggal di dalam Aku, yang berpuncak pada pembebasan.",
+      "ban": "6.15 Antuk setata nyaga keseimbangan pikayunan, sang Yogi, antuk pikayunan sane terkendali, ngamolihang sutrepti sane magenah ring I, sane puncaknyane ring kabebasan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.15 By always maintaining an equanimity of mind, a Yogi, with a controlled mind, attains the peace that abides in the I, which culminates in liberation."
+    },
+    {
+      "no": 16,
+      "devanagari": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः । न चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन ॥ ६.१६ ॥",
+      "iast": "nātyaśnatastu yogo|asti na caikāntamanaśnataḥ | na cātisvapnaśīlasya jāgrato naiva cārjuna || 6.16 ||",
+      "id": "6.16 Sesungguhnya Yoga tidak mungkin dilakukan bagi orang yang makan terlalu banyak, bagi orang yang tidak makan sama sekali, bagi orang yang banyak tidur, maupun bagi orang yang (selalu) terjaga, wahai Arjuna, tidak mungkin melakukan Yoga.",
+      "ban": "6.16 Wiakti Yoga tan sida antuk jadma sane kalintang ngajeng, antuk jadma sane nenten ngajeng pisan, antuk jadma sane akeh sirep, utawi antuk jadma sane (setata) matangi, duh Sang Arjuna, tan sida antuk ngamargiang Yoga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.16 Indeed, Yoga is not possible for people who eat too much, for people who do not eat at all, for people who sleep a lot, or for people who are (always) awake, O Arjuna, it is impossible to do Yoga."
+    },
+    {
+      "no": 17,
+      "devanagari": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु । युक्तस्वप्नावबोधस्य योगो भवति दुःखहा ॥ ६.१७ ॥",
+      "iast": "yuktāhāravihārasya yuktaceṣṭasya karmasu | yuktasvapnāvabodhasya yogo bhavati duḥkhahā || 6.17 ||",
+      "id": "6.17 Yoga menjadi penghancur rasa sakit bagi orang yang moderat dalam makan dan berekreasi (seperti \nseperti berjalan, dan sebagainya), yang moderat dalam melakukan tindakan, yang moderat dalam tidur dan terjaga.",
+      "ban": "6.17 Yoga inggih punika tamba ngilangang rasa sakit majeng ring jadma sane sedeng ring sajeroning ngajeng lan rekreasi (contonyane \nminakadi mamargi, miwah sane lianan), sane sedeng ring sajeroning ngamargiang parilaksana, sane sedeng ring sajeroning sirep lan matangi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.17 Yoga is a pain reliever for people who are moderate in eating and recreation (eg \nsuch as walking, and so on), which is moderate in carrying out actions, which is moderate in sleep and wakefulness."
+    },
+    {
+      "no": 18,
+      "devanagari": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते । निःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा ॥ ६.१८ ॥",
+      "iast": "yadā viniyataṃ cittamātmanyevāvatiṣṭhate | niḥspṛhaḥ sarvakāmebhyo yukta ityucyate tadā || 6.18 ||",
+      "id": "6.18 Ketika pikiran yang terkendali sempurna hanya bersemayam di dalam Diri, bebas dari kerinduan terhadap semua objek keinginan, maka dikatakan, 'Dia bersatu'.",
+      "ban": "6.18 Rikala pikayunan sane sampun paripurna kakendaliang wantah magenah ring Atma, bebas saking rasa kangen ring sakancan benda-benda sane kaaptiang, raris kabaos, ‘Ida masikian’.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.18 When the perfectly controlled mind resides only in the Self, free from longing for all objects of desire, then it is said, 'He is united'."
+    },
+    {
+      "no": 19,
+      "devanagari": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता । योगिनो यतचित्तस्य युञ्जतो योगमात्मनः ॥ ६.१९ ॥",
+      "iast": "yathā dīpo nivātastho neṅgate sopamā smṛtā | yogino yatacittasya yuñjato yogamātmanaḥ || 6.19 ||",
+      "id": "6.19 Bagaikan lampu yang diletakkan di tempat yang tidak berangin, tidak berkedip-kedip, dibandingkan dengan Yogi yang pikirannya terkendali, yang mempraktikkan Yoga dalam Diri (atau terserap dalam Yoga Diri).",
+      "ban": "6.19 Sakadi damar sane kagenahang ring genah sane tan wenten angin, nenten makenyem, yening saihang ring Sang Yogi sane pikayunannyane kakuasain, sane ngelaksanayang Yoga Sang Hyang Atma (utawi ngresep ring Yoga Sang Hyang Atma).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.19 Like a lamp placed in a windless place, does not flicker, compared with the Yogi whose mind is controlled, who practices the Yoga of the Self (or is absorbed in the Yoga of the Self)."
+    },
+    {
+      "no": 20,
+      "devanagari": "यत्रोपरमते चित्तं निरुद्धं योगसेवया । यत्र चैवात्मनात्मानं पश्यन्नात्मनि तुष्यति ॥ ६.२० ॥",
+      "iast": "yatroparamate cittaṃ niruddhaṃ yogasevayā | yatra caivātmanātmānaṃ paśyannātmani tuṣyati || 6.20 ||",
+      "id": "6.20 Ketika pikiran, yang dikendalikan oleh latihan Yoga mencapai ketenangan dan ketika melihat Diri dari diri sendiri, ia merasa puas dengan Dirinya sendiri.",
+      "ban": "6.20 Rikala pikayunan, sane kakendaliang antuk praktek Yoga ngamolihang ketentraman tur rikala nyingakin Atma saking raga, ipun rumasa puas ring raga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.20 When the mind, controlled by the practice of Yoga attains tranquility and when it sees the Self of itself, it feels content with itself."
+    },
+    {
+      "no": 21,
+      "devanagari": "सुखमात्यन्तिकं यत्तद् बुद्धिग्राह्यमतीन्द्रियम् । वेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः ॥ ६.२१ ॥",
+      "iast": "sukhamātyantikaṃ yattad buddhigrāhyamatīndriyam | vetti yatra na caivāyaṃ sthitaścalati tattvataḥ || 6.21 ||",
+      "id": "6.21 Ketika dia (seorang Yogi) merasakan Kebahagiaan Tanpa Batas yang dapat ditangkap oleh intelek (murni) dan melampaui indera, dan mapan di mana dia tidak pernah beranjak dari Realitas.",
+      "ban": "6.21 Rikala ida (Yogi) ngarasayang Rahayu Tan Pawates sane katangkep olih budi (murni) tur nglintangin indriya, tur kagenahang ring dija ida nenten naenin lempas saking Kasujatian.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.21 When he (a Yogi) experiences Infinite Bliss that is apprehended by the (pure) intellect and transcends the senses, and is established where he never departs from Reality."
+    },
+    {
+      "no": 22,
+      "devanagari": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः । यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते ॥ ६.२२ ॥",
+      "iast": "yaṃ labdhvā cāparaṃ lābhaṃ manyate nādhikaṃ tataḥ | yasminsthito na duḥkhena guruṇāpi vicālyate || 6.22 ||",
+      "id": "6.22 Yang mana, setelah memperolehnya, ia berpikir tidak ada keuntungan lain yang lebih unggul daripadanya; ketika didirikan, dia tidak tergerak bahkan oleh kesedihan yang berat.",
+      "ban": "6.22 Sane, sampun polih, ida ngamanahang nenten wenten kaluwihan sane tiosan sane luwih ring punika; rikalaning kaadegang, Ida nenten kagentosin yadiastun antuk sedih sane abot.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.22 Which, having obtained it, he thinks there is no other advantage superior to it; when founded, he was unmoved even by heavy sorrow."
+    },
+    {
+      "no": 23,
+      "devanagari": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम् । स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा ॥ ६.२३ ॥",
+      "iast": "taṃ vidyād duḥkhasaṃyogaviyogaṃ yogasaṃjñitam | sa niścayena yoktavyo yogo|anirviṇṇacetasā || 6.23 ||",
+      "id": "6.23 Hal ini dikenal dengan nama Yoga, pemutusan hubungan dengan rasa sakit. Yoga ini harus dipraktikkan dengan tekad dan pikiran yang tidak putus asa.",
+      "ban": "6.23 Puniki kabaos Yoga, palas saking rasa sakit. Yoga puniki patut kamargiang antuk pageh manah sane nenten surud-surud.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.23 This is known as Yoga, severance from pain. This yoga must be practiced with determination and a mind that does not give up."
+    },
+    {
+      "no": 24,
+      "devanagari": "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः । मनसैवेन्द्रियग्रामं विनियम्य समन्ततः ॥ ६.२४ ॥",
+      "iast": "saṅkalpaprabhavānkāmāṃstyaktvā sarvānaśeṣataḥ | manasaivendriyagrāmaṃ viniyamya samantataḥ || 6.24 ||",
+      "id": "6.24 Tanpa syarat meninggalkan semua keinginan yang muncul dari Sankalpa (pikiran dan imajinasi) dan sepenuhnya mengendalikan seluruh kelompok indera dengan pikiran dari semua sisi.",
+      "ban": "6.24 Tan pawates nilar sakancan pikayunan sane metu saking Sankalpa (pikiran lan imajinasi) tur jangkep ngendaliang sakancan indriya agregat antuk pikayunan saking sakancan sisi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.24 Unconditionally abandon all desires arising from Sankalpa (mind and imagination) and completely control the entire sense aggregate with thoughts from all sides."
+    },
+    {
+      "no": 25,
+      "devanagari": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया । आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत् ॥ ६.२५ ॥",
+      "iast": "śanaiḥ śanairuparamed buddhyā dhṛtigṛhītayā | ātmasaṃsthaṃ manaḥ kṛtvā na kiñcidapi cintayet || 6.25 ||",
+      "id": "6.25 Sedikit demi sedikit biarkan dia mencapai kesopanan dengan kecerdasan yang dipegang teguh; setelah membuat pikiran memantapkan dirinya di dalam Diri, biarkan dia tidak memikirkan apa pun.",
+      "ban": "6.25 Akidik-akidik mangda ipun ngamolihang kasopan antuk budi sane kukuh; sampun ngawinang pikayunan ngadegang raga ring Raga, mangda nenten mikayunin napi-napi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.25 Little by little let him attain decency with a firmly held intellect; having made the mind establish itself in the Self, let it think of nothing."
+    },
+    {
+      "no": 26,
+      "devanagari": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम् । ततस्ततो नियम्यैतदात्मन्येव वशं नयेत् ॥ ६.२६ ॥",
+      "iast": "yato yato niścarati manaścañcalamasthiram | tatastato niyamyaitadātmanyeva vaśaṃ nayet || 6.26 ||",
+      "id": "6.26 Karena sebab apa pun pikiran yang gelisah dan tidak stabil itu mengembara, biarlah ia mengendalikannya dan mengendalikannya di bawah kendali Diri saja.",
+      "ban": "6.26 Sapunapi ja alasan pikayunan sane gelisah tur nenten stabil punika ngelintangin, banggayang ipun ngendaliang tur tetep ring sor kekuasaan Sang Hyang Raga kemanten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.26 For whatever reason the restless and unstable mind wanders, let it control it and keep it under the control of the Self alone."
+    },
+    {
+      "no": 27,
+      "devanagari": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम् । उपैति शान्तरजसं ब्रह्मभूतमकल्मषम् ॥ ६.२७ ॥",
+      "iast": "praśāntamanasaṃ hyenaṃ yoginaṃ sukhamuttamam | upaiti śāntarajasaṃ brahmabhūtamakalmaṣam || 6.27 ||",
+      "id": "6.27 Kebahagiaan Tertinggi sesungguhnya datang kepada Yogi yang pikirannya damai, yang nafsunya terpuaskan, yang telah menjadi Brahman dan yang bebas dari dosa.",
+      "ban": "6.27 Rahayu sane pinih utama sujati rauh ring sang Yogi sane pikayunannyane tentrem, sane nafsunyane wareg, sane sampun dados Brahmana tur sane sampun bebas saking dosa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.27 Supreme Bliss truly comes to the Yogi whose mind is peaceful, whose passions are satisfied, who has become Brahman and who is free from sin."
+    },
+    {
+      "no": 28,
+      "devanagari": "युञ्जन्नेवं सदात्मानं योगी विगतकल्मषः । सुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते ॥ ६.२८ ॥",
+      "iast": "yuñjannevaṃ sadātmānaṃ yogī vigatakalmaṣaḥ | sukhena brahmasaṃsparśamatyantaṃ sukhamaśnute || 6.28 ||",
+      "id": "6.28 Yogi, yang selalu menyibukkan pikirannya (dalam latihan Yoga), terbebas dari dosa, dengan mudah menikmati Kebahagiaan Tak Terbatas dari kontak dengan Brahman (Yang Abadi).",
+      "ban": "6.28 Sang Yogi, sane setata ngajegang pikayunannyane (ring sajeroning ngamargiang Yoga), bebas saking dosa, dangan ngrasayang Rahayu Tan Pawates kontak sareng Brahman (Sang Niskala).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.28 The Yogi, who keeps his mind always occupied (in the practice of Yoga), is free from sin, easily enjoys the Infinite Bliss of contact with Brahman (the Eternal)."
+    },
+    {
+      "no": 29,
+      "devanagari": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि । ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः ॥ ६.२९ ॥",
+      "iast": "sarvabhūtasthamātmānaṃ sarvabhūtāni cātmani | īkṣate yogayuktātmā sarvatra samadarśanaḥ || 6.29 ||",
+      "id": "6.29 Dengan pikiran yang diselaraskan oleh Yoga ia melihat Diri berdiam di dalam semua makhluk dan semua makhluk di dalam Diri; dia melihat hal yang sama di mana-mana.",
+      "ban": "6.29 Antuk pikayunan sane ngranjing ring Yoga ida nyingakin Atma sane magenah ring sakancan prani lan sakancan prani ring Atma; ida nyingakin indike punika pateh ring dija-dija.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.29 With a mind attuned to Yoga he sees the Self dwelling in all beings and all beings in the Self; he saw the same thing everywhere."
+    },
+    {
+      "no": 30,
+      "devanagari": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति । तस्याहं न प्रणश्यामि स च मे न प्रणश्यति ॥ ६.३० ॥",
+      "iast": "yo māṃ paśyati sarvatra sarvaṃ ca mayi paśyati | tasyāhaṃ na praṇaśyāmi sa ca me na praṇaśyati || 6.30 ||",
+      "id": "6.30 Barangsiapa melihat Aku di mana-mana dan melihat segala sesuatu yang ada pada-Ku, ia tidak pernah terpisah dari-Ku, dan Aku pun tidak terpisah darinya.",
+      "ban": "6.30 Sapasiraja sane nyingakin Ulun ring dija-dija tur nyingakin sakancan sane dados Ulun, ipun nenten naenin lempas saking Tiang, tur Tiang taler nenten lempas saking ipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.30 Whoever sees Me everywhere and sees everything that is Me, he is never separated from Me, nor am I separated from him."
+    },
+    {
+      "no": 31,
+      "devanagari": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः । सर्वथा वर्तमानोऽपि स योगी मयि वर्तते ॥ ६.३१ ॥",
+      "iast": "sarvabhūtasthitaṃ yo māṃ bhajatyekatvamāsthitaḥ | sarvathā vartamāno|api sa yogī mayi vartate || 6.31 ||",
+      "id": "6.31 Barangsiapa, setelah bersatu dalam kesatuan, memuja Aku yang berdiam di dalam semua makhluk, maka Yogi itu tinggal di dalam Aku, apa pun cara hidupnya.",
+      "ban": "6.31 Sapasiraja, sampun masikian ring kasatuan, ngaturang sembah bakti ring Titiang sane magenah ring sakancan sarwa prani, sinah Sang Yogi punika magenah ring Titiang, napi ja tata cara kauripannyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.31 Whoever, having united in unity, worships Me who abides in all beings, then that Yogi abides in Me, whatever his mode of life."
+    },
+    {
+      "no": 32,
+      "devanagari": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन । सुखं वा यदि वा दुःखं स योगी परमो मतः ॥ ६.३२ ॥",
+      "iast": "ātmaupamyena sarvatra samaṃ paśyati yo|arjuna | sukhaṃ vā yadi vā duḥkhaṃ sa yogī paramo mataḥ || 6.32 ||",
+      "id": "6.32 Barangsiapa, melalui kemiripan Diri, wahai Arjuna, melihat realitas di mana-mana, baik kesenangan maupun kesakitan, ia dianggap sebagai Yogi tertinggi.",
+      "ban": "6.32 Sapasiraja, malarapan antuk rupan Sang Hyang Widhi, duh Sang Arjuna, nyingakin kasujatian ring dija-dija, yadiastun suka wiadin duka, ipun kabaos Yogi sane pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.32 Whoever, through the likeness of the Self, O Arjuna, sees reality everywhere, both pleasure and pain, he is considered to be the supreme Yogi."
+    },
+    {
+      "no": 33,
+      "devanagari": "अर्जुन उवाच । योऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन । एतस्याहं न पश्यामि चञ्चलत्वात्स्थितिं स्थिराम् ॥ ६.३३ ॥",
+      "iast": "arjuna uvāca | yo|ayaṃ yogastvayā proktaḥ sāmyena madhusūdana | etasyāhaṃ na paśyāmi cañcalatvātsthitiṃ sthirām || 6.33 ||",
+      "id": "6.33 Arjuna berkata Yoga keharmonisan yang diajarkan oleh-Mu ini, ya Krishna, aku tidak melihat kelanjutannya yang mantap, karena kegelisahan (pikiran).",
+      "ban": "6.33 Ida Sang Arjuna ngandika Yoga harmoni puniki sane kaajahin olih Palungguh IRatu, duh Ida Sang Kresna, titiang nenten nyingakin nglanturangnyane sane tegteg, sangkaning gelisah (pikiran).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.33 Arjuna said This yoga of harmony taught by You, O Krishna, I do not see its steady continuation, because of restlessness (of the mind)."
+    },
+    {
+      "no": 34,
+      "devanagari": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद् दृढम् । तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम् ॥ ६.३४ ॥",
+      "iast": "cañcalaṃ hi manaḥ kṛṣṇa pramāthi balavad dṛḍham | tasyāhaṃ nigrahaṃ manye vāyoriva suduṣkaram || 6.34 ||",
+      "id": "6.34 Pikiran sungguh gelisah, bergejolak, kuat dan pantang menyerah, wahai Krishna: Aku menganggap mengendalikannya sama sulitnya dengan mengendalikan angin.",
+      "ban": "6.34 Pikayunan punika sujati gelisah, gejolak, kukuh tur tan ngreredang, duh Sang Kresna : Titiang manggihin ngendaliang punika meweh sakadi ngendaliang angin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.34 The mind is truly restless, turbulent, strong and unyielding, O Krishna: I find controlling it as difficult as controlling the wind."
+    },
+    {
+      "no": 35,
+      "devanagari": "श्रीभगवानुवाच । असंशयं महाबाहो मनो दुर्निग्रहं चलम् । अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते ॥ ६.३५ ॥",
+      "iast": "śrībhagavānuvāca | asaṃśayaṃ mahābāho mano durnigrahaṃ calam | abhyāsena tu kaunteya vairāgyeṇa ca gṛhyate || 6.35 ||",
+      "id": "6.35 Sang Bhagavā berkata Tanpa ragu, Wahai Arjuna yang berlengan perkasa, pikiran sulit dikendalikan dan gelisah; namun dengan latihan dan kebosanan, hal ini dapat dikendalikan.",
+      "ban": "6.35 Ida Sang Hyang Widhi Wasa ngandika Tan lali, duh Sang Arjuna sane mawisesa, pikayunan tan becik tur gelisah; nanging antuk latihan lan bosan, indike puniki prasida kakendaliang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.35 The Blessed One said Without hesitation, O mighty-armed Arjuna, the mind is unruly and restless; but with practice and boredom, this can be controlled."
+    },
+    {
+      "no": 36,
+      "devanagari": "असंयतात्मना योगो दुष्प्राप इति मे मतिः । वश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः ॥ ६.३६ ॥",
+      "iast": "asaṃyatātmanā yogo duṣprāpa iti me matiḥ | vaśyātmanā tu yatatā śakyo|avāptumupāyataḥ || 6.36 ||",
+      "id": "6.36 Saya pikir Yoga sulit dicapai oleh seseorang yang tidak mengendalikan dirinya, namun orang yang mampu mengendalikan diri dan berjuang dapat mencapainya dengan cara (yang tepat).",
+      "ban": "6.36 Titiang ngamanahin Yoga punika meweh antuk anak sane nenten ngendaliang raga mangda prasida ngamolihang, nanging anak sane prasida ngendaliang raga lan mautsaha prasida ngamolihang antuk cara (patut).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.36 I think Yoga is difficult for someone who does not control himself to achieve, but someone who is able to control himself and strive can achieve it in the (right) way."
+    },
+    {
+      "no": 37,
+      "devanagari": "अर्जुन उवाच । अयतिः श्रद्धयोपेतो योगाच्चलितमानसः । अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति ॥ ६.३७ ॥",
+      "iast": "arjuna uvāca | ayatiḥ śraddhayopeto yogāccalitamānasaḥ | aprāpya yogasaṃsiddhiṃ kāṃ gatiṃ kṛṣṇa gacchati || 6.37 ||",
+      "id": "6.37 Arjuna berkata Dia yang tidak mampu mengendalikan dirinya meskipun dia mempunyai keyakinan, dan yang pikirannya mengembara dari Yoga, apa tujuan dia, setelah gagal mencapai kesempurnaan dalam Yoga, bertemu dengan wahai Krishna?",
+      "ban": "6.37 Ida Sang Arjuna ngandika Ida sane tan prasida ngamong raga yadiastun sampun madue kapercayaan, tur sane pikayunannyane ngelintang saking Yoga, napi tetujon Idane, sampun tan prasida ngamolihang paripurna ring Yoga, mangda matemu ring Ida Sang Kresna?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.37 Arjuna says He who is unable to control himself even though he has faith, and whose mind wanders from Yoga, what purpose does he have, having failed to attain perfection in Yoga, to meet O Krishna?"
+    },
+    {
+      "no": 38,
+      "devanagari": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति । अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि ॥ ६.३८ ॥",
+      "iast": "kaccinnobhayavibhraṣṭaśchinnābhramiva naśyati | apratiṣṭho mahābāho vimūḍho brahmaṇaḥ pathi || 6.38 ||",
+      "id": "Swami Sivananda tidak mengomentari sloka ini",
+      "ban": "Swami Siwananda nenten ngicenin komentar indik sloka puniki .",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Swami Sivananda does not comment on this sloka"
+    },
+    {
+      "no": 39,
+      "devanagari": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः । त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते ॥ ६.३९ ॥",
+      "iast": "etanme saṃśayaṃ kṛṣṇa chettumarhasyaśeṣataḥ | tvadanyaḥ saṃśayasyāsya chettā na hyupapadyate || 6.39 ||",
+      "id": "6.39 Keraguanku ini, O Krishna, Engkau hilangkan sepenuhnya; karena tidak ada yang lain selain Engkau yang dapat menghilangkan keraguan ini.",
+      "ban": "6.39 Ragu titiang puniki, duh Sang Kresna, Palungguh IRatu ngicalang jangkep; santukan nenten wenten tios wantah Palungguh IRatu sane prasida ngicalang sangsaya punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.39 This doubt of mine, O Krishna, You dispel completely; for none other than You can remove these doubts."
+    },
+    {
+      "no": 40,
+      "devanagari": "श्रीभगवानुवाच । पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते । न हि कल्याणकृत्कश्चिद् दुर्गतिं तात गच्छति ॥ ६.४० ॥",
+      "iast": "śrībhagavānuvāca | pārtha naiveha nāmutra vināśastasya vidyate | na hi kalyāṇakṛtkaścid durgatiṃ tāta gacchati || 6.40 ||",
+      "id": "6.40 Sang Bhagavā bersabda, wahai Arjuna, baik di dunia ini maupun di dunia berikutnya tidak ada kehancuran baginya; Sesungguhnya tidak ada orang yang berbuat baik, wahai anakku, yang pernah mengalami kesedihan.",
+      "ban": "6.40 Ida Sang Hyang Widhi Wasa ngandika, inggih Sang Arjuna, ring jagate puniki, yadian ring jagate sekala, nenten wenten karusakan antuk ida; Wiakti nenten wenten anak sane malaksana becik, duh pianak titiang, sane naenin ngarasayang sedih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.40 The Blessed One said, O Arjuna, neither in this world nor in the next world is there any destruction for him; Indeed, no one who does good, O my child, has ever experienced sadness."
+    },
+    {
+      "no": 41,
+      "devanagari": "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः । शुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते ॥ ६.४१ ॥",
+      "iast": "prāpya puṇyakṛtāṃ lokānuṣitvā śāśvatīḥ samāḥ | śucīnāṃ śrīmatāṃ gehe yogabhraṣṭo|abhijāyate || 6.41 ||",
+      "id": "6.41 Setelah mencapai alam orang benar dan berdiam di sana selama bertahun-tahun, dia yang terjatuh dari Yoga akan ditempatkan di rumah orang suci dan kaya.",
+      "ban": "6.41 Risampune ngamolihang jagat sang patut tur meneng irika makudang-kudang warsa, sang sane runtuh saking Yoga pacang kagenahang ring umah sang suci tur sugih.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.41 After attaining the realm of the righteous and remaining there for many years, he who falls from Yoga will be placed in the house of a holy and rich man."
+    },
+    {
+      "no": 42,
+      "devanagari": "अथवा योगिनामेव कुले भवति धीमताम् । एतद्धि दुर्लभतरं लोके जन्म यदीदृशम् ॥ ६.४२ ॥",
+      "iast": "athavā yogināmeva kule bhavati dhīmatām | etaddhi durlabhataraṃ loke janma yadīdṛśam || 6.42 ||",
+      "id": "6.42 Atau dia dilahirkan dalam keluarga bahkan para Yogi yang bijaksana; sesungguhnya kelahiran seperti ini sangat sulit didapat di dunia ini.",
+      "ban": "6.42 Utawi Ida embas ring kulawarga Yogi sane wicaksana; Sujatine embas sakadi puniki meweh pisan pacang kapolihang ring jagate puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.42 Or he is born in a family of even wise Yogis; In fact, birth like this is very difficult to obtain in this world."
+    },
+    {
+      "no": 43,
+      "devanagari": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम् । यतते च ततो भूयः संसिद्धौ कुरुनन्दन ॥ ६.४३ ॥",
+      "iast": "tatra taṃ buddhisaṃyogaṃ labhate paurvadehikam | yatate ca tato bhūyaḥ saṃsiddhau kurunandana || 6.43 ||",
+      "id": "6.43 Kepadamu dia bersentuhan dengan pengetahuan yang diperoleh dalam tubuhnya yang dulu dan berusaha lebih keras dari sebelumnya untuk mencapai kesempurnaan, wahai Arjuna.",
+      "ban": "6.43 Majeng ring ragane Ida matemu sareng kaweruhan sane kapolihang ring angga sarira sane dumun tur mautsaha sayan jemet mangda prasida ngamolihang kesempurnaan, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.43 To you he comes into contact with the knowledge acquired in his former body and strives harder than ever to attain perfection, O Arjuna."
+    },
+    {
+      "no": 44,
+      "devanagari": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः । जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते ॥ ६.४४ ॥",
+      "iast": "pūrvābhyāsena tenaiva hriyate hyavaśo|api saḥ | jijñāsurapi yogasya śabdabrahmātivartate || 6.44 ||",
+      "id": "6.44 Dengan praktik yang dulu ia lakukan, terlepas dari dirinya sendiri. Bahkan dia yang hanya ingin mengetahui Yoga melampaui kata-kata Brahmana.",
+      "ban": "6.44 Antuk praktek sane dumun kalaksanayang, yadiastun ring ragannyane. Yadiastun Ida sane wantah meled uning ring Yoga nglintangin kruna-kruna Brahmana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.44 By the practice he used to do, in spite of himself. Even he who only wants to know Yoga goes beyond Brahminical words."
+    },
+    {
+      "no": 45,
+      "devanagari": "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः । अनेकजन्मसंसिद्धस्ततो याति परां गतिम् ॥ ६.४५ ॥",
+      "iast": "prayatnādyatamānastu yogī saṃśuddhakilbiṣaḥ | anekajanmasaṃsiddhastato yāti parāṃ gatim || 6.45 ||",
+      "id": "6.45 Namun Yogi yang berjuang dengan tekun, disucikan dari dosa dan disempurnakan secara bertahap melalui banyak kelahiran, akan mencapai tujuan tertinggi.",
+      "ban": "6.45 Nanging sang Yogi sane mautsaha jemet, kasuciang saking dosa tur paripurna saka kidik malarapan antuk akeh embas, pacang ngamolihang tatujon sane pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.45 But the Yogi who strives diligently, purified from sin and perfected gradually through many births, will attain the highest goal."
+    },
+    {
+      "no": 46,
+      "devanagari": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः । कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन ॥ ६.४६ ॥",
+      "iast": "tapasvibhyo|adhiko yogī jñānibhyo|api mato|adhikaḥ | karmibhyaścādhiko yogī tasmādyogī bhavārjuna || 6.46 ||",
+      "id": "6.46 Yogi dianggap lebih unggul dari para petapa dan bahkan lebih unggul dari orang berpengetahuan (diperoleh melalui pembelajaran kitab suci); dia juga lebih unggul daripada orang-orang yang bertindak; oleh karena itu jadilah engkau seorang Yogi, wahai Arjuna.",
+      "ban": "6.46 Yogi kabaos unggul ring para tapa lan malah unggul ring jadma sane madue kaweruhan (kapolihang malarapan antuk malajah kitab suci); ida taler luwih ring jadma sane malaksana; punika mawinan dados Yogi duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.46 Yogis are considered superior to ascetics and even superior to people of knowledge (acquired through the study of scriptures); he is also superior to men of action; therefore be thou a Yogi, O Arjuna."
+    },
+    {
+      "no": 47,
+      "devanagari": "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना । श्रद्धावान्भजते यो मां स मे युक्ततमो मतः ॥ ६.४७ ॥",
+      "iast": "yogināmapi sarveṣāṃ madgatenāntarātmanā | śraddhāvānbhajate yo māṃ sa me yuktatamo mataḥ || 6.47 ||",
+      "id": "6.47 Dan di antara semua Yogi, dia yang, dengan penuh keyakinan dan dengan batinnya menyatu dengan-Ku, memuja-Ku, dianggap oleh-Ku sebagai yang paling saleh.",
+      "ban": "6.47 Tur ring pantaraning para Yogi sami, sang sane, antuk kapercayaan sane jangkep tur antuk pikayunan sane masikian ring Titiang, ngaturang sembah ring Titiang, kabaos olih Titiang pinaka sang sane pinih astiti bakti.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "6.47 And among all Yogis, he who, with full faith and with his mind united with Me, worships Me, is considered by Me to be the most pious."
+    }
+  ]
+}

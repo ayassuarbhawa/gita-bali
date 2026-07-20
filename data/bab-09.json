@@ -1,0 +1,494 @@
+{
+  "bab": 9,
+  "judul": {
+    "sanskrit": "Rāja-vidyā-rāja-guhya-yoga",
+    "id": "Rāja Vidyā Rāja Guhya Yoga",
+    "ban": "Raja Vidya Raja Guhya Yoga",
+    "en": "Rāja Vidyā Rāja Guhya Yoga"
+  },
+  "jumlah_sloka": 34,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 9",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । इदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे । ज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात् ॥ ९.१ ॥",
+      "iast": "śrībhagavānuvāca | idaṃ tu te guhyatamaṃ pravakṣyāmyanasūyave | jñānaṃ vijñānasahitaṃ yajjñātvā mokṣyase|aśubhāt || 9.1 ||",
+      "id": "9.1 Sang Bhagavā bersabda, sekarang saya akan menyatakan kepadamu siapa yang tidak berkomplot, rahasia terbesar, pengetahuan yang dikombinasikan dengan pengalaman (Realisasi Diri). Setelah mengetahui hal ini, engkau akan bebas dari kejahatan.",
+      "ban": "9.1 Ida Sang Hyang Widhi Wasa ngandika, titiang mangkin pacang nguningayang ring ragane sane tan ngraos, rahasia sane pinih mautama, kaweruhan sane mapadu sareng pengalaman (Realisasi Diri). Sasampune semeton uning indike punika, semeton pacang bebas saking kajaatan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.1 The Blessed One said, I will now reveal to you who is not conniving, the greatest secret, knowledge combined with experience (Self-Realization). Having known this, you will be free from evil."
+    },
+    {
+      "no": 2,
+      "devanagari": "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम् । प्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम् ॥ ९.२ ॥",
+      "iast": "rājavidyā rājaguhyaṃ pavitramidamuttamam | pratyakṣāvagamaṃ dharmyaṃ susukhaṃ kartumavyayam || 9.2 ||",
+      "id": "9.2 Ini adalah ilmu raja, rahasia raja, penyuci tertinggi, yang dapat dicapai melalui pengetahuan intuisi langsung, sesuai dengan kebenaran, sangat mudah dilakukan dan tidak dapat binasa.",
+      "ban": "9.2 Punika kaweruhan para ratu, rahasia para ratu, sang sane nyuciang luhur, kapolihang malarapan antuk kaweruhan intuitif langsung, manut ring kasujatian, dahat dangan kamargiang tur tan prasida rusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.2 This is the knowledge of kings, the secret of kings, the supreme purifier, attainable through direct intuitive knowledge, in accordance with the truth, very easy to do and imperishable."
+    },
+    {
+      "no": 3,
+      "devanagari": "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप । अप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि ॥ ९.३ ॥",
+      "iast": "aśraddadhānāḥ puruṣā dharmasyāsya parantapa | aprāpya māṃ nivartante mṛtyusaṃsāravartmani || 9.3 ||",
+      "id": "9.3 Mereka yang tidak mempunyai keyakinan terhadap Dharma (pengetahuan tentang Jati Diri), wahai Parantapa (Arjuna), kembali ke jalan dunia kematian tanpa mencapai Aku.",
+      "ban": "9.3 Sang sane tan madue sradha ring Dharma (kaweruhan ring Sang Hyang Widhi Wasa), uduh Parantapa (Arjuna), mewali malih ring margi jagat pati tan rauh ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.3 Those who do not have faith in Dharma (knowledge of the True Self), O Parantapa (Arjuna), return to the path of the world of death without reaching Me."
+    },
+    {
+      "no": 4,
+      "devanagari": "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना । मत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः ॥ ९.४ ॥",
+      "iast": "mayā tatamidaṃ sarvaṃ jagadavyaktamūrtinā | matsthāni sarvabhūtāni na cāhaṃ teṣvavasthitaḥ || 9.4 ||",
+      "id": "9.4 Seluruh dunia ini diliputi oleh-Ku dalam aspek-aspek-Ku yang tidak terwujud; semua makhluk ada di dalam Aku, tetapi Aku tidak tinggal di dalamnya.",
+      "ban": "9.4 Sakancan jagate puniki kabekin antuk Titiang ring aspek-aspek Titiang sane nenten kacihnayang; sakancan sarwa prani wenten ring Tiang, nanging Tiang nenten jenek ring ipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.4 This entire world is suffused with Me in My unmanifest aspects; all creatures are in Me, but I do not abide in them."
+    },
+    {
+      "no": 5,
+      "devanagari": "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम् । भूतभृन्न च भूतस्थो ममात्मा भूतभावनः ॥ ९.५ ॥",
+      "iast": "na ca matsthāni bhūtāni paśya me yogamaiśvaram | bhūtabhṛnna ca bhūtastho mamātmā bhūtabhāvanaḥ || 9.5 ||",
+      "id": "9.5 Makhluk juga tidak ada di dalam Aku (dalam kenyataan); lihatlah Yoga ilahi-Ku, yang menopang semua makhluk, namun tidak berdiam di dalamnya, adalah Diri-Ku, penyebab efisien makhluk hidup.",
+      "ban": "9.5 Makhluk taler nenten wenten ring Titiang (ring kasujatian); cingakin Yoga ilahi Titiang, sane ngajegang sakancan sarwa prani, nanging nenten jenek ring sajeroning ipun, wantah Titiang ngraga, sane ngawinang efisien sarwa prani.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.5 Creatures also do not exist in Me (in reality); behold My divine Yoga, which sustains all beings, but does not abide in them, is Myself, the efficient cause of living beings."
+    },
+    {
+      "no": 6,
+      "devanagari": "यथाकाशस्थितो नित्यं वायुः सर्वत्रगो महान् । तथा सर्वाणि भूतानि मत्स्थानीत्युपधारय ॥ ९.६ ॥",
+      "iast": "yathākāśasthito nityaṃ vāyuḥ sarvatrago mahān | tathā sarvāṇi bhūtāni matsthānītyupadhāraya || 9.6 ||",
+      "id": "9.6 Bagaikan angin kencang, yang bergerak ke mana-mana, selalu diam di eter, demikian pula ketahuilah bahwa semua makhluk beristirahat di dalam Aku.",
+      "ban": "9.6 Sakadi angin sane ageng, sane mamargi ring dija-dija, setata mararian ring eter, kadi asapunika taler uningin, mungguing sakancan sarwa prani mararian ring Tiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.6 As the mighty wind, which moves everywhere, always rests in the ether, so know that all creatures rest in Me."
+    },
+    {
+      "no": 7,
+      "devanagari": "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम् । कल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम् ॥ ९.७ ॥",
+      "iast": "sarvabhūtāni kaunteya prakṛtiṃ yānti māmikām | kalpakṣaye punastāni kalpādau visṛjāmyaham || 9.7 ||",
+      "id": "9.7 Semua makhluk, wahai Arjuna, memasuki Sifat-Ku pada akhir Kalpa; Saya mengirim mereka lagi pada awal Kalpa (berikutnya).",
+      "ban": "9.7 Sakancan sarwa prani, duh Sang Arjuna, ngranjing ring Alam Titiang ring pamuput Kalpa; Titiang ngutus ipun malih ring pangawit (selanturnyane) Kalpa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.7 All creatures, O Arjuna, enter My Nature at the end of the Kalpa; I sent them again at the beginning of the (next) Kalpa."
+    },
+    {
+      "no": 8,
+      "devanagari": "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः । भूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात् ॥ ९.८ ॥",
+      "iast": "prakṛtiṃ svāmavaṣṭabhya visṛjāmi punaḥ punaḥ | bhūtagrāmamimaṃ kṛtsnamavaśaṃ prakṛtervaśāt || 9.8 ||",
+      "id": "9.8 Dengan menjiwai Sifat-Ku, Aku berulang kali mengirimkan makhluk-makhluk yang berjumlah banyak ini, yang tidak berdaya oleh kekuatan Alam.",
+      "ban": "9.8 Ngawigunayang Alam Titiang, titiang mawali-wali ngutus makudang-kudang sarwa prani puniki, sane tan maderbe daya antuk kawisesan Alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.8 Animating My Nature, I repeatedly sent forth these multitudes of beings, who were helpless by the forces of Nature."
+    },
+    {
+      "no": 9,
+      "devanagari": "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय । उदासीनवदासीनमसक्तं तेषु कर्मसु ॥ ९.९ ॥",
+      "iast": "na ca māṃ tāni karmāṇi nibadhnanti dhanañjaya | udāsīnavadāsīnamasaktaṃ teṣu karmasu || 9.9 ||",
+      "id": "9.9 Perbuatan-perbuatan ini tidak mengikat-Ku, wahai Arjuna, yang duduk seperti orang yang acuh tak acuh, tidak terikat pada perbuatan-perbuatan itu.",
+      "ban": "9.9 Parilaksana punika tan ngiket Titiang, duh Sang Arjuna, sane malinggih sakadi anak tan rungu, tan kaiket antuk ipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.9 These actions do not bind Me, O Arjuna, who sits like an indifferent person, is not bound by them."
+    },
+    {
+      "no": 10,
+      "devanagari": "मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् । हेतुनानेन कौन्तेय जगद्विपरिवर्तते ॥ ९.१० ॥",
+      "iast": "mayādhyakṣeṇa prakṛtiḥ sūyate sacarācaram | hetunānena kaunteya jagadviparivartate || 9.10 ||",
+      "id": "9.10 Di bawah Aku sebagai pengawas, Alam menghasilkan yang bergerak dan yang tidak bergerak; oleh karena itu, wahai Arjuna, dunia berputar.",
+      "ban": "9.10 Ring sor Titiang pinaka pangawas, Alam ngasilang sane magerak lan sane nenten magerak; punika mawinan duh sang arjuna jagate mabalik.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.10 Under Me as overseer, Nature produces the moving and the immovable; therefore, O Arjuna, the world turns."
+    },
+    {
+      "no": 11,
+      "devanagari": "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् । परं भावमजानन्तो मम भूतमहेश्वरम् ॥ ९.११ ॥",
+      "iast": "avajānanti māṃ mūḍhā mānuṣīṃ tanumāśritam | paraṃ bhāvamajānanto mama bhūtamaheśvaram || 9.11 ||",
+      "id": "9.11 Orang-orang bodoh mengabaikan Aku, yang berwujud manusia, tidak mengetahui Keberadaan-Ku yang lebih tinggi sebagai Tuhan yang agung atas (segala) makhluk.",
+      "ban": "9.11 Anak belog tan rungu ring Titiang, sane marupa manusa, nenten uning ring Kawentenan Titiang sane luwih pinaka Ida Sang Hyang Widhi Wasa sane mautama ring (makasami) sarwa prani.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.11 Fools ignore Me, who is in human form, not knowing My higher Existence as the great Lord of (all) creatures."
+    },
+    {
+      "no": 12,
+      "devanagari": "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः । राक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः ॥ ९.१२ ॥",
+      "iast": "moghāśā moghakarmāṇo moghajñānā vicetasaḥ | rākṣasīmāsurīṃ caiva prakṛtiṃ mohinīṃ śritāḥ || 9.12 ||",
+      "id": "9.12 Harapan yang sia-sia, tindakan yang sia-sia, pengetahuan yang sia-sia dan tidak masuk akal, mereka sesungguhnya memiliki sifat jahat setan dan makhluk tidak ilahi.",
+      "ban": "9.12 Pangajap-ajap sane tan paguna, parilaksana sane tan paguna, kaweruhan sane tan paguna tur tan wenten artine, ipun sujati madue sifat sane kaon sakadi setan miwah makhluk sane tan astiti bakti.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.12 Vain hopes, vain actions, vain and senseless knowledge, they truly have the evil nature of demons and ungodly beings."
+    },
+    {
+      "no": 13,
+      "devanagari": "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः । भजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम् ॥ ९.१३ ॥",
+      "iast": "mahātmānastu māṃ pārtha daivīṃ prakṛtimāśritāḥ | bhajantyananyamanaso jñātvā bhūtādimavyayam || 9.13 ||",
+      "id": "9.13 Tetapi jiwa-jiwa yang agung, wahai Arjuna, yang mengambil bagian dalam sifat ketuhanan-Ku, menyembah Aku dengan satu pikiran (dengan pikiran yang tidak memikirkan hal lain), mengetahui Aku sebagai sumber makhluk yang tidak dapat binasa.",
+      "ban": "9.13 Nanging atma-atma sane mautama, duh Arjuna, sane ngajengang sifat ilahi Titiang, ngaturang sembah ring Titiang antuk pikayunan sane asiki (antuk pikayunan sane nenten mapikayun sane tiosan), uning ring Titiang pinaka wit sarwa prani sane nenten prasida rusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.13 But the great souls, O Arjuna, who partake of My divine nature, worship Me with one mind (with a mind that thinks of nothing else), knowing Me as the source of imperishable beings."
+    },
+    {
+      "no": 14,
+      "devanagari": "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः । नमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते ॥ ९.१४ ॥",
+      "iast": "satataṃ kīrtayanto māṃ yatantaśca dṛḍhavratāḥ | namasyantaśca māṃ bhaktyā nityayuktā upāsate || 9.14 ||",
+      "id": "9.14 Selalu memuliakan Aku, berjuang, teguh dalam sumpah, bersujud di hadapan-Ku, mereka menyembah Aku dengan pengabdian yang selalu teguh.",
+      "ban": "9.14 Setata ngluihang Titiang, mayuda, pageh ring sesanginnyane, sujud ring ajeng Titiang, ipun nyumbah Titiang antuk bakti sane tan mari kukuh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.14 Always glorifying Me, fighting, steadfast in their vows, prostrating themselves before Me, they worship Me with ever-steadfast devotion."
+    },
+    {
+      "no": 15,
+      "devanagari": "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते । एकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम् ॥ ९.१५ ॥",
+      "iast": "jñānayajñena cāpyanye yajanto māmupāsate | ekatvena pṛthaktvena bahudhā viśvatomukham || 9.15 ||",
+      "id": "9.15 Orang lain yang juga melakukan pengorbanan dengan pengorbanan kebijaksanaan memuja Aku, Yang Maha Berwajah, sebagai satu, sebagai sesuatu yang berbeda, dan sebagai banyak ragamnya.",
+      "ban": "9.15 Anake ane lenan masih ngaturang aturan aji aturan kawicaksanaan, nyumbah Ulun, ane tusing ngelah prarain, buka ane abesik, ane mabinayan, tur ane mabinayan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.15 Others who also make sacrifices with sacrifices of wisdom worship Me, the Faceless One, as one, as different, and as manifold."
+    },
+    {
+      "no": 16,
+      "devanagari": "अहं क्रतुरहं यज्ञः स्वधाहमहमौषधम् । मन्त्रोऽहमहमेवाज्यमहमग्निरहं हुतम् ॥ ९.१६ ॥",
+      "iast": "ahaṃ kraturahaṃ yajñaḥ svadhāhamahamauṣadham | mantro|ahamahamevājyamahamagnirahaṃ hutam || 9.16 ||",
+      "id": "9.16 Akulah Kratu; Akulah Yajna; Akulah persembahan (makanan) kepada surai; Akulah tanaman obat dan semua tanaman; Akulah Mantranya; Saya juga Ghee atau mentega cair; Akulah apinya; Akulah persembahannya.",
+      "ban": "9.16 Titiang puniki Kratu; Titiang puniki Yajna; Titiang pinaka aturan (ajengan) ring mane; Ulun ene sakancan tetanduran muah tetanduran; Tiang puniki Mantra; Tiang taler Ghee utawi mentega sane sampun leleh; Ulun ene apine; Ulun ane dadi aturan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.16 I am Kratu; I am Yajna; I am the offering (food) to the mane; I am the herbs and all plants; I am the Spell; I also Ghee or melted butter; I am the fire; I am the offering."
+    },
+    {
+      "no": 17,
+      "devanagari": "पिताहमस्य जगतो माता धाता पितामहः । वेद्यं पवित्रमोंकार ऋक्साम यजुरेव च ॥ ९.१७ ॥",
+      "iast": "pitāhamasya jagato mātā dhātā pitāmahaḥ | vedyaṃ pavitramoṃkāra ṛksāma yajureva ca || 9.17 ||",
+      "id": "9.17 Akulah bapak dunia ini, ibu, pemberi hasil perbuatan dan \nkakek; (satu) hal yang perlu diketahui, penyuci, suku kata suci (Om), dan juga Rik-, Sama-dan Yajur-Veda.",
+      "ban": "9.17 Titiang wantah bapan jagate puniki, ibu, sane ngicenin pikolih parilaksana lan . \npekak; (siki) sane patut kauningin, sang sane nyuciang, suku kata suci (Om), tur taler Rik-, Sama-lan Yajur-Veda.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.17 I am the father of this world, mother, giver of the results of actions and \ngrandfather; (one) thing to know, the purifier, the sacred syllable (Om), and also the Rik-, Sama-and Yajur-Veda."
+    },
+    {
+      "no": 18,
+      "devanagari": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत् । प्रभवः प्रलयः स्थानं निधानं बीजमव्ययम् ॥ ९.१८ ॥",
+      "iast": "gatirbhartā prabhuḥ sākṣī nivāsaḥ śaraṇaṃ suhṛt | prabhavaḥ pralayaḥ sthānaṃ nidhānaṃ bījamavyayam || 9.18 ||",
+      "id": "9.18 Akulah tujuannya, pendukungnya, Tuhannya, saksinya, tempat tinggalnya, tempat perlindungannya, sahabatnya, asal usulnya, pembubarannya, fondasinya, rumah hartanya, dan benih yang tidak dapat binasa.",
+      "ban": "9.18 Ulun ene tatujonne, panunjangne, Panembahanne, saksine, tongosne, tongosne masayuban, sawitrane, asal-usulne, bubarne, dasarne, umah arta brananne, muah bibitne ane tusing taen rusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.18 I am his goal, his support, his Lord, his witness, his abode, his refuge, his friend, his origin, his dissolution, his foundation, his treasure house, and his imperishable seed."
+    },
+    {
+      "no": 19,
+      "devanagari": "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च । अमृतं चैव मृत्युश्च सदसच्चाहमर्जुन ॥ ९.१९ ॥",
+      "iast": "tapāmyahamahaṃ varṣaṃ nigṛhṇāmyutsṛjāmi ca | amṛtaṃ caiva mṛtyuśca sadasaccāhamarjuna || 9.19 ||",
+      "id": "9.19 (Seperti matahari) Aku memberi panas; Aku menahan dan mengirimkan hujan; Aku adalah keabadian dan juga kematian, ada dan tidak ada, wahai Arjuna.",
+      "ban": "9.19 (Sakadi suryane) Ulun mapaica panes; Ulun ane ngengkebang muah nedunang ujan; Titiang wantah niskala miwah taler pati, kawentenan miwah tan wenten, uduh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.19 (Like the sun) I give heat; I restrain and send the rain; I am eternity and also death, existence and non-existence, O Arjuna."
+    },
+    {
+      "no": 20,
+      "devanagari": "त्रैविद्या मां सोमपाः पूतपापा यज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते । ते पुण्यमासाद्य सुरेन्द्रलोक- मश्नन्ति दिव्यान्दिवि देवभोगान् ॥ ९.२० ॥",
+      "iast": "traividyā māṃ somapāḥ pūtapāpā yajñairiṣṭvā svargatiṃ prārthayante | te puṇyamāsādya surendralokaṃ aśnanti divyāndivi devabhogān || 9.20 ||",
+      "id": "9.20 Yang mengetahui tiga Weda, peminum Soma, disucikan dari segala dosa, menyembah Aku melalui pengorbanan, berdoa memohon jalan menuju surga; mereka mencapai dunia suci Tuhan para dewa dan menikmati kenikmatan ilahi para dewa di surga.",
+      "ban": "9.20 Sane uning ring Weda tiga, nginum Soma, kasuciang saking sakancan dosa, ngaturang sembah ring Titiang malarapan antuk yadnya, ngastawayang mangda prasida ngranjing ka swargan; ipun ngamolihang jagat suci Ida Bhatara para dewata tur ngrasayang kasukan ilahi para dewatane ring suargan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.20 Who knows the three Vedas, drinker of Soma, purified from all sins, worships Me through sacrifice, prays for passage to heaven; they attain the holy world of the Lord of the gods and enjoy the divine pleasures of the gods in heaven."
+    },
+    {
+      "no": 21,
+      "devanagari": "ते तं भुक्त्वा स्वर्गलोकं विशालं क्षीणे पुण्ये मर्त्यलोकं विशन्ति । एवं त्रयीधर्ममनुप्रपन्ना गतागतं कामकामा लभन्ते ॥ ९.२१ ॥",
+      "iast": "te taṃ bhuktvā svargalokaṃ viśālaṃ kṣīṇe puṇye martyalokaṃ viśanti | evaṃ trayīdharmamanuprapannā gatāgataṃ kāmakāmā labhante || 9.21 ||",
+      "id": "9.21 Mereka, setelah menikmati surga yang luas, memasuki dunia fana ketika pahala mereka telah habis; dengan demikian mematuhi perintah dari “tiga” (Veda) dan menginginkan (objek-objek) keinginan, mereka mencapai keadaan pergi dan kembali.",
+      "ban": "9.21 Ipun, risampune ngrasayang suargan sane jimbar, ngranjing ring jagate sane padem, rikala upahnyane sampun telas; asapunika satinut ring titah “tetiga” (Weda) tur ngaptiang (objek) pikayunan, ipun ngamolihang kahanan mamargi lan mawali.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.21 They, after enjoying the vast heavens, enter the mortal world when their rewards have been exhausted; thus obeying the commands of the “three” (Vedas) and desiring (the objects of) desire, they attain the state of going and returning."
+    },
+    {
+      "no": 22,
+      "devanagari": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥ ९.२२ ॥",
+      "iast": "ananyāścintayanto māṃ ye janāḥ paryupāsate | teṣāṃ nityābhiyuktānāṃ yogakṣemaṃ vahāmyaham || 9.22 ||",
+      "id": "9.22 Bagi orang-orang yang beribadah kepada-Ku sendirian, tanpa memikirkan yang lain, bagi mereka yang selalu bersatu, Aku mengamankan apa yang belum dimiliki dan melestarikan apa yang sudah mereka miliki.",
+      "ban": "9.22 Majeng ring anake sane ngaturang bakti ring Titiang kemanten, tan mikayunin anak tiosan, majeng ring anake sane setata masikian, Tiang ngamanggehang napi sane durung wenten tur nyaga napi sane sampun wenten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.22 For those who worship Me alone, without thinking of others, for those who are always united, I secure what they do not yet have and preserve what they already have."
+    },
+    {
+      "no": 23,
+      "devanagari": "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयान्विताः । तेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम् ॥ ९.२३ ॥",
+      "iast": "ye|apyanyadevatābhaktā yajante śraddhayānvitāḥ | te|api māmeva kaunteya yajantyavidhipūrvakam || 9.23 ||",
+      "id": "9.23 Bahkan para penyembah yang memiliki keyakinan, menyembah dewa-dewa lain, memuja Aku saja, wahai Arjuna, dengan cara yang salah.",
+      "ban": "9.23 Yadiapin sang bhakta sane ngelah sradha, nyembah dewa lian, nyembah Titiang kewanten, duh Sang Arjuna, antuk cara sane iwang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.23 Even those devotees who have faith, worship other gods, worshiping Me alone, O Arjuna, in a wrong way."
+    },
+    {
+      "no": 24,
+      "devanagari": "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च । न तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते ॥ ९.२४ ॥",
+      "iast": "ahaṃ hi sarvayajñānāṃ bhoktā ca prabhureva ca | na tu māmabhijānanti tattvenātaścyavanti te || 9.24 ||",
+      "id": "9.24 (Karena) Aku sendirilah yang menikmati dan juga Tuhan atas segala pengorbanan; tetapi mereka tidak mengenal Aku pada hakikatnya (dalam kenyataan), dan karenanya mereka terjatuh (kembali ke dunia yang fana ini).",
+      "ban": "9.24 (Santukan) wantah titiang sane ngrasayang tur taler dados Panembahan sakancan aturan; nanging ipun nenten uning ring Titiang ring intinyane (ring kasujatiannyane), tur mawinan punika ipun runtuh (mawali ka jagate sane padem puniki).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.24 (Because) I alone enjoy and am also the Lord of all sacrifices; but they did not know Me in essence (in reality), and therefore they fell (back to this mortal world)."
+    },
+    {
+      "no": 25,
+      "devanagari": "यान्ति देवव्रता देवान्पितॄन्यान्ति पितृव्रताः । भूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम् ॥ ९.२५ ॥",
+      "iast": "yānti devavratā devānpitṝnyānti pitṛvratāḥ | bhūtāni yānti bhūtejyā yānti madyājino|api mām || 9.25 ||",
+      "id": "9.25 Para penyembah dewa mendatangi mereka; ke surai pergilah para penyembah leluhur; kepada para dewa yang memimpin unsur-unsur pergilah para penyembahnya; tetapi para penyembah-Ku datang kepada-Ku.",
+      "ban": "9.25 Paradewane pada rauh ring ipun. ka mane lunga para pemuja leluhur; ring dewa-dewa sane ngamong unsur-unsur punika lunga para pamujanyane; nanging parabhakti Ulune teka sig Ulune.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.25 The devotees of the gods came to them; to the mane go the ancestor worshipers; to the gods who preside over the elements go their worshippers; but My devotees come to Me."
+    },
+    {
+      "no": 26,
+      "devanagari": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति । तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः ॥ ९.२६ ॥",
+      "iast": "patraṃ puṣpaṃ phalaṃ toyaṃ yo me bhaktyā prayacchati | tadahaṃ bhaktyupahṛtamaśnāmi prayatātmanaḥ || 9.26 ||",
+      "id": "9.26 Siapa pun yang mempersembahkan kepada-Ku dengan penuh pengabdian sehelai daun, sekuntum bunga, buah atau sedikit air, yang dipersembahkan dengan penuh pengabdian oleh orang yang berpikiran murni, Aku menerimanya.",
+      "ban": "9.26 Sapasiraja sane ngaturang antuk bhakti ageng ring Titiang, don, sekar, woh-wohan utawi toya akidik, sane kaaturang antuk bhakti ageng antuk jadma sane mapikayun suci, titiang nrima.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.26 Whoever offers Me with great devotion a leaf, a flower, a fruit or a little water, offered with great devotion by a person of pure mind, I accept."
+    },
+    {
+      "no": 27,
+      "devanagari": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत् । यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम् ॥ ९.२७ ॥",
+      "iast": "yatkaroṣi yadaśnāsi yajjuhoṣi dadāsi yat | yattapasyasi kaunteya tatkuruṣva madarpaṇam || 9.27 ||",
+      "id": "9.27 Apa pun yang engkau lakukan, apa pun yang engkau makan, apa pun yang engkau persembahkan sebagai korban, apa pun yang engkau berikan, apa pun yang engkau praktikkan sebagai pertapaan, wahai Arjuna, lakukanlah itu sebagai persembahan kepada-Ku.",
+      "ban": "9.27 Apa ane laksanayang cening, apa ane ajengang cening, apa ane aturang cening pinaka yadnya, apa ane aturang cening, apa ane laksanayang cening pinaka tapa, duh Sang Arjuna, laksanayang cening ento aturan teken Ulun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.27 Whatever you do, whatever you eat, whatever you offer as sacrifice, whatever you give, whatever you practice as austerities, O Arjuna, do it as an offering to Me."
+    },
+    {
+      "no": 28,
+      "devanagari": "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः । संन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि ॥ ९.२८ ॥",
+      "iast": "śubhāśubhaphalairevaṃ mokṣyase karmabandhanaiḥ | saṃnyāsayogayuktātmā vimukto māmupaiṣyasi || 9.28 ||",
+      "id": "9.28 Dengan demikian engkau akan terbebas dari belenggu perbuatan yang menghasilkan buah baik dan jahat; dengan pikiran teguh dalam Yoga pelepasan keduniawian, dan terbebaskan, engkau akan datang kepada-Ku.",
+      "ban": "9.28 Kadi asapunika semeton pacang bebas saking paiketan parilaksana sane ngawetuang woh-wohan sane becik miwah sane kaon. antuk pikayunan sane pageh ring Yoga penolakan, tur kabebasang, ragane pacang rauh ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.28 Thus you will be free from the bondage of actions that produce good and evil fruit; with the mind steadfast in the Yoga of renunciation, and liberated, you will come to Me."
+    },
+    {
+      "no": 29,
+      "devanagari": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः । ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम् ॥ ९.२९ ॥",
+      "iast": "samo|ahaṃ sarvabhūteṣu na me dveṣyo|asti na priyaḥ | ye bhajanti tu māṃ bhaktyā mayi te teṣu cāpyaham || 9.29 ||",
+      "id": "9.29 Aku juga sama terhadap semua makhluk; bagi-Ku tidak ada yang dibenci atau disayangi; tetapi orang-orang yang beribadah kepada-Ku dengan penuh pengabdian, ada di dalam Aku dan Aku juga di dalam mereka.",
+      "ban": "9.29 Titiang taler pateh ring sakancan sane wenten; pabuat Ulun tusing ada ane patut getingin wiadin tresnain; nanging anake sane nyumbah Tiang antuk astiti bakti, wenten ring Tiang tur Tiang taler wenten ring ipun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.29 I am also equal to all creatures; for Me there is nothing to hate or love; but those who worship Me with devotion are in Me and I also in them."
+    },
+    {
+      "no": 30,
+      "devanagari": "अपि चेत्सुदुराचारो भजते मामनन्यभाक् । साधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः ॥ ९.३० ॥",
+      "iast": "api cetsudurācāro bhajate māmananyabhāk | sādhureva sa mantavyaḥ samyagvyavasito hi saḥ || 9.30 ||",
+      "id": "9.30 Sekalipun orang yang paling berdosa memuja-Ku, tanpa pengabdian kepada siapa pun, ia juga harus dianggap sebagai orang benar karena ia telah mengambil keputusan yang benar.",
+      "ban": "9.30 Yadiastun jadmane sane pinih madosa ngaturang sembah bakti ring sapasira ugi, ipun taler patut kabaos jadma sane patut santukan ipun sampun ngambil pamutus sane patut.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.30 Even if the most sinful person worships Me, without devotion to anyone, he should also be considered a righteous person because he has taken the right decision."
+    },
+    {
+      "no": 31,
+      "devanagari": "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति । कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति ॥ ९.३१ ॥",
+      "iast": "kṣipraṃ bhavati dharmātmā śaśvacchāntiṃ nigacchati | kaunteya pratijānīhi na me bhaktaḥ praṇaśyati || 9.31 ||",
+      "id": "9.31 Segera dia menjadi orang benar dan mencapai kedamaian abadi; Wahai Arjuna, nyatakanlah dengan pasti bahwa penyembah-Ku tidak pernah binasa.",
+      "ban": "9.31 Tan suwe Ida dados anak patut tur polih sutrepti sane langgeng; Inggih Sang Arjuna, warahang antuk pastika para bhakta Titiange nenten naenin sirna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.31 Soon he became righteous and attained eternal peace; O Arjuna, declare with certainty that My devotees never perish."
+    },
+    {
+      "no": 32,
+      "devanagari": "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः । स्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम् ॥ ९.३२ ॥",
+      "iast": "māṃ hi pārtha vyapāśritya ye|api syuḥ pāpayonayaḥ | striyo vaiśyāstathā śūdrāste|api yānti parāṃ gatim || 9.32 ||",
+      "id": "9.32 Karena dengan berlindung kepada-Ku, mereka yang, wahai Arjuna, mungkin berasal dari wanita yang berdosa, para Vaisya dan Sudra mencapai Tujuan Tertinggi.",
+      "ban": "9.32 Santukan antuk masayuban ring Titiang, sang sane, duh Arjuna, minab saking anak istri sane madosa, para Vaisya lan Shudra ngamolihang Tetujon sane Maha Luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.32 For by taking refuge in Me, those who, O Arjuna, may be of sinful womanhood, the Vaisyas and Shudras attain the Highest Goal."
+    },
+    {
+      "no": 33,
+      "devanagari": "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा । अनित्यमसुखं लोकमिमं प्राप्य भजस्व माम् ॥ ९.३३ ॥",
+      "iast": "kiṃ punarbrāhmaṇāḥ puṇyā bhaktā rājarṣayastathā | anityamasukhaṃ lokamimaṃ prāpya bhajasva mām || 9.33 ||",
+      "id": "9.33 Berapa banyak lagi (dengan mudah) yang dimiliki oleh para brahmana dan orang-orang suci kerajaan yang setia (mencapai tujuan); setelah datang ke dunia yang tidak kekal dan tidak bahagia ini, hendaklah kamu menyembah Aku.",
+      "ban": "9.33 Sapunapi malih (dangan) para brahmana miwah para resi kerajaan sane satya (ngamolihang tatujon); sampun rauh ring jagate sane nenten langgeng tur nenten bagia puniki, sumbahja ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.33 How much more (easily) do the brahmins and royal sages who faithfully (achieve the goal); having come to this impermanent and unhappy world, worship Me."
+    },
+    {
+      "no": 34,
+      "devanagari": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु । मामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः ॥ ९.३४ ॥",
+      "iast": "manmanā bhava madbhakto madyājī māṃ namaskuru | māmevaiṣyasi yuktvaivamātmānaṃ matparāyaṇaḥ || 9.34 ||",
+      "id": "9.34 Pusatkan pikiranmu pada-Ku; dengan mengabdi kepada-Ku; berkorban untukKu; sujud kepada-Ku; setelah menyatukan seluruh dirimu dengan-Ku, menjadikan Aku sebagai tujuan tertinggi, engkau akan datang kepada-Ku.",
+      "ban": "9.34 Tetepangja keneh kitane teken Ulun; antuk ngayahin Titiang; kurban pabuat Titiang; sujud ring Ulun; sampun masikian makasami ragan semetone sareng Titiang, ngawentenang Titiang tatujon semetone sane pinih tegeh, semeton pacang rauh ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "9.34 Concentrate your thoughts on Me; by serving Me; sacrifice for Me; bow down to Me; having united your whole self with Me, making Me your highest goal, you will come to Me."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Bhagawad Gita dalam Bahasa Indonesia dan Bahasa Bali.">
+<meta name="description" content="Bhagawad Gita dalam Bahasa Indonesia, Bahasa Bali, dan English.">
 <title>Gītā Bali</title>
 <style>
   :root {
@@ -47,6 +47,9 @@
   .skip-link:focus { transform: translateY(0); }
 
   .site-header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
     border-bottom: 1px solid rgba(138, 61, 47, .18);
     background: rgba(248, 244, 235, .9);
     backdrop-filter: blur(12px);
@@ -62,12 +65,89 @@
     min-height: 4.5rem;
   }
   .brand {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .65rem;
     color: var(--accent-dark);
     font-size: 1.15rem;
     font-weight: 700;
     letter-spacing: .08em;
     text-decoration: none;
   }
+  .brand small {
+    color: var(--muted);
+    font: 600 .62rem/1 system-ui, sans-serif;
+    letter-spacing: .12em;
+  }
+  .nav-actions { display: flex; align-items: center; gap: 1.1rem; }
+  .nav-link {
+    color: var(--accent-dark);
+    font: 700 .72rem/1 system-ui, sans-serif;
+    letter-spacing: .08em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .home {
+    display: grid;
+    min-height: calc(100vh - 9rem);
+    place-items: center;
+    padding: clamp(3.5rem, 8vw, 7rem) 0;
+  }
+  .home-inner { width: min(100%, 62rem); text-align: center; }
+  .home-title {
+    max-width: 11ch;
+    margin: 0 auto;
+    font-size: clamp(3rem, 8vw, 6.25rem);
+    font-weight: 400;
+    letter-spacing: -.05em;
+    line-height: .98;
+  }
+  .home-lead {
+    max-width: 38rem;
+    margin: 1.4rem auto 0;
+    color: var(--muted);
+    font-size: clamp(1.02rem, 2vw, 1.22rem);
+  }
+  .chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: clamp(2.5rem, 6vw, 4rem);
+    text-align: left;
+  }
+  .app-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:2.5rem; text-align:left; }
+  .app-card { min-height:12rem; padding:1.4rem; border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); color:var(--ink); text-decoration:none; box-shadow:0 8px 24px rgba(65,48,31,.05); }
+  .app-card strong { display:block; margin:.8rem 0 .3rem; color:var(--accent-dark); font-size:1.3rem; }
+  .app-card p { margin:0; color:var(--muted); font-size:.92rem; }
+  .app-icon { color:var(--accent); font:1.6rem/1 system-ui,sans-serif; }
+  .verse-actions { display:flex; gap:.5rem; margin-top:1.25rem; }
+  .verse-action { padding:.45rem .65rem; border:1px solid var(--line); border-radius:.5rem; background:transparent; color:var(--accent-dark); cursor:pointer; font:700 .7rem/1 system-ui,sans-serif; }
+  .note-box { width:100%; min-height:5rem; margin-top:.8rem; padding:.65rem; border:1px solid var(--line); border-radius:.5rem; background:#fffdf8; color:var(--ink); font:inherit; }
+  .chapter-card {
+    display: flex;
+    min-height: 16rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(1.5rem, 4vw, 2.25rem);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    color: var(--ink);
+    background: var(--surface);
+    box-shadow: 0 10px 28px rgba(65, 48, 31, .05);
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .chapter-card:hover {
+    border-color: rgba(138, 61, 47, .48);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+  }
+  .chapter-no { color: var(--accent); font: 700 .68rem/1.2 system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+  .chapter-card h2 { max-width: 12ch; margin: 1.6rem 0 .35rem; color: var(--accent-dark); font-size: clamp(1.55rem, 3.5vw, 2.25rem); font-weight: 400; line-height: 1.08; }
+  .chapter-card p { margin: 0; color: var(--muted); font-size: .93rem; }
+  .chapter-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.5rem; color: var(--accent-dark); font: 700 .72rem/1.2 system-ui, sans-serif; letter-spacing: .07em; text-transform: uppercase; }
+  .chapter-card-footer span:last-child { color: var(--gold); font-size: 1.25rem; }
   .nav-note {
     color: var(--muted);
     font: 600 .7rem/1.2 system-ui, sans-serif;
@@ -120,6 +200,32 @@
     letter-spacing: .08em;
     text-transform: uppercase;
   }
+  .chapter-intro {
+    max-width: 43rem;
+    margin: 1.25rem auto 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+  .chapter-overview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 34rem);
+    margin: 2rem auto 0;
+    border: 1px solid var(--line);
+    border-radius: .9rem;
+    overflow: hidden;
+    background: rgba(255, 253, 248, .72);
+  }
+  .overview-stat { padding: .9rem 1.1rem; }
+  .overview-stat + .overview-stat { border-left: 1px solid var(--line); }
+  .overview-label {
+    display: block;
+    color: var(--muted);
+    font: 700 .62rem/1.3 system-ui, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  .overview-value { display: block; margin-top: .16rem; color: var(--accent-dark); font-size: 1.1rem; }
 
   .reader-shell { padding-bottom: 5rem; }
   .toolbar {
@@ -137,6 +243,15 @@
     background: rgba(255, 253, 248, .92);
     box-shadow: var(--shadow);
     backdrop-filter: blur(14px);
+  }
+  .toolbar-search { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .5rem; }
+  .search-label {
+    display: block;
+    margin: 0 0 .35rem .1rem;
+    color: var(--muted);
+    font: 700 .63rem/1.2 system-ui, sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
   }
   .language-switch {
     display: flex;
@@ -171,6 +286,18 @@
     outline: 3px solid rgba(182, 139, 58, .42);
     outline-offset: 2px;
   }
+  .clear-search {
+    align-self: end;
+    min-height: 3.1rem;
+    padding: .5rem .8rem;
+    border: 1px solid var(--line);
+    border-radius: .7rem;
+    background: transparent;
+    color: var(--accent-dark);
+    cursor: pointer;
+    font: 700 .72rem/1 system-ui, sans-serif;
+  }
+  .clear-search:hover { background: #f3ecdf; }
   .result-meta {
     margin: -.6rem 0 1.4rem;
     color: var(--muted);
@@ -179,6 +306,12 @@
   }
 
   .sloka-list { display: grid; gap: 1rem; }
+  .random-feed { display:block; height:calc(100vh - 5rem); overflow-y:auto; scroll-snap-type:y mandatory; scrollbar-width:none; }
+  .random-feed::-webkit-scrollbar { display:none; }
+  .random-feed .sloka { display:grid; height:100%; min-height:100%; align-content:center; scroll-snap-align:start; border-radius:0; box-shadow:none; overflow-y:auto; }
+  .explore-intro { grid-column:1 / -1; margin:0 0 .5rem; text-align:center; }
+  .explore-intro h2 { margin:0; color:var(--accent-dark); font-size:clamp(2rem,5vw,3.5rem); font-weight:400; }
+  .explore-intro p { max-width:40rem; margin:.75rem auto 0; color:var(--muted); }
   .sloka {
     display: grid;
     grid-template-columns: 5rem minmax(0, 1fr);
@@ -193,6 +326,18 @@
     color: var(--accent);
     font: 700 .72rem/1.4 system-ui, sans-serif;
     letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .verse-status {
+    display: block;
+    width: fit-content;
+    margin-top: .6rem;
+    padding: .18rem .4rem;
+    border-radius: .25rem;
+    color: #76521a;
+    background: #f6e9c9;
+    font: 700 .58rem/1.2 system-ui, sans-serif;
+    letter-spacing: .06em;
     text-transform: uppercase;
   }
   .verse-body { min-width: 0; }
@@ -279,12 +424,15 @@
   .site-footer a { color: var(--accent-dark); }
 
   @media (max-width: 42rem) {
-    .nav-note { display: none; }
+    .nav-note, .nav-link { display: none; }
     .toolbar { position: static; grid-template-columns: 1fr; }
-    .language-switch { display: grid; grid-template-columns: 1fr 1fr; }
+    .language-switch { display: grid; grid-template-columns: repeat(3, 1fr); }
     .sloka { grid-template-columns: 1fr; gap: .7rem; }
     .result-meta { text-align: left; }
     .site-footer { display: block; }
+    .chapter-overview { width: 100%; }
+    .chapter-grid { grid-template-columns: 1fr; }
+    .app-grid { grid-template-columns:1fr; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -296,29 +444,144 @@
 <a class="skip-link" href="#content">Lewati ke isi</a>
 <header class="site-header">
   <nav class="nav" aria-label="Navigasi utama">
-    <a class="brand" href="./">GĪTĀ BALI</a>
-    <span class="nav-note">Sanskrit · Indonesia · Bali</span>
+    <a class="brand" href="./">GĪTĀ BALI <small>Ruang baca</small></a>
+    <div class="nav-actions">
+      <a class="nav-link" href="./">Beranda</a>
+      <span class="nav-note">Sanskrit · Indonesia · Bali · English</span>
+    </div>
   </nav>
 </header>
 
 <main id="content">
-  <section class="hero" aria-labelledby="chapter-title">
+  <section class="home" id="home" aria-labelledby="home-title">
+    <div class="home-inner">
+      <p class="eyebrow">Bhagawad Gita</p>
+      <h1 class="home-title" id="home-title">Ruang baca untuk kembali merenung.</h1>
+      <p class="home-lead">Teks Sanskrit, transliterasi IAST, serta terjemahan Indonesia, Bali, dan Inggris disusun dalam satu ruang baca yang tenang dan mudah ditelusuri.</p>
+      <div class="app-grid" aria-label="Fitur utama">
+        <a class="app-card" href="?mode=random"><span class="app-icon">✦</span><strong>Sloka Acak</strong><p>Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.</p></a>
+        <a class="app-card" href="?mode=explore" target="_blank" rel="noopener"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
+        <a class="app-card" href="?bab=1#reader"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Sloka yang diberi suka tersimpan di perangkat ini.</p></a>
+        <a class="app-card" href="?bab=1#reader"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka; catatan tersimpan lokal di perangkat.</p></a>
+      </div>
+      <div class="chapter-grid" aria-label="Pilih bab" hidden>
+        <a class="chapter-card" href="?bab=1#reader">
+          <div>
+            <span class="chapter-no">Bab 01 · 47 sloka</span>
+            <h2>Arjuna Viṣāda Yoga</h2>
+            <p>Kesedihan Arjuna dan awal percakapan di Kurukṣetra.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 1</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=2#reader">
+          <div>
+            <span class="chapter-no">Bab 02 · 72 sloka</span>
+            <h2>Sāṅkhya Yoga</h2>
+            <p>Pengetahuan tentang jiwa, dharma, dan jalan yoga.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 2</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=3#reader">
+          <div>
+            <span class="chapter-no">Bab 03 · 43 sloka</span>
+            <h2>Karma Yoga</h2>
+            <p>Jalan tindakan tanpa keterikatan pada hasil.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 3</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=4#reader">
+          <div>
+            <span class="chapter-no">Bab 04 · 42 sloka</span>
+            <h2>Jñāna Karma Sannyāsa Yoga</h2>
+            <p>Pengetahuan, tindakan, dan pelepasan dalam yoga.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 4</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=5#reader">
+          <div>
+            <span class="chapter-no">Bab 05 · 29 sloka</span>
+            <h2>Karma Sannyāsa Yoga</h2>
+            <p>Pelepasan melalui tindakan yang tidak melekat.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 5</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=6#reader">
+          <div>
+            <span class="chapter-no">Bab 06 · 47 sloka</span>
+            <h2>Ātma Saṃyama Yoga</h2>
+            <p>Disiplin diri, meditasi, dan keseimbangan batin.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 6</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=7#reader">
+          <div>
+            <span class="chapter-no">Bab 07 · 30 sloka</span>
+            <h2>Jñāna Vijñāna Yoga</h2>
+            <p>Pengetahuan dan realisasi tentang Yang Ilahi.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 7</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=8#reader">
+          <div>
+            <span class="chapter-no">Bab 08 · 28 sloka</span>
+            <h2>Akṣara Brahma Yoga</h2>
+            <p>Yang kekal, Brahman, dan jalan pada saat akhir hayat.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 8</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=9#reader">
+          <div>
+            <span class="chapter-no">Bab 09 · 34 sloka</span>
+            <h2>Rāja Vidyā Rāja Guhya Yoga</h2>
+            <p>Pengetahuan tertinggi dan rahasia terdalam yoga.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 9</span><span aria-hidden="true">→</span></div>
+        </a>
+        <a class="chapter-card" href="?bab=10#reader">
+          <div>
+            <span class="chapter-no">Bab 10 · 42 sloka</span>
+            <h2>Vibhūti Yoga</h2>
+            <p>Perwujudan dan kemuliaan Yang Ilahi.</p>
+          </div>
+          <div class="chapter-card-footer"><span>Buka Bab 10</span><span aria-hidden="true">→</span></div>
+        </a>
+      </div>
+    </div>
+    <div id="app-view" hidden></div>
+  </section>
+
+  <section class="hero" id="chapter-hero" aria-labelledby="chapter-title" hidden>
     <p class="eyebrow" id="chapter-label">Bhagawad Gita</p>
     <h1 id="chapter-title">Memuat bab…</h1>
     <p class="sanskrit-title" id="sanskrit-title"></p>
     <p class="chapter-meta" id="chapter-meta"></p>
+    <p class="chapter-intro">Baca teks Sanskrit berdampingan dengan transliterasi dan terjemahan. Terjemahan yang tersedia ditandai sebagai draf hingga selesai ditelaah.</p>
+    <div class="chapter-overview" aria-label="Progres isi bab">
+      <div class="overview-stat">
+        <span class="overview-label">Sloka tersedia</span>
+        <strong class="overview-value" id="content-progress">—</strong>
+      </div>
+      <div class="overview-stat">
+        <span class="overview-label" id="translation-progress-label">Terjemahan Indonesia</span>
+        <strong class="overview-value" id="translation-progress">—</strong>
+      </div>
+    </div>
   </section>
 
-  <section class="reader-shell" aria-label="Daftar sloka">
+  <section class="reader-shell" id="reader" aria-label="Daftar sloka" hidden>
     <div class="toolbar" id="toolbar" hidden>
       <div class="language-switch" aria-label="Pilih bahasa terjemahan">
         <button type="button" data-language="id" aria-pressed="true">Indonesia</button>
         <button type="button" data-language="ban" aria-pressed="false">Bali</button>
+        <button type="button" data-language="en" aria-pressed="false">English</button>
       </div>
-      <label>
-        <span class="skip-link">Cari sloka</span>
-        <input class="search" id="search" type="search" placeholder="Cari nomor atau isi sloka…" autocomplete="off">
-      </label>
+      <div>
+        <label class="search-label" for="search">Cari dalam bab ini</label>
+        <div class="toolbar-search">
+          <input class="search" id="search" type="search" placeholder="Nomor, Sanskrit, atau terjemahan…" autocomplete="off">
+          <button class="clear-search" id="clear-search" type="button" hidden>Bersihkan</button>
+        </div>
+      </div>
     </div>
     <p class="result-meta" id="result-meta" aria-live="polite" hidden></p>
     <div class="sloka-list" id="sloka-list"></div>
@@ -339,12 +602,20 @@
 (function () {
   "use strict";
 
+  var chapter = new URLSearchParams(window.location.search).get("bab");
+  var mode = new URLSearchParams(window.location.search).get("mode");
+  var chapters = { "1": "../data/bab-01.json", "2": "../data/bab-02.json", "3": "../data/bab-03.json", "4": "../data/bab-04.json", "5": "../data/bab-05.json", "6": "../data/bab-06.json", "7": "../data/bab-07.json", "8": "../data/bab-08.json", "9": "../data/bab-09.json", "10": "../data/bab-10.json", "11": "../data/bab-11.json", "12": "../data/bab-12.json", "13": "../data/bab-13.json", "14": "../data/bab-14.json", "15": "../data/bab-15.json", "16": "../data/bab-16.json", "17": "../data/bab-17.json", "18": "../data/bab-18.json" };
   var state = { data: null, language: "id", query: "" };
   var list = document.getElementById("sloka-list");
   var stateBox = document.getElementById("state");
   var toolbar = document.getElementById("toolbar");
   var resultMeta = document.getElementById("result-meta");
   var search = document.getElementById("search");
+  var clearSearch = document.getElementById("clear-search");
+  var home = document.getElementById("home");
+  var chapterHero = document.getElementById("chapter-hero");
+  var reader = document.getElementById("reader");
+  var appView = document.getElementById("app-view");
 
   function filled(value) {
     return typeof value === "string" && value.trim().length > 0;
@@ -358,7 +629,7 @@
   }
 
   function readable(sloka) {
-    return ["devanagari", "iast", "id", "ban"].some(function (field) {
+    return ["devanagari", "iast", "id", "ban", "en"].some(function (field) {
       return filled(sloka[field]);
     });
   }
@@ -377,11 +648,18 @@
 
   function renderHeader(data) {
     var judul = data.judul || {};
-    var mainTitle = filled(judul.id) ? judul.id : "Bab " + data.bab;
+    var mainTitle = filled(judul[state.language]) ? judul[state.language] : (filled(judul.id) ? judul.id : "Bab " + data.bab);
     document.getElementById("chapter-title").textContent = mainTitle;
     document.getElementById("sanskrit-title").textContent = filled(judul.sanskrit) ? judul.sanskrit : "";
     document.getElementById("chapter-label").textContent = "Bhagawad Gita · Bab " + data.bab;
     document.getElementById("chapter-meta").textContent = data.jumlah_sloka + " sloka";
+    var verses = Array.isArray(data.sloka) ? data.sloka : [];
+    var available = verses.filter(readable).length;
+    var translated = verses.filter(function (sloka) { return filled(sloka[state.language]); }).length;
+    var progressLabels = { id: "Terjemahan Indonesia", ban: "Terjemahan Bali", en: "English Translation" };
+    document.getElementById("translation-progress-label").textContent = progressLabels[state.language] || progressLabels.id;
+    document.getElementById("content-progress").textContent = available + " / " + data.jumlah_sloka;
+    document.getElementById("translation-progress").textContent = translated + " / " + data.jumlah_sloka;
     document.title = mainTitle + " — Gītā Bali";
   }
 
@@ -389,7 +667,8 @@
     var labels = {
       sanskrit: "Sanskrit",
       terjemahan_id: "Terjemahan Indonesia",
-      terjemahan_ban: "Terjemahan Bali"
+      terjemahan_ban: "Terjemahan Bali",
+      terjemahan_en: "English Translation"
     };
     var sourceData = data.sumber || {};
     var entries = Object.keys(labels).filter(function (key) { return filled(sourceData[key]); });
@@ -404,7 +683,7 @@
 
   function matches(sloka, query) {
     if (!query) return true;
-    return [sloka.no, sloka.devanagari, sloka.iast, sloka.id, sloka.ban]
+    return [sloka.no, sloka.devanagari, sloka.iast, sloka.id, sloka.ban, sloka.en]
       .some(function (value) { return String(value == null ? "" : value).toLocaleLowerCase("id").includes(query); });
   }
 
@@ -415,21 +694,49 @@
 
     var number = make("div", "sloka-number", "Sloka " + sloka.no);
     number.id = "sloka-label-" + sloka.no;
+    if (sloka.status && sloka.status[state.language] === "draf") {
+      number.append(make("span", "verse-status", "Terjemahan draf"));
+    }
     var body = make("div", "verse-body");
 
     if (filled(sloka.devanagari)) body.append(make("p", "devanagari", sloka.devanagari));
     if (filled(sloka.iast)) body.append(make("p", "iast", sloka.iast));
 
     var translation = make("div", "translation");
-    translation.append(make("span", "translation-label", state.language === "id" ? "Bahasa Indonesia" : "Basa Bali"));
+    var languageLabels = { id: "Bahasa Indonesia", ban: "Basa Bali", en: "English" };
+    translation.append(make("span", "translation-label", languageLabels[state.language] || "Terjemahan"));
     if (filled(sloka[state.language])) {
       translation.append(document.createTextNode(sloka[state.language]));
     } else {
-      translation.append(make("span", "unavailable", state.language === "id"
-        ? "Terjemahan Indonesia belum tersedia."
-        : "Terjemahan Bali belum tersedia."));
+      var unavailableLabels = { id: "Terjemahan Indonesia belum tersedia.", ban: "Terjemahan Bali belum tersedia.", en: "English translation is not available yet." };
+      translation.append(make("span", "unavailable", unavailableLabels[state.language]));
     }
     body.append(translation);
+    var key = "gita-bali-" + state.data.bab + "-" + sloka.no;
+    var liked = localStorage.getItem(key + "-liked") === "1";
+    var actions = make("div", "verse-actions");
+    var like = make("button", "verse-action", liked ? "♥ Tersimpan" : "♡ Simpan");
+    like.type = "button";
+    like.addEventListener("click", function () {
+      liked = !liked;
+      localStorage.setItem(key + "-liked", liked ? "1" : "0");
+      like.textContent = liked ? "♥ Tersimpan" : "♡ Simpan";
+    });
+    var note = make("button", "verse-action", "✎ Catatan");
+    note.type = "button";
+    note.addEventListener("click", function () {
+      var existing = body.querySelector("textarea");
+      if (existing) { existing.remove(); return; }
+      var field = document.createElement("textarea");
+      field.className = "note-box";
+      field.placeholder = "Tulis refleksimu untuk sloka ini…";
+      field.value = localStorage.getItem(key + "-note") || "";
+      field.addEventListener("input", function () { localStorage.setItem(key + "-note", field.value); });
+      body.append(field);
+      field.focus();
+    });
+    actions.append(like, note);
+    body.append(actions);
     article.append(number, body);
     return article;
   }
@@ -473,16 +780,103 @@
       document.querySelectorAll("[data-language]").forEach(function (item) {
         item.setAttribute("aria-pressed", String(item === button));
       });
+      renderHeader(state.data);
       renderList();
     });
   });
 
   search.addEventListener("input", function () {
     state.query = search.value;
+    clearSearch.hidden = state.query.length === 0;
     renderList();
   });
 
-  fetch("../data/bab-02.json")
+  clearSearch.addEventListener("click", function () {
+    search.value = "";
+    state.query = "";
+    clearSearch.hidden = true;
+    search.focus();
+    renderList();
+  });
+
+  function card(title, text, href) {
+    var a = make("a", "app-card"); a.href = href;
+    a.append(make("span", "app-icon", "→"), make("strong", "", title), make("p", "", text));
+    return a;
+  }
+  function showExplore() {
+    document.querySelector(".home-inner").hidden = true;
+    var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
+    appView.hidden = false; appView.className = "app-grid"; appView.replaceChildren(intro,
+      card("Bagian Pertama", "Bab 1–6 · Karma Yoga dan hakikat jiwa.", "?mode=group&group=1"),
+      card("Bagian Kedua", "Bab 7–12 · Pengetahuan spiritual dan Brahman.", "?mode=group&group=2"),
+      card("Bagian Ketiga", "Bab 13–18 · Penyerahan diri dan pengabdian.", "?mode=group&group=3")
+    );
+  }
+  function showGroup(group) {
+    var ranges = { "1":[1,6], "2":[7,12], "3":[13,18] };
+    var recaps = {
+      1:["Arjuna Viṣāda Yoga — Kesedihan Arjuna", "Sāṅkhya Yoga — Jiwa dan kebijaksanaan", "Karma Yoga — Tindakan tanpa keterikatan", "Jñāna Karma Sannyāsa — Pengetahuan dan tindakan", "Karma Sannyāsa — Pelepasan melalui tindakan", "Ātma Saṃyama — Disiplin dan meditasi"],
+      2:["Jñāna Vijñāna — Pengetahuan spiritual", "Akṣara Brahma — Yang kekal", "Rāja Vidyā Rāja Guhya — Pengetahuan tertinggi", "Vibhūti — Kemuliaan Yang Ilahi", "Viśvarūpa Darśana — Wujud semesta", "Bhakti — Jalan pengabdian"],
+      3:["Kṣetra Kṣetrajña — Tubuh dan sang pengenal", "Guṇatraya — Tiga guṇa", "Puruṣottama — Pribadi tertinggi", "Daivāsura Sampad — Sifat ilahi dan asura", "Śraddhā Traya — Tiga jenis keyakinan", "Mokṣa Sannyāsa — Pembebasan dan pelepasan"]
+    };
+    var sectionDescriptions = {
+      "1": "Bagian Pertama (Bab 1–6): Membahas hakikat disiplin kerja (Karma Yoga) tanpa mengharapkan hasil dan hakikat jiwa.",
+      "2": "Bagian Kedua (Bab 7–12): Menjelaskan hakikat ilmu pengetahuan spiritual dan hakikat Tuhan (Brahman).",
+      "3": "Bagian Ketiga (Bab 13–18): Kesimpulan yang menguraikan doktrin penyerahan diri dan pengabdian kepada Tuhan."
+    };
+    var range = ranges[group] || ranges["1"];
+    document.querySelector(".home-inner").hidden = true;
+    var overview=make("div", "explore-intro");
+    overview.append(
+      make("p", "eyebrow", "Bhagawad Gita"),
+      make("h2", "", "Jelajahi Gita"),
+      make("p", "", sectionDescriptions[group] || sectionDescriptions["1"])
+    );
+    appView.hidden=false; appView.className="app-grid"; appView.replaceChildren(overview);
+    for (var n=range[0]; n<=range[1]; n++) appView.append(card("Bab " + n, recaps[group][n - range[0]], "?bab=" + n + "#reader"));
+  }
+  function showRandom() {
+    var keys = Object.keys(chapters);
+    Promise.all(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); })).then(function(all){
+      var verses=[]; all.forEach(function(data){ data.sloka.forEach(function(s){ if(readable(s)) verses.push({data:data, sloka:s}); }); });
+      home.hidden=true; chapterHero.hidden=true; reader.hidden=false; toolbar.hidden=true; resultMeta.hidden=true; list.classList.add("random-feed"); list.replaceChildren();
+      var controls=make("div", "toolbar"); controls.style.position="static";
+      var randomLanguages=make("div", "language-switch");
+      [{key:"id",label:"Indonesia"},{key:"ban",label:"Bali"},{key:"en",label:"English"}].forEach(function(language){
+        var languageButton=make("button", "", language.label); languageButton.type="button";
+        languageButton.setAttribute("aria-pressed", String(state.language===language.key));
+        languageButton.addEventListener("click", function(){
+          state.language=language.key;
+          randomLanguages.querySelectorAll("button").forEach(function(item){ item.setAttribute("aria-pressed", String(item===languageButton)); });
+          addBatch(true); list.scrollTop=0;
+        });
+        randomLanguages.append(languageButton);
+      });
+      var shuffle=make("button", "verse-action", "✦ Acak Lagi"); shuffle.type="button";
+      controls.append(randomLanguages, shuffle); reader.insertBefore(controls, list);
+      function addBatch(reset) {
+        if (reset) list.replaceChildren();
+        for (var i=0;i<6;i++) { var pick=verses[Math.floor(Math.random()*verses.length)]; state.data=pick.data; list.append(renderVerse(pick.sloka)); }
+      }
+      shuffle.addEventListener("click", function(){ addBatch(true); window.scrollTo({top:0,behavior:"smooth"}); });
+      addBatch(true);
+      list.addEventListener("scroll", function(){ if (list.clientHeight + list.scrollTop >= list.scrollHeight - 300) addBatch(false); }, { passive:true });
+    }).catch(function(){ showState("Belum dapat memuat sloka", "Buka halaman melalui server lokal, lalu coba lagi.", true); });
+  }
+  if (mode === "explore") { showExplore(); return; }
+  if (mode === "group") { showGroup(new URLSearchParams(window.location.search).get("group")); return; }
+  if (mode === "random") { showRandom(); return; }
+  if (!chapters[chapter]) {
+    document.title = "Gītā Bali — Ruang Baca";
+    return;
+  }
+
+  home.hidden = true;
+  chapterHero.hidden = false;
+  reader.hidden = false;
+
+  fetch(chapters[chapter])
     .then(function (response) {
       if (!response.ok) throw new Error("HTTP " + response.status);
       return response.json();

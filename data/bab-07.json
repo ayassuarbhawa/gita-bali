@@ -1,0 +1,438 @@
+{
+  "bab": 7,
+  "judul": {
+    "sanskrit": "Jñāna-vijñāna-yoga",
+    "id": "Jñāna Vijñāna Yoga",
+    "ban": "Jñana Wijjana Yoga",
+    "en": "Jñāna Vijñāna Yoga"
+  },
+  "jumlah_sloka": 30,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 7",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीभगवानुवाच । मय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः । असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥ ७.१ ॥",
+      "iast": "śrībhagavānuvāca | mayyāsaktamanāḥ pārtha yogaṃ yuñjanmadāśrayaḥ | asaṃśayaṃ samagraṃ māṃ yathā jñāsyasi tacchṛṇu || 7.1 ||",
+      "id": "7.1 Sang Bhagavā bersabda, wahai Arjuna, dengarlah bagaimana engkau pasti akan mengenal-Ku sepenuhnya, dengan pikiran tertuju pada-Ku, berlatih Yoga dan berlindung pada-Ku.",
+      "ban": "7.1 Ida Sang Hyang Widhi Wasa ngandika, duh Ida Sang Arjuna, pirengangja sapunapi I Dewa pastika pacang uning ring Titiang jangkep, antuk pikayunan sane pageh ring Titiang, ngamargiang Yoga tur masayuban ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.1 The Blessed One said, O Arjuna, hear how you will surely know Me completely, with your mind fixed on Me, practicing Yoga and taking refuge in Me."
+    },
+    {
+      "no": 2,
+      "devanagari": "ज्ञानं तेऽहं सविज्ञानमिदं वक्ष्याम्यशेषतः । यज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते ॥ ७.२ ॥",
+      "iast": "jñānaṃ te|ahaṃ savijñānamidaṃ vakṣyāmyaśeṣataḥ | yajjñātvā neha bhūyo|anyajjñātavyamavaśiṣyate || 7.2 ||",
+      "id": "7.2 Saya akan menyatakan kepada Anda secara lengkap pengetahuan ini dikombinasikan dengan realisasi, setelah mengetahui bahwa tidak ada lagi yang perlu diketahui di sini.",
+      "ban": "7.2 Titiang pacang nguningayang ring semeton jangkep indik kaweruhan puniki kasarengin antuk realisasi, uning nenten wenten malih sane patut kauningin iriki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.2 I will state to you in full this knowledge combined with realization, knowing that there is nothing more to know here."
+    },
+    {
+      "no": 3,
+      "devanagari": "मनुष्याणां सहस्रेषु कश्चिद्यतति सिद्धये । यततामपि सिद्धानां कश्चिन्मां वेत्ति तत्त्वतः ॥ ७.३ ॥",
+      "iast": "manuṣyāṇāṃ sahasreṣu kaścidyatati siddhaye | yatatāmapi siddhānāṃ kaścinmāṃ vetti tattvataḥ || 7.3 ||",
+      "id": "7.3 Di antara ribuan orang, ada satu orang yang berusaha mencapai kesempurnaan; bahkan di antara orang-orang yang berusaha keras itu, hanya satu orang yang mungkin mengenal Aku secara hakikat.",
+      "ban": "7.3 Ring pantaraning panyiuan jadma, wenten asiki jadma sane mautsaha mangda paripurna; yadiastun ring pantaraning jadmane sane mautsaha jemet, wantah asiki jadma sane minab uning ring Titiang ring intinyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.3 Among thousands of people, there is one person who strives for perfection; even among those people who strive hard, only one person may know Me in essence."
+    },
+    {
+      "no": 4,
+      "devanagari": "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च । अहंकार इतीयं मे भिन्ना प्रकृतिरष्टधा ॥ ७.४ ॥",
+      "iast": "bhūmirāpo|analo vāyuḥ khaṃ mano buddhireva ca | ahaṃkāra itīyaṃ me bhinnā prakṛtiraṣṭadhā || 7.4 ||",
+      "id": "7.4 Bumi, air, api, udara, eter, pikiran, kecerdasan dan egoisme dengan demikian merupakan Sifat-Ku yang terbagi delapan.",
+      "ban": "7.4 Bumi, toya, geni, udara, eter, pikayunan, kawicaksanaan miwah egoisme punika kadi asapunika Sifat-sifat Titiang sane marupa kutus kepah.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.4 Earth, water, fire, air, ether, mind, intelligence and egoism are thus My eight-divided Attributes."
+    },
+    {
+      "no": 5,
+      "devanagari": "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम् । जीवभूतां महाबाहो ययेदं धार्यते जगत् ॥ ७.५ ॥",
+      "iast": "apareyamitastvanyāṃ prakṛtiṃ viddhi me parām | jīvabhūtāṃ mahābāho yayedaṃ dhāryate jagat || 7.5 ||",
+      "id": "7.5 Ini adalah Prakriti yang lebih rendah, wahai yang berlengan perkasa (Arjuna); ketahuilah bahwa kamu berbeda darinya Prakriti (Alam)Ku yang lebih tinggi, elemen kehidupan yang mendasari dunia ini.",
+      "ban": "7.5 Puniki Prakriti sor, duh sang maraga sakti (Arjuna); uningin ragane mabinayan sareng punika Prakriti Titiang sane luhur (Alam), unsur kahuripan sane dados dasar jagate puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.5 This is the lower Prakriti, O mighty-armed one (Arjuna); know that you are different from it My higher Prakriti (Nature), the element of life that underlies this world."
+    },
+    {
+      "no": 6,
+      "devanagari": "एतद्योनीनि भूतानि सर्वाणीत्युपधारय । अहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा ॥ ७.६ ॥",
+      "iast": "etadyonīni bhūtāni sarvāṇītyupadhāraya | ahaṃ kṛtsnasya jagataḥ prabhavaḥ pralayastathā || 7.6 ||",
+      "id": "7.6 Ketahuilah bahwa kedua (Sifat) ini adalah rahim semua makhluk. Jadi Akulah sumber dan pembubaran seluruh alam semesta.",
+      "ban": "7.6 Uningin, makakalih (Sifat) punika wantah garba sakancan sarwa prani. Dadosne titiang pinaka sumber lan pembubaran jagate sami.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.6 Know that these two (Attributes) are the wombs of all creatures. So I am the source and dissolution of the entire universe."
+    },
+    {
+      "no": 7,
+      "devanagari": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय । मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥ ७.७ ॥",
+      "iast": "mattaḥ parataraṃ nānyatkiñcidasti dhanañjaya | mayi sarvamidaṃ protaṃ sūtre maṇigaṇā iva || 7.7 ||",
+      "id": "7.7 Tidak ada sesuatu pun yang lebih tinggi dari-Ku, wahai Arjuna. Semua ini dirangkai pada-Ku, bagaikan kumpulan permata pada seutas tali.",
+      "ban": "7.7 Nenten wenten sane luwih ring Titiang Sang Arjuna. Makasami punika kapasang ring Ulun, sakadi pupulan permata ring tali.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.7 There is nothing higher than Me, O Arjuna. All this is strung to Me, like a collection of jewels on a string."
+    },
+    {
+      "no": 8,
+      "devanagari": "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः । प्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु ॥ ७.८ ॥",
+      "iast": "raso|ahamapsu kaunteya prabhāsmi śaśisūryayoḥ | praṇavaḥ sarvavedeṣu śabdaḥ khe pauruṣaṃ nṛṣu || 7.8 ||",
+      "id": "7.8 Akulah kecerdasan dalam air, wahai Arjuna; Akulah cahaya di bulan dan matahari; Aku adalah suku kata Om di semua Veda, terdengar di eter dan kejantanan di pria.",
+      "ban": "7.8 Titiang wantah kapradnyanan ring toyane, duh Sang Arjuna; Ulun ene galang di bulan muah suryane; Titiang wantah suku kata Om ring sakancan Weda, kapireng ring eter lan kejantanan ring manusa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.8 I am the intelligence in the water, O Arjuna; I am the light in the moon and the sun; I am the syllable Om in all the Vedas, heard in the ether and virility in man."
+    },
+    {
+      "no": 9,
+      "devanagari": "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ । जीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु ॥ ७.९ ॥",
+      "iast": "puṇyo gandhaḥ pṛthivyāṃ ca tejaścāsmi vibhāvasau | jīvanaṃ sarvabhūteṣu tapaścāsmi tapasviṣu || 7.9 ||",
+      "id": "7.9 Akulah wangi harum di bumi dan kecemerlangan api, kehidupan semua makhluk, dan Akulah orang yang bertapa di antara para petapa.",
+      "ban": "7.9 Titiang wantah ambun gumine sane manis miwah geni sane galang, urip sakancan sarwa prani, tur titiang wantah sang matapa ring pantaraning sang matapa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.9 I am the sweet fragrance of the earth and the brilliance of fire, the life of all creatures, and I am the ascetic among ascetics."
+    },
+    {
+      "no": 10,
+      "devanagari": "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम् । बुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम् ॥ ७.१० ॥",
+      "iast": "bījaṃ māṃ sarvabhūtānāṃ viddhi pārtha sanātanam | buddhirbuddhimatāmasmi tejastejasvināmaham || 7.10 ||",
+      "id": "7.10 Kenalilah Aku, wahai Arjuna, sebagai benih abadi segala makhluk; Akulah kecerdasan dari mereka yang cerdas; kemegahan benda-benda indah adalah aku.",
+      "ban": "7.10 Uningin titiang, duh Sang Arjuna, pinaka wit sane langgeng ring sarwa prani; Tiang puniki kapradnyanan anake sane wikan; kaluihan barang-barang sane becik punika titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.10 Know Me, O Arjuna, as the eternal seed of all creatures; I am the intelligence of the intelligent; the splendor of beautiful things is me."
+    },
+    {
+      "no": 11,
+      "devanagari": "बलं बलवतां चाहं कामरागविवर्जितम् । धर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ ॥ ७.११ ॥",
+      "iast": "balaṃ balavatāṃ cāhaṃ kāmarāgavivarjitam | dharmāviruddho bhūteṣu kāmo|asmi bharatarṣabha || 7.11 ||",
+      "id": "7.11 Di antara yang kuat, Akulah kekuatan yang tidak memiliki nafsu dan kemelekatan, dan pada (semua) makhluk, Aku adalah nafsu yang tak tertandingi Dharma, wahai Arjuna.",
+      "ban": "7.11 Ring pantaraning sane kukuh, titiang wantah kawisesan sane tan madue nafsu lan melekat, tur ring (makasami) prani, titiang wantah nafsu Dharma sane tan pabandingan, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.11 Among the strong, I am the power devoid of passion and attachment, and in (all) beings, I am the incomparable passion Dharma, O Arjuna."
+    },
+    {
+      "no": 12,
+      "devanagari": "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये । मत्त एवेति तान्विद्धि न त्वहं तेषु ते मयि ॥ ७.१२ ॥",
+      "iast": "ye caiva sāttvikā bhāvā rājasāstāmasāśca ye | matta eveti tānviddhi na tvahaṃ teṣu te mayi || 7.12 ||",
+      "id": "7.12 Makhluk (dan benda) apa pun yang murni, aktif, dan lembam, ketahuilah bahwa semua itu berasal dari-Ku. Mereka ada di dalam Aku, namun Aku tidak di dalam mereka.",
+      "ban": "7.12 Saluiring makhluk (lan barang-barang) sane suci, aktif lan inert, uninginja indike punika mawit saking Titiang. Ia ada sig Ulune, nanging Ulun tusing ada sig ia.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.12 Whatever beings (and things) are pure, active and inert, know that they come from Me. They are in Me, but I am not in them."
+    },
+    {
+      "no": 13,
+      "devanagari": "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत् । मोहितं नाभिजानाति मामेभ्यः परमव्ययम् ॥ ७.१३ ॥",
+      "iast": "tribhirguṇamayairbhāvairebhiḥ sarvamidaṃ jagat | mohitaṃ nābhijānāti māmebhyaḥ paramavyayam || 7.13 ||",
+      "id": "7.13 Karena tertipu oleh Alam (keadaan atau benda) yang terdiri dari tiga realitas Alam, seluruh dunia ini tidak mengenal-Ku sebagai sesuatu yang berbeda dan tidak dapat diubah.",
+      "ban": "7.13 Katipu olih Alam (kahanan utawi benda) sane kawangun antuk tiga realitas Alam, makasami jagat puniki nenten uning ring Titiang pinaka sesuatu sane mabinayan lan nenten prasida kauwah.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.13 Being deceived by Nature (states or things) consisting of three Natural realities, this entire world does not know Me as something distinct and unchangeable."
+    },
+    {
+      "no": 14,
+      "devanagari": "दैवी ह्येषा गुणमयी मम माया दुरत्यया । मामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते ॥ ७.१४ ॥",
+      "iast": "daivī hyeṣā guṇamayī mama māyā duratyayā | māmeva ye prapadyante māyāmetāṃ taranti te || 7.14 ||",
+      "id": "7.14 Sesungguhnya, ilusi ilahi-Ku ini, yang terdiri dari (tiga) realitas (Alam) sulit untuk diseberangi; mereka yang berlindung kepada-Ku saja, lewati ilusi ini.",
+      "ban": "7.14 Wiakti, ilusi ilahi Titiang puniki, kawangun antuk (tiga) kasujatian (Alam) meweh pisan nglintangin; sang sane masayuban ring Titiang kemanten, nglintangin ilusi puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.14 Verily, this divine illusion of Mine, consisting of (three) realities (Natures) is difficult to cross; those who take refuge in Me alone, pass through this illusion."
+    },
+    {
+      "no": 15,
+      "devanagari": "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः । माययापहृतज्ञाना आसुरं भावमाश्रिताः ॥ ७.१५ ॥",
+      "iast": "na māṃ duṣkṛtino mūḍhāḥ prapadyante narādhamāḥ | māyayāpahṛtajñānā āsuraṃ bhāvamāśritāḥ || 7.15 ||",
+      "id": "7.15 Para pelaku kejahatan dan orang-orang sesat yang merupakan manusia paling rendah tidak mencari Aku; mereka yang pengetahuannya dihancurkan oleh ilusi mengikuti jalan setan.",
+      "ban": "7.15 Anake ane jaat muah anake ane sesat, ane paling endep di pantaran manusane, tusing ngrereh Ulun. sang sane kaweruhannyane karusak antuk ilusi, nginutin pamargin I Setan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.15 Evildoers and heretics who are the lowest of men do not seek Me; those whose knowledge is destroyed by illusion follow the path of Satan."
+    },
+    {
+      "no": 16,
+      "devanagari": "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन । आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥ ७.१६ ॥",
+      "iast": "caturvidhā bhajante māṃ janāḥ sukṛtino|arjuna | ārto jijñāsurarthārthī jñānī ca bharatarṣabha || 7.16 ||",
+      "id": "7.16 Empat jenis orang berbudi luhur memuja-Ku, wahai Arjuna, dan mereka adalah orang-orang yang kesusahan, pencari ilmu, pencari kekayaan, dan orang bijak, wahai penguasa Bharata.",
+      "ban": "7.16 Patpat soroh jatma darma bakti ring Titiang, duh Sang Arjuna, inggih punika sang sane kasangsaran, sane ngrereh kaweruhan, sane ngrereh arta brana, miwah sane wicaksana, duh sang ngamong jagat Bharata.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.16 Four kinds of virtuous people worship Me, O Arjuna, and they are those in distress, those seeking knowledge, those seeking wealth, and those who are wise, O ruler of Bharata."
+    },
+    {
+      "no": 17,
+      "devanagari": "तेषां ज्ञानी नित्ययुक्त एकभक्तिर्विशिष्यते । प्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः ॥ ७.१७ ॥",
+      "iast": "teṣāṃ jñānī nityayukta ekabhaktirviśiṣyate | priyo hi jñānino|atyarthamahaṃ sa ca mama priyaḥ || 7.17 ||",
+      "id": "7.17 Di antara mereka adalah orang-orang yang bijaksana, yang selalu tabah dan setia kepada Yang Esa, yang paling unggul (adalah yang terbaik); karena Aku sangat sayang pada orang bijak dan dia sayang padaKu.",
+      "ban": "7.17 Ring pantarannyane wenten anak sane wicaksana, sane setata kukuh tur satya ring Sang Satunggil, sane pinih luwih (inggih punika sane pinih becik); Sawireh Ulun tresna pesan teken anake ane wicaksana tur ia tresna teken Ulun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.17 Among them are those who are wise, who are always steadfast and loyal to the One, who is the most superior (is the best); for I love the wise man very much and he loves Me."
+    },
+    {
+      "no": 18,
+      "devanagari": "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम् । आस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम् ॥ ७.१८ ॥",
+      "iast": "udārāḥ sarva evaite jñānī tvātmaiva me matam | āsthitaḥ sa hi yuktātmā māmevānuttamāṃ gatim || 7.18 ||",
+      "id": "7.18 Sungguh mulia semua ini; tapi aku menganggap orang bijak itu sebagai Diriku sendiri; karena, dengan teguh dalam pikirannya, dia mantap pada-Ku saja sebagai tujuan tertinggi.",
+      "ban": "7.18 Ambate luihnyane makasami punika; nanging Ulun nganggep anake ane wicaksana buka Ulun; santukan, pageh ring pikayunan, ipun tetep ring Titiang kemanten pinaka tatujon sane pinih tegeh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.18 How glorious is all this; but I regard the wise man as Myself; for, firm in his mind, he is fixed on Me alone as the highest goal."
+    },
+    {
+      "no": 19,
+      "devanagari": "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते । वासुदेवः सर्वमिति स महात्मा सुदुर्लभः ॥ ७.१९ ॥",
+      "iast": "bahūnāṃ janmanāmante jñānavānmāṃ prapadyate | vāsudevaḥ sarvamiti sa mahātmā sudurlabhaḥ || 7.19 ||",
+      "id": "7.19 Di akhir banyak kelahiran, orang bijak datang kepada-Ku, menyadari bahwa semua ini adalah Vaasudeva (Diri terdalam); jiwa yang begitu agung (Mahatma) sangat sulit ditemukan.",
+      "ban": "7.19 Ring pamuput akeh embas, para wicaksana rauh ring Titiang, ngrasayang, mungguing samian punika wantah Vaasudeva (Raga sane pinih dalem); atma sane mautama sakadi punika (Mahatma) meweh pisan kapanggihin.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.19 At the end of many births, wise men come to Me, realizing that all this is Vaasudeva (the innermost Self); such a great soul (Mahatma) is very difficult to find."
+    },
+    {
+      "no": 20,
+      "devanagari": "कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः । तं तं नियममास्थाय प्रकृत्या नियताः स्वया ॥ ७.२० ॥",
+      "iast": "kāmaistaistairhṛtajñānāḥ prapadyante|anyadevatāḥ | taṃ taṃ niyamamāsthāya prakṛtyā niyatāḥ svayā || 7.20 ||",
+      "id": "7.20 Mereka yang kebijaksanaannya telah terkoyak oleh keinginan ini atau itu, pergi kepada dewa-dewa lain, mengikuti ritus ini atau itu, dipimpin oleh sifat mereka sendiri.",
+      "ban": "7.20 Sang sane sampun kawicaksanannyane kagetep antuk pikayunan puniki, lunga ring dewa-dewa sane lianan, nuutin upacara puniki utawi punika, katuntun antuk sifatnyane ngraga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.20 Those whose wisdom has been torn by this or that desire, go to other gods, following this or that rite, guided by their own nature."
+    },
+    {
+      "no": 21,
+      "devanagari": "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति । तस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम् ॥ ७.२१ ॥",
+      "iast": "yo yo yāṃ yāṃ tanuṃ bhaktaḥ śraddhayārcitumicchati | tasya tasyācalāṃ śraddhāṃ tāmeva vidadhāmyaham || 7.21 ||",
+      "id": "7.21 Apapun bentuk penyembah mana pun yang ingin beribadah dengan keyakinan, keyakinan (yang sama) miliknya, Aku tegaskan dan tak tergoyahkan.",
+      "ban": "7.21 Sapunapi ja wangun sang bhakta sane meled ngaturang sembah antuk kapercayaan, kapercayaannyane (sane pateh), titiang negesang tur tan ngreredang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.21 Whatever form any devotee wishes to worship with faith, his (same) faith, I affirm and unwavering."
+    },
+    {
+      "no": 22,
+      "devanagari": "स तया श्रद्धया युक्तस्तस्याराधनमीहते । लभते च ततः कामान्मयैव विहितान्हि तान् ॥ ७.२२ ॥",
+      "iast": "sa tayā śraddhayā yuktastasyārādhanamīhate | labhate ca tataḥ kāmānmayaivavihitānhi tān || 7.22 ||",
+      "id": "7.22 Dengan memiliki keyakinan itu, dia memuja (bentuk) itu dan darinya dia memperoleh keinginannya, yang sesungguhnya telah ditetapkan oleh-Ku (saja).",
+      "ban": "7.22 Madue kapercayaan punika, ipun nyumbah (wangun) punika tur saking punika ipun ngamolihang pikayunannyane, sane sujati sampun katetapang olih Titiang (wantah).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.22 Having that faith, he worships that (form) and from it he obtains his desires, which have indeed been ordained by Me (alone)."
+    },
+    {
+      "no": 23,
+      "devanagari": "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम् । देवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि ॥ ७.२३ ॥",
+      "iast": "antavattu phalaṃ teṣāṃ tadbhavatyalpamedhasām | devāndevayajo yānti madbhaktā yānti māmapi || 7.23 ||",
+      "id": "7.23 Sesungguhnya pahala (buah) yang diperoleh orang yang berakal kecil itu terbatas. Para penyembah dewa mendatangi mereka, namun para penyembah-Ku datang kepada-Ku.",
+      "ban": "7.23 Wiakti, pahala (buah) sane kapolihang olih jadma sane akidik pangresepannyane wantah kawatesin. Paradewane pada teka sig ia, nanging paradewane pada teka sig Ulune.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.23 Indeed, the reward (fruit) obtained by a person with little understanding is limited. The devotees of the gods come to them, but My devotees come to Me."
+    },
+    {
+      "no": 24,
+      "devanagari": "अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः । परं भावमजानन्तो ममाव्ययमनुत्तमम् ॥ ७.२४ ॥",
+      "iast": "avyaktaṃ vyaktimāpannaṃ manyante māmabuddhayaḥ | paraṃ bhāvamajānanto mamāvyayamanuttamam || 7.24 ||",
+      "id": "7.24 Orang-orang bodoh menganggap Aku, Yang Tak Termanifestasi, sebagai yang bermanifestasi, tanpa mengetahui sifat-Ku yang lebih tinggi, kekal, dan paling unggul.",
+      "ban": "7.24 Anak belog nganggep Titiang, sane Tan Kasinahang, pinaka sane nyata, tan uning ring sifat Titiang sane luwih, langgeng tur pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.24 Fools regard Me, the Unmanifest, as manifest, without knowing My higher, eternal and most superior nature."
+    },
+    {
+      "no": 25,
+      "devanagari": "नाहं प्रकाशः सर्वस्य योगमायासमावृतः । मूढोऽयं नाभिजानाति लोको मामजमव्ययम् ॥ ७.२५ ॥",
+      "iast": "nāhaṃ prakāśaḥ sarvasya yogamāyāsamāvṛtaḥ | mūḍho|ayaṃ nābhijānāti loko māmajamavyayam || 7.25 ||",
+      "id": "7.25 Saya tidak terwujud kepada semua (seperti saya) yang terselubung oleh Yoga-Maya. Dunia yang tertipu ini tidak mengenal Aku, yang belum dilahirkan dan yang tidak dapat binasa.",
+      "ban": "7.25 Titiang tan kacihnayang ring samian (sakadi titiang) sane katutup antuk Yoga-Maya. Jagat sane katipu puniki nenten uning ring Titiang, sane durung embas tur tan pacang rusak.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.25 I am unmanifest to all (like me) who are veiled by Yoga-Maya. This deceived world does not know Me, who is unborn and imperishable."
+    },
+    {
+      "no": 26,
+      "devanagari": "वेदाहं समतीतानि वर्तमानानि चार्जुन । भविष्याणि च भूतानि मां तु वेद न कश्चन ॥ ७.२६ ॥",
+      "iast": "vedāhaṃ samatītāni vartamānāni cārjuna | bhaviṣyāṇi ca bhūtāni māṃ tu veda na kaścana || 7.26 ||",
+      "id": "7.26 Aku tahu, wahai Arjuna, makhluk masa lalu, masa kini, dan masa depan, tetapi tidak ada seorang pun yang mengenal Aku.",
+      "ban": "7.26 Titiang uning duh Sang Arjuna, sarwa prani sane sampun lintang, sane mangkin miwah sane pacang rauh, nanging nenten wenten sane uning ring Titiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.26 I know, O Arjuna, the creatures of the past, present and future, but no one knows Me."
+    },
+    {
+      "no": 27,
+      "devanagari": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत । सर्वभूतानि सम्मोहं सर्गे यान्ति परन्तप ॥ ७.२७ ॥",
+      "iast": "icchādveṣasamutthena dvandvamohena bhārata | sarvabhūtāni sammohaṃ sarge yānti parantapa || 7.27 ||",
+      "id": "7.27 Oleh khayalan tentang pasangan-pasangan yang berlawanan yang timbul dari keinginan dan kebencian, wahai Bharata, semua makhluk tunduk pada khayalan sejak lahir, wahai Parantapa.",
+      "ban": "7.27 Antuk ilusi pasangan sane matungkalikan sane metu saking pikayunan lan gedeg, duh Bharata, samian sarwa prani keni ilusi saking embas, duh Parantapa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.27 By the delusion of pairs of opposites arising from desire and hatred, O Bharata, all beings are subject to delusion from birth, O Parantapa."
+    },
+    {
+      "no": 28,
+      "devanagari": "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम् । ते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः ॥ ७.२८ ॥",
+      "iast": "yeṣāṃ tvantagataṃ pāpaṃ janānāṃ puṇyakarmaṇām | te dvandvamohanirmuktā bhajante māṃ dṛḍhavratāḥ || 7.28 ||",
+      "id": "7.28 Tetapi orang-orang yang beramal bajik, yang dosa-dosanya telah berakhir, dan yang terbebas dari khayalan pasangan-pasangan yang berlawanan, beribadah kepada-Ku, teguh dalam sumpah mereka.",
+      "ban": "7.28 Nanging anake sane malaksana becik, sane dosa-dosannyane sampun puput, tur sampun bebas saking iwang timpal-timpal sane nglawan, ngaturang sembah ring Titiang, pageh ring sesanginnyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.28 But those who do good deeds, whose sins have ended, and who are free from the delusions of opposing partners, worship Me, steadfast in their vows."
+    },
+    {
+      "no": 29,
+      "devanagari": "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये । ते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम् ॥ ७.२९ ॥",
+      "iast": "jarāmaraṇamokṣāya māmāśritya yatanti ye | te brahma tadviduḥ kṛtsnamadhyātmaṃ karma cākhilam || 7.29 ||",
+      "id": "7.29 Mereka yang berjuang untuk pembebasan dari usia tua dan kematian, berlindung kepada-Ku, menyadari sepenuhnya “bahwa” Brahman, seluruh pengetahuan tentang Diri dan semua tindakan.",
+      "ban": "7.29 Sang sane mautsaha ngluputang raga saking tua miwah pati, masayuban ring Titiang, jangkep uning ring “inggih punika” Brahman, sakancan kaweruhan indik Raga miwah sakancan parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.29 Those who strive for liberation from old age and death, take refuge in Me, fully aware of “that” Brahman, all knowledge of the Self and all action."
+    },
+    {
+      "no": 30,
+      "devanagari": "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः । प्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः ॥ ७.३० ॥",
+      "iast": "sādhibhūtādhidaivaṃ māṃ sādhiyajñaṃ ca ye viduḥ | prayāṇakāle|api ca māṃ te viduryuktacetasaḥ || 7.30 ||",
+      "id": "7.30 Mereka yang mengenal Aku dengan Adhibhuta (berkaitan dengan unsur-unsur), Adhidaiva (berkaitan dengan para dewa) dan Adhiyajna (berkaitan dengan pengorbanan) mengenal Aku bahkan pada saat kematian, dengan pikiran yang teguh.",
+      "ban": "7.30 Sang sane uning ring Titiang antuk Adhihuta (sane mapaiketan sareng unsur-unsur), Adhidaiva (sane mapaiketan sareng dewata) lan Adhiyajna (sane mapaiketan sareng yadnya) uning ring Titiang yadiastun ring galah seda, antuk pikayunan sane kukuh.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "7.30 Those who know Me with Adhihuta (related to the elements), Adhidaiva (related to the gods) and Adhiyajna (related to sacrifices) know Me even at the time of death, with a firm mind."
+    }
+  ]
+}

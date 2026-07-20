@@ -1,0 +1,410 @@
+{
+  "bab": 8,
+  "judul": {
+    "sanskrit": "Akṣara-brahma-yoga",
+    "id": "Akṣara Brahma Yoga",
+    "ban": "Aksara Brahma Yoga",
+    "en": "Akṣara Brahma Yoga"
+  },
+  "jumlah_sloka": 28,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 8",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "अर्जुन उवाच । किं तद् ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम । अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते ॥ ८.१ ॥",
+      "iast": "arjuna uvāca | kiṃ tad brahma kimadhyātmaṃ kiṃ karma puruṣottama | adhibhūtaṃ ca kiṃ proktamadhidaivaṃ kimucyate || 8.1 ||",
+      "id": "Swami Sivananda tidak mengomentari sloka ini",
+      "ban": "Swami Siwananda nenten ngicenin komentar indik sloka puniki .",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "Swami Sivananda does not comment on this sloka"
+    },
+    {
+      "no": 2,
+      "devanagari": "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन । प्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः ॥ ८.२ ॥",
+      "iast": "adhiyajñaḥ kathaṃ ko|atra dehe|asminmadhusūdana | prayāṇakāle ca kathaṃ jñeyo|asi niyatātmabhiḥ || 8.2 ||",
+      "id": "8.2 Siapa dan bagaimana Adhiyajna di dalam tubuh ini, hai penghancur Madhu (Krishna)? Dan bagaimana pada saat kematian, Engkau dikenal oleh orang yang mampu mengendalikan diri?",
+      "ban": "8.2 Sira tur sapunapi Adhiyajna ring angga puniki, duh sang sane ngusak-asik Madhu (Kresna)? Tur sapunapi rikalaning padem, Palungguh IRatu kauningin antuk anake sane prasida ngendaliang raga?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.2 Who and how is Adhiyajna in this body, O destroyer of Madhu (Krishna)? And how at the time of death, You are known to those who are able to control themselves?"
+    },
+    {
+      "no": 3,
+      "devanagari": "श्रीभगवानुवाच । अक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते । भूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः ॥ ८.३ ॥",
+      "iast": "śrībhagavānuvāca | akṣaraṃ brahma paramaṃ svabhāvo|adhyātmamucyate | bhūtabhāvodbhavakaro visargaḥ karmasaṃjñitaḥ || 8.3 ||",
+      "id": "8.3 Sang Bhagavā bersabda Brahman adalah Yang Abadi, Yang Mahatinggi; Sifat esensialnya disebut Pengetahuan Diri; persembahan (kepada para dewa) yang menyebabkan keberadaan dan perwujudan makhluk dan yang juga menopangnya disebut tindakan.",
+      "ban": "8.3 Ida Sang Hyang Widhi Wasa ngandika Brahman punika Sang Niskala, Sang Maha Luhur; Sifatnyane sane mabuat punika kawastanin Pengetahuan Diri; banten (majeng ring para dewata) sane ngawinang kawentenan lan manifestasi sarwa prani tur sane taler ngajegang ipun kabaos laksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.3 The Blessed One said Brahman is the Eternal, the Supreme; Its essential nature is called Self-Knowledge; offerings (to the gods) that cause the existence and manifestation of beings and that also sustain them are called actions."
+    },
+    {
+      "no": 4,
+      "devanagari": "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम् । अधियज्ञोऽहमेवात्र देहे देहभृतां वर ॥ ८.४ ॥",
+      "iast": "adhibhūtaṃ kṣaro bhāvaḥ puruṣaścādhidaivatam | adhiyajño|ahamevātra dehe dehabhṛtāṃ vara || 8.4 ||",
+      "id": "8.4 Adhibhuta (pengetahuan tentang unsur-unsur) berkenaan dengan Sifat-Ku yang mudah rusak dan Purusha atau Jiwa adalah Adhidaiva; Aku sendirilah Adhiyajna di sini, di dalam tubuh ini, wahai yang terbaik di antara (manusia) yang berwujud.",
+      "ban": "8.4 Adhihuta (kaweruhan unsur-unsur) ngenenin indik Alam Titiang sane pacang rusak lan Purusha utawi Atma inggih punika Adhidaiva; Titiang ngraga Adhiyajna iriki, ring angga puniki, duh sane pinih becik saking (manusa) wangun.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.4 Adhihuta (knowledge of the elements) concerns My perishable Nature and the Purusha or Soul is Adhidaiva; I myself am Adhiyajna here, in this body, O best of the (human) forms."
+    },
+    {
+      "no": 5,
+      "devanagari": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम् । यः प्रयाति स मद्भावं याति नास्त्यत्र संशयः ॥ ८.५ ॥",
+      "iast": "antakāle ca māmeva smaranmuktvā kalevaram | yaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ || 8.5 ||",
+      "id": "8.5 Dan siapa pun, meninggalkan tubuhnya, dan keluar hanya mengingat Aku, pada saat kematian, ia mencapai Wujud-Ku: tidak ada keraguan mengenai hal ini.",
+      "ban": "8.5 Tur sapasiraja, sane nilar angga, tur medal saking wantah ngelingang Titiang, rikalaning padem, ipun ngamolihang Kawentenan Titiang: tan wenten sangsaya indike punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.5 And whoever, abandons his body, and comes out of mere remembrance of Me, at the time of death, he attains My Being: there is no doubt about this."
+    },
+    {
+      "no": 6,
+      "devanagari": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् । तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥ ८.६ ॥",
+      "iast": "yaṃ yaṃ vāpi smaranbhāvaṃ tyajatyante kalevaram | taṃ tamevaiti kaunteya sadā tadbhāvabhāvitaḥ || 8.6 ||",
+      "id": "8.6 Siapapun yang pada akhirnya meninggalkan tubuh sambil memikirkan makhluk apa pun, hanya kepada makhluk itu sajalah dia pergi, wahai putra Kunti (Arjuna), karena terus-menerus memikirkan makhluk itu.",
+      "ban": "8.6 Sapasiraja sane pamuputnyane matilar saking angga sarira sinambi mikayunin indik sarwa prani napi kemanten, ring sarwa prani punika kemanten ipun lunga, duh putran Ida Sang Kunti (Arjuna), santukan ipun tan maren ngayunin sarwa prani punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.6 Whoever finally leaves the body while thinking about any creature, to that creature alone he goes, O son of Kunti (Arjuna), because he is constantly thinking about that creature."
+    },
+    {
+      "no": 7,
+      "devanagari": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च । मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयः (orसंशयम्) ॥ ८.७ ॥",
+      "iast": "tasmātsarveṣu kāleṣu māmanusmara yudhya ca | mayyarpitamanobuddhirmāmevaiṣyasyasaṃśayaḥ || 8.7 ||",
+      "id": "8.7 Oleh karena itu, ingatlah selalu Aku saja dan berjuanglah. Dengan pikiran dan kecerdasan yang terpusat (atau terserap) pada-Ku, kamu pasti akan datang kepada-Ku sendirian.",
+      "ban": "8.7 Duaning punika, setata eling ring Tiang padidi tur mautsaha. Antuk pikayunan lan kawikanan ragane sane fokus (utawi nyerep) ring Titiang, pastika ragane pacang rauh ring Titiang kemanten.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.7 Therefore, always remember Me alone and strive. With your mind and intelligence focused (or absorbed) on Me, you will surely come to Me alone."
+    },
+    {
+      "no": 8,
+      "devanagari": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना । परमं पुरुषं दिव्यं याति पार्थानुचिन्तयन् ॥ ८.८ ॥",
+      "iast": "orsaṃśayama abhyāsayogayuktena cetasā nānyagāminā | paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan || 8.8 ||",
+      "id": "8.8 Dengan pikiran yang tidak bergerak ke arah hal lain, yang diteguhkan dengan metode meditasi kebiasaan, dan terus-menerus bermeditasi, seseorang pergi kepada Pribadi Yang Maha Esa, Yang Mulia, wahai Arjuna.",
+      "ban": "8.8 Antuk pikayunan tan mamargi nuju sane tiosan, kacumpuin antuk tata cara sane sampun biasa, tur tan mari matapa, ida dane lunga ring Sang Maha Luhur, Sang Maha Luhur, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.8 With the mind not moving towards anything else, confirmed by the habitual method of meditation, and constantly meditating, one goes to the Supreme Being, the Exalted One, O Arjuna."
+    },
+    {
+      "no": 9,
+      "devanagari": "कविं पुराणमनुशासितार- मणोरणीयंसमनुस्मरेद्यः । सर्वस्य धातारमचिन्त्यरूप- मादित्यवर्णं तमसः परस्तात् ॥ ८.९ ॥",
+      "iast": "kaviṃ purāṇamanuśāsitāraṃ aṇoraṇīyaṃsamanusmaredyaḥ | sarvasya dhātāramacintyarūpaṃ ādityavarṇaṃ tamasaḥ parastāt || 8.9 ||",
+      "id": "8.9 Siapapun yang bermeditasi pada Yang Maha Tahu, Yang Purba, Penguasa (seluruh dunia), yang lebih kecil dari atom, pendukung segalanya, yang bentuknya tak terbayangkan, bersinar seperti matahari dan melampaui kegelapan ketidaktahuan.",
+      "ban": "8.9 Sapasiraja sane matapa ring Sang Maha Wikan, Sang Kuno, Sang Ngamong (jagat sami), sane alitan ring atom, panunjang sakancan sane wenten, sane wangunnyane tan kebayang, masunar sakadi surya tur nglintangin peteng dedet tan uning.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.9 Whoever meditates on the All-Knowing, the Ancient, the Ruler (of the whole world), who is smaller than an atom, the supporter of everything, whose form is unimaginable, shines like the sun and transcends the darkness of ignorance."
+    },
+    {
+      "no": 10,
+      "devanagari": "प्रयाणकाले मनसाऽचलेन भक्त्या युक्तो योगबलेन चैव । भ्रुवोर्मध्ये प्राणमावेश्य सम्यक् स तं परं पुरुषमुपैति दिव्यम् ॥ ८.१० ॥",
+      "iast": "prayāṇakāle manasā|acalena bhaktyā yukto yogabalena caiva | bhruvormadhye prāṇamāveśya samyak sa taṃ paraṃ puruṣamupaiti divyam || 8.10 ||",
+      "id": "8.10 Pada saat kematian, dengan pikiran yang tak tergoyahkan, diberkahi dengan devotio, dengan kekuatan Yoga, memusatkan seluruh nafas kehidupan di tengah-tengah kedua aliran mata, ia mencapai Pribadi Yang Maha Esa yang cemerlang itu.",
+      "ban": "8.10 Ring galah seda, antuk pikayunan sane tan surud-surud, kadagingin devotio, antuk kawisesan Yoga, ngutamayang makasami bayu urip ring tengahing kalih aliran panyingakan, ida ngamolihang Sang Maha Suci sane masunar punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.10 At the moment of death, with an unwavering mind, endowed with devotio, with the power of Yoga, concentrating the entire breath of life in the midst of the two streams of the eyes, he attains that radiant Supreme Being."
+    },
+    {
+      "no": 11,
+      "devanagari": "यदक्षरं वेदविदो वदन्ति विशन्ति यद्यतयो वीतरागाः । यदिच्छन्तो ब्रह्मचर्यं चरन्ति तत्ते पदं संग्रहेण प्रवक्ष्ये ॥ ८.११ ॥",
+      "iast": "yadakṣaraṃ vedavido vadanti viśanti yadyatayo vītarāgāḥ | yadicchanto brahmacaryaṃ caranti tatte padaṃ saṃgraheṇa pravakṣye || 8.11 ||",
+      "id": "8.11 Apa yang dinyatakan Tidak Dapat Dihancurkan oleh mereka yang mengetahui Veda, apa yang dimasuki oleh para petapa atau Sannyasin yang mengendalikan diri dan bebas nafsu, yang menginginkan selibat dipraktikkan, tujuan itu akan saya nyatakan kepada Anda secara singkat.",
+      "ban": "8.11 Napi sane kabaosang Imperishable olih sang sane uning ring Weda, napi sane karanjingang olih para tapa utawi Sannyasin sane ngendaliang raga tur tan madue nafsu, sane meled mangda selibat kalaksanayang, tatujon punika pacang aturang titiang ring semeton cutet.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.11 What is declared Imperishable by those who know the Vedas, what is entered into by self-controlled and passion-free ascetics or Sannyasins, who desire celibacy to be practiced, that goal I will state to you briefly."
+    },
+    {
+      "no": 12,
+      "devanagari": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च । मूध्न्यार्धायात्मनः प्राणमास्थितो योगधारणाम् ॥ ८.१२ ॥",
+      "iast": "sarvadvārāṇi saṃyamya mano hṛdi nirudhya ca | mūdhnyā^^rdhāyātmanaḥ prāṇamāsthito yogadhāraṇām || 8.12 ||",
+      "id": "8.12 Setelah menutup semua gerbang, mengurung pikiran di dalam hati dan memusatkan nafas kehidupan di kepala, menjalankan praktik konsentrasi.",
+      "ban": "8.12 Sampun nutup sakancan gapura, ngukuhang pikayunan ring manah tur ngutamayang bayu urip ring sirah, laksanayang praktik konsentrasi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.12 Having closed all the gates, confining the mind in the heart and concentrating the breath of life in the head, undertake the practice of concentration."
+    },
+    {
+      "no": 13,
+      "devanagari": "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन् । यः प्रयाति त्यजन्देहं स याति परमां गतिम् ॥ ८.१३ ॥",
+      "iast": "omityekākṣaraṃ brahma vyāharanmāmanusmaran | yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim || 8.13 ||",
+      "id": "8.13 Mengucapkan satu suku kata Om sang Brahman dan mengingat Aku, barangsiapa pergi, meninggalkan raga, mencapai Tujuan Tertinggi.",
+      "ban": "8.13 Nguncarang siki suku kata Om sang Brahman tur eling ring Titiang, sapa sira sane mamargi, ninggalin angga, ngamolihang Tetujon sane pinih utama.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.13 Chanting one syllable Om the Brahman and remembering Me, whoever goes, leaving the body, attains the Supreme Goal."
+    },
+    {
+      "no": 14,
+      "devanagari": "अनन्यचेताः सततं यो मां स्मरति नित्यशः । तस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः ॥ ८.१४ ॥",
+      "iast": "ananyacetāḥ satataṃ yo māṃ smarati nityaśaḥ | tasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ || 8.14 ||",
+      "id": "8.14 Aku mudah dicapai oleh Yogi yang selalu teguh, yang terus-menerus dan setiap hari mengingat-Ku (untuk waktu yang lama), tidak memikirkan hal lain (dengan pikiran tunggal atau pikiran terpusat), wahai Partha (Arjuna).",
+      "ban": "8.14 Titiang dangan kapolihang olih Sang Yogi sane setata pageh, sane tan mari tur nyabran rahina eling ring Titiang (suwe), nenten mapikayun napi-napi malih (antuk pikayunan tunggal utawi pikayunan tunggal), duh Partha (Arjuna).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.14 I am easily attained by the ever-steadfast Yogi, who constantly and daily remembers Me (for a long time), thinking of nothing else (with single mind or single-mindedness), O Partha (Arjuna)."
+    },
+    {
+      "no": 15,
+      "devanagari": "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम् । नाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः ॥ ८.१५ ॥",
+      "iast": "māmupetya punarjanma duḥkhālayamaśāśvatam | nāpnuvanti mahātmānaḥ saṃsiddhiṃ paramāṃ gatāḥ || 8.15 ||",
+      "id": "8.15 Setelah mencapaiKu, jiwa-jiwa agung ini tidak lagi terlahir (di sini) yang merupakan tempat kesakitan \ndan tidak kekal: mereka telah mencapai kesempurnaan tertinggi (pembebasan).",
+      "ban": "8.15 Sampun ngamolihang Titiang, atma-atma sane mautama puniki nenten malih embas (iriki) sane dados genah sakit . \ntur nenten langgeng: ipun sampun ngamolihang kesempurnaan sane pinih tegeh (pembebasan).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.15 Having attained Me, these great souls are no longer born (here) which is a place of pain \nand impermanent: they have attained the highest perfection (liberation)."
+    },
+    {
+      "no": 16,
+      "devanagari": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन । मामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते ॥ ८.१६ ॥",
+      "iast": "ābrahmabhuvanāllokāḥ punarāvartino|arjuna | māmupetya tu kaunteya punarjanma na vidyate || 8.16 ||",
+      "id": "8.16 (Semua) alam termasuk alam Brahma dapat dikembalikan lagi, wahai Arjuna; tetapi siapa yang sampai kepada-Ku, hai putra Kunti, tidak mendapat manfaat apa pun.",
+      "ban": "8.16 (Sami) alam rumasuk jagat Brahma prasida kawaliang, duh Sang Arjuna; nanging sapasira ja sane nyujur Titiang, duh putran Kunti, nenten pacang polih pikenoh napi-napi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.16 (All) nature including the Brahma world can be returned, O Arjuna; but whoever reaches Me, O son of Kunti, will not benefit in any way."
+    },
+    {
+      "no": 17,
+      "devanagari": "सहस्रयुगपर्यन्तमहर्यद् ब्रह्मणो विदुः । रात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः ॥ ८.१७ ॥",
+      "iast": "sahasrayugaparyantamaharyad brahmaṇo viduḥ | rātriṃ yugasahasrāntāṃ te|ahorātravido janāḥ || 8.17 ||",
+      "id": "8.17 Orang-orang yang mengetahui hari Brahma yang durasinya seribu Yuga (zaman) dan malam yang juga durasinya seribu Yuga, mereka mengetahui siang dan malam.",
+      "ban": "8.17 Sang sane uning ring rahina Brahma sane suwenyane siu yuga (zaman) miwah wengi sane taler suwenyane siu yuga, ipun uning ring rahina wengi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.17 Those who know Brahma's day which is a thousand Yugas (epochs) long and the night which is also a thousand Yugas long, they know day and night."
+    },
+    {
+      "no": 18,
+      "devanagari": "अव्यक्ताद् व्यक्तयः सर्वाः प्रभवन्त्यहरागमे । रात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके ॥ ८.१८ ॥",
+      "iast": "avyaktād vyaktayaḥ sarvāḥ prabhavantyaharāgame | rātryāgame pralīyante tatraivāvyaktasaṃjñake || 8.18 ||",
+      "id": "8.18 Dari Yang Tak Terwujud, semua yang terwujud (dunia) muncul pada datangnya 'hari'; pada datangnya 'malam' mereka benar-benar larut ke dalam 'yang' saja yang disebut Yang Tak Terwujud.",
+      "ban": "8.18 Saking sane Tan Kasinah, samian sane kacihnayang (jagat) metu ring rauh ‘rahina’; ring sajeroning rauh ‘wengi’ ipun jangkep larut dados ‘sane’ kemanten sane kabaos Tan Manifest.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.18 From the Unmanifest, all that is manifest (the world) arises on the coming of 'day'; on the arrival of 'night' they completely dissolve into 'that' alone which is called the Unmanifest."
+    },
+    {
+      "no": 19,
+      "devanagari": "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते । रात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे ॥ ८.१९ ॥",
+      "iast": "bhūtagrāmaḥ sa evāyaṃ bhūtvā bhūtvā pralīyate | rātryāgame|avaśaḥ pārtha prabhavatyaharāgame || 8.19 ||",
+      "id": "8.19 Kumpulan makhluk yang sama ini, yang terlahir berulang-ulang, larut, tak berdaya, wahai Arjuna (ke dalam Yang Tak Terwujud) pada datangnya malam dan muncul pada datangnya siang hari.",
+      "ban": "8.19 Kelompok makhluk sane pateh puniki, sane embas malih-malih, larut, tan maderbe daya, duh Arjuna (dados sane Tan kacihnayang) rikala rauh wengi tur medal rikala rauh rahina.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.19 This same group of beings, which is born again and again, dissolves, is helpless, O Arjuna (into the Unmanifest) at the coming of night and appears at the coming of day."
+    },
+    {
+      "no": 20,
+      "devanagari": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः । यः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति ॥ ८.२० ॥",
+      "iast": "parastasmāttu bhāvo|anyo|avyakto|avyaktātsanātanaḥ | yaḥ sa sarveṣu bhūteṣu naśyatsu na vinaśyati || 8.20 ||",
+      "id": "8.20 Namun sesungguhnya ada, yang lebih tinggi dari Yang Tak Terwujud ini, Yang Abadi lainnya yang tak termanifestasi, yang tidak hancur ketika semua makhluk dihancurkan.",
+      "ban": "8.20 Nanging sujatinnyane wenten, sane tegehan ring Sang Tan Kacihnayang puniki, Sang Niskala sane tan kacihnayang tiosan, sane nenten kasirnayang rikalaning sakancan sarwa prani kasirnayang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.20 But indeed there is, higher than this Unmanifested One, another unmanifested Eternal One, who is not destroyed when all beings are destroyed."
+    },
+    {
+      "no": 21,
+      "devanagari": "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम् । यं प्राप्य न निवर्तन्ते तद्धाम परमं मम ॥ ८.२१ ॥",
+      "iast": "avyakto|akṣara ityuktastamāhuḥ paramāṃ gatim | yaṃ prāpya na nivartante taddhāma paramaṃ mama || 8.21 ||",
+      "id": "8.21 Apa yang disebut Yang Tak Terwujud dan Yang Tidak Dapat Dihancurkan, yang menurut mereka adalah tujuan tertinggi. Mereka yang mencapainya tidak kembali (ke Samsara ini). Itulah tempat tinggalKu yang tertinggi (tempat atau negara bagian).",
+      "ban": "8.21 Napi sane kabaos Tan Kacihnayang lan Tan Karusak, sane manut ipun pinaka tatujon sane pinih tegeh. Sang sane ngamolihang punika nenten mawali (ring Samsara puniki). Punika genah Titiang sane pinih luhur (genah utawi negara).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.21 What is called the Unmanifest and the Indestructible, which according to them is the highest goal. Those who attain it do not return (to this Samsara). That is My highest abode (place or state)."
+    },
+    {
+      "no": 22,
+      "devanagari": "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया । यस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम् ॥ ८.२२ ॥",
+      "iast": "puruṣaḥ sa paraḥ pārtha bhaktyā labhyastvananyayā | yasyāntaḥsthāni bhūtāni yena sarvamidaṃ tatam || 8.22 ||",
+      "id": "8.22 Purusha tertinggi itu, wahai Arjuna, dapat dicapai melalui pengabdian yang tak tergoyahkan hanya kepada-Nya yang di dalam diri-Nya semua makhluk bersemayam dan yang meliputi semua ini.",
+      "ban": "8.22 Mangda Purusha sane pinih luhur, duh Arjuna, prasida kapolihang malarapan antuk bhakti sane tan surud-surud ring Ida wantah ring Ida sane magenah ring sakancan sarwa prani tur sane nglikub samian.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.22 That supreme Purusha, O Arjuna, can be attained through unwavering devotion to Him alone in Whom all beings reside and who pervades all."
+    },
+    {
+      "no": 23,
+      "devanagari": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः । प्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ ॥ ८.२३ ॥",
+      "iast": "yatra kāle tvanāvṛttimāvṛttiṃ caiva yoginaḥ | prayātā yānti taṃ kālaṃ vakṣyāmi bharatarṣabha || 8.23 ||",
+      "id": "8.23 Sekarang aku akan memberitahumu, wahai pemimpin Bharata, waktu keberangkatan para Yogi akan kembali atau tidak kembali.",
+      "ban": "8.23 Sane mangkin titiang pacang nguningayang ring palungguh iratu sang prabu Bharata, galah budal para yogine, napike ipun mawali wiadin nenten mawali.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.23 Now I will tell you, O chief of Bharata, the time of departure of the Yogis whether they return or not return."
+    },
+    {
+      "no": 24,
+      "devanagari": "अग्निर्जोतिरहः शुक्लः षण्मासा उत्तरायणम् । तत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः ॥ ८.२४ ॥",
+      "iast": "agnirjotirahaḥ śuklaḥ ṣaṇmāsā uttarāyaṇam | tatra prayātā gacchanti brahma brahmavido janāḥ || 8.24 ||",
+      "id": "8.24 Api, siang hari yang terang, dua minggu yang cerah, enam bulan jalur utara matahari (titik balik matahari utara) berangkat kemudian (melalui ini) orang-orang yang mengenal Brahman pergi ke Brahman.",
+      "ban": "8.24 Api, galang rahina, galang kalih wuku, nem sasih pamargin suryane sane kaler (titik balik matahari utara) memargi raris (malarapan antuk puniki) sang sane uning ring Brahman lunga ka Brahman.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.24 Fire, bright daylight, bright fortnight, six months the northern path of the sun (northern solstice) departs then (through this) those who know Brahman go to Brahman."
+    },
+    {
+      "no": 25,
+      "devanagari": "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम् । तत्र चान्द्रमसं ज्योतिर्योगी प्राप्य निवर्तते ॥ ८.२५ ॥",
+      "iast": "dhūmo rātristathā kṛṣṇaḥ ṣaṇmāsā dakṣiṇāyanam | tatra cāndramasaṃ jyotiryogī prāpya nivartate || 8.25 ||",
+      "id": "8.25 Mencapai cahaya bulan melalui asap, waktu malam, juga dua minggu gelap, enam bulan jalur selatan matahari (titik balik matahari selatan), Yogi kembali.",
+      "ban": "8.25 Rauh ring teja bulane malarapan antuk andus, galah wengi, taler kalih wuku peteng dedet, nem sasih pamargin suryane kelod (titik balik matahari selatan), sang Yogi mawali.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.25 Reaching the moonlight through the smoke, night time, also two weeks of darkness, six months of the sun's southern path (southern solstice), the Yogi returns."
+    },
+    {
+      "no": 26,
+      "devanagari": "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते । एकया यात्यनावृत्तिमन्ययावर्तते पुनः ॥ ८.२६ ॥",
+      "iast": "śuklakṛṣṇe gatī hyete jagataḥ śāśvate mate | ekayā yātyanāvṛttimanyayāvartate punaḥ || 8.26 ||",
+      "id": "8.26 Jalan dunia yang terang dan gelap dianggap abadi; melalui yang satu (jalan yang terang) seseorang pergi untuk tidak kembali dan melalui yang lain (jalan yang gelap) dia kembali.",
+      "ban": "8.26 Pamargin jagat sane galang miwah peteng kabaos langgeng; nglintangin sane asiki (margi sane galang) jadmane mamargi nenten naenin mawali tur nglintangin sane lianan (margi sane peteng) ipun mawali.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.26 The paths of the world of light and darkness are considered eternal; through one (the light path) a person goes never to return and through the other (the dark path) he returns."
+    },
+    {
+      "no": 27,
+      "devanagari": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन । तस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन ॥ ८.२७ ॥",
+      "iast": "naite sṛtī pārtha jānanyogī muhyati kaścana | tasmātsarveṣu kāleṣu yogayukto bhavārjuna || 8.27 ||",
+      "id": "8.27 Mengetahui jalan ini, wahai Arjuna, tidak ada Yogi yang tertipu; oleh karena itu setiap saat tekunlah dalam Yoga.",
+      "ban": "8.27 Uning ring pamargi puniki, duh Sang Arjuna, tan wenten Yogi sane keni bobab; punika mawinan setata rajin ring Yoga.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.27 Knowing this path, O Arjuna, no Yogi is deceived; therefore at all times be diligent in Yoga."
+    },
+    {
+      "no": 28,
+      "devanagari": "वेदेषु यज्ञेषु तपःसु चैव दानेषु यत्पुण्यफलं प्रदिष्टम् । अत्येति तत्सर्वमिदं विदित्वा योगी परं स्थानमुपैति चाद्यम् ॥ ८.२८ ॥",
+      "iast": "vedeṣu yajñeṣu tapaḥsu caiva dāneṣu yatpuṇyaphalaṃ pradiṣṭam | atyeti tatsarvamidaṃ viditvā yogī paraṃ sthānamupaiti cādyam || 8.28 ||",
+      "id": "8.28 Apapun buah kebajikan yang dinyatakan (dalam kitab suci) yang diperoleh dari (mempelajari) Weda, (melaksanakan) pengorbanan, (praktik) pertapaan, dan pemberian melebihi semua ini, pergilah sang Yogi, setelah mengetahui hal ini; dan dia mencapai Kediaman Purba Tertinggi (pertama atau kuno).",
+      "ban": "8.28 Napi ja buah darma sane kabaosang (ring pustaka suci) mangda mawit saking (melajahin) Weda, (nglaksanayang) yadnya, (nglaksanayang) tapa, tur ngicenin nglintangin samian punika, sang Yogi matilar, sampun mlajahin indike punika; tur Ida ngamolihang Linggih Primeral Tertinggi (kapertama utawi kuno).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "8.28 Whatever fruit of virtue is stated (in the scriptures) to be derived from (studying) the Vedas, (performing) sacrifices, (practice of) austerities, and giving beyond all these, the Yogi departs, having learned this; and he attained the Supreme Primeval Abode (first or ancient)."
+    }
+  ]
+}

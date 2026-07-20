@@ -12,12 +12,13 @@
     },
     "judul": {
       "type": "object",
-      "required": ["sanskrit", "id", "ban"],
+      "required": ["sanskrit", "id", "ban", "en"],
       "additionalProperties": false,
       "properties": {
         "sanskrit": { "type": "string" },
         "id": { "type": "string" },
-        "ban": { "type": ["string", "null"] }
+        "ban": { "type": ["string", "null"] },
+        "en": { "type": ["string", "null"] }
       }
     },
     "jumlah_sloka": {
@@ -26,12 +27,13 @@
     },
     "sumber": {
       "type": "object",
-      "required": ["sanskrit", "terjemahan_id", "terjemahan_ban"],
+      "required": ["sanskrit", "terjemahan_id", "terjemahan_ban", "terjemahan_en"],
       "additionalProperties": false,
       "properties": {
         "sanskrit": { "type": "string" },
         "terjemahan_id": { "type": "string" },
-        "terjemahan_ban": { "type": "string" }
+        "terjemahan_ban": { "type": "string" },
+        "terjemahan_en": { "type": "string" }
       }
     },
     "sloka": {
@@ -39,7 +41,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["no", "devanagari", "iast", "id", "ban", "status", "catatan"],
+        "required": ["no", "devanagari", "iast", "id", "ban", "en", "status", "catatan"],
         "additionalProperties": false,
         "properties": {
           "no": { "type": "integer", "minimum": 1 },
@@ -47,13 +49,15 @@
           "iast": { "type": "string" },
           "id": { "type": "string" },
           "ban": { "type": ["string", "null"] },
+          "en": { "type": ["string", "null"] },
           "status": {
             "type": "object",
-            "required": ["id", "ban"],
+            "required": ["id", "ban", "en"],
             "additionalProperties": false,
             "properties": {
               "id": { "enum": ["kosong", "draf", "review", "final"] },
-              "ban": { "enum": ["kosong", "draf", "review", "final"] }
+              "ban": { "enum": ["kosong", "draf", "review", "final"] },
+              "en": { "enum": ["kosong", "draf", "review", "final"] }
             }
           },
           "catatan": { "type": "string" }

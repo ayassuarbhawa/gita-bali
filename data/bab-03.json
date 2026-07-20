@@ -1,0 +1,620 @@
+{
+  "bab": 3,
+  "judul": {
+    "sanskrit": "Karma-yoga",
+    "id": "Karma Yoga (Yoga Tindakan)",
+    "ban": "Karma Yoga (Yoga sane marupa parilaksana)",
+    "en": "Karma Yoga (Yoga of Action)"
+  },
+  "jumlah_sloka": 43,
+  "sumber": {
+    "sanskrit": "Vedic Scriptures Bhagavad Gita API — Bab 3",
+    "terjemahan_id": "Draf terjemahan mesin dari teks rujukan berbahasa Inggris; wajib telaah ahli sebelum publikasi.",
+    "terjemahan_ban": "Draf terjemahan mesin dari teks Indonesia proyek; wajib telaah penutur Bali sebelum publikasi.",
+    "terjemahan_en": "Machine-translation draft from the project Indonesian text; expert review required before publication."
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "अर्जुन उवाच । ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन । तत्किं कर्मणि घोरे मां नियोजयसि केशव ॥ ३.१ ॥",
+      "iast": "arjuna uvāca | jyāyasī cetkarmaṇaste matā buddhirjanārdana | tatkiṃ karmaṇi ghore māṃ niyojayasi keśava || 3.1 ||",
+      "id": "3.1 Arjuna berkata Jika Engkau berpikir bahwa pengetahuan lebih unggul daripada tindakan, ya Krishna, lalu mengapa, ya Kesava, Engkau memintaku untuk melakukan tindakan yang mengerikan ini?",
+      "ban": "3.1 Ida Sang Arjuna ngandika Yening Palungguh IRatu mikayunin kaweruhan punika luwih ring parilaksana, duh Sang Kresna, napi mawinan duh Sang Kesawa, Napike Palungguh IRatu ngandikayang titiang ngamargiang parilaksana sane dahat ngresresin puniki?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.1 Arjuna said If You think that knowledge is superior to action, O Krishna, then why, O Kesava, Do You ask me to perform this terrible act?"
+    },
+    {
+      "no": 2,
+      "devanagari": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे । तदेकं वद निश्चित्य येन श्रेयोऽहमाप्नुयाम् ॥ ३.२ ॥",
+      "iast": "vyāmiśreṇeva vākyena buddhiṃ mohayasīva me | tadekaṃ vada niścitya yena śreyo|ahamāpnuyām || 3.2 ||",
+      "id": "3.2 Dengan ucapan yang tampaknya membingungkan ini, Engkau seolah-olah mengacaukan pemahamanku; oleh karena itu beritahukan padaku satu cara yang pasti agar aku bisa mencapai kebahagiaan.",
+      "ban": "3.2 Antuk baos sane kacingak membingungkan puniki, Ragane kacingak membingungkan pangresepan titiang; punika mawinan baosang titiang siki pamargi sane pastika mangda titiang prasida ngamolihang karahayuan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.2 With these apparently confusing remarks, You seem to confuse my understanding; therefore tell me one sure way so that I can achieve happiness."
+    },
+    {
+      "no": 3,
+      "devanagari": "श्रीभगवानुवाच । लोकेऽस्मिन् द्विविधा निष्ठा पुरा प्रोक्ता मयानघ । ज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम् ॥ ३.३ ॥",
+      "iast": "śrībhagavānuvāca | loke|asmina dvividhā niṣṭhā purā proktā mayānagha | jñānayogena sāṅkhyānāṃ karmayogena yoginām || 3.3 ||",
+      "id": "3.3 Bhagavā bersabda Di dunia ini ada jalan ganda, seperti yang telah saya katakan sebelumnya, hai yang tidak berdosa; jalan pengetahuan para Sankhya dan jalan tindakan para Yogi.",
+      "ban": "3.3 Ida Bhatara ngandika: Ring jagate puniki wenten kalih margi, sakadi sane sampun baosang titiang riin, duh sang sane tan madosa; pamargin kaweruhan para sankhya miwah pamargin parilaksana para yogi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.3 The Lord said: In this world there are two paths, as I have said before, O sinless one; the path of knowledge of the Sankhyas and the path of action of the Yogis."
+    },
+    {
+      "no": 4,
+      "devanagari": "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते । न च संन्यसनादेव सिद्धिं समधिगच्छति ॥ ३.४ ॥",
+      "iast": "na karmaṇāmanārambhānnaiṣkarmyaṃ puruṣo|aśnute | na ca saṃnyasanādeva siddhiṃ samadhigacchati || 3.4 ||",
+      "id": "3.4 Bukan karena tidak melakukan suatu tindakan, manusia mencapai keadaan tanpa tindakan; juga tidak hanya dengan pelepasan keduniawian dia mencapai kesempurnaan.",
+      "ban": "3.4 Boya sangkaning tan malaksana manusa ngamolihang kahanan tan malaksana; taler nenten wantah antuk penolakan kemanten sane ngawinang ipun ngamolihang kesempurnaan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.4 It is not through inaction that man attains the state of inaction; nor is it only by renunciation that he attains perfection."
+    },
+    {
+      "no": 5,
+      "devanagari": "न हि कश्चित्क्षणमपि जातु तिष्ठत्यकर्मकृत् । कार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः ॥ ३.५ ॥",
+      "iast": "na hi kaścitkṣaṇamapi jātu tiṣṭhatyakarmakṛt | kāryate hyavaśaḥ karma sarvaḥ prakṛtijairguṇaiḥ || 3.5 ||",
+      "id": "3.5 Sesungguhnya tidak seorang pun dapat tinggal sedetik pun tanpa melakukan tindakan; karena setiap orang memang dibuat untuk bertindak tanpa daya oleh realitas yang lahir dari Alam.",
+      "ban": "3.5 Wiakti, nenten wenten anak sane prasida tetep ajebos tan ngambil parilaksana; santukan sabilang jadma kakaryanin malaksana tan mapikenoh olih kasujatian sane embas saking Alam.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.5 Indeed, no one can remain a moment without taking action; because every person is made to act helplessly by the reality born of Nature."
+    },
+    {
+      "no": 6,
+      "devanagari": "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन् । इन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते ॥ ३.६ ॥",
+      "iast": "karmendriyāṇi saṃyamya ya āste manasā smaran | indriyārthānvimūḍhātmā mithyācāraḥ sa ucyate || 3.6 ||",
+      "id": "3.6 Siapa yang mengendalikan organ-organ tindakannya, lalu duduk memikirkan objek-objek indera dalam pikirannya, maka ia yang pemahamannya tertipu disebut seorang munafik.",
+      "ban": "3.6 Sapasiraja sane ngamong organ-organnyane, raris malinggih mapikayun indik benda-benda indra ring pikayunannyane, sinah sang sane pangresepannyane katipu, kabaos munafik.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.6 Whoever controls his organs of action, then sits thinking about sense objects in his mind, then he whose understanding is deceived is called a hypocrite."
+    },
+    {
+      "no": 7,
+      "devanagari": "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन । कर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते ॥ ३.७ ॥",
+      "iast": "yastvindriyāṇi manasā niyamyārabhate|arjuna | karmendriyaiḥ karmayogamasaktaḥ sa viśiṣyate || 3.7 ||",
+      "id": "3.7 Tetapi siapa pun, yang mengendalikan indera-indera dengan pikiran, wahai Arjuna, menekuni Karma Yoga dengan organ-organ tindakan, tanpa kemelekatan, maka ia unggul.",
+      "ban": "3.7 Nanging sapasira ugi, ngamong indriya antuk pikayunan, duh Sang Arjuna, ngamargiang Karma Yoga antuk organ-organ parilaksana, tan wenten paiketan, punika sane unggul.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.7 But whoever, controlling the senses with the mind, O Arjuna, engages in Karma Yoga with the organs of action, without attachment, is superior."
+    },
+    {
+      "no": 8,
+      "devanagari": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः । शरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः ॥ ३.८ ॥",
+      "iast": "niyataṃ kuru karma tvaṃ karma jyāyo hyakarmaṇaḥ | śarīrayātrāpi ca te na prasiddhyedakarmaṇaḥ || 3.8 ||",
+      "id": "3.8 Apakah engkau melaksanakan kewajibanmu, karena tindakan lebih baik daripada tidak melakukan tindakan dan bahkan pemeliharaan tubuh tidak akan mungkin bagimu jika tidak melakukan tindakan.",
+      "ban": "3.8 Napike ragane ngamargiang swadharman ragane, santukan parilaksana becikan ring tan malaksana tur yadiastun miara angga nenten pacang prasida antuk ragane yening ragane nenten malaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.8 Do you fulfill your duties, for action is better than inaction and even maintenance of the body will not be possible for you if you do not act."
+    },
+    {
+      "no": 9,
+      "devanagari": "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः । तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर ॥ ३.९ ॥",
+      "iast": "yajñārthātkarmaṇo|anyatra loko|ayaṃ karmabandhanaḥ | tadarthaṃ karma kaunteya muktasaṅgaḥ samācara || 3.9 ||",
+      "id": "3.9 Dunia terikat oleh tindakan selain yang dilakukan demi pengorbanan; Oleh karena itu, lakukanlah wahai putra Kunti (Arjuna), lakukanlah perbuatan itu demi hal itu (untuk pengorbanan semata), bebas dari kemelekatan.",
+      "ban": "3.9 Jagat kaiket antuk parilaksana sane tiosan ring sane kamargiang antuk yadnya; Duaning asapunika, laksanayang uduh putran Ida Sang Kunti (Arjuna), laksanayang laksanane punika buat ipun (anggen yadnya kemanten), luput saking katambetan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.9 The world is bound by actions other than those performed for the sake of sacrifice; Therefore, do it, O son of Kunti (Arjuna), do the deed for the sake of it (for sacrifice alone), free from attachment."
+    },
+    {
+      "no": 10,
+      "devanagari": "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः । अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक् ॥ ३.१० ॥",
+      "iast": "sahayajñāḥ prajāḥ sṛṣṭvā purovāca prajāpatiḥ | anena prasaviṣyadhvameṣa vo|astviṣṭakāmadhuk || 3.10 ||",
+      "id": "3.10 Sang Pencipta, setelah pada mulanya (penciptaan) menciptakan umat manusia bersama dengan pengorbanan, bersabda, \"Dengan inilah kamu akan berkembang biak; biarlah ini menjadi sapi perah yang kamu inginkan (sapi yang menghasilkan semua objek yang diinginkan).\"",
+      "ban": "3.10 Sang Pencipta, sesampun pangawit (ciptaan) ngardi manusa sinarengan antuk kurban, ngandika, \"Antuk puniki ragane pacang ngakehang; mangda puniki dados sampi susu sane kaaptiang ragane (sampi sane ngasilang samian benda sane kaaptiang).\"",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.10 The Creator, after initially (creation) creating humanity along with sacrifice, said, \"By this you will multiply; let this be the milk cow you desire (the cow that produces all the desired objects).\""
+    },
+    {
+      "no": 11,
+      "devanagari": "देवान्भावयतानेन ते देवा भावयन्तु वः । परस्परं भावयन्तः श्रेयः परमवाप्स्यथ ॥ ३.११ ॥",
+      "iast": "devānbhāvayatānena te devā bhāvayantu vaḥ | parasparaṃ bhāvayantaḥ śreyaḥ paramavāpsyatha || 3.11 ||",
+      "id": "3.11 Dengan ini kamu memberi makan para dewa dan semoga para dewa itu memberi makan kamu; dengan demikian saling memberi makan, kamu akan mencapai kebaikan tertinggi.",
+      "ban": "3.11 Antuk punika semeton ngajengang dewa-dewa tur dumadak dewa-dewa ngajengang semeton; asapunika saling amah-amahan, ragane pacang ngamolihang kabecikan sane pinih luhur.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.11 With this you feed the gods and may the gods feed you; thus feeding each other, you will attain the highest good."
+    },
+    {
+      "no": 12,
+      "devanagari": "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः । तैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः ॥ ३.१२ ॥",
+      "iast": "iṣṭānbhogānhi vo devā dāsyante yajñabhāvitāḥ | tairdattānapradāyaibhyo yo bhuṅkte stena eva saḥ || 3.12 ||",
+      "id": "3.12 Para dewa, yang diberi makan melalui pengorbanan, akan memberi Anda benda-benda yang diinginkan. Maka barangsiapa menikmati benda pemberian para dewa tanpa mempersembahkan (balasnya) kepada mereka, sesungguhnya dia adalah pencuri.",
+      "ban": "3.12 Para dewata, sane kaupapira malarapan antuk yadnya, pacang ngicenin ragane benda-benda sane kaaptiang. Dadosne sapasira sane ngrasayang barang sane kaicen olih para dewata tanpa ngaturang (sebagai balesan) ring dewata, ipun sujati maling.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.12 The gods, fed through sacrifice, will give you desired objects. So whoever enjoys things given by the gods without offering (in return) to them, he is truly a thief."
+    },
+    {
+      "no": 13,
+      "devanagari": "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः । भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ॥ ३.१३ ॥",
+      "iast": "yajñaśiṣṭāśinaḥ santo mucyante sarvakilbiṣaiḥ | bhuñjate te tvaghaṃ pāpā ye pacantyātmakāraṇāt || 3.13 ||",
+      "id": "3.13 Orang benar yang memakan sisa-sisa kurban dibebaskan dari segala dosa; tetapi orang-orang berdosa yang memasak makanan (hanya) demi dirinya sendiri, sesungguhnya memakan dosa.",
+      "ban": "3.13 Anake ane patut ane ngamah sisan-sisan aturan, ia bebas uli sakancan dosane; nanging jadma madosa sane masak ajengan (wantah) antuk deweknyane, sujatinnyane ngajeng dosa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.13 The righteous who eats the remains of the sacrifice is freed from all sin; but sinners who cook food (only) for its own sake, are actually eating sin."
+    },
+    {
+      "no": 14,
+      "devanagari": "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः । यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥ ३.१४ ॥",
+      "iast": "annādbhavanti bhūtāni parjanyādannasambhavaḥ | yajñādbhavati parjanyo yajñaḥ karmasamudbhavaḥ || 3.14 ||",
+      "id": "3.14 Dari makanan muncullah makhluk; dari hujan dihasilkan makanan; dari pengorbanan timbullah hujan dan pengorbanan lahir dari tindakan.",
+      "ban": "3.14 Saking ajengan metu sarwa prani; saking sabeh punika ajengan sane kamedalang; saking yadnya metu sabeh lan yadnya metu saking parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.14 From food arise creatures; from the rain food is produced; from sacrifice comes rain and sacrifice comes from action."
+    },
+    {
+      "no": 15,
+      "devanagari": "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् । तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम् ॥ ३.१५ ॥",
+      "iast": "karma brahmodbhavaṃ viddhi brahmākṣarasamudbhavam | tasmātsarvagataṃ brahma nityaṃ yajñe pratiṣṭhitam || 3.15 ||",
+      "id": "3.15 Ketahuilah bahwa perbuatan berasal dari Brahma dan Brahma berasal dari Yang Abadi. Oleh karena itu, Yang Maha Meliputi (Brahma) selalu bersemayam dalam pengorbanan.",
+      "ban": "3.15 Uningin parilaksana punika mawit saking Brahma lan Brahma mawit saking Sang Niskala. Punika mawinan Ida Sang Maha Wisesa (Brahma) setata malinggih ring yadnya.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.15 Know that action originates from Brahma and Brahma originates from the Eternal. Therefore, the All-Pervading One (Brahma) always abides in sacrifice."
+    },
+    {
+      "no": 16,
+      "devanagari": "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः । अघायुरिन्द्रियारामो मोघं पार्थ स जीवति ॥ ३.१६ ॥",
+      "iast": "evaṃ pravartitaṃ cakraṃ nānuvartayatīha yaḥ | aghāyurindriyārāmo moghaṃ pārtha sa jīvati || 3.16 ||",
+      "id": "3.16 Barangsiapa tidak mengikuti roda yang berputar demikian, yang hidup penuh dosa, bergembira dalam indra-indranya, ia hidup sia-sia, wahai Arjuna.",
+      "ban": "3.16 Sapasiraja tan ngiring roda mabalik kadi punika, sane maurip madosa, seneng ring indriya, maurip tan paguna, duh Sang Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.16 Whoever does not follow such a turning wheel, who lives sinfully, delighting in his senses, lives in vain, O Arjuna."
+    },
+    {
+      "no": 17,
+      "devanagari": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः । आत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते ॥ ३.१७ ॥",
+      "iast": "yastvātmaratireva syādātmatṛptaśca mānavaḥ | ātmanyeva ca santuṣṭastasya kāryaṃ na vidyate || 3.17 ||",
+      "id": "3.17 Tetapi bagi orang yang bergembira hanya pada Dirinya saja, yang puas dengan Dirinya dan yang puas hanya dengan Dirinya saja, sesungguhnya tidak ada yang bisa dilakukan.",
+      "ban": "3.17 Nanging pabuat anake sane seneng ring raga kemanten, sane wareg ring raga tur sane wareg ring raga kemanten, sujatinnyane nenten wenten sane prasida kamargiang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.17 But for the person who delights in Himself alone, who is satisfied with Himself and who is satisfied with Himself alone, there is truly nothing that can be done."
+    },
+    {
+      "no": 18,
+      "devanagari": "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन । न चास्य सर्वभूतेषु कश्चिदर्थव्यपाश्रयः ॥ ३.१८ ॥",
+      "iast": "naiva tasya kṛtenārtho nākṛteneha kaścana | na cāsya sarvabhūteṣu kaścidarthavyapāśrayaḥ || 3.18 ||",
+      "id": "3.18 Baginya tidak ada kepentingan apapun terhadap apa yang dilakukan atau apa yang tidak dilakukan; dia juga tidak bergantung pada makhluk apa pun untuk objek apa pun.",
+      "ban": "3.18 Antuk ipun nenten wenten pikenohnyane ring napi sane kalaksanayang wiadin sane nenten kalaksanayang; taler Ida nenten ngandelang sarwa prani antuk barang napi-napi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.18 For him there is no interest whatever in what is done or what is not done; nor does he depend on any creature for any object."
+    },
+    {
+      "no": 19,
+      "devanagari": "तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥ ३.१९ ॥",
+      "iast": "tasmādasaktaḥ satataṃ kāryaṃ karma samācara | asakto hyācarankarma paramāpnoti pūruṣaḥ || 3.19 ||",
+      "id": "3.19 Oleh karena itu tanpa keterikatan, apakah engkau selalu melakukan tindakan yang seharusnya dilakukan; karena dengan melakukan perbuatan tanpa keterikatan, manusia mencapai Yang Maha Kuasa.",
+      "ban": "3.19 Punika mawinan tan melekat, napike setata ngamargiang parilaksana sane patut kamargiang; santukan antuk ngamargiang parilaksana sane tan wenten paiketan, manusa prasida ngamolihang Sang Maha Wisesa.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.19 Therefore without attachment, do you always do the actions that should be done; for by performing actions without attachment, man attains the Almighty."
+    },
+    {
+      "no": 20,
+      "devanagari": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः । लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ॥ ३.२० ॥",
+      "iast": "karmaṇaiva hi saṃsiddhimāsthitā janakādayaḥ | lokasaṃgrahamevāpi sampaśyankartumarhasi || 3.20 ||",
+      "id": "3.20 Janaka dan yang lainnya mencapai kesempurnaan hanya melalui tindakan saja; bahkan dengan maksud untuk melindungi massa, engkau harus melakukan tindakan.",
+      "ban": "3.20 Sang Janaka miwah sane lianan ngamolihang kasampurnaan malarapan antuk parilaksana kemanten; yadiastun antuk tatujon nyaga massa, semeton patut ngambil tindakan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.20 Janaka and others attained perfection through action alone; even with the intention of protecting the masses, you must take action."
+    },
+    {
+      "no": 21,
+      "devanagari": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः । स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥ ३.२१ ॥",
+      "iast": "yadyadācarati śreṣṭhastattadevetaro janaḥ | sa yatpramāṇaṃ kurute lokastadanuvartate || 3.21 ||",
+      "id": "3.21 Apa pun yang dilakukan orang besar, orang lain juga melakukannya; apapun yang dia tetapkan sebagai standar, yang diikuti oleh dunia (umat manusia).",
+      "ban": "3.21 Napi sane kalaksanayang olih anak sane mautama, taler kalaksanayang olih anak tiosan; napi sane sampun katetapang dados standar, sane katuutin olih jagate (kemanusiaan).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.21 Whatever a great man does, others do also; whatever he sets as a standard, which the world (humanity) follows."
+    },
+    {
+      "no": 22,
+      "devanagari": "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन । नानवाप्तमवाप्तव्यं वर्त एव च कर्मणि ॥ ३.२२ ॥",
+      "iast": "na me pārthāsti kartavyaṃ triṣu lokeṣu kiñcana | nānavāptamavāptavyaṃ varta eva ca karmaṇi || 3.22 ||",
+      "id": "3.22 Tidak ada apa pun di tiga dunia ini, wahai Arjuna, yang harus Kulakukan, dan tidak ada sesuatu pun yang belum tercapai yang harus dicapai; namun Aku melibatkan diri dalam tindakan.",
+      "ban": "3.22 Tan wenten ring jagat tetiga puniki, duh Sang Arjuna, sane patut margiang titiang, taler tan wenten sane tan sida kapolihang, sane patut kapolihang; nanging tiang nyarengin dewek tiange ring parilaksana.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.22 There is nothing in these three worlds, O Arjuna, that I must do, and there is nothing unattainable that must be achieved; but I involve myself in action."
+    },
+    {
+      "no": 23,
+      "devanagari": "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः । मम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः ॥ ३.२३ ॥",
+      "iast": "yadi hyahaṃ na varteyaṃ jātu karmaṇyatandritaḥ | mama vartmānuvartante manuṣyāḥ pārtha sarvaśaḥ || 3.23 ||",
+      "id": "3.23 Karena jika Aku tidak pernah melakukan tindakan tanpa kenal lelah, manusia akan mengikuti jalan-Ku dengan segala cara, wahai Arjuna.",
+      "ban": "3.23 Santukan yan Titiang tan naenin malaksana tan surud-surud, jadmane pacang nuutin pamargin Titiang yadiastun antuk napi ja, duh Arjuna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.23 For if I never act tirelessly, people will follow My path at all costs, O Arjuna."
+    },
+    {
+      "no": 24,
+      "devanagari": "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम् । सङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः ॥ ३.२४ ॥",
+      "iast": "utsīdeyurime lokā na kuryāṃ karma cedaham | saṅkarasya ca kartā syāmupahanyāmimāḥ prajāḥ || 3.24 ||",
+      "id": "3.24 Dunia-dunia ini akan binasa jika saya tidak melakukan tindakan; Saya seharusnya menjadi penyebab kekacauan kasta dan kehancuran makhluk-makhluk ini.",
+      "ban": "3.24 Jagat-jagat puniki pacang ical, yening titiang nenten ngambil parilaksana; Titiang patut dados penyebab kacau kasta lan karusakan sarwa prani puniki.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.24 These worlds will perish if I do not take action; I should be the cause of caste chaos and the destruction of these creatures."
+    },
+    {
+      "no": 25,
+      "devanagari": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत । कुर्याद्विद्वांस्तथासक्तश्चिकीर्षुर्लोकसंग्रहम् ॥ ३.२५ ॥",
+      "iast": "saktāḥ karmaṇyavidvāṃso yathā kurvanti bhārata | kuryādvidvāṃstathāsaktaścikīrṣurlokasaṃgraham || 3.25 ||",
+      "id": "3.25 Sebagaimana orang bodoh bertindak karena kemelekatan pada tindakan, wahai Bharata (Arjuna), demikian pula orang bijak harus bertindak tanpa kemelekatan, dengan mengharapkan kesejahteraan dunia.",
+      "ban": "3.25 Sakadi anake belog malaksana sangkaning melekat ring parilaksana, duh Bharata (Arjuna), asapunika taler anake wicaksana patut malaksana tan melekat, ngaptiang karahayuan jagate.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.25 As the foolish man acts out of attachment to action, O Bharata (Arjuna), so too the wise man should act without attachment, hoping for the well-being of the world."
+    },
+    {
+      "no": 26,
+      "devanagari": "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम् । जोषयेत्सर्वकर्माणि विद्वान्युक्तः समाचरन् ॥ ३.२६ ॥",
+      "iast": "na buddhibhedaṃ janayedajñānāṃ karmasaṅginām | joṣayetsarvakarmāṇi vidvānyuktaḥ samācaran || 3.26 ||",
+      "id": "3.26 Janganlah ada orang bijak yang mengganggu pikiran orang-orang bodoh yang terikat pada tindakan; dia harus melibatkan mereka dalam semua tindakan, dia sendiri yang memenuhinya dengan pengabdian.",
+      "ban": "3.26 Sampunangja anak wicaksana ngrusuhin pikayunan anak belog sane sampun neket ring parilaksana. ida patut nyarengin ring sakancan parilaksana, ida ngraga nagingin antuk bhakti.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.26 Let no wise man disturb the minds of fools who are attached to action; he must involve them in all actions, he himself fulfills them with devotion."
+    },
+    {
+      "no": 27,
+      "devanagari": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः । अहङ्कारविमूढात्मा कर्ताहमिति मन्यते ॥ ३.२७ ॥",
+      "iast": "prakṛteḥ kriyamāṇāni guṇaiḥ karmāṇi sarvaśaḥ | ahaṅkāravimūḍhātmā kartāhamiti manyate || 3.27 ||",
+      "id": "3.27 Semua tindakan dalam semua kasus dilakukan hanya oleh entitas Alam saja. Dia yang pikirannya tertipu oleh egoisme berpikir, “Akulah pelakunya.”",
+      "ban": "3.27 Samian parilaksana ring sakancan wicara wantah kamargiang olih entitas Alam kemanten. Anake ane kenehne katipu baan egoisme, ia makeneh, “Tiang ane pelih.”",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.27 All actions in all cases are performed by Natural entities only. He whose mind is deceived by egoism thinks, “I am the culprit.”"
+    },
+    {
+      "no": 28,
+      "devanagari": "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः । गुणा गुणेषु वर्तन्त इति मत्वा न सज्जते ॥ ३.२८ ॥",
+      "iast": "tattvavittu mahābāho guṇakarmavibhāgayoḥ | guṇā guṇeṣu vartanta iti matvā na sajjate || 3.28 ||",
+      "id": "3.28 Tetapi dia yang mengetahui Kebenaran, wahai yang berlengan perkasa (Arjuna), tentang pembagian kelompok-kelompok dan fungsi (mereka), mengetahui bahwa Guna sebagai indera bergerak di tengah-tengah Guna sebagai objek indera, tidak terikat.",
+      "ban": "3.28 Nanging sang sane uning ring Kasujatian, duh sang sane mawisesa (Arjuna), ngeninin indik pahan kelompok lan fungsi (ipun), uning ring para Guna pinaka indriya mamargi ring tengahing Guna pinaka benda indriya, tan kaiket.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.28 But he who knows the Truth, O mighty-armed one (Arjuna), regarding the division of groups and (their) functions, knows that the Gunas as senses move amidst the Gunas as sense objects, unbound."
+    },
+    {
+      "no": 29,
+      "devanagari": "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु । तानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत् ॥ ३.२९ ॥",
+      "iast": "prakṛterguṇasammūḍhāḥ sajjante guṇakarmasu | tānakṛtsnavido mandānkṛtsnavinna vicālayet || 3.29 ||",
+      "id": "3.29 Mereka yang tertipu oleh sifat-sifat Alam terikat pada fungsi-fungsi sifat-sifat tersebut. Orang yang berpengetahuan sempurna tidak boleh meresahkan orang bodoh yang berpengetahuan tidak sempurna.",
+      "ban": "3.29 Sang sane katipu antuk sifat-sifat Alam punika melekat ring fungsi-fungsi sifat-sifat punika. Anak sane madue kaweruhan sane paripurna nenten dados ngarusuhin anak sane tan wikan antuk kaweruhan sane nenten paripurna.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.29 Those who are deceived by the qualities of Nature are attached to the functions of those qualities. A person with perfect knowledge should not disturb an ignorant person with imperfect knowledge."
+    },
+    {
+      "no": 30,
+      "devanagari": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा । निराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः ॥ ३.३० ॥",
+      "iast": "mayi sarvāṇi karmāṇi saṃnyasyādhyātmacetasā | nirāśīrnirmamo bhūtvā yudhyasva vigatajvaraḥ || 3.30 ||",
+      "id": "3.30 Menyangkal segala tindakan pada-Ku, dengan pikiran berpusat pada Diri Sendiri, bebas dari harapan dan egoisme, dan dari demam (mental), lakukanlah perlawanan.",
+      "ban": "3.30 Nulak sakancan parilaksana marep ring Titiang, antuk pikayunan sane mapusat ring Raga, bebas saking pangapti lan egoisme, lan saking demam (mental), masang perlawanan.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.30 Denying all actions towards Me, with the mind centered on the Self, free from hope and egoism, and from (mental) fever, put up resistance."
+    },
+    {
+      "no": 31,
+      "devanagari": "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः । श्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः ॥ ३.३१ ॥",
+      "iast": "ye me matamidaṃ nityamanutiṣṭhanti mānavāḥ | śraddhāvanto|anasūyanto mucyante te|api karmabhiḥ || 3.31 ||",
+      "id": "3.31 Orang-orang yang secara terus-menerus mengamalkan ajaran-Ku ini dengan keyakinan dan tanpa bersekongkol, mereka juga terbebas dari perbuatan.",
+      "ban": "3.31 Anake ane tan mari nglaksanayang paurukan Ulune aji pracaya tur tusing mapi-mapi, ia masih bebas uli laksanane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.31 Those who continuously practice My teachings with faith and without conspiracy, they are also free from deeds."
+    },
+    {
+      "no": 32,
+      "devanagari": "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम् । सर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः ॥ ३.३२ ॥",
+      "iast": "ye tvetadabhyasūyanto nānutiṣṭhanti me matam | sarvajñānavimūḍhāṃstānviddhi naṣṭānacetasaḥ || 3.32 ||",
+      "id": "3.32 Tetapi orang-orang yang mengikuti ajaran-Ku dan tidak mengamalkannya, tertipu oleh segala pengetahuan, dan tidak membeda-bedakan, mengetahui bahwa mereka akan dibinasakan.",
+      "ban": "3.32 Nanging anake ane ninutin paurukan Ulune tur tusing nglaksanayang, ia kena tipu baan sakancan kaweruhan, tur tusing mapilih kasih, sawireh ia nawang mungguing ia lakar kasirnayang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.32 But those who follow My teaching and do not put it into practice, are deceived by all knowledge, and do not discriminate, knowing that they will be destroyed."
+    },
+    {
+      "no": 33,
+      "devanagari": "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि । प्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति ॥ ३.३३ ॥",
+      "iast": "sadṛśaṃ ceṣṭate svasyāḥ prakṛterjñānavānapi | prakṛtiṃ yānti bhūtāni nigrahaḥ kiṃ kariṣyati || 3.33 ||",
+      "id": "3.33 Bahkan orang bijak pun bertindak sesuai dengan sifatnya; makhluk akan mengikuti Alam; apa yang bisa \npengekangan lakukan?",
+      "ban": "3.33 Yadiastun anake sane wicaksana, ipun malaksana manut ring sifatnyane. makhluk pacang nginutin Alam; napi sané prasida \npenahanan do?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.33 Even wise men act according to their nature; creatures will follow Nature; what can \nrestraint do?"
+    },
+    {
+      "no": 34,
+      "devanagari": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ । तयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ ॥ ३.३४ ॥",
+      "iast": "indriyasyendriyasyārthe rāgadveṣau vyavasthitau | tayorna vaśamāgacchettau hyasya paripanthinau || 3.34 ||",
+      "id": "3.34 Kemelekatan dan kebencian terhadap objek-objek indera tinggal di dalam indera; jangan biarkan siapa pun berada di bawah kekuasaan mereka; karena mereka adalah musuhnya.",
+      "ban": "3.34 Keterikatan lan rasa nenten seneng ring benda indriya magenah ring indriya; sampunang kantos wenten anak sane keni kakuasannyane; santukan ipun dados meseh Idane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.34 Attachment and aversion to sense objects reside in the senses; let no one come under their power; because they are his enemies."
+    },
+    {
+      "no": 35,
+      "devanagari": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात् । स्वधर्मे निधनं श्रेयः परधर्मो भयावहः ॥ ३.३५ ॥",
+      "iast": "śreyānsvadharmo viguṇaḥ paradharmātsvanuṣṭhitāt | svadharme nidhanaṃ śreyaḥ paradharmo bhayāvahaḥ || 3.35 ||",
+      "id": "3.35 Lebih baik kewajiban seseorang, meskipun tidak ada manfaatnya, daripada kewajiban orang lain yang dilaksanakan dengan baik. Lebih baik kematian karena kewajibannya sendiri; tugas orang lain penuh dengan rasa takut (menghasilkan bahaya).",
+      "ban": "3.35 Becikan kewajiban anak asiki, yadiastun nenten wenten pikenohnyane, bandingang ring kewajiban anak tiosan sane kalaksanayang becik. Becikan padem malantaran swadharmannyane ngraga; tugas anak lianan sane kadagingin antuk rasa jejeh (mawetuang baya).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.35 Better is one person's obligations, even if they are of no benefit, than another person's obligations well executed. Better is death because of one's own duty; other people's tasks are filled with fear (result in danger)."
+    },
+    {
+      "no": 36,
+      "devanagari": "अर्जुन उवाच । अथ केन प्रयुक्तोऽयं पापं चरति पूरुषः । अनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः ॥ ३.३६ ॥",
+      "iast": "arjuna uvāca | atha kena prayukto|ayaṃ pāpaṃ carati pūruṣaḥ | anicchannapi vārṣṇeya balādiva niyojitaḥ || 3.36 ||",
+      "id": "3.36 Arjuna berkata Tapi didorong oleh apa, manusia melakukan dosa, meskipun bertentangan dengan keinginannya, wahai Varshneya (Krishna), seolah-olah dipaksa, dengan paksa?",
+      "ban": "3.36 Ida Sang Arjuna ngandika Nanging kasokong olih napi, manusa ngamargiang dosa, yadiastun nglawan pikayunan idane, duh Varshneya (Kresna), sakadi kapaksa, antuk paksa?",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.36 Arjuna said But driven by what, man commits sin, even against his will, O Varshneya (Krishna), as if compelled, by force?"
+    },
+    {
+      "no": 37,
+      "devanagari": "श्रीभगवानुवाच । काम एष क्रोध एष रजोगुणसमुद्भवः । महाशनो महापाप्मा विद्ध्येनमिह वैरिणम् ॥ ३.३७ ॥",
+      "iast": "śrībhagavānuvāca | kāma eṣa krodha eṣa rajoguṇasamudbhavaḥ | mahāśano mahāpāpmā viddhyenamiha vairiṇam || 3.37 ||",
+      "id": "3.37 Sang Bhagavā bersabda Itu adalah nafsu, itu adalah kemarahan yang merupakan sifat Rajas, melahap segalanya, penuh dosa; ketahuilah ini sebagai musuh di sini (di dunia ini).",
+      "ban": "3.37 Ida Sang Hyang Widhi ngandika Inggih punika nafsu, punika duka sane dados sifat Raja, nglebur sakancan, bek antuk dosa; uning indike punika pinaka musuh iriki (ring jagate puniki).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.37 The Blessed One said That is lust, that is anger which is the nature of Rajas, devouring everything, full of sin; know this as the enemy here (in this world)."
+    },
+    {
+      "no": 38,
+      "devanagari": "धूमेनाव्रियते वह्निर्यथादर्शो मलेन च । यथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम् ॥ ३.३८ ॥",
+      "iast": "dhūmenāvriyate vahniryathādarśo malena ca | yatholbenāvṛto garbhastathā tenedamāvṛtam || 3.38 ||",
+      "id": "3.38 Sebagaimana api diselimuti oleh asap, seperti cermin oleh debu, dan seperti embrio oleh amnion, demikian pula hal ini diselimuti olehnya.",
+      "ban": "3.38 Sakadi geni sane katutupin antuk andus, sakadi cermin antuk buk, tur sakadi embrio antuk amnion, kadi asapunika taler ipun katutupin antuk api punika.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.38 As fire is enveloped in smoke, like a mirror by dust, and like an embryo by the amnion, so it is enveloped by it."
+    },
+    {
+      "no": 39,
+      "devanagari": "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा । कामरूपेण कौन्तेय दुष्पूरेणानलेन च ॥ ३.३९ ॥",
+      "iast": "āvṛtaṃ jñānametena jñānino nityavairiṇā | kāmarūpeṇa kaunteya duṣpūreṇānalena ca || 3.39 ||",
+      "id": "3.39 Wahai Arjuna, kebijaksanaan diselimuti oleh musuh terus-menerus para bijaksana dalam bentuk nafsu, yang tak dapat diredakan seperti api.",
+      "ban": "3.39 Inggih Sang Arjuna, kawicaksanane kaambekin antuk mesehe sane tan surud-surud ring sang wicaksana marupa nafsu, sane tan sida padem kadi geni.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.39 O Arjuna, wisdom is clouded by the constant enemy of the wise in the form of passion, which cannot be quenched like fire."
+    },
+    {
+      "no": 40,
+      "devanagari": "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते । एतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम् ॥ ३.४० ॥",
+      "iast": "indriyāṇi mano buddhirasyādhiṣṭhānamucyate | etairvimohayatyeṣa jñānamāvṛtya dehinam || 3.40 ||",
+      "id": "3.40 Indera, pikiran dan intelek dikatakan sebagai pusatnya; melalui ini ia menipu yang diwujudkan dengan menyelubungi kebijaksanaannya.",
+      "ban": "3.40 Indria, pikayunan miwah budi kabaos pinaka pusat; malantaran punika ipun ngapus sane kacihnayang antuk nglikub kawicaksanaannyane.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.40 The senses, mind and intellect are said to be the centre; through this he deceives which are manifested by veiling his wisdom."
+    },
+    {
+      "no": 41,
+      "devanagari": "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ । पाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम् ॥ ३.४१ ॥",
+      "iast": "tasmāttvamindriyāṇyādau niyamya bharatarṣabha | pāpmānaṃ prajahi hyenaṃ jñānavijñānanāśanam || 3.41 ||",
+      "id": "3.41 Oleh karena itu, wahai Bharata (Arjuna) yang terbaik, yang pertama-tama mengendalikan indera, bunuhlah makhluk berdosa ini, perusak pengetahuan dan realisasi.",
+      "ban": "3.41 Punika mawinan, duh sang sane pinih becik saking Bharata (Arjuna), sane ngamong indriya dumun, pademangja sarwa prani sane madosa puniki, sane ngusak-asik kaweruhan lan realisasi.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.41 Therefore, O best of Bharata (Arjuna), who controls the senses first, slay this sinful creature, destroyer of knowledge and realization."
+    },
+    {
+      "no": 42,
+      "devanagari": "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः । मनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः ॥ ३.४२ ॥",
+      "iast": "indriyāṇi parāṇyāhurindriyebhyaḥ paraṃ manaḥ | manasastu parā buddhiryo buddheḥ paratastu saḥ || 3.42 ||",
+      "id": "3.42 Mereka mengatakan bahwa indera lebih unggul (dibandingkan tubuh); yang lebih unggul dari indera adalah pikiran; yang lebih unggul dari pikiran adalah intelek; orang yang lebih unggul bahkan dibandingkan akal adalah Dia (Diri).",
+      "ban": "3.42 Ipun maosang indik indriya punika unggul (ring angga); sane unggul ring indriya inggih punika pikayunan; sane luwih ring pikayunan inggih punika budi; sane unggul yadiastun ring akal inggih punika Ida (Diri).",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.42 They say that the senses are superior (to the body); superior to the senses is the mind; what is superior to the mind is the intellect; the one who is superior even to reason is He (Self)."
+    },
+    {
+      "no": 43,
+      "devanagari": "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना । जहि शत्रुं महाबाहो कामरूपं दुरासदम् ॥ ३.४३ ॥",
+      "iast": "evaṃ buddheḥ paraṃ buddhvā saṃstabhyātmānamātmanā | jahi śatruṃ mahābāho kāmarūpaṃ durāsadam || 3.43 ||",
+      "id": "3.43 Dengan mengetahui Dia Yang lebih unggul dalam kecerdasan dan mengendalikan diri dengan Diri, bunuhlah engkau, wahai Arjuna yang berlengan perkasa, musuh dalam bentuk nafsu, yang sulit ditaklukkan.",
+      "ban": "3.43 Uning ring Ida Sane luwih ring kawicaksanaan tur prasida ngamong raga sareng Sang Hyang Raga, pademang ragane, duh Sang Arjuna sane mawisesa, meseh sane marupa nafsu, sane meweh pacang ngasorang.",
+      "status": {
+        "id": "draf",
+        "ban": "draf",
+        "en": "draf"
+      },
+      "catatan": "",
+      "en": "3.43 Knowing Him Who is superior in intelligence and self-controlled with the Self, slay thee, O mighty-armed Arjuna, the enemy in the form of lust, who is difficult to conquer."
+    }
+  ]
+}
