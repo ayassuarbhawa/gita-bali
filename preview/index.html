@@ -137,6 +137,24 @@
     color:var(--ink);
     background:#fff;
   }
+  .password-field { position:relative; }
+  .password-field input { padding-right:5.2rem; }
+  .password-toggle {
+    position:absolute;
+    top:50%;
+    right:.45rem;
+    min-width:4.2rem;
+    min-height:2.25rem;
+    padding:.35rem .55rem;
+    border:0;
+    border-radius:.5rem;
+    color:var(--accent-dark);
+    background:#f2ecdf;
+    cursor:pointer;
+    font:700 .68rem/1 system-ui,sans-serif;
+    transform:translateY(-50%);
+  }
+  .password-hint { margin:-.25rem 0 .1rem; color:var(--muted); font:.72rem/1.45 system-ui,sans-serif; }
   .auth-submit, .auth-logout {
     min-height:3.1rem;
     padding:.7rem 1rem;
@@ -632,10 +650,17 @@
         <label for="auth-email">Alamat email</label>
         <input id="auth-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nama@email.com" required>
         <label for="auth-password">Password</label>
-        <input id="auth-password" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="Minimal 8 karakter" required>
+        <div class="password-field">
+          <input id="auth-password" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="Minimal 8 karakter" required>
+          <button class="password-toggle" type="button" data-password-target="auth-password" aria-pressed="false">Lihat</button>
+        </div>
+        <p class="password-hint">Gunakan minimal 8 karakter.</p>
         <div id="password-confirm-wrap" hidden>
           <label for="auth-password-confirm">Ulangi password</label>
-          <input id="auth-password-confirm" name="password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder="Ketik ulang password">
+          <div class="password-field">
+            <input id="auth-password-confirm" name="password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder="Ketik ulang password">
+            <button class="password-toggle" type="button" data-password-target="auth-password-confirm" aria-pressed="false">Lihat</button>
+          </div>
         </div>
         <button class="auth-submit" id="auth-submit" type="submit">Masuk</button>
         <button class="auth-secondary" id="auth-mode-toggle" type="button">Belum punya akun? Daftar</button>
@@ -649,9 +674,15 @@
       <p class="auth-copy">Masukkan password baru untuk akunmu.</p>
       <form class="auth-form" id="reset-form">
         <label for="reset-password">Password baru</label>
-        <input id="reset-password" type="password" minlength="8" autocomplete="new-password" placeholder="Minimal 8 karakter" required>
+        <div class="password-field">
+          <input id="reset-password" type="password" minlength="8" autocomplete="new-password" placeholder="Minimal 8 karakter" required>
+          <button class="password-toggle" type="button" data-password-target="reset-password" aria-pressed="false">Lihat</button>
+        </div>
         <label for="reset-password-confirm">Ulangi password baru</label>
-        <input id="reset-password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder="Ketik ulang password" required>
+        <div class="password-field">
+          <input id="reset-password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder="Ketik ulang password" required>
+          <button class="password-toggle" type="button" data-password-target="reset-password-confirm" aria-pressed="false">Lihat</button>
+        </div>
         <button class="auth-submit" id="reset-submit" type="submit">Simpan password baru</button>
         <p class="auth-message" id="reset-message" role="status" aria-live="polite"></p>
       </form>
@@ -897,6 +928,28 @@
     authMessage.classList.remove("is-error");
   }
 
+  function hideAllPasswords() {
+    document.querySelectorAll("[data-password-target]").forEach(function (button) {
+      var input = document.getElementById(button.dataset.passwordTarget);
+      input.type = "password";
+      button.textContent = "Lihat";
+      button.setAttribute("aria-pressed", "false");
+    });
+  }
+
+  function authErrorText(error, fallback) {
+    var message = String(error && error.message ? error.message : "").toLowerCase();
+    if ((error && error.status === 429) || message.includes("rate limit")) {
+      return "Terlalu banyak permintaan email. Tunggu beberapa saat atau aktifkan custom SMTP.";
+    }
+    if (message.includes("not authorized") || message.includes("email address is not authorized")) {
+      return "Alamat ini belum dapat menerima email karena layanan email project belum dikonfigurasi untuk pengguna publik.";
+    }
+    if (message.includes("invalid login credentials")) return "Email atau password tidak cocok.";
+    if (message.includes("password")) return "Password belum memenuhi ketentuan. Gunakan minimal 8 karakter.";
+    return fallback;
+  }
+
   async function migrateLocalData() {
     if (!account.user) return;
     var marker = "gita-bali-migrated-" + account.user.id;
@@ -970,6 +1023,7 @@
           loginView.hidden = true;
           accountView.hidden = true;
           resetView.hidden = false;
+          hideAllPasswords();
           if (!authDialog.open) authDialog.showModal();
         }, 0);
         return;
@@ -1191,12 +1245,24 @@
   authTrigger.addEventListener("click", function () {
     updateAuthUI();
     if (!account.user) setAuthMode("signin");
+    hideAllPasswords();
     authDialog.showModal();
   });
 
   document.getElementById("auth-close").addEventListener("click", function () { authDialog.close(); });
   authDialog.addEventListener("click", function (event) {
     if (event.target === authDialog) authDialog.close();
+  });
+
+  document.querySelectorAll("[data-password-target]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var input = document.getElementById(button.dataset.passwordTarget);
+      var showing = input.type === "text";
+      input.type = showing ? "password" : "text";
+      button.textContent = showing ? "Lihat" : "Sembunyi";
+      button.setAttribute("aria-pressed", String(!showing));
+      input.focus();
+    });
   });
 
   authForm.addEventListener("submit", async function (event) {
@@ -1222,9 +1288,9 @@
     authSubmit.disabled = false;
     if (result.error) {
       authMessage.classList.add("is-error");
-      authMessage.textContent = authMode === "signup"
+      authMessage.textContent = authErrorText(result.error, authMode === "signup"
         ? "Akun belum dapat dibuat. Pastikan email valid dan password minimal 8 karakter."
-        : "Email atau password tidak cocok.";
+        : "Email atau password tidak cocok.");
       return;
     }
     if (authMode === "signup" && !result.data.session) {
@@ -1253,7 +1319,7 @@
     var result = await authClient.auth.resetPasswordForEmail(emailInput.value.trim(), { redirectTo: redirectTo });
     if (result.error) {
       authMessage.classList.add("is-error");
-      authMessage.textContent = "Email pemulihan belum dapat dikirim. Silakan coba lagi.";
+      authMessage.textContent = authErrorText(result.error, "Email pemulihan belum dapat dikirim. Silakan coba lagi.");
       return;
     }
     authMessage.textContent = "Email pemulihan sudah dikirim.";
