@@ -1,0 +1,43 @@
+{
+  "bab": 1,
+  "judul": {
+    "sanskrit": "Arjuna-vishada-yoga",
+    "id": "Arjuna Vishada Yoga",
+    "ban": null
+  },
+  "jumlah_sloka": 47,
+  "sumber": {
+    "sanskrit": "Vickramasila",
+    "terjemahan_id": "Penerbit Penerbit Indonesia",
+    "terjemahan_ban": "Penerbit Penerbit Bali"
+  },
+  "sloka": [
+    {
+      "no": 1,
+      "devanagari": "श्रीपरमात्मनं दृष्ट्वा देहेभ्यो मह्यमानं कृतवान्",
+      "iast": "śrīparamātmānaṃ dṛṣṭvā dehebhya mahimānaṃ kṛtavān",
+      "id": "Setelah melihat Mahātmāna di dalam diri (Jiwa),\nArjuna bebas dari keraguan dan rasa takut.",
+      "ban": null,
+      "status": {"id": "kosong", "ban": "kosong"},
+      "catatan": ""
+    },
+    {
+      "no": 2,
+      "devanagari": "कथम्यामण्याध्यायेद्दनानं दिदृक्षया ज्ञानचक्षुषा",
+      "iast": "kathamya-māṇyādhyāyed danānāṃ didṛkṣayā jñānacakṣuṣā",
+      "id": "Dengan penglihatan terang (Yoga), melalui mata pengetahuan,\nPelajaran tersebut akhirnya terlihat.",
+      "ban": null,
+      "status": {"id": "kosong", "ban": "kosong"},
+      "catatan": ""
+    },
+    {
+      "no": 3,
+      "devanagari": "कुरुक्षेत्रंवचाकीर-येदुर्भिक्षाद्वचपदाराम्",
+      "iast": "kurukṣetreṁvacaḥ kīrīyād urbhikṣād vacaḥ padārāma",
+      "id": "Di dalam kurukshetra, yang disebut lapangan asosiasi,\nKata-kata turun seperti burung nyanyikan terhadap pohon.",
+      "ban": null,
+      "status": {"id": "kosong", "ban": "kosong"},
+      "catatan": ""
+    }
+  ]
+}
