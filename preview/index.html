@@ -381,6 +381,7 @@
   .upakara-header h1 { margin:.25rem 0 0; color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
   .upakara-header > p:last-child { margin:1rem auto 0; color:var(--muted); }
   .upakara-back { display:inline-flex; align-items:center; gap:.45rem; margin-bottom:1.5rem; color:var(--accent-dark); font:700 .72rem/1.2 system-ui,sans-serif; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
+  .app-grid > .upakara-back { grid-column:1 / -1; justify-self:start; margin-bottom:.25rem; }
   .upakara-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
   .upakara-grid.is-five .app-card:last-child { grid-column:1 / -1; width:calc(50% - .5rem); justify-self:center; }
   .upakara-grid .app-card { display:flex; min-height:14rem; flex-direction:column; }
@@ -793,6 +794,7 @@
     text-decoration:none;
     white-space:nowrap;
   }
+  .reader-home-back { display:grid; width:2.6rem; min-width:2.6rem; height:2.6rem; place-items:center; border:1px solid var(--line); border-radius:.6rem; color:var(--accent-dark); background:var(--surface); font:700 1rem/1 system-ui,sans-serif; text-decoration:none; }
   .verse-jump-select {
     min-height:2.6rem;
     padding:.45rem 2rem .45rem .75rem;
@@ -804,7 +806,7 @@
     font:700 .72rem/1 system-ui,sans-serif;
   }
   .chapter-reader-mode .toolbar { grid-template-columns:auto auto auto minmax(12rem, 24rem); }
-  .random-controls { position: static; }
+  .random-controls { position:static; grid-template-columns:auto minmax(12rem,24rem) auto; }
   .scroll-cue { display:none; }
   .explore-intro { grid-column:1 / -1; margin:0 0 .5rem; text-align:center; }
   .explore-intro h2 { margin:0; color:var(--accent-dark); font-size:clamp(2rem,5vw,3.5rem); font-weight:400; }
@@ -1075,7 +1077,7 @@
       top:max(.65rem, env(safe-area-inset-top));
       right:.65rem;
       left:.65rem;
-      grid-template-columns:minmax(0, 1fr) auto;
+      grid-template-columns:auto minmax(0, 1fr) auto;
       align-items:center;
       gap:.45rem;
       margin:0;
@@ -1972,11 +1974,14 @@
     item.append(make("span", "card-action", "Buka bagian →"));
     return item;
   }
-  function prepareUpakaraPage(className) {
+  function pageBack(href, label) {
+    var back = make("a", "upakara-back", "← Kembali"); back.href = href || "./"; back.setAttribute("aria-label", label || "Kembali ke Beranda"); return back;
+  }
+  function prepareUpakaraPage(className, backHref, backLabel) {
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = className || "upakara-page";
-    appView.replaceChildren();
+    appView.replaceChildren(pageBack(backHref || "./", backLabel || "Kembali ke Beranda"));
   }
   function showUpakaraHub() {
     prepareUpakaraPage("upakara-page");
@@ -2087,8 +2092,7 @@
     }
   };
   function showPancaYadnya() {
-    prepareUpakaraPage("upakara-page");
-    var back = make("a", "upakara-back", "← Upakara & Doa"); back.href = "?mode=upakara";
+    prepareUpakaraPage("upakara-page", "?mode=upakara", "Kembali ke Upakara & Doa");
     var header = make("header", "upakara-header");
     header.append(
       make("p", "eyebrow", "Lima persembahan suci"),
@@ -2101,14 +2105,13 @@
       grid.append(upakaraCard(guide.title, guide.subtitle + " Contoh: " + guide.examples, "?mode=yadnya&type=" + key));
     });
     var notice = make("p", "ritual-notice", "Catatan penting: bentuk dan kelengkapan upakara mengikuti desa, kala, patra; tingkat kanistama, madyama, utama; kemampuan keluarga; serta dresta setempat. Gunakan halaman ini sebagai pengenalan, lalu pastikan susunan banten dan mantra inti kepada pemangku, sulinggih, atau serati yang memahami tradisi wilayahmu.");
-    appView.append(back, header, notice, grid);
+    appView.append(header, notice, grid);
     document.title = "Panca Yadnya — Gītā Bali";
   }
   function showYadnyaDetail(type) {
     var guide = yadnyaGuides[type];
     if (!guide) { showPancaYadnya(); return; }
-    prepareUpakaraPage("upakara-page");
-    var back = make("a", "upakara-back", "← Panca Yadnya"); back.href = "?mode=yadnya";
+    prepareUpakaraPage("upakara-page", "?mode=yadnya", "Kembali ke Panca Yadnya");
     var header = make("header", "upakara-header");
     header.append(make("p", "eyebrow", "Panduan pengantar"), make("h1", "", guide.title), make("p", "", guide.subtitle));
     var notice = make("p", "ritual-notice", "Panduan ini menjelaskan bentuk dasar dan bukan resep baku. Nama, jumlah, susunan banten, urutan upacara, dan mantra dapat berbeda menurut dresta serta tingkat upacara. Untuk pelaksanaan nyata, mintalah tuntunan pemangku, sulinggih, dan serati setempat.");
@@ -2128,7 +2131,7 @@
     var sourceOne = make("a", "", "Pengertian Panca Yadnya"); sourceOne.href = "https://kemenag.go.id/en/nasional/memahami-tiga-kerangka-dasar-agama-hindu-jj2rif";
     var sourceTwo = make("a", "", "Pedoman desa, kala, patra"); sourceTwo.href = "https://bali.kemenag.go.id/bangli/berita/26507/pembinaan-serati-banten";
     sources.append(sourceOne, " · ", sourceTwo);
-    appView.append(back, header, notice, sections, sources);
+    appView.append(header, notice, sections, sources);
     document.title = guide.title + " — Gītā Bali";
   }
   function showDailyPrayers() {
@@ -2240,8 +2243,7 @@
     var sourceLink = make("a", "", "Buku Doa dalam Agama Hindu — Pemerintah Provinsi Bali");
     sourceLink.href = "https://dpma.baliprov.go.id/wp-content/uploads/2022/03/PAKIS-Bali_Buku-Doa-Dalam-Agama-Hindu_compressed.pdf";
     source.append(sourceLink, ". Ejaan ditata agar nyaman dibaca tanpa mengubah maksud doa.");
-    var back = make("a", "upakara-back", "← Upakara & Doa"); back.href = "?mode=upakara";
-    appView.prepend(back);
+    appView.prepend(pageBack("?mode=upakara", "Kembali ke Upakara & Doa"));
     appView.append(header, prayerList, source);
     document.title = "Doa Sehari-hari — Gītā Bali";
   }
@@ -2864,7 +2866,7 @@
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = "calendar-page";
-    appView.replaceChildren();
+    appView.replaceChildren(pageBack("./", "Kembali ke Beranda"));
 
     var header = make("header", "calendar-header");
     header.append(
@@ -3070,7 +3072,7 @@
   function showExplore() {
     document.querySelector(".home-inner").hidden = true;
     var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
-    appView.hidden = false; appView.className = "app-grid"; appView.replaceChildren(intro,
+    appView.hidden = false; appView.className = "app-grid"; appView.replaceChildren(pageBack("./", "Kembali ke Beranda"), intro,
       card("Bagian Pertama", "Bab 1–6 · Karma Yoga dan hakikat jiwa.", "?mode=group&group=1"),
       card("Bagian Kedua", "Bab 7–12 · Pengetahuan spiritual dan Brahman.", "?mode=group&group=2"),
       card("Bagian Ketiga", "Bab 13–18 · Penyerahan diri dan pengabdian.", "?mode=group&group=3")
@@ -3096,7 +3098,7 @@
       make("h2", "", "Jelajahi Gita"),
       make("p", "", sectionDescriptions[group] || sectionDescriptions["1"])
     );
-    appView.hidden=false; appView.className="app-grid"; appView.replaceChildren(overview);
+    appView.hidden=false; appView.className="app-grid"; appView.replaceChildren(pageBack("?mode=explore", "Kembali ke Jelajahi Gita"), overview);
     for (var n=range[0]; n<=range[1]; n++) appView.append(card("Bab " + n, recaps[group][n - range[0]], "?bab=" + n + "#reader"));
   }
   function showCollectionState(title, message, needsLogin) {
@@ -3142,6 +3144,7 @@
         ? "Kumpulan sloka yang kamu simpan untuk dibaca kembali."
         : "Refleksi pribadi yang terhubung dengan setiap sloka.")
     );
+    reader.insertBefore(pageBack("./", "Kembali ke Beranda"), toolbar);
     reader.insertBefore(header, toolbar);
     document.title = collectionName + " — Gītā Bali";
     authReady.then(function () {
@@ -3190,7 +3193,8 @@
         randomLanguages.append(languageButton);
       });
       var shuffle=make("button", "verse-action", "✦ Acak Lagi"); shuffle.type="button";
-      controls.append(randomLanguages, shuffle); reader.insertBefore(controls, list);
+      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="./"; randomBack.setAttribute("aria-label", "Kembali ke Beranda");
+      controls.append(randomBack, randomLanguages, shuffle); reader.insertBefore(controls, list);
       var scrollCue=make("div", "scroll-cue");
       scrollCue.setAttribute("aria-hidden", "true");
       scrollCue.append(make("span", "", "↓"));
