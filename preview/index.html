@@ -437,6 +437,32 @@
   .subak-action { margin-top:1rem; padding:1.2rem; border-radius:1rem; color:#fff; background:var(--accent-dark); }
   .subak-action h2 { margin:0; color:#fff; font-size:1.25rem; }
   .subak-action ul { margin:.7rem 0 0; padding-left:1.2rem; font:.85rem/1.65 system-ui,sans-serif; }
+  .planner-layout { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(18rem,.9fr); align-items:start; gap:1rem; }
+  .planner-panel { padding:1.25rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.04); }
+  .planner-panel h2 { margin:0 0 1rem; color:var(--accent-dark); font-size:1.25rem; }
+  .planner-fields { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
+  .planner-field { display:grid; gap:.35rem; }
+  .planner-field.is-wide { grid-column:1 / -1; }
+  .planner-field label { color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .planner-field input, .planner-field select { width:100%; min-height:2.8rem; padding:.7rem .8rem; border:1px solid var(--line); border-radius:.65rem; color:var(--ink); background:#fffdf8; font:inherit; }
+  .planner-checklist { display:grid; gap:.55rem; margin-top:1rem; }
+  .planner-task { display:grid; grid-template-columns:auto 1fr; align-items:start; gap:.7rem; padding:.75rem; border-radius:.65rem; background:#f8f2e7; color:var(--muted); font:.84rem/1.5 system-ui,sans-serif; }
+  .planner-task input { width:1.1rem; height:1.1rem; margin:.12rem 0 0; accent-color:var(--accent); }
+  .budget-list { display:grid; gap:.65rem; }
+  .budget-row { display:grid; grid-template-columns:1fr minmax(8rem,.7fr); align-items:center; gap:.7rem; }
+  .budget-row label { color:var(--muted); font:.82rem/1.4 system-ui,sans-serif; }
+  .budget-row input { width:100%; min-height:2.6rem; padding:.65rem .75rem; border:1px solid var(--line); border-radius:.6rem; color:var(--ink); background:#fffdf8; font:inherit; text-align:right; }
+  .budget-total { display:flex; justify-content:space-between; gap:1rem; margin-top:1rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--accent-dark); }
+  .budget-total strong { font-size:1.15rem; }
+  .planner-actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1rem; }
+  .planner-button { min-height:2.7rem; padding:.65rem 1rem; border:1px solid var(--accent); border-radius:999px; color:#fff; background:var(--accent); cursor:pointer; font:700 .7rem/1 system-ui,sans-serif; letter-spacing:.05em; }
+  .planner-button.is-secondary { color:var(--accent-dark); background:transparent; }
+  .planner-status { margin:.75rem 0 0; color:var(--muted); font:.72rem/1.5 system-ui,sans-serif; }
+  .tamiu-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.7rem; margin:1rem 0 1.5rem; }
+  .tamiu-step { padding:1rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface); }
+  .tamiu-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; }
+  .tamiu-step strong { display:block; margin:.45rem 0; color:var(--accent-dark); }
+  .tamiu-step p { margin:0; color:var(--muted); font-size:.78rem; }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -866,7 +892,11 @@
     .upakara-grid.is-five .app-card:last-child { grid-column:auto; width:auto; }
     .upakara-grid .app-card { min-height:11rem; }
     .ritual-section.is-wide { grid-column:auto; }
-    .knowledge-list, .eco-steps, .eco-sort, .phrase-grid, .learning-path, .subak-principles { grid-template-columns:1fr; }
+    .knowledge-list, .eco-steps, .eco-sort, .phrase-grid, .learning-path, .subak-principles, .planner-layout, .tamiu-steps { grid-template-columns:1fr; }
+    .planner-fields { grid-template-columns:1fr; }
+    .planner-field.is-wide { grid-column:auto; }
+    .budget-row { grid-template-columns:1fr; gap:.3rem; }
+    .budget-row input { text-align:left; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
     .calendar-layout { grid-template-columns:1fr; }
@@ -1137,6 +1167,8 @@
         <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.</p></a>
         <a class="app-card" href="?mode=language"><span class="app-icon">ᬅ</span><strong>Bahasa, Aksara &amp; Lontar</strong><p>Mulai belajar ungkapan Bahasa Bali, mengenal aksara, serta merawat lontar keluarga dengan aman.</p></a>
         <a class="app-card" href="?mode=subak"><span class="app-icon">≈</span><strong>Subak &amp; Alam Bali</strong><p>Kenali sistem air, Tri Hita Karana, peran krama subak, serta cara membantu menjaga sawah Bali.</p></a>
+        <a class="app-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Rencana Yadnya</strong><p>Susun checklist persiapan, pembagian kebutuhan, tanggal pelaksanaan, dan estimasi anggaran keluarga.</p></a>
+        <a class="app-card" href="?mode=tamiu"><span class="app-icon">◎</span><strong>Panduan Krama Tamiu</strong><p>Pahami lapor diri, etika hidup di Bali, aturan desa setempat, serta jalur bertanya dan mengadu.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -2325,6 +2357,106 @@
     appView.append(header, notice, principles, list, action, sources);
     document.title = "Subak & Alam Bali — Gītā Bali";
   }
+  function showYadnyaPlanner() {
+    prepareUpakaraPage("upakara-page");
+    var storageKey = "gitaBaliYadnyaPlannerV1";
+    var templates = {
+      otonan:["Pastikan hari otonan berdasarkan pawukon.", "Tentukan tingkat upacara bersama keluarga dan serati.", "Konfirmasi pemangku serta tempat pelaksanaan.", "Susun daftar banten, perlengkapan, dan pakaian.", "Bagikan tugas persiapan, konsumsi, dan kebersihan."],
+      piodalan:["Konfirmasi hari piodalan dan jadwal persembahyangan.", "Koordinasikan kewajiban keluarga atau pengempon.", "Pastikan susunan banten bersama pemangku atau serati.", "Periksa kebersihan pelinggih dan perlengkapan.", "Siapkan pemilahan sisa organik dan residu."],
+      metatah:["Tentukan dewasa dan tingkat upacara bersama sulinggih atau pemangku.", "Data peserta serta kebutuhan masing-masing.", "Konfirmasi sangging dan pihak yang memimpin upacara.", "Susun banten, busana, tempat, dan perlengkapan.", "Siapkan konsumsi, dokumentasi, dan kebersihan."],
+      pawiwahan:["Bicarakan bentuk perkawinan dan rangkaian adat kedua keluarga.", "Tentukan dewasa serta tempat bersama pemimpin upacara.", "Pastikan dokumen administrasi perkawinan.", "Susun banten, busana, undangan, dan pembagian tugas.", "Siapkan anggaran cadangan dan rencana kebersihan."],
+      pitra:["Bermusyawarah dengan keluarga, prajuru, dan sulinggih.", "Tentukan tingkat serta rangkaian Pitra Yadnya.", "Catat seluruh tahapan, tempat, dan pihak yang bertanggung jawab.", "Pastikan sarana melalui serati yang ditunjuk.", "Susun konsumsi, transportasi, kebersihan, dan anggaran cadangan."],
+      lainnya:["Tuliskan tujuan dan jenis yadnya.", "Konsultasikan tingkat serta tata cara kepada pihak yang berwenang.", "Tentukan tanggal dan tempat.", "Susun daftar banten serta perlengkapan.", "Bagikan tugas dan siapkan pemilahan sampah."]
+    };
+    var budgetCategories = ["Banten & sarana", "Pemangku, sulinggih & punia", "Konsumsi", "Busana & perlengkapan", "Transportasi", "Kebersihan", "Cadangan"];
+    var state = { name:"", type:"otonan", date:"", checks:{}, budget:{} };
+    try {
+      var saved = JSON.parse(localStorage.getItem(storageKey) || "null");
+      if (saved && typeof saved === "object") state = Object.assign(state, saved);
+    } catch (error) {}
+
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Perencana keluarga"), make("h1", "", "Rencana Yadnya"), make("p", "", "Catat persiapan dan estimasi biaya tanpa menetapkan harga atau bentuk upacara yang harus diikuti."));
+    var notice = make("p", "ritual-notice", "Nilai anggaran diisi sendiri dan hanya menjadi alat perencanaan. Tingkat upacara, banten, dewasa, serta pihak yang memimpin tetap ditentukan melalui keluarga, desa kala patra, serati, pemangku, dan sulinggih.");
+    var layout = make("div", "planner-layout");
+    var preparation = make("section", "planner-panel"); preparation.append(make("h2", "", "Rencana & checklist"));
+    var fields = make("div", "planner-fields");
+    var nameField = make("div", "planner-field is-wide"); var nameLabel = make("label", "", "Nama rencana"); nameLabel.htmlFor = "plan-name";
+    var nameInput = document.createElement("input"); nameInput.id = "plan-name"; nameInput.value = state.name || ""; nameInput.placeholder = "Contoh: Otonan Komang"; nameField.append(nameLabel, nameInput);
+    var typeField = make("div", "planner-field"); var typeLabel = make("label", "", "Jenis kegiatan"); typeLabel.htmlFor = "plan-type";
+    var typeSelect = document.createElement("select"); typeSelect.id = "plan-type";
+    [["otonan","Otonan"],["piodalan","Piodalan / Merajan"],["metatah","Metatah"],["pawiwahan","Pawiwahan"],["pitra","Pitra Yadnya"],["lainnya","Lainnya"]].forEach(function (optionData) { var option = document.createElement("option"); option.value = optionData[0]; option.textContent = optionData[1]; typeSelect.append(option); });
+    typeSelect.value = templates[state.type] ? state.type : "otonan"; typeField.append(typeLabel, typeSelect);
+    var dateField = make("div", "planner-field"); var dateLabel = make("label", "", "Tanggal rencana"); dateLabel.htmlFor = "plan-date";
+    var dateInput = document.createElement("input"); dateInput.id = "plan-date"; dateInput.type = "date"; dateInput.value = state.date || ""; dateField.append(dateLabel, dateInput);
+    fields.append(nameField, typeField, dateField); preparation.append(fields);
+    var checklist = make("div", "planner-checklist"); preparation.append(checklist);
+
+    var budgetPanel = make("section", "planner-panel"); budgetPanel.append(make("h2", "", "Estimasi anggaran"));
+    var budgetList = make("div", "budget-list"); var budgetInputs = {};
+    budgetCategories.forEach(function (category) {
+      var row = make("div", "budget-row"); var label = make("label", "", category); var input = document.createElement("input");
+      input.type = "number"; input.min = "0"; input.step = "1000"; input.inputMode = "numeric"; input.value = state.budget && state.budget[category] ? state.budget[category] : ""; input.placeholder = "Rp 0"; label.htmlFor = "budget-" + Object.keys(budgetInputs).length; input.id = label.htmlFor; budgetInputs[category] = input; row.append(label, input); budgetList.append(row);
+    });
+    var total = make("div", "budget-total"); total.append(make("span", "", "Total estimasi")); var totalValue = make("strong", "", "Rp 0"); total.append(totalValue);
+    var actions = make("div", "planner-actions"); var saveButton = make("button", "planner-button", "Simpan rencana"); saveButton.type = "button"; var resetButton = make("button", "planner-button is-secondary", "Kosongkan"); resetButton.type = "button"; actions.append(saveButton, resetButton);
+    var status = make("p", "planner-status", "Rencana tersimpan secara lokal di perangkat ini."); budgetPanel.append(budgetList, total, actions, status); layout.append(preparation, budgetPanel);
+
+    function renderChecklist() {
+      checklist.replaceChildren();
+      (templates[typeSelect.value] || templates.lainnya).forEach(function (task, index) {
+        var label = make("label", "planner-task"); var input = document.createElement("input"); input.type = "checkbox"; input.checked = Boolean(state.checks && state.checks[typeSelect.value + "-" + index]); input.dataset.key = typeSelect.value + "-" + index; label.append(input, make("span", "", task)); checklist.append(label);
+      });
+    }
+    function updateTotal() {
+      var amount = 0; Object.keys(budgetInputs).forEach(function (category) { amount += Math.max(0, Number(budgetInputs[category].value) || 0); });
+      totalValue.textContent = new Intl.NumberFormat("id-ID", { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(amount);
+    }
+    function collectState() {
+      var checks = Object.assign({}, state.checks || {}); checklist.querySelectorAll("input[type=checkbox]").forEach(function (input) { checks[input.dataset.key] = input.checked; });
+      var budget = {}; Object.keys(budgetInputs).forEach(function (category) { budget[category] = Math.max(0, Number(budgetInputs[category].value) || 0); });
+      return { name:nameInput.value.trim(), type:typeSelect.value, date:dateInput.value, checks:checks, budget:budget };
+    }
+    typeSelect.addEventListener("change", function () { state = collectState(); state.type = typeSelect.value; renderChecklist(); });
+    Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].addEventListener("input", updateTotal); });
+    saveButton.addEventListener("click", function () { state = collectState(); localStorage.setItem(storageKey, JSON.stringify(state)); status.textContent = "Tersimpan pada " + new Intl.DateTimeFormat("id-ID", { hour:"2-digit", minute:"2-digit" }).format(new Date()) + "."; notify("Rencana yadnya disimpan."); });
+    resetButton.addEventListener("click", function () { if (!window.confirm("Kosongkan seluruh rencana dan anggaran di perangkat ini?")) return; localStorage.removeItem(storageKey); state = { name:"", type:"otonan", date:"", checks:{}, budget:{} }; nameInput.value = ""; typeSelect.value = "otonan"; dateInput.value = ""; Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].value = ""; }); renderChecklist(); updateTotal(); status.textContent = "Rencana telah dikosongkan."; });
+    renderChecklist(); updateTotal();
+    var source = make("p", "ritual-sources", "Catatan pengembangan: Pemerintah Provinsi Bali melalui BRIDA sedang menyiapkan ");
+    var costStudy = make("a", "", "kajian biaya upakara dan upacara tahun 2026"); costStudy.href = "https://brida.baliprov.go.id/rapat-persiapan-penyusunan-kerangka-acuan-kerja-kak-kajian-perhitungan-biaya-upakara-dan-upacara-keagamaan-di-bali-tahun-2026/";
+    source.append(costStudy, ". Karena itu aplikasi tidak memberikan patokan harga universal.");
+    appView.append(header, notice, layout, source);
+    document.title = "Rencana Yadnya — Gītā Bali";
+  }
+  function showTamiuGuide() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Hidup berdampingan"), make("h1", "", "Panduan Krama Tamiu"), make("p", "", "Pengantar bagi penduduk yang tinggal di wilayah desa adat agar mengetahui jalur administrasi, tata krama, serta cara memperoleh informasi yang benar."));
+    var notice = make("p", "ritual-notice", "Ketentuan krama tamiu dan tamiu berbeda antar desa adat. Selalu periksa awig-awig, pararem, dan pengumuman resmi di tempat tinggalmu; halaman ini bukan pengganti aturan tersebut.");
+    var steps = make("div", "tamiu-steps");
+    [
+      ["01", "Kenali wilayah", "Catat nama banjar, desa adat, desa dinas atau kelurahan, serta pemilik tempat tinggal."],
+      ["02", "Lapor diri", "Tanyakan prosedur pendataan kepada kepala lingkungan atau desa dinas dan prajuru setempat."],
+      ["03", "Baca aturan", "Minta informasi mengenai kebersihan, keamanan, iuran, Nyepi, dan kewajiban penduduk."],
+      ["04", "Simpan kontak", "Simpan nomor pemilik tempat tinggal, kepala lingkungan, banjar, dan layanan darurat."]
+    ].forEach(function (step) { var item = make("div", "tamiu-step"); item.append(make("span", "", step[0]), make("strong", "", step[1]), make("p", "", step[2])); steps.append(item); });
+    var topics = [
+      { icon:"01", title:"Status penduduk", intro:"Istilah krama desa, krama tamiu, dan tamiu menunjukkan hubungan yang berbeda dengan desa adat.", points:["Krama desa tercatat sebagai anggota desa adat menurut ketentuan setempat.", "Krama tamiu dan tamiu tinggal dalam wewidangan desa adat tetapi bentuk hak serta kewajibannya ditentukan aturan desa.", "Status adat tidak menggantikan status kependudukan dalam administrasi negara."], note:"Tanyakan status pencatatanmu; jangan menentukan sendiri hanya berdasarkan agama atau asal daerah." },
+      { icon:"02", title:"Administrasi & lapor diri", intro:"Pendataan penduduk membantu pelayanan, keamanan, dan komunikasi ketika terjadi keadaan darurat.", points:["Siapkan identitas serta dokumen tempat tinggal yang diminta melalui prosedur resmi.", "Bedakan urusan administrasi kependudukan negara dengan pencatatan penduduk oleh lingkungan atau desa adat.", "Minta tanda terima atau penjelasan tertulis jika menyerahkan dokumen asli."], note:"Jangan menyerahkan dokumen asli tanpa memahami dasar, tujuan, serta pihak yang bertanggung jawab." },
+      { icon:"03", title:"Etika pura & upacara", intro:"Hormati tanda, batas ruang suci, dan arahan petugas ketika berkunjung atau melintas di sekitar upacara.", points:["Gunakan pakaian yang sesuai dan tanyakan apakah pengunjung diperbolehkan masuk.", "Jangan berjalan di depan orang yang sedang sembahyang atau berdiri lebih tinggi dari pemimpin upacara.", "Jangan menyentuh banten, pratima, atau perlengkapan suci dan mintalah izin sebelum memotret."], note:"Ketentuan khusus dapat berlaku bagi orang yang sedang cuntaka; tanyakan secara sopan bila ragu." },
+      { icon:"04", title:"Nyepi & hari suci", intro:"Nyepi berlaku bagi semua orang yang berada di Bali dan pelaksanaannya mengikuti ketentuan resmi.", points:["Siapkan makanan, obat, dan kebutuhan penting sebelum Nyepi tanpa menimbun berlebihan.", "Hormati pembatasan bepergian, cahaya, suara, dan aktivitas luar rumah.", "Untuk kondisi medis atau keadaan darurat, hubungi petugas atau layanan resmi."], note:"Periksa surat edaran terbaru menjelang Nyepi karena pengaturan layanan dapat berubah." },
+      { icon:"05", title:"Kebersihan & kehidupan banjar", intro:"Aturan sampah, parkir, keamanan, hewan peliharaan, dan ketertiban dapat dijabarkan oleh lingkungan setempat.", points:["Tanyakan jadwal dan cara pemilahan sampah sejak mulai tinggal.", "Jangan menutup akses upacara, jalan banjar, saluran air, atau pintu masuk rumah warga.", "Sampaikan lebih awal jika kegiatan pribadi berpotensi menimbulkan suara, parkir, atau keramaian."], note:"Hubungan baik dibangun melalui komunikasi, bukan hanya pembayaran iuran." },
+      { icon:"06", title:"Jika ada masalah", intro:"Mulailah dari klarifikasi dan catat fakta sebelum membawa persoalan ke tingkat yang lebih tinggi.", points:["Untuk kontrakan atau kos, hubungi pemilik atau pengelola terlebih dahulu.", "Untuk pelayanan administrasi, tanyakan desa dinas atau kelurahan dan mintalah alur tertulis.", "Untuk aturan adat, hubungi prajuru atau bendesa melalui jalur resmi.", "Jika pelayanan publik tidak terselesaikan, simpan bukti dan konsultasikan kepada Ombudsman atau bantuan hukum."], note:"Hindari mengunggah identitas atau tuduhan di media sosial sebelum memperoleh klarifikasi dan pendampingan." }
+    ];
+    var list = make("div", "knowledge-list");
+    topics.forEach(function (topic) { var details = make("details", "knowledge-card"); var summary = document.createElement("summary"); summary.append(make("span", "knowledge-icon", topic.icon), make("strong", "knowledge-title", topic.title)); var content = make("div", "knowledge-content"); content.append(make("p", "", topic.intro)); var bullets = make("ul"); topic.points.forEach(function (point) { bullets.append(make("li", "", point)); }); content.append(bullets, make("p", "knowledge-note", topic.note)); details.append(summary, content); list.append(details); });
+    var sources = make("p", "ritual-sources", "Rujukan: ");
+    var dpma = make("a", "", "Dinas Pemajuan Masyarakat Adat Bali"); dpma.href = "https://dpma.baliprov.go.id/umum/pentingnya-nguwah-nguwuhin-awig-awig-dan-pararem-desa-adat-di-pemerintah-provinsi-bali/";
+    var ombudsman = make("a", "", "kajian Ombudsman Bali tentang administrasi desa adat dan desa dinas"); ombudsman.href = "https://ombudsman.go.id/perwakilan/news/r/pwk--ombudsman-bali-temukan-tumpang-tindih-kewenangan-desa-dinas-dan-adat";
+    sources.append(dpma, " · ", ombudsman);
+    appView.append(header, notice, steps, list, sources);
+    document.title = "Panduan Krama Tamiu — Gītā Bali";
+  }
   function showCalendar() {
     var today = new Date();
     var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -2767,6 +2899,8 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "planner") { showYadnyaPlanner(); return; }
+  if (mode === "tamiu") { showTamiuGuide(); return; }
   if (mode === "language") { showBalineseLanguage(); return; }
   if (mode === "subak") { showSubak(); return; }
   if (mode === "adat") { showAdatLiteracy(); return; }
