@@ -308,6 +308,9 @@
   .auth-message { min-height:1.4rem; margin:.25rem 0 0; color:var(--muted); font:.8rem/1.5 system-ui,sans-serif; }
   .auth-message.is-error { color:var(--accent); }
   .account-email { margin:.5rem 0 1.3rem; overflow-wrap:anywhere; color:var(--accent-dark); font:700 .9rem/1.5 system-ui,sans-serif; }
+  .account-links { display:grid; gap:.55rem; margin-top:.7rem; }
+  .account-link { display:block; padding:.7rem .8rem; border:1px solid var(--line); border-radius:.65rem; color:var(--accent-dark); font:700 .74rem/1.35 system-ui,sans-serif; text-align:center; text-decoration:none; }
+  .account-link:hover { background:#f5efe4; }
   .sync-note { margin:1rem 0 0; color:var(--muted); font:.78rem/1.5 system-ui,sans-serif; }
   .toast {
     position:fixed;
@@ -418,6 +421,27 @@
   .ritual-meaning { padding-top:.8rem; border-top:1px solid var(--line); }
   .ritual-sources { margin:1.5rem 0 0; color:var(--muted); font:.74rem/1.65 system-ui,sans-serif; text-align:center; }
   .ritual-sources a { color:var(--accent-dark); }
+  .policy-page { width:min(100%, 48rem); margin:clamp(2.5rem,7vw,5rem) auto; }
+  .policy-header { margin-bottom:2rem; text-align:center; }
+  .policy-header h1 { margin:.25rem 0 0; color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); line-height:1; }
+  .policy-header p:last-child { margin:1rem auto 0; color:var(--muted); }
+  .policy-sections { display:grid; gap:.8rem; }
+  .policy-section { padding:1.25rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .policy-section h2 { margin:0; color:var(--accent-dark); font-size:1.25rem; }
+  .policy-section p, .policy-section ul { margin:.65rem 0 0; color:var(--muted); font:.9rem/1.7 system-ui,sans-serif; }
+  .policy-section ul { padding-left:1.2rem; }
+  .policy-section a { color:var(--accent-dark); }
+  .account-manager { display:grid; gap:1rem; }
+  .account-panel { padding:1.25rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .account-panel h2 { margin:0; color:var(--accent-dark); font-size:1.3rem; }
+  .account-panel p { margin:.55rem 0 0; color:var(--muted); font:.88rem/1.65 system-ui,sans-serif; }
+  .account-panel-actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1rem; }
+  .danger-panel { border-color:rgba(138,61,47,.36); background:#fffaf7; }
+  .danger-confirm { display:grid; gap:.65rem; margin-top:1rem; }
+  .danger-confirm label { color:var(--muted); font:700 .67rem/1.4 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .danger-confirm input { width:100%; min-height:3rem; padding:.7rem .85rem; border:1px solid var(--line); border-radius:.7rem; color:var(--ink); background:#fff; }
+  .danger-button { min-height:2.9rem; padding:.7rem 1rem; border:0; border-radius:.7rem; color:#fff; background:#8f2f25; cursor:pointer; font:700 .76rem/1.2 system-ui,sans-serif; }
+  .danger-button:disabled { cursor:not-allowed; opacity:.5; }
   .knowledge-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
   .knowledge-card { border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); overflow:hidden; }
   .knowledge-card summary { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:.85rem; min-height:6rem; padding:1.1rem 1.2rem; color:var(--accent-dark); cursor:pointer; list-style:none; }
@@ -1282,6 +1306,10 @@
       <h2>Catatanmu tersinkron.</h2>
       <p class="account-email" id="account-email"></p>
       <button class="auth-logout" id="auth-logout" type="button">Keluar dari akun</button>
+      <div class="account-links">
+        <a class="account-link" href="?mode=account">Kelola data &amp; akun</a>
+        <a class="account-link" href="?mode=privacy">Kebijakan Privasi</a>
+      </div>
       <p class="sync-note">Sloka tersimpan dan catatan tersedia di perangkat lain setelah masuk dengan email yang sama.</p>
     </section>
   </div>
@@ -1462,7 +1490,7 @@
 
 <footer class="site-footer">
   <span>Gītā Bali · Teks lintas bahasa untuk dibaca bersama.</span>
-  <a href="#content">Kembali ke atas</a>
+  <span><a href="?mode=privacy">Privasi</a> · <a href="?mode=account">Kelola akun</a> · <a href="#content">Kembali ke atas</a></span>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.7"></script>
@@ -2133,6 +2161,73 @@
     appView.hidden = false;
     appView.className = className || "upakara-page";
     appView.replaceChildren(pageBack(backHref || "?mode=dashboard", backLabel || "Kembali ke Dashboard Ruang Baca"));
+  }
+  function showPrivacyPolicy() {
+    prepareUpakaraPage("policy-page");
+    var header = make("header", "policy-header");
+    header.append(make("p", "eyebrow", "Transparansi data"), make("h1", "", "Kebijakan Privasi"), make("p", "", "Terakhir diperbarui 21 Juli 2026. Kebijakan ini berlaku untuk website dan aplikasi Gītā Bali."));
+    var sections = make("div", "policy-sections");
+    function policySection(title, paragraphs, items) {
+      var section = make("section", "policy-section"); section.append(make("h2", "", title));
+      (paragraphs || []).forEach(function (text) { section.append(make("p", "", text)); });
+      if (items && items.length) { var listNode = document.createElement("ul"); items.forEach(function (text) { listNode.append(make("li", "", text)); }); section.append(listNode); }
+      sections.append(section); return section;
+    }
+    policySection("Data yang diproses", ["Gītā Bali hanya memproses data yang diperlukan untuk menjalankan fitur akun dan bacaan."], ["Alamat email dan identitas akun ketika kamu mendaftar.", "Sloka yang disimpan dan catatan pribadi yang kamu tulis.", "Agenda Keluarga, termasuk nama kegiatan, tanggal, pawukon, dan catatan yang kamu masukkan.", "Progres bacaan dan preferensi tampilan yang disimpan secara lokal di perangkat."]);
+    policySection("Tujuan penggunaan", ["Data digunakan untuk autentikasi, sinkronisasi antarperangkat, menampilkan kembali koleksi pribadi, dan menjalankan agenda. Gītā Bali tidak menjual data pribadi dan tidak menggunakan jaringan iklan atau pelacakan lintas aplikasi."]);
+    var storage = policySection("Penyimpanan dan penyedia layanan", ["Data akun disimpan menggunakan Supabase. Sebagian data juga disimpan sebagai cache lokal agar aplikasi tetap berguna saat offline. Vercel digunakan untuk menyajikan website dan dapat memproses log teknis standar untuk keamanan serta keandalan layanan."]);
+    var supabaseLink = make("a", "", "Kebijakan Privasi Supabase"); supabaseLink.href = "https://supabase.com/privacy"; supabaseLink.target = "_blank"; supabaseLink.rel = "noopener noreferrer";
+    var vercelLink = make("a", "", "Kebijakan Privasi Vercel"); vercelLink.href = "https://vercel.com/legal/privacy-policy"; vercelLink.target = "_blank"; vercelLink.rel = "noopener noreferrer";
+    var providerText = make("p", ""); providerText.append("Pelajari juga ", supabaseLink, " dan ", vercelLink, "."); storage.append(providerText);
+    policySection("Keamanan dan masa penyimpanan", ["Akses data akun dibatasi melalui autentikasi dan Row Level Security. Data disimpan selama akun aktif atau sampai kamu menghapus data tersebut. Tidak ada sistem yang sepenuhnya bebas risiko; karena itu jangan menulis informasi yang sangat sensitif di dalam catatan."]);
+    var rights = policySection("Hak dan kendali pengguna", ["Kamu dapat mengunduh salinan data, menghapus catatan atau agenda satu per satu, dan meminta penghapusan akun permanen dari halaman Kelola Akun. Penghapusan akun menghapus akses beserta data akun yang tersimpan di layanan kami dan tidak dapat dibatalkan."]);
+    var accountLink = make("a", "", "Buka Kelola Akun"); accountLink.href = "?mode=account"; rights.append(accountLink);
+    policySection("Anak-anak", ["Gītā Bali merupakan ruang pendidikan umum dan tidak secara sengaja mengumpulkan data anak di bawah usia minimum yang berlaku tanpa persetujuan orang tua atau wali."]);
+    policySection("Perubahan kebijakan", ["Jika kebijakan ini berubah secara material, tanggal pembaruan akan diganti dan pemberitahuan dapat ditampilkan di aplikasi."]);
+    var contact = policySection("Kontak", ["Untuk pertanyaan privasi, koreksi data, atau kendala penghapusan akun, gunakan kanal dukungan resmi proyek."]);
+    var support = make("a", "", "Hubungi dukungan Gītā Bali"); support.href = "https://github.com/ayassuarbhawa/gita-bali/issues"; support.target = "_blank"; support.rel = "noopener noreferrer"; contact.append(support);
+    appView.append(header, sections);
+    document.title = "Kebijakan Privasi — Gītā Bali";
+  }
+  function downloadJson(filename, value) {
+    var blob = new Blob([JSON.stringify(value, null, 2)], { type:"application/json;charset=utf-8" });
+    var url = URL.createObjectURL(blob); var link = document.createElement("a"); link.href = url; link.download = filename; document.body.append(link); link.click(); link.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+  function clearDeletedAccountCache(userId) {
+    ["gitaBaliFamilyAgendaV2:" + userId, "gitaBaliFamilyAgendaMigrated:" + userId, "gita-bali-migrated-" + userId].forEach(function (key) { localStorage.removeItem(key); });
+  }
+  function showAccountManager() {
+    prepareUpakaraPage("policy-page");
+    var header = make("header", "policy-header");
+    header.append(make("p", "eyebrow", "Kendali pengguna"), make("h1", "", "Data & Akun"), make("p", "", "Unduh salinan data atau hapus akun Gītā Bali secara permanen."));
+    var manager = make("div", "account-manager"); var loading = make("p", "agenda-empty", "Memeriksa akun…"); manager.append(loading); appView.append(header, manager);
+    authReady.then(function () {
+      manager.replaceChildren();
+      if (!account.user) {
+        var signedOut = make("section", "account-panel"); signedOut.append(make("h2", "", "Masuk terlebih dahulu"), make("p", "", "Pengelolaan data akun hanya tersedia setelah kamu masuk dengan email yang sama."));
+        var enter = make("button", "planner-button", "Masuk ke akun"); enter.type = "button"; enter.addEventListener("click", openAuthDialog); var actions = make("div", "account-panel-actions"); actions.append(enter); signedOut.append(actions); manager.append(signedOut); return;
+      }
+      var summary = make("section", "account-panel"); summary.append(make("h2", "", "Akun aktif"), make("p", "", account.user.email), make("p", "", account.saved.size + " sloka tersimpan · " + account.notes.size + " catatan"));
+      var exportButton = make("button", "planner-button", "Unduh data (.json)"); exportButton.type = "button"; var exportActions = make("div", "account-panel-actions"); exportActions.append(exportButton); summary.append(exportActions);
+      exportButton.addEventListener("click", async function () {
+        exportButton.disabled = true; exportButton.textContent = "Menyiapkan data…"; var agenda = await loadFamilyAgendaEvents();
+        var saved = Array.from(account.saved).map(function (key) { var parts = key.split("-"); return { chapter:Number(parts[0]), verse:Number(parts[1]) }; });
+        var notes = Array.from(account.notes.entries()).map(function (entry) { var parts = entry[0].split("-"); return { chapter:Number(parts[0]), verse:Number(parts[1]), content:entry[1] }; });
+        downloadJson("data-gita-bali-" + new Date().toISOString().slice(0,10) + ".json", { exported_at:new Date().toISOString(), account:{ id:account.user.id, email:account.user.email, created_at:account.user.created_at }, saved_slokas:saved, sloka_notes:notes, family_agenda:agenda });
+        exportButton.disabled = false; exportButton.textContent = "Unduh data (.json)"; notify("Salinan data akun berhasil dibuat.");
+      });
+      var danger = make("section", "account-panel danger-panel"); danger.append(make("h2", "", "Hapus akun permanen"), make("p", "", "Tindakan ini menghapus akun, sloka tersimpan, catatan, dan Agenda Keluarga yang tersinkron. Data tidak dapat dipulihkan."));
+      var confirmWrap = make("div", "danger-confirm"); var confirmLabel = make("label", "", "Ketik HAPUS untuk mengonfirmasi"); confirmLabel.htmlFor = "delete-account-confirm"; var confirmInput = document.createElement("input"); confirmInput.id = "delete-account-confirm"; confirmInput.autocomplete = "off"; confirmInput.placeholder = "HAPUS"; var deleteButton = make("button", "danger-button", "Hapus akun saya"); deleteButton.type = "button"; deleteButton.disabled = true; var deleteMessage = make("p", "auth-message"); confirmInput.addEventListener("input", function () { deleteButton.disabled = confirmInput.value.trim() !== "HAPUS"; }); confirmWrap.append(confirmLabel, confirmInput, deleteButton, deleteMessage); danger.append(confirmWrap);
+      deleteButton.addEventListener("click", async function () {
+        if (confirmInput.value.trim() !== "HAPUS" || !window.confirm("Akun dan semua data tersinkron akan dihapus permanen. Lanjutkan?")) return;
+        deleteButton.disabled = true; confirmInput.disabled = true; deleteMessage.classList.remove("is-error"); deleteMessage.textContent = "Menghapus akun…"; var userId = account.user.id;
+        var result = await authClient.functions.invoke("delete-account", { body:{ confirmation:"HAPUS" } });
+        if (result.error) { deleteButton.disabled = false; confirmInput.disabled = false; deleteMessage.classList.add("is-error"); deleteMessage.textContent = "Akun belum dapat dihapus. Fungsi penghapusan server belum aktif atau koneksi bermasalah."; return; }
+        clearDeletedAccountCache(userId); try { await authClient.auth.signOut({ scope:"local" }); } catch (error) {} window.location.href = "?mode=dashboard&account=deleted";
+      });
+      manager.append(summary, danger);
+    });
+    document.title = "Data & Akun — Gītā Bali";
   }
   function showUpakaraHub() {
     prepareUpakaraPage("upakara-page");
@@ -3491,6 +3586,8 @@
     window.addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
   }
   if (mode === "dashboard") { document.title = "Dashboard Ruang Baca — Gītā Bali"; authReady.then(renderPersonalDashboard); return; }
+  if (mode === "privacy") { showPrivacyPolicy(); return; }
+  if (mode === "account") { showAccountManager(); return; }
   if (mode === "agenda") { showFamilyAgenda(); return; }
   if (mode === "quiz") { showLearningQuiz(); return; }
   if (mode === "glossary") { showGlossary(); return; }

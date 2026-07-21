@@ -95,6 +95,25 @@ Row Level Security agar setiap pengguna hanya dapat membaca serta mengubah
 agendanya sendiri. Data agenda lokal dipindahkan otomatis setelah pengguna
 masuk dan tabel tersedia.
 
+### Penghapusan akun permanen
+
+Halaman **Data & Akun** menyediakan ekspor JSON dan penghapusan akun dari
+dalam aplikasi. Agar tombol penghapusan permanen aktif di server, deploy Edge
+Function yang sudah disiapkan:
+
+```bash
+npx supabase login
+npx supabase functions deploy delete-account --project-ref vekrbbnuzzoawkfsyfdo
+```
+
+Supabase otomatis menyediakan `SUPABASE_URL`, `SUPABASE_ANON_KEY`, dan
+`SUPABASE_SERVICE_ROLE_KEY` di lingkungan Edge Function. Service role tidak
+pernah dikirim ke browser. Pengguna tetap harus memiliki sesi login yang sah
+dan mengetik konfirmasi `HAPUS` sebelum fungsi menerima permintaan.
+
+Kebijakan Privasi publik tersedia di
+<https://gita-bali.vercel.app/?mode=privacy>.
+
 Rencana menuju rilis iOS dan Android dicatat di
 `docs/mobile-release-roadmap.md`.
 

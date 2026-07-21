@@ -15,7 +15,7 @@ Target akhir: satu basis produk untuk web, iOS, dan Android tanpa mengorbankan d
 
 1. Pisahkan frontend monolitik menjadi modul data, tampilan, autentikasi, kalender, dan agenda.
 2. ✅ Tambahkan web app manifest, ikon aplikasi, service worker, cache offline, dan status koneksi.
-3. Tambahkan ekspor/hapus akun dan halaman kebijakan privasi.
+3. Sebagian selesai: halaman kebijakan privasi dan ekspor data sudah aktif. UI hapus akun serta Edge Function sudah tersedia dan menunggu deployment fungsi di Supabase.
 4. Sebagian selesai: ekspor agenda ke kalender sudah membawa pengingat H-7 dan H-1. Notifikasi lokal native untuk agenda dan rahinan ditambahkan saat integrasi Capacitor.
 5. Uji aksesibilitas, ukuran teks, safe area, keyboard, gesture kembali, serta koneksi lambat.
 
