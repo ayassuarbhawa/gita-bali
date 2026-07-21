@@ -495,6 +495,38 @@
   .library-link strong { display:block; color:var(--accent-dark); font-size:.9rem; }
   .library-link span { display:block; margin-top:.25rem; color:var(--muted); font:.68rem/1.45 system-ui,sans-serif; }
   .library-link:hover { background:#f2e7d7; }
+  .agenda-form { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; padding:1.2rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .agenda-field { display:grid; gap:.35rem; }
+  .agenda-field.is-wide { grid-column:1 / -1; }
+  .agenda-field label { color:var(--muted); font:700 .64rem/1.3 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .agenda-field input, .agenda-field select, .agenda-field textarea { width:100%; min-height:2.8rem; padding:.7rem .8rem; border:1px solid var(--line); border-radius:.65rem; color:var(--ink); background:#fffdf8; font:inherit; }
+  .agenda-field textarea { min-height:5rem; resize:vertical; }
+  .agenda-repeat { display:flex; grid-column:1 / -1; align-items:center; gap:.55rem; color:var(--muted); font:.8rem/1.5 system-ui,sans-serif; }
+  .agenda-repeat input { width:1.1rem; height:1.1rem; accent-color:var(--accent); }
+  .agenda-submit { justify-self:start; grid-column:1 / -1; }
+  .agenda-list { display:grid; gap:.7rem; margin-top:1rem; }
+  .agenda-item { display:grid; grid-template-columns:4.5rem 1fr auto; align-items:center; gap:1rem; padding:1rem; border:1px solid var(--line); border-radius:.9rem; background:var(--surface); }
+  .agenda-date { text-align:center; }
+  .agenda-date strong { display:block; color:var(--accent-dark); font-size:1.45rem; }
+  .agenda-date span { display:block; color:var(--muted); font:700 .6rem/1.3 system-ui,sans-serif; letter-spacing:.06em; text-transform:uppercase; }
+  .agenda-info strong { display:block; color:var(--accent-dark); }
+  .agenda-info p { margin:.3rem 0 0; color:var(--muted); font-size:.78rem; }
+  .agenda-tag { display:inline-block; margin-top:.45rem; padding:.25rem .45rem; border-radius:999px; color:var(--accent-dark); background:#f4e7d7; font:700 .58rem/1.2 system-ui,sans-serif; letter-spacing:.05em; text-transform:uppercase; }
+  .agenda-delete { width:2.5rem; height:2.5rem; border:1px solid var(--line); border-radius:50%; color:var(--accent); background:transparent; cursor:pointer; }
+  .agenda-empty { padding:2rem; border:1px dashed var(--line); border-radius:1rem; color:var(--muted); text-align:center; }
+  .quiz-shell { max-width:44rem; margin:0 auto; }
+  .quiz-progress { display:flex; justify-content:space-between; gap:1rem; margin-bottom:.75rem; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .quiz-card { padding:clamp(1.2rem,4vw,2rem); border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); }
+  .quiz-card h2 { margin:0; color:var(--accent-dark); font-size:clamp(1.35rem,4vw,1.8rem); }
+  .quiz-options { display:grid; gap:.65rem; margin-top:1.2rem; }
+  .quiz-option { width:100%; padding:.9rem 1rem; border:1px solid var(--line); border-radius:.75rem; color:var(--ink); background:#fffdf8; cursor:pointer; font:inherit; text-align:left; }
+  .quiz-option:hover { border-color:var(--accent); }
+  .quiz-option.is-correct { border-color:#718b63; color:#36512e; background:#edf4e9; }
+  .quiz-option.is-wrong { border-color:#b26a5c; color:#743a30; background:#faece8; }
+  .quiz-option:disabled { cursor:default; }
+  .quiz-explanation { margin:1rem 0 0; padding:1rem; border-radius:.75rem; color:var(--muted); background:#f8f2e7; font-size:.85rem; }
+  .quiz-next { margin-top:1rem; }
+  .quiz-score { color:var(--accent-dark); font-size:clamp(3rem,10vw,5rem); line-height:1; }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -932,6 +964,9 @@
     .budget-row { grid-template-columns:1fr; gap:.3rem; }
     .budget-row input { text-align:left; }
     .glossary-controls, .glossary-grid, .library-grid { grid-template-columns:1fr; }
+    .agenda-form { grid-template-columns:1fr; }
+    .agenda-field.is-wide, .agenda-repeat, .agenda-submit { grid-column:auto; }
+    .agenda-item { grid-template-columns:3.8rem 1fr auto; gap:.65rem; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
     .calendar-layout { grid-template-columns:1fr; }
@@ -1208,6 +1243,7 @@
             <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
             <a class="app-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Rencana Yadnya</strong><p>Susun checklist persiapan, pembagian kebutuhan, tanggal pelaksanaan, dan estimasi anggaran keluarga.</p></a>
             <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.</p></a>
+            <a class="app-card" href="?mode=agenda"><span class="app-icon">◷</span><strong>Agenda Keluarga Bali</strong><p>Simpan otonan, piodalan, ngayah, rapat banjar, dan upacara keluarga agar persiapan tidak terlambat.</p></a>
           </div>
         </section>
         <section class="feature-section" aria-labelledby="fitur-adat">
@@ -1221,6 +1257,7 @@
             <a class="app-card" href="?mode=help"><span class="app-icon">?</span><strong>Cari Jalur Bantuan</strong><p>Pilih jenis masalah untuk mengetahui pihak pertama yang tepat dihubungi dan dokumen yang perlu disiapkan.</p></a>
             <a class="app-card" href="?mode=glossary"><span class="app-icon">A</span><strong>Glosarium Bali</strong><p>Cari arti istilah adat, agama, upakara, keluarga, dan subak tanpa harus membuka banyak halaman.</p></a>
             <a class="app-card" href="?mode=library"><span class="app-icon">▤</span><strong>Pustaka Terverifikasi</strong><p>Kumpulan pintu masuk menuju sumber resmi pemerintah, hukum adat, agama Hindu, budaya, dan penelitian.</p></a>
+            <a class="app-card" href="?mode=quiz"><span class="app-icon">◇</span><strong>Belajar &amp; Kuis Bali</strong><p>Uji pemahaman tentang adat, upakara, bahasa, subak, dan penggunaan sumber yang bertanggung jawab.</p></a>
           </div>
         </section>
       </div>
@@ -2646,6 +2683,78 @@
     appView.append(header, notice, grid, checked);
     document.title = "Pustaka Terverifikasi — Gītā Bali";
   }
+  function showFamilyAgenda() {
+    prepareUpakaraPage("upakara-page");
+    var storageKey = "gitaBaliFamilyAgendaV1";
+    var events = [];
+    try { events = JSON.parse(localStorage.getItem(storageKey) || "[]"); if (!Array.isArray(events)) events = []; } catch (error) { events = []; }
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Pengingat keluarga"), make("h1", "", "Agenda Keluarga Bali"), make("p", "", "Catat kegiatan penting dan lihat urutannya berdasarkan tanggal terdekat."));
+    var notice = make("p", "ritual-notice", "Agenda tersimpan secara lokal di perangkat ini. Pengulangan 210 hari disediakan untuk otonan berdasarkan siklus pawukon; tetap cocokkan dengan kalender Bali dan kebiasaan keluarga.");
+    var form = make("form", "agenda-form");
+    var nameWrap = make("div", "agenda-field is-wide"); var nameLabel = make("label", "", "Nama agenda"); nameLabel.htmlFor = "agenda-name"; var nameInput = document.createElement("input"); nameInput.id = "agenda-name"; nameInput.required = true; nameInput.placeholder = "Contoh: Otonan Made"; nameWrap.append(nameLabel, nameInput);
+    var typeWrap = make("div", "agenda-field"); var typeLabel = make("label", "", "Jenis kegiatan"); typeLabel.htmlFor = "agenda-type"; var typeSelect = document.createElement("select"); typeSelect.id = "agenda-type";
+    ["Otonan","Piodalan","Ngayah","Rapat banjar","Hari suci","Upacara keluarga","Lainnya"].forEach(function (name) { var option = document.createElement("option"); option.value = name; option.textContent = name; typeSelect.append(option); }); typeWrap.append(typeLabel, typeSelect);
+    var dateWrap = make("div", "agenda-field"); var dateLabel = make("label", "", "Tanggal"); dateLabel.htmlFor = "agenda-date"; var dateInput = document.createElement("input"); dateInput.id = "agenda-date"; dateInput.type = "date"; dateInput.required = true; dateWrap.append(dateLabel, dateInput);
+    var noteWrap = make("div", "agenda-field is-wide"); var noteLabel = make("label", "", "Catatan"); noteLabel.htmlFor = "agenda-note"; var noteInput = document.createElement("textarea"); noteInput.id = "agenda-note"; noteInput.placeholder = "Tempat, tugas, barang yang perlu dibawa…"; noteWrap.append(noteLabel, noteInput);
+    var repeatLabel = make("label", "agenda-repeat"); var repeatInput = document.createElement("input"); repeatInput.type = "checkbox"; repeatLabel.append(repeatInput, make("span", "", "Ulangi setiap 210 hari untuk otonan"));
+    var submit = make("button", "planner-button agenda-submit", "Tambah agenda"); submit.type = "submit"; form.append(nameWrap, typeWrap, dateWrap, noteWrap, repeatLabel, submit);
+    var list = make("div", "agenda-list");
+    function saveEvents() { localStorage.setItem(storageKey, JSON.stringify(events)); }
+    function parseDate(value) { return new Date(value + "T00:00:00"); }
+    function dateValue(date) { var year = date.getFullYear(); var month = String(date.getMonth() + 1).padStart(2, "0"); var day = String(date.getDate()).padStart(2, "0"); return year + "-" + month + "-" + day; }
+    function effectiveDate(event) {
+      var date = parseDate(event.date); var today = new Date(); today.setHours(0,0,0,0);
+      if (event.repeat210) while (date < today) date.setDate(date.getDate() + 210);
+      return date;
+    }
+    function renderEvents() {
+      list.replaceChildren();
+      var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); });
+      if (!sorted.length) { list.append(make("p", "agenda-empty", "Belum ada agenda. Tambahkan kegiatan pertama keluarga di atas.")); return; }
+      sorted.forEach(function (event) {
+        var shownDate = effectiveDate(event); var item = make("article", "agenda-item");
+        var dateBox = make("div", "agenda-date"); dateBox.append(make("strong", "", String(shownDate.getDate())), make("span", "", new Intl.DateTimeFormat("id-ID", { month:"short", year:"numeric" }).format(shownDate)));
+        var info = make("div", "agenda-info"); info.append(make("strong", "", event.name));
+        if (event.note) info.append(make("p", "", event.note));
+        info.append(make("span", "agenda-tag", event.type + (event.repeat210 ? " · 210 hari" : "")));
+        var remove = make("button", "agenda-delete", "×"); remove.type = "button"; remove.setAttribute("aria-label", "Hapus " + event.name);
+        remove.addEventListener("click", function () { if (!window.confirm("Hapus agenda “" + event.name + "”?")) return; events = events.filter(function (saved) { return saved.id !== event.id; }); saveEvents(); renderEvents(); notify("Agenda dihapus."); });
+        item.append(dateBox, info, remove); list.append(item);
+      });
+    }
+    typeSelect.addEventListener("change", function () { repeatInput.checked = typeSelect.value === "Otonan"; repeatInput.disabled = typeSelect.value !== "Otonan"; });
+    repeatInput.checked = true;
+    form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; events.push({ id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateInput.value, note:noteInput.value.trim(), repeat210:typeSelect.value === "Otonan" && repeatInput.checked }); saveEvents(); form.reset(); repeatInput.checked = true; repeatInput.disabled = false; renderEvents(); notify("Agenda keluarga ditambahkan."); });
+    renderEvents(); appView.append(header, notice, form, list);
+    document.title = "Agenda Keluarga Bali — Gītā Bali";
+  }
+  function showLearningQuiz() {
+    prepareUpakaraPage("upakara-page");
+    var questions = [
+      { q:"Apa fungsi utama awig-awig?", choices:["Menentukan harga banten seluruh Bali","Menjadi aturan dasar kehidupan desa adat","Menggantikan semua hukum negara"], answer:1, explanation:"Awig-awig merupakan aturan dasar yang disepakati krama. Isinya tetap terkait wilayah dan tidak menggantikan seluruh hukum negara." },
+      { q:"Mengapa panduan upakara tidak boleh dianggap sebagai resep universal?", choices:["Karena banten tidak memiliki makna","Karena mengikuti desa kala patra, tingkat upacara, dan tuntunan rohaniwan","Karena upacara hanya boleh dilakukan di satu kabupaten"], answer:1, explanation:"Bentuk dan susunan upakara menyesuaikan tempat, waktu, keadaan, kemampuan, dresta, serta pemimpin upacara." },
+      { q:"Siapa yang umumnya memimpin organisasi subak?", choices:["Pekaseh","Bendesa adat","Serati"], answer:0, explanation:"Pekaseh memimpin organisasi subak dan mengoordinasikan pembagian air serta keputusan krama subak." },
+      { q:"Apa langkah pertama sebelum membahas pembagian waris?", choices:["Menjual harta agar mudah dibagi","Membedakan status harta dan mengumpulkan dokumen","Mengunggah persoalan ke media sosial"], answer:1, explanation:"Asal dan status harta, dokumen, silsilah, serta kewajiban keluarga perlu diketahui sebelum menarik kesimpulan." },
+      { q:"Manakah contoh sumber hukum adat yang paling tepat diperiksa?", choices:["Komentar anonim","Awig-awig dan pararem desa terkait","Video singkat tanpa sumber"], answer:1, explanation:"Awig-awig dan pararem resmi desa terkait lebih relevan daripada ringkasan yang tidak memiliki sumber." },
+      { q:"Apa arti prinsip palemahan dalam Tri Hita Karana?", choices:["Hubungan dengan alam dan lingkungan","Pembagian kasta","Jenis aksara suci"], answer:0, explanation:"Palemahan berkaitan dengan keharmonisan manusia dengan alam dan ruang kehidupannya." },
+      { q:"Ke mana urusan KTP dan KK pertama kali diarahkan?", choices:["Desa dinas atau kelurahan","Serati banten","Pekaseh"], answer:0, explanation:"KTP dan KK merupakan administrasi pemerintahan. Pencatatan desa adat dapat menjadi proses yang berbeda." },
+      { q:"Bagaimana menangani lontar yang berjamur atau rapuh?", choices:["Mengoleskan minyak sebanyak mungkin","Mencucinya dengan air","Menghentikan penanganan mandiri dan meminta bantuan konservasi"], answer:2, explanation:"Bahan dan kondisi lontar berbeda. Penanganan yang salah dapat menghilangkan tulisan atau memperparah kerusakan." },
+      { q:"Apa yang sebaiknya dilakukan terhadap sisa banten organik?", choices:["Dicampur dengan plastik","Dipisahkan sejak sumber untuk pengolahan yang sesuai","Dibuang ke saluran air"], answer:1, explanation:"Pemisahan bunga, janur, daun, dan sisa organik dari plastik atau kawat memudahkan penanganan yang bertanggung jawab." },
+      { q:"Apa kegunaan fitur Cari Jalur Bantuan?", choices:["Memutuskan siapa yang bersalah","Menggantikan advokat dan pemangku","Mengarahkan pengguna ke pintu pertama yang sesuai"], answer:2, explanation:"Fitur tersebut membantu memilih pihak awal yang tepat, tetapi tidak menilai perkara atau menggantikan ahli." }
+    ];
+    var index = 0; var score = 0; var answered = false;
+    var header = make("header", "upakara-header"); header.append(make("p", "eyebrow", "Pasraman mini"), make("h1", "", "Belajar & Kuis Bali"), make("p", "", "Sepuluh pertanyaan singkat untuk menguji cara menggunakan pengetahuan adat secara bertanggung jawab."));
+    var shell = make("div", "quiz-shell"); var progress = make("div", "quiz-progress"); var card = make("section", "quiz-card"); shell.append(progress, card);
+    function renderQuestion() {
+      answered = false; var question = questions[index]; progress.replaceChildren(make("span", "", "Pertanyaan " + (index + 1) + " / " + questions.length), make("span", "", "Skor " + score));
+      card.replaceChildren(make("h2", "", question.q)); var options = make("div", "quiz-options");
+      question.choices.forEach(function (choice, choiceIndex) { var button = make("button", "quiz-option", choice); button.type = "button"; button.addEventListener("click", function () { if (answered) return; answered = true; if (choiceIndex === question.answer) { score += 1; button.classList.add("is-correct"); } else { button.classList.add("is-wrong"); options.children[question.answer].classList.add("is-correct"); } Array.prototype.forEach.call(options.children, function (option) { option.disabled = true; }); progress.lastChild.textContent = "Skor " + score; card.append(make("p", "quiz-explanation", question.explanation)); var next = make("button", "planner-button quiz-next", index === questions.length - 1 ? "Lihat hasil" : "Pertanyaan berikutnya"); next.type = "button"; next.addEventListener("click", function () { index += 1; if (index < questions.length) renderQuestion(); else renderResult(); }); card.append(next); }); options.append(button); }); card.append(options);
+    }
+    function renderResult() { progress.replaceChildren(make("span", "", "Selesai"), make("span", "", score + " / " + questions.length)); card.replaceChildren(make("p", "quiz-score", score + "/" + questions.length), make("h2", "", score >= 8 ? "Pemahamanmu sudah kuat." : (score >= 5 ? "Dasarnya sudah terbentuk." : "Mari baca ulang beberapa bagian.")), make("p", "quiz-explanation", "Kuis menilai pemahaman dasar, bukan kewenangan untuk menetapkan upacara atau menyelesaikan perkara adat.")); var restart = make("button", "planner-button quiz-next", "Ulangi kuis"); restart.type = "button"; restart.addEventListener("click", function () { index = 0; score = 0; renderQuestion(); }); card.append(restart); }
+    renderQuestion(); appView.append(header, shell);
+    document.title = "Belajar & Kuis Bali — Gītā Bali";
+  }
   function showCalendar() {
     var today = new Date();
     var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -3088,6 +3197,8 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "agenda") { showFamilyAgenda(); return; }
+  if (mode === "quiz") { showLearningQuiz(); return; }
   if (mode === "glossary") { showGlossary(); return; }
   if (mode === "library") { showLibrary(); return; }
   if (mode === "rights") { showKramaRights(); return; }
