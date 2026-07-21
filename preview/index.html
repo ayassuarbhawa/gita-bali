@@ -392,6 +392,32 @@
   .ritual-meaning { padding-top:.8rem; border-top:1px solid var(--line); }
   .ritual-sources { margin:1.5rem 0 0; color:var(--muted); font:.74rem/1.65 system-ui,sans-serif; text-align:center; }
   .ritual-sources a { color:var(--accent-dark); }
+  .knowledge-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .knowledge-card { border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); overflow:hidden; }
+  .knowledge-card summary { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:.85rem; min-height:6rem; padding:1.1rem 1.2rem; color:var(--accent-dark); cursor:pointer; list-style:none; }
+  .knowledge-card summary::-webkit-details-marker { display:none; }
+  .knowledge-card summary::after { color:var(--accent); content:"+"; font:400 1.35rem/1 system-ui,sans-serif; }
+  .knowledge-card[open] summary::after { content:"−"; }
+  .knowledge-icon { display:grid; width:2.5rem; height:2.5rem; place-items:center; border:1px solid rgba(138,61,47,.22); border-radius:50%; color:var(--accent); font:700 .72rem/1 system-ui,sans-serif; }
+  .knowledge-title { font-size:1.12rem; }
+  .knowledge-content { padding:0 1.2rem 1.25rem; border-top:1px solid var(--line); }
+  .knowledge-content p { margin:1rem 0 0; color:var(--muted); font-size:.92rem; }
+  .knowledge-content ul { margin:.75rem 0 0; padding-left:1.25rem; color:var(--muted); font-size:.9rem; line-height:1.65; }
+  .knowledge-content li + li { margin-top:.4rem; }
+  .knowledge-note { margin-top:1rem !important; padding:.85rem; border-radius:.75rem; background:#f8f2e7; font:700 .74rem/1.55 system-ui,sans-serif !important; }
+  .eco-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+  .eco-step { padding:1.25rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .eco-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  .eco-step h2 { margin:.55rem 0; color:var(--accent-dark); font-size:1.22rem; }
+  .eco-step ul { margin:.6rem 0 0; padding-left:1.1rem; color:var(--muted); font-size:.88rem; line-height:1.65; }
+  .eco-sort { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.7rem; margin-top:1rem; }
+  .eco-bin { padding:1rem; border-radius:.8rem; background:#f8f2e7; }
+  .eco-bin strong { display:block; color:var(--accent-dark); }
+  .eco-bin p { margin:.4rem 0 0; color:var(--muted); font-size:.82rem; }
+  .calendar-prep { margin-top:1rem; padding:1rem; border:1px solid rgba(182,139,58,.35); border-radius:.85rem; background:#fbf5e5; }
+  .calendar-prep h3 { margin:0; color:var(--accent-dark); font-size:1rem; }
+  .calendar-prep ul { margin:.65rem 0 0; padding-left:1.15rem; color:var(--muted); font:.78rem/1.6 system-ui,sans-serif; }
+  .calendar-prep p { margin:.65rem 0 0; color:var(--muted); font:.72rem/1.55 system-ui,sans-serif; }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -821,6 +847,7 @@
     .upakara-grid.is-five .app-card:last-child { grid-column:auto; width:auto; }
     .upakara-grid .app-card { min-height:11rem; }
     .ritual-section.is-wide { grid-column:auto; }
+    .knowledge-list, .eco-steps, .eco-sort { grid-template-columns:1fr; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
     .calendar-layout { grid-template-columns:1fr; }
@@ -1087,6 +1114,8 @@
         <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
         <a class="app-card" href="?mode=upakara"><span class="app-icon">❋</span><strong>Upakara &amp; Doa</strong><p>Pelajari Panca Yadnya, sarana upakara, alur umum pelaksanaannya, serta doa Hindu sehari-hari.</p></a>
         <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
+        <a class="app-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Mengenal Adat Bali</strong><p>Pahami desa adat, awig-awig, pararem, krama, ngayah, serta istilah penting dalam kehidupan adat Bali.</p></a>
+        <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -2050,6 +2079,131 @@
     appView.append(header, prayerList, source);
     document.title = "Doa Sehari-hari — Gītā Bali";
   }
+  function showAdatLiteracy() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Adat Bali 101"),
+      make("h1", "", "Mengenal Adat Bali"),
+      make("p", "", "Pengantar singkat untuk memahami lembaga, aturan, dan istilah yang sering ditemui dalam kehidupan adat Bali.")
+    );
+    var topics = [
+      {
+        icon:"01", title:"Desa Adat & Desa Dinas",
+        intro:"Keduanya berada dalam wilayah yang sama, tetapi memiliki fungsi berbeda.",
+        points:[
+          "Desa adat mengatur kehidupan adat, tradisi, agama Hindu, budaya, dan tata hubungan krama berdasarkan hak asal-usul.",
+          "Desa dinas atau kelurahan menjalankan administrasi pemerintahan dan pelayanan publik, termasuk kependudukan.",
+          "Untuk urusan KTP, KK, atau administrasi negara, mulai dari desa dinas. Untuk awig-awig, upacara desa, dan kewajiban adat, hubungi prajuru desa adat."
+        ],
+        note:"Batas kewenangan dapat bersinggungan. Tanyakan jalur resmi bila suatu urusan melibatkan keduanya."
+      },
+      {
+        icon:"02", title:"Awig-awig & Pararem",
+        intro:"Awig-awig merupakan aturan dasar desa adat; pararem menjabarkan atau menyelesaikan kebutuhan yang lebih khusus.",
+        points:[
+          "Awig-awig disusun dan disepakati melalui paruman desa adat serta mengikat krama sesuai kedudukannya.",
+          "Pararem dapat menjabarkan pelaksanaan awig-awig, mengatur hal baru, atau menjadi hasil penyelesaian perkara adat.",
+          "Gunakan dokumen desa masing-masing karena isi dan penerapannya tidak selalu sama antarwilayah."
+        ],
+        note:"Baca dokumen resminya; ringkasan internet tidak menggantikan awig-awig atau keputusan paruman."
+      },
+      {
+        icon:"03", title:"Krama, Krama Tamiu & Tamiu",
+        intro:"Status penduduk dalam wilayah desa adat memengaruhi hak, kewajiban, dan bentuk partisipasinya.",
+        points:[
+          "Krama desa adat adalah warga yang tercatat sebagai anggota desa adat sesuai ketentuan setempat.",
+          "Krama tamiu umumnya adalah warga beragama Hindu yang tinggal di wilayah desa adat lain; tamiu adalah penduduk pendatang lainnya.",
+          "Kewajiban lapor diri, iuran, dan partisipasi harus dilihat pada awig-awig atau pararem desa tempat tinggal."
+        ],
+        note:"Jangan menganggap satu aturan pendatang berlaku sama di seluruh Bali."
+      },
+      {
+        icon:"04", title:"Banjar, Prajuru & Paruman",
+        intro:"Banjar menjadi ruang kebersamaan terdekat, sedangkan prajuru menjalankan keputusan yang disepakati krama.",
+        points:[
+          "Bendesa memimpin desa adat bersama jajaran prajuru menurut struktur setempat.",
+          "Kelian banjar mengoordinasikan kegiatan pada tingkat banjar, termasuk informasi dan gotong royong.",
+          "Paruman adalah forum musyawarah untuk membahas dan mengambil keputusan bersama."
+        ],
+        note:"Sampaikan pertanyaan atau keberatan melalui jalur musyawarah dan administrasi yang tersedia."
+      },
+      {
+        icon:"05", title:"Ngayah, Ayahan & Iuran",
+        intro:"Partisipasi adat dapat berbentuk tenaga, tanggung jawab, kehadiran, maupun kontribusi yang disepakati.",
+        points:[
+          "Ngayah adalah pelayanan atau kerja tulus untuk kepentingan bersama dan kegiatan suci.",
+          "Ayahan merupakan kewajiban yang melekat pada status krama atau pemanfaatan hak tertentu menurut aturan desa.",
+          "Bentuk dispensasi, pengganti kehadiran, dan besaran iuran harus merujuk keputusan desa, bukan asumsi umum."
+        ],
+        note:"Jika berhalangan, komunikasikan lebih awal kepada pengurus banjar atau prajuru."
+      },
+      {
+        icon:"06", title:"Tanah Adat & Waris",
+        intro:"Tanah druwe desa, pelaba pura, dan karang ayahan mempunyai kedudukan serta kewajiban yang berbeda dari tanah milik pribadi.",
+        points:[
+          "Hak memakai tanah adat dapat disertai ayahan dan tidak otomatis sama dengan hak milik perseorangan.",
+          "Pewarisan adat berkaitan dengan kelanjutan kewajiban keluarga, bukan hanya pembagian aset.",
+          "Status purusa, pradana, sentana, dan keputusan desa dapat memengaruhi perkara waris."
+        ],
+        note:"Untuk transaksi atau sengketa, periksa sertifikat, awig-awig, riwayat tanah, dan mintalah pendapat profesional."
+      }
+    ];
+    var list = make("div", "knowledge-list");
+    topics.forEach(function (topic) {
+      var details = make("details", "knowledge-card");
+      var summary = document.createElement("summary");
+      summary.append(make("span", "knowledge-icon", topic.icon), make("strong", "knowledge-title", topic.title));
+      var content = make("div", "knowledge-content");
+      content.append(make("p", "", topic.intro));
+      var bullets = make("ul"); topic.points.forEach(function (point) { bullets.append(make("li", "", point)); });
+      content.append(bullets, make("p", "knowledge-note", topic.note));
+      details.append(summary, content); list.append(details);
+    });
+    var notice = make("p", "ritual-notice", "Isi halaman ini bersifat pengantar, bukan keputusan adat atau nasihat hukum. Setiap desa adat dapat memiliki awig-awig, pararem, dresta, dan prosedur yang berbeda.");
+    var sources = make("p", "ritual-sources", "Dokumen resmi dapat ditelusuri melalui ");
+    var jidhat = make("a", "", "Jaringan Dokumentasi dan Informasi Hukum Adat Bali"); jidhat.href = "https://jidhat.baliprov.go.id/";
+    var ombudsman = make("a", "", "kajian Ombudsman Bali tentang desa adat dan desa dinas"); ombudsman.href = "https://ombudsman.go.id/perwakilan/news/r/pwk--ombudsman-bali-temukan-tumpang-tindih-kewenangan-desa-dinas-dan-adat";
+    sources.append(jidhat, " dan ", ombudsman, ".");
+    appView.append(header, notice, list, sources);
+    document.title = "Mengenal Adat Bali — Gītā Bali";
+  }
+  function showSustainableUpakara() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Palemahan"),
+      make("h1", "", "Upakara Lestari"),
+      make("p", "", "Menjaga kesucian yadnya sekaligus mengurangi sampah melalui pilihan bahan dan penanganan sisa upakara yang lebih bertanggung jawab.")
+    );
+    var notice = make("p", "ritual-notice", "Utamakan arahan pemangku, sulinggih, serati, dan pengelola pura. Panduan lingkungan ini tidak mengubah struktur, makna, atau tata cara upakara yang berlaku di tempatmu.");
+    var steps = make("div", "eco-steps");
+    var ecoData = [
+      { number:"Sebelum", title:"Rencanakan seperlunya", items:["Tentukan jumlah banten sesuai kebutuhan dan tingkat upacara.", "Pilih janur, bunga, daun, buah, bambu, dan bahan lokal yang segar.", "Bawa tas, besek, atau wadah pakai ulang; hindari pembungkus plastik sekali pakai.", "Pisahkan dekorasi yang dapat dipakai kembali sebelum upacara dimulai."] },
+      { number:"Saat", title:"Jaga area tetap bersih", items:["Sediakan wadah terpisah untuk organik, barang pakai ulang, dan residu.", "Jangan mencampur bunga dan janur dengan plastik, staples, tali sintetis, atau kemasan makanan.", "Letakkan sarana sesuai arahan tanpa menghalangi jalur atau saluran air.", "Ajak keluarga dan peserta mengetahui titik pemilahan."] },
+      { number:"Sesudah", title:"Tangani dengan hormat", items:["Tunggu hingga rangkaian selesai dan ikuti petunjuk pengelola pura sebelum membersihkan.", "Komposkan bahan organik yang diperbolehkan atau serahkan ke pengolah organik.", "Bersihkan serta simpan dulang, bokor, kain, tedung, dan wadah yang dapat digunakan kembali.", "Buang residu pada fasilitas yang benar; jangan membakar plastik atau membuangnya ke sungai dan pantai."] }
+    ];
+    ecoData.forEach(function (data) {
+      var section = make("section", "eco-step");
+      section.append(make("span", "", data.number), make("h2", "", data.title));
+      var list = make("ul"); data.items.forEach(function (item) { list.append(make("li", "", item)); }); section.append(list); steps.append(section);
+    });
+    var sorting = make("section", "ritual-section is-wide");
+    sorting.append(make("h2", "", "Pisahkan sejak sumbernya"), make("p", "", "Pemilahan akan lebih mudah bila tiga wadah sudah tersedia sebelum upacara."));
+    var bins = make("div", "eco-sort");
+    [
+      ["Organik", "Bunga, janur, daun, buah, nasi, dan bahan alami tanpa plastik atau kawat."],
+      ["Pakai kembali", "Dulang, bokor, kain, tedung, besek, botol, dan dekorasi yang masih layak."],
+      ["Residu", "Plastik kotor, selotip, tali sintetis, staples, aluminium foil, dan bahan campuran yang tidak dapat diolah."]
+    ].forEach(function (bin) { var item = make("div", "eco-bin"); item.append(make("strong", "", bin[0]), make("p", "", bin[1])); bins.append(item); });
+    sorting.append(bins);
+    var source = make("p", "ritual-sources", "Rujukan: ");
+    var research = make("a", "", "penelitian pemanfaatan sampah pura menjadi dupa organik"); research.href = "https://ejournal.undip.ac.id/index.php/ilmulingkungan/article/view/39150/0";
+    var policy = make("a", "", "Pergub Bali Nomor 97 Tahun 2018 tentang pembatasan plastik sekali pakai"); policy.href = "https://jidhat.baliprov.go.id/";
+    source.append(research, " dan ", policy, ".");
+    appView.append(header, notice, steps, sorting, source);
+    document.title = "Upakara Lestari — Gītā Bali";
+  }
   function showCalendar() {
     var today = new Date();
     var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -2209,6 +2363,38 @@
       return group;
     }
 
+    function rahinanPreparation(names) {
+      if (!names.length) return null;
+      var joined = names.join(" ").toLowerCase();
+      var items = [
+        "Konfirmasi bentuk persembahyangan dan banten dengan keluarga, pemangku, atau pengempon pura.",
+        "Siapkan pakaian sembahyang, canang, dupa, bunga atau kwangen, serta sarana pribadi seperlunya.",
+        "Atur waktu berangkat dan pembagian tugas agar persiapan tidak dilakukan terburu-buru."
+      ];
+      if (joined.indexOf("galungan") !== -1) {
+        items = ["Susun kebutuhan Penampahan dan hari Galungan bersama keluarga.", "Siapkan perlengkapan persembahyangan serta penjor bila menjadi kewajiban keluarga.", "Kurangi kemasan sekali pakai dan pisahkan sisa organik sejak awal."];
+      } else if (joined.indexOf("kuningan") !== -1) {
+        items = ["Pastikan waktu persembahyangan dan sarana Kuningan menurut kebiasaan keluarga.", "Siapkan persembahan dan perlengkapan merajan sejak hari sebelumnya.", "Rencanakan pelepasan atau penyimpanan perlengkapan Galungan sesuai dresta setempat."];
+      } else if (joined.indexOf("saraswati") !== -1) {
+        items = ["Bersihkan buku, lontar, alat belajar, dan ruang belajar dengan penuh hormat.", "Siapkan sarana persembahyangan kepada Sang Hyang Aji Saraswati sesuai tradisi keluarga atau sekolah.", "Gunakan hari ini untuk membaca, merawat, dan menghargai sumber pengetahuan."];
+      } else if (joined.indexOf("pagerwesi") !== -1) {
+        items = ["Siapkan persembahyangan untuk memohon keteguhan pengetahuan dan perlindungan batin.", "Periksa jadwal persembahyangan keluarga atau pura setempat.", "Luangkan waktu untuk refleksi dan memperkuat komitmen menjalankan dharma."];
+      } else if (joined.indexOf("tumpek") !== -1) {
+        items = ["Baca nama Tumpek pada tanggal ini dan kenali aspek kehidupan yang dihormati.", "Siapkan sarana sesuai tradisi keluarga serta arahan pemangku.", "Hindari menyalin tata upacara daerah lain tanpa memastikan dresta setempat."];
+      } else if (joined.indexOf("purnama") !== -1 || joined.indexOf("tilem") !== -1) {
+        items = ["Siapkan canang, dupa, bunga atau kwangen, dan pakaian sembahyang.", "Periksa jadwal persembahyangan di merajan atau pura yang akan dikunjungi.", "Luangkan waktu untuk penyucian diri, doa, dan refleksi."];
+      } else if (joined.indexOf("kajeng kliwon") !== -1) {
+        items = ["Tanyakan bentuk segehan atau persembahan yang biasa dilakukan keluarga.", "Siapkan sarana secara sederhana sesuai dresta dan kemampuan.", "Jaga kebersihan halaman serta pisahkan sisa organik dan residu setelah rangkaian selesai."];
+      } else if (joined.indexOf("nyepi") !== -1) {
+        items = ["Siapkan kebutuhan rumah secukupnya sebelum pelaksanaan Catur Brata Penyepian.", "Periksa ketentuan resmi desa adat dan pemerintah mengenai aktivitas serta layanan saat Nyepi.", "Susun kegiatan refleksi, doa, dan pengendalian diri tanpa mengganggu ketenangan sekitar."];
+      }
+      var box = make("section", "calendar-prep");
+      box.append(make("h3", "", "Persiapan umum rahinan"));
+      var list = make("ul"); items.forEach(function (item) { list.append(make("li", "", item)); });
+      box.append(list, make("p", "", "Panduan ini bersifat umum. Banten dan tata cara tetap mengikuti desa kala patra serta arahan pemangku atau sulinggih."));
+      return box;
+    }
+
     function loadDay(date, moveToDetail) {
       if (moveToDetail && window.matchMedia("(max-width: 42rem)").matches) {
         detail.scrollIntoView({ behavior:"smooth", block:"start" });
@@ -2243,6 +2429,8 @@
       sourceLink.href = sourceUrl(date);
       detail.replaceChildren(dateLabel, title, baliDay);
       groups.forEach(function (group) { if (group) detail.append(group); });
+      var preparation = rahinanPreparation(info.rahinan);
+      if (preparation) detail.append(preparation);
       detail.append(sourceLink);
     }
 
@@ -2458,6 +2646,8 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "adat") { showAdatLiteracy(); return; }
+  if (mode === "lestari") { showSustainableUpakara(); return; }
   if (mode === "upakara" || mode === "prayers") { showUpakaraHub(); return; }
   if (mode === "daily-prayers") { showDailyPrayers(); return; }
   if (mode === "yadnya") { showYadnyaDetail(new URLSearchParams(window.location.search).get("type")); return; }
