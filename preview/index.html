@@ -477,6 +477,24 @@
   .help-result p { margin:.6rem 0 0; color:#f0dfd4; font-size:.86rem; }
   .help-result ol { margin:.8rem 0 0; padding-left:1.2rem; font:.84rem/1.65 system-ui,sans-serif; }
   .help-result a { display:inline-flex; margin-top:1rem; color:#fff; font:700 .7rem/1.3 system-ui,sans-serif; letter-spacing:.06em; text-underline-offset:.2rem; }
+  .glossary-controls { display:grid; grid-template-columns:1fr minmax(12rem,.35fr); gap:.7rem; margin-bottom:1rem; }
+  .glossary-controls input, .glossary-controls select { width:100%; min-height:3rem; padding:.7rem .85rem; border:1px solid var(--line); border-radius:.75rem; color:var(--ink); background:var(--surface); font:inherit; }
+  .glossary-count { margin:0 0 .8rem; color:var(--muted); font:.72rem/1.4 system-ui,sans-serif; }
+  .glossary-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; }
+  .glossary-term { padding:1rem; border:1px solid var(--line); border-radius:.85rem; background:var(--surface); }
+  .glossary-term span { color:var(--accent); font:700 .6rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .glossary-term h2 { margin:.45rem 0; color:var(--accent-dark); font-size:1.12rem; }
+  .glossary-term p { margin:0; color:var(--muted); font-size:.83rem; }
+  .glossary-empty { grid-column:1 / -1; padding:2rem; border:1px dashed var(--line); border-radius:1rem; color:var(--muted); text-align:center; }
+  .library-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .library-group { padding:1.15rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .library-group h2 { margin:0; color:var(--accent-dark); font-size:1.2rem; }
+  .library-group > p { margin:.45rem 0 1rem; color:var(--muted); font-size:.82rem; }
+  .library-links { display:grid; gap:.55rem; }
+  .library-link { display:block; padding:.75rem; border-radius:.7rem; color:var(--ink); background:#f8f2e7; text-decoration:none; }
+  .library-link strong { display:block; color:var(--accent-dark); font-size:.9rem; }
+  .library-link span { display:block; margin-top:.25rem; color:var(--muted); font:.68rem/1.45 system-ui,sans-serif; }
+  .library-link:hover { background:#f2e7d7; }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -913,6 +931,7 @@
     .planner-field.is-wide { grid-column:auto; }
     .budget-row { grid-template-columns:1fr; gap:.3rem; }
     .budget-row input { text-align:left; }
+    .glossary-controls, .glossary-grid, .library-grid { grid-template-columns:1fr; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
     .calendar-layout { grid-template-columns:1fr; }
@@ -1200,6 +1219,8 @@
             <a class="app-card" href="?mode=tamiu"><span class="app-icon">◎</span><strong>Panduan Krama Tamiu</strong><p>Pahami lapor diri, etika hidup di Bali, aturan desa setempat, serta jalur bertanya dan mengadu.</p></a>
             <a class="app-card" href="?mode=rights"><span class="app-icon">⚖</span><strong>Hak &amp; Kehidupan Krama</strong><p>Pengantar tentang swadharma, waris, perkawinan, tanah adat, dan langkah aman sebelum mengambil keputusan.</p></a>
             <a class="app-card" href="?mode=help"><span class="app-icon">?</span><strong>Cari Jalur Bantuan</strong><p>Pilih jenis masalah untuk mengetahui pihak pertama yang tepat dihubungi dan dokumen yang perlu disiapkan.</p></a>
+            <a class="app-card" href="?mode=glossary"><span class="app-icon">A</span><strong>Glosarium Bali</strong><p>Cari arti istilah adat, agama, upakara, keluarga, dan subak tanpa harus membuka banyak halaman.</p></a>
+            <a class="app-card" href="?mode=library"><span class="app-icon">▤</span><strong>Pustaka Terverifikasi</strong><p>Kumpulan pintu masuk menuju sumber resmi pemerintah, hukum adat, agama Hindu, budaya, dan penelitian.</p></a>
           </div>
         </section>
       </div>
@@ -2543,6 +2564,88 @@
     appView.append(header, notice, picker, result, preparation);
     document.title = "Cari Jalur Bantuan — Gītā Bali";
   }
+  function showGlossary() {
+    prepareUpakaraPage("upakara-page");
+    var terms = [
+      ["Awig-awig","Adat","Aturan dasar yang disusun dan disepakati oleh krama untuk mengatur kehidupan desa adat atau organisasi adat."],
+      ["Pararem","Adat","Aturan atau keputusan yang menjabarkan awig-awig, mengatur hal yang belum diatur, atau menyelesaikan perkara adat."],
+      ["Dresta","Adat","Kebiasaan atau tata pelaksanaan yang hidup dan diwariskan dalam komunitas tertentu."],
+      ["Desa kala patra","Adat","Prinsip menyesuaikan pelaksanaan dengan tempat, waktu, dan keadaan."],
+      ["Krama desa","Adat","Warga yang tercatat sebagai anggota desa adat menurut aturan setempat."],
+      ["Krama tamiu","Adat","Penduduk Hindu yang tinggal dalam wilayah desa adat lain dengan kedudukan menurut awig-awig atau pararem setempat."],
+      ["Tamiu","Adat","Penduduk atau tamu yang tinggal dalam wilayah desa adat tetapi bukan krama desa; ketentuannya mengikuti aturan setempat."],
+      ["Banjar adat","Adat","Kesatuan sosial adat pada tingkat lingkungan yang menjadi ruang koordinasi, musyawarah, dan gotong royong."],
+      ["Bendesa adat","Adat","Pemimpin desa adat dengan tugas dan kewenangan menurut awig-awig serta peraturan yang berlaku."],
+      ["Prajuru","Adat","Jajaran pengurus yang membantu menjalankan pemerintahan dan keputusan desa adat."],
+      ["Paruman","Adat","Forum musyawarah dan pengambilan keputusan dalam desa atau organisasi adat."],
+      ["Sangkep","Adat","Pertemuan atau rapat warga untuk membahas kegiatan dan kepentingan bersama."],
+      ["Ngayah","Adat","Pelayanan atau kerja tulus untuk kepentingan bersama, tempat suci, atau kegiatan adat dan agama."],
+      ["Ayahan","Adat","Kewajiban pelayanan atau kontribusi yang melekat pada kedudukan dan hak tertentu menurut aturan adat."],
+      ["Yadnya","Upakara","Persembahan atau pengorbanan suci yang dilaksanakan dengan tulus ikhlas."],
+      ["Upakara","Upakara","Sarana persembahan yang digunakan dalam pelaksanaan suatu yadnya."],
+      ["Banten","Upakara","Wujud upakara yang disusun dari berbagai sarana sebagai simbol dan persembahan; bentuknya mengikuti tujuan dan dresta."],
+      ["Serati","Upakara","Orang yang memiliki pengetahuan dan keterampilan menyusun upakara atau banten serta telah menjalani ketentuan tertentu."],
+      ["Pemangku","Upakara","Rohaniwan yang melayani persembahyangan dan upacara pada pura atau lingkungan tertentu sesuai sesana."],
+      ["Sulinggih","Upakara","Rohaniwan Hindu yang telah menjalani upacara diksa dan memimpin upacara serta puja tertentu."],
+      ["Piodalan","Upakara","Hari peringatan atau upacara berkala pada pura maupun tempat suci."],
+      ["Pelinggih","Upakara","Bangunan suci sebagai tempat pemujaan atau stana simbolis manifestasi Tuhan dan yang dihormati."],
+      ["Merajan / sanggah","Upakara","Tempat suci keluarga untuk pemujaan kepada Ida Sang Hyang Widhi dan leluhur menurut tradisi keluarga."],
+      ["Tirta","Upakara","Air suci yang telah dipujakan dan digunakan dalam rangkaian penyucian atau persembahyangan."],
+      ["Bija","Upakara","Beras yang telah disucikan dan dikenakan setelah persembahyangan sebagai simbol anugerah serta benih kesucian."],
+      ["Cuntaka","Upakara","Keadaan tidak suci sementara menurut ketentuan agama dan adat yang dapat memengaruhi partisipasi pada kegiatan suci."],
+      ["Swadharma","Keluarga","Kewajiban atau tanggung jawab yang dijalankan seseorang sesuai kedudukan dan tahap kehidupannya."],
+      ["Purusa","Keluarga","Kedudukan yang meneruskan garis dan tanggung jawab keluarga dalam sistem kekerabatan tertentu; tidak cukup dipahami hanya sebagai jenis kelamin."],
+      ["Pradana","Keluarga","Kedudukan pasangan atau pihak yang terkait dengan sistem purusa-pradana dalam hubungan keluarga dan perkawinan."],
+      ["Sentana","Keluarga","Keturunan atau pihak yang berkedudukan melanjutkan garis serta kewajiban keluarga menurut ketentuan yang berlaku."],
+      ["Ninggal kedaton","Keluarga","Perubahan atau pelepasan kedudukan serta tanggung jawab dari rumah asal dengan akibat yang perlu dilihat menurut bentuk dan konteksnya."],
+      ["Druwe desa","Tanah","Kekayaan atau tanah milik desa adat yang pemanfaatannya dapat diberikan kepada krama dengan kewajiban tertentu."],
+      ["Pelaba pura","Tanah","Tanah atau aset yang hasil dan pemanfaatannya diperuntukkan bagi keberlangsungan pura."],
+      ["Subak","Subak","Organisasi petani yang mengelola air, pertanian, aturan, dan kehidupan spiritual secara bersama."],
+      ["Pekaseh","Subak","Pemimpin organisasi subak yang mengoordinasikan pembagian air, musyawarah, kewajiban, dan kegiatan subak."],
+      ["Tembuku","Subak","Bangunan atau titik pembagi air dalam jaringan irigasi subak menuju saluran dan petak sawah."],
+      ["Tri Hita Karana","Filosofi","Konsep keharmonisan hubungan dengan Tuhan, sesama manusia, dan alam: parhyangan, pawongan, dan palemahan."],
+      ["Tat twam asi","Filosofi","Ajaran mengenai kesatuan dan empati: ia adalah engkau, yang mendorong penghormatan terhadap sesama makhluk."]
+    ].map(function (term) { return { name:term[0], category:term[1], meaning:term[2] }; });
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Kata & makna"), make("h1", "", "Glosarium Bali"), make("p", "", "Cari istilah yang sering muncul dalam kehidupan adat, upakara, keluarga, dan pengelolaan alam Bali."));
+    var notice = make("p", "ritual-notice", "Definisi dibuat sebagai pengantar. Makna teknis dan akibat hukum suatu istilah tetap perlu dibaca dari lontar, sastra, awig-awig, pararem, atau penjelasan ahli sesuai konteksnya.");
+    var controls = make("div", "glossary-controls");
+    var search = document.createElement("input"); search.type = "search"; search.placeholder = "Cari istilah atau makna…"; search.setAttribute("aria-label", "Cari istilah");
+    var category = document.createElement("select"); category.setAttribute("aria-label", "Pilih kategori");
+    ["Semua","Adat","Upakara","Keluarga","Tanah","Subak","Filosofi"].forEach(function (name) { var option = document.createElement("option"); option.value = name; option.textContent = name === "Semua" ? "Semua kategori" : name; category.append(option); });
+    controls.append(search, category);
+    var count = make("p", "glossary-count"); var grid = make("div", "glossary-grid");
+    function renderTerms() {
+      var query = search.value.trim().toLocaleLowerCase("id-ID");
+      var filtered = terms.filter(function (term) { return (category.value === "Semua" || term.category === category.value) && (!query || (term.name + " " + term.meaning).toLocaleLowerCase("id-ID").indexOf(query) !== -1); });
+      count.textContent = filtered.length + " istilah ditemukan"; grid.replaceChildren();
+      if (!filtered.length) { grid.append(make("p", "glossary-empty", "Belum ada istilah yang cocok. Coba kata yang lebih singkat.")); return; }
+      filtered.forEach(function (term) { var card = make("article", "glossary-term"); card.append(make("span", "", term.category), make("h2", "", term.name), make("p", "", term.meaning)); grid.append(card); });
+    }
+    search.addEventListener("input", renderTerms); category.addEventListener("change", renderTerms); renderTerms();
+    var source = make("p", "ritual-sources", "Rujukan istilah hukum adat dapat dibandingkan dengan dokumen resmi di "); var link = make("a", "", "JIDHAT Bali"); link.href = "https://jidhat.baliprov.go.id/"; source.append(link, ".");
+    appView.append(header, notice, controls, count, grid, source);
+    document.title = "Glosarium Bali — Gītā Bali";
+  }
+  function showLibrary() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Rujukan pilihan"), make("h1", "", "Pustaka Terverifikasi"), make("p", "", "Gunakan sumber ini untuk memeriksa informasi, membaca dokumen asli, dan melanjutkan belajar dari lembaga yang bertanggung jawab."));
+    var notice = make("p", "ritual-notice", "Terverifikasi berarti sumber berasal dari lembaga resmi, dokumen hukum, universitas, atau proyek yang identitasnya jelas—bukan berarti semua halaman berlaku sebagai keputusan untuk kasus pribadi.");
+    var groups = [
+      { title:"Agama Hindu", text:"Pedoman, pendidikan, berita kelembagaan, dan doa Hindu.", links:[["Ditjen Bimas Hindu Kementerian Agama","Portal resmi urusan dan pendidikan agama Hindu.","https://bimashindu.kemenag.go.id/"],["Buku Doa dalam Agama Hindu—PAKIS Bali","PDF doa harian dari Pemerintah Provinsi Bali.","https://dpma.baliprov.go.id/wp-content/uploads/2022/03/PAKIS-Bali_Buku-Doa-Dalam-Agama-Hindu_compressed.pdf"]] },
+      { title:"Hukum & Desa Adat", text:"Awig-awig, pararem, keputusan, peraturan, dan pedoman desa adat.", links:[["JIDHAT Provinsi Bali","Portal produk hukum adat dan daerah.","https://jidhat.baliprov.go.id/"],["Dinas Pemajuan Masyarakat Adat","Informasi desa adat, subak, program, dan dokumen publik.","https://dpma.baliprov.go.id/"] ,["JDIH Pemerintah Provinsi Bali","Peraturan daerah dan produk hukum Pemerintah Provinsi Bali.","https://jdih.baliprov.go.id/"]] },
+      { title:"Bahasa & Kebudayaan", text:"Data objek budaya, bahasa, aksara, dan kebijakan pelestarian.", links:[["Ceraken Kebudayaan Bali","Data kebudayaan terpadu Pemerintah Provinsi Bali.","https://ceraken.baliprov.go.id/"],["Perda Bali Nomor 1 Tahun 2018","Peraturan tentang Bahasa, Aksara, dan Sastra Bali.","https://jdih.baliprov.go.id/uploads/produk-hukum/peraturan/2018/PERDA/PERDA_NO_1_TAHUN_2018_TENTANG_BAHASA_SASTRA_DAN_AKSARA_BALI.pdf"]] },
+      { title:"Kalender & Wariga", text:"Perhitungan kalender harus dibandingkan dan keputusan penting tetap melalui ahli wariga atau rohaniwan.", links:[["BalineseDate","Pustaka kode terbuka yang digunakan untuk perhitungan kalender di website ini.","https://github.com/peradnya/balinese-date-js-lib"],["Kalender Bali Digital","Sumber pembanding komunitas untuk rincian ala ayuning dewasa.","https://kalenderbali.org/"]] },
+      { title:"Subak & Lingkungan", text:"Warisan dunia, data subak, dan penelitian perubahan lahan.", links:[["UNESCO—Cultural Landscape of Bali","Dokumentasi resmi lanskap budaya dan sistem subak.","https://whc.unesco.org/en/list/1194"],["Data Subak—DPMA Bali","Informasi pemerintah mengenai subak dan subak abian.","https://dpma.baliprov.go.id/data-subak/"],["Jurnal Universitas Udayana","Portal publikasi akademik untuk riset Bali.","https://ojs.unud.ac.id/"]] },
+      { title:"Pelayanan & Pengaduan", text:"Jalur resmi ketika persoalan berkaitan dengan pelayanan publik.", links:[["Ombudsman Perwakilan Bali","Kontak konsultasi dan pengaduan pelayanan publik di Bali.","https://www.ombudsman.go.id/perwakilan/perwakilan/profil/51-00-OP/30"],["PPID Provinsi Bali","Pintu permohonan informasi publik Pemerintah Provinsi Bali.","https://ppid.baliprov.go.id/"]] }
+    ];
+    var grid = make("div", "library-grid");
+    groups.forEach(function (group) { var section = make("section", "library-group"); section.append(make("h2", "", group.title), make("p", "", group.text)); var links = make("div", "library-links"); group.links.forEach(function (data) { var anchor = make("a", "library-link"); anchor.href = data[2]; anchor.append(make("strong", "", data[0] + " ↗"), make("span", "", data[1])); links.append(anchor); }); section.append(links); grid.append(section); });
+    var checked = make("p", "ritual-sources", "Daftar diperiksa terakhir pada 21 Juli 2026. Tautan eksternal dapat berubah atau memperbarui isinya tanpa pemberitahuan.");
+    appView.append(header, notice, grid, checked);
+    document.title = "Pustaka Terverifikasi — Gītā Bali";
+  }
   function showCalendar() {
     var today = new Date();
     var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -2985,6 +3088,8 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "glossary") { showGlossary(); return; }
+  if (mode === "library") { showLibrary(); return; }
   if (mode === "rights") { showKramaRights(); return; }
   if (mode === "help") { showHelpRouter(); return; }
   if (mode === "planner") { showYadnyaPlanner(); return; }
