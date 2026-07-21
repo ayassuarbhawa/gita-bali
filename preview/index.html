@@ -347,6 +347,12 @@
     text-align: left;
   }
   .app-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:2.5rem; text-align:left; }
+  .feature-groups { margin-top:clamp(2.5rem,6vw,4rem); text-align:left; }
+  .feature-section + .feature-section { margin-top:2.5rem; padding-top:2.5rem; border-top:1px solid var(--line); }
+  .feature-heading { display:flex; align-items:end; justify-content:space-between; gap:1rem; }
+  .feature-heading h2 { margin:0; color:var(--accent-dark); font-size:clamp(1.45rem,3vw,2rem); font-weight:400; }
+  .feature-heading p { max-width:30rem; margin:0; color:var(--muted); font:.78rem/1.5 system-ui,sans-serif; text-align:right; }
+  .feature-section .app-grid { margin-top:1rem; }
   .app-card { min-height:12rem; padding:1.4rem; border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); color:var(--ink); text-decoration:none; box-shadow:0 8px 24px rgba(65,48,31,.05); }
   .app-card strong { display:block; margin:.8rem 0 .3rem; color:var(--accent-dark); font-size:1.3rem; }
   .app-card p { margin:0; color:var(--muted); font-size:.92rem; }
@@ -463,6 +469,14 @@
   .tamiu-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; }
   .tamiu-step strong { display:block; margin:.45rem 0; color:var(--accent-dark); }
   .tamiu-step p { margin:0; color:var(--muted); font-size:.78rem; }
+  .help-picker { max-width:42rem; margin:0 auto 1rem; padding:1.2rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .help-picker label { display:block; margin-bottom:.5rem; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .help-picker select { width:100%; min-height:3rem; padding:.7rem .8rem; border:1px solid var(--line); border-radius:.7rem; color:var(--ink); background:#fffdf8; font:inherit; }
+  .help-result { max-width:42rem; margin:0 auto 1.5rem; padding:1.25rem; border-radius:1rem; color:#fff; background:var(--accent-dark); }
+  .help-result h2 { margin:0; color:#fff; font-size:1.35rem; }
+  .help-result p { margin:.6rem 0 0; color:#f0dfd4; font-size:.86rem; }
+  .help-result ol { margin:.8rem 0 0; padding-left:1.2rem; font:.84rem/1.65 system-ui,sans-serif; }
+  .help-result a { display:inline-flex; margin-top:1rem; color:#fff; font:700 .7rem/1.3 system-ui,sans-serif; letter-spacing:.06em; text-underline-offset:.2rem; }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -883,6 +897,8 @@
     .chapter-overview { width: 100%; }
     .chapter-grid { grid-template-columns: 1fr; }
     .app-grid { grid-template-columns:1fr; }
+    .feature-heading { display:block; }
+    .feature-heading p { margin-top:.45rem; text-align:left; }
     .prayer-list { grid-template-columns:1fr; }
     .prayer-page { margin:2.5rem auto; }
     .prayer-header { margin-bottom:1.5rem; }
@@ -1155,20 +1171,37 @@
     <div class="home-inner">
       <p class="eyebrow">Bhagawad Gita</p>
       <h1 class="home-title" id="home-title">Ruang baca untuk kembali merenung.</h1>
-      <p class="home-lead">Teks Sanskrit, transliterasi IAST, serta terjemahan Indonesia, Bali, dan Inggris disusun dalam satu ruang baca yang tenang dan mudah ditelusuri.</p>
-      <div class="app-grid" aria-label="Fitur utama">
-        <a class="app-card" href="?mode=random"><span class="app-icon">✦</span><strong>Sloka Acak</strong><p>Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.</p></a>
-        <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
-        <a class="app-card" href="?mode=saved"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
-        <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
-        <a class="app-card" href="?mode=upakara"><span class="app-icon">❋</span><strong>Upakara &amp; Doa</strong><p>Pelajari Panca Yadnya, sarana upakara, alur umum pelaksanaannya, serta doa Hindu sehari-hari.</p></a>
-        <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
-        <a class="app-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Mengenal Adat Bali</strong><p>Pahami desa adat, awig-awig, pararem, krama, ngayah, serta istilah penting dalam kehidupan adat Bali.</p></a>
-        <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.</p></a>
-        <a class="app-card" href="?mode=language"><span class="app-icon">ᬅ</span><strong>Bahasa, Aksara &amp; Lontar</strong><p>Mulai belajar ungkapan Bahasa Bali, mengenal aksara, serta merawat lontar keluarga dengan aman.</p></a>
-        <a class="app-card" href="?mode=subak"><span class="app-icon">≈</span><strong>Subak &amp; Alam Bali</strong><p>Kenali sistem air, Tri Hita Karana, peran krama subak, serta cara membantu menjaga sawah Bali.</p></a>
-        <a class="app-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Rencana Yadnya</strong><p>Susun checklist persiapan, pembagian kebutuhan, tanggal pelaksanaan, dan estimasi anggaran keluarga.</p></a>
-        <a class="app-card" href="?mode=tamiu"><span class="app-icon">◎</span><strong>Panduan Krama Tamiu</strong><p>Pahami lapor diri, etika hidup di Bali, aturan desa setempat, serta jalur bertanya dan mengadu.</p></a>
+      <p class="home-lead">Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.</p>
+      <div class="feature-groups" aria-label="Fitur utama">
+        <section class="feature-section" aria-labelledby="fitur-baca">
+          <div class="feature-heading"><h2 id="fitur-baca">Baca &amp; Renungkan</h2><p>Ruang pribadi untuk membaca sloka, menyimpan pilihan, dan menulis refleksi.</p></div>
+          <div class="app-grid">
+            <a class="app-card" href="?mode=random"><span class="app-icon">✦</span><strong>Sloka Acak</strong><p>Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.</p></a>
+            <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.</p></a>
+            <a class="app-card" href="?mode=saved"><span class="app-icon">♡</span><strong>Sloka Tersimpan</strong><p>Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.</p></a>
+            <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.</p></a>
+          </div>
+        </section>
+        <section class="feature-section" aria-labelledby="fitur-upakara">
+          <div class="feature-heading"><h2 id="fitur-upakara">Upakara &amp; Waktu</h2><p>Panduan persiapan yang tetap menghormati desa kala patra dan tuntunan rohaniwan.</p></div>
+          <div class="app-grid">
+            <a class="app-card" href="?mode=upakara"><span class="app-icon">❋</span><strong>Upakara &amp; Doa</strong><p>Pelajari Panca Yadnya, sarana upakara, alur umum pelaksanaannya, serta doa Hindu sehari-hari.</p></a>
+            <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
+            <a class="app-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Rencana Yadnya</strong><p>Susun checklist persiapan, pembagian kebutuhan, tanggal pelaksanaan, dan estimasi anggaran keluarga.</p></a>
+            <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.</p></a>
+          </div>
+        </section>
+        <section class="feature-section" aria-labelledby="fitur-adat">
+          <div class="feature-heading"><h2 id="fitur-adat">Adat, Bahasa &amp; Alam</h2><p>Pengetahuan dasar untuk memahami kehidupan Bali dan menemukan sumber yang benar.</p></div>
+          <div class="app-grid">
+            <a class="app-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Mengenal Adat Bali</strong><p>Pahami desa adat, awig-awig, pararem, krama, ngayah, serta istilah penting dalam kehidupan adat Bali.</p></a>
+            <a class="app-card" href="?mode=language"><span class="app-icon">ᬅ</span><strong>Bahasa, Aksara &amp; Lontar</strong><p>Mulai belajar ungkapan Bahasa Bali, mengenal aksara, serta merawat lontar keluarga dengan aman.</p></a>
+            <a class="app-card" href="?mode=subak"><span class="app-icon">≈</span><strong>Subak &amp; Alam Bali</strong><p>Kenali sistem air, Tri Hita Karana, peran krama subak, serta cara membantu menjaga sawah Bali.</p></a>
+            <a class="app-card" href="?mode=tamiu"><span class="app-icon">◎</span><strong>Panduan Krama Tamiu</strong><p>Pahami lapor diri, etika hidup di Bali, aturan desa setempat, serta jalur bertanya dan mengadu.</p></a>
+            <a class="app-card" href="?mode=rights"><span class="app-icon">⚖</span><strong>Hak &amp; Kehidupan Krama</strong><p>Pengantar tentang swadharma, waris, perkawinan, tanah adat, dan langkah aman sebelum mengambil keputusan.</p></a>
+            <a class="app-card" href="?mode=help"><span class="app-icon">?</span><strong>Cari Jalur Bantuan</strong><p>Pilih jenis masalah untuk mengetahui pihak pertama yang tepat dihubungi dan dokumen yang perlu disiapkan.</p></a>
+          </div>
+        </section>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -2457,6 +2490,59 @@
     appView.append(header, notice, steps, list, sources);
     document.title = "Panduan Krama Tamiu — Gītā Bali";
   }
+  function showKramaRights() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Hak, kewajiban & kehati-hatian"), make("h1", "", "Hak & Kehidupan Krama"), make("p", "", "Pengantar untuk memahami hubungan antara harta, swadharma, keluarga, dan aturan desa adat sebelum mengambil keputusan penting."));
+    var notice = make("p", "ritual-notice", "Informasi ini bukan nasihat hukum dan tidak menentukan siapa yang benar dalam perkara tertentu. Hasil dapat berbeda menurut status harta, awig-awig, bentuk perkawinan, silsilah, kewajiban yang dijalankan, kesepakatan keluarga, dan hukum negara.");
+    var topics = [
+      { icon:"01", title:"Swadharma & hak", intro:"Dalam hukum adat Bali, hak sering berhubungan dengan kewajiban yang dilaksanakan terhadap keluarga, leluhur, tempat suci, dan desa adat.", points:["Catat siapa yang merawat orang tua, melanjutkan kewajiban merajan, dan menjalankan ayahan.", "Jangan membahas pembagian aset tanpa membahas keberlanjutan kewajiban.", "Kesepakatan keluarga sebaiknya dibuat jelas dan disaksikan pihak yang dipercaya."], note:"Hak dan kewajiban perlu dibaca bersama; keduanya tidak selalu dapat dipisahkan." },
+      { icon:"02", title:"Kenali jenis harta", intro:"Sebelum membicarakan waris, bedakan asal dan status setiap harta.", points:["Harta bawaan, harta bersama dalam perkawinan, harta pusaka, tanah bersertifikat, dan tanah adat dapat mengikuti aturan berbeda.", "Periksa nama pada sertifikat, riwayat perolehan, perjanjian, pajak, serta bukti penguasaan.", "Tanah druwe desa atau pelaba pura tidak boleh diperlakukan otomatis sebagai milik pribadi."], note:"Jangan menjual, menjaminkan, atau membagi tanah sebelum status hukumnya dipastikan." },
+      { icon:"03", title:"Perempuan & pewarisan", intro:"Kedudukan perempuan dalam waris adat Bali mengalami perkembangan dan tidak tepat diringkas sebagai selalu mendapat atau tidak mendapat warisan.", points:["Keputusan Pasamuan Agung 2010 menjadi rujukan penting mengenai kedudukan perempuan dalam kondisi tertentu.", "Bentuk ninggal kedaton, status sentana, kewajiban keluarga, serta jenis harta dapat memengaruhi analisis.", "Praktik desa dan putusan perkara dapat bersifat kasuistis sehingga dokumen serta fakta keluarga harus diperiksa."], note:"Hindari membuat keputusan hanya berdasarkan kebiasaan lisan atau unggahan media sosial." },
+      { icon:"04", title:"Perkawinan & kedudukan keluarga", intro:"Bentuk perkawinan dapat memengaruhi kedudukan purusa, pradana, tempat menjalankan swadharma, dan hubungan pewarisan.", points:["Bicarakan bentuk perkawinan sejak awal bersama kedua keluarga.", "Pastikan upacara adat dan pencatatan perkawinan negara sama-sama diperhatikan.", "Jika menggunakan bentuk nyentana atau ketentuan khusus lain, dokumentasikan kesepakatan dan konsekuensinya."], note:"Jangan menunda pembicaraan sampai setelah upacara karena perbedaan pemahaman dapat menjadi konflik." },
+      { icon:"05", title:"Tanah druwe desa", intro:"Tanah druwe desa memiliki hubungan dengan desa adat dan penggunaannya dapat disertai ayahan atau kewajiban tertentu.", points:["Hak memakai secara turun-temurun tidak otomatis sama dengan hak milik bebas.", "Periksa awig-awig, catatan desa, riwayat keluarga, dan bukti administrasi pertanahan.", "Penerima kelanjutan hak dapat sekaligus menerima kewajiban yang melekat."], note:"Libatkan prajuru desa adat dan profesional pertanahan sebelum transaksi atau perubahan sertifikat." },
+      { icon:"06", title:"Langkah sebelum bersengketa", intro:"Pengumpulan dokumen dan musyawarah yang terarah sering lebih berguna daripada perdebatan berdasarkan ingatan.", points:["Buat silsilah keluarga serta daftar harta dan kewajiban secara terpisah.", "Kumpulkan sertifikat, surat perkawinan, dokumen waris, awig-awig, pararem, kuitansi, dan bukti lain.", "Catat kronologi tanpa tuduhan, lalu minta musyawarah keluarga atau mediasi melalui pihak netral.", "Dapatkan pendapat hukum independen sebelum menandatangani pelepasan hak atau transaksi."], note:"Simpan salinan dokumen dan jangan menyerahkan dokumen asli tanpa tanda terima." }
+    ];
+    var list = make("div", "knowledge-list");
+    topics.forEach(function (topic) { var details = make("details", "knowledge-card"); var summary = document.createElement("summary"); summary.append(make("span", "knowledge-icon", topic.icon), make("strong", "knowledge-title", topic.title)); var content = make("div", "knowledge-content"); content.append(make("p", "", topic.intro)); var bullets = make("ul"); topic.points.forEach(function (point) { bullets.append(make("li", "", point)); }); content.append(bullets, make("p", "knowledge-note", topic.note)); details.append(summary, content); list.append(details); });
+    var sources = make("p", "ritual-sources", "Bahan bacaan: ");
+    var druwe = make("a", "", "kajian Udayana tentang tanah druwe desa"); druwe.href = "https://ojs.unud.ac.id/index.php/kerthanegara/article/view/118621";
+    var women = make("a", "", "kajian hak waris anak perempuan"); women.href = "https://ojs.unud.ac.id/index.php/kerthadesa/article/view/69832";
+    var documents = make("a", "", "dokumen hukum adat resmi JIDHAT Bali"); documents.href = "https://jidhat.baliprov.go.id/";
+    sources.append(druwe, " · ", women, " · ", documents);
+    appView.append(header, notice, list, sources);
+    document.title = "Hak & Kehidupan Krama — Gītā Bali";
+  }
+  function showHelpRouter() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Mulai dari pihak yang tepat"), make("h1", "", "Cari Jalur Bantuan"), make("p", "", "Pilih jenis persoalan untuk memperoleh langkah awal, dokumen yang perlu disiapkan, dan sumber rujukan."));
+    var routes = {
+      ritual:{ label:"Upakara, banten, mantra, atau hari pelaksanaan", title:"Mulai dari pemangku, serati, atau sulinggih", description:"Persoalan ritual membutuhkan orang yang memahami jenis yadnya dan dresta wilayahmu.", steps:["Catat jenis upacara, tujuan, lokasi, dan waktu yang direncanakan.", "Tanyakan siapa pemimpin upacara serta serati yang biasa mendampingi keluarga atau pura.", "Minta penjelasan tingkat upacara dan sarana secara tertulis agar tidak terjadi salah beli."], link:"?mode=upakara", linkLabel:"Buka panduan Upakara & Doa" },
+      adat:{ label:"Awig-awig, iuran, ngayah, atau kewajiban adat", title:"Mulai dari kelian banjar atau prajuru desa adat", description:"Mintalah pasal atau keputusan paruman yang menjadi dasar kewajiban tersebut.", steps:["Catat pertanyaan dan peristiwa secara kronologis.", "Minta melihat awig-awig, pararem, atau keputusan resmi yang relevan.", "Jika belum jelas, ajukan klarifikasi tertulis atau melalui forum musyawarah yang tersedia."], link:"https://jidhat.baliprov.go.id/", linkLabel:"Cari dokumen di JIDHAT Bali" },
+      admin:{ label:"KTP, KK, pendataan penduduk, atau pelayanan pemerintah", title:"Mulai dari desa dinas atau kelurahan", description:"Administrasi kependudukan merupakan pelayanan pemerintahan; desa adat dapat memiliki pencatatan wilayah yang terpisah.", steps:["Siapkan identitas, bukti tempat tinggal, dan dokumen yang diminta.", "Minta daftar persyaratan, biaya resmi, waktu layanan, dan tanda terima.", "Jika pelayanan tidak jelas atau berlarut, simpan bukti lalu gunakan kanal pengaduan instansi atau Ombudsman."], link:"https://www.ombudsman.go.id/perwakilan/perwakilan/profil/51-00-OP/30", linkLabel:"Buka Ombudsman Perwakilan Bali" },
+      land:{ label:"Tanah, waris, perkawinan, atau dokumen keluarga", title:"Kumpulkan dokumen sebelum meminta pendapat", description:"Perkara ini dapat melibatkan hukum adat dan hukum negara sekaligus.", steps:["Susun silsilah, kronologi, daftar harta, serta kewajiban yang melekat.", "Kumpulkan sertifikat, surat perkawinan, dokumen waris, awig-awig, dan bukti lain.", "Konsultasikan secara terpisah kepada prajuru serta notaris, PPAT, advokat, atau bantuan hukum yang independen."], link:"?mode=rights", linkLabel:"Baca Hak & Kehidupan Krama" },
+      conflict:{ label:"Konflik adat, sanksi, atau keputusan yang dipersoalkan", title:"Minta dasar dan jalur penyelesaian secara tertulis", description:"Jangan menanggapi keputusan hanya melalui media sosial atau perdebatan terbuka.", steps:["Minta salinan atau catatan keputusan, dasar awig-awig, dan forum yang menetapkannya.", "Tanyakan tata titi nepas wicara atau mekanisme penyelesaian yang berlaku di desa tersebut.", "Jika berdampak pada hak hukum atau keselamatan, cari pendamping hukum independen sebelum menyetujui apa pun."], link:"https://jidhat.baliprov.go.id/buku-hukum?page=1", linkLabel:"Lihat pedoman hukum adat" },
+      public:{ label:"Dugaan pungutan, penahanan dokumen, atau pelayanan publik", title:"Catat pelayanan lalu gunakan kanal pengaduan resmi", description:"Ombudsman menangani dugaan maladministrasi dalam pelayanan publik, bukan menentukan isi ritual atau menggantikan putusan pengadilan.", steps:["Catat nama instansi, tanggal, petugas, layanan yang diminta, dan respons yang diterima.", "Simpan kuitansi, pesan, surat, foto, serta bukti bahwa kamu sudah mencoba mengadu ke instansi terkait.", "Konsultasikan kelengkapan laporan kepada Ombudsman Perwakilan Bali."], link:"https://www.ombudsman.go.id/perwakilan/perwakilan/profil/51-00-OP/30", linkLabel:"Kontak Ombudsman Bali" },
+      safety:{ label:"Ancaman, kekerasan, atau keadaan darurat", title:"Utamakan keselamatan", description:"Jangan menunggu proses adat atau mediasi bila ada bahaya langsung.", steps:["Pindah ke tempat aman dan hubungi layanan darurat atau aparat terdekat.", "Beritahu orang tepercaya dan simpan bukti tanpa membahayakan diri.", "Cari pendamping medis, psikologis, sosial, atau hukum sesuai kebutuhan."], link:"https://polri.go.id/", linkLabel:"Buka situs Kepolisian RI" }
+    };
+    var picker = make("div", "help-picker"); var label = make("label", "", "Masalah apa yang sedang dihadapi?"); label.htmlFor = "help-topic";
+    var select = document.createElement("select"); select.id = "help-topic";
+    Object.keys(routes).forEach(function (key) { var option = document.createElement("option"); option.value = key; option.textContent = routes[key].label; select.append(option); }); picker.append(label, select);
+    var result = make("section", "help-result");
+    function renderRoute() {
+      var route = routes[select.value]; result.replaceChildren(make("h2", "", route.title), make("p", "", route.description));
+      var steps = make("ol"); route.steps.forEach(function (step) { steps.append(make("li", "", step)); });
+      var link = make("a", "", route.linkLabel + " →"); link.href = route.link; result.append(steps, link);
+    }
+    select.addEventListener("change", renderRoute); renderRoute();
+    var preparation = make("section", "ritual-section is-wide");
+    preparation.append(make("h2", "", "Siapkan sebelum meminta bantuan"));
+    var prepList = make("ul"); ["Kronologi singkat dengan tanggal dan tempat.", "Nama pihak atau instansi, tanpa menyebarkan data pribadi ke publik.", "Salinan dokumen; simpan dokumen asli di tempat aman.", "Pertanyaan yang ingin dijawab dan hasil yang diharapkan.", "Bukti bahwa klarifikasi awal sudah pernah dilakukan, jika aman."].forEach(function (item) { prepList.append(make("li", "", item)); }); preparation.append(prepList);
+    var notice = make("p", "ritual-notice", "Fitur ini hanya membantu memilih pintu pertama. Ia tidak menilai benar-salah, tidak menggantikan nasihat hukum, dan tidak mengirim laporan secara otomatis.");
+    appView.append(header, notice, picker, result, preparation);
+    document.title = "Cari Jalur Bantuan — Gītā Bali";
+  }
   function showCalendar() {
     var today = new Date();
     var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -2899,6 +2985,8 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "rights") { showKramaRights(); return; }
+  if (mode === "help") { showHelpRouter(); return; }
   if (mode === "planner") { showYadnyaPlanner(); return; }
   if (mode === "tamiu") { showTamiuGuide(); return; }
   if (mode === "language") { showBalineseLanguage(); return; }
