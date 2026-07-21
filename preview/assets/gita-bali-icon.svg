@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Gītā Bali</title>
+  <rect width="512" height="512" rx="112" fill="#642a21"/>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="#d9b96f" stroke-width="8" opacity=".72"/>
+  <path d="M256 86c22 41 22 76 0 106-22-30-22-65 0-106Zm0 340c-22-41-22-76 0-106 22 30 22 65 0 106ZM86 256c41-22 76-22 106 0-30 22-65 22-106 0Zm340 0c-41 22-76 22-106 0 30-22 65-22 106 0Z" fill="#d9b96f" opacity=".82"/>
+  <path d="M155 164c32 0 64 12 101 37 37-25 69-37 101-37v182c-31 0-63 11-101 34-38-23-70-34-101-34V164Z" fill="#fffaf0" stroke="#d9b96f" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M256 201v179M180 211c24 3 43 10 58 19M180 247c24 3 43 10 58 19M332 211c-24 3-43 10-58 19M332 247c-24 3-43 10-58 19" fill="none" stroke="#8a3d2f" stroke-width="9" stroke-linecap="round"/>
+</svg>

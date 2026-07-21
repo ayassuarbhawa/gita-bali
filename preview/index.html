@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Bhagawad Gita dalam Bahasa Indonesia, Bahasa Bali, dan English.">
+<meta name="theme-color" content="#642a21">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Gītā Bali">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/preview/assets/gita-bali-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/preview/assets/gita-bali-icon-180.png">
 <title>Gītā Bali</title>
 <script>
   (function () {
@@ -207,7 +214,7 @@
     text-decoration: none;
     text-transform: uppercase;
   }
-  .auth-trigger {
+  .auth-trigger, .install-trigger {
     min-height:2.35rem;
     padding:.55rem .85rem;
     border:1px solid rgba(138,61,47,.32);
@@ -219,7 +226,7 @@
     letter-spacing:.06em;
     text-transform:uppercase;
   }
-  .auth-trigger:hover { background:var(--surface); }
+  .auth-trigger:hover, .install-trigger:hover { background:var(--surface); }
   .auth-dialog {
     width:min(calc(100% - 2rem), 28rem);
     padding:0;
@@ -529,7 +536,22 @@
   .agenda-delete { width:2.5rem; height:2.5rem; border:1px solid var(--line); border-radius:50%; color:var(--accent); background:transparent; cursor:pointer; }
   .agenda-actions { display:flex; align-items:center; gap:.4rem; }
   .agenda-open { display:grid; width:2.5rem; height:2.5rem; place-items:center; border:1px solid var(--line); border-radius:50%; color:var(--accent-dark); text-decoration:none; }
-  .agenda-toolbar { display:flex; justify-content:flex-end; margin-top:1rem; }
+  .agenda-toolbar { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:.55rem; margin-top:1rem; }
+  .connection-status {
+    position:fixed;
+    z-index:90;
+    left:max(1rem,env(safe-area-inset-left));
+    bottom:max(1rem,env(safe-area-inset-bottom));
+    max-width:min(23rem,calc(100% - 2rem));
+    padding:.6rem .85rem;
+    border:1px solid rgba(138,61,47,.2);
+    border-radius:999px;
+    color:var(--accent-dark);
+    background:rgba(255,253,248,.94);
+    box-shadow:0 10px 30px rgba(39,35,30,.13);
+    backdrop-filter:blur(10px);
+    font:700 .68rem/1.35 system-ui,sans-serif;
+  }
   .agenda-empty { padding:2rem; border:1px dashed var(--line); border-radius:1rem; color:var(--muted); text-align:center; }
   .agenda-pawukon { display:grid; grid-column:1 / -1; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.75rem; padding:1rem; border-radius:.8rem; background:#f8f2e7; }
   .agenda-pawukon[hidden], .agenda-field[hidden] { display:none; }
@@ -978,7 +1000,7 @@
     .intro-line { margin:1.15rem auto; }
     .nav-note, .nav-link { display: none; }
     .nav-actions { gap:.5rem; }
-    .auth-trigger { min-height:2.2rem; padding:.5rem .7rem; }
+    .auth-trigger, .install-trigger { min-height:2.2rem; padding:.5rem .7rem; }
     .toolbar { position: static; grid-template-columns: 1fr; }
     .language-switch { display: grid; grid-template-columns: repeat(3, 1fr); }
     .sloka { grid-template-columns: 1fr; gap: .7rem; }
@@ -1201,6 +1223,7 @@
     <div class="nav-actions">
       <a class="nav-link" href="?mode=dashboard">Dashboard</a>
       <span class="nav-note">Sanskrit · Indonesia · Bali · English</span>
+      <button class="install-trigger" id="install-trigger" type="button" hidden>Pasang</button>
       <button class="auth-trigger" id="auth-trigger" type="button">Masuk</button>
     </div>
   </nav>
@@ -1264,6 +1287,7 @@
   </div>
 </dialog>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<div class="connection-status" id="connection-status" role="status" aria-live="polite" hidden></div>
 
 <main id="content">
   <section class="home" id="home" aria-labelledby="home-title">
@@ -1481,6 +1505,41 @@
   var toastTimer;
   var introEnter = document.getElementById("intro-enter");
   var personalDashboard = document.getElementById("personal-dashboard");
+  var installTrigger = document.getElementById("install-trigger");
+  var connectionStatus = document.getElementById("connection-status");
+  var deferredInstallPrompt = null;
+
+  function updateConnectionStatus(showOnlineMessage) {
+    if (navigator.onLine) {
+      connectionStatus.hidden = true;
+      if (showOnlineMessage) notify("Koneksi kembali aktif.");
+      return;
+    }
+    connectionStatus.textContent = "Mode offline · bacaan dan perubahan lokal tetap tersedia";
+    connectionStatus.hidden = false;
+  }
+
+  window.addEventListener("online", function () { updateConnectionStatus(true); });
+  window.addEventListener("offline", function () { updateConnectionStatus(false); });
+  updateConnectionStatus(false);
+
+  window.addEventListener("beforeinstallprompt", function (event) {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    installTrigger.hidden = false;
+  });
+  installTrigger.addEventListener("click", async function () {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice;
+    deferredInstallPrompt = null;
+    installTrigger.hidden = true;
+  });
+  window.addEventListener("appinstalled", function () {
+    deferredInstallPrompt = null;
+    installTrigger.hidden = true;
+    notify("Gītā Bali berhasil dipasang.");
+  });
 
   introEnter.addEventListener("click", function () {
     document.documentElement.classList.add("intro-leaving");
@@ -2830,7 +2889,7 @@
     var pawukonPreview = make("p", "agenda-preview", ""); pawukonWrap.append(pawukonPreview);
     var noteWrap = make("div", "agenda-field is-wide"); var noteLabel = make("label", "", "Catatan"); noteLabel.htmlFor = "agenda-note"; var noteInput = document.createElement("textarea"); noteInput.id = "agenda-note"; noteInput.placeholder = "Tempat, tugas, barang yang perlu dibawa…"; noteWrap.append(noteLabel, noteInput);
     var submit = make("button", "planner-button agenda-submit", "Tambah agenda"); submit.type = "submit"; form.append(nameWrap, typeWrap, pawukonWrap, dateWrap, noteWrap, submit);
-    var toolbar = make("div", "agenda-toolbar"); var shareAgenda = make("button", "planner-button is-secondary", "Bagikan agenda"); shareAgenda.type = "button"; toolbar.append(shareAgenda);
+    var toolbar = make("div", "agenda-toolbar"); var exportAgenda = make("button", "planner-button is-secondary", "Ekspor Kalender (.ics)"); exportAgenda.type = "button"; exportAgenda.title = "Impor ke Google Calendar, Apple Calendar, atau aplikasi kalender lain"; var shareAgenda = make("button", "planner-button is-secondary", "Bagikan agenda"); shareAgenda.type = "button"; toolbar.append(exportAgenda, shareAgenda);
     var list = make("div", "agenda-list");
     function saveEvents(changedEvent) { writeAgendaCache(events); if (changedEvent) syncFamilyAgendaEvent(changedEvent); }
     function parseDate(value) { return new Date(value + "T00:00:00"); }
@@ -2859,6 +2918,22 @@
       }
       return date;
     }
+    function escapeIcs(value) { return String(value || "").replace(/\\/g, "\\\\").replace(/\r?\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;"); }
+    function compactDate(date) { return String(date.getFullYear()) + String(date.getMonth() + 1).padStart(2, "0") + String(date.getDate()).padStart(2, "0"); }
+    function compactStamp(date) { return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z"); }
+    function buildCalendarFile() {
+      var lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Gita Bali//Agenda Keluarga//ID", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Agenda Keluarga Bali"];
+      events.forEach(function (event) {
+        var shownDate = effectiveDate(event); var description = [];
+        if (event.pawukon) description.push(event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku);
+        if (event.note) description.push(event.note);
+        lines.push("BEGIN:VEVENT", "UID:" + escapeIcs(event.id) + "@gita-bali", "DTSTAMP:" + compactStamp(new Date()), "DTSTART;VALUE=DATE:" + compactDate(shownDate), "SUMMARY:" + escapeIcs(event.name), "DESCRIPTION:" + escapeIcs(description.join("\n")), "CATEGORIES:" + escapeIcs(event.type));
+        if (event.repeat210 || event.repeatRule === "pawukon210" || event.repeatRule === "pawukonSignature") lines.push("RRULE:FREQ=DAILY;INTERVAL=210");
+        lines.push("BEGIN:VALARM", "TRIGGER:-P7D", "ACTION:DISPLAY", "DESCRIPTION:" + escapeIcs("Persiapan 7 hari lagi: " + event.name), "END:VALARM", "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY", "DESCRIPTION:" + escapeIcs("Besok: " + event.name), "END:VALARM", "END:VEVENT");
+      });
+      lines.push("END:VCALENDAR");
+      return lines.join("\r\n");
+    }
     function renderEvents() {
       list.replaceChildren();
       var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); });
@@ -2886,6 +2961,7 @@
     typeSelect.addEventListener("change", updateAgendaMode); methodSelect.addEventListener("change", updateAgendaMode); dateInput.addEventListener("input", updatePawukonPreview); saptaSelect.addEventListener("change", updateWukuChoices); pancaSelect.addEventListener("change", updateWukuChoices); wukuSelect.addEventListener("change", updatePawukonPreview);
     form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; var pawukonMode = usesPawukon(); var dateMethod = pawukonMode && methodSelect.value === "date"; var selectedDate = dateMethod || !pawukonMode ? parseDate(dateInput.value) : null; var signature = pawukonMode ? (dateMethod ? signatureFromDate(selectedDate) : selectedSignature()) : null; var nextDate = dateMethod || !pawukonMode ? selectedDate : findPawukonDate(signature, new Date()); if (!nextDate || Number.isNaN(nextDate.getTime()) || (pawukonMode && !signature)) { notify("Tanggal agenda belum dapat dihitung."); return; } var savedEvent = { id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateValue(nextDate), note:noteInput.value.trim(), repeatRule:signature ? "pawukonSignature" : "", pawukon:signature }; events.push(savedEvent); saveEvents(savedEvent); form.reset(); updateWukuChoices(); updateAgendaMode(); renderEvents(); notify(account.user && agendaSyncState === "ready" ? "Agenda ditambahkan dan disinkronkan." : "Agenda keluarga ditambahkan."); });
     shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); var pawukon = event.pawukon ? "\n  " + event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku : ""; return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + pawukon + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Gītā Bali"].join("\n")); });
+    exportAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk diekspor."); return; } var blob = new Blob([buildCalendarFile()], { type:"text/calendar;charset=utf-8" }); var url = URL.createObjectURL(blob); var download = document.createElement("a"); download.href = url; download.download = "agenda-keluarga-bali.ics"; document.body.append(download); download.click(); download.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000); notify("File kalender dibuat dengan pengingat H-7 dan H-1."); });
     updateWukuChoices(); updateAgendaMode(); renderEvents(); appView.append(header, notice, syncStatus, form, toolbar, list);
     authReady.then(async function () { events = await loadFamilyAgendaEvents(); renderEvents(); syncStatus.textContent = !account.user ? "Agenda tersimpan di perangkat ini. Masuk agar dapat disinkronkan ke akunmu." : (agendaSyncState === "ready" ? "Agenda tersinkron dengan akun " + account.user.email + "." : (agendaSyncState === "missing" ? "Agenda aman tersimpan di perangkat. Sinkronisasi akun akan aktif setelah database agenda disiapkan." : "Agenda tersimpan di perangkat; sinkronisasi akan dicoba kembali saat koneksi tersedia.")); });
     document.title = "Agenda Keluarga Bali — Gītā Bali";
@@ -3411,6 +3487,9 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if ("serviceWorker" in navigator && (window.location.protocol === "https:" || window.location.hostname === "localhost")) {
+    window.addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
+  }
   if (mode === "dashboard") { document.title = "Dashboard Ruang Baca — Gītā Bali"; authReady.then(renderPersonalDashboard); return; }
   if (mode === "agenda") { showFamilyAgenda(); return; }
   if (mode === "quiz") { showLearningQuiz(); return; }
@@ -3469,6 +3548,7 @@
         true
       );
     });
+
 }());
 </script>
 </body>

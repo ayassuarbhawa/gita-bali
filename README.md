@@ -66,6 +66,17 @@ halaman menampilkan keadaan kosong tanpa membuat konten contoh.
 > Server HTTP diperlukan karena frontend memakai `fetch`; membuka file `.html`
 > langsung lewat `file://` akan diblokir browser.
 
+### Instalasi dan penggunaan offline
+
+Pada browser yang mendukung PWA, tombol **Pasang** muncul otomatis di header.
+Setelah aplikasi pernah dibuka online dan cache selesai, dashboard serta isi
+18 bab tetap dapat dibaca saat koneksi terputus. Perubahan lokal tetap disimpan
+di perangkat dan indikator mode offline akan muncul di bagian bawah layar.
+
+Agenda Keluarga dapat diekspor sebagai file `.ics` untuk Google Calendar,
+Apple Calendar, atau aplikasi kalender lain. Setiap agenda hasil ekspor membawa
+pengingat H-7 dan H-1; agenda pawukon disetel berulang setiap 210 hari.
+
 ### Publikasi ke Vercel
 
 Repositori ini siap dipublikasikan sebagai situs statis tanpa proses build.

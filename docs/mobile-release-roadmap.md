@@ -8,13 +8,15 @@ Target akhir: satu basis produk untuk web, iOS, dan Android tanpa mengorbankan d
 - Autentikasi email/password melalui Supabase.
 - Sloka tersimpan, catatan, dan agenda dipisahkan berdasarkan pengguna.
 - Agenda tetap memiliki cache lokal ketika perangkat offline.
+- PWA dapat dipasang dari browser dan konten inti 18 bab tersedia setelah cache awal selesai.
+- Agenda dapat diekspor ke kalender perangkat dengan pengingat H-7 dan H-1.
 
 ## Tahap sebelum pembungkusan aplikasi
 
 1. Pisahkan frontend monolitik menjadi modul data, tampilan, autentikasi, kalender, dan agenda.
-2. Tambahkan web app manifest, ikon aplikasi, service worker, cache offline, dan halaman status koneksi.
+2. ✅ Tambahkan web app manifest, ikon aplikasi, service worker, cache offline, dan status koneksi.
 3. Tambahkan ekspor/hapus akun dan halaman kebijakan privasi.
-4. Tambahkan pengingat lokal untuk agenda dan rahinan; minta izin notifikasi hanya setelah pengguna mengaktifkannya.
+4. Sebagian selesai: ekspor agenda ke kalender sudah membawa pengingat H-7 dan H-1. Notifikasi lokal native untuk agenda dan rahinan ditambahkan saat integrasi Capacitor.
 5. Uji aksesibilitas, ukuran teks, safe area, keyboard, gesture kembali, serta koneksi lambat.
 
 ## iOS dan Android
