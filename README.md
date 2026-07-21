@@ -73,6 +73,20 @@ Hubungkan repositori GitHub ke Vercel, gunakan root project sebagai Root
 Directory, lalu pilih **Other** sebagai Framework Preset. Konfigurasi
 `vercel.json` akan menampilkan pembaca di alamat utama situs.
 
+### Sinkronisasi Agenda Keluarga
+
+Agenda selalu memiliki cache lokal. Agar agenda ikut tersinkron melalui akun
+Supabase, buka **Supabase Dashboard → SQL Editor**, lalu jalankan isi
+`supabase/migrations/20260721_family_agenda.sql`.
+
+Migrasi tersebut membuat tabel `family_agenda`, indeks tanggal, dan kebijakan
+Row Level Security agar setiap pengguna hanya dapat membaca serta mengubah
+agendanya sendiri. Data agenda lokal dipindahkan otomatis setelah pengguna
+masuk dan tabel tersedia.
+
+Rencana menuju rilis iOS dan Android dicatat di
+`docs/mobile-release-roadmap.md`.
+
 ## Arti field
 
 | Field         | Arti |

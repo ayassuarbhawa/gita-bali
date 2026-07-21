@@ -339,6 +339,18 @@
     color: var(--muted);
     font-size: clamp(1.02rem, 2vw, 1.22rem);
   }
+  .personal-dashboard { display:grid; grid-template-columns:1.35fr repeat(3,minmax(0,1fr)); gap:.8rem; margin-top:2rem; text-align:left; }
+  .personal-dashboard[hidden] { display:none; }
+  .dashboard-welcome, .dashboard-tile { padding:1.1rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.04); }
+  .dashboard-welcome { color:#fff; background:var(--accent-dark); }
+  .dashboard-welcome span, .dashboard-tile span { display:block; font:700 .6rem/1.3 system-ui,sans-serif; letter-spacing:.09em; text-transform:uppercase; }
+  .dashboard-welcome span { color:#eed6c6; }
+  .dashboard-welcome strong { display:block; margin-top:.4rem; font-size:1.15rem; }
+  .dashboard-welcome p { margin:.4rem 0 0; color:#f2e7df; font:.76rem/1.5 system-ui,sans-serif; }
+  .dashboard-tile { color:var(--ink); text-decoration:none; }
+  .dashboard-tile span { color:var(--muted); }
+  .dashboard-tile strong { display:block; margin-top:.4rem; color:var(--accent-dark); font-size:.95rem; line-height:1.3; }
+  .dashboard-tile p { margin:.3rem 0 0; color:var(--muted); font:.68rem/1.45 system-ui,sans-serif; }
   .chapter-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -975,6 +987,8 @@
     .chapter-overview { width: 100%; }
     .chapter-grid { grid-template-columns: 1fr; }
     .app-grid { grid-template-columns:1fr; }
+    .personal-dashboard { grid-template-columns:1fr 1fr; }
+    .dashboard-welcome { grid-column:1 / -1; }
     .feature-heading { display:block; }
     .feature-heading p { margin-top:.45rem; text-align:left; }
     .prayer-list { grid-template-columns:1fr; }
@@ -1257,6 +1271,7 @@
       <p class="eyebrow">Bhagawad Gita</p>
       <h1 class="home-title" id="home-title">Ruang baca untuk kembali merenung.</h1>
       <p class="home-lead">Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.</p>
+      <section class="personal-dashboard" id="personal-dashboard" aria-label="Ringkasan pribadi" hidden></section>
       <div class="feature-groups" aria-label="Fitur utama">
         <section class="feature-section" aria-labelledby="fitur-baca">
           <div class="feature-heading"><h2 id="fitur-baca">Baca &amp; Renungkan</h2><p>Ruang pribadi untuk membaca sloka, menyimpan pilihan, dan menulis refleksi.</p></div>
@@ -1439,7 +1454,9 @@
   var supabaseUrl = "https://vekrbbnuzzoawkfsyfdo.supabase.co";
   var supabaseKey = "sb_publishable_6rzcP2Te_5oLb-_MxwHD9A_nLoIICMM";
   var authClient = window.supabase ? window.supabase.createClient(supabaseUrl, supabaseKey) : null;
-  var account = { user: null, saved: new Set(), notes: new Map() };
+  var account = { user: null, saved: new Set(), notes: new Map(), agenda: [] };
+  var agendaSyncState = "unknown";
+  var legacyAgendaStorageKey = "gitaBaliFamilyAgendaV1";
   var authReady = Promise.resolve();
   var list = document.getElementById("sloka-list");
   var stateBox = document.getElementById("state");
@@ -1463,6 +1480,7 @@
   var toast = document.getElementById("toast");
   var toastTimer;
   var introEnter = document.getElementById("intro-enter");
+  var personalDashboard = document.getElementById("personal-dashboard");
 
   introEnter.addEventListener("click", function () {
     document.documentElement.classList.add("intro-leaving");
@@ -1470,6 +1488,7 @@
       document.documentElement.classList.remove("intro-ready", "intro-leaving");
       window.history.replaceState({}, "", "?mode=dashboard");
       document.title = "Dashboard Ruang Baca — Gītā Bali";
+      authReady.then(renderPersonalDashboard);
       document.querySelector(".app-card").focus();
     }, 760);
   });
@@ -1989,6 +2008,58 @@
     var copied = document.execCommand && document.execCommand("copy"); field.remove();
     if (copied) notify("Ringkasan disalin."); else notify("Ringkasan belum dapat dibagikan.");
     return Boolean(copied);
+  }
+  function agendaCacheKey() { return account.user ? "gitaBaliFamilyAgendaV2:" + account.user.id : legacyAgendaStorageKey; }
+  function readAgendaCache(key) { try { var value = JSON.parse(localStorage.getItem(key || agendaCacheKey()) || "[]"); return Array.isArray(value) ? value : []; } catch (error) { return []; } }
+  function writeAgendaCache(events) { localStorage.setItem(agendaCacheKey(), JSON.stringify(events)); account.agenda = events.slice(); }
+  function agendaRow(event) { return { user_id:account.user.id, id:String(event.id), name:event.name, type:event.type, event_date:event.date, note:event.note || "", repeat_rule:event.repeatRule || "", pawukon:event.pawukon || null, updated_at:new Date().toISOString() }; }
+  function eventFromAgendaRow(row) { return { id:String(row.id), name:row.name, type:row.type, date:row.event_date, note:row.note || "", repeatRule:row.repeat_rule || "", pawukon:row.pawukon || null }; }
+  function missingAgendaTable(error) { return error && (error.code === "PGRST205" || String(error.message || "").toLowerCase().indexOf("family_agenda") !== -1); }
+  async function loadFamilyAgendaEvents() {
+    var cached = readAgendaCache();
+    if (!account.user || !authClient) { account.agenda = cached; agendaSyncState = "local"; return cached; }
+    var migrationKey = "gitaBaliFamilyAgendaMigrated:" + account.user.id;
+    var legacy = localStorage.getItem(migrationKey) === "1" ? [] : readAgendaCache(legacyAgendaStorageKey);
+    var remoteResult = await authClient.from("family_agenda").select("id,name,type,event_date,note,repeat_rule,pawukon,updated_at").order("updated_at", { ascending:false });
+    if (remoteResult.error) { agendaSyncState = missingAgendaTable(remoteResult.error) ? "missing" : "error"; account.agenda = cached.length ? cached : legacy; return account.agenda; }
+    var merged = new Map(); (remoteResult.data || []).forEach(function (row) { var event = eventFromAgendaRow(row); merged.set(event.id, event); }); cached.concat(legacy).forEach(function (event) { merged.set(String(event.id), event); });
+    var events = Array.from(merged.values());
+    if (cached.length || legacy.length) {
+      var upload = await authClient.from("family_agenda").upsert(events.map(agendaRow), { onConflict:"user_id,id" });
+      if (upload.error) { agendaSyncState = "error"; account.agenda = events; return events; }
+      localStorage.setItem(migrationKey, "1");
+      if (legacy.length) localStorage.removeItem(legacyAgendaStorageKey);
+    }
+    agendaSyncState = "ready"; writeAgendaCache(events); return events;
+  }
+  async function syncFamilyAgendaEvent(event) {
+    if (!account.user || !authClient || agendaSyncState === "missing") return;
+    var result = await authClient.from("family_agenda").upsert(agendaRow(event), { onConflict:"user_id,id" });
+    if (result.error) agendaSyncState = missingAgendaTable(result.error) ? "missing" : "error"; else agendaSyncState = "ready";
+  }
+  async function removeFamilyAgendaEvent(id) {
+    if (!account.user || !authClient || agendaSyncState === "missing") return;
+    var result = await authClient.from("family_agenda").delete().eq("user_id", account.user.id).eq("id", String(id));
+    if (result.error) agendaSyncState = missingAgendaTable(result.error) ? "missing" : "error";
+  }
+  function dashboardAgendaDate(event) {
+    var today = new Date(); today.setHours(0,0,0,0); var date = new Date(event.date + "T00:00:00");
+    if (event.repeatRule === "pawukonSignature" && event.pawukon && window.BalineseDate) { for (var offset = 0; offset <= 210; offset++) { var candidate = new Date(today); candidate.setDate(candidate.getDate() + offset); var value = new window.BalineseDate.BalineseDate(candidate); if (value.saptaWara.name === event.pawukon.sapta && value.pancaWara.name === event.pawukon.panca && value.wuku.name === event.pawukon.wuku) return candidate; } }
+    if (event.repeat210 || event.repeatRule === "pawukon210") while (date < today) date.setDate(date.getDate() + 210);
+    return date;
+  }
+  async function renderPersonalDashboard() {
+    if (!personalDashboard) return; personalDashboard.hidden = false;
+    var events = await loadFamilyAgendaEvents(); var today = new Date(); var dayTitle = new Intl.DateTimeFormat("id-ID", { weekday:"long", day:"numeric", month:"long" }).format(today); var baliLine = "Kalender Bali belum tersedia";
+    if (window.BalineseDate) { var baliDate = new window.BalineseDate.BalineseDate(today); var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(baliDate).map(function (item) { return item.name; }); baliLine = baliDate.saptaWara.name + " " + baliDate.pancaWara.name + " · Wuku " + baliDate.wuku.name + (rahinan.length ? " · " + rahinan.join(" · ") : ""); }
+    var sortedAgenda = events.slice().map(function (event) { return { event:event, date:dashboardAgendaDate(event) }; }).filter(function (item) { return !Number.isNaN(item.date.getTime()) && item.date >= new Date(today.getFullYear(), today.getMonth(), today.getDate()); }).sort(function (a,b) { return a.date - b.date; }); var next = sortedAgenda[0];
+    var progress = null; try { progress = JSON.parse(localStorage.getItem("gitaBaliLastRead") || "null"); } catch (error) {}
+    var welcome = make("article", "dashboard-welcome"); welcome.append(make("span", "", account.user ? "Akun tersinkron" : "Dashboard Ruang Baca"), make("strong", "", account.user ? "Om swastyastu, " + account.user.email.split("@")[0] : "Om swastyastu"), make("p", "", account.saved.size + " sloka tersimpan · " + account.notes.size + " catatan" + (agendaSyncState === "ready" ? " · agenda tersinkron" : " · agenda tersimpan di perangkat")));
+    function dashboardTile(label, title, textValue, href) { var tile = make("a", "dashboard-tile"); tile.href = href; tile.append(make("span", "", label), make("strong", "", title), make("p", "", textValue)); return tile; }
+    var todayTile = dashboardTile("Hari ini", dayTitle, baliLine, "?mode=calendar&date=" + today.getFullYear() + "-" + String(today.getMonth()+1).padStart(2,"0") + "-" + String(today.getDate()).padStart(2,"0"));
+    var agendaTile = next ? dashboardTile("Agenda terdekat", next.event.name, new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(next.date), "?mode=agenda") : dashboardTile("Agenda keluarga", "Belum ada agenda", "Tambahkan otonan, odalan, atau kegiatan keluarga.", "?mode=agenda");
+    var readingTile = progress && progress.chapter ? dashboardTile("Lanjut membaca", "Bab " + progress.chapter + " · Sloka " + progress.verse, "Kembali ke bacaan terakhir.", "?bab=" + progress.chapter + "#sloka-" + progress.chapter + "-" + progress.verse) : dashboardTile("Mulai membaca", "Jelajahi Bhagawad Gita", "Pilih bagian dan bab pertamamu.", "?mode=explore");
+    personalDashboard.replaceChildren(welcome, todayTile, agendaTile, readingTile);
   }
   function upakaraCard(title, text, href) {
     var item = card(title, text, href);
@@ -2740,12 +2811,11 @@
   }
   function showFamilyAgenda() {
     prepareUpakaraPage("upakara-page");
-    var storageKey = "gitaBaliFamilyAgendaV1";
-    var events = [];
-    try { events = JSON.parse(localStorage.getItem(storageKey) || "[]"); if (!Array.isArray(events)) events = []; } catch (error) { events = []; }
+    var events = readAgendaCache();
     var header = make("header", "upakara-header");
     header.append(make("p", "eyebrow", "Pengingat keluarga"), make("h1", "", "Agenda Keluarga Bali"), make("p", "", "Catat kegiatan penting dan lihat urutannya berdasarkan tanggal terdekat."));
     var notice = make("p", "ritual-notice", "Untuk Otonan, Piodalan/Odalan, dan agenda pawukon lain, pilih Sapta Wara, Panca Wara, serta Wuku secara langsung atau masukkan tanggal Masehi agar padanan pawukonnya dihitung otomatis. Agenda berulang mengikuti siklus 210 hari.");
+    var syncStatus = make("p", "agenda-empty", account.user ? "Memeriksa sinkronisasi agenda…" : "Agenda tersimpan di perangkat ini. Masuk agar dapat disinkronkan ke akunmu.");
     var form = make("form", "agenda-form");
     var nameWrap = make("div", "agenda-field is-wide"); var nameLabel = make("label", "", "Nama agenda"); nameLabel.htmlFor = "agenda-name"; var nameInput = document.createElement("input"); nameInput.id = "agenda-name"; nameInput.required = true; nameInput.placeholder = "Contoh: Odalan Griya atau Otonan Made"; nameWrap.append(nameLabel, nameInput);
     var typeWrap = make("div", "agenda-field"); var typeLabel = make("label", "", "Jenis kegiatan"); typeLabel.htmlFor = "agenda-type"; var typeSelect = document.createElement("select"); typeSelect.id = "agenda-type";
@@ -2762,7 +2832,7 @@
     var submit = make("button", "planner-button agenda-submit", "Tambah agenda"); submit.type = "submit"; form.append(nameWrap, typeWrap, pawukonWrap, dateWrap, noteWrap, submit);
     var toolbar = make("div", "agenda-toolbar"); var shareAgenda = make("button", "planner-button is-secondary", "Bagikan agenda"); shareAgenda.type = "button"; toolbar.append(shareAgenda);
     var list = make("div", "agenda-list");
-    function saveEvents() { localStorage.setItem(storageKey, JSON.stringify(events)); }
+    function saveEvents(changedEvent) { writeAgendaCache(events); if (changedEvent) syncFamilyAgendaEvent(changedEvent); }
     function parseDate(value) { return new Date(value + "T00:00:00"); }
     function dateValue(date) { var year = date.getFullYear(); var month = String(date.getMonth() + 1).padStart(2, "0"); var day = String(date.getDate()).padStart(2, "0"); return year + "-" + month + "-" + day; }
     function balineseInfo(date) {
@@ -2803,7 +2873,7 @@
         info.append(make("span", "agenda-tag", event.type + repeatTag));
         var itemActions = make("div", "agenda-actions"); var openCalendar = make("a", "agenda-open", "◫"); openCalendar.href = "?mode=calendar&date=" + dateValue(shownDate); openCalendar.setAttribute("aria-label", "Buka tanggal di Kalender Bali");
         var remove = make("button", "agenda-delete", "×"); remove.type = "button"; remove.setAttribute("aria-label", "Hapus " + event.name);
-        remove.addEventListener("click", function () { if (!window.confirm("Hapus agenda “" + event.name + "”?")) return; events = events.filter(function (saved) { return saved.id !== event.id; }); saveEvents(); renderEvents(); notify("Agenda dihapus."); });
+        remove.addEventListener("click", function () { if (!window.confirm("Hapus agenda “" + event.name + "”?")) return; events = events.filter(function (saved) { return saved.id !== event.id; }); saveEvents(); removeFamilyAgendaEvent(event.id); renderEvents(); notify("Agenda dihapus."); });
         itemActions.append(openCalendar, remove); item.append(dateBox, info, itemActions); list.append(item);
       });
     }
@@ -2814,9 +2884,10 @@
     function updateWukuChoices() { var valid = validWukuNames(saptaSelect.value, pancaSelect.value); Array.prototype.forEach.call(wukuSelect.options, function (option) { option.disabled = valid.length > 0 && valid.indexOf(option.value) === -1; }); if (valid.length > 0 && valid.indexOf(wukuSelect.value) === -1) wukuSelect.value = valid[0]; updatePawukonPreview(); }
     function updatePawukonPreview() { if (methodSelect.value === "date") { if (!dateInput.value) { pawukonPreview.textContent = "Pilih tanggal Masehi untuk melihat Sapta Wara, Panca Wara, dan Wukunya."; return; } var chosenDate = parseDate(dateInput.value); var dateSignature = signatureFromDate(chosenDate); pawukonPreview.textContent = dateSignature ? new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(chosenDate) + " adalah " + dateSignature.sapta + " " + dateSignature.panca + " · Wuku " + dateSignature.wuku + ". Agenda akan berulang setiap 210 hari." : "Padanan pawukon belum dapat dihitung. Periksa koneksi Kalender Bali."; return; } var signature = selectedSignature(); var next = findPawukonDate(signature, new Date()); pawukonPreview.textContent = next ? signature.sapta + " " + signature.panca + " · Wuku " + signature.wuku + " · tanggal berikutnya " + new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(next) : "Tanggal berikutnya belum dapat dihitung. Periksa koneksi Kalender Bali."; }
     typeSelect.addEventListener("change", updateAgendaMode); methodSelect.addEventListener("change", updateAgendaMode); dateInput.addEventListener("input", updatePawukonPreview); saptaSelect.addEventListener("change", updateWukuChoices); pancaSelect.addEventListener("change", updateWukuChoices); wukuSelect.addEventListener("change", updatePawukonPreview);
-    form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; var pawukonMode = usesPawukon(); var dateMethod = pawukonMode && methodSelect.value === "date"; var selectedDate = dateMethod || !pawukonMode ? parseDate(dateInput.value) : null; var signature = pawukonMode ? (dateMethod ? signatureFromDate(selectedDate) : selectedSignature()) : null; var nextDate = dateMethod || !pawukonMode ? selectedDate : findPawukonDate(signature, new Date()); if (!nextDate || Number.isNaN(nextDate.getTime()) || (pawukonMode && !signature)) { notify("Tanggal agenda belum dapat dihitung."); return; } events.push({ id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateValue(nextDate), note:noteInput.value.trim(), repeatRule:signature ? "pawukonSignature" : "", pawukon:signature }); saveEvents(); form.reset(); updateWukuChoices(); updateAgendaMode(); renderEvents(); notify("Agenda keluarga ditambahkan."); });
+    form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; var pawukonMode = usesPawukon(); var dateMethod = pawukonMode && methodSelect.value === "date"; var selectedDate = dateMethod || !pawukonMode ? parseDate(dateInput.value) : null; var signature = pawukonMode ? (dateMethod ? signatureFromDate(selectedDate) : selectedSignature()) : null; var nextDate = dateMethod || !pawukonMode ? selectedDate : findPawukonDate(signature, new Date()); if (!nextDate || Number.isNaN(nextDate.getTime()) || (pawukonMode && !signature)) { notify("Tanggal agenda belum dapat dihitung."); return; } var savedEvent = { id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateValue(nextDate), note:noteInput.value.trim(), repeatRule:signature ? "pawukonSignature" : "", pawukon:signature }; events.push(savedEvent); saveEvents(savedEvent); form.reset(); updateWukuChoices(); updateAgendaMode(); renderEvents(); notify(account.user && agendaSyncState === "ready" ? "Agenda ditambahkan dan disinkronkan." : "Agenda keluarga ditambahkan."); });
     shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); var pawukon = event.pawukon ? "\n  " + event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku : ""; return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + pawukon + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Gītā Bali"].join("\n")); });
-    updateWukuChoices(); updateAgendaMode(); renderEvents(); appView.append(header, notice, form, toolbar, list);
+    updateWukuChoices(); updateAgendaMode(); renderEvents(); appView.append(header, notice, syncStatus, form, toolbar, list);
+    authReady.then(async function () { events = await loadFamilyAgendaEvents(); renderEvents(); syncStatus.textContent = !account.user ? "Agenda tersimpan di perangkat ini. Masuk agar dapat disinkronkan ke akunmu." : (agendaSyncState === "ready" ? "Agenda tersinkron dengan akun " + account.user.email + "." : (agendaSyncState === "missing" ? "Agenda aman tersimpan di perangkat. Sinkronisasi akun akan aktif setelah database agenda disiapkan." : "Agenda tersimpan di perangkat; sinkronisasi akan dicoba kembali saat koneksi tersedia.")); });
     document.title = "Agenda Keluarga Bali — Gītā Bali";
   }
   function showLearningQuiz() {
@@ -3285,6 +3356,7 @@
     var groupNumber = chapterNumber <= 6 ? 1 : (chapterNumber <= 12 ? 2 : 3);
     document.body.classList.add("chapter-reader-mode");
     list.classList.add("chapter-feed");
+    var requestedVerse = window.location.hash.match(/sloka-\d+-(\d+)/); var initialVerse = requestedVerse ? Number(requestedVerse[1]) : Number((data.sloka.filter(readable)[0] || {}).no || 1); localStorage.setItem("gitaBaliLastRead", JSON.stringify({ chapter:chapterNumber, verse:initialVerse }));
 
     var back = document.createElement("a");
     back.className = "chapter-back";
@@ -3333,13 +3405,13 @@
           var distance = Math.abs(verse.getBoundingClientRect().top - list.getBoundingClientRect().top);
           if (distance < closestDistance) { closest = verse; closestDistance = distance; }
         });
-        if (closest && closest.dataset.verse) jumpSelect.value = closest.dataset.verse;
+        if (closest && closest.dataset.verse) { jumpSelect.value = closest.dataset.verse; localStorage.setItem("gitaBaliLastRead", JSON.stringify({ chapter:chapterNumber, verse:Number(closest.dataset.verse) })); }
         updatePending = false;
       });
     }, { passive:true });
   }
   authReady = initializeAuth();
-  if (mode === "dashboard") { document.title = "Dashboard Ruang Baca — Gītā Bali"; return; }
+  if (mode === "dashboard") { document.title = "Dashboard Ruang Baca — Gītā Bali"; authReady.then(renderPersonalDashboard); return; }
   if (mode === "agenda") { showFamilyAgenda(); return; }
   if (mode === "quiz") { showLearningQuiz(); return; }
   if (mode === "glossary") { showGlossary(); return; }
@@ -3385,6 +3457,7 @@
       renderHeader(data);
       renderSources(data);
       renderList();
+      if (/^#sloka-\d+-\d+$/.test(window.location.hash)) { requestAnimationFrame(function () { var target = document.querySelector(window.location.hash); if (!target) return; var targetTop = target.getBoundingClientRect().top - list.getBoundingClientRect().top + list.scrollTop; list.scrollTo({ top:targetTop, behavior:"auto" }); }); }
     })
     .catch(function (error) {
       document.getElementById("chapter-title").textContent = "Data tidak dapat dimuat";
