@@ -418,6 +418,25 @@
   .calendar-prep h3 { margin:0; color:var(--accent-dark); font-size:1rem; }
   .calendar-prep ul { margin:.65rem 0 0; padding-left:1.15rem; color:var(--muted); font:.78rem/1.6 system-ui,sans-serif; }
   .calendar-prep p { margin:.65rem 0 0; color:var(--muted); font:.72rem/1.55 system-ui,sans-serif; }
+  .phrase-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.7rem; margin:1rem 0 1.5rem; }
+  .phrase-card { padding:1rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface); }
+  .phrase-card strong { display:block; color:var(--accent-dark); font-size:1rem; }
+  .phrase-card span { display:block; margin-top:.3rem; color:var(--muted); font:.75rem/1.45 system-ui,sans-serif; }
+  .aksara-panel { margin:1rem 0 1.5rem; padding:1.35rem; border:1px solid var(--line); border-radius:1rem; background:#f8f2e7; text-align:center; }
+  .aksara-glyphs { margin:0; color:var(--accent-dark); font:400 clamp(1.8rem,5vw,3rem)/1.7 "Noto Sans Balinese","Noto Serif Balinese",serif; letter-spacing:.08em; overflow-wrap:anywhere; }
+  .aksara-latin { margin:.65rem 0 0; color:var(--muted); font:.72rem/1.6 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .learning-path { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.7rem; margin-bottom:1.5rem; }
+  .learning-step { padding:1rem; border-top:2px solid var(--gold); background:var(--surface); }
+  .learning-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; }
+  .learning-step strong { display:block; margin:.45rem 0; color:var(--accent-dark); }
+  .learning-step p { margin:0; color:var(--muted); font-size:.78rem; }
+  .subak-principles { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.7rem; margin:1rem 0 1.5rem; }
+  .subak-principle { padding:1.1rem; border:1px solid var(--line); border-radius:.85rem; background:var(--surface); }
+  .subak-principle strong { display:block; color:var(--accent-dark); }
+  .subak-principle p { margin:.45rem 0 0; color:var(--muted); font-size:.82rem; }
+  .subak-action { margin-top:1rem; padding:1.2rem; border-radius:1rem; color:#fff; background:var(--accent-dark); }
+  .subak-action h2 { margin:0; color:#fff; font-size:1.25rem; }
+  .subak-action ul { margin:.7rem 0 0; padding-left:1.2rem; font:.85rem/1.65 system-ui,sans-serif; }
   .calendar-page { width:min(100%, 62rem); margin:clamp(2.5rem,7vw,5rem) auto; }
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
@@ -847,7 +866,7 @@
     .upakara-grid.is-five .app-card:last-child { grid-column:auto; width:auto; }
     .upakara-grid .app-card { min-height:11rem; }
     .ritual-section.is-wide { grid-column:auto; }
-    .knowledge-list, .eco-steps, .eco-sort { grid-template-columns:1fr; }
+    .knowledge-list, .eco-steps, .eco-sort, .phrase-grid, .learning-path, .subak-principles { grid-template-columns:1fr; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
     .calendar-layout { grid-template-columns:1fr; }
@@ -1116,6 +1135,8 @@
         <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.</p></a>
         <a class="app-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Mengenal Adat Bali</strong><p>Pahami desa adat, awig-awig, pararem, krama, ngayah, serta istilah penting dalam kehidupan adat Bali.</p></a>
         <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.</p></a>
+        <a class="app-card" href="?mode=language"><span class="app-icon">ᬅ</span><strong>Bahasa, Aksara &amp; Lontar</strong><p>Mulai belajar ungkapan Bahasa Bali, mengenal aksara, serta merawat lontar keluarga dengan aman.</p></a>
+        <a class="app-card" href="?mode=subak"><span class="app-icon">≈</span><strong>Subak &amp; Alam Bali</strong><p>Kenali sistem air, Tri Hita Karana, peran krama subak, serta cara membantu menjaga sawah Bali.</p></a>
       </div>
       <div class="chapter-grid" aria-label="Pilih bab" hidden>
         <a class="chapter-card" href="?bab=1#reader">
@@ -2204,6 +2225,106 @@
     appView.append(header, notice, steps, sorting, source);
     document.title = "Upakara Lestari — Gītā Bali";
   }
+  function showBalineseLanguage() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Warisan tutur & tulis"),
+      make("h1", "", "Bahasa, Aksara & Lontar"),
+      make("p", "", "Mulai dari ungkapan yang aman digunakan, kenali dasar aksara Bali, lalu pelajari cara menjaga lontar tanpa merusaknya.")
+    );
+    var notice = make("p", "ritual-notice", "Bahasa Bali memiliki sor singgih atau tingkatan tutur yang dipengaruhi lawan bicara dan situasi. Gunakan bentuk sopan ketika belum mengenal hubungan sosial, lalu belajar langsung dari penutur atau penyuluh Bahasa Bali.");
+    var phraseTitle = make("section", "ritual-section is-wide");
+    phraseTitle.append(make("h2", "", "Ungkapan dasar"), make("p", "", "Beberapa ungkapan sopan untuk memulai percakapan sehari-hari."));
+    var phrases = make("div", "phrase-grid");
+    [
+      ["Om Swastyastu", "Salam pembuka dan doa keselamatan."],
+      ["Rahajeng semeng", "Selamat pagi."],
+      ["Matur suksma", "Terima kasih."],
+      ["Ampura", "Mohon maaf atau permisi."],
+      ["Nunas tulung", "Mohon bantuan."],
+      ["Om Santih, Santih, Santih Om", "Salam penutup dan doa kedamaian."]
+    ].forEach(function (phrase) { var item = make("div", "phrase-card"); item.append(make("strong", "", phrase[0]), make("span", "", phrase[1])); phrases.append(item); });
+    phraseTitle.append(phrases, make("p", "knowledge-note", "Pelafalan dan pilihan kata dapat berbeda menurut wilayah. Hindari memakai kata yang sangat akrab kepada orang yang baru dikenal."));
+
+    var aksara = make("section", "ritual-section is-wide");
+    aksara.append(make("h2", "", "Delapan belas aksara wianjana"), make("p", "", "Aksara dasar berikut perlu dipelajari bersama pasang aksara agar dapat membentuk kata dengan benar."));
+    var panel = make("div", "aksara-panel");
+    panel.append(
+      make("p", "aksara-glyphs", "ᬳ ᬦ ᬘ ᬭ ᬓ · ᬤ ᬢ ᬲ ᬯ ᬮ · ᬫ ᬕ ᬩ ᬗ · ᬧ ᬚ ᬬ ᬜ"),
+      make("p", "aksara-latin", "ha na ca ra ka · da ta sa wa la · ma ga ba nga · pa ja ya nya")
+    );
+    aksara.append(panel);
+    var path = make("div", "learning-path");
+    [
+      ["01", "Kenali bentuk", "Hafalkan nama dan bentuk aksara wianjana."],
+      ["02", "Suara vokal", "Pelajari pengangge suara dan perubahan bunyi."],
+      ["03", "Pasang aksara", "Pahami gantungan, gempelan, dan aturan penempatan."],
+      ["04", "Baca teks", "Mulai dari papan nama, kalimat pendek, lalu lontar hasil alih aksara."]
+    ].forEach(function (step) { var item = make("div", "learning-step"); item.append(make("span", "", step[0]), make("strong", "", step[1]), make("p", "", step[2])); path.append(item); });
+    aksara.append(path);
+
+    var lontar = make("section", "ritual-section is-wide");
+    lontar.append(make("h2", "", "Merawat lontar keluarga"), make("p", "", "Lontar tua memerlukan penanganan konservasi. Untuk pemeriksaan sederhana:"));
+    var lontarList = make("ul");
+    [
+      "Cuci dan keringkan tangan sebelum memegang; hindari lotion, makanan, dan minuman di dekat lontar.",
+      "Letakkan pada permukaan datar, bersih, dan kering; jangan memaksa lembar yang melekat atau rapuh.",
+      "Simpan dalam wadah yang bersih, terlindung dari sinar matahari langsung, kebocoran, serangga, dan perubahan kelembapan ekstrem.",
+      "Dokumentasikan halaman dengan kamera tanpa lampu panas dan catat urutannya sebelum memindahkan ikatan.",
+      "Jika ada jamur, serangga, patahan, atau tulisan memudar, hentikan pembersihan mandiri dan hubungi konservator atau penyuluh terkait."
+    ].forEach(function (item) { lontarList.append(make("li", "", item)); });
+    lontar.append(lontarList, make("p", "knowledge-note", "Jangan mengoleskan minyak, bahan kimia, atau cairan pembersih tanpa pemeriksaan ahli karena kondisi setiap lontar berbeda."));
+
+    var sources = make("p", "ritual-sources", "Rujukan: ");
+    var culture = make("a", "", "Ceraken Kebudayaan Bali—Aksara Bali"); culture.href = "https://ceraken.baliprov.go.id/detail/aksara-bali-1747808348";
+    var regulation = make("a", "", "Perda Bali Nomor 1 Tahun 2018"); regulation.href = "https://jdih.baliprov.go.id/uploads/produk-hukum/peraturan/2018/PERDA/PERDA_NO_1_TAHUN_2018_TENTANG_BAHASA_SASTRA_DAN_AKSARA_BALI.pdf";
+    var preservation = make("a", "", "program pelestarian lontar Kementerian Agama"); preservation.href = "https://bimashindu.kemenag.go.id/berita-daerah/rawat-peradaban-masyarakat-dan-kemenag-bali-perkuat-sinergi-lestarikan-lontar-sebagai-warisan-dunia-jRSj6";
+    sources.append(culture, " · ", regulation, " · ", preservation);
+    appView.append(header, notice, phraseTitle, aksara, lontar, sources);
+    document.title = "Bahasa, Aksara & Lontar — Gītā Bali";
+  }
+  function showSubak() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Warisan air & kehidupan"),
+      make("h1", "", "Subak & Alam Bali"),
+      make("p", "", "Subak bukan hanya saluran irigasi, melainkan organisasi petani yang menyatukan air, musyawarah, pertanian, dan kehidupan spiritual.")
+    );
+    var principles = make("div", "subak-principles");
+    [
+      ["Parhyangan", "Hubungan harmonis dengan Ida Sang Hyang Widhi melalui pura dan ritual subak."],
+      ["Pawongan", "Kerja sama krama subak, musyawarah, pembagian kewajiban, dan penyelesaian masalah."],
+      ["Palemahan", "Pemeliharaan sawah, air, tanah, saluran, serta ekosistem yang menopang pertanian."]
+    ].forEach(function (principle) { var item = make("div", "subak-principle"); item.append(make("strong", "", principle[0]), make("p", "", principle[1])); principles.append(item); });
+    var notice = make("p", "ritual-notice", "Tri Hita Karana menjadi kerangka untuk memahami keterhubungan unsur spiritual, manusia, dan alam. Praktik serta istilah subak dapat berbeda menurut wilayah dan sumber airnya.");
+    var topics = [
+      { icon:"01", title:"Cara kerja pembagian air", intro:"Air dibagi melalui jaringan bendung, terowongan, saluran, dan tembuku menuju petak sawah.", points:["Pembagian tidak hanya berdasarkan luas sawah, tetapi juga kesepakatan, kondisi air, dan pola tanam.", "Jadwal tanam bersama membantu mengatur kebutuhan air dan mengendalikan hama.", "Perawatan saluran dilakukan sebagai tanggung jawab bersama krama subak."], note:"Mengubah saluran di satu tempat dapat memengaruhi petani lain di bagian hilir." },
+      { icon:"02", title:"Pekaseh & krama subak", intro:"Pekaseh memimpin organisasi subak dan menjalankan keputusan musyawarah bersama krama.", points:["Krama mempunyai hak memperoleh air sekaligus kewajiban merawat jaringan dan mengikuti kesepakatan.", "Awig-awig subak mengatur hak, kewajiban, pembagian air, kegiatan suci, dan penyelesaian pelanggaran.", "Keputusan penting idealnya dilakukan melalui sangkep atau musyawarah."], note:"Subak adalah organisasi petani; batasnya dapat berbeda dari batas desa administratif." },
+      { icon:"03", title:"Pura & siklus pertanian", intro:"Pura air dan persembahyangan menyertai hubungan petani dengan air, tanah, benih, dan hasil panen.", points:["Kegiatan suci menandai tahap tertentu dalam pengolahan sawah menurut tradisi setempat.", "Dewi Sri dihormati sebagai lambang kesuburan dan anugerah pangan.", "Ritual memperkuat tanggung jawab bersama, bukan menggantikan pengetahuan pertanian."], note:"Nama, waktu, dan sarana upacara pertanian mengikuti dresta subak masing-masing." },
+      { icon:"04", title:"Ancaman terhadap subak", intro:"Alih fungsi sawah, tekanan pariwisata, berkurangnya petani, pencemaran, dan perubahan ketersediaan air dapat memutus sistem subak.", points:["Hilangnya petak sawah dapat merusak kesinambungan saluran dan pembagian air.", "Nilai tanah dan rendahnya pendapatan pertanian mendorong perubahan penggunaan lahan.", "Sampah serta limbah di saluran menambah beban pemeliharaan dan menurunkan kualitas air."], note:"Menjaga lanskap saja tidak cukup; petani harus memperoleh manfaat agar tetap dapat bertani." },
+      { icon:"05", title:"Subak sebagai warisan dunia", intro:"UNESCO mencatat Lanskap Budaya Provinsi Bali pada 2012 sebagai perwujudan sistem subak dan filosofi Tri Hita Karana.", points:["Warisan tersebut mencakup sawah bertingkat, jaringan air, pura air, dan praktik pengelolaan oleh komunitas.", "Pengakuan dunia tidak berarti semua subak otomatis aman dari pembangunan.", "Keaslian lanskap bergantung pada keberlanjutan fungsi pertanian dan pengelolaan air."], note:"Subak yang hidup lebih penting daripada sawah yang hanya menjadi latar foto." },
+      { icon:"06", title:"Cara ikut menjaga", intro:"Pengunjung dan warga dapat membantu melalui pilihan sederhana yang memberi manfaat kepada petani.", points:["Beli beras dan hasil tani lokal melalui kelompok atau usaha yang transparan.", "Jangan menginjak tanaman, menerbangkan drone, atau memasuki pematang tanpa izin.", "Jangan membuang sampah atau limbah ke saluran irigasi.", "Dukung wisata yang membayar petani dan menghormati jadwal kerja sawah."], note:"Selalu minta izin sebelum memotret orang, kegiatan suci, atau area yang bukan jalur umum." }
+    ];
+    var list = make("div", "knowledge-list");
+    topics.forEach(function (topic) {
+      var details = make("details", "knowledge-card");
+      var summary = document.createElement("summary"); summary.append(make("span", "knowledge-icon", topic.icon), make("strong", "knowledge-title", topic.title));
+      var content = make("div", "knowledge-content"); content.append(make("p", "", topic.intro));
+      var bullets = make("ul"); topic.points.forEach(function (point) { bullets.append(make("li", "", point)); });
+      content.append(bullets, make("p", "knowledge-note", topic.note)); details.append(summary, content); list.append(details);
+    });
+    var action = make("section", "subak-action");
+    action.append(make("h2", "", "Sebelum mengunjungi sawah"));
+    var actionList = make("ul"); ["Cari tahu apakah jalur terbuka untuk umum.", "Gunakan pemandu atau izin pemilik bila masuk ke area kerja.", "Bawa pulang seluruh sampah.", "Belanja langsung dari petani bila tersedia."].forEach(function (item) { actionList.append(make("li", "", item)); }); action.append(actionList);
+    var sources = make("p", "ritual-sources", "Rujukan: ");
+    var unesco = make("a", "", "UNESCO—Cultural Landscape of Bali Province"); unesco.href = "https://whc.unesco.org/en/list/1194";
+    var research = make("a", "", "riset Udayana tentang pemantauan alih fungsi sawah"); research.href = "https://ojs.unud.ac.id/index.php/agrotrop/article/view/118173";
+    sources.append(unesco, " · ", research);
+    appView.append(header, notice, principles, list, action, sources);
+    document.title = "Subak & Alam Bali — Gītā Bali";
+  }
   function showCalendar() {
     var today = new Date();
     var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -2646,6 +2767,8 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "language") { showBalineseLanguage(); return; }
+  if (mode === "subak") { showSubak(); return; }
   if (mode === "adat") { showAdatLiteracy(); return; }
   if (mode === "lestari") { showSustainableUpakara(); return; }
   if (mode === "upakara" || mode === "prayers") { showUpakaraHub(); return; }
