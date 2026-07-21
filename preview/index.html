@@ -464,6 +464,7 @@
   .planner-button { min-height:2.7rem; padding:.65rem 1rem; border:1px solid var(--accent); border-radius:999px; color:#fff; background:var(--accent); cursor:pointer; font:700 .7rem/1 system-ui,sans-serif; letter-spacing:.05em; }
   .planner-button.is-secondary { color:var(--accent-dark); background:transparent; }
   .planner-status { margin:.75rem 0 0; color:var(--muted); font:.72rem/1.5 system-ui,sans-serif; }
+  .planner-progress { margin:.85rem 0 0; color:var(--accent-dark); font:700 .72rem/1.5 system-ui,sans-serif; }
   .tamiu-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.7rem; margin:1rem 0 1.5rem; }
   .tamiu-step { padding:1rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface); }
   .tamiu-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; }
@@ -513,6 +514,9 @@
   .agenda-info p { margin:.3rem 0 0; color:var(--muted); font-size:.78rem; }
   .agenda-tag { display:inline-block; margin-top:.45rem; padding:.25rem .45rem; border-radius:999px; color:var(--accent-dark); background:#f4e7d7; font:700 .58rem/1.2 system-ui,sans-serif; letter-spacing:.05em; text-transform:uppercase; }
   .agenda-delete { width:2.5rem; height:2.5rem; border:1px solid var(--line); border-radius:50%; color:var(--accent); background:transparent; cursor:pointer; }
+  .agenda-actions { display:flex; align-items:center; gap:.4rem; }
+  .agenda-open { display:grid; width:2.5rem; height:2.5rem; place-items:center; border:1px solid var(--line); border-radius:50%; color:var(--accent-dark); text-decoration:none; }
+  .agenda-toolbar { display:flex; justify-content:flex-end; margin-top:1rem; }
   .agenda-empty { padding:2rem; border:1px dashed var(--line); border-radius:1rem; color:var(--muted); text-align:center; }
   .quiz-shell { max-width:44rem; margin:0 auto; }
   .quiz-progress { display:flex; justify-content:space-between; gap:1rem; margin-bottom:.75rem; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
@@ -1945,6 +1949,18 @@
     a.append(make("span", "app-icon", "→"), make("strong", "", title), make("p", "", text));
     return a;
   }
+  async function sharePlainText(title, content) {
+    if (navigator.share) {
+      try { await navigator.share({ title:title, text:content }); return true; } catch (error) { if (error && error.name === "AbortError") return false; }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try { await navigator.clipboard.writeText(content); notify("Ringkasan disalin."); return true; } catch (error) {}
+    }
+    var field = document.createElement("textarea"); field.value = content; field.style.position = "fixed"; field.style.opacity = "0"; document.body.append(field); field.select();
+    var copied = document.execCommand && document.execCommand("copy"); field.remove();
+    if (copied) notify("Ringkasan disalin."); else notify("Ringkasan belum dapat dibagikan.");
+    return Boolean(copied);
+  }
   function upakaraCard(title, text, href) {
     var item = card(title, text, href);
     item.append(make("span", "card-action", "Buka bagian →"));
@@ -2490,15 +2506,18 @@
       input.type = "number"; input.min = "0"; input.step = "1000"; input.inputMode = "numeric"; input.value = state.budget && state.budget[category] ? state.budget[category] : ""; input.placeholder = "Rp 0"; label.htmlFor = "budget-" + Object.keys(budgetInputs).length; input.id = label.htmlFor; budgetInputs[category] = input; row.append(label, input); budgetList.append(row);
     });
     var total = make("div", "budget-total"); total.append(make("span", "", "Total estimasi")); var totalValue = make("strong", "", "Rp 0"); total.append(totalValue);
-    var actions = make("div", "planner-actions"); var saveButton = make("button", "planner-button", "Simpan rencana"); saveButton.type = "button"; var resetButton = make("button", "planner-button is-secondary", "Kosongkan"); resetButton.type = "button"; actions.append(saveButton, resetButton);
-    var status = make("p", "planner-status", "Rencana tersimpan secara lokal di perangkat ini."); budgetPanel.append(budgetList, total, actions, status); layout.append(preparation, budgetPanel);
+    var actions = make("div", "planner-actions"); var saveButton = make("button", "planner-button", "Simpan rencana"); saveButton.type = "button"; var shareButton = make("button", "planner-button is-secondary", "Bagikan ringkasan"); shareButton.type = "button"; var resetButton = make("button", "planner-button is-secondary", "Kosongkan"); resetButton.type = "button"; actions.append(saveButton, shareButton, resetButton);
+    var progress = make("p", "planner-progress", "0 dari 0 persiapan selesai");
+    var status = make("p", "planner-status", "Rencana tersimpan secara lokal di perangkat ini."); preparation.append(progress); budgetPanel.append(budgetList, total, actions, status); layout.append(preparation, budgetPanel);
 
     function renderChecklist() {
       checklist.replaceChildren();
       (templates[typeSelect.value] || templates.lainnya).forEach(function (task, index) {
-        var label = make("label", "planner-task"); var input = document.createElement("input"); input.type = "checkbox"; input.checked = Boolean(state.checks && state.checks[typeSelect.value + "-" + index]); input.dataset.key = typeSelect.value + "-" + index; label.append(input, make("span", "", task)); checklist.append(label);
+        var label = make("label", "planner-task"); var input = document.createElement("input"); input.type = "checkbox"; input.checked = Boolean(state.checks && state.checks[typeSelect.value + "-" + index]); input.dataset.key = typeSelect.value + "-" + index; input.addEventListener("change", updateProgress); label.append(input, make("span", "", task)); checklist.append(label);
       });
+      updateProgress();
     }
+    function updateProgress() { var tasks = checklist.querySelectorAll("input[type=checkbox]"); var done = checklist.querySelectorAll("input[type=checkbox]:checked"); progress.textContent = done.length + " dari " + tasks.length + " persiapan selesai"; }
     function updateTotal() {
       var amount = 0; Object.keys(budgetInputs).forEach(function (category) { amount += Math.max(0, Number(budgetInputs[category].value) || 0); });
       totalValue.textContent = new Intl.NumberFormat("id-ID", { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(amount);
@@ -2511,6 +2530,13 @@
     typeSelect.addEventListener("change", function () { state = collectState(); state.type = typeSelect.value; renderChecklist(); });
     Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].addEventListener("input", updateTotal); });
     saveButton.addEventListener("click", function () { state = collectState(); localStorage.setItem(storageKey, JSON.stringify(state)); status.textContent = "Tersimpan pada " + new Intl.DateTimeFormat("id-ID", { hour:"2-digit", minute:"2-digit" }).format(new Date()) + "."; notify("Rencana yadnya disimpan."); });
+    shareButton.addEventListener("click", function () {
+      state = collectState(); var tasks = Array.prototype.map.call(checklist.querySelectorAll(".planner-task"), function (label) { return (label.querySelector("input").checked ? "✓ " : "☐ ") + label.querySelector("span").textContent; });
+      var budgetLines = Object.keys(state.budget).filter(function (category) { return state.budget[category] > 0; }).map(function (category) { return category + ": " + new Intl.NumberFormat("id-ID", { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(state.budget[category]); });
+      var amount = Object.keys(state.budget).reduce(function (sum, category) { return sum + state.budget[category]; }, 0);
+      var content = [state.name || "Rencana Yadnya", "Jenis: " + typeSelect.options[typeSelect.selectedIndex].text, state.date ? "Tanggal: " + new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(new Date(state.date + "T00:00:00")) : "Tanggal: belum ditentukan", "", "Checklist:", tasks.join("\n"), "", "Anggaran:", budgetLines.length ? budgetLines.join("\n") : "Belum diisi", "Total: " + new Intl.NumberFormat("id-ID", { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(amount), "", "Dibuat melalui Gītā Bali"].join("\n");
+      sharePlainText(state.name || "Rencana Yadnya", content);
+    });
     resetButton.addEventListener("click", function () { if (!window.confirm("Kosongkan seluruh rencana dan anggaran di perangkat ini?")) return; localStorage.removeItem(storageKey); state = { name:"", type:"otonan", date:"", checks:{}, budget:{} }; nameInput.value = ""; typeSelect.value = "otonan"; dateInput.value = ""; Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].value = ""; }); renderChecklist(); updateTotal(); status.textContent = "Rencana telah dikosongkan."; });
     renderChecklist(); updateTotal();
     var source = make("p", "ritual-sources", "Catatan pengembangan: Pemerintah Provinsi Bali melalui BRIDA sedang menyiapkan ");
@@ -2699,6 +2725,7 @@
     var noteWrap = make("div", "agenda-field is-wide"); var noteLabel = make("label", "", "Catatan"); noteLabel.htmlFor = "agenda-note"; var noteInput = document.createElement("textarea"); noteInput.id = "agenda-note"; noteInput.placeholder = "Tempat, tugas, barang yang perlu dibawa…"; noteWrap.append(noteLabel, noteInput);
     var repeatLabel = make("label", "agenda-repeat"); var repeatInput = document.createElement("input"); repeatInput.type = "checkbox"; repeatLabel.append(repeatInput, make("span", "", "Ulangi setiap 210 hari untuk otonan"));
     var submit = make("button", "planner-button agenda-submit", "Tambah agenda"); submit.type = "submit"; form.append(nameWrap, typeWrap, dateWrap, noteWrap, repeatLabel, submit);
+    var toolbar = make("div", "agenda-toolbar"); var shareAgenda = make("button", "planner-button is-secondary", "Bagikan agenda"); shareAgenda.type = "button"; toolbar.append(shareAgenda);
     var list = make("div", "agenda-list");
     function saveEvents() { localStorage.setItem(storageKey, JSON.stringify(events)); }
     function parseDate(value) { return new Date(value + "T00:00:00"); }
@@ -2718,15 +2745,17 @@
         var info = make("div", "agenda-info"); info.append(make("strong", "", event.name));
         if (event.note) info.append(make("p", "", event.note));
         info.append(make("span", "agenda-tag", event.type + (event.repeat210 ? " · 210 hari" : "")));
+        var itemActions = make("div", "agenda-actions"); var openCalendar = make("a", "agenda-open", "◫"); openCalendar.href = "?mode=calendar&date=" + dateValue(shownDate); openCalendar.setAttribute("aria-label", "Buka tanggal di Kalender Bali");
         var remove = make("button", "agenda-delete", "×"); remove.type = "button"; remove.setAttribute("aria-label", "Hapus " + event.name);
         remove.addEventListener("click", function () { if (!window.confirm("Hapus agenda “" + event.name + "”?")) return; events = events.filter(function (saved) { return saved.id !== event.id; }); saveEvents(); renderEvents(); notify("Agenda dihapus."); });
-        item.append(dateBox, info, remove); list.append(item);
+        itemActions.append(openCalendar, remove); item.append(dateBox, info, itemActions); list.append(item);
       });
     }
     typeSelect.addEventListener("change", function () { repeatInput.checked = typeSelect.value === "Otonan"; repeatInput.disabled = typeSelect.value !== "Otonan"; });
     repeatInput.checked = true;
     form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; events.push({ id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateInput.value, note:noteInput.value.trim(), repeat210:typeSelect.value === "Otonan" && repeatInput.checked }); saveEvents(); form.reset(); repeatInput.checked = true; repeatInput.disabled = false; renderEvents(); notify("Agenda keluarga ditambahkan."); });
-    renderEvents(); appView.append(header, notice, form, list);
+    shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Gītā Bali"].join("\n")); });
+    renderEvents(); appView.append(header, notice, form, toolbar, list);
     document.title = "Agenda Keluarga Bali — Gītā Bali";
   }
   function showLearningQuiz() {
@@ -2757,8 +2786,11 @@
   }
   function showCalendar() {
     var today = new Date();
-    var visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
-    var selectedDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    var requestedDate = new URLSearchParams(window.location.search).get("date");
+    var parsedRequestedDate = requestedDate && /^\d{4}-\d{2}-\d{2}$/.test(requestedDate) ? new Date(requestedDate + "T00:00:00") : null;
+    var initialDate = parsedRequestedDate && !Number.isNaN(parsedRequestedDate.getTime()) ? parsedRequestedDate : today;
+    var visibleMonth = new Date(initialDate.getFullYear(), initialDate.getMonth(), 1);
+    var selectedDate = new Date(initialDate.getFullYear(), initialDate.getMonth(), initialDate.getDate());
     var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
     var weekdayNames = ["Redite", "Soma", "Anggara", "Buda", "Wraspati", "Sukra", "Saniscara"];
     var positiveEkaJala = new Set(["Bahu Putra", "Bahu Astawa", "Buat Suka", "Kamertaan", "Kasobagian", "Kinasihan Amerta", "Kinasihan Jana", "Langgeng Kayohanaan", "Luwih Bagia", "Manggih Bagia", "Manggih Suka", "Rahayu", "Sidha Kasobagian", "Subagia", "Suka Kapanggih", "Suka Pinanggih", "Suka Rahayu", "Werdhi Putra", "Werdhi Sarwa Mule"]);
