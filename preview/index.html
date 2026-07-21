@@ -253,6 +253,7 @@
   }
   .auth-card h2 { margin:.15rem 0 .6rem; color:var(--accent-dark); font-size:clamp(1.8rem,6vw,2.5rem); font-weight:400; line-height:1.1; }
   .auth-copy { margin:0 0 1.3rem; color:var(--muted); font-size:.94rem; }
+  .signup-service-note { margin:-.55rem 0 1rem; padding:.65rem .75rem; border:1px solid rgba(182,139,58,.3); border-radius:.65rem; color:#655b4d; background:#fbf5e5; font:.72rem/1.5 system-ui,sans-serif; }
   .auth-form { display:grid; gap:.7rem; }
   .auth-form label { color:var(--muted); font:700 .68rem/1.3 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
   .auth-form input {
@@ -1260,6 +1261,7 @@
       <p class="eyebrow">Akun Gītā Bali</p>
       <h2 id="auth-title">Masuk ke akunmu.</h2>
       <p class="auth-copy" id="auth-copy">Gunakan email dan password untuk membuka sloka serta catatanmu.</p>
+      <p class="signup-service-note" id="signup-service-note" hidden>Email konfirmasi dikirim oleh layanan akun. Hindari menekan Daftar berulang kali; satu pendaftaran hanya memerlukan satu email.</p>
       <form class="auth-form" id="auth-form">
         <label for="auth-email">Alamat email</label>
         <input id="auth-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nama@email.com" required>
@@ -1621,6 +1623,7 @@
     authSubmit.textContent = signingUp ? "Daftar akun" : "Masuk";
     document.getElementById("auth-mode-toggle").textContent = signingUp ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar";
     document.getElementById("auth-forgot").hidden = signingUp;
+    document.getElementById("signup-service-note").hidden = !signingUp;
     document.getElementById("password-confirm-wrap").hidden = !signingUp;
     document.getElementById("auth-password-confirm").required = signingUp;
     document.getElementById("auth-password").autocomplete = signingUp ? "new-password" : "current-password";
@@ -1640,7 +1643,7 @@
   function authErrorText(error, fallback) {
     var message = String(error && error.message ? error.message : "").toLowerCase();
     if ((error && error.status === 429) || message.includes("rate limit")) {
-      return "Terlalu banyak permintaan email. Tunggu beberapa saat atau aktifkan custom SMTP.";
+      return "Kuota email konfirmasi sedang habis (SMTP bawaan Supabase hanya 2 email per jam untuk seluruh aplikasi). Jangan daftar ulang; coba lagi setelah sekitar 1 jam.";
     }
     if (message.includes("not authorized") || message.includes("email address is not authorized")) {
       return "Alamat ini belum dapat menerima email karena layanan email project belum dikonfigurasi untuk pengguna publik.";
