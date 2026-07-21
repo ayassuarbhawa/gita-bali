@@ -1183,9 +1183,9 @@
 <a class="skip-link" href="#content">Lewati ke isi</a>
 <header class="site-header">
   <nav class="nav" aria-label="Navigasi utama">
-    <a class="brand" href="./">GĪTĀ BALI <small>Ruang baca</small></a>
+    <a class="brand" href="?mode=dashboard">GĪTĀ BALI <small>Ruang baca</small></a>
     <div class="nav-actions">
-      <a class="nav-link" href="./">Beranda</a>
+      <a class="nav-link" href="?mode=dashboard">Dashboard</a>
       <span class="nav-note">Sanskrit · Indonesia · Bali · English</span>
       <button class="auth-trigger" id="auth-trigger" type="button">Masuk</button>
     </div>
@@ -1468,6 +1468,8 @@
     document.documentElement.classList.add("intro-leaving");
     setTimeout(function () {
       document.documentElement.classList.remove("intro-ready", "intro-leaving");
+      window.history.replaceState({}, "", "?mode=dashboard");
+      document.title = "Dashboard Ruang Baca — Gītā Bali";
       document.querySelector(".app-card").focus();
     }, 760);
   });
@@ -1994,13 +1996,13 @@
     return item;
   }
   function pageBack(href, label) {
-    var back = make("a", "upakara-back", "← Kembali"); back.href = href || "./"; back.setAttribute("aria-label", label || "Kembali ke Beranda"); return back;
+    var back = make("a", "upakara-back", "← Kembali"); back.href = href || "?mode=dashboard"; back.setAttribute("aria-label", label || "Kembali ke Dashboard Ruang Baca"); return back;
   }
   function prepareUpakaraPage(className, backHref, backLabel) {
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = className || "upakara-page";
-    appView.replaceChildren(pageBack(backHref || "./", backLabel || "Kembali ke Beranda"));
+    appView.replaceChildren(pageBack(backHref || "?mode=dashboard", backLabel || "Kembali ke Dashboard Ruang Baca"));
   }
   function showUpakaraHub() {
     prepareUpakaraPage("upakara-page");
@@ -2885,7 +2887,7 @@
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = "calendar-page";
-    appView.replaceChildren(pageBack("./", "Kembali ke Beranda"));
+    appView.replaceChildren(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"));
 
     var header = make("header", "calendar-header");
     header.append(
@@ -3138,7 +3140,7 @@
   function showExplore() {
     document.querySelector(".home-inner").hidden = true;
     var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
-    appView.hidden = false; appView.className = "app-grid"; appView.replaceChildren(pageBack("./", "Kembali ke Beranda"), intro,
+    appView.hidden = false; appView.className = "app-grid"; appView.replaceChildren(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"), intro,
       card("Bagian Pertama", "Bab 1–6 · Karma Yoga dan hakikat jiwa.", "?mode=group&group=1"),
       card("Bagian Kedua", "Bab 7–12 · Pengetahuan spiritual dan Brahman.", "?mode=group&group=2"),
       card("Bagian Ketiga", "Bab 13–18 · Penyerahan diri dan pengabdian.", "?mode=group&group=3")
@@ -3210,7 +3212,7 @@
         ? "Kumpulan sloka yang kamu simpan untuk dibaca kembali."
         : "Refleksi pribadi yang terhubung dengan setiap sloka.")
     );
-    reader.insertBefore(pageBack("./", "Kembali ke Beranda"), toolbar);
+    reader.insertBefore(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"), toolbar);
     reader.insertBefore(header, toolbar);
     document.title = collectionName + " — Gītā Bali";
     authReady.then(function () {
@@ -3259,7 +3261,7 @@
         randomLanguages.append(languageButton);
       });
       var shuffle=make("button", "verse-action", "✦ Acak Lagi"); shuffle.type="button";
-      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="./"; randomBack.setAttribute("aria-label", "Kembali ke Beranda");
+      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="?mode=dashboard"; randomBack.setAttribute("aria-label", "Kembali ke Dashboard Ruang Baca");
       controls.append(randomBack, randomLanguages, shuffle); reader.insertBefore(controls, list);
       var scrollCue=make("div", "scroll-cue");
       scrollCue.setAttribute("aria-hidden", "true");
@@ -3337,6 +3339,7 @@
     }, { passive:true });
   }
   authReady = initializeAuth();
+  if (mode === "dashboard") { document.title = "Dashboard Ruang Baca — Gītā Bali"; return; }
   if (mode === "agenda") { showFamilyAgenda(); return; }
   if (mode === "quiz") { showLearningQuiz(); return; }
   if (mode === "glossary") { showGlossary(); return; }
