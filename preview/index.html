@@ -518,6 +518,16 @@
   .agenda-open { display:grid; width:2.5rem; height:2.5rem; place-items:center; border:1px solid var(--line); border-radius:50%; color:var(--accent-dark); text-decoration:none; }
   .agenda-toolbar { display:flex; justify-content:flex-end; margin-top:1rem; }
   .agenda-empty { padding:2rem; border:1px dashed var(--line); border-radius:1rem; color:var(--muted); text-align:center; }
+  .agenda-rahinan { margin-top:2rem; padding-top:2rem; border-top:1px solid var(--line); }
+  .agenda-rahinan-header h2 { margin:0; color:var(--accent-dark); font-size:clamp(1.5rem,4vw,2rem); }
+  .agenda-rahinan-header p { margin:.5rem 0 0; color:var(--muted); font-size:.85rem; }
+  .agenda-rahinan-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; margin-top:1rem; }
+  .agenda-rahinan-card { display:grid; grid-template-columns:3.7rem 1fr; gap:.8rem; padding:1rem; border:1px solid var(--line); border-radius:.85rem; background:var(--surface); }
+  .agenda-rahinan-card .agenda-date { align-self:start; }
+  .agenda-rahinan-info strong { display:block; color:var(--accent-dark); }
+  .agenda-rahinan-info p { margin:.3rem 0 0; color:var(--muted); font-size:.74rem; }
+  .agenda-rahinan-save { margin-top:.65rem; padding:.45rem .7rem; border:1px solid var(--accent); border-radius:999px; color:var(--accent-dark); background:transparent; cursor:pointer; font:700 .62rem/1 system-ui,sans-serif; }
+  .agenda-rahinan-save:disabled { border-color:var(--line); color:var(--muted); cursor:default; }
   .quiz-shell { max-width:44rem; margin:0 auto; }
   .quiz-progress { display:flex; justify-content:space-between; gap:1rem; margin-bottom:.75rem; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
   .quiz-card { padding:clamp(1.2rem,4vw,2rem); border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); }
@@ -967,7 +977,7 @@
     .planner-field.is-wide { grid-column:auto; }
     .budget-row { grid-template-columns:1fr; gap:.3rem; }
     .budget-row input { text-align:left; }
-    .glossary-controls, .glossary-grid, .library-grid { grid-template-columns:1fr; }
+    .glossary-controls, .glossary-grid, .library-grid, .agenda-rahinan-grid { grid-template-columns:1fr; }
     .agenda-form { grid-template-columns:1fr; }
     .agenda-field.is-wide, .agenda-repeat, .agenda-submit { grid-column:auto; }
     .agenda-item { grid-template-columns:3.8rem 1fr auto; gap:.65rem; }
@@ -2716,23 +2726,32 @@
     try { events = JSON.parse(localStorage.getItem(storageKey) || "[]"); if (!Array.isArray(events)) events = []; } catch (error) { events = []; }
     var header = make("header", "upakara-header");
     header.append(make("p", "eyebrow", "Pengingat keluarga"), make("h1", "", "Agenda Keluarga Bali"), make("p", "", "Catat kegiatan penting dan lihat urutannya berdasarkan tanggal terdekat."));
-    var notice = make("p", "ritual-notice", "Agenda tersimpan secara lokal di perangkat ini. Pengulangan 210 hari disediakan untuk otonan berdasarkan siklus pawukon; tetap cocokkan dengan kalender Bali dan kebiasaan keluarga.");
+    var notice = make("p", "ritual-notice", "Agenda tersimpan secara lokal di perangkat ini. Otonan dapat berulang setiap 210 hari, sedangkan rahinan berulang dicari langsung melalui perhitungan Kalender Bali—bukan dengan perkiraan jumlah hari.");
     var form = make("form", "agenda-form");
     var nameWrap = make("div", "agenda-field is-wide"); var nameLabel = make("label", "", "Nama agenda"); nameLabel.htmlFor = "agenda-name"; var nameInput = document.createElement("input"); nameInput.id = "agenda-name"; nameInput.required = true; nameInput.placeholder = "Contoh: Otonan Made"; nameWrap.append(nameLabel, nameInput);
     var typeWrap = make("div", "agenda-field"); var typeLabel = make("label", "", "Jenis kegiatan"); typeLabel.htmlFor = "agenda-type"; var typeSelect = document.createElement("select"); typeSelect.id = "agenda-type";
-    ["Otonan","Piodalan","Ngayah","Rapat banjar","Hari suci","Upacara keluarga","Lainnya"].forEach(function (name) { var option = document.createElement("option"); option.value = name; option.textContent = name; typeSelect.append(option); }); typeWrap.append(typeLabel, typeSelect);
+    ["Otonan","Rahinan","Piodalan","Ngayah","Rapat banjar","Hari suci","Upacara keluarga","Lainnya"].forEach(function (name) { var option = document.createElement("option"); option.value = name; option.textContent = name; typeSelect.append(option); }); typeWrap.append(typeLabel, typeSelect);
     var dateWrap = make("div", "agenda-field"); var dateLabel = make("label", "", "Tanggal"); dateLabel.htmlFor = "agenda-date"; var dateInput = document.createElement("input"); dateInput.id = "agenda-date"; dateInput.type = "date"; dateInput.required = true; dateWrap.append(dateLabel, dateInput);
     var noteWrap = make("div", "agenda-field is-wide"); var noteLabel = make("label", "", "Catatan"); noteLabel.htmlFor = "agenda-note"; var noteInput = document.createElement("textarea"); noteInput.id = "agenda-note"; noteInput.placeholder = "Tempat, tugas, barang yang perlu dibawa…"; noteWrap.append(noteLabel, noteInput);
-    var repeatLabel = make("label", "agenda-repeat"); var repeatInput = document.createElement("input"); repeatInput.type = "checkbox"; repeatLabel.append(repeatInput, make("span", "", "Ulangi setiap 210 hari untuk otonan"));
+    var repeatLabel = make("label", "agenda-repeat"); var repeatInput = document.createElement("input"); repeatInput.type = "checkbox"; var repeatText = make("span", "", "Ulangi setiap 210 hari untuk otonan"); repeatLabel.append(repeatInput, repeatText);
     var submit = make("button", "planner-button agenda-submit", "Tambah agenda"); submit.type = "submit"; form.append(nameWrap, typeWrap, dateWrap, noteWrap, repeatLabel, submit);
     var toolbar = make("div", "agenda-toolbar"); var shareAgenda = make("button", "planner-button is-secondary", "Bagikan agenda"); shareAgenda.type = "button"; toolbar.append(shareAgenda);
     var list = make("div", "agenda-list");
+    var rahinanSection = make("section", "agenda-rahinan"); var rahinanHeader = make("div", "agenda-rahinan-header"); rahinanHeader.append(make("h2", "", "Rahinan mendatang"), make("p", "", "Detail rahinan 90 hari ke depan. Simpan satu kali untuk membuatnya terus mengikuti kemunculan berikutnya.")); var rahinanGrid = make("div", "agenda-rahinan-grid"); rahinanSection.append(rahinanHeader, rahinanGrid);
     function saveEvents() { localStorage.setItem(storageKey, JSON.stringify(events)); }
     function parseDate(value) { return new Date(value + "T00:00:00"); }
     function dateValue(date) { var year = date.getFullYear(); var month = String(date.getMonth() + 1).padStart(2, "0"); var day = String(date.getDate()).padStart(2, "0"); return year + "-" + month + "-" + day; }
+    function balineseInfo(date) {
+      if (!window.BalineseDate) return null;
+      var value = new window.BalineseDate.BalineseDate(date); var names = window.BalineseDate.BalineseDateUtil.getRahinan(value).map(function (item) { return item.name; });
+      return { value:value, names:names };
+    }
     function effectiveDate(event) {
       var date = parseDate(event.date); var today = new Date(); today.setHours(0,0,0,0);
-      if (event.repeat210) while (date < today) date.setDate(date.getDate() + 210);
+      if (event.repeat210 || event.repeatRule === "pawukon210") while (date < today) date.setDate(date.getDate() + 210);
+      if ((event.repeatRahinan || event.repeatRule === "rahinan") && event.rahinanName && window.BalineseDate) {
+        for (var offset = 0; offset <= 420; offset++) { var candidate = new Date(today); candidate.setDate(candidate.getDate() + offset); var info = balineseInfo(candidate); if (info && info.names.indexOf(event.rahinanName) !== -1) return candidate; }
+      }
       return date;
     }
     function renderEvents() {
@@ -2744,18 +2763,34 @@
         var dateBox = make("div", "agenda-date"); dateBox.append(make("strong", "", String(shownDate.getDate())), make("span", "", new Intl.DateTimeFormat("id-ID", { month:"short", year:"numeric" }).format(shownDate)));
         var info = make("div", "agenda-info"); info.append(make("strong", "", event.name));
         if (event.note) info.append(make("p", "", event.note));
-        info.append(make("span", "agenda-tag", event.type + (event.repeat210 ? " · 210 hari" : "")));
+        var repeatTag = (event.repeat210 || event.repeatRule === "pawukon210") ? " · 210 hari" : ((event.repeatRahinan || event.repeatRule === "rahinan") ? " · kalender Bali" : "");
+        info.append(make("span", "agenda-tag", event.type + repeatTag));
         var itemActions = make("div", "agenda-actions"); var openCalendar = make("a", "agenda-open", "◫"); openCalendar.href = "?mode=calendar&date=" + dateValue(shownDate); openCalendar.setAttribute("aria-label", "Buka tanggal di Kalender Bali");
         var remove = make("button", "agenda-delete", "×"); remove.type = "button"; remove.setAttribute("aria-label", "Hapus " + event.name);
-        remove.addEventListener("click", function () { if (!window.confirm("Hapus agenda “" + event.name + "”?")) return; events = events.filter(function (saved) { return saved.id !== event.id; }); saveEvents(); renderEvents(); notify("Agenda dihapus."); });
+        remove.addEventListener("click", function () { if (!window.confirm("Hapus agenda “" + event.name + "”?")) return; events = events.filter(function (saved) { return saved.id !== event.id; }); saveEvents(); renderEvents(); renderUpcomingRahinan(); notify("Agenda dihapus."); });
         itemActions.append(openCalendar, remove); item.append(dateBox, info, itemActions); list.append(item);
       });
     }
-    typeSelect.addEventListener("change", function () { repeatInput.checked = typeSelect.value === "Otonan"; repeatInput.disabled = typeSelect.value !== "Otonan"; });
+    function updateRepeatControl() { if (typeSelect.value === "Otonan") { repeatInput.disabled = false; repeatInput.checked = true; repeatText.textContent = "Ulangi setiap 210 hari untuk otonan"; } else if (typeSelect.value === "Rahinan") { repeatInput.disabled = false; repeatInput.checked = true; repeatText.textContent = "Ulangi mengikuti kemunculan rahinan di Kalender Bali"; } else { repeatInput.disabled = true; repeatInput.checked = false; repeatText.textContent = "Pengulangan tersedia untuk otonan dan rahinan"; } }
+    typeSelect.addEventListener("change", updateRepeatControl);
     repeatInput.checked = true;
-    form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; events.push({ id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateInput.value, note:noteInput.value.trim(), repeat210:typeSelect.value === "Otonan" && repeatInput.checked }); saveEvents(); form.reset(); repeatInput.checked = true; repeatInput.disabled = false; renderEvents(); notify("Agenda keluarga ditambahkan."); });
+    form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; var rahinanName = ""; if (typeSelect.value === "Rahinan" && repeatInput.checked) { var selectedInfo = balineseInfo(parseDate(dateInput.value)); if (!selectedInfo || !selectedInfo.names.length) { notify("Tanggal itu belum memiliki rahinan yang terdeteksi."); return; } rahinanName = selectedInfo.names[0]; } events.push({ id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateInput.value, note:noteInput.value.trim(), repeatRule:typeSelect.value === "Otonan" && repeatInput.checked ? "pawukon210" : (typeSelect.value === "Rahinan" && repeatInput.checked ? "rahinan" : ""), rahinanName:rahinanName }); saveEvents(); form.reset(); updateRepeatControl(); renderEvents(); renderUpcomingRahinan(); notify("Agenda keluarga ditambahkan."); });
     shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Gītā Bali"].join("\n")); });
-    renderEvents(); appView.append(header, notice, form, toolbar, list);
+    function rahinanDescription(name) { var normalized = name.toLowerCase(); if (normalized.indexOf("purnama") !== -1) return "Hari bulan penuh untuk persembahyangan dan penyucian diri."; if (normalized.indexOf("tilem") !== -1) return "Hari bulan mati untuk refleksi, penyucian, dan persembahyangan."; if (normalized.indexOf("kajeng kliwon") !== -1) return "Pertemuan Kajeng dan Kliwon dalam siklus penanggalan Bali."; if (normalized.indexOf("galungan") !== -1) return "Hari suci kemenangan dharma dan penghormatan kepada leluhur."; if (normalized.indexOf("kuningan") !== -1) return "Penutup rangkaian Galungan yang dilaksanakan menurut dresta keluarga."; if (normalized.indexOf("saraswati") !== -1) return "Hari penghormatan kepada ilmu pengetahuan dan Sang Hyang Aji Saraswati."; if (normalized.indexOf("pagerwesi") !== -1) return "Hari memohon keteguhan iman, pengetahuan, dan perlindungan batin."; if (normalized.indexOf("tumpek") !== -1) return "Rahinan Tumpek; makna khususnya mengikuti nama Tumpek yang tercantum."; return "Rahinan pada penanggalan Bali; pelaksanaannya mengikuti dresta setempat."; }
+    function renderUpcomingRahinan() {
+      rahinanGrid.replaceChildren();
+      if (!window.BalineseDate) { rahinanGrid.append(make("p", "agenda-empty", "Perhitungan rahinan belum dapat dimuat. Periksa koneksi lalu coba lagi.")); return; }
+      var today = new Date(); today.setHours(0,0,0,0); var upcoming = [];
+      for (var offset = 0; offset <= 90 && upcoming.length < 30; offset++) { var date = new Date(today); date.setDate(date.getDate() + offset); var info = balineseInfo(date); if (info && info.names.length) upcoming.push({ date:date, info:info }); }
+      upcoming.forEach(function (entry) {
+        var card = make("article", "agenda-rahinan-card"); var dateBox = make("div", "agenda-date"); dateBox.append(make("strong", "", String(entry.date.getDate())), make("span", "", new Intl.DateTimeFormat("id-ID", { month:"short", year:"numeric" }).format(entry.date)));
+        var infoBox = make("div", "agenda-rahinan-info"); infoBox.append(make("strong", "", entry.info.names.join(" · ")), make("p", "", entry.info.value.saptaWara.name + " " + entry.info.value.pancaWara.name + " · Wuku " + entry.info.value.wuku.name), make("p", "", rahinanDescription(entry.info.names[0])));
+        var isSaved = events.some(function (event) { return (event.repeatRahinan || event.repeatRule === "rahinan") && event.rahinanName === entry.info.names[0]; }); var saveButton = make("button", "agenda-rahinan-save", isSaved ? "Tersimpan berulang" : "Simpan berulang"); saveButton.type = "button"; saveButton.disabled = isSaved;
+        saveButton.addEventListener("click", function () { events.push({ id:String(Date.now()) + Math.random().toString(16).slice(2), name:entry.info.names[0], type:"Rahinan", date:dateValue(entry.date), note:entry.info.names.join(" · ") + " — " + entry.info.value.saptaWara.name + " " + entry.info.value.pancaWara.name + ", Wuku " + entry.info.value.wuku.name, repeatRule:"rahinan", rahinanName:entry.info.names[0] }); saveEvents(); renderEvents(); renderUpcomingRahinan(); notify(entry.info.names[0] + " disimpan berulang."); });
+        infoBox.append(saveButton); card.append(dateBox, infoBox); rahinanGrid.append(card);
+      });
+    }
+    renderEvents(); renderUpcomingRahinan(); appView.append(header, notice, form, toolbar, list, rahinanSection);
     document.title = "Agenda Keluarga Bali — Gītā Bali";
   }
   function showLearningQuiz() {
