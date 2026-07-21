@@ -540,6 +540,24 @@
   .calendar-header { max-width:42rem; margin:0 auto 2.2rem; text-align:center; }
   .calendar-header h1 { color:var(--accent-dark); font-size:clamp(2.6rem,7vw,4.8rem); }
   .calendar-header > p:last-child { margin:1rem auto 0; color:var(--muted); }
+  .duasa-search { margin-bottom:1rem; padding:1.15rem; border:1px solid var(--line); border-radius:1rem; background:#f8f2e7; }
+  .duasa-search h2 { margin:0; color:var(--accent-dark); font-size:1.35rem; }
+  .duasa-search > p { margin:.35rem 0 0; color:var(--muted); font:.78rem/1.55 system-ui,sans-serif; }
+  .duasa-controls { display:grid; grid-template-columns:minmax(12rem,2fr) 1fr 1fr auto; align-items:end; gap:.65rem; margin-top:1rem; }
+  .duasa-field { display:grid; gap:.3rem; }
+  .duasa-field label { color:var(--muted); font:700 .6rem/1.2 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+  .duasa-field select, .duasa-field input { width:100%; min-height:2.7rem; padding:.6rem .7rem; border:1px solid var(--line); border-radius:.65rem; color:var(--ink); background:var(--surface); font:inherit; }
+  .duasa-results { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.65rem; margin-top:1rem; }
+  .duasa-results[hidden] { display:none; }
+  .duasa-group { min-width:0; padding:.8rem; border:1px solid var(--line); border-radius:.75rem; background:var(--surface); }
+  .duasa-group h3 { margin:0 0 .55rem; color:var(--accent-dark); font:700 .72rem/1.3 system-ui,sans-serif; }
+  .duasa-item { display:block; width:100%; margin:.35rem 0 0; padding:.6rem; border:0; border-radius:.55rem; color:var(--ink); background:#f8f3e9; cursor:pointer; text-align:left; }
+  .duasa-item:hover { background:#f1e6d6; }
+  .duasa-item time { display:block; color:var(--accent); font:700 .6rem/1.3 system-ui,sans-serif; letter-spacing:.05em; text-transform:uppercase; }
+  .duasa-item strong { display:block; margin-top:.15rem; color:var(--accent-dark); font-size:.78rem; }
+  .duasa-item span { display:block; margin-top:.15rem; color:var(--muted); font:.66rem/1.42 system-ui,sans-serif; }
+  .duasa-more, .duasa-empty, .duasa-status { margin:.55rem 0 0; color:var(--muted); font:.68rem/1.5 system-ui,sans-serif; }
+  .duasa-source { display:inline-block; margin-top:.75rem; color:var(--accent-dark); font:700 .68rem/1.4 system-ui,sans-serif; }
   .calendar-layout { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(18rem,.95fr); align-items:start; gap:1rem; }
   .calendar-panel, .calendar-detail { border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); }
   .calendar-panel { padding:1rem; }
@@ -981,6 +999,7 @@
     .agenda-item { grid-template-columns:3.8rem 1fr auto; gap:.65rem; }
     .calendar-page { margin:2.5rem auto; }
     .calendar-header { margin-bottom:1.5rem; }
+    .duasa-controls, .duasa-results { grid-template-columns:1fr; }
     .calendar-layout { grid-template-columns:1fr; }
     .calendar-panel { padding:.8rem; }
     .calendar-weekdays, .calendar-days { gap:.18rem; }
@@ -2875,6 +2894,53 @@
       make("p", "", "Pilih tanggal untuk membaca pawukon, rahinan, indikator watak hari, dan mengakses rincian ala ayuning dewasa sesuai kebutuhan.")
     );
 
+    var dewasaCategories = [
+      { key:"pawiwahan", label:"Pawiwahan / nganten", jenis:1, macam:"Upacara Pernikahan" },
+      { key:"pitra", label:"Pitra Yadnya — penguburan / ngaben", jenis:1, macam:"Pitra Yadnya" },
+      { key:"manusa", label:"Manusa Yadnya", jenis:1, macam:"Manusa Yadnya" },
+      { key:"dewa", label:"Dewa Yadnya", jenis:1, macam:"Dewa Yadnya" },
+      { key:"melaspas", label:"Melaspas", jenis:1, macam:"Upacara Melaspas" },
+      { key:"rumah", label:"Membangun rumah", jenis:5, macam:"Membangun Rumah" },
+      { key:"tempat_usaha", label:"Membuat tempat usaha", jenis:5, macam:"Membuat Tempat Usaha" },
+      { key:"mulai_usaha", label:"Memulai usaha", jenis:6, macam:"Mulai Membangun Usaha" },
+      { key:"pertanian", label:"Bercocok tanam", jenis:2, macam:"Bercocok Tanam" },
+      { key:"padi", label:"Menanam padi, jagung, atau kacang", jenis:2, macam:"Menanam Padi, Jagung, Kacang-kacangan" }
+    ];
+    var duasaSearch = make("section", "duasa-search");
+    duasaSearch.append(make("h2", "", "Cari Dewasa Ayu"), make("p", "", "Pilih keperluan dan bulan. Hasil membedakan hari ayu, hari dengan unsur ayu–ala, serta hari yang perlu dihindari."));
+    var duasaControls = make("div", "duasa-controls");
+    function duasaField(labelText, control) { var wrap = make("div", "duasa-field"); var label = make("label", "", labelText); label.htmlFor = control.id; wrap.append(label, control); return wrap; }
+    var duasaCategory = document.createElement("select"); duasaCategory.id = "duasa-category";
+    dewasaCategories.forEach(function (category) { var option = document.createElement("option"); option.value = category.key; option.textContent = category.label; duasaCategory.append(option); });
+    var duasaMonth = document.createElement("select"); duasaMonth.id = "duasa-month";
+    monthNames.forEach(function (name, index) { var option = document.createElement("option"); option.value = String(index + 1); option.textContent = name; if (index === visibleMonth.getMonth()) option.selected = true; duasaMonth.append(option); });
+    var duasaYear = document.createElement("input"); duasaYear.id = "duasa-year"; duasaYear.type = "number"; duasaYear.min = "2000"; duasaYear.max = "2100"; duasaYear.value = String(visibleMonth.getFullYear());
+    var duasaButton = make("button", "planner-button", "Cari dewasa"); duasaButton.type = "button";
+    duasaControls.append(duasaField("Keperluan", duasaCategory), duasaField("Bulan", duasaMonth), duasaField("Tahun", duasaYear), duasaButton);
+    var duasaStatus = make("p", "duasa-status", "");
+    var duasaResults = make("div", "duasa-results"); duasaResults.hidden = true;
+    var duasaSource = make("a", "duasa-source", "Buka sumber perhitungan lengkap ↗"); duasaSource.hidden = true;
+    duasaSearch.append(duasaControls, duasaStatus, duasaResults, duasaSource);
+
+    function dewasaSourceUrl() { var category = dewasaCategories.find(function (item) { return item.key === duasaCategory.value; }) || dewasaCategories[0]; var source = new URL("https://kalenderbali.org/pilihdewasa.php"); source.searchParams.set("bulan", duasaMonth.value); source.searchParams.set("jenis", String(category.jenis)); source.searchParams.set("macam", category.macam); source.searchParams.set("tahun", duasaYear.value); return source.toString(); }
+    function renderDewasaGroup(title, items, emptyText) {
+      var grouped = {}; items.forEach(function (item) { if (!grouped[item.date]) grouped[item.date] = { date:item.date, names:[], descriptions:[] }; if (grouped[item.date].names.indexOf(item.name) === -1) grouped[item.date].names.push(item.name); if (item.description && grouped[item.date].descriptions.indexOf(item.description) === -1) grouped[item.date].descriptions.push(item.description); }); var dates = Object.keys(grouped).sort().map(function (key) { return grouped[key]; });
+      var group = make("section", "duasa-group"); group.append(make("h3", "", title + " · " + dates.length + " tanggal"));
+      if (!dates.length) { group.append(make("p", "duasa-empty", emptyText)); return group; }
+      dates.slice(0, 8).forEach(function (item) { var date = new Date(item.date + "T00:00:00"); var button = make("button", "duasa-item"); button.type = "button"; var description = item.descriptions.slice(0, 2).join(" "); if (item.descriptions.length > 2) description += " +" + (item.descriptions.length - 2) + " pertimbangan lain."; button.append(make("time", "", new Intl.DateTimeFormat("id-ID", { weekday:"short", day:"numeric", month:"short", year:"numeric" }).format(date)), make("strong", "", item.names.join(" · ")), make("span", "", description)); button.addEventListener("click", function () { visibleMonth = new Date(date.getFullYear(), date.getMonth(), 1); selectedDate = date; renderCalendar(); loadDay(date, true); }); group.append(button); });
+      if (dates.length > 8) group.append(make("p", "duasa-more", "+" + (dates.length - 8) + " tanggal lain tersedia pada sumber lengkap."));
+      return group;
+    }
+    function searchDewasa() {
+      if (!duasaYear.reportValidity()) return; duasaButton.disabled = true; duasaResults.hidden = true; duasaStatus.textContent = "Mencari ala ayuning dewasa…"; duasaSource.href = dewasaSourceUrl(); duasaSource.hidden = false;
+      fetch("/api/dewasa?category=" + encodeURIComponent(duasaCategory.value) + "&month=" + encodeURIComponent(duasaMonth.value) + "&year=" + encodeURIComponent(duasaYear.value))
+        .then(function (response) { if (!response.ok) throw new Error("HTTP " + response.status); return response.json(); })
+        .then(function (data) { duasaResults.replaceChildren(renderDewasaGroup("Dewasa ayu", data.good || [], "Tidak ditemukan hari ayu khusus pada bulan ini."), renderDewasaGroup("Ayu–ala", data.mixed || [], "Tidak ada hasil campuran."), renderDewasaGroup("Perlu dihindari", data.avoid || [], "Tidak ada pantangan yang terdeteksi.")); duasaResults.hidden = false; duasaStatus.textContent = "Hasil " + data.label + " untuk " + monthNames[Number(duasaMonth.value) - 1] + " " + duasaYear.value + ". Tekan tanggal untuk membukanya di kalender."; duasaSource.href = data.source || dewasaSourceUrl(); })
+        .catch(function () { duasaStatus.textContent = "Hasil belum dapat dimuat di aplikasi. Gunakan tautan sumber lengkap di bawah."; })
+        .finally(function () { duasaButton.disabled = false; });
+    }
+    duasaButton.addEventListener("click", searchDewasa);
+
     var layout = make("div", "calendar-layout");
     var panel = make("section", "calendar-panel");
     panel.setAttribute("aria-label", "Kalender bulanan");
@@ -2913,7 +2979,7 @@
     var reference = make("a", "", "Kalender Bali Digital");
     reference.href = "https://kalenderbali.org";
     note.append(reference, ".");
-    appView.append(header, layout, note);
+    appView.append(header, duasaSearch, layout, note);
 
     function renderCalendar() {
       monthTitle.textContent = monthNames[visibleMonth.getMonth()] + " " + visibleMonth.getFullYear();
