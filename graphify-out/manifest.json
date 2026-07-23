@@ -115,8 +115,8 @@
     "semantic_hash": "de91b7fd1d8e6067f602f372cf50f20b"
   },
   "sw.js": {
-    "mtime": 1784820348.1164525,
-    "ast_hash": "3938cbd73a694fc538c125797f471cd4",
+    "mtime": 1784820574.6568842,
+    "ast_hash": "88ab32d74b4c0cd6b8b879be8c67f0db",
     "semantic_hash": ""
   },
   "tools/stats.mjs": {
@@ -250,8 +250,8 @@
     "semantic_hash": "d17c45b89d0886f826dc735aced7de69"
   },
   "preview/index.html": {
-    "mtime": 1784820348.1153498,
-    "ast_hash": "2e73833dfbac4e48e16fe68e4a429578",
+    "mtime": 1784820574.655484,
+    "ast_hash": "e503b8e9c752cbb8c5692b78403e9c7d",
     "semantic_hash": ""
   },
   "preview/assets/gita-bali-icon-180.png": {

@@ -1153,25 +1153,29 @@
     .calendar-group h3 { margin-bottom:.4rem; }
     .calendar-group-list {
       display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:.45rem;
+      grid-template-columns:1fr;
+      gap:.35rem;
     }
     .calendar-event {
-      min-height:6rem;
+      display:grid;
+      grid-template-columns:minmax(7.4rem,.9fr) minmax(0,1.1fr);
+      align-items:start;
+      gap:.65rem;
+      min-height:0;
       margin:0;
-      padding:.6rem .65rem .6rem 1.45rem;
+      padding:.58rem .65rem .58rem 1.45rem;
       font-size:.72rem;
       line-height:1.4;
     }
     .calendar-event strong { line-height:1.3; }
     .calendar-event::before { top:.9rem; left:.62rem; width:.36rem; height:.36rem; }
     .calendar-event p {
-      display:-webkit-box;
-      overflow:hidden;
-      margin-top:.12rem;
-      -webkit-box-orient:vertical;
-      -webkit-line-clamp:2;
+      display:block;
+      overflow:visible;
+      margin:0;
+      -webkit-line-clamp:unset;
     }
+    .calendar-detail > .state-action { display:block; width:100%; margin-top:.85rem; text-align:center; }
     body.chapter-reader-mode { height:100vh; height:100dvh; overflow:hidden; }
     body.chapter-reader-mode .site-header,
     body.chapter-reader-mode .site-footer,
