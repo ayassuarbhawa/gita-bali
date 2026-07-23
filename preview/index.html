@@ -637,6 +637,10 @@
   .duasa-field { display:grid; gap:.3rem; }
   .duasa-field label { color:var(--muted); font:700 .6rem/1.2 system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
   .duasa-field select, .duasa-field input { width:100%; min-height:2.7rem; padding:.6rem .7rem; border:1px solid var(--line); border-radius:.65rem; color:var(--ink); background:var(--surface); font:inherit; }
+  .dewasa-guidance { display:grid; grid-template-columns:auto 1fr; gap:.7rem; margin-top:.85rem; padding:.8rem .9rem; border:1px solid rgba(182,139,58,.3); border-radius:.75rem; color:var(--muted); background:#fff9ec; font:.72rem/1.5 system-ui,sans-serif; }
+  .dewasa-guidance::before { content:"✦"; color:var(--gold); font-size:.8rem; }
+  .dewasa-guidance strong { display:block; margin-bottom:.15rem; color:var(--accent-dark); font-size:.73rem; }
+  .dewasa-guidance p { margin:0; }
   .duasa-results { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.65rem; margin-top:1rem; }
   .duasa-results[hidden] { display:none; }
   .duasa-group { min-width:0; padding:.8rem; border:1px solid var(--line); border-radius:.75rem; background:var(--surface); }
@@ -648,6 +652,10 @@
   .duasa-item span { display:block; margin-top:.15rem; color:var(--muted); font:.66rem/1.42 system-ui,sans-serif; }
   .duasa-more, .duasa-empty, .duasa-status { margin:.55rem 0 0; color:var(--muted); font:.68rem/1.5 system-ui,sans-serif; }
   .duasa-source { display:inline-block; margin-top:.75rem; color:var(--accent-dark); font:700 .68rem/1.4 system-ui,sans-serif; }
+  .calendar-source-link { display:flex; align-items:center; justify-content:space-between; gap:.75rem; margin-top:1rem; padding:.8rem .15rem .1rem; border-top:1px solid var(--line); color:var(--accent-dark); font:700 .69rem/1.4 system-ui,sans-serif; text-decoration:none; }
+  .calendar-source-link::after { content:"↗"; flex:0 0 auto; color:var(--gold); font-size:.95rem; transition:transform .2s ease; }
+  .calendar-source-link:hover { color:var(--accent); }
+  .calendar-source-link:hover::after { transform:translate(.1rem,-.1rem); }
   .calendar-layout { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(18rem,.95fr); align-items:start; gap:1rem; }
   .calendar-panel, .calendar-detail { border:1px solid var(--line); border-radius:1.1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.05); }
   .calendar-panel { padding:1rem; }
@@ -1175,7 +1183,8 @@
       margin:0;
       -webkit-line-clamp:unset;
     }
-    .calendar-detail > .state-action { display:block; width:100%; margin-top:.85rem; text-align:center; }
+    .dewasa-guidance { padding:.72rem .75rem; }
+    .calendar-source-link { margin-top:.8rem; padding:.72rem .1rem .05rem; }
     body.chapter-reader-mode { height:100vh; height:100dvh; overflow:hidden; }
     body.chapter-reader-mode .site-header,
     body.chapter-reader-mode .site-footer,
@@ -1749,7 +1758,10 @@
       "Gītā Bali berhasil dipasang.": "Gītā Bali sampun kaplug.",
       "Kembali ke daftar bab": "Mawali ka daptar bab",
       "Pilih nomor sloka": "Pilih nomor sloka",
-      "✦ Acak Lagi": "✦ Acak Malih"
+      "✦ Acak Lagi": "✦ Acak Malih",
+      "Pastikan kembali kepada Ratu Peranda": "Pastikayang malih ring Ratu Peranda",
+      "Hasil pencarian ini adalah referensi awal, bukan penetapan dewasa. Sebelum menentukan hari upacara, pastikan kembali kepada Ratu Peranda, sulinggih, atau pemangku yang membimbing keluarga.": "Asil rerehan puniki wantah rujukan pangawit, nenten penetapan dewasa. Sadurung netepang rahina upacara, pastikayang malih ring Ratu Peranda, sulinggih, utawi pemangku sane nuntun kulawarga.",
+      "Lihat Ala Ayuning lengkap": "Cingak Ala Ayuning jangkep"
     },
     en: {
       "Ruang baca": "Reading room",
@@ -1872,7 +1884,10 @@
       "Gītā Bali berhasil dipasang.": "Gītā Bali was installed.",
       "Kembali ke daftar bab": "Back to chapter list",
       "Pilih nomor sloka": "Choose a verse number",
-      "✦ Acak Lagi": "✦ Shuffle Again"
+      "✦ Acak Lagi": "✦ Shuffle Again",
+      "Pastikan kembali kepada Ratu Peranda": "Confirm with a Ratu Peranda",
+      "Hasil pencarian ini adalah referensi awal, bukan penetapan dewasa. Sebelum menentukan hari upacara, pastikan kembali kepada Ratu Peranda, sulinggih, atau pemangku yang membimbing keluarga.": "These results are an initial reference, not a final determination of an auspicious day. Before choosing a ceremony date, confirm it with the Ratu Peranda, sulinggih, or pemangku who guides your family.",
+      "Lihat Ala Ayuning lengkap": "View complete Ala Ayuning details"
     }
   };
 
@@ -3646,10 +3661,17 @@
     var duasaYear = document.createElement("input"); duasaYear.id = "duasa-year"; duasaYear.type = "number"; duasaYear.min = "2000"; duasaYear.max = "2100"; duasaYear.value = String(visibleMonth.getFullYear());
     var duasaButton = make("button", "planner-button", "Cari dewasa"); duasaButton.type = "button";
     duasaControls.append(duasaField("Keperluan", duasaCategory), duasaField("Bulan", duasaMonth), duasaField("Tahun", duasaYear), duasaButton);
+    var dewasaGuidance = make("aside", "dewasa-guidance");
+    var dewasaGuidanceCopy = make("div");
+    dewasaGuidanceCopy.append(
+      make("strong", "", "Pastikan kembali kepada Ratu Peranda"),
+      make("p", "", "Hasil pencarian ini adalah referensi awal, bukan penetapan dewasa. Sebelum menentukan hari upacara, pastikan kembali kepada Ratu Peranda, sulinggih, atau pemangku yang membimbing keluarga.")
+    );
+    dewasaGuidance.append(dewasaGuidanceCopy);
     var duasaStatus = make("p", "duasa-status", "");
     var duasaResults = make("div", "duasa-results"); duasaResults.hidden = true;
     var duasaSource = make("a", "duasa-source", "Buka sumber perhitungan lengkap ↗"); duasaSource.hidden = true;
-    duasaSearch.append(duasaControls, duasaStatus, duasaResults, duasaSource);
+    duasaSearch.append(duasaControls, dewasaGuidance, duasaStatus, duasaResults, duasaSource);
 
     function dewasaSourceUrl() { var category = dewasaCategories.find(function (item) { return item.key === duasaCategory.value; }) || dewasaCategories[0]; var source = new URL("https://kalenderbali.org/pilihdewasa.php"); source.searchParams.set("bulan", duasaMonth.value); source.searchParams.set("jenis", String(category.jenis)); source.searchParams.set("macam", category.macam); source.searchParams.set("tahun", duasaYear.value); return source.toString(); }
     function renderDewasaGroup(title, items, emptyText) {
@@ -3845,7 +3867,7 @@
       var groups = [renderGroup(primaryHeading, primary, primaryQuality)];
       if (rahinan.length) groups.push(renderGroup("Rahinan", rahinan, "neutral"));
       groups.push(renderGroup("Rincian penanggalan", wariga, "neutral"));
-      var sourceLink = make("a", "state-action", "Lihat Ala Ayuning lengkap");
+      var sourceLink = make("a", "calendar-source-link", "Lihat Ala Ayuning lengkap");
       sourceLink.href = sourceUrl(date);
       detail.replaceChildren(dateLabel, title, baliDay);
       groups.forEach(function (group) { if (group) detail.append(group); });
