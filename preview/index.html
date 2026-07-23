@@ -4417,7 +4417,7 @@
       make("h2", "", "Jelajahi Gita"),
       make("p", "", sectionDescriptions[group] || sectionDescriptions["1"])
     );
-    appView.hidden=false; appView.className="app-grid"; appView.replaceChildren(pageBack("?mode=explore", "Kembali ke Jelajahi Gita"), overview);
+    appView.hidden=false; appView.className="app-grid explore-grid"; appView.replaceChildren(pageBack("?mode=explore", "Kembali ke Jelajahi Gita"), overview);
     for (var n=range[0]; n<=range[1]; n++) appView.append(card("Bab " + n, recaps[group][n - range[0]], "?bab=" + n + "#reader"));
   }
   function showCollectionState(title, message, needsLogin) {
