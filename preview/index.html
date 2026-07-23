@@ -207,6 +207,31 @@
     letter-spacing: .12em;
   }
   .nav-actions { display: flex; align-items: center; gap: 1.1rem; }
+  .nav-language {
+    display:inline-grid;
+    grid-template-columns:repeat(3,auto);
+    gap:.15rem;
+    padding:.18rem;
+    border:1px solid rgba(138,61,47,.18);
+    border-radius:999px;
+    background:rgba(255,253,248,.58);
+  }
+  .nav-language button {
+    min-height:1.8rem;
+    padding:.35rem .55rem;
+    border:0;
+    border-radius:999px;
+    color:var(--muted);
+    background:transparent;
+    cursor:pointer;
+    font:700 .58rem/1 system-ui,sans-serif;
+    letter-spacing:.06em;
+  }
+  .nav-language button[aria-pressed="true"] {
+    color:#fff;
+    background:var(--accent);
+  }
+  .nav-language button:focus-visible { outline-offset:2px; }
   .nav-link {
     color: var(--accent-dark);
     font: 700 .72rem/1 system-ui, sans-serif;
@@ -1030,6 +1055,13 @@
     .intro-subtitle { max-width:26rem; margin-top:1rem; font-size:.94rem; }
     .intro-line { margin:1.15rem auto; }
     .nav-note, .nav-link { display: none; }
+    .nav {
+      flex-wrap:wrap;
+      gap:.4rem;
+      padding:.55rem 0;
+    }
+    .nav-actions { flex:1; justify-content:flex-end; gap:.4rem; }
+    .nav-language button { padding:.35rem .42rem; font-size:.54rem; }
     .nav-actions { gap:.5rem; }
     .auth-trigger, .install-trigger { min-height:2.2rem; padding:.5rem .7rem; }
     .toolbar { position: static; grid-template-columns: 1fr; }
@@ -1272,7 +1304,11 @@
     <a class="brand" href="?mode=dashboard">GĪTĀ BALI <small>Ruang baca</small></a>
     <div class="nav-actions">
       <a class="nav-link" href="?mode=dashboard">Dashboard</a>
-      <span class="nav-note">Sanskrit · Indonesia · Bali · English</span>
+      <div class="nav-language" id="nav-language" role="group" aria-label="Bahasa tampilan">
+        <button type="button" data-ui-language="id" aria-pressed="true">Indonesia</button>
+        <button type="button" data-ui-language="ban" aria-pressed="false">Bali</button>
+        <button type="button" data-ui-language="en" aria-pressed="false">English</button>
+      </div>
       <button class="install-trigger" id="install-trigger" type="button" hidden>Pasang</button>
       <button class="auth-trigger" id="auth-trigger" type="button">Masuk</button>
     </div>
@@ -1529,7 +1565,317 @@
   var chapter = new URLSearchParams(window.location.search).get("bab");
   var mode = new URLSearchParams(window.location.search).get("mode");
   var chapters = { "1": "../data/bab-01.json", "2": "../data/bab-02.json", "3": "../data/bab-03.json", "4": "../data/bab-04.json", "5": "../data/bab-05.json", "6": "../data/bab-06.json", "7": "../data/bab-07.json", "8": "../data/bab-08.json", "9": "../data/bab-09.json", "10": "../data/bab-10.json", "11": "../data/bab-11.json", "12": "../data/bab-12.json", "13": "../data/bab-13.json", "14": "../data/bab-14.json", "15": "../data/bab-15.json", "16": "../data/bab-16.json", "17": "../data/bab-17.json", "18": "../data/bab-18.json" };
-  var state = { data: null, language: "id", query: "" };
+  var supportedUiLanguages = ["id", "ban", "en"];
+  var requestedUiLanguage = new URLSearchParams(window.location.search).get("lang");
+  var storedUiLanguage = localStorage.getItem("gitaBaliUiLanguage");
+  var uiLanguage = supportedUiLanguages.includes(requestedUiLanguage)
+    ? requestedUiLanguage
+    : (supportedUiLanguages.includes(storedUiLanguage) ? storedUiLanguage : "id");
+  localStorage.setItem("gitaBaliUiLanguage", uiLanguage);
+  document.documentElement.lang = uiLanguage;
+
+  var uiTranslations = {
+    ban: {
+      "Ruang baca": "Ruang maca",
+      "Dashboard": "Dasbor",
+      "Pasang": "Pasang",
+      "Masuk": "Mlebet",
+      "Akun": "Akun",
+      "Baca Sekarang": "Maca Jani",
+      "Lewati ke isi": "Langkung ka isi",
+      "Navigasi utama": "Navigasi utama",
+      "Bahasa tampilan": "Basa tampilan",
+      "Ruang perjumpaan antara kebijaksanaan Bhagawad Gita dan kehalusan jiwa Bali.": "Genah patemon antuk kawicaksanaan Bhagawad Gita miwah alusnyane manah Bali.",
+      "Ruang baca untuk kembali merenung.": "Genah maca anggén mawali manah.",
+      "Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.": "Maca Bhagawad Gita, melajahin upakara, kalender, basa, miwah kauripan adat Bali ring asiki genah sane ayem tur aluh katelusurin.",
+      "Baca & Renungkan": "Maca & Manah",
+      "Ruang pribadi untuk membaca sloka, menyimpan pilihan, dan menulis refleksi.": "Genah pribadi anggén maca sloka, nyimpen pilihan, miwah nyurat pangresep.",
+      "Sloka Acak": "Sloka Acak",
+      "Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.": "Ngawitin saking asiki sloka pilihan tur wacén antuk ayem. Simpen yening jagi mawali malih.",
+      "Jelajahi Gita": "Jelajahin Gita",
+      "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu.": "Pilih asiki bagian anggén ngawitin lampah ragane. Soang-soang bagian muka daptar bab sane prasida kawacen asiki-asiki.",
+      "Bagian Pertama": "Bagian Kapertama",
+      "Bagian Kedua": "Bagian Kaping Kalih",
+      "Bagian Ketiga": "Bagian Kaping Tiga",
+      "Bab 1–6 · Karma Yoga dan hakikat jiwa.": "Bab 1–6 · Karma Yoga miwah kasujatian atma.",
+      "Bab 7–12 · Pengetahuan spiritual dan Brahman.": "Bab 7–12 · Pangawikan rohani miwah Brahman.",
+      "Bab 13–18 · Penyerahan diri dan pengabdian.": "Bab 13–18 · Pasrah diri miwah bhakti.",
+      "Kembali ke Jelajahi Gita": "Mawali ka Jelajahin Gita",
+      "Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.": "Wacén makasami sloka. Bagian 1: Bab 1–6 · Bagian 2: Bab 7–12 · Bagian 3: Bab 13–18.",
+      "Sloka Tersimpan": "Sloka Kasimpen",
+      "Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.": "Simpen sloka pilihan tur selarasang ring makasami piranti antuk akun ragane.",
+      "Catatan": "Catetan",
+      "Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.": "Surat pangresep pribadi ring soang-soang sloka tur buka malih antuk akun ragane.",
+      "Upakara & Waktu": "Upakara & Kala",
+      "Panduan persiapan yang tetap menghormati desa kala patra dan tuntunan rohaniwan.": "Tuntunan persiapan sane tetep ngajegang desa kala patra miwah piteket rohaniwan.",
+      "Upakara & Doa": "Upakara & Puja",
+      "Pelajari Panca Yadnya, sarana upakara, alur umum pelaksanaannya, serta doa Hindu sehari-hari.": "Pelajahin Panca Yadnya, sarana upakara, runtutan umum pelaksanaannyane, miwah puja Hindu sadina-dina.",
+      "Kalender Bali": "Kalender Bali",
+      "Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.": "Pilih tanggal anggén maca pawukon, rahinan, tanda wariga, miwah rincian ala ayuning dewasa.",
+      "Rencana Yadnya": "Rencana Yadnya",
+      "Susun checklist persiapan, pembagian kebutuhan, tanggal pelaksanaan, dan estimasi anggaran keluarga.": "Susun daptar persiapan, pembagian kabutuhan, tanggal pelaksanaan, miwah perkiraan anggaran kulawarga.",
+      "Upakara Lestari": "Upakara Lestari",
+      "Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.": "Tuntunan milih bahan, ngirangin plastik, miwah milah luu upakara antuk tetep ngajegang kasuciannyane.",
+      "Agenda Keluarga Bali": "Agenda Kulawarga Bali",
+      "Simpan otonan, piodalan, ngayah, rapat banjar, dan upacara keluarga agar persiapan tidak terlambat.": "Simpen otonan, piodalan, ngayah, paruman banjar, miwah upacara kulawarga mangda persiapan nenten kasep.",
+      "Adat, Bahasa & Alam": "Adat, Basa & Alam",
+      "Pengetahuan dasar untuk memahami kehidupan Bali dan menemukan sumber yang benar.": "Pangawikan dasar anggén ngresepang kauripan Bali tur manggihin sumber sane patut.",
+      "Mengenal Adat Bali": "Ngenalin Adat Bali",
+      "Pahami desa adat, awig-awig, pararem, krama, ngayah, serta istilah penting dalam kehidupan adat Bali.": "Resepang desa adat, awig-awig, pararem, krama, ngayah, miwah istilah penting ring kauripan adat Bali.",
+      "Bahasa, Aksara & Lontar": "Basa, Aksara & Lontar",
+      "Mulai belajar ungkapan Bahasa Bali, mengenal aksara, serta merawat lontar keluarga dengan aman.": "Ngawitin melajahin basa Bali, ngenalin aksara, miwah ngupapira lontar kulawarga antuk aman.",
+      "Subak & Alam Bali": "Subak & Alam Bali",
+      "Kenali sistem air, Tri Hita Karana, peran krama subak, serta cara membantu menjaga sawah Bali.": "Ngenalin tata yeh, Tri Hita Karana, swadharma krama subak, miwah tata cara ngrajegang carik Bali.",
+      "Panduan Krama Tamiu": "Tuntunan Krama Tamiu",
+      "Pahami lapor diri, etika hidup di Bali, aturan desa setempat, serta jalur bertanya dan mengadu.": "Resepang lapor diri, tata krama kauripan ring Bali, uger-uger desa, miwah genah matakon lan ngaturang pikobet.",
+      "Hak & Kehidupan Krama": "Hak & Kauripan Krama",
+      "Pengantar tentang swadharma, waris, perkawinan, tanah adat, dan langkah aman sebelum mengambil keputusan.": "Pangawit indik swadharma, waris, pawiwahan, tanah adat, miwah langkah aman sadurung mutusang.",
+      "Cari Jalur Bantuan": "Rereh Jalur Pitulungan",
+      "Pilih jenis masalah untuk mengetahui pihak pertama yang tepat dihubungi dan dokumen yang perlu disiapkan.": "Pilih soroh pikobet anggén uning pihak kapertama sane patut kaubungin miwah dokumen sane perlu kasayagang.",
+      "Glosarium Bali": "Glosarium Bali",
+      "Cari arti istilah adat, agama, upakara, keluarga, dan subak tanpa harus membuka banyak halaman.": "Rereh arti istilah adat, agama, upakara, kulawarga, miwah subak tanpa perlu muka akeh kaca.",
+      "Pustaka Terverifikasi": "Pustaka Kaperiksa",
+      "Kumpulan pintu masuk menuju sumber resmi pemerintah, hukum adat, agama Hindu, budaya, dan penelitian.": "Kumpulan margi nuju sumber resmi pamerintah, hukum adat, agama Hindu, budaya, miwah panaliten.",
+      "Belajar & Kuis Bali": "Melajah & Kuis Bali",
+      "Uji pemahaman tentang adat, upakara, bahasa, subak, dan penggunaan sumber yang bertanggung jawab.": "Uji pangresep indik adat, upakara, basa, subak, miwah panganggén sumber sane matanggung jawab.",
+      "Akun tersinkron": "Akun sampun selaras",
+      "Dashboard Ruang Baca": "Dasbor Ruang Maca",
+      "Hari ini": "Rahina mangkin",
+      "Agenda terdekat": "Agenda pinih paek",
+      "Agenda keluarga": "Agenda kulawarga",
+      "Belum ada agenda": "Durung wenten agenda",
+      "Tambahkan otonan, odalan, atau kegiatan keluarga.": "Tambah otonan, odalan, utawi kegiatan kulawarga.",
+      "Lanjut membaca": "Terusang maca",
+      "Mulai membaca": "Ngawitin maca",
+      "Jelajahi Bhagawad Gita": "Jelajahin Bhagawad Gita",
+      "Pilih bagian dan bab pertamamu.": "Pilih bagian miwah bab kapertama ragane.",
+      "Kembali ke bacaan terakhir.": "Mawali ka wacaan pamuput.",
+      "← Kembali": "← Mawali",
+      "Kembali ke Dashboard Ruang Baca": "Mawali ka Dasbor Ruang Maca",
+      "Buka bagian →": "Buka bagian →",
+      "Privasi": "Privasi",
+      "Kelola akun": "Atur akun",
+      "Kembali ke atas": "Mawali ka duur",
+      "Gītā Bali · Teks lintas bahasa untuk dibaca bersama.": "Gītā Bali · Teks lintas basa anggén kawacen sareng-sareng.",
+      "Kebijakan Privasi": "Kawijakan Privasi",
+      "Kelola data & akun": "Atur data & akun",
+      "Keluar dari akun": "Medal saking akun",
+      "Tutup": "Tutup",
+      "Lihat": "Cingak",
+      "Sembunyikan": "Engkebang",
+      "Alamat email": "Alamat email",
+      "Password": "Sandi",
+      "Masuk ke akunmu.": "Mlebet ka akun ragane.",
+      "Gunakan email dan password untuk membuka sloka serta catatanmu.": "Anggén email miwah sandi anggén muka sloka sareng catetan ragane.",
+      "Belum punya akun? Daftar": "Durung madue akun? Daftar",
+      "Lupa password?": "Lali sandi?",
+      "Daftar akun": "Daftar akun",
+      "Sudah punya akun? Masuk": "Sampun madue akun? Mlebet",
+      "Sumber teks": "Sumber teks",
+      "Cari dalam bab ini": "Rereh ring bab puniki",
+      "Nomor, Sanskrit, atau terjemahan…": "Nomor, Sanskrit, utawi tegesnyane…",
+      "Bersihkan": "Resikin",
+      "Sloka tersedia": "Sloka sayaga",
+      "Terjemahan Indonesia": "Teges Indonesia",
+      "Terjemahan Bali": "Teges Bali",
+      "Terjemahan Inggris": "Teges Inggris",
+      "Terjemahan draf": "Teges draf",
+      "♡ Simpan": "♡ Simpen",
+      "♥ Tersimpan": "♥ Kasimpen",
+      "✎ Catatan": "✎ Catetan",
+      "Tulis refleksimu untuk sloka ini…": "Surat pangresep ragane indik sloka puniki…",
+      "Simpan catatan": "Simpen catetan",
+      "Pulihkan akunmu.": "Pulihang akun ragane.",
+      "Buat akun baru.": "Ngardi akun anyar.",
+      "Masukkan email akunmu. Kami akan mengirim tautan untuk membuat password baru.": "Lebetang email akun ragane. Iraga jagi ngirim tautan anggén ngardi sandi anyar.",
+      "Daftar dengan email dan password agar catatanmu tersimpan lintas perangkat.": "Daftar antuk email miwah sandi mangda catetan ragane kasimpen ring makasami piranti.",
+      "Kirim link pemulihan": "Kirim tautan pamulihan",
+      "← Kembali ke masuk": "← Mawali ka mlebet",
+      "Koneksi kembali aktif.": "Koneksi sampun aktif malih.",
+      "Mode offline · bacaan dan perubahan lokal tetap tersedia": "Mode offline · wacaan miwah pauahan lokal tetep sayaga",
+      "Gītā Bali berhasil dipasang.": "Gītā Bali sampun kaplug.",
+      "Kembali ke daftar bab": "Mawali ka daptar bab",
+      "Pilih nomor sloka": "Pilih nomor sloka",
+      "✦ Acak Lagi": "✦ Acak Malih"
+    },
+    en: {
+      "Ruang baca": "Reading room",
+      "Dashboard": "Dashboard",
+      "Pasang": "Install",
+      "Masuk": "Log in",
+      "Akun": "Account",
+      "Baca Sekarang": "Read Now",
+      "Lewati ke isi": "Skip to content",
+      "Navigasi utama": "Main navigation",
+      "Bahasa tampilan": "Display language",
+      "Ruang perjumpaan antara kebijaksanaan Bhagawad Gita dan kehalusan jiwa Bali.": "A meeting place for the wisdom of the Bhagavad Gita and the gentle spirit of Bali.",
+      "Ruang baca untuk kembali merenung.": "A reading space to return and reflect.",
+      "Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.": "Read the Bhagavad Gita and explore Balinese ceremonies, calendars, language, and customary life in one calm, accessible space.",
+      "Baca & Renungkan": "Read & Reflect",
+      "Ruang pribadi untuk membaca sloka, menyimpan pilihan, dan menulis refleksi.": "Your personal space to read verses, save favorites, and write reflections.",
+      "Sloka Acak": "Random Sloka",
+      "Mulai dari satu sloka pilihan dan baca dengan tenang. Simpan bila ingin kembali lagi.": "Begin with one selected verse and read at your own pace. Save it to return later.",
+      "Jelajahi Gita": "Explore the Gita",
+      "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu.": "Choose a part to begin your journey. Each part opens a list of chapters to read one by one.",
+      "Bagian Pertama": "Part One",
+      "Bagian Kedua": "Part Two",
+      "Bagian Ketiga": "Part Three",
+      "Bab 1–6 · Karma Yoga dan hakikat jiwa.": "Chapters 1–6 · Karma Yoga and the nature of the self.",
+      "Bab 7–12 · Pengetahuan spiritual dan Brahman.": "Chapters 7–12 · Spiritual knowledge and Brahman.",
+      "Bab 13–18 · Penyerahan diri dan pengabdian.": "Chapters 13–18 · Surrender and devotion.",
+      "Kembali ke Jelajahi Gita": "Back to Explore the Gita",
+      "Baca seluruh sloka. Sesi 1: Bab 1–6 · Sesi 2: Bab 7–12 · Sesi 3: Bab 13–18.": "Read every verse. Part 1: Chapters 1–6 · Part 2: Chapters 7–12 · Part 3: Chapters 13–18.",
+      "Sloka Tersimpan": "Saved Slokas",
+      "Simpan sloka pilihan dan sinkronkan ke semua perangkat melalui akunmu.": "Save selected verses and sync them across devices through your account.",
+      "Catatan": "Notes",
+      "Tulis refleksi pribadi pada setiap sloka dan akses kembali melalui akunmu.": "Write a personal reflection for each verse and revisit it through your account.",
+      "Upakara & Waktu": "Ceremonies & Time",
+      "Panduan persiapan yang tetap menghormati desa kala patra dan tuntunan rohaniwan.": "Preparation guidance that respects desa kala patra and spiritual guidance.",
+      "Upakara & Doa": "Ceremonies & Prayers",
+      "Pelajari Panca Yadnya, sarana upakara, alur umum pelaksanaannya, serta doa Hindu sehari-hari.": "Learn about Panca Yadnya, ceremonial offerings, general procedures, and daily Hindu prayers.",
+      "Kalender Bali": "Balinese Calendar",
+      "Pilih tanggal untuk membaca pawukon, rahinan, indikator wariga, dan rincian ala ayuning dewasa.": "Choose a date to view pawukon, sacred days, wariga indicators, and ala ayuning dewasa details.",
+      "Rencana Yadnya": "Yadnya Planner",
+      "Susun checklist persiapan, pembagian kebutuhan, tanggal pelaksanaan, dan estimasi anggaran keluarga.": "Organize preparation checklists, responsibilities, dates, and a family budget estimate.",
+      "Upakara Lestari": "Sustainable Upakara",
+      "Panduan memilih bahan, mengurangi plastik, dan memilah sisa upakara dengan tetap menghormati kesakralannya.": "Guidance for choosing materials, reducing plastic, and sorting ceremonial remains while respecting their sacred nature.",
+      "Agenda Keluarga Bali": "Balinese Family Agenda",
+      "Simpan otonan, piodalan, ngayah, rapat banjar, dan upacara keluarga agar persiapan tidak terlambat.": "Save otonan, piodalan, ngayah, banjar meetings, and family ceremonies so preparations stay on schedule.",
+      "Adat, Bahasa & Alam": "Customs, Language & Nature",
+      "Pengetahuan dasar untuk memahami kehidupan Bali dan menemukan sumber yang benar.": "Foundational knowledge for understanding Balinese life and finding reliable sources.",
+      "Mengenal Adat Bali": "Understanding Balinese Customs",
+      "Pahami desa adat, awig-awig, pararem, krama, ngayah, serta istilah penting dalam kehidupan adat Bali.": "Understand customary villages, awig-awig, pararem, krama, ngayah, and key terms in Balinese customary life.",
+      "Bahasa, Aksara & Lontar": "Language, Script & Lontar",
+      "Mulai belajar ungkapan Bahasa Bali, mengenal aksara, serta merawat lontar keluarga dengan aman.": "Learn Balinese expressions and script, and safely care for family lontar manuscripts.",
+      "Subak & Alam Bali": "Subak & Balinese Nature",
+      "Kenali sistem air, Tri Hita Karana, peran krama subak, serta cara membantu menjaga sawah Bali.": "Discover the water system, Tri Hita Karana, the role of subak members, and ways to protect Bali’s rice fields.",
+      "Panduan Krama Tamiu": "Krama Tamiu Guide",
+      "Pahami lapor diri, etika hidup di Bali, aturan desa setempat, serta jalur bertanya dan mengadu.": "Learn about resident registration, local etiquette, village rules, and where to ask questions or seek help.",
+      "Hak & Kehidupan Krama": "Rights & Community Life",
+      "Pengantar tentang swadharma, waris, perkawinan, tanah adat, dan langkah aman sebelum mengambil keputusan.": "An introduction to swadharma, inheritance, marriage, customary land, and safe steps before making decisions.",
+      "Cari Jalur Bantuan": "Find Help",
+      "Pilih jenis masalah untuk mengetahui pihak pertama yang tepat dihubungi dan dokumen yang perlu disiapkan.": "Choose an issue to find the right first contact and the documents you should prepare.",
+      "Glosarium Bali": "Balinese Glossary",
+      "Cari arti istilah adat, agama, upakara, keluarga, dan subak tanpa harus membuka banyak halaman.": "Find meanings of customary, religious, ceremonial, family, and subak terms in one place.",
+      "Pustaka Terverifikasi": "Verified Library",
+      "Kumpulan pintu masuk menuju sumber resmi pemerintah, hukum adat, agama Hindu, budaya, dan penelitian.": "A gateway to official government, customary law, Hindu religion, cultural, and research sources.",
+      "Belajar & Kuis Bali": "Learn & Take a Quiz",
+      "Uji pemahaman tentang adat, upakara, bahasa, subak, dan penggunaan sumber yang bertanggung jawab.": "Test your understanding of customs, ceremonies, language, subak, and responsible source use.",
+      "Akun tersinkron": "Synced account",
+      "Dashboard Ruang Baca": "Reading Room Dashboard",
+      "Hari ini": "Today",
+      "Agenda terdekat": "Next event",
+      "Agenda keluarga": "Family agenda",
+      "Belum ada agenda": "No events yet",
+      "Tambahkan otonan, odalan, atau kegiatan keluarga.": "Add an otonan, odalan, or family activity.",
+      "Lanjut membaca": "Continue reading",
+      "Mulai membaca": "Start reading",
+      "Jelajahi Bhagawad Gita": "Explore the Bhagavad Gita",
+      "Pilih bagian dan bab pertamamu.": "Choose a part and your first chapter.",
+      "Kembali ke bacaan terakhir.": "Return to your latest reading.",
+      "← Kembali": "← Back",
+      "Kembali ke Dashboard Ruang Baca": "Return to the Reading Room Dashboard",
+      "Buka bagian →": "Open section →",
+      "Privasi": "Privacy",
+      "Kelola akun": "Manage account",
+      "Kembali ke atas": "Back to top",
+      "Gītā Bali · Teks lintas bahasa untuk dibaca bersama.": "Gītā Bali · Multilingual texts to read together.",
+      "Kebijakan Privasi": "Privacy Policy",
+      "Kelola data & akun": "Manage data & account",
+      "Keluar dari akun": "Log out",
+      "Tutup": "Close",
+      "Lihat": "Show",
+      "Sembunyikan": "Hide",
+      "Alamat email": "Email address",
+      "Password": "Password",
+      "Masuk ke akunmu.": "Log in to your account.",
+      "Gunakan email dan password untuk membuka sloka serta catatanmu.": "Use your email and password to access your verses and notes.",
+      "Belum punya akun? Daftar": "No account yet? Sign up",
+      "Lupa password?": "Forgot password?",
+      "Daftar akun": "Create account",
+      "Sudah punya akun? Masuk": "Already have an account? Log in",
+      "Sumber teks": "Text sources",
+      "Cari dalam bab ini": "Search this chapter",
+      "Nomor, Sanskrit, atau terjemahan…": "Number, Sanskrit, or translation…",
+      "Bersihkan": "Clear",
+      "Sloka tersedia": "Available verses",
+      "Terjemahan Indonesia": "Indonesian translation",
+      "Terjemahan Bali": "Balinese translation",
+      "Terjemahan Inggris": "English translation",
+      "Terjemahan draf": "Draft translation",
+      "♡ Simpan": "♡ Save",
+      "♥ Tersimpan": "♥ Saved",
+      "✎ Catatan": "✎ Note",
+      "Tulis refleksimu untuk sloka ini…": "Write your reflection on this verse…",
+      "Simpan catatan": "Save note",
+      "Pulihkan akunmu.": "Recover your account.",
+      "Buat akun baru.": "Create a new account.",
+      "Masukkan email akunmu. Kami akan mengirim tautan untuk membuat password baru.": "Enter your account email. We will send a link to create a new password.",
+      "Daftar dengan email dan password agar catatanmu tersimpan lintas perangkat.": "Sign up with your email and password to sync your notes across devices.",
+      "Kirim link pemulihan": "Send recovery link",
+      "← Kembali ke masuk": "← Back to login",
+      "Koneksi kembali aktif.": "You are back online.",
+      "Mode offline · bacaan dan perubahan lokal tetap tersedia": "Offline mode · readings and local changes remain available",
+      "Gītā Bali berhasil dipasang.": "Gītā Bali was installed.",
+      "Kembali ke daftar bab": "Back to chapter list",
+      "Pilih nomor sloka": "Choose a verse number",
+      "✦ Acak Lagi": "✦ Shuffle Again"
+    }
+  };
+
+  function t(text) {
+    if (text === undefined || text === null || uiLanguage === "id") return text;
+    var value = String(text);
+    var translated = uiTranslations[uiLanguage] && uiTranslations[uiLanguage][value];
+    if (translated) return translated;
+    if (uiLanguage === "en") {
+      var openChapter = value.match(/^Buka Bab (\d+)$/);
+      if (openChapter) return "Open Chapter " + openChapter[1];
+      var chapterOnly = value.match(/^Bab (\d+)$/);
+      if (chapterOnly) return "Chapter " + chapterOnly[1];
+      var chapterVerse = value.match(/^Bab (\d+) · Sloka (\d+)$/);
+      if (chapterVerse) return "Chapter " + chapterVerse[1] + " · Verse " + chapterVerse[2];
+      var gitaChapter = value.match(/^Bhagawad Gita · Bab (\d+)$/);
+      if (gitaChapter) return "Bhagavad Gita · Chapter " + gitaChapter[1];
+      var verseCount = value.match(/^(\d+) sloka$/);
+      if (verseCount) return verseCount[1] + (verseCount[1] === "1" ? " verse" : " verses");
+    }
+    return value;
+  }
+
+  function translateStaticUi(root) {
+    if (uiLanguage === "id") return;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    var textNodes = [];
+    while (walker.nextNode()) {
+      var parent = walker.currentNode.parentElement;
+      if (!parent || parent.closest("script, style, .nav-language, [data-language]")) continue;
+      textNodes.push(walker.currentNode);
+    }
+    textNodes.forEach(function (node) {
+      var leading = node.nodeValue.match(/^\s*/)[0];
+      var trailing = node.nodeValue.match(/\s*$/)[0];
+      var original = node.nodeValue.trim();
+      if (!original) return;
+      node.nodeValue = leading + t(original) + trailing;
+    });
+    root.querySelectorAll("[placeholder], [title], [aria-label]").forEach(function (node) {
+      ["placeholder", "title", "aria-label"].forEach(function (attribute) {
+        if (node.hasAttribute(attribute)) node.setAttribute(attribute, t(node.getAttribute(attribute)));
+      });
+    });
+  }
+
+  function setUiLanguage(language) {
+    if (!supportedUiLanguages.includes(language) || language === uiLanguage) return;
+    localStorage.setItem("gitaBaliUiLanguage", language);
+    if (mode === "random") sessionStorage.setItem("gitaBaliPreserveRandom", "1");
+    var target = new URL(window.location.href);
+    target.searchParams.set("lang", language);
+    window.location.href = target.toString();
+  }
+
+  var state = { data: null, language: uiLanguage, query: "" };
   var supabaseUrl = "https://vekrbbnuzzoawkfsyfdo.supabase.co";
   var supabaseKey = "sb_publishable_6rzcP2Te_5oLb-_MxwHD9A_nLoIICMM";
   // Supabase can consume and remove auth tokens from the URL during client
@@ -1566,6 +1912,16 @@
   var installTrigger = document.getElementById("install-trigger");
   var connectionStatus = document.getElementById("connection-status");
   var deferredInstallPrompt = null;
+  var navLanguage = document.getElementById("nav-language");
+
+  navLanguage.querySelectorAll("[data-ui-language]").forEach(function (button) {
+    button.setAttribute("aria-pressed", String(button.dataset.uiLanguage === uiLanguage));
+    button.addEventListener("click", function () { setUiLanguage(button.dataset.uiLanguage); });
+  });
+  document.querySelectorAll("[data-language]").forEach(function (button) {
+    button.setAttribute("aria-pressed", String(button.dataset.language === state.language));
+  });
+  translateStaticUi(document.body);
 
   function updateConnectionStatus(showOnlineMessage) {
     if (navigator.onLine) {
@@ -1573,7 +1929,7 @@
       if (showOnlineMessage) notify("Koneksi kembali aktif.");
       return;
     }
-    connectionStatus.textContent = "Mode offline · bacaan dan perubahan lokal tetap tersedia";
+    connectionStatus.textContent = t("Mode offline · bacaan dan perubahan lokal tetap tersedia");
     connectionStatus.hidden = false;
   }
 
@@ -1617,7 +1973,7 @@
   function make(tag, className, text) {
     var node = document.createElement(tag);
     if (className) node.className = className;
-    if (text !== undefined) node.textContent = text;
+    if (text !== undefined) node.textContent = t(text);
     return node;
   }
 
@@ -1627,14 +1983,14 @@
 
   function notify(message) {
     clearTimeout(toastTimer);
-    toast.textContent = message;
+    toast.textContent = t(message);
     toast.hidden = false;
     toastTimer = setTimeout(function () { toast.hidden = true; }, 3200);
   }
 
   function updateAuthUI() {
     var signedIn = Boolean(account.user);
-    authTrigger.textContent = signedIn ? "Akun" : "Masuk";
+    authTrigger.textContent = t(signedIn ? "Akun" : "Masuk");
     loginView.hidden = signedIn;
     accountView.hidden = !signedIn;
     resetView.hidden = true;
@@ -1645,18 +2001,18 @@
     authMode = modeName;
     var signingUp = authMode === "signup";
     var forgotPassword = authMode === "forgot";
-    document.getElementById("auth-title").textContent = forgotPassword
+    document.getElementById("auth-title").textContent = t(forgotPassword
       ? "Pulihkan akunmu."
-      : (signingUp ? "Buat akun baru." : "Masuk ke akunmu.");
-    document.getElementById("auth-copy").textContent = forgotPassword
+      : (signingUp ? "Buat akun baru." : "Masuk ke akunmu."));
+    document.getElementById("auth-copy").textContent = t(forgotPassword
       ? "Masukkan email akunmu. Kami akan mengirim tautan untuk membuat password baru."
       : (signingUp
         ? "Daftar dengan email dan password agar catatanmu tersimpan lintas perangkat."
-        : "Gunakan email dan password untuk membuka sloka serta catatanmu.");
-    authSubmit.textContent = forgotPassword ? "Kirim link pemulihan" : (signingUp ? "Daftar akun" : "Masuk");
-    document.getElementById("auth-mode-toggle").textContent = forgotPassword
+        : "Gunakan email dan password untuk membuka sloka serta catatanmu."));
+    authSubmit.textContent = t(forgotPassword ? "Kirim link pemulihan" : (signingUp ? "Daftar akun" : "Masuk"));
+    document.getElementById("auth-mode-toggle").textContent = t(forgotPassword
       ? "← Kembali ke masuk"
-      : (signingUp ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar");
+      : (signingUp ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar"));
     document.getElementById("auth-forgot").hidden = signingUp || forgotPassword;
     document.getElementById("signup-service-note").hidden = !signingUp;
     document.getElementById("auth-password-label").hidden = forgotPassword;
@@ -1674,7 +2030,7 @@
     document.querySelectorAll("[data-password-target]").forEach(function (button) {
       var input = document.getElementById(button.dataset.passwordTarget);
       input.type = "password";
-      button.textContent = "Lihat";
+      button.textContent = t("Lihat");
       button.setAttribute("aria-pressed", "false");
     });
   }
@@ -1829,13 +2185,13 @@
     var mainTitle = filled(judul[state.language]) ? judul[state.language] : (filled(judul.id) ? judul.id : "Bab " + data.bab);
     document.getElementById("chapter-title").textContent = mainTitle;
     document.getElementById("sanskrit-title").textContent = filled(judul.sanskrit) ? judul.sanskrit : "";
-    document.getElementById("chapter-label").textContent = "Bhagawad Gita · Bab " + data.bab;
-    document.getElementById("chapter-meta").textContent = data.jumlah_sloka + " sloka";
+    document.getElementById("chapter-label").textContent = t("Bhagawad Gita · Bab " + data.bab);
+    document.getElementById("chapter-meta").textContent = t(data.jumlah_sloka + " sloka");
     var verses = Array.isArray(data.sloka) ? data.sloka : [];
     var available = verses.filter(readable).length;
     var translated = verses.filter(function (sloka) { return filled(sloka[state.language]); }).length;
-    var progressLabels = { id: "Terjemahan Indonesia", ban: "Terjemahan Bali", en: "English Translation" };
-    document.getElementById("translation-progress-label").textContent = progressLabels[state.language] || progressLabels.id;
+    var progressLabels = { id: "Terjemahan Indonesia", ban: "Terjemahan Bali", en: "Terjemahan Inggris" };
+    document.getElementById("translation-progress-label").textContent = t(progressLabels[state.language] || progressLabels.id);
     document.getElementById("content-progress").textContent = available + " / " + data.jumlah_sloka;
     document.getElementById("translation-progress").textContent = translated + " / " + data.jumlah_sloka;
     document.title = mainTitle + " — Gītā Bali";
@@ -1907,7 +2263,7 @@
       }
       var previous = liked;
       liked = !liked;
-      like.textContent = liked ? "♥ Tersimpan" : "♡ Simpan";
+      like.textContent = t(liked ? "♥ Tersimpan" : "♡ Simpan");
       if (liked) account.saved.add(cloudKey); else account.saved.delete(cloudKey);
       var result = liked
         ? await authClient.from("saved_slokas").upsert({ user_id: userId, chapter: chapterNumber, verse: sloka.no }, { onConflict: "user_id,chapter,verse" })
@@ -1915,7 +2271,7 @@
       if (result.error) {
         liked = previous;
         if (liked) account.saved.add(cloudKey); else account.saved.delete(cloudKey);
-        like.textContent = liked ? "♥ Tersimpan" : "♡ Simpan";
+        like.textContent = t(liked ? "♥ Tersimpan" : "♡ Simpan");
         notify("Perubahan belum tersimpan. Periksa koneksi lalu coba lagi.");
       } else {
         notify(liked ? "Sloka disimpan ke akunmu." : "Sloka dihapus dari akunmu.");
@@ -1937,7 +2293,7 @@
       if (existing) { existing.remove(); return; }
       var field = document.createElement("textarea");
       field.className = "note-box";
-      field.placeholder = "Tulis refleksimu untuk sloka ini…";
+      field.placeholder = t("Tulis refleksimu untuk sloka ini…");
       field.value = account.notes.get(cloudKey) || "";
       var saveTimer;
       field.addEventListener("input", function () {
@@ -2044,7 +2400,7 @@
       var input = document.getElementById(button.dataset.passwordTarget);
       var showing = input.type === "text";
       input.type = showing ? "password" : "text";
-      button.textContent = showing ? "Lihat" : "Sembunyi";
+      button.textContent = t(showing ? "Lihat" : "Sembunyikan");
       button.setAttribute("aria-pressed", String(!showing));
       input.focus();
     });
@@ -2209,14 +2565,18 @@
   }
   async function renderPersonalDashboard() {
     if (!personalDashboard) return; personalDashboard.hidden = false;
-    var events = await loadFamilyAgendaEvents(); var today = new Date(); var dayTitle = new Intl.DateTimeFormat("id-ID", { weekday:"long", day:"numeric", month:"long" }).format(today); var baliLine = "Kalender Bali belum tersedia";
+    var locale = uiLanguage === "en" ? "en-US" : "id-ID";
+    var events = await loadFamilyAgendaEvents(); var today = new Date(); var dayTitle = new Intl.DateTimeFormat(locale, { weekday:"long", day:"numeric", month:"long" }).format(today); var baliLine = t("Kalender Bali belum tersedia");
     if (window.BalineseDate) { var baliDate = new window.BalineseDate.BalineseDate(today); var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(baliDate).map(function (item) { return item.name; }); baliLine = baliDate.saptaWara.name + " " + baliDate.pancaWara.name + " · Wuku " + baliDate.wuku.name + (rahinan.length ? " · " + rahinan.join(" · ") : ""); }
     var sortedAgenda = events.slice().map(function (event) { return { event:event, date:dashboardAgendaDate(event) }; }).filter(function (item) { return !Number.isNaN(item.date.getTime()) && item.date >= new Date(today.getFullYear(), today.getMonth(), today.getDate()); }).sort(function (a,b) { return a.date - b.date; }); var next = sortedAgenda[0];
     var progress = null; try { progress = JSON.parse(localStorage.getItem("gitaBaliLastRead") || "null"); } catch (error) {}
-    var welcome = make("article", "dashboard-welcome"); welcome.append(make("span", "", account.user ? "Akun tersinkron" : "Dashboard Ruang Baca"), make("strong", "", account.user ? "Om swastyastu, " + account.user.email.split("@")[0] : "Om swastyastu"), make("p", "", account.saved.size + " sloka tersimpan · " + account.notes.size + " catatan" + (agendaSyncState === "ready" ? " · agenda tersinkron" : " · agenda tersimpan di perangkat")));
+    var accountSummary = account.saved.size + " sloka tersimpan · " + account.notes.size + " catatan" + (agendaSyncState === "ready" ? " · agenda tersinkron" : " · agenda tersimpan di perangkat");
+    if (uiLanguage === "en") accountSummary = account.saved.size + " saved sloka" + (account.saved.size === 1 ? "" : "s") + " · " + account.notes.size + " note" + (account.notes.size === 1 ? "" : "s") + (agendaSyncState === "ready" ? " · agenda synced" : " · agenda saved on this device");
+    if (uiLanguage === "ban") accountSummary = account.saved.size + " sloka kasimpen · " + account.notes.size + " catetan" + (agendaSyncState === "ready" ? " · agenda sampun selaras" : " · agenda kasimpen ring piranti");
+    var welcome = make("article", "dashboard-welcome"); welcome.append(make("span", "", account.user ? "Akun tersinkron" : "Dashboard Ruang Baca"), make("strong", "", account.user ? "Om swastyastu, " + account.user.email.split("@")[0] : "Om swastyastu"), make("p", "", accountSummary));
     function dashboardTile(label, title, textValue, href) { var tile = make("a", "dashboard-tile"); tile.href = href; tile.append(make("span", "", label), make("strong", "", title), make("p", "", textValue)); return tile; }
     var todayTile = dashboardTile("Hari ini", dayTitle, baliLine, "?mode=calendar&date=" + today.getFullYear() + "-" + String(today.getMonth()+1).padStart(2,"0") + "-" + String(today.getDate()).padStart(2,"0"));
-    var agendaTile = next ? dashboardTile("Agenda terdekat", next.event.name, new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(next.date), "?mode=agenda") : dashboardTile("Agenda keluarga", "Belum ada agenda", "Tambahkan otonan, odalan, atau kegiatan keluarga.", "?mode=agenda");
+    var agendaTile = next ? dashboardTile("Agenda terdekat", next.event.name, new Intl.DateTimeFormat(locale, { dateStyle:"long" }).format(next.date), "?mode=agenda") : dashboardTile("Agenda keluarga", "Belum ada agenda", "Tambahkan otonan, odalan, atau kegiatan keluarga.", "?mode=agenda");
     var readingTile = progress && progress.chapter ? dashboardTile("Lanjut membaca", "Bab " + progress.chapter + " · Sloka " + progress.verse, "Kembali ke bacaan terakhir.", "?bab=" + progress.chapter + "#sloka-" + progress.chapter + "-" + progress.verse) : dashboardTile("Mulai membaca", "Jelajahi Bhagawad Gita", "Pilih bagian dan bab pertamamu.", "?mode=explore");
     personalDashboard.replaceChildren(welcome, todayTile, agendaTile, readingTile);
   }
@@ -2226,7 +2586,7 @@
     return item;
   }
   function pageBack(href, label) {
-    var back = make("a", "upakara-back", "← Kembali"); back.href = href || "?mode=dashboard"; back.setAttribute("aria-label", label || "Kembali ke Dashboard Ruang Baca"); return back;
+    var back = make("a", "upakara-back", "← Kembali"); back.href = href || "?mode=dashboard"; back.setAttribute("aria-label", t(label || "Kembali ke Dashboard Ruang Baca")); return back;
   }
   function prepareUpakaraPage(className, backHref, backLabel) {
     document.querySelector(".home-inner").hidden = true;
@@ -3565,6 +3925,13 @@
       var controls=make("div", "toolbar random-controls");
       var randomLanguages=make("div", "language-switch");
       var randomSelection=[];
+      var randomStorageKey="gitaBaliRandomSelection";
+
+      function storeRandomSelection() {
+        sessionStorage.setItem(randomStorageKey, JSON.stringify(randomSelection.map(function(pick){
+          return String(pick.data.bab) + "-" + String(pick.sloka.no);
+        })));
+      }
 
       function renderCurrentSelection(activeIndex) {
         list.replaceChildren();
@@ -3572,6 +3939,7 @@
           state.data=pick.data;
           list.append(renderVerse(pick.sloka));
         });
+        storeRandomSelection();
         requestAnimationFrame(function(){
           list.scrollTop=Math.max(0, activeIndex) * list.clientHeight;
         });
@@ -3589,7 +3957,7 @@
         randomLanguages.append(languageButton);
       });
       var shuffle=make("button", "verse-action", "✦ Acak Lagi"); shuffle.type="button";
-      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="?mode=dashboard"; randomBack.setAttribute("aria-label", "Kembali ke Dashboard Ruang Baca");
+      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="?mode=dashboard"; randomBack.setAttribute("aria-label", t("Kembali ke Dashboard Ruang Baca"));
       controls.append(randomBack, randomLanguages, shuffle); reader.insertBefore(controls, list);
       var scrollCue=make("div", "scroll-cue");
       scrollCue.setAttribute("aria-hidden", "true");
@@ -3604,9 +3972,20 @@
           state.data=pick.data;
           list.append(renderVerse(pick.sloka));
         }
+        storeRandomSelection();
       }
       shuffle.addEventListener("click", function(){ addBatch(true); list.scrollTo({top:0,behavior:"smooth"}); showScrollCue(); });
-      addBatch(true);
+      var preserveRandom=sessionStorage.getItem("gitaBaliPreserveRandom")==="1";
+      sessionStorage.removeItem("gitaBaliPreserveRandom");
+      if (preserveRandom) {
+        var storedRandomKeys=[];
+        try { storedRandomKeys=JSON.parse(sessionStorage.getItem(randomStorageKey) || "[]"); } catch (error) {}
+        storedRandomKeys.forEach(function(key){
+          var match=verses.find(function(pick){ return String(pick.data.bab) + "-" + String(pick.sloka.no) === String(key); });
+          if (match) randomSelection.push(match);
+        });
+      }
+      if (randomSelection.length) renderCurrentSelection(0); else addBatch(true);
       list.addEventListener("scroll", function(){
         if (list.scrollTop > 24) scrollCue.classList.add("is-hidden");
         if (list.clientHeight + list.scrollTop >= list.scrollHeight - 300) addBatch(false);
@@ -3623,13 +4002,13 @@
     var back = document.createElement("a");
     back.className = "chapter-back";
     back.href = "?mode=group&group=" + groupNumber;
-    back.textContent = "← Bab " + chapterNumber;
-    back.setAttribute("aria-label", "Kembali ke daftar bab");
+    back.textContent = uiLanguage === "en" ? "← Chapter " + chapterNumber : "← Bab " + chapterNumber;
+    back.setAttribute("aria-label", t("Kembali ke daftar bab"));
     toolbar.prepend(back);
 
     var jumpSelect = document.createElement("select");
     jumpSelect.className = "verse-jump-select";
-    jumpSelect.setAttribute("aria-label", "Pilih nomor sloka");
+    jumpSelect.setAttribute("aria-label", t("Pilih nomor sloka"));
     data.sloka.filter(readable).forEach(function (sloka) {
       var option = document.createElement("option");
       option.value = sloka.no;
