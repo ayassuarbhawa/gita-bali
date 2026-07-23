@@ -1065,14 +1065,32 @@
     .intro-line { margin:1.15rem auto; }
     .nav-note, .nav-link { display: none; }
     .nav {
-      flex-wrap:wrap;
-      gap:.4rem;
-      padding:.55rem 0;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto auto;
+      gap:.55rem .45rem;
+      padding:.65rem 0 .75rem;
     }
-    .nav-actions { flex:1; justify-content:flex-end; gap:.4rem; }
-    .nav-language button { padding:.35rem .42rem; font-size:.54rem; }
-    .nav-actions { gap:.5rem; }
+    .nav-actions { display:contents; }
+    .nav-language {
+      grid-row:2;
+      grid-column:1 / -1;
+      justify-self:center;
+      width:min(100%,19rem);
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      padding:.22rem;
+    }
+    .nav-language button {
+      min-height:2.5rem;
+      padding:.45rem .35rem;
+      font-size:.62rem;
+      letter-spacing:.04em;
+    }
+    .install-trigger { grid-row:1; grid-column:2; }
+    .auth-trigger { grid-row:1; grid-column:3; }
     .auth-trigger, .install-trigger { min-height:2.2rem; padding:.5rem .7rem; }
+    @media (max-width: 22rem) {
+      .brand small { display:none; }
+    }
     .toolbar { position: static; grid-template-columns: 1fr; }
     .language-switch { display: grid; grid-template-columns: repeat(3, 1fr); }
     .sloka { grid-template-columns: 1fr; gap: .7rem; }
