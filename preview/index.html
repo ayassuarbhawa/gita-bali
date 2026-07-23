@@ -3564,13 +3564,27 @@
       home.hidden=true; chapterHero.hidden=true; reader.hidden=false; toolbar.hidden=true; resultMeta.hidden=true; list.classList.add("random-feed"); list.replaceChildren();
       var controls=make("div", "toolbar random-controls");
       var randomLanguages=make("div", "language-switch");
+      var randomSelection=[];
+
+      function renderCurrentSelection(activeIndex) {
+        list.replaceChildren();
+        randomSelection.forEach(function(pick){
+          state.data=pick.data;
+          list.append(renderVerse(pick.sloka));
+        });
+        requestAnimationFrame(function(){
+          list.scrollTop=Math.max(0, activeIndex) * list.clientHeight;
+        });
+      }
+
       [{key:"id",label:"Indonesia"},{key:"ban",label:"Bali"},{key:"en",label:"English"}].forEach(function(language){
         var languageButton=make("button", "", language.label); languageButton.type="button";
         languageButton.setAttribute("aria-pressed", String(state.language===language.key));
         languageButton.addEventListener("click", function(){
+          var activeIndex=Math.round(list.scrollTop / Math.max(1, list.clientHeight));
           state.language=language.key;
           randomLanguages.querySelectorAll("button").forEach(function(item){ item.setAttribute("aria-pressed", String(item===languageButton)); });
-          addBatch(true); list.scrollTop=0;
+          renderCurrentSelection(activeIndex);
         });
         randomLanguages.append(languageButton);
       });
@@ -3583,8 +3597,13 @@
       document.body.append(scrollCue);
       function showScrollCue() { scrollCue.classList.remove("is-hidden"); }
       function addBatch(reset) {
-        if (reset) list.replaceChildren();
-        for (var i=0;i<6;i++) { var pick=verses[Math.floor(Math.random()*verses.length)]; state.data=pick.data; list.append(renderVerse(pick.sloka)); }
+        if (reset) { randomSelection=[]; list.replaceChildren(); }
+        for (var i=0;i<6;i++) {
+          var pick=verses[Math.floor(Math.random()*verses.length)];
+          randomSelection.push(pick);
+          state.data=pick.data;
+          list.append(renderVerse(pick.sloka));
+        }
       }
       shuffle.addEventListener("click", function(){ addBatch(true); list.scrollTo({top:0,behavior:"smooth"}); showScrollCue(); });
       addBatch(true);
