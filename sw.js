@@ -1,4 +1,4 @@
-const CACHE_NAME = "gita-bali-v13";
+const CACHE_NAME = "gita-bali-v14";
 const CORE_ASSETS = [
   "/",
   "/?mode=dashboard",
@@ -10,6 +10,7 @@ const CORE_ASSETS = [
   "/preview/assets/gita-bali-icon-192.png",
   "/preview/assets/gita-bali-icon-512.png",
   "/preview/assets/gita-bali-intro.jpg",
+  "/data/random-reflections.json",
   "/data/bab-01.json",
   "/data/bab-02.json",
   "/data/bab-03.json",

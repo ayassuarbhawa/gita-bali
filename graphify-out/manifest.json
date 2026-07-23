@@ -115,8 +115,8 @@
     "semantic_hash": "de91b7fd1d8e6067f602f372cf50f20b"
   },
   "sw.js": {
-    "mtime": 1784822869.612685,
-    "ast_hash": "18a1696ec0143c65d3f62680e77e8df6",
+    "mtime": 1784823792.9740288,
+    "ast_hash": "88c3040dc1e121f01f6136970ea30953",
     "semantic_hash": ""
   },
   "tools/stats.mjs": {
@@ -250,8 +250,8 @@
     "semantic_hash": "d17c45b89d0886f826dc735aced7de69"
   },
   "preview/index.html": {
-    "mtime": 1784822859.1723678,
-    "ast_hash": "88ff1e2918c2cba48b8ab81d14f8af4e",
+    "mtime": 1784823862.8594341,
+    "ast_hash": "ccefec83e7e6f773c4e9ae30c1d96b61",
     "semantic_hash": ""
   },
   "preview/assets/gita-bali-icon-180.png": {
@@ -282,6 +282,11 @@
   "docs/feature-backlog-literasi-bali.md": {
     "mtime": 1784782506.6968203,
     "ast_hash": "4a29b3be35ad16ed9229c2224ccdf3f6",
+    "semantic_hash": ""
+  },
+  "data/random-reflections.json": {
+    "mtime": 1784823792.9725034,
+    "ast_hash": "37ae094bc69a6b5e423ab4e9dc59b2b2",
     "semantic_hash": ""
   }
 }

@@ -1118,7 +1118,7 @@
       "label": "networkFirst()",
       "file_type": "code",
       "source_file": "sw.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "sw_networkfirst",
       "community": 29,
@@ -1129,7 +1129,7 @@
       "label": "cacheFirst()",
       "file_type": "code",
       "source_file": "sw.js",
-      "source_location": "L59",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "sw_cachefirst",
       "community": 29,
@@ -1543,8 +1543,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "/graphify",
-      "id": "agents_skills_graphify_skill_graphify",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_skills_graphify_skill_graphify"
     },
     {
       "label": "Usage",
@@ -1557,8 +1557,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "usage",
-      "id": "agents_skills_graphify_skill_usage",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_skills_graphify_skill_usage"
     },
     {
       "label": "What graphify is for",
@@ -1571,8 +1571,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "what graphify is for",
-      "id": "agents_skills_graphify_skill_what_graphify_is_for",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_skills_graphify_skill_what_graphify_is_for"
     },
     {
       "label": "What You Must Do When Invoked",
@@ -1585,8 +1585,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "what you must do when invoked",
-      "id": "agents_skills_graphify_skill_what_you_must_do_when_invoked",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_skills_graphify_skill_what_you_must_do_when_invoked"
     },
     {
       "label": "Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)",
@@ -1599,8 +1599,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "step 0 - github repos and multi-path merge (only if a url or several paths)",
-      "id": "agents_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths"
     },
     {
       "label": "Step 1 - Ensure graphify is installed",
@@ -1613,8 +1613,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "step 1 - ensure graphify is installed",
-      "id": "agents_skills_graphify_skill_step_1_ensure_graphify_is_installed",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_skills_graphify_skill_step_1_ensure_graphify_is_installed"
     },
     {
       "label": "Detect the correct Python interpreter (handles uv tool, pipx, venv, system installs)",
@@ -1627,8 +1627,8 @@
       "contributor": null,
       "community": 100,
       "norm_label": "detect the correct python interpreter (handles uv tool, pipx, venv, system installs)",
-      "id": "agents_skills_graphify_skill_detect_the_correct_python_interpreter_handles_uv_tool_pipx_venv_system_installs",
-      "community_name": "Detect The Correct Python"
+      "community_name": "Detect The Correct Python",
+      "id": "agents_skills_graphify_skill_detect_the_correct_python_interpreter_handles_uv_tool_pipx_venv_system_installs"
     },
     {
       "label": "1. uv tool installs \u2014 most reliable on modern Mac/Linux",
@@ -1641,8 +1641,8 @@
       "contributor": null,
       "community": 90,
       "norm_label": "1. uv tool installs \u2014 most reliable on modern mac/linux",
-      "id": "agents_skills_graphify_skill_1_uv_tool_installs_most_reliable_on_modern_mac_linux",
-      "community_name": "1 Uv Tool Installs"
+      "community_name": "1 Uv Tool Installs",
+      "id": "agents_skills_graphify_skill_1_uv_tool_installs_most_reliable_on_modern_mac_linux"
     },
     {
       "label": "2. Read shebang from graphify binary (pipx and direct pip installs)",
@@ -1655,8 +1655,8 @@
       "contributor": null,
       "community": 91,
       "norm_label": "2. read shebang from graphify binary (pipx and direct pip installs)",
-      "id": "agents_skills_graphify_skill_2_read_shebang_from_graphify_binary_pipx_and_direct_pip_installs",
-      "community_name": "2 Read Shebang From"
+      "community_name": "2 Read Shebang From",
+      "id": "agents_skills_graphify_skill_2_read_shebang_from_graphify_binary_pipx_and_direct_pip_installs"
     },
     {
       "label": "3. Fall back to python3",
@@ -1669,8 +1669,8 @@
       "contributor": null,
       "community": 92,
       "norm_label": "3. fall back to python3",
-      "id": "agents_skills_graphify_skill_3_fall_back_to_python3",
-      "community_name": "3 Fall Back To"
+      "community_name": "3 Fall Back To",
+      "id": "agents_skills_graphify_skill_3_fall_back_to_python3"
     },
     {
       "label": "Write interpreter path for all subsequent steps (persists across invocations)",
@@ -1683,8 +1683,8 @@
       "contributor": null,
       "community": 130,
       "norm_label": "write interpreter path for all subsequent steps (persists across invocations)",
-      "id": "agents_skills_graphify_skill_write_interpreter_path_for_all_subsequent_steps_persists_across_invocations",
-      "community_name": "Write Interpreter Path For"
+      "community_name": "Write Interpreter Path For",
+      "id": "agents_skills_graphify_skill_write_interpreter_path_for_all_subsequent_steps_persists_across_invocations"
     },
     {
       "label": "Save scan root so graphify update (no args) knows where to look next time",
@@ -1697,8 +1697,8 @@
       "contributor": null,
       "community": 26,
       "norm_label": "save scan root so graphify update (no args) knows where to look next time",
-      "id": "agents_skills_graphify_skill_save_scan_root_so_graphify_update_no_args_knows_where_to_look_next_time",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "agents_skills_graphify_skill_save_scan_root_so_graphify_update_no_args_knows_where_to_look_next_time"
     },
     {
       "label": "Step 2 - Detect files",
@@ -1711,8 +1711,8 @@
       "contributor": null,
       "community": 26,
       "norm_label": "step 2 - detect files",
-      "id": "agents_skills_graphify_skill_step_2_detect_files",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "agents_skills_graphify_skill_step_2_detect_files"
     },
     {
       "label": "Step 2.5 - Video and audio (only if video files detected)",
@@ -1725,8 +1725,8 @@
       "contributor": null,
       "community": 26,
       "norm_label": "step 2.5 - video and audio (only if video files detected)",
-      "id": "agents_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "agents_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected"
     },
     {
       "label": "Step 3 - Extract entities and relationships",
@@ -1739,8 +1739,8 @@
       "contributor": null,
       "community": 26,
       "norm_label": "step 3 - extract entities and relationships",
-      "id": "agents_skills_graphify_skill_step_3_extract_entities_and_relationships",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "agents_skills_graphify_skill_step_3_extract_entities_and_relationships"
     },
     {
       "label": "Only content files go to semantic extraction. Code is already covered structurally",
@@ -1753,8 +1753,8 @@
       "contributor": null,
       "community": 114,
       "norm_label": "only content files go to semantic extraction. code is already covered structurally",
-      "id": "agents_skills_graphify_skill_only_content_files_go_to_semantic_extraction_code_is_already_covered_structurally",
-      "community_name": "Only Content Files Go"
+      "community_name": "Only Content Files Go",
+      "id": "agents_skills_graphify_skill_only_content_files_go_to_semantic_extraction_code_is_already_covered_structurally"
     },
     {
       "label": "by the AST pass (Part A); flattening every category here makes subagents re-read",
@@ -1767,8 +1767,8 @@
       "contributor": null,
       "community": 97,
       "norm_label": "by the ast pass (part a); flattening every category here makes subagents re-read",
-      "id": "agents_skills_graphify_skill_by_the_ast_pass_part_a_flattening_every_category_here_makes_subagents_re_read",
-      "community_name": "By The Ast Pass"
+      "community_name": "By The Ast Pass",
+      "id": "agents_skills_graphify_skill_by_the_ast_pass_part_a_flattening_every_category_here_makes_subagents_re_read"
     },
     {
       "label": "every source file (#1392). Video is transcribed to a document in Step 2.5 first.",
@@ -1781,8 +1781,8 @@
       "contributor": null,
       "community": 101,
       "norm_label": "every source file (#1392). video is transcribed to a document in step 2.5 first.",
-      "id": "agents_skills_graphify_skill_every_source_file_1392_video_is_transcribed_to_a_document_in_step_2_5_first",
-      "community_name": "Every Source File 1392"
+      "community_name": "Every Source File 1392",
+      "id": "agents_skills_graphify_skill_every_source_file_1392_video_is_transcribed_to_a_document_in_step_2_5_first"
     },
     {
       "label": "Always (re)write the cache file: write hits, else DELETE any leftover from a prior",
@@ -1795,8 +1795,8 @@
       "contributor": null,
       "community": 95,
       "norm_label": "always (re)write the cache file: write hits, else delete any leftover from a prior",
-      "id": "agents_skills_graphify_skill_always_re_write_the_cache_file_write_hits_else_delete_any_leftover_from_a_prior",
-      "community_name": "Always Re Write The"
+      "community_name": "Always Re Write The",
+      "id": "agents_skills_graphify_skill_always_re_write_the_cache_file_write_hits_else_delete_any_leftover_from_a_prior"
     },
     {
       "label": "run so Part C never merges a stale .graphifycached.json (#1392).",
@@ -1809,8 +1809,8 @@
       "contributor": null,
       "community": 122,
       "norm_label": "run so part c never merges a stale .graphifycached.json (#1392).",
-      "id": "agents_skills_graphify_skill_run_so_part_c_never_merges_a_stale_graphifycached_json_1392",
-      "community_name": "Run So Part C"
+      "community_name": "Run So Part C",
+      "id": "agents_skills_graphify_skill_run_so_part_c_never_merges_a_stale_graphifycached_json_1392"
     },
     {
       "label": "Then for chunk N: CHUNKPATH=\"${PROJECTROOT}/graphify-out/.graphifychunk0N.json\"",
@@ -1823,8 +1823,8 @@
       "contributor": null,
       "community": 128,
       "norm_label": "then for chunk n: chunkpath=\"${projectroot}/graphify-out/.graphifychunk0n.json\"",
-      "id": "agents_skills_graphify_skill_then_for_chunk_n_chunkpath_projectroot_graphify_out_graphifychunk0n_json",
-      "community_name": "Then For Chunk N"
+      "community_name": "Then For Chunk N",
+      "id": "agents_skills_graphify_skill_then_for_chunk_n_chunkpath_projectroot_graphify_out_graphifychunk0n_json"
     },
     {
       "label": "Merge: AST nodes first, semantic nodes deduplicated by id",
@@ -1837,8 +1837,8 @@
       "contributor": null,
       "community": 40,
       "norm_label": "merge: ast nodes first, semantic nodes deduplicated by id",
-      "id": "agents_skills_graphify_skill_merge_ast_nodes_first_semantic_nodes_deduplicated_by_id",
-      "community_name": "Step 4 Build Graph"
+      "community_name": "Step 4 Build Graph",
+      "id": "agents_skills_graphify_skill_merge_ast_nodes_first_semantic_nodes_deduplicated_by_id"
     },
     {
       "label": "Step 4 - Build graph, cluster, analyze, generate outputs",
@@ -1851,8 +1851,8 @@
       "contributor": null,
       "community": 40,
       "norm_label": "step 4 - build graph, cluster, analyze, generate outputs",
-      "id": "agents_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
-      "community_name": "Step 4 Build Graph"
+      "community_name": "Step 4 Build Graph",
+      "id": "agents_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs"
     },
     {
       "label": "root= mirrors the --update runbook (#1361): relativize sourcefile to the same",
@@ -1865,8 +1865,8 @@
       "contributor": null,
       "community": 120,
       "norm_label": "root= mirrors the --update runbook (#1361): relativize sourcefile to the same",
-      "id": "agents_skills_graphify_skill_root_mirrors_the_update_runbook_1361_relativize_sourcefile_to_the_same",
-      "community_name": "Root Mirrors The Update"
+      "community_name": "Root Mirrors The Update",
+      "id": "agents_skills_graphify_skill_root_mirrors_the_update_runbook_1361_relativize_sourcefile_to_the_same"
     },
     {
       "label": "base so the full build and incremental --update never drift apart on re-extract.",
@@ -1879,8 +1879,8 @@
       "contributor": null,
       "community": 96,
       "norm_label": "base so the full build and incremental --update never drift apart on re-extract.",
-      "id": "agents_skills_graphify_skill_base_so_the_full_build_and_incremental_update_never_drift_apart_on_re_extract",
-      "community_name": "Base So The Full"
+      "community_name": "Base So The Full",
+      "id": "agents_skills_graphify_skill_base_so_the_full_build_and_incremental_update_never_drift_apart_on_re_extract"
     },
     {
       "label": "Guard BEFORE any write: an empty extraction must not clobber a good graph.json /",
@@ -1893,8 +1893,8 @@
       "contributor": null,
       "community": 108,
       "norm_label": "guard before any write: an empty extraction must not clobber a good graph.json /",
-      "id": "agents_skills_graphify_skill_guard_before_any_write_an_empty_extraction_must_not_clobber_a_good_graph_json",
-      "community_name": "Guard Before Any Write"
+      "community_name": "Guard Before Any Write",
+      "id": "agents_skills_graphify_skill_guard_before_any_write_an_empty_extraction_must_not_clobber_a_good_graph_json"
     },
     {
       "label": "GRAPHREPORT.md / analysis sidecar. Check immediately after build (#1392).",
@@ -1907,8 +1907,8 @@
       "contributor": null,
       "community": 106,
       "norm_label": "graphreport.md / analysis sidecar. check immediately after build (#1392).",
-      "id": "agents_skills_graphify_skill_graphreport_md_analysis_sidecar_check_immediately_after_build_1392",
-      "community_name": "Graphreport Md Analysis Sidecar"
+      "community_name": "Graphreport Md Analysis Sidecar",
+      "id": "agents_skills_graphify_skill_graphreport_md_analysis_sidecar_check_immediately_after_build_1392"
     },
     {
       "label": "Placeholder questions - regenerated with real labels in Step 5",
@@ -1921,8 +1921,8 @@
       "contributor": null,
       "community": 117,
       "norm_label": "placeholder questions - regenerated with real labels in step 5",
-      "id": "agents_skills_graphify_skill_placeholder_questions_regenerated_with_real_labels_in_step_5",
-      "community_name": "Placeholder Questions Regenerated With"
+      "community_name": "Placeholder Questions Regenerated With",
+      "id": "agents_skills_graphify_skill_placeholder_questions_regenerated_with_real_labels_in_step_5"
     },
     {
       "label": "Export FIRST and honor the #479 shrink-guard: tojson returns False (writing",
@@ -1935,8 +1935,8 @@
       "contributor": null,
       "community": 102,
       "norm_label": "export first and honor the #479 shrink-guard: tojson returns false (writing",
-      "id": "agents_skills_graphify_skill_export_first_and_honor_the_479_shrink_guard_tojson_returns_false_writing",
-      "community_name": "Export First And Honor"
+      "community_name": "Export First And Honor",
+      "id": "agents_skills_graphify_skill_export_first_and_honor_the_479_shrink_guard_tojson_returns_false_writing"
     },
     {
       "label": "nothing) when the new graph is smaller than the existing graph.json. Only write",
@@ -1949,8 +1949,8 @@
       "contributor": null,
       "community": 113,
       "norm_label": "nothing) when the new graph is smaller than the existing graph.json. only write",
-      "id": "agents_skills_graphify_skill_nothing_when_the_new_graph_is_smaller_than_the_existing_graph_json_only_write",
-      "community_name": "Nothing When The New"
+      "community_name": "Nothing When The New",
+      "id": "agents_skills_graphify_skill_nothing_when_the_new_graph_is_smaller_than_the_existing_graph_json_only_write"
     },
     {
       "label": "GRAPHREPORT.md + the analysis sidecar when the graph was actually written, so",
@@ -1963,8 +1963,8 @@
       "contributor": null,
       "community": 107,
       "norm_label": "graphreport.md + the analysis sidecar when the graph was actually written, so",
-      "id": "agents_skills_graphify_skill_graphreport_md_the_analysis_sidecar_when_the_graph_was_actually_written_so",
-      "community_name": "Graphreport Md The Analysis"
+      "community_name": "Graphreport Md The Analysis",
+      "id": "agents_skills_graphify_skill_graphreport_md_the_analysis_sidecar_when_the_graph_was_actually_written_so"
     },
     {
       "label": "they never describe a graph that graph.json doesn't contain (#1392).",
@@ -1977,8 +1977,8 @@
       "contributor": null,
       "community": 33,
       "norm_label": "they never describe a graph that graph.json doesn't contain (#1392).",
-      "id": "agents_skills_graphify_skill_they_never_describe_a_graph_that_graph_json_doesn_t_contain_1392",
-      "community_name": "They Never Describe A"
+      "community_name": "They Never Describe A",
+      "id": "agents_skills_graphify_skill_they_never_describe_a_graph_that_graph_json_doesn_t_contain_1392"
     },
     {
       "label": "Step 4.5 - Graph health check (read-only integrity gate)",
@@ -1991,8 +1991,8 @@
       "contributor": null,
       "community": 33,
       "norm_label": "step 4.5 - graph health check (read-only integrity gate)",
-      "id": "agents_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate",
-      "community_name": "They Never Describe A"
+      "community_name": "They Never Describe A",
+      "id": "agents_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate"
     },
     {
       "label": "Step 5 - Label communities",
@@ -2005,8 +2005,8 @@
       "contributor": null,
       "community": 33,
       "norm_label": "step 5 - label communities",
-      "id": "agents_skills_graphify_skill_step_5_label_communities",
-      "community_name": "They Never Describe A"
+      "community_name": "They Never Describe A",
+      "id": "agents_skills_graphify_skill_step_5_label_communities"
     },
     {
       "label": "root= as in Step 4 / the --update runbook (#1361) \u2014 same base for node-key parity.",
@@ -2019,8 +2019,8 @@
       "contributor": null,
       "community": 119,
       "norm_label": "root= as in step 4 / the --update runbook (#1361) \u2014 same base for node-key parity.",
-      "id": "agents_skills_graphify_skill_root_as_in_step_4_the_update_runbook_1361_same_base_for_node_key_parity",
-      "community_name": "Root As In Step"
+      "community_name": "Root As In Step",
+      "id": "agents_skills_graphify_skill_root_as_in_step_4_the_update_runbook_1361_same_base_for_node_key_parity"
     },
     {
       "label": "LABELS - replace these with the names you chose above",
@@ -2033,8 +2033,8 @@
       "contributor": null,
       "community": 110,
       "norm_label": "labels - replace these with the names you chose above",
-      "id": "agents_skills_graphify_skill_labels_replace_these_with_the_names_you_chose_above",
-      "community_name": "Labels Replace These With"
+      "community_name": "Labels Replace These With",
+      "id": "agents_skills_graphify_skill_labels_replace_these_with_the_names_you_chose_above"
     },
     {
       "label": "Regenerate questions with real community labels (labels affect question phrasing)",
@@ -2047,8 +2047,8 @@
       "contributor": null,
       "community": 41,
       "norm_label": "regenerate questions with real community labels (labels affect question phrasing)",
-      "id": "agents_skills_graphify_skill_regenerate_questions_with_real_community_labels_labels_affect_question_phrasing",
-      "community_name": "Step 6 Generate Obsidian"
+      "community_name": "Step 6 Generate Obsidian",
+      "id": "agents_skills_graphify_skill_regenerate_questions_with_real_community_labels_labels_affect_question_phrasing"
     },
     {
       "label": "Step 6 - Generate Obsidian vault (opt-in) + HTML",
@@ -2061,8 +2061,8 @@
       "contributor": null,
       "community": 41,
       "norm_label": "step 6 - generate obsidian vault (opt-in) + html",
-      "id": "agents_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
-      "community_name": "Step 6 Generate Obsidian"
+      "community_name": "Step 6 Generate Obsidian",
+      "id": "agents_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html"
     },
     {
       "label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
@@ -2075,8 +2075,8 @@
       "contributor": null,
       "community": 116,
       "norm_label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
-      "id": "agents_skills_graphify_skill_or_with_custom_dir_graphify_export_obsidian_dir_vaults_my_project",
-      "community_name": "Or With Custom Dir"
+      "community_name": "Or With Custom Dir",
+      "id": "agents_skills_graphify_skill_or_with_custom_dir_graphify_export_obsidian_dir_vaults_my_project"
     },
     {
       "label": "or: graphify export html --no-viz",
@@ -2089,8 +2089,8 @@
       "contributor": null,
       "community": 32,
       "norm_label": "or: graphify export html --no-viz",
-      "id": "agents_skills_graphify_skill_or_graphify_export_html_no_viz",
-      "community_name": "Or Graphify Export Html"
+      "community_name": "Or Graphify Export Html",
+      "id": "agents_skills_graphify_skill_or_graphify_export_html_no_viz"
     },
     {
       "label": "Steps 6b-8 - Wiki, Neo4j, FalkorDB, SVG, GraphML, MCP, benchmark (only on their flags)",
@@ -2103,8 +2103,8 @@
       "contributor": null,
       "community": 32,
       "norm_label": "steps 6b-8 - wiki, neo4j, falkordb, svg, graphml, mcp, benchmark (only on their flags)",
-      "id": "agents_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags",
-      "community_name": "Or Graphify Export Html"
+      "community_name": "Or Graphify Export Html",
+      "id": "agents_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags"
     },
     {
       "label": "Step 9 - Save manifest, update cost tracker, clean up, and report",
@@ -2117,8 +2117,8 @@
       "contributor": null,
       "community": 32,
       "norm_label": "step 9 - save manifest, update cost tracker, clean up, and report",
-      "id": "agents_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
-      "community_name": "Or Graphify Export Html"
+      "community_name": "Or Graphify Export Html",
+      "id": "agents_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report"
     },
     {
       "label": "Save manifest for --update",
@@ -2131,8 +2131,8 @@
       "contributor": null,
       "community": 123,
       "norm_label": "save manifest for --update",
-      "id": "agents_skills_graphify_skill_save_manifest_for_update",
-      "community_name": "Save Manifest For Update"
+      "community_name": "Save Manifest For Update",
+      "id": "agents_skills_graphify_skill_save_manifest_for_update"
     },
     {
       "label": "In --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
@@ -2145,8 +2145,8 @@
       "contributor": null,
       "community": 109,
       "norm_label": "in --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
-      "id": "agents_skills_graphify_skill_in_update_mode_allfiles_carries_the_full_corpus_files_is_the_changed",
-      "community_name": "In Update Mode Allfiles"
+      "community_name": "In Update Mode Allfiles",
+      "id": "agents_skills_graphify_skill_in_update_mode_allfiles_carries_the_full_corpus_files_is_the_changed"
     },
     {
       "label": "subset. Full-rebuild mode populates only 'files', so the fallback handles that.",
@@ -2159,8 +2159,8 @@
       "contributor": null,
       "community": 126,
       "norm_label": "subset. full-rebuild mode populates only 'files', so the fallback handles that.",
-      "id": "agents_skills_graphify_skill_subset_full_rebuild_mode_populates_only_files_so_the_fallback_handles_that",
-      "community_name": "Subset Full Rebuild Mode"
+      "community_name": "Subset Full Rebuild Mode",
+      "id": "agents_skills_graphify_skill_subset_full_rebuild_mode_populates_only_files_so_the_fallback_handles_that"
     },
     {
       "label": "root= relativizes the manifest keys to the scan root (same base as the build),",
@@ -2173,8 +2173,8 @@
       "contributor": null,
       "community": 121,
       "norm_label": "root= relativizes the manifest keys to the scan root (same base as the build),",
-      "id": "agents_skills_graphify_skill_root_relativizes_the_manifest_keys_to_the_scan_root_same_base_as_the_build",
-      "community_name": "Root Relativizes The Manifest"
+      "community_name": "Root Relativizes The Manifest",
+      "id": "agents_skills_graphify_skill_root_relativizes_the_manifest_keys_to_the_scan_root_same_base_as_the_build"
     },
     {
       "label": "so the on-disk manifest is portable across clones/machines and a later --update",
@@ -2187,8 +2187,8 @@
       "contributor": null,
       "community": 125,
       "norm_label": "so the on-disk manifest is portable across clones/machines and a later --update",
-      "id": "agents_skills_graphify_skill_so_the_on_disk_manifest_is_portable_across_clones_machines_and_a_later_update",
-      "community_name": "So The On Disk"
+      "community_name": "So The On Disk",
+      "id": "agents_skills_graphify_skill_so_the_on_disk_manifest_is_portable_across_clones_machines_and_a_later_update"
     },
     {
       "label": "matches cached files instead of missing every one (#1417).",
@@ -2201,8 +2201,8 @@
       "contributor": null,
       "community": 111,
       "norm_label": "matches cached files instead of missing every one (#1417).",
-      "id": "agents_skills_graphify_skill_matches_cached_files_instead_of_missing_every_one_1417",
-      "community_name": "Matches Cached Files Instead"
+      "community_name": "Matches Cached Files Instead",
+      "id": "agents_skills_graphify_skill_matches_cached_files_instead_of_missing_every_one_1417"
     },
     {
       "label": "Only stamp semantic files (docs/papers/images) that ACTUALLY produced output:",
@@ -2215,8 +2215,8 @@
       "contributor": null,
       "community": 115,
       "norm_label": "only stamp semantic files (docs/papers/images) that actually produced output:",
-      "id": "agents_skills_graphify_skill_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output",
-      "community_name": "Only Stamp Semantic Files"
+      "community_name": "Only Stamp Semantic Files",
+      "id": "agents_skills_graphify_skill_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output"
     },
     {
       "label": "a detected file whose chunk failed or was omitted must stay unstamped so the",
@@ -2229,8 +2229,8 @@
       "contributor": null,
       "community": 93,
       "norm_label": "a detected file whose chunk failed or was omitted must stay unstamped so the",
-      "id": "agents_skills_graphify_skill_a_detected_file_whose_chunk_failed_or_was_omitted_must_stay_unstamped_so_the",
-      "community_name": "A Detected File Whose"
+      "community_name": "A Detected File Whose",
+      "id": "agents_skills_graphify_skill_a_detected_file_whose_chunk_failed_or_was_omitted_must_stay_unstamped_so_the"
     },
     {
       "label": "next --update re-queues it, otherwise it is marked done and its content is lost",
@@ -2243,8 +2243,8 @@
       "contributor": null,
       "community": 112,
       "norm_label": "next --update re-queues it, otherwise it is marked done and its content is lost",
-      "id": "agents_skills_graphify_skill_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content_is_lost",
-      "community_name": "Next Update Re Queues"
+      "community_name": "Next Update Re Queues",
+      "id": "agents_skills_graphify_skill_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content_is_lost"
     },
     {
       "label": "forever (#2015). This mirrors the library extract path exactly",
@@ -2257,8 +2257,8 @@
       "contributor": null,
       "community": 105,
       "norm_label": "forever (#2015). this mirrors the library extract path exactly",
-      "id": "agents_skills_graphify_skill_forever_2015_this_mirrors_the_library_extract_path_exactly",
-      "community_name": "Forever 2015 This Mirrors"
+      "community_name": "Forever 2015 This Mirrors",
+      "id": "agents_skills_graphify_skill_forever_2015_this_mirrors_the_library_extract_path_exactly"
     },
     {
       "label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus); do not stamp the",
@@ -2271,8 +2271,8 @@
       "contributor": null,
       "community": 98,
       "norm_label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus); do not stamp the",
-      "id": "agents_skills_graphify_skill_cli_stampedmanifestfiles_clearsemantic_scancorpus_do_not_stamp_the",
-      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus"
+      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus",
+      "id": "agents_skills_graphify_skill_cli_stampedmanifestfiles_clearsemantic_scancorpus_do_not_stamp_the"
     },
     {
       "label": "raw corpus. Code files are always stamped (AST is deterministic); only semantic",
@@ -2285,8 +2285,8 @@
       "contributor": null,
       "community": 118,
       "norm_label": "raw corpus. code files are always stamped (ast is deterministic); only semantic",
-      "id": "agents_skills_graphify_skill_raw_corpus_code_files_are_always_stamped_ast_is_deterministic_only_semantic",
-      "community_name": "Raw Corpus Code Files"
+      "community_name": "Raw Corpus Code Files",
+      "id": "agents_skills_graphify_skill_raw_corpus_code_files_are_always_stamped_ast_is_deterministic_only_semantic"
     },
     {
       "label": "types are gated on output.",
@@ -2299,8 +2299,8 @@
       "contributor": null,
       "community": 129,
       "norm_label": "types are gated on output.",
-      "id": "agents_skills_graphify_skill_types_are_gated_on_output",
-      "community_name": "Types Are Gated On"
+      "community_name": "Types Are Gated On",
+      "id": "agents_skills_graphify_skill_types_are_gated_on_output"
     },
     {
       "label": "Files dispatched this run (the changed subset) but NOT stamped above still carry",
@@ -2313,8 +2313,8 @@
       "contributor": null,
       "community": 103,
       "norm_label": "files dispatched this run (the changed subset) but not stamped above still carry",
-      "id": "agents_skills_graphify_skill_files_dispatched_this_run_the_changed_subset_but_not_stamped_above_still_carry",
-      "community_name": "Files Dispatched This Run"
+      "community_name": "Files Dispatched This Run",
+      "id": "agents_skills_graphify_skill_files_dispatched_this_run_the_changed_subset_but_not_stamped_above_still_carry"
     },
     {
       "label": "a stale semantichash from a prior run; clear it so detectincremental re-queues",
@@ -2327,8 +2327,8 @@
       "contributor": null,
       "community": 94,
       "norm_label": "a stale semantichash from a prior run; clear it so detectincremental re-queues",
-      "id": "agents_skills_graphify_skill_a_stale_semantichash_from_a_prior_run_clear_it_so_detectincremental_re_queues",
-      "community_name": "A Stale Semantichash From"
+      "community_name": "A Stale Semantichash From",
+      "id": "agents_skills_graphify_skill_a_stale_semantichash_from_a_prior_run_clear_it_so_detectincremental_re_queues"
     },
     {
       "label": "them instead of reading them as unchanged (#1948).",
@@ -2341,8 +2341,8 @@
       "contributor": null,
       "community": 127,
       "norm_label": "them instead of reading them as unchanged (#1948).",
-      "id": "agents_skills_graphify_skill_them_instead_of_reading_them_as_unchanged_1948",
-      "community_name": "Them Instead Of Reading"
+      "community_name": "Them Instead Of Reading",
+      "id": "agents_skills_graphify_skill_them_instead_of_reading_them_as_unchanged_1948"
     },
     {
       "label": "scancorpus = the RAW full corpus (not the stamp-filtered subset) so in-root",
@@ -2355,8 +2355,8 @@
       "contributor": null,
       "community": 124,
       "norm_label": "scancorpus = the raw full corpus (not the stamp-filtered subset) so in-root",
-      "id": "agents_skills_graphify_skill_scancorpus_the_raw_full_corpus_not_the_stamp_filtered_subset_so_in_root",
-      "community_name": "Scancorpus The Raw Full"
+      "community_name": "Scancorpus The Raw Full",
+      "id": "agents_skills_graphify_skill_scancorpus_the_raw_full_corpus_not_the_stamp_filtered_subset_so_in_root"
     },
     {
       "label": "files newly excluded since last run are dropped rather than masquerading as",
@@ -2369,8 +2369,8 @@
       "contributor": null,
       "community": 104,
       "norm_label": "files newly excluded since last run are dropped rather than masquerading as",
-      "id": "agents_skills_graphify_skill_files_newly_excluded_since_last_run_are_dropped_rather_than_masquerading_as",
-      "community_name": "Files Newly Excluded Since"
+      "community_name": "Files Newly Excluded Since",
+      "id": "agents_skills_graphify_skill_files_newly_excluded_since_last_run_are_dropped_rather_than_masquerading_as"
     },
     {
       "label": "deletions; untouched files' prior rows are still preserved (#1908).",
@@ -2383,8 +2383,8 @@
       "contributor": null,
       "community": 99,
       "norm_label": "deletions; untouched files' prior rows are still preserved (#1908).",
-      "id": "agents_skills_graphify_skill_deletions_untouched_files_prior_rows_are_still_preserved_1908",
-      "community_name": "Deletions Untouched Files Prior"
+      "community_name": "Deletions Untouched Files Prior",
+      "id": "agents_skills_graphify_skill_deletions_untouched_files_prior_rows_are_still_preserved_1908"
     },
     {
       "label": "Update cumulative cost tracker",
@@ -2397,8 +2397,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "update cumulative cost tracker",
-      "id": "agents_skills_graphify_skill_update_cumulative_cost_tracker",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_update_cumulative_cost_tracker"
     },
     {
       "label": "Interpreter guard for subcommands",
@@ -2411,8 +2411,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "interpreter guard for subcommands",
-      "id": "agents_skills_graphify_skill_interpreter_guard_for_subcommands",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_interpreter_guard_for_subcommands"
     },
     {
       "label": "For --update and --cluster-only",
@@ -2425,8 +2425,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "for --update and --cluster-only",
-      "id": "agents_skills_graphify_skill_for_update_and_cluster_only",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_for_update_and_cluster_only"
     },
     {
       "label": "For /graphify query",
@@ -2439,8 +2439,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "for /graphify query",
-      "id": "agents_skills_graphify_skill_for_graphify_query",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_for_graphify_query"
     },
     {
       "label": "For /graphify add and --watch",
@@ -2453,8 +2453,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "for /graphify add and --watch",
-      "id": "agents_skills_graphify_skill_for_graphify_add_and_watch",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_for_graphify_add_and_watch"
     },
     {
       "label": "For the commit hook and native AGENTS.md integration",
@@ -2467,8 +2467,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "for the commit hook and native agents.md integration",
-      "id": "agents_skills_graphify_skill_for_the_commit_hook_and_native_agents_md_integration",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_for_the_commit_hook_and_native_agents_md_integration"
     },
     {
       "label": "Honesty Rules",
@@ -2481,8 +2481,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "honesty rules",
-      "id": "agents_skills_graphify_skill_honesty_rules",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "agents_skills_graphify_skill_honesty_rules"
     },
     {
       "label": "graphify reference: add a URL and watch a folder",
@@ -2495,8 +2495,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "graphify reference: add a url and watch a folder",
-      "id": "agents_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
-      "community_name": "Graphify Reference Add A"
+      "community_name": "Graphify Reference Add A",
+      "id": "agents_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder"
     },
     {
       "label": "For /graphify add",
@@ -2509,8 +2509,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "for /graphify add",
-      "id": "agents_skills_graphify_references_add_watch_for_graphify_add",
-      "community_name": "Graphify Reference Add A"
+      "community_name": "Graphify Reference Add A",
+      "id": "agents_skills_graphify_references_add_watch_for_graphify_add"
     },
     {
       "label": "For --watch",
@@ -2523,8 +2523,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "for --watch",
-      "id": "agents_skills_graphify_references_add_watch_for_watch",
-      "community_name": "Graphify Reference Add A"
+      "community_name": "Graphify Reference Add A",
+      "id": "agents_skills_graphify_references_add_watch_for_watch"
     },
     {
       "label": "graphify reference: extra exports and benchmark",
@@ -2537,8 +2537,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "graphify reference: extra exports and benchmark",
-      "id": "agents_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark"
     },
     {
       "label": "Step 6b - Wiki (only if --wiki flag)",
@@ -2551,8 +2551,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 6b - wiki (only if --wiki flag)",
-      "id": "agents_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag"
     },
     {
       "label": "Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)",
@@ -2565,8 +2565,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7 - neo4j export (only if --neo4j or --neo4j-push flag)",
-      "id": "agents_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag"
     },
     {
       "label": "Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag)",
@@ -2579,8 +2579,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7a - falkordb export (only if --falkordb or --falkordb-push flag)",
-      "id": "agents_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag"
     },
     {
       "label": "Step 7b - SVG export (only if --svg flag)",
@@ -2593,8 +2593,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7b - svg export (only if --svg flag)",
-      "id": "agents_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag"
     },
     {
       "label": "Step 7c - GraphML export (only if --graphml flag)",
@@ -2607,8 +2607,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7c - graphml export (only if --graphml flag)",
-      "id": "agents_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag"
     },
     {
       "label": "Step 7d - MCP server (only if --mcp flag)",
@@ -2621,8 +2621,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7d - mcp server (only if --mcp flag)",
-      "id": "agents_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag"
     },
     {
       "label": "Step 8 - Token reduction benchmark (only if totalwords > 5000)",
@@ -2635,8 +2635,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 8 - token reduction benchmark (only if totalwords > 5000)",
-      "id": "agents_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_totalwords_5000",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "agents_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_totalwords_5000"
     },
     {
       "label": "graphify reference: extraction subagent prompt",
@@ -2649,8 +2649,8 @@
       "contributor": null,
       "community": 38,
       "norm_label": "graphify reference: extraction subagent prompt",
-      "id": "agents_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt",
-      "community_name": "Graphify Reference Extraction Subagent"
+      "community_name": "Graphify Reference Extraction Subagent",
+      "id": "agents_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt"
     },
     {
       "label": "graphify reference: GitHub clone and cross-repo merge",
@@ -2663,8 +2663,8 @@
       "contributor": null,
       "community": 23,
       "norm_label": "graphify reference: github clone and cross-repo merge",
-      "id": "agents_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
-      "community_name": "Graphify Reference Github Clone"
+      "community_name": "Graphify Reference Github Clone",
+      "id": "agents_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge"
     },
     {
       "label": "Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)",
@@ -2677,8 +2677,8 @@
       "contributor": null,
       "community": 23,
       "norm_label": "step 0 - clone github repo(s) (only if a github url was given)",
-      "id": "agents_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
-      "community_name": "Graphify Reference Github Clone"
+      "community_name": "Graphify Reference Github Clone",
+      "id": "agents_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given"
     },
     {
       "label": "Use LOCALPATH as the target for all subsequent steps",
@@ -2691,8 +2691,8 @@
       "contributor": null,
       "community": 52,
       "norm_label": "use localpath as the target for all subsequent steps",
-      "id": "agents_skills_graphify_references_github_and_merge_use_localpath_as_the_target_for_all_subsequent_steps",
-      "community_name": "Use Localpath As The"
+      "community_name": "Use Localpath As The",
+      "id": "agents_skills_graphify_references_github_and_merge_use_localpath_as_the_target_for_all_subsequent_steps"
     },
     {
       "label": "Clone each repo, run the full pipeline on each, then merge",
@@ -2705,8 +2705,8 @@
       "contributor": null,
       "community": 48,
       "norm_label": "clone each repo, run the full pipeline on each, then merge",
-      "id": "agents_skills_graphify_references_github_and_merge_clone_each_repo_run_the_full_pipeline_on_each_then_merge",
-      "community_name": "Clone Each Repo Run"
+      "community_name": "Clone Each Repo Run",
+      "id": "agents_skills_graphify_references_github_and_merge_clone_each_repo_run_the_full_pipeline_on_each_then_merge"
     },
     {
       "label": "Run /graphify on each local path to produce their graph.json files",
@@ -2719,8 +2719,8 @@
       "contributor": null,
       "community": 49,
       "norm_label": "run /graphify on each local path to produce their graph.json files",
-      "id": "agents_skills_graphify_references_github_and_merge_run_graphify_on_each_local_path_to_produce_their_graph_json_files",
-      "community_name": "Run Graphify On Each"
+      "community_name": "Run Graphify On Each",
+      "id": "agents_skills_graphify_references_github_and_merge_run_graphify_on_each_local_path_to_produce_their_graph_json_files"
     },
     {
       "label": "Then merge:",
@@ -2733,8 +2733,8 @@
       "contributor": null,
       "community": 50,
       "norm_label": "then merge:",
-      "id": "agents_skills_graphify_references_github_and_merge_then_merge",
-      "community_name": "Then Merge"
+      "community_name": "Then Merge",
+      "id": "agents_skills_graphify_references_github_and_merge_then_merge"
     },
     {
       "label": "Add --backend gemini|kimi|openai|deepseek|claude-cli depending on which API key you have set",
@@ -2747,8 +2747,8 @@
       "contributor": null,
       "community": 47,
       "norm_label": "add --backend gemini|kimi|openai|deepseek|claude-cli depending on which api key you have set",
-      "id": "agents_skills_graphify_references_github_and_merge_add_backend_gemini_kimi_openai_deepseek_claude_cli_depending_on_which_api_key_you_have_set",
-      "community_name": "Add Backend Gemini Kimi"
+      "community_name": "Add Backend Gemini Kimi",
+      "id": "agents_skills_graphify_references_github_and_merge_add_backend_gemini_kimi_openai_deepseek_claude_cli_depending_on_which_api_key_you_have_set"
     },
     {
       "label": "Then merge at the project root:",
@@ -2761,8 +2761,8 @@
       "contributor": null,
       "community": 51,
       "norm_label": "then merge at the project root:",
-      "id": "agents_skills_graphify_references_github_and_merge_then_merge_at_the_project_root",
-      "community_name": "Then Merge At The"
+      "community_name": "Then Merge At The",
+      "id": "agents_skills_graphify_references_github_and_merge_then_merge_at_the_project_root"
     },
     {
       "label": "graphify reference: commit hook and native AGENTS.md integration",
@@ -2775,8 +2775,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "graphify reference: commit hook and native agents.md integration",
-      "id": "agents_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_agents_md_integration",
-      "community_name": "Graphify Reference Commit Hook"
+      "community_name": "Graphify Reference Commit Hook",
+      "id": "agents_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_agents_md_integration"
     },
     {
       "label": "For git commit hook",
@@ -2789,8 +2789,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "for git commit hook",
-      "id": "agents_skills_graphify_references_hooks_for_git_commit_hook",
-      "community_name": "Graphify Reference Commit Hook"
+      "community_name": "Graphify Reference Commit Hook",
+      "id": "agents_skills_graphify_references_hooks_for_git_commit_hook"
     },
     {
       "label": "For native AGENTS.md integration",
@@ -2803,8 +2803,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "for native agents.md integration",
-      "id": "agents_skills_graphify_references_hooks_for_native_agents_md_integration",
-      "community_name": "Graphify Reference Commit Hook"
+      "community_name": "Graphify Reference Commit Hook",
+      "id": "agents_skills_graphify_references_hooks_for_native_agents_md_integration"
     },
     {
       "label": "graphify reference: query, path, explain",
@@ -2817,8 +2817,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "graphify reference: query, path, explain",
-      "id": "agents_skills_graphify_references_query_graphify_reference_query_path_explain",
-      "community_name": "Graphify Reference Query Path"
+      "community_name": "Graphify Reference Query Path",
+      "id": "agents_skills_graphify_references_query_graphify_reference_query_path_explain"
     },
     {
       "label": "Step 0 \u2014 Constrained query expansion (REQUIRED before traversal)",
@@ -2831,8 +2831,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "step 0 \u2014 constrained query expansion (required before traversal)",
-      "id": "agents_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal",
-      "community_name": "Graphify Reference Query Path"
+      "community_name": "Graphify Reference Query Path",
+      "id": "agents_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal"
     },
     {
       "label": "Step 1 \u2014 Traversal",
@@ -2845,8 +2845,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "step 1 \u2014 traversal",
-      "id": "agents_skills_graphify_references_query_step_1_traversal",
-      "community_name": "Graphify Reference Query Path"
+      "community_name": "Graphify Reference Query Path",
+      "id": "agents_skills_graphify_references_query_step_1_traversal"
     },
     {
       "label": "or: graphify query \"QUESTION\" --dfs --budget 3000",
@@ -2859,8 +2859,8 @@
       "contributor": null,
       "community": 55,
       "norm_label": "or: graphify query \"question\" --dfs --budget 3000",
-      "id": "agents_skills_graphify_references_query_or_graphify_query_question_dfs_budget_3000",
-      "community_name": "Or Graphify Query Question"
+      "community_name": "Or Graphify Query Question",
+      "id": "agents_skills_graphify_references_query_or_graphify_query_question_dfs_budget_3000"
     },
     {
       "label": "Find best-matching start nodes",
@@ -2873,8 +2873,8 @@
       "contributor": null,
       "community": 54,
       "norm_label": "find best-matching start nodes",
-      "id": "agents_skills_graphify_references_query_find_best_matching_start_nodes",
-      "community_name": "Find Best Matching Start"
+      "community_name": "Find Best Matching Start",
+      "id": "agents_skills_graphify_references_query_find_best_matching_start_nodes"
     },
     {
       "label": "Token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
@@ -2887,8 +2887,8 @@
       "contributor": null,
       "community": 56,
       "norm_label": "token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
-      "id": "agents_skills_graphify_references_query_token_budget_aware_output_rank_by_relevance_cut_at_budget_4_chars_token",
-      "community_name": "Token Budget Aware Output"
+      "community_name": "Token Budget Aware Output",
+      "id": "agents_skills_graphify_references_query_token_budget_aware_output_rank_by_relevance_cut_at_budget_4_chars_token"
     },
     {
       "label": "Score each node by term overlap for ranked output",
@@ -2901,8 +2901,8 @@
       "contributor": null,
       "community": 31,
       "norm_label": "score each node by term overlap for ranked output",
-      "id": "agents_skills_graphify_references_query_score_each_node_by_term_overlap_for_ranked_output",
-      "community_name": "Score Each Node By"
+      "community_name": "Score Each Node By",
+      "id": "agents_skills_graphify_references_query_score_each_node_by_term_overlap_for_ranked_output"
     },
     {
       "label": "For /graphify path",
@@ -2915,8 +2915,8 @@
       "contributor": null,
       "community": 31,
       "norm_label": "for /graphify path",
-      "id": "agents_skills_graphify_references_query_for_graphify_path",
-      "community_name": "Score Each Node By"
+      "community_name": "Score Each Node By",
+      "id": "agents_skills_graphify_references_query_for_graphify_path"
     },
     {
       "label": "For /graphify explain",
@@ -2929,8 +2929,8 @@
       "contributor": null,
       "community": 31,
       "norm_label": "for /graphify explain",
-      "id": "agents_skills_graphify_references_query_for_graphify_explain",
-      "community_name": "Score Each Node By"
+      "community_name": "Score Each Node By",
+      "id": "agents_skills_graphify_references_query_for_graphify_explain"
     },
     {
       "label": "Find best matching node",
@@ -2943,8 +2943,8 @@
       "contributor": null,
       "community": 53,
       "norm_label": "find best matching node",
-      "id": "agents_skills_graphify_references_query_find_best_matching_node",
-      "community_name": "Find Best Matching Node"
+      "community_name": "Find Best Matching Node",
+      "id": "agents_skills_graphify_references_query_find_best_matching_node"
     },
     {
       "label": "graphify reference: transcribe video and audio",
@@ -2957,8 +2957,8 @@
       "contributor": null,
       "community": 24,
       "norm_label": "graphify reference: transcribe video and audio",
-      "id": "agents_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
-      "community_name": "Graphify Reference Transcribe Video"
+      "community_name": "Graphify Reference Transcribe Video",
+      "id": "agents_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio"
     },
     {
       "label": "Step 2.5 - Transcribe video / audio files (only if video files detected)",
@@ -2971,8 +2971,8 @@
       "contributor": null,
       "community": 24,
       "norm_label": "step 2.5 - transcribe video / audio files (only if video files detected)",
-      "id": "agents_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
-      "community_name": "Graphify Reference Transcribe Video"
+      "community_name": "Graphify Reference Transcribe Video",
+      "id": "agents_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected"
     },
     {
       "label": "Write the JSON from Python (NOT a shell '>' redirect): transcribeall/Whisper",
@@ -2985,8 +2985,8 @@
       "contributor": null,
       "community": 58,
       "norm_label": "write the json from python (not a shell '>' redirect): transcribeall/whisper",
-      "id": "agents_skills_graphify_references_transcribe_write_the_json_from_python_not_a_shell_redirect_transcribeall_whisper",
-      "community_name": "Write The Json From"
+      "community_name": "Write The Json From",
+      "id": "agents_skills_graphify_references_transcribe_write_the_json_from_python_not_a_shell_redirect_transcribeall_whisper"
     },
     {
       "label": "print progress to stdout, which would otherwise corrupt the JSON file (#1392).",
@@ -2999,8 +2999,8 @@
       "contributor": null,
       "community": 57,
       "norm_label": "print progress to stdout, which would otherwise corrupt the json file (#1392).",
-      "id": "agents_skills_graphify_references_transcribe_print_progress_to_stdout_which_would_otherwise_corrupt_the_json_file_1392",
-      "community_name": "Print Progress To Stdout"
+      "community_name": "Print Progress To Stdout",
+      "id": "agents_skills_graphify_references_transcribe_print_progress_to_stdout_which_would_otherwise_corrupt_the_json_file_1392"
     },
     {
       "label": "graphify reference: incremental update and cluster-only",
@@ -3013,8 +3013,8 @@
       "contributor": null,
       "community": 25,
       "norm_label": "graphify reference: incremental update and cluster-only",
-      "id": "agents_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
-      "community_name": "Graphify Reference Incremental Update"
+      "community_name": "Graphify Reference Incremental Update",
+      "id": "agents_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only"
     },
     {
       "label": "For --update (incremental re-extraction)",
@@ -3027,8 +3027,8 @@
       "contributor": null,
       "community": 25,
       "norm_label": "for --update (incremental re-extraction)",
-      "id": "agents_skills_graphify_references_update_for_update_incremental_re_extraction",
-      "community_name": "Graphify Reference Incremental Update"
+      "community_name": "Graphify Reference Incremental Update",
+      "id": "agents_skills_graphify_references_update_for_update_incremental_re_extraction"
     },
     {
       "label": "Load new extraction and incremental state",
@@ -3041,8 +3041,8 @@
       "contributor": null,
       "community": 69,
       "norm_label": "load new extraction and incremental state",
-      "id": "agents_skills_graphify_references_update_load_new_extraction_and_incremental_state",
-      "community_name": "Load New Extraction And"
+      "community_name": "Load New Extraction And",
+      "id": "agents_skills_graphify_references_update_load_new_extraction_and_incremental_state"
     },
     {
       "label": "prunesources is ONLY for genuinely DELETED files. Changed/re-extracted files are",
@@ -3055,8 +3055,8 @@
       "contributor": null,
       "community": 78,
       "norm_label": "prunesources is only for genuinely deleted files. changed/re-extracted files are",
-      "id": "agents_skills_graphify_references_update_prunesources_is_only_for_genuinely_deleted_files_changed_re_extracted_files_are",
-      "community_name": "Prunesources Is Only For"
+      "community_name": "Prunesources Is Only For",
+      "id": "agents_skills_graphify_references_update_prunesources_is_only_for_genuinely_deleted_files_changed_re_extracted_files_are"
     },
     {
       "label": "handled by buildmerge's replace-on-re-extract (#1344): every sourcefile in",
@@ -3069,8 +3069,8 @@
       "contributor": null,
       "community": 67,
       "norm_label": "handled by buildmerge's replace-on-re-extract (#1344): every sourcefile in",
-      "id": "agents_skills_graphify_references_update_handled_by_buildmerge_s_replace_on_re_extract_1344_every_sourcefile_in",
-      "community_name": "Handled By Buildmerge S"
+      "community_name": "Handled By Buildmerge S",
+      "id": "agents_skills_graphify_references_update_handled_by_buildmerge_s_replace_on_re_extract_1344_every_sourcefile_in"
     },
     {
       "label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
@@ -3083,8 +3083,8 @@
       "contributor": null,
       "community": 71,
       "norm_label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
-      "id": "agents_skills_graphify_references_update_newchunks_is_dropped_from_the_base_before_merge_so_old_stale_nodes_don_t_survive",
-      "community_name": "Newchunks Is Dropped From"
+      "community_name": "Newchunks Is Dropped From",
+      "id": "agents_skills_graphify_references_update_newchunks_is_dropped_from_the_base_before_merge_so_old_stale_nodes_don_t_survive"
     },
     {
       "label": "Do NOT add changed here: with root= passed, pruneset relativizes to the same base",
@@ -3097,8 +3097,8 @@
       "contributor": null,
       "community": 65,
       "norm_label": "do not add changed here: with root= passed, pruneset relativizes to the same base",
-      "id": "agents_skills_graphify_references_update_do_not_add_changed_here_with_root_passed_pruneset_relativizes_to_the_same_base",
-      "community_name": "Do Not Add Changed"
+      "community_name": "Do Not Add Changed",
+      "id": "agents_skills_graphify_references_update_do_not_add_changed_here_with_root_passed_pruneset_relativizes_to_the_same_base"
     },
     {
       "label": "as the freshly merged nodes and would DELETE the re-extracted content (#1178 is moot",
@@ -3111,8 +3111,8 @@
       "contributor": null,
       "community": 60,
       "norm_label": "as the freshly merged nodes and would delete the re-extracted content (#1178 is moot",
-      "id": "agents_skills_graphify_references_update_as_the_freshly_merged_nodes_and_would_delete_the_re_extracted_content_1178_is_moot",
-      "community_name": "As The Freshly Merged"
+      "community_name": "As The Freshly Merged",
+      "id": "agents_skills_graphify_references_update_as_the_freshly_merged_nodes_and_would_delete_the_re_extracted_content_1178_is_moot"
     },
     {
       "label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
@@ -3125,8 +3125,8 @@
       "contributor": null,
       "community": 73,
       "norm_label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
-      "id": "agents_skills_graphify_references_update_now_that_replace_not_the_dedup_pass_reconciles_changed_files",
-      "community_name": "Now That Replace Not"
+      "community_name": "Now That Replace Not",
+      "id": "agents_skills_graphify_references_update_now_that_replace_not_the_dedup_pass_reconciles_changed_files"
     },
     {
       "label": "Use buildmerge() \u2014 reads graph.json directly without NetworkX round-trip",
@@ -3139,8 +3139,8 @@
       "contributor": null,
       "community": 88,
       "norm_label": "use buildmerge() \u2014 reads graph.json directly without networkx round-trip",
-      "id": "agents_skills_graphify_references_update_use_buildmerge_reads_graph_json_directly_without_networkx_round_trip",
-      "community_name": "Use Buildmerge Reads Graph"
+      "community_name": "Use Buildmerge Reads Graph",
+      "id": "agents_skills_graphify_references_update_use_buildmerge_reads_graph_json_directly_without_networkx_round_trip"
     },
     {
       "label": "so edge direction (calls, implements, imports) is always preserved (#801).",
@@ -3153,8 +3153,8 @@
       "contributor": null,
       "community": 84,
       "norm_label": "so edge direction (calls, implements, imports) is always preserved (#801).",
-      "id": "agents_skills_graphify_references_update_so_edge_direction_calls_implements_imports_is_always_preserved_801",
-      "community_name": "So Edge Direction Calls"
+      "community_name": "So Edge Direction Calls",
+      "id": "agents_skills_graphify_references_update_so_edge_direction_calls_implements_imports_is_always_preserved_801"
     },
     {
       "label": "Pass root= so prunesources (absolute paths from detectincremental) are",
@@ -3167,8 +3167,8 @@
       "contributor": null,
       "community": 76,
       "norm_label": "pass root= so prunesources (absolute paths from detectincremental) are",
-      "id": "agents_skills_graphify_references_update_pass_root_so_prunesources_absolute_paths_from_detectincremental_are",
-      "community_name": "Pass Root So Prunesources"
+      "community_name": "Pass Root So Prunesources",
+      "id": "agents_skills_graphify_references_update_pass_root_so_prunesources_absolute_paths_from_detectincremental_are"
     },
     {
       "label": "relativized to match the graph's relative sourcefile values; without it",
@@ -3181,8 +3181,8 @@
       "contributor": null,
       "community": 80,
       "norm_label": "relativized to match the graph's relative sourcefile values; without it",
-      "id": "agents_skills_graphify_references_update_relativized_to_match_the_graph_s_relative_sourcefile_values_without_it",
-      "community_name": "Relativized To Match The"
+      "community_name": "Relativized To Match The",
+      "id": "agents_skills_graphify_references_update_relativized_to_match_the_graph_s_relative_sourcefile_values_without_it"
     },
     {
       "label": "nothing is pruned and stale nodes accumulate on every update (#1361).",
@@ -3195,8 +3195,8 @@
       "contributor": null,
       "community": 72,
       "norm_label": "nothing is pruned and stale nodes accumulate on every update (#1361).",
-      "id": "agents_skills_graphify_references_update_nothing_is_pruned_and_stale_nodes_accumulate_on_every_update_1361",
-      "community_name": "Nothing Is Pruned And"
+      "community_name": "Nothing Is Pruned And",
+      "id": "agents_skills_graphify_references_update_nothing_is_pruned_and_stale_nodes_accumulate_on_every_update_1361"
     },
     {
       "label": "directed=ISDIRECTED: replace ISDIRECTED with True if --directed was given, else",
@@ -3209,8 +3209,8 @@
       "contributor": null,
       "community": 64,
       "norm_label": "directed=isdirected: replace isdirected with true if --directed was given, else",
-      "id": "agents_skills_graphify_references_update_directed_isdirected_replace_isdirected_with_true_if_directed_was_given_else",
-      "community_name": "Directed Isdirected Replace Isdirected"
+      "community_name": "Directed Isdirected Replace Isdirected",
+      "id": "agents_skills_graphify_references_update_directed_isdirected_replace_isdirected_with_true_if_directed_was_given_else"
     },
     {
       "label": "False. Without it a --directed --update silently rebuilds undirected and collapses",
@@ -3223,8 +3223,8 @@
       "contributor": null,
       "community": 66,
       "norm_label": "false. without it a --directed --update silently rebuilds undirected and collapses",
-      "id": "agents_skills_graphify_references_update_false_without_it_a_directed_update_silently_rebuilds_undirected_and_collapses",
-      "community_name": "False Without It A"
+      "community_name": "False Without It A",
+      "id": "agents_skills_graphify_references_update_false_without_it_a_directed_update_silently_rebuilds_undirected_and_collapses"
     },
     {
       "label": "reciprocal A<->B edges (#1392).",
@@ -3237,8 +3237,8 @@
       "contributor": null,
       "community": 79,
       "norm_label": "reciprocal a<->b edges (#1392).",
-      "id": "agents_skills_graphify_references_update_reciprocal_a_b_edges_1392",
-      "community_name": "Reciprocal A B Edges"
+      "community_name": "Reciprocal A B Edges",
+      "id": "agents_skills_graphify_references_update_reciprocal_a_b_edges_1392"
     },
     {
       "label": "Write merged result back to .graphifyextract.json so Step 4 sees the full graph",
@@ -3251,8 +3251,8 @@
       "contributor": null,
       "community": 89,
       "norm_label": "write merged result back to .graphifyextract.json so step 4 sees the full graph",
-      "id": "agents_skills_graphify_references_update_write_merged_result_back_to_graphifyextract_json_so_step_4_sees_the_full_graph",
-      "community_name": "Write Merged Result Back"
+      "community_name": "Write Merged Result Back",
+      "id": "agents_skills_graphify_references_update_write_merged_result_back_to_graphifyextract_json_so_step_4_sees_the_full_graph"
     },
     {
       "label": "Save manifest so next --update diffs against today's state, not the",
@@ -3265,8 +3265,8 @@
       "contributor": null,
       "community": 82,
       "norm_label": "save manifest so next --update diffs against today's state, not the",
-      "id": "agents_skills_graphify_references_update_save_manifest_so_next_update_diffs_against_today_s_state_not_the",
-      "community_name": "Save Manifest So Next"
+      "community_name": "Save Manifest So Next",
+      "id": "agents_skills_graphify_references_update_save_manifest_so_next_update_diffs_against_today_s_state_not_the"
     },
     {
       "label": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
@@ -3279,8 +3279,8 @@
       "contributor": null,
       "community": 77,
       "norm_label": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
-      "id": "agents_skills_graphify_references_update_prior_run_s_baseline_prevents_ghost_node_reports_on_subsequent_updates",
-      "community_name": "Prior Run S Baseline"
+      "community_name": "Prior Run S Baseline",
+      "id": "agents_skills_graphify_references_update_prior_run_s_baseline_prevents_ghost_node_reports_on_subsequent_updates"
     },
     {
       "label": "root= matches the buildmerge call above so the manifest keys stay relative to",
@@ -3293,8 +3293,8 @@
       "contributor": null,
       "community": 81,
       "norm_label": "root= matches the buildmerge call above so the manifest keys stay relative to",
-      "id": "agents_skills_graphify_references_update_root_matches_the_buildmerge_call_above_so_the_manifest_keys_stay_relative_to",
-      "community_name": "Root Matches The Buildmerge"
+      "community_name": "Root Matches The Buildmerge",
+      "id": "agents_skills_graphify_references_update_root_matches_the_buildmerge_call_above_so_the_manifest_keys_stay_relative_to"
     },
     {
       "label": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
@@ -3307,8 +3307,8 @@
       "contributor": null,
       "community": 86,
       "norm_label": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
-      "id": "agents_skills_graphify_references_update_the_scan_root_portable_across_clones_machines_so_update_keeps_matching",
-      "community_name": "The Scan Root Portable"
+      "community_name": "The Scan Root Portable",
+      "id": "agents_skills_graphify_references_update_the_scan_root_portable_across_clones_machines_so_update_keeps_matching"
     },
     {
       "label": "cached files instead of missing every one after a move (#1417).",
@@ -3321,8 +3321,8 @@
       "contributor": null,
       "community": 61,
       "norm_label": "cached files instead of missing every one after a move (#1417).",
-      "id": "agents_skills_graphify_references_update_cached_files_instead_of_missing_every_one_after_a_move_1417",
-      "community_name": "Cached Files Instead Of"
+      "community_name": "Cached Files Instead Of",
+      "id": "agents_skills_graphify_references_update_cached_files_instead_of_missing_every_one_after_a_move_1417"
     },
     {
       "label": "Only stamp semantic files (docs/papers/images) that ACTUALLY produced output",
@@ -3335,8 +3335,8 @@
       "contributor": null,
       "community": 74,
       "norm_label": "only stamp semantic files (docs/papers/images) that actually produced output",
-      "id": "agents_skills_graphify_references_update_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output",
-      "community_name": "Only Stamp Semantic Files"
+      "community_name": "Only Stamp Semantic Files",
+      "id": "agents_skills_graphify_references_update_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output"
     },
     {
       "label": "THIS run (newextraction is this run's fresh extraction, read above before the",
@@ -3349,8 +3349,8 @@
       "contributor": null,
       "community": 87,
       "norm_label": "this run (newextraction is this run's fresh extraction, read above before the",
-      "id": "agents_skills_graphify_references_update_this_run_newextraction_is_this_run_s_fresh_extraction_read_above_before_the",
-      "community_name": "This Run Newextraction Is"
+      "community_name": "This Run Newextraction Is",
+      "id": "agents_skills_graphify_references_update_this_run_newextraction_is_this_run_s_fresh_extraction_read_above_before_the"
     },
     {
       "label": "merge overwrote the file): a changed doc whose chunk failed must stay unstamped",
@@ -3363,8 +3363,8 @@
       "contributor": null,
       "community": 70,
       "norm_label": "merge overwrote the file): a changed doc whose chunk failed must stay unstamped",
-      "id": "agents_skills_graphify_references_update_merge_overwrote_the_file_a_changed_doc_whose_chunk_failed_must_stay_unstamped",
-      "community_name": "Merge Overwrote The File"
+      "community_name": "Merge Overwrote The File",
+      "id": "agents_skills_graphify_references_update_merge_overwrote_the_file_a_changed_doc_whose_chunk_failed_must_stay_unstamped"
     },
     {
       "label": "so the next --update re-queues it, otherwise it is marked done and its content",
@@ -3377,8 +3377,8 @@
       "contributor": null,
       "community": 85,
       "norm_label": "so the next --update re-queues it, otherwise it is marked done and its content",
-      "id": "agents_skills_graphify_references_update_so_the_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content",
-      "community_name": "So The Next Update"
+      "community_name": "So The Next Update",
+      "id": "agents_skills_graphify_references_update_so_the_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content"
     },
     {
       "label": "is lost forever (#2015). Mirrors the library extract path",
@@ -3391,8 +3391,8 @@
       "contributor": null,
       "community": 68,
       "norm_label": "is lost forever (#2015). mirrors the library extract path",
-      "id": "agents_skills_graphify_references_update_is_lost_forever_2015_mirrors_the_library_extract_path",
-      "community_name": "Is Lost Forever 2015"
+      "community_name": "Is Lost Forever 2015",
+      "id": "agents_skills_graphify_references_update_is_lost_forever_2015_mirrors_the_library_extract_path"
     },
     {
       "label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus).",
@@ -3405,8 +3405,8 @@
       "contributor": null,
       "community": 63,
       "norm_label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus).",
-      "id": "agents_skills_graphify_references_update_cli_stampedmanifestfiles_clearsemantic_scancorpus",
-      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus"
+      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus",
+      "id": "agents_skills_graphify_references_update_cli_stampedmanifestfiles_clearsemantic_scancorpus"
     },
     {
       "label": "Changed semantic files dispatched this run but NOT stamped had their chunk fail",
@@ -3419,8 +3419,8 @@
       "contributor": null,
       "community": 62,
       "norm_label": "changed semantic files dispatched this run but not stamped had their chunk fail",
-      "id": "agents_skills_graphify_references_update_changed_semantic_files_dispatched_this_run_but_not_stamped_had_their_chunk_fail",
-      "community_name": "Changed Semantic Files Dispatched"
+      "community_name": "Changed Semantic Files Dispatched",
+      "id": "agents_skills_graphify_references_update_changed_semantic_files_dispatched_this_run_but_not_stamped_had_their_chunk_fail"
     },
     {
       "label": "or be omitted; clear any stale semantichash so they are re-queued (#1948).",
@@ -3433,8 +3433,8 @@
       "contributor": null,
       "community": 75,
       "norm_label": "or be omitted; clear any stale semantichash so they are re-queued (#1948).",
-      "id": "agents_skills_graphify_references_update_or_be_omitted_clear_any_stale_semantichash_so_they_are_re_queued_1948",
-      "community_name": "Or Be Omitted Clear"
+      "community_name": "Or Be Omitted Clear",
+      "id": "agents_skills_graphify_references_update_or_be_omitted_clear_any_stale_semantichash_so_they_are_re_queued_1948"
     },
     {
       "label": "scancorpus = the RAW full corpus so in-root files newly excluded since last run",
@@ -3447,8 +3447,8 @@
       "contributor": null,
       "community": 83,
       "norm_label": "scancorpus = the raw full corpus so in-root files newly excluded since last run",
-      "id": "agents_skills_graphify_references_update_scancorpus_the_raw_full_corpus_so_in_root_files_newly_excluded_since_last_run",
-      "community_name": "Scancorpus The Raw Full"
+      "community_name": "Scancorpus The Raw Full",
+      "id": "agents_skills_graphify_references_update_scancorpus_the_raw_full_corpus_so_in_root_files_newly_excluded_since_last_run"
     },
     {
       "label": "are dropped rather than masquerading as deletions; untouched rows preserved (#1908).",
@@ -3461,8 +3461,8 @@
       "contributor": null,
       "community": 59,
       "norm_label": "are dropped rather than masquerading as deletions; untouched rows preserved (#1908).",
-      "id": "agents_skills_graphify_references_update_are_dropped_rather_than_masquerading_as_deletions_untouched_rows_preserved_1908",
-      "community_name": "Are Dropped Rather Than"
+      "community_name": "Are Dropped Rather Than",
+      "id": "agents_skills_graphify_references_update_are_dropped_rather_than_masquerading_as_deletions_untouched_rows_preserved_1908"
     },
     {
       "label": "Load old graph (before update) from backup written before merge",
@@ -3475,8 +3475,8 @@
       "contributor": null,
       "community": 39,
       "norm_label": "load old graph (before update) from backup written before merge",
-      "id": "agents_skills_graphify_references_update_load_old_graph_before_update_from_backup_written_before_merge",
-      "community_name": "Load Old Graph Before"
+      "community_name": "Load Old Graph Before",
+      "id": "agents_skills_graphify_references_update_load_old_graph_before_update_from_backup_written_before_merge"
     },
     {
       "label": "For --cluster-only",
@@ -3489,8 +3489,8 @@
       "contributor": null,
       "community": 39,
       "norm_label": "for --cluster-only",
-      "id": "agents_skills_graphify_references_update_for_cluster_only",
-      "community_name": "Load Old Graph Before"
+      "community_name": "Load Old Graph Before",
+      "id": "agents_skills_graphify_references_update_for_cluster_only"
     },
     {
       "label": "Verifikasi frontend",
@@ -3503,8 +3503,8 @@
       "contributor": null,
       "community": 42,
       "norm_label": "verifikasi frontend",
-      "id": "agents_skills_verify_skill_verifikasi_frontend",
-      "community_name": "Verifikasi Frontend"
+      "community_name": "Verifikasi Frontend",
+      "id": "agents_skills_verify_skill_verifikasi_frontend"
     },
     {
       "label": "Verifikasi frontend",
@@ -3517,8 +3517,8 @@
       "contributor": null,
       "community": 42,
       "norm_label": "verifikasi frontend",
-      "id": "claude_skills_verify_skill_verifikasi_frontend",
-      "community_name": "Verifikasi Frontend"
+      "community_name": "Verifikasi Frontend",
+      "id": "claude_skills_verify_skill_verifikasi_frontend"
     },
     {
       "label": "/graphify",
@@ -3531,8 +3531,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "/graphify",
-      "id": "codex_skills_graphify_skill_graphify",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "codex_skills_graphify_skill_graphify"
     },
     {
       "label": "Usage",
@@ -3545,8 +3545,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "usage",
-      "id": "codex_skills_graphify_skill_usage",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "codex_skills_graphify_skill_usage"
     },
     {
       "label": "What graphify is for",
@@ -3559,8 +3559,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "what graphify is for",
-      "id": "codex_skills_graphify_skill_what_graphify_is_for",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "codex_skills_graphify_skill_what_graphify_is_for"
     },
     {
       "label": "What You Must Do When Invoked",
@@ -3573,8 +3573,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "what you must do when invoked",
-      "id": "codex_skills_graphify_skill_what_you_must_do_when_invoked",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "codex_skills_graphify_skill_what_you_must_do_when_invoked"
     },
     {
       "label": "Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)",
@@ -3587,8 +3587,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "step 0 - github repos and multi-path merge (only if a url or several paths)",
-      "id": "codex_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "codex_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths"
     },
     {
       "label": "Step 1 - Ensure graphify is installed",
@@ -3601,8 +3601,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "step 1 - ensure graphify is installed",
-      "id": "codex_skills_graphify_skill_step_1_ensure_graphify_is_installed",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "codex_skills_graphify_skill_step_1_ensure_graphify_is_installed"
     },
     {
       "label": "Detect the correct Python interpreter (handles uv tool, pipx, venv, system installs)",
@@ -3615,8 +3615,8 @@
       "contributor": null,
       "community": 184,
       "norm_label": "detect the correct python interpreter (handles uv tool, pipx, venv, system installs)",
-      "id": "codex_skills_graphify_skill_detect_the_correct_python_interpreter_handles_uv_tool_pipx_venv_system_installs",
-      "community_name": "Detect The Correct Python"
+      "community_name": "Detect The Correct Python",
+      "id": "codex_skills_graphify_skill_detect_the_correct_python_interpreter_handles_uv_tool_pipx_venv_system_installs"
     },
     {
       "label": "1. uv tool installs \u2014 most reliable on modern Mac/Linux",
@@ -3629,8 +3629,8 @@
       "contributor": null,
       "community": 174,
       "norm_label": "1. uv tool installs \u2014 most reliable on modern mac/linux",
-      "id": "codex_skills_graphify_skill_1_uv_tool_installs_most_reliable_on_modern_mac_linux",
-      "community_name": "1 Uv Tool Installs"
+      "community_name": "1 Uv Tool Installs",
+      "id": "codex_skills_graphify_skill_1_uv_tool_installs_most_reliable_on_modern_mac_linux"
     },
     {
       "label": "2. Read shebang from graphify binary (pipx and direct pip installs)",
@@ -3643,8 +3643,8 @@
       "contributor": null,
       "community": 175,
       "norm_label": "2. read shebang from graphify binary (pipx and direct pip installs)",
-      "id": "codex_skills_graphify_skill_2_read_shebang_from_graphify_binary_pipx_and_direct_pip_installs",
-      "community_name": "2 Read Shebang From"
+      "community_name": "2 Read Shebang From",
+      "id": "codex_skills_graphify_skill_2_read_shebang_from_graphify_binary_pipx_and_direct_pip_installs"
     },
     {
       "label": "3. Fall back to python3",
@@ -3657,8 +3657,8 @@
       "contributor": null,
       "community": 176,
       "norm_label": "3. fall back to python3",
-      "id": "codex_skills_graphify_skill_3_fall_back_to_python3",
-      "community_name": "3 Fall Back To"
+      "community_name": "3 Fall Back To",
+      "id": "codex_skills_graphify_skill_3_fall_back_to_python3"
     },
     {
       "label": "Write interpreter path for all subsequent steps (persists across invocations)",
@@ -3671,8 +3671,8 @@
       "contributor": null,
       "community": 213,
       "norm_label": "write interpreter path for all subsequent steps (persists across invocations)",
-      "id": "codex_skills_graphify_skill_write_interpreter_path_for_all_subsequent_steps_persists_across_invocations",
-      "community_name": "Write Interpreter Path For"
+      "community_name": "Write Interpreter Path For",
+      "id": "codex_skills_graphify_skill_write_interpreter_path_for_all_subsequent_steps_persists_across_invocations"
     },
     {
       "label": "Save scan root so graphify update (no args) knows where to look next time",
@@ -3685,8 +3685,8 @@
       "contributor": null,
       "community": 27,
       "norm_label": "save scan root so graphify update (no args) knows where to look next time",
-      "id": "codex_skills_graphify_skill_save_scan_root_so_graphify_update_no_args_knows_where_to_look_next_time",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "codex_skills_graphify_skill_save_scan_root_so_graphify_update_no_args_knows_where_to_look_next_time"
     },
     {
       "label": "Step 2 - Detect files",
@@ -3699,8 +3699,8 @@
       "contributor": null,
       "community": 27,
       "norm_label": "step 2 - detect files",
-      "id": "codex_skills_graphify_skill_step_2_detect_files",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "codex_skills_graphify_skill_step_2_detect_files"
     },
     {
       "label": "Step 2.5 - Video and audio (only if video files detected)",
@@ -3713,8 +3713,8 @@
       "contributor": null,
       "community": 27,
       "norm_label": "step 2.5 - video and audio (only if video files detected)",
-      "id": "codex_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "codex_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected"
     },
     {
       "label": "Step 3 - Extract entities and relationships",
@@ -3727,8 +3727,8 @@
       "contributor": null,
       "community": 27,
       "norm_label": "step 3 - extract entities and relationships",
-      "id": "codex_skills_graphify_skill_step_3_extract_entities_and_relationships",
-      "community_name": "Save Scan Root So"
+      "community_name": "Save Scan Root So",
+      "id": "codex_skills_graphify_skill_step_3_extract_entities_and_relationships"
     },
     {
       "label": "Only content files go to semantic extraction. Code is already covered structurally",
@@ -3741,8 +3741,8 @@
       "contributor": null,
       "community": 198,
       "norm_label": "only content files go to semantic extraction. code is already covered structurally",
-      "id": "codex_skills_graphify_skill_only_content_files_go_to_semantic_extraction_code_is_already_covered_structurally",
-      "community_name": "Only Content Files Go"
+      "community_name": "Only Content Files Go",
+      "id": "codex_skills_graphify_skill_only_content_files_go_to_semantic_extraction_code_is_already_covered_structurally"
     },
     {
       "label": "by the AST pass (Part A); flattening every category here makes subagents re-read",
@@ -3755,8 +3755,8 @@
       "contributor": null,
       "community": 181,
       "norm_label": "by the ast pass (part a); flattening every category here makes subagents re-read",
-      "id": "codex_skills_graphify_skill_by_the_ast_pass_part_a_flattening_every_category_here_makes_subagents_re_read",
-      "community_name": "By The Ast Pass"
+      "community_name": "By The Ast Pass",
+      "id": "codex_skills_graphify_skill_by_the_ast_pass_part_a_flattening_every_category_here_makes_subagents_re_read"
     },
     {
       "label": "every source file (#1392). Video is transcribed to a document in Step 2.5 first.",
@@ -3769,8 +3769,8 @@
       "contributor": null,
       "community": 185,
       "norm_label": "every source file (#1392). video is transcribed to a document in step 2.5 first.",
-      "id": "codex_skills_graphify_skill_every_source_file_1392_video_is_transcribed_to_a_document_in_step_2_5_first",
-      "community_name": "Every Source File 1392"
+      "community_name": "Every Source File 1392",
+      "id": "codex_skills_graphify_skill_every_source_file_1392_video_is_transcribed_to_a_document_in_step_2_5_first"
     },
     {
       "label": "Always (re)write the cache file: write hits, else DELETE any leftover from a prior",
@@ -3783,8 +3783,8 @@
       "contributor": null,
       "community": 179,
       "norm_label": "always (re)write the cache file: write hits, else delete any leftover from a prior",
-      "id": "codex_skills_graphify_skill_always_re_write_the_cache_file_write_hits_else_delete_any_leftover_from_a_prior",
-      "community_name": "Always Re Write The"
+      "community_name": "Always Re Write The",
+      "id": "codex_skills_graphify_skill_always_re_write_the_cache_file_write_hits_else_delete_any_leftover_from_a_prior"
     },
     {
       "label": "run so Part C never merges a stale .graphifycached.json (#1392).",
@@ -3797,8 +3797,8 @@
       "contributor": null,
       "community": 206,
       "norm_label": "run so part c never merges a stale .graphifycached.json (#1392).",
-      "id": "codex_skills_graphify_skill_run_so_part_c_never_merges_a_stale_graphifycached_json_1392",
-      "community_name": "Run So Part C"
+      "community_name": "Run So Part C",
+      "id": "codex_skills_graphify_skill_run_so_part_c_never_merges_a_stale_graphifycached_json_1392"
     },
     {
       "label": "Merge: AST nodes first, semantic nodes deduplicated by id",
@@ -3811,8 +3811,8 @@
       "contributor": null,
       "community": 44,
       "norm_label": "merge: ast nodes first, semantic nodes deduplicated by id",
-      "id": "codex_skills_graphify_skill_merge_ast_nodes_first_semantic_nodes_deduplicated_by_id",
-      "community_name": "Step 4 Build Graph"
+      "community_name": "Step 4 Build Graph",
+      "id": "codex_skills_graphify_skill_merge_ast_nodes_first_semantic_nodes_deduplicated_by_id"
     },
     {
       "label": "Step 4 - Build graph, cluster, analyze, generate outputs",
@@ -3825,8 +3825,8 @@
       "contributor": null,
       "community": 44,
       "norm_label": "step 4 - build graph, cluster, analyze, generate outputs",
-      "id": "codex_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
-      "community_name": "Step 4 Build Graph"
+      "community_name": "Step 4 Build Graph",
+      "id": "codex_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs"
     },
     {
       "label": "root= mirrors the --update runbook (#1361): relativize sourcefile to the same",
@@ -3839,8 +3839,8 @@
       "contributor": null,
       "community": 204,
       "norm_label": "root= mirrors the --update runbook (#1361): relativize sourcefile to the same",
-      "id": "codex_skills_graphify_skill_root_mirrors_the_update_runbook_1361_relativize_sourcefile_to_the_same",
-      "community_name": "Root Mirrors The Update"
+      "community_name": "Root Mirrors The Update",
+      "id": "codex_skills_graphify_skill_root_mirrors_the_update_runbook_1361_relativize_sourcefile_to_the_same"
     },
     {
       "label": "base so the full build and incremental --update never drift apart on re-extract.",
@@ -3853,8 +3853,8 @@
       "contributor": null,
       "community": 180,
       "norm_label": "base so the full build and incremental --update never drift apart on re-extract.",
-      "id": "codex_skills_graphify_skill_base_so_the_full_build_and_incremental_update_never_drift_apart_on_re_extract",
-      "community_name": "Base So The Full"
+      "community_name": "Base So The Full",
+      "id": "codex_skills_graphify_skill_base_so_the_full_build_and_incremental_update_never_drift_apart_on_re_extract"
     },
     {
       "label": "Guard BEFORE any write: an empty extraction must not clobber a good graph.json /",
@@ -3867,8 +3867,8 @@
       "contributor": null,
       "community": 192,
       "norm_label": "guard before any write: an empty extraction must not clobber a good graph.json /",
-      "id": "codex_skills_graphify_skill_guard_before_any_write_an_empty_extraction_must_not_clobber_a_good_graph_json",
-      "community_name": "Guard Before Any Write"
+      "community_name": "Guard Before Any Write",
+      "id": "codex_skills_graphify_skill_guard_before_any_write_an_empty_extraction_must_not_clobber_a_good_graph_json"
     },
     {
       "label": "GRAPHREPORT.md / analysis sidecar. Check immediately after build (#1392).",
@@ -3881,8 +3881,8 @@
       "contributor": null,
       "community": 190,
       "norm_label": "graphreport.md / analysis sidecar. check immediately after build (#1392).",
-      "id": "codex_skills_graphify_skill_graphreport_md_analysis_sidecar_check_immediately_after_build_1392",
-      "community_name": "Graphreport Md Analysis Sidecar"
+      "community_name": "Graphreport Md Analysis Sidecar",
+      "id": "codex_skills_graphify_skill_graphreport_md_analysis_sidecar_check_immediately_after_build_1392"
     },
     {
       "label": "Placeholder questions - regenerated with real labels in Step 5",
@@ -3895,8 +3895,8 @@
       "contributor": null,
       "community": 201,
       "norm_label": "placeholder questions - regenerated with real labels in step 5",
-      "id": "codex_skills_graphify_skill_placeholder_questions_regenerated_with_real_labels_in_step_5",
-      "community_name": "Placeholder Questions Regenerated With"
+      "community_name": "Placeholder Questions Regenerated With",
+      "id": "codex_skills_graphify_skill_placeholder_questions_regenerated_with_real_labels_in_step_5"
     },
     {
       "label": "Export FIRST and honor the #479 shrink-guard: tojson returns False (writing",
@@ -3909,8 +3909,8 @@
       "contributor": null,
       "community": 186,
       "norm_label": "export first and honor the #479 shrink-guard: tojson returns false (writing",
-      "id": "codex_skills_graphify_skill_export_first_and_honor_the_479_shrink_guard_tojson_returns_false_writing",
-      "community_name": "Export First And Honor"
+      "community_name": "Export First And Honor",
+      "id": "codex_skills_graphify_skill_export_first_and_honor_the_479_shrink_guard_tojson_returns_false_writing"
     },
     {
       "label": "nothing) when the new graph is smaller than the existing graph.json. Only write",
@@ -3923,8 +3923,8 @@
       "contributor": null,
       "community": 197,
       "norm_label": "nothing) when the new graph is smaller than the existing graph.json. only write",
-      "id": "codex_skills_graphify_skill_nothing_when_the_new_graph_is_smaller_than_the_existing_graph_json_only_write",
-      "community_name": "Nothing When The New"
+      "community_name": "Nothing When The New",
+      "id": "codex_skills_graphify_skill_nothing_when_the_new_graph_is_smaller_than_the_existing_graph_json_only_write"
     },
     {
       "label": "GRAPHREPORT.md + the analysis sidecar when the graph was actually written, so",
@@ -3937,8 +3937,8 @@
       "contributor": null,
       "community": 191,
       "norm_label": "graphreport.md + the analysis sidecar when the graph was actually written, so",
-      "id": "codex_skills_graphify_skill_graphreport_md_the_analysis_sidecar_when_the_graph_was_actually_written_so",
-      "community_name": "Graphreport Md The Analysis"
+      "community_name": "Graphreport Md The Analysis",
+      "id": "codex_skills_graphify_skill_graphreport_md_the_analysis_sidecar_when_the_graph_was_actually_written_so"
     },
     {
       "label": "they never describe a graph that graph.json doesn't contain (#1392).",
@@ -3951,8 +3951,8 @@
       "contributor": null,
       "community": 36,
       "norm_label": "they never describe a graph that graph.json doesn't contain (#1392).",
-      "id": "codex_skills_graphify_skill_they_never_describe_a_graph_that_graph_json_doesn_t_contain_1392",
-      "community_name": "They Never Describe A"
+      "community_name": "They Never Describe A",
+      "id": "codex_skills_graphify_skill_they_never_describe_a_graph_that_graph_json_doesn_t_contain_1392"
     },
     {
       "label": "Step 4.5 - Graph health check (read-only integrity gate)",
@@ -3965,8 +3965,8 @@
       "contributor": null,
       "community": 36,
       "norm_label": "step 4.5 - graph health check (read-only integrity gate)",
-      "id": "codex_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate",
-      "community_name": "They Never Describe A"
+      "community_name": "They Never Describe A",
+      "id": "codex_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate"
     },
     {
       "label": "Step 5 - Label communities",
@@ -3979,8 +3979,8 @@
       "contributor": null,
       "community": 36,
       "norm_label": "step 5 - label communities",
-      "id": "codex_skills_graphify_skill_step_5_label_communities",
-      "community_name": "They Never Describe A"
+      "community_name": "They Never Describe A",
+      "id": "codex_skills_graphify_skill_step_5_label_communities"
     },
     {
       "label": "root= as in Step 4 / the --update runbook (#1361) \u2014 same base for node-key parity.",
@@ -3993,8 +3993,8 @@
       "contributor": null,
       "community": 203,
       "norm_label": "root= as in step 4 / the --update runbook (#1361) \u2014 same base for node-key parity.",
-      "id": "codex_skills_graphify_skill_root_as_in_step_4_the_update_runbook_1361_same_base_for_node_key_parity",
-      "community_name": "Root As In Step"
+      "community_name": "Root As In Step",
+      "id": "codex_skills_graphify_skill_root_as_in_step_4_the_update_runbook_1361_same_base_for_node_key_parity"
     },
     {
       "label": "LABELS - replace these with the names you chose above",
@@ -4007,8 +4007,8 @@
       "contributor": null,
       "community": 194,
       "norm_label": "labels - replace these with the names you chose above",
-      "id": "codex_skills_graphify_skill_labels_replace_these_with_the_names_you_chose_above",
-      "community_name": "Labels Replace These With"
+      "community_name": "Labels Replace These With",
+      "id": "codex_skills_graphify_skill_labels_replace_these_with_the_names_you_chose_above"
     },
     {
       "label": "Regenerate questions with real community labels (labels affect question phrasing)",
@@ -4021,8 +4021,8 @@
       "contributor": null,
       "community": 45,
       "norm_label": "regenerate questions with real community labels (labels affect question phrasing)",
-      "id": "codex_skills_graphify_skill_regenerate_questions_with_real_community_labels_labels_affect_question_phrasing",
-      "community_name": "Step 6 Generate Obsidian"
+      "community_name": "Step 6 Generate Obsidian",
+      "id": "codex_skills_graphify_skill_regenerate_questions_with_real_community_labels_labels_affect_question_phrasing"
     },
     {
       "label": "Step 6 - Generate Obsidian vault (opt-in) + HTML",
@@ -4035,8 +4035,8 @@
       "contributor": null,
       "community": 45,
       "norm_label": "step 6 - generate obsidian vault (opt-in) + html",
-      "id": "codex_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
-      "community_name": "Step 6 Generate Obsidian"
+      "community_name": "Step 6 Generate Obsidian",
+      "id": "codex_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html"
     },
     {
       "label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
@@ -4049,8 +4049,8 @@
       "contributor": null,
       "community": 200,
       "norm_label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
-      "id": "codex_skills_graphify_skill_or_with_custom_dir_graphify_export_obsidian_dir_vaults_my_project",
-      "community_name": "Or With Custom Dir"
+      "community_name": "Or With Custom Dir",
+      "id": "codex_skills_graphify_skill_or_with_custom_dir_graphify_export_obsidian_dir_vaults_my_project"
     },
     {
       "label": "or: graphify export html --no-viz",
@@ -4063,8 +4063,8 @@
       "contributor": null,
       "community": 35,
       "norm_label": "or: graphify export html --no-viz",
-      "id": "codex_skills_graphify_skill_or_graphify_export_html_no_viz",
-      "community_name": "Or Graphify Export Html"
+      "community_name": "Or Graphify Export Html",
+      "id": "codex_skills_graphify_skill_or_graphify_export_html_no_viz"
     },
     {
       "label": "Steps 6b-8 - Wiki, Neo4j, FalkorDB, SVG, GraphML, MCP, benchmark (only on their flags)",
@@ -4077,8 +4077,8 @@
       "contributor": null,
       "community": 35,
       "norm_label": "steps 6b-8 - wiki, neo4j, falkordb, svg, graphml, mcp, benchmark (only on their flags)",
-      "id": "codex_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags",
-      "community_name": "Or Graphify Export Html"
+      "community_name": "Or Graphify Export Html",
+      "id": "codex_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags"
     },
     {
       "label": "Step 9 - Save manifest, update cost tracker, clean up, and report",
@@ -4091,8 +4091,8 @@
       "contributor": null,
       "community": 35,
       "norm_label": "step 9 - save manifest, update cost tracker, clean up, and report",
-      "id": "codex_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
-      "community_name": "Or Graphify Export Html"
+      "community_name": "Or Graphify Export Html",
+      "id": "codex_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report"
     },
     {
       "label": "Save manifest for --update",
@@ -4105,8 +4105,8 @@
       "contributor": null,
       "community": 207,
       "norm_label": "save manifest for --update",
-      "id": "codex_skills_graphify_skill_save_manifest_for_update",
-      "community_name": "Save Manifest For Update"
+      "community_name": "Save Manifest For Update",
+      "id": "codex_skills_graphify_skill_save_manifest_for_update"
     },
     {
       "label": "In --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
@@ -4119,8 +4119,8 @@
       "contributor": null,
       "community": 193,
       "norm_label": "in --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
-      "id": "codex_skills_graphify_skill_in_update_mode_allfiles_carries_the_full_corpus_files_is_the_changed",
-      "community_name": "In Update Mode Allfiles"
+      "community_name": "In Update Mode Allfiles",
+      "id": "codex_skills_graphify_skill_in_update_mode_allfiles_carries_the_full_corpus_files_is_the_changed"
     },
     {
       "label": "subset. Full-rebuild mode populates only 'files', so the fallback handles that.",
@@ -4133,8 +4133,8 @@
       "contributor": null,
       "community": 210,
       "norm_label": "subset. full-rebuild mode populates only 'files', so the fallback handles that.",
-      "id": "codex_skills_graphify_skill_subset_full_rebuild_mode_populates_only_files_so_the_fallback_handles_that",
-      "community_name": "Subset Full Rebuild Mode"
+      "community_name": "Subset Full Rebuild Mode",
+      "id": "codex_skills_graphify_skill_subset_full_rebuild_mode_populates_only_files_so_the_fallback_handles_that"
     },
     {
       "label": "root= relativizes the manifest keys to the scan root (same base as the build),",
@@ -4147,8 +4147,8 @@
       "contributor": null,
       "community": 205,
       "norm_label": "root= relativizes the manifest keys to the scan root (same base as the build),",
-      "id": "codex_skills_graphify_skill_root_relativizes_the_manifest_keys_to_the_scan_root_same_base_as_the_build",
-      "community_name": "Root Relativizes The Manifest"
+      "community_name": "Root Relativizes The Manifest",
+      "id": "codex_skills_graphify_skill_root_relativizes_the_manifest_keys_to_the_scan_root_same_base_as_the_build"
     },
     {
       "label": "so the on-disk manifest is portable across clones/machines and a later --update",
@@ -4161,8 +4161,8 @@
       "contributor": null,
       "community": 209,
       "norm_label": "so the on-disk manifest is portable across clones/machines and a later --update",
-      "id": "codex_skills_graphify_skill_so_the_on_disk_manifest_is_portable_across_clones_machines_and_a_later_update",
-      "community_name": "So The On Disk"
+      "community_name": "So The On Disk",
+      "id": "codex_skills_graphify_skill_so_the_on_disk_manifest_is_portable_across_clones_machines_and_a_later_update"
     },
     {
       "label": "matches cached files instead of missing every one (#1417).",
@@ -4175,8 +4175,8 @@
       "contributor": null,
       "community": 195,
       "norm_label": "matches cached files instead of missing every one (#1417).",
-      "id": "codex_skills_graphify_skill_matches_cached_files_instead_of_missing_every_one_1417",
-      "community_name": "Matches Cached Files Instead"
+      "community_name": "Matches Cached Files Instead",
+      "id": "codex_skills_graphify_skill_matches_cached_files_instead_of_missing_every_one_1417"
     },
     {
       "label": "Only stamp semantic files (docs/papers/images) that ACTUALLY produced output:",
@@ -4189,8 +4189,8 @@
       "contributor": null,
       "community": 199,
       "norm_label": "only stamp semantic files (docs/papers/images) that actually produced output:",
-      "id": "codex_skills_graphify_skill_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output",
-      "community_name": "Only Stamp Semantic Files"
+      "community_name": "Only Stamp Semantic Files",
+      "id": "codex_skills_graphify_skill_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output"
     },
     {
       "label": "a detected file whose chunk failed or was omitted must stay unstamped so the",
@@ -4203,8 +4203,8 @@
       "contributor": null,
       "community": 177,
       "norm_label": "a detected file whose chunk failed or was omitted must stay unstamped so the",
-      "id": "codex_skills_graphify_skill_a_detected_file_whose_chunk_failed_or_was_omitted_must_stay_unstamped_so_the",
-      "community_name": "A Detected File Whose"
+      "community_name": "A Detected File Whose",
+      "id": "codex_skills_graphify_skill_a_detected_file_whose_chunk_failed_or_was_omitted_must_stay_unstamped_so_the"
     },
     {
       "label": "next --update re-queues it, otherwise it is marked done and its content is lost",
@@ -4217,8 +4217,8 @@
       "contributor": null,
       "community": 196,
       "norm_label": "next --update re-queues it, otherwise it is marked done and its content is lost",
-      "id": "codex_skills_graphify_skill_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content_is_lost",
-      "community_name": "Next Update Re Queues"
+      "community_name": "Next Update Re Queues",
+      "id": "codex_skills_graphify_skill_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content_is_lost"
     },
     {
       "label": "forever (#2015). This mirrors the library extract path exactly",
@@ -4231,8 +4231,8 @@
       "contributor": null,
       "community": 189,
       "norm_label": "forever (#2015). this mirrors the library extract path exactly",
-      "id": "codex_skills_graphify_skill_forever_2015_this_mirrors_the_library_extract_path_exactly",
-      "community_name": "Forever 2015 This Mirrors"
+      "community_name": "Forever 2015 This Mirrors",
+      "id": "codex_skills_graphify_skill_forever_2015_this_mirrors_the_library_extract_path_exactly"
     },
     {
       "label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus); do not stamp the",
@@ -4245,8 +4245,8 @@
       "contributor": null,
       "community": 182,
       "norm_label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus); do not stamp the",
-      "id": "codex_skills_graphify_skill_cli_stampedmanifestfiles_clearsemantic_scancorpus_do_not_stamp_the",
-      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus"
+      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus",
+      "id": "codex_skills_graphify_skill_cli_stampedmanifestfiles_clearsemantic_scancorpus_do_not_stamp_the"
     },
     {
       "label": "raw corpus. Code files are always stamped (AST is deterministic); only semantic",
@@ -4259,8 +4259,8 @@
       "contributor": null,
       "community": 202,
       "norm_label": "raw corpus. code files are always stamped (ast is deterministic); only semantic",
-      "id": "codex_skills_graphify_skill_raw_corpus_code_files_are_always_stamped_ast_is_deterministic_only_semantic",
-      "community_name": "Raw Corpus Code Files"
+      "community_name": "Raw Corpus Code Files",
+      "id": "codex_skills_graphify_skill_raw_corpus_code_files_are_always_stamped_ast_is_deterministic_only_semantic"
     },
     {
       "label": "types are gated on output.",
@@ -4273,8 +4273,8 @@
       "contributor": null,
       "community": 212,
       "norm_label": "types are gated on output.",
-      "id": "codex_skills_graphify_skill_types_are_gated_on_output",
-      "community_name": "Types Are Gated On"
+      "community_name": "Types Are Gated On",
+      "id": "codex_skills_graphify_skill_types_are_gated_on_output"
     },
     {
       "label": "Files dispatched this run (the changed subset) but NOT stamped above still carry",
@@ -4287,8 +4287,8 @@
       "contributor": null,
       "community": 187,
       "norm_label": "files dispatched this run (the changed subset) but not stamped above still carry",
-      "id": "codex_skills_graphify_skill_files_dispatched_this_run_the_changed_subset_but_not_stamped_above_still_carry",
-      "community_name": "Files Dispatched This Run"
+      "community_name": "Files Dispatched This Run",
+      "id": "codex_skills_graphify_skill_files_dispatched_this_run_the_changed_subset_but_not_stamped_above_still_carry"
     },
     {
       "label": "a stale semantichash from a prior run; clear it so detectincremental re-queues",
@@ -4301,8 +4301,8 @@
       "contributor": null,
       "community": 178,
       "norm_label": "a stale semantichash from a prior run; clear it so detectincremental re-queues",
-      "id": "codex_skills_graphify_skill_a_stale_semantichash_from_a_prior_run_clear_it_so_detectincremental_re_queues",
-      "community_name": "A Stale Semantichash From"
+      "community_name": "A Stale Semantichash From",
+      "id": "codex_skills_graphify_skill_a_stale_semantichash_from_a_prior_run_clear_it_so_detectincremental_re_queues"
     },
     {
       "label": "them instead of reading them as unchanged (#1948).",
@@ -4315,8 +4315,8 @@
       "contributor": null,
       "community": 211,
       "norm_label": "them instead of reading them as unchanged (#1948).",
-      "id": "codex_skills_graphify_skill_them_instead_of_reading_them_as_unchanged_1948",
-      "community_name": "Them Instead Of Reading"
+      "community_name": "Them Instead Of Reading",
+      "id": "codex_skills_graphify_skill_them_instead_of_reading_them_as_unchanged_1948"
     },
     {
       "label": "scancorpus = the RAW full corpus (not the stamp-filtered subset) so in-root",
@@ -4329,8 +4329,8 @@
       "contributor": null,
       "community": 208,
       "norm_label": "scancorpus = the raw full corpus (not the stamp-filtered subset) so in-root",
-      "id": "codex_skills_graphify_skill_scancorpus_the_raw_full_corpus_not_the_stamp_filtered_subset_so_in_root",
-      "community_name": "Scancorpus The Raw Full"
+      "community_name": "Scancorpus The Raw Full",
+      "id": "codex_skills_graphify_skill_scancorpus_the_raw_full_corpus_not_the_stamp_filtered_subset_so_in_root"
     },
     {
       "label": "files newly excluded since last run are dropped rather than masquerading as",
@@ -4343,8 +4343,8 @@
       "contributor": null,
       "community": 188,
       "norm_label": "files newly excluded since last run are dropped rather than masquerading as",
-      "id": "codex_skills_graphify_skill_files_newly_excluded_since_last_run_are_dropped_rather_than_masquerading_as",
-      "community_name": "Files Newly Excluded Since"
+      "community_name": "Files Newly Excluded Since",
+      "id": "codex_skills_graphify_skill_files_newly_excluded_since_last_run_are_dropped_rather_than_masquerading_as"
     },
     {
       "label": "deletions; untouched files' prior rows are still preserved (#1908).",
@@ -4357,8 +4357,8 @@
       "contributor": null,
       "community": 183,
       "norm_label": "deletions; untouched files' prior rows are still preserved (#1908).",
-      "id": "codex_skills_graphify_skill_deletions_untouched_files_prior_rows_are_still_preserved_1908",
-      "community_name": "Deletions Untouched Files Prior"
+      "community_name": "Deletions Untouched Files Prior",
+      "id": "codex_skills_graphify_skill_deletions_untouched_files_prior_rows_are_still_preserved_1908"
     },
     {
       "label": "Update cumulative cost tracker",
@@ -4371,8 +4371,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "update cumulative cost tracker",
-      "id": "codex_skills_graphify_skill_update_cumulative_cost_tracker",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_update_cumulative_cost_tracker"
     },
     {
       "label": "Interpreter guard for subcommands",
@@ -4385,8 +4385,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "interpreter guard for subcommands",
-      "id": "codex_skills_graphify_skill_interpreter_guard_for_subcommands",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_interpreter_guard_for_subcommands"
     },
     {
       "label": "For --update and --cluster-only",
@@ -4399,8 +4399,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "for --update and --cluster-only",
-      "id": "codex_skills_graphify_skill_for_update_and_cluster_only",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_for_update_and_cluster_only"
     },
     {
       "label": "For /graphify query",
@@ -4413,8 +4413,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "for /graphify query",
-      "id": "codex_skills_graphify_skill_for_graphify_query",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_for_graphify_query"
     },
     {
       "label": "For /graphify add and --watch",
@@ -4427,8 +4427,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "for /graphify add and --watch",
-      "id": "codex_skills_graphify_skill_for_graphify_add_and_watch",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_for_graphify_add_and_watch"
     },
     {
       "label": "For the commit hook and native CLAUDE.md integration",
@@ -4441,8 +4441,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "for the commit hook and native claude.md integration",
-      "id": "codex_skills_graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_for_the_commit_hook_and_native_claude_md_integration"
     },
     {
       "label": "Honesty Rules",
@@ -4455,8 +4455,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "honesty rules",
-      "id": "codex_skills_graphify_skill_honesty_rules",
-      "community_name": "Update Cumulative Cost Tracker"
+      "community_name": "Update Cumulative Cost Tracker",
+      "id": "codex_skills_graphify_skill_honesty_rules"
     },
     {
       "label": "graphify reference: add a URL and watch a folder",
@@ -4469,8 +4469,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "graphify reference: add a url and watch a folder",
-      "id": "codex_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
-      "community_name": "Graphify Reference Add A"
+      "community_name": "Graphify Reference Add A",
+      "id": "codex_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder"
     },
     {
       "label": "For /graphify add",
@@ -4483,8 +4483,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "for /graphify add",
-      "id": "codex_skills_graphify_references_add_watch_for_graphify_add",
-      "community_name": "Graphify Reference Add A"
+      "community_name": "Graphify Reference Add A",
+      "id": "codex_skills_graphify_references_add_watch_for_graphify_add"
     },
     {
       "label": "For --watch",
@@ -4497,8 +4497,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "for --watch",
-      "id": "codex_skills_graphify_references_add_watch_for_watch",
-      "community_name": "Graphify Reference Add A"
+      "community_name": "Graphify Reference Add A",
+      "id": "codex_skills_graphify_references_add_watch_for_watch"
     },
     {
       "label": "graphify reference: extra exports and benchmark",
@@ -4511,8 +4511,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "graphify reference: extra exports and benchmark",
-      "id": "codex_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark"
     },
     {
       "label": "Step 6b - Wiki (only if --wiki flag)",
@@ -4525,8 +4525,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 6b - wiki (only if --wiki flag)",
-      "id": "codex_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag"
     },
     {
       "label": "Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)",
@@ -4539,8 +4539,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7 - neo4j export (only if --neo4j or --neo4j-push flag)",
-      "id": "codex_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag"
     },
     {
       "label": "Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag)",
@@ -4553,8 +4553,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7a - falkordb export (only if --falkordb or --falkordb-push flag)",
-      "id": "codex_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag"
     },
     {
       "label": "Step 7b - SVG export (only if --svg flag)",
@@ -4567,8 +4567,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7b - svg export (only if --svg flag)",
-      "id": "codex_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag"
     },
     {
       "label": "Step 7c - GraphML export (only if --graphml flag)",
@@ -4581,8 +4581,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7c - graphml export (only if --graphml flag)",
-      "id": "codex_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag"
     },
     {
       "label": "Step 7d - MCP server (only if --mcp flag)",
@@ -4595,8 +4595,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 7d - mcp server (only if --mcp flag)",
-      "id": "codex_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag"
     },
     {
       "label": "Step 8 - Token reduction benchmark (only if totalwords > 5000)",
@@ -4609,8 +4609,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "step 8 - token reduction benchmark (only if totalwords > 5000)",
-      "id": "codex_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_totalwords_5000",
-      "community_name": "Graphify Reference Extra Exports"
+      "community_name": "Graphify Reference Extra Exports",
+      "id": "codex_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_totalwords_5000"
     },
     {
       "label": "graphify reference: extraction subagent prompt (compact)",
@@ -4623,8 +4623,8 @@
       "contributor": null,
       "community": 38,
       "norm_label": "graphify reference: extraction subagent prompt (compact)",
-      "id": "codex_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt_compact",
-      "community_name": "Graphify Reference Extraction Subagent"
+      "community_name": "Graphify Reference Extraction Subagent",
+      "id": "codex_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt_compact"
     },
     {
       "label": "graphify reference: GitHub clone and cross-repo merge",
@@ -4637,8 +4637,8 @@
       "contributor": null,
       "community": 23,
       "norm_label": "graphify reference: github clone and cross-repo merge",
-      "id": "codex_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
-      "community_name": "Graphify Reference Github Clone"
+      "community_name": "Graphify Reference Github Clone",
+      "id": "codex_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge"
     },
     {
       "label": "Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)",
@@ -4651,8 +4651,8 @@
       "contributor": null,
       "community": 23,
       "norm_label": "step 0 - clone github repo(s) (only if a github url was given)",
-      "id": "codex_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
-      "community_name": "Graphify Reference Github Clone"
+      "community_name": "Graphify Reference Github Clone",
+      "id": "codex_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given"
     },
     {
       "label": "Use LOCALPATH as the target for all subsequent steps",
@@ -4665,8 +4665,8 @@
       "contributor": null,
       "community": 136,
       "norm_label": "use localpath as the target for all subsequent steps",
-      "id": "codex_skills_graphify_references_github_and_merge_use_localpath_as_the_target_for_all_subsequent_steps",
-      "community_name": "Use Localpath As The"
+      "community_name": "Use Localpath As The",
+      "id": "codex_skills_graphify_references_github_and_merge_use_localpath_as_the_target_for_all_subsequent_steps"
     },
     {
       "label": "Clone each repo, run the full pipeline on each, then merge",
@@ -4679,8 +4679,8 @@
       "contributor": null,
       "community": 132,
       "norm_label": "clone each repo, run the full pipeline on each, then merge",
-      "id": "codex_skills_graphify_references_github_and_merge_clone_each_repo_run_the_full_pipeline_on_each_then_merge",
-      "community_name": "Clone Each Repo Run"
+      "community_name": "Clone Each Repo Run",
+      "id": "codex_skills_graphify_references_github_and_merge_clone_each_repo_run_the_full_pipeline_on_each_then_merge"
     },
     {
       "label": "Run /graphify on each local path to produce their graph.json files",
@@ -4693,8 +4693,8 @@
       "contributor": null,
       "community": 133,
       "norm_label": "run /graphify on each local path to produce their graph.json files",
-      "id": "codex_skills_graphify_references_github_and_merge_run_graphify_on_each_local_path_to_produce_their_graph_json_files",
-      "community_name": "Run Graphify On Each"
+      "community_name": "Run Graphify On Each",
+      "id": "codex_skills_graphify_references_github_and_merge_run_graphify_on_each_local_path_to_produce_their_graph_json_files"
     },
     {
       "label": "Then merge:",
@@ -4707,8 +4707,8 @@
       "contributor": null,
       "community": 134,
       "norm_label": "then merge:",
-      "id": "codex_skills_graphify_references_github_and_merge_then_merge",
-      "community_name": "Then Merge"
+      "community_name": "Then Merge",
+      "id": "codex_skills_graphify_references_github_and_merge_then_merge"
     },
     {
       "label": "Add --backend gemini|kimi|openai|deepseek|claude-cli depending on which API key you have set",
@@ -4721,8 +4721,8 @@
       "contributor": null,
       "community": 131,
       "norm_label": "add --backend gemini|kimi|openai|deepseek|claude-cli depending on which api key you have set",
-      "id": "codex_skills_graphify_references_github_and_merge_add_backend_gemini_kimi_openai_deepseek_claude_cli_depending_on_which_api_key_you_have_set",
-      "community_name": "Add Backend Gemini Kimi"
+      "community_name": "Add Backend Gemini Kimi",
+      "id": "codex_skills_graphify_references_github_and_merge_add_backend_gemini_kimi_openai_deepseek_claude_cli_depending_on_which_api_key_you_have_set"
     },
     {
       "label": "Then merge at the project root:",
@@ -4735,8 +4735,8 @@
       "contributor": null,
       "community": 135,
       "norm_label": "then merge at the project root:",
-      "id": "codex_skills_graphify_references_github_and_merge_then_merge_at_the_project_root",
-      "community_name": "Then Merge At The"
+      "community_name": "Then Merge At The",
+      "id": "codex_skills_graphify_references_github_and_merge_then_merge_at_the_project_root"
     },
     {
       "label": "graphify reference: commit hook and native CLAUDE.md integration",
@@ -4749,8 +4749,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "graphify reference: commit hook and native claude.md integration",
-      "id": "codex_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
-      "community_name": "Graphify Reference Commit Hook"
+      "community_name": "Graphify Reference Commit Hook",
+      "id": "codex_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration"
     },
     {
       "label": "For git commit hook",
@@ -4763,8 +4763,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "for git commit hook",
-      "id": "codex_skills_graphify_references_hooks_for_git_commit_hook",
-      "community_name": "Graphify Reference Commit Hook"
+      "community_name": "Graphify Reference Commit Hook",
+      "id": "codex_skills_graphify_references_hooks_for_git_commit_hook"
     },
     {
       "label": "For native CLAUDE.md integration",
@@ -4777,8 +4777,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "for native claude.md integration",
-      "id": "codex_skills_graphify_references_hooks_for_native_claude_md_integration",
-      "community_name": "Graphify Reference Commit Hook"
+      "community_name": "Graphify Reference Commit Hook",
+      "id": "codex_skills_graphify_references_hooks_for_native_claude_md_integration"
     },
     {
       "label": "graphify reference: query, path, explain",
@@ -4791,8 +4791,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "graphify reference: query, path, explain",
-      "id": "codex_skills_graphify_references_query_graphify_reference_query_path_explain",
-      "community_name": "Graphify Reference Query Path"
+      "community_name": "Graphify Reference Query Path",
+      "id": "codex_skills_graphify_references_query_graphify_reference_query_path_explain"
     },
     {
       "label": "Step 0 \u2014 Constrained query expansion (REQUIRED before traversal)",
@@ -4805,8 +4805,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "step 0 \u2014 constrained query expansion (required before traversal)",
-      "id": "codex_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal",
-      "community_name": "Graphify Reference Query Path"
+      "community_name": "Graphify Reference Query Path",
+      "id": "codex_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal"
     },
     {
       "label": "Step 1 \u2014 Traversal",
@@ -4819,8 +4819,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "step 1 \u2014 traversal",
-      "id": "codex_skills_graphify_references_query_step_1_traversal",
-      "community_name": "Graphify Reference Query Path"
+      "community_name": "Graphify Reference Query Path",
+      "id": "codex_skills_graphify_references_query_step_1_traversal"
     },
     {
       "label": "or: graphify query \"QUESTION\" --dfs --budget 3000",
@@ -4833,8 +4833,8 @@
       "contributor": null,
       "community": 139,
       "norm_label": "or: graphify query \"question\" --dfs --budget 3000",
-      "id": "codex_skills_graphify_references_query_or_graphify_query_question_dfs_budget_3000",
-      "community_name": "Or Graphify Query Question"
+      "community_name": "Or Graphify Query Question",
+      "id": "codex_skills_graphify_references_query_or_graphify_query_question_dfs_budget_3000"
     },
     {
       "label": "Find best-matching start nodes",
@@ -4847,8 +4847,8 @@
       "contributor": null,
       "community": 138,
       "norm_label": "find best-matching start nodes",
-      "id": "codex_skills_graphify_references_query_find_best_matching_start_nodes",
-      "community_name": "Find Best Matching Start"
+      "community_name": "Find Best Matching Start",
+      "id": "codex_skills_graphify_references_query_find_best_matching_start_nodes"
     },
     {
       "label": "Token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
@@ -4861,8 +4861,8 @@
       "contributor": null,
       "community": 140,
       "norm_label": "token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
-      "id": "codex_skills_graphify_references_query_token_budget_aware_output_rank_by_relevance_cut_at_budget_4_chars_token",
-      "community_name": "Token Budget Aware Output"
+      "community_name": "Token Budget Aware Output",
+      "id": "codex_skills_graphify_references_query_token_budget_aware_output_rank_by_relevance_cut_at_budget_4_chars_token"
     },
     {
       "label": "Score each node by term overlap for ranked output",
@@ -4875,8 +4875,8 @@
       "contributor": null,
       "community": 34,
       "norm_label": "score each node by term overlap for ranked output",
-      "id": "codex_skills_graphify_references_query_score_each_node_by_term_overlap_for_ranked_output",
-      "community_name": "Score Each Node By"
+      "community_name": "Score Each Node By",
+      "id": "codex_skills_graphify_references_query_score_each_node_by_term_overlap_for_ranked_output"
     },
     {
       "label": "For /graphify path",
@@ -4889,8 +4889,8 @@
       "contributor": null,
       "community": 34,
       "norm_label": "for /graphify path",
-      "id": "codex_skills_graphify_references_query_for_graphify_path",
-      "community_name": "Score Each Node By"
+      "community_name": "Score Each Node By",
+      "id": "codex_skills_graphify_references_query_for_graphify_path"
     },
     {
       "label": "For /graphify explain",
@@ -4903,8 +4903,8 @@
       "contributor": null,
       "community": 34,
       "norm_label": "for /graphify explain",
-      "id": "codex_skills_graphify_references_query_for_graphify_explain",
-      "community_name": "Score Each Node By"
+      "community_name": "Score Each Node By",
+      "id": "codex_skills_graphify_references_query_for_graphify_explain"
     },
     {
       "label": "Find best matching node",
@@ -4917,8 +4917,8 @@
       "contributor": null,
       "community": 137,
       "norm_label": "find best matching node",
-      "id": "codex_skills_graphify_references_query_find_best_matching_node",
-      "community_name": "Find Best Matching Node"
+      "community_name": "Find Best Matching Node",
+      "id": "codex_skills_graphify_references_query_find_best_matching_node"
     },
     {
       "label": "graphify reference: transcribe video and audio",
@@ -4931,8 +4931,8 @@
       "contributor": null,
       "community": 24,
       "norm_label": "graphify reference: transcribe video and audio",
-      "id": "codex_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
-      "community_name": "Graphify Reference Transcribe Video"
+      "community_name": "Graphify Reference Transcribe Video",
+      "id": "codex_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio"
     },
     {
       "label": "Step 2.5 - Transcribe video / audio files (only if video files detected)",
@@ -4945,8 +4945,8 @@
       "contributor": null,
       "community": 24,
       "norm_label": "step 2.5 - transcribe video / audio files (only if video files detected)",
-      "id": "codex_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
-      "community_name": "Graphify Reference Transcribe Video"
+      "community_name": "Graphify Reference Transcribe Video",
+      "id": "codex_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected"
     },
     {
       "label": "Write the JSON from Python (NOT a shell '>' redirect): transcribeall/Whisper",
@@ -4959,8 +4959,8 @@
       "contributor": null,
       "community": 142,
       "norm_label": "write the json from python (not a shell '>' redirect): transcribeall/whisper",
-      "id": "codex_skills_graphify_references_transcribe_write_the_json_from_python_not_a_shell_redirect_transcribeall_whisper",
-      "community_name": "Write The Json From"
+      "community_name": "Write The Json From",
+      "id": "codex_skills_graphify_references_transcribe_write_the_json_from_python_not_a_shell_redirect_transcribeall_whisper"
     },
     {
       "label": "print progress to stdout, which would otherwise corrupt the JSON file (#1392).",
@@ -4973,8 +4973,8 @@
       "contributor": null,
       "community": 141,
       "norm_label": "print progress to stdout, which would otherwise corrupt the json file (#1392).",
-      "id": "codex_skills_graphify_references_transcribe_print_progress_to_stdout_which_would_otherwise_corrupt_the_json_file_1392",
-      "community_name": "Print Progress To Stdout"
+      "community_name": "Print Progress To Stdout",
+      "id": "codex_skills_graphify_references_transcribe_print_progress_to_stdout_which_would_otherwise_corrupt_the_json_file_1392"
     },
     {
       "label": "graphify reference: incremental update and cluster-only",
@@ -4987,8 +4987,8 @@
       "contributor": null,
       "community": 25,
       "norm_label": "graphify reference: incremental update and cluster-only",
-      "id": "codex_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
-      "community_name": "Graphify Reference Incremental Update"
+      "community_name": "Graphify Reference Incremental Update",
+      "id": "codex_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only"
     },
     {
       "label": "For --update (incremental re-extraction)",
@@ -5001,8 +5001,8 @@
       "contributor": null,
       "community": 25,
       "norm_label": "for --update (incremental re-extraction)",
-      "id": "codex_skills_graphify_references_update_for_update_incremental_re_extraction",
-      "community_name": "Graphify Reference Incremental Update"
+      "community_name": "Graphify Reference Incremental Update",
+      "id": "codex_skills_graphify_references_update_for_update_incremental_re_extraction"
     },
     {
       "label": "Load new extraction and incremental state",
@@ -5015,8 +5015,8 @@
       "contributor": null,
       "community": 153,
       "norm_label": "load new extraction and incremental state",
-      "id": "codex_skills_graphify_references_update_load_new_extraction_and_incremental_state",
-      "community_name": "Load New Extraction And"
+      "community_name": "Load New Extraction And",
+      "id": "codex_skills_graphify_references_update_load_new_extraction_and_incremental_state"
     },
     {
       "label": "prunesources is ONLY for genuinely DELETED files. Changed/re-extracted files are",
@@ -5029,8 +5029,8 @@
       "contributor": null,
       "community": 162,
       "norm_label": "prunesources is only for genuinely deleted files. changed/re-extracted files are",
-      "id": "codex_skills_graphify_references_update_prunesources_is_only_for_genuinely_deleted_files_changed_re_extracted_files_are",
-      "community_name": "Prunesources Is Only For"
+      "community_name": "Prunesources Is Only For",
+      "id": "codex_skills_graphify_references_update_prunesources_is_only_for_genuinely_deleted_files_changed_re_extracted_files_are"
     },
     {
       "label": "handled by buildmerge's replace-on-re-extract (#1344): every sourcefile in",
@@ -5043,8 +5043,8 @@
       "contributor": null,
       "community": 151,
       "norm_label": "handled by buildmerge's replace-on-re-extract (#1344): every sourcefile in",
-      "id": "codex_skills_graphify_references_update_handled_by_buildmerge_s_replace_on_re_extract_1344_every_sourcefile_in",
-      "community_name": "Handled By Buildmerge S"
+      "community_name": "Handled By Buildmerge S",
+      "id": "codex_skills_graphify_references_update_handled_by_buildmerge_s_replace_on_re_extract_1344_every_sourcefile_in"
     },
     {
       "label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
@@ -5057,8 +5057,8 @@
       "contributor": null,
       "community": 155,
       "norm_label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
-      "id": "codex_skills_graphify_references_update_newchunks_is_dropped_from_the_base_before_merge_so_old_stale_nodes_don_t_survive",
-      "community_name": "Newchunks Is Dropped From"
+      "community_name": "Newchunks Is Dropped From",
+      "id": "codex_skills_graphify_references_update_newchunks_is_dropped_from_the_base_before_merge_so_old_stale_nodes_don_t_survive"
     },
     {
       "label": "Do NOT add changed here: with root= passed, pruneset relativizes to the same base",
@@ -5071,8 +5071,8 @@
       "contributor": null,
       "community": 149,
       "norm_label": "do not add changed here: with root= passed, pruneset relativizes to the same base",
-      "id": "codex_skills_graphify_references_update_do_not_add_changed_here_with_root_passed_pruneset_relativizes_to_the_same_base",
-      "community_name": "Do Not Add Changed"
+      "community_name": "Do Not Add Changed",
+      "id": "codex_skills_graphify_references_update_do_not_add_changed_here_with_root_passed_pruneset_relativizes_to_the_same_base"
     },
     {
       "label": "as the freshly merged nodes and would DELETE the re-extracted content (#1178 is moot",
@@ -5085,8 +5085,8 @@
       "contributor": null,
       "community": 144,
       "norm_label": "as the freshly merged nodes and would delete the re-extracted content (#1178 is moot",
-      "id": "codex_skills_graphify_references_update_as_the_freshly_merged_nodes_and_would_delete_the_re_extracted_content_1178_is_moot",
-      "community_name": "As The Freshly Merged"
+      "community_name": "As The Freshly Merged",
+      "id": "codex_skills_graphify_references_update_as_the_freshly_merged_nodes_and_would_delete_the_re_extracted_content_1178_is_moot"
     },
     {
       "label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
@@ -5099,8 +5099,8 @@
       "contributor": null,
       "community": 157,
       "norm_label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
-      "id": "codex_skills_graphify_references_update_now_that_replace_not_the_dedup_pass_reconciles_changed_files",
-      "community_name": "Now That Replace Not"
+      "community_name": "Now That Replace Not",
+      "id": "codex_skills_graphify_references_update_now_that_replace_not_the_dedup_pass_reconciles_changed_files"
     },
     {
       "label": "Use buildmerge() \u2014 reads graph.json directly without NetworkX round-trip",
@@ -5113,8 +5113,8 @@
       "contributor": null,
       "community": 172,
       "norm_label": "use buildmerge() \u2014 reads graph.json directly without networkx round-trip",
-      "id": "codex_skills_graphify_references_update_use_buildmerge_reads_graph_json_directly_without_networkx_round_trip",
-      "community_name": "Use Buildmerge Reads Graph"
+      "community_name": "Use Buildmerge Reads Graph",
+      "id": "codex_skills_graphify_references_update_use_buildmerge_reads_graph_json_directly_without_networkx_round_trip"
     },
     {
       "label": "so edge direction (calls, implements, imports) is always preserved (#801).",
@@ -5127,8 +5127,8 @@
       "contributor": null,
       "community": 168,
       "norm_label": "so edge direction (calls, implements, imports) is always preserved (#801).",
-      "id": "codex_skills_graphify_references_update_so_edge_direction_calls_implements_imports_is_always_preserved_801",
-      "community_name": "So Edge Direction Calls"
+      "community_name": "So Edge Direction Calls",
+      "id": "codex_skills_graphify_references_update_so_edge_direction_calls_implements_imports_is_always_preserved_801"
     },
     {
       "label": "Pass root= so prunesources (absolute paths from detectincremental) are",
@@ -5141,8 +5141,8 @@
       "contributor": null,
       "community": 160,
       "norm_label": "pass root= so prunesources (absolute paths from detectincremental) are",
-      "id": "codex_skills_graphify_references_update_pass_root_so_prunesources_absolute_paths_from_detectincremental_are",
-      "community_name": "Pass Root So Prunesources"
+      "community_name": "Pass Root So Prunesources",
+      "id": "codex_skills_graphify_references_update_pass_root_so_prunesources_absolute_paths_from_detectincremental_are"
     },
     {
       "label": "relativized to match the graph's relative sourcefile values; without it",
@@ -5155,8 +5155,8 @@
       "contributor": null,
       "community": 164,
       "norm_label": "relativized to match the graph's relative sourcefile values; without it",
-      "id": "codex_skills_graphify_references_update_relativized_to_match_the_graph_s_relative_sourcefile_values_without_it",
-      "community_name": "Relativized To Match The"
+      "community_name": "Relativized To Match The",
+      "id": "codex_skills_graphify_references_update_relativized_to_match_the_graph_s_relative_sourcefile_values_without_it"
     },
     {
       "label": "nothing is pruned and stale nodes accumulate on every update (#1361).",
@@ -5169,8 +5169,8 @@
       "contributor": null,
       "community": 156,
       "norm_label": "nothing is pruned and stale nodes accumulate on every update (#1361).",
-      "id": "codex_skills_graphify_references_update_nothing_is_pruned_and_stale_nodes_accumulate_on_every_update_1361",
-      "community_name": "Nothing Is Pruned And"
+      "community_name": "Nothing Is Pruned And",
+      "id": "codex_skills_graphify_references_update_nothing_is_pruned_and_stale_nodes_accumulate_on_every_update_1361"
     },
     {
       "label": "directed=ISDIRECTED: replace ISDIRECTED with True if --directed was given, else",
@@ -5183,8 +5183,8 @@
       "contributor": null,
       "community": 148,
       "norm_label": "directed=isdirected: replace isdirected with true if --directed was given, else",
-      "id": "codex_skills_graphify_references_update_directed_isdirected_replace_isdirected_with_true_if_directed_was_given_else",
-      "community_name": "Directed Isdirected Replace Isdirected"
+      "community_name": "Directed Isdirected Replace Isdirected",
+      "id": "codex_skills_graphify_references_update_directed_isdirected_replace_isdirected_with_true_if_directed_was_given_else"
     },
     {
       "label": "False. Without it a --directed --update silently rebuilds undirected and collapses",
@@ -5197,8 +5197,8 @@
       "contributor": null,
       "community": 150,
       "norm_label": "false. without it a --directed --update silently rebuilds undirected and collapses",
-      "id": "codex_skills_graphify_references_update_false_without_it_a_directed_update_silently_rebuilds_undirected_and_collapses",
-      "community_name": "False Without It A"
+      "community_name": "False Without It A",
+      "id": "codex_skills_graphify_references_update_false_without_it_a_directed_update_silently_rebuilds_undirected_and_collapses"
     },
     {
       "label": "reciprocal A<->B edges (#1392).",
@@ -5211,8 +5211,8 @@
       "contributor": null,
       "community": 163,
       "norm_label": "reciprocal a<->b edges (#1392).",
-      "id": "codex_skills_graphify_references_update_reciprocal_a_b_edges_1392",
-      "community_name": "Reciprocal A B Edges"
+      "community_name": "Reciprocal A B Edges",
+      "id": "codex_skills_graphify_references_update_reciprocal_a_b_edges_1392"
     },
     {
       "label": "Write merged result back to .graphifyextract.json so Step 4 sees the full graph",
@@ -5225,8 +5225,8 @@
       "contributor": null,
       "community": 173,
       "norm_label": "write merged result back to .graphifyextract.json so step 4 sees the full graph",
-      "id": "codex_skills_graphify_references_update_write_merged_result_back_to_graphifyextract_json_so_step_4_sees_the_full_graph",
-      "community_name": "Write Merged Result Back"
+      "community_name": "Write Merged Result Back",
+      "id": "codex_skills_graphify_references_update_write_merged_result_back_to_graphifyextract_json_so_step_4_sees_the_full_graph"
     },
     {
       "label": "Save manifest so next --update diffs against today's state, not the",
@@ -5239,8 +5239,8 @@
       "contributor": null,
       "community": 166,
       "norm_label": "save manifest so next --update diffs against today's state, not the",
-      "id": "codex_skills_graphify_references_update_save_manifest_so_next_update_diffs_against_today_s_state_not_the",
-      "community_name": "Save Manifest So Next"
+      "community_name": "Save Manifest So Next",
+      "id": "codex_skills_graphify_references_update_save_manifest_so_next_update_diffs_against_today_s_state_not_the"
     },
     {
       "label": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
@@ -5253,8 +5253,8 @@
       "contributor": null,
       "community": 161,
       "norm_label": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
-      "id": "codex_skills_graphify_references_update_prior_run_s_baseline_prevents_ghost_node_reports_on_subsequent_updates",
-      "community_name": "Prior Run S Baseline"
+      "community_name": "Prior Run S Baseline",
+      "id": "codex_skills_graphify_references_update_prior_run_s_baseline_prevents_ghost_node_reports_on_subsequent_updates"
     },
     {
       "label": "root= matches the buildmerge call above so the manifest keys stay relative to",
@@ -5267,8 +5267,8 @@
       "contributor": null,
       "community": 165,
       "norm_label": "root= matches the buildmerge call above so the manifest keys stay relative to",
-      "id": "codex_skills_graphify_references_update_root_matches_the_buildmerge_call_above_so_the_manifest_keys_stay_relative_to",
-      "community_name": "Root Matches The Buildmerge"
+      "community_name": "Root Matches The Buildmerge",
+      "id": "codex_skills_graphify_references_update_root_matches_the_buildmerge_call_above_so_the_manifest_keys_stay_relative_to"
     },
     {
       "label": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
@@ -5281,8 +5281,8 @@
       "contributor": null,
       "community": 170,
       "norm_label": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
-      "id": "codex_skills_graphify_references_update_the_scan_root_portable_across_clones_machines_so_update_keeps_matching",
-      "community_name": "The Scan Root Portable"
+      "community_name": "The Scan Root Portable",
+      "id": "codex_skills_graphify_references_update_the_scan_root_portable_across_clones_machines_so_update_keeps_matching"
     },
     {
       "label": "cached files instead of missing every one after a move (#1417).",
@@ -5295,8 +5295,8 @@
       "contributor": null,
       "community": 145,
       "norm_label": "cached files instead of missing every one after a move (#1417).",
-      "id": "codex_skills_graphify_references_update_cached_files_instead_of_missing_every_one_after_a_move_1417",
-      "community_name": "Cached Files Instead Of"
+      "community_name": "Cached Files Instead Of",
+      "id": "codex_skills_graphify_references_update_cached_files_instead_of_missing_every_one_after_a_move_1417"
     },
     {
       "label": "Only stamp semantic files (docs/papers/images) that ACTUALLY produced output",
@@ -5309,8 +5309,8 @@
       "contributor": null,
       "community": 158,
       "norm_label": "only stamp semantic files (docs/papers/images) that actually produced output",
-      "id": "codex_skills_graphify_references_update_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output",
-      "community_name": "Only Stamp Semantic Files"
+      "community_name": "Only Stamp Semantic Files",
+      "id": "codex_skills_graphify_references_update_only_stamp_semantic_files_docs_papers_images_that_actually_produced_output"
     },
     {
       "label": "THIS run (newextraction is this run's fresh extraction, read above before the",
@@ -5323,8 +5323,8 @@
       "contributor": null,
       "community": 171,
       "norm_label": "this run (newextraction is this run's fresh extraction, read above before the",
-      "id": "codex_skills_graphify_references_update_this_run_newextraction_is_this_run_s_fresh_extraction_read_above_before_the",
-      "community_name": "This Run Newextraction Is"
+      "community_name": "This Run Newextraction Is",
+      "id": "codex_skills_graphify_references_update_this_run_newextraction_is_this_run_s_fresh_extraction_read_above_before_the"
     },
     {
       "label": "merge overwrote the file): a changed doc whose chunk failed must stay unstamped",
@@ -5337,8 +5337,8 @@
       "contributor": null,
       "community": 154,
       "norm_label": "merge overwrote the file): a changed doc whose chunk failed must stay unstamped",
-      "id": "codex_skills_graphify_references_update_merge_overwrote_the_file_a_changed_doc_whose_chunk_failed_must_stay_unstamped",
-      "community_name": "Merge Overwrote The File"
+      "community_name": "Merge Overwrote The File",
+      "id": "codex_skills_graphify_references_update_merge_overwrote_the_file_a_changed_doc_whose_chunk_failed_must_stay_unstamped"
     },
     {
       "label": "so the next --update re-queues it, otherwise it is marked done and its content",
@@ -5351,8 +5351,8 @@
       "contributor": null,
       "community": 169,
       "norm_label": "so the next --update re-queues it, otherwise it is marked done and its content",
-      "id": "codex_skills_graphify_references_update_so_the_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content",
-      "community_name": "So The Next Update"
+      "community_name": "So The Next Update",
+      "id": "codex_skills_graphify_references_update_so_the_next_update_re_queues_it_otherwise_it_is_marked_done_and_its_content"
     },
     {
       "label": "is lost forever (#2015). Mirrors the library extract path",
@@ -5365,8 +5365,8 @@
       "contributor": null,
       "community": 152,
       "norm_label": "is lost forever (#2015). mirrors the library extract path",
-      "id": "codex_skills_graphify_references_update_is_lost_forever_2015_mirrors_the_library_extract_path",
-      "community_name": "Is Lost Forever 2015"
+      "community_name": "Is Lost Forever 2015",
+      "id": "codex_skills_graphify_references_update_is_lost_forever_2015_mirrors_the_library_extract_path"
     },
     {
       "label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus).",
@@ -5379,8 +5379,8 @@
       "contributor": null,
       "community": 147,
       "norm_label": "(cli.stampedmanifestfiles + clearsemantic + scancorpus).",
-      "id": "codex_skills_graphify_references_update_cli_stampedmanifestfiles_clearsemantic_scancorpus",
-      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus"
+      "community_name": "Cli Stampedmanifestfiles Clearsemantic Scancorpus",
+      "id": "codex_skills_graphify_references_update_cli_stampedmanifestfiles_clearsemantic_scancorpus"
     },
     {
       "label": "Changed semantic files dispatched this run but NOT stamped had their chunk fail",
@@ -5393,8 +5393,8 @@
       "contributor": null,
       "community": 146,
       "norm_label": "changed semantic files dispatched this run but not stamped had their chunk fail",
-      "id": "codex_skills_graphify_references_update_changed_semantic_files_dispatched_this_run_but_not_stamped_had_their_chunk_fail",
-      "community_name": "Changed Semantic Files Dispatched"
+      "community_name": "Changed Semantic Files Dispatched",
+      "id": "codex_skills_graphify_references_update_changed_semantic_files_dispatched_this_run_but_not_stamped_had_their_chunk_fail"
     },
     {
       "label": "or be omitted; clear any stale semantichash so they are re-queued (#1948).",
@@ -5407,8 +5407,8 @@
       "contributor": null,
       "community": 159,
       "norm_label": "or be omitted; clear any stale semantichash so they are re-queued (#1948).",
-      "id": "codex_skills_graphify_references_update_or_be_omitted_clear_any_stale_semantichash_so_they_are_re_queued_1948",
-      "community_name": "Or Be Omitted Clear"
+      "community_name": "Or Be Omitted Clear",
+      "id": "codex_skills_graphify_references_update_or_be_omitted_clear_any_stale_semantichash_so_they_are_re_queued_1948"
     },
     {
       "label": "scancorpus = the RAW full corpus so in-root files newly excluded since last run",
@@ -5421,8 +5421,8 @@
       "contributor": null,
       "community": 167,
       "norm_label": "scancorpus = the raw full corpus so in-root files newly excluded since last run",
-      "id": "codex_skills_graphify_references_update_scancorpus_the_raw_full_corpus_so_in_root_files_newly_excluded_since_last_run",
-      "community_name": "Scancorpus The Raw Full"
+      "community_name": "Scancorpus The Raw Full",
+      "id": "codex_skills_graphify_references_update_scancorpus_the_raw_full_corpus_so_in_root_files_newly_excluded_since_last_run"
     },
     {
       "label": "are dropped rather than masquerading as deletions; untouched rows preserved (#1908).",
@@ -5435,8 +5435,8 @@
       "contributor": null,
       "community": 143,
       "norm_label": "are dropped rather than masquerading as deletions; untouched rows preserved (#1908).",
-      "id": "codex_skills_graphify_references_update_are_dropped_rather_than_masquerading_as_deletions_untouched_rows_preserved_1908",
-      "community_name": "Are Dropped Rather Than"
+      "community_name": "Are Dropped Rather Than",
+      "id": "codex_skills_graphify_references_update_are_dropped_rather_than_masquerading_as_deletions_untouched_rows_preserved_1908"
     },
     {
       "label": "Load old graph (before update) from backup written before merge",
@@ -5449,8 +5449,8 @@
       "contributor": null,
       "community": 43,
       "norm_label": "load old graph (before update) from backup written before merge",
-      "id": "codex_skills_graphify_references_update_load_old_graph_before_update_from_backup_written_before_merge",
-      "community_name": "Load Old Graph Before"
+      "community_name": "Load Old Graph Before",
+      "id": "codex_skills_graphify_references_update_load_old_graph_before_update_from_backup_written_before_merge"
     },
     {
       "label": "For --cluster-only",
@@ -5463,8 +5463,8 @@
       "contributor": null,
       "community": 43,
       "norm_label": "for --cluster-only",
-      "id": "codex_skills_graphify_references_update_for_cluster_only",
-      "community_name": "Load Old Graph Before"
+      "community_name": "Load Old Graph Before",
+      "id": "codex_skills_graphify_references_update_for_cluster_only"
     },
     {
       "label": "graphify",
@@ -5477,8 +5477,8 @@
       "contributor": null,
       "community": 6,
       "norm_label": "graphify",
-      "id": "agents_graphify",
-      "community_name": "Graphify Concept"
+      "community_name": "Graphify Concept",
+      "id": "agents_graphify"
     },
     {
       "label": "Gita Bali \u2014 Fondasi Data",
@@ -5491,8 +5491,8 @@
       "contributor": null,
       "community": 28,
       "norm_label": "gita bali \u2014 fondasi data",
-      "id": "readme_gita_bali_fondasi_data",
-      "community_name": "Gita Bali Fondasi Data"
+      "community_name": "Gita Bali Fondasi Data",
+      "id": "readme_gita_bali_fondasi_data"
     },
     {
       "label": "Struktur",
@@ -5505,8 +5505,8 @@
       "contributor": null,
       "community": 28,
       "norm_label": "struktur",
-      "id": "readme_struktur",
-      "community_name": "Gita Bali Fondasi Data"
+      "community_name": "Gita Bali Fondasi Data",
+      "id": "readme_struktur"
     },
     {
       "label": "Cara menjalankan",
@@ -5519,8 +5519,8 @@
       "contributor": null,
       "community": 28,
       "norm_label": "cara menjalankan",
-      "id": "readme_cara_menjalankan",
-      "community_name": "Gita Bali Fondasi Data"
+      "community_name": "Gita Bali Fondasi Data",
+      "id": "readme_cara_menjalankan"
     },
     {
       "label": "Validasi",
@@ -5533,8 +5533,8 @@
       "contributor": null,
       "community": 28,
       "norm_label": "validasi",
-      "id": "readme_validasi",
-      "community_name": "Gita Bali Fondasi Data"
+      "community_name": "Gita Bali Fondasi Data",
+      "id": "readme_validasi"
     },
     {
       "label": "atau untuk file lain:",
@@ -5547,8 +5547,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "atau untuk file lain:",
-      "id": "readme_atau_untuk_file_lain",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_atau_untuk_file_lain"
     },
     {
       "label": "Laporan progres",
@@ -5561,8 +5561,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "laporan progres",
-      "id": "readme_laporan_progres",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_laporan_progres"
     },
     {
       "label": "Frontend pembaca",
@@ -5575,8 +5575,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "frontend pembaca",
-      "id": "readme_frontend_pembaca",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_frontend_pembaca"
     },
     {
       "label": "Instalasi dan penggunaan offline",
@@ -5589,8 +5589,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "instalasi dan penggunaan offline",
-      "id": "readme_instalasi_dan_penggunaan_offline",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_instalasi_dan_penggunaan_offline"
     },
     {
       "label": "Publikasi ke Vercel",
@@ -5603,8 +5603,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "publikasi ke vercel",
-      "id": "readme_publikasi_ke_vercel",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_publikasi_ke_vercel"
     },
     {
       "label": "Sinkronisasi Agenda Keluarga",
@@ -5617,8 +5617,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "sinkronisasi agenda keluarga",
-      "id": "readme_sinkronisasi_agenda_keluarga",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_sinkronisasi_agenda_keluarga"
     },
     {
       "label": "Penghapusan akun permanen",
@@ -5631,8 +5631,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "penghapusan akun permanen",
-      "id": "readme_penghapusan_akun_permanen",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_penghapusan_akun_permanen"
     },
     {
       "label": "Arti field",
@@ -5645,8 +5645,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "arti field",
-      "id": "readme_arti_field",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_arti_field"
     },
     {
       "label": "Nilai status",
@@ -5659,8 +5659,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "nilai status",
-      "id": "readme_nilai_status",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_nilai_status"
     },
     {
       "label": "Catatan penting",
@@ -5674,8 +5674,8 @@
       "rationale": "Every published Sanskrit or translation field must have a clear, lawful source and draft content must remain visibly marked.",
       "community": 0,
       "norm_label": "catatan penting",
-      "id": "readme_catatan_penting",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "readme_catatan_penting"
     },
     {
       "label": "Roadmap aplikasi G\u012bt\u0101 Bali",
@@ -5688,8 +5688,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "roadmap aplikasi gita bali",
-      "id": "docs_mobile_release_roadmap_roadmap_aplikasi_gita_bali",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "docs_mobile_release_roadmap_roadmap_aplikasi_gita_bali"
     },
     {
       "label": "Fondasi saat ini",
@@ -5702,8 +5702,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "fondasi saat ini",
-      "id": "docs_mobile_release_roadmap_fondasi_saat_ini",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "docs_mobile_release_roadmap_fondasi_saat_ini"
     },
     {
       "label": "Tahap sebelum pembungkusan aplikasi",
@@ -5717,8 +5717,8 @@
       "rationale": "Stabilize the web application, privacy, offline behavior, notifications, and accessibility before native wrapping.",
       "community": 0,
       "norm_label": "tahap sebelum pembungkusan aplikasi",
-      "id": "docs_mobile_release_roadmap_tahap_sebelum_pembungkusan_aplikasi",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "docs_mobile_release_roadmap_tahap_sebelum_pembungkusan_aplikasi"
     },
     {
       "label": "iOS dan Android",
@@ -5732,8 +5732,8 @@
       "rationale": "Use Capacitor only after the web app is stable so iOS and Android can share the primary codebase.",
       "community": 0,
       "norm_label": "ios dan android",
-      "id": "docs_mobile_release_roadmap_ios_dan_android",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "docs_mobile_release_roadmap_ios_dan_android"
     },
     {
       "label": "Syarat rilis",
@@ -5746,8 +5746,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "syarat rilis",
-      "id": "docs_mobile_release_roadmap_syarat_rilis",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "docs_mobile_release_roadmap_syarat_rilis"
     },
     {
       "label": "G\u012bt\u0101 Bali Reading Room",
@@ -5760,8 +5760,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "gita bali reading room",
-      "id": "preview_index_gita_bali_reading_room",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_gita_bali_reading_room"
     },
     {
       "label": "Intro Motion Experience",
@@ -5775,8 +5775,8 @@
       "rationale": "A separate visual introduction presents the product before the user enters the practical reading dashboard.",
       "community": 0,
       "norm_label": "intro motion experience",
-      "id": "preview_index_intro_motion_experience",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_intro_motion_experience"
     },
     {
       "label": "Personal Dashboard",
@@ -5790,8 +5790,8 @@
       "rationale": "The reading room is the operational dashboard; back navigation should return here rather than replaying the intro.",
       "community": 0,
       "norm_label": "personal dashboard",
-      "id": "preview_index_personal_dashboard",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_personal_dashboard"
     },
     {
       "label": "Multilingual Scripture Reader",
@@ -5804,8 +5804,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "multilingual scripture reader",
-      "id": "preview_index_multilingual_scripture_reader",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_multilingual_scripture_reader"
     },
     {
       "label": "Chapter Exploration",
@@ -5818,8 +5818,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "chapter exploration",
-      "id": "preview_index_chapter_exploration",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_chapter_exploration"
     },
     {
       "label": "Random Sloka Reels",
@@ -5833,8 +5833,8 @@
       "rationale": "Random verses use a full-screen, scroll-snapping mobile flow inspired by short-form vertical feeds.",
       "community": 0,
       "norm_label": "random sloka reels",
-      "id": "preview_index_random_sloka_reels",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_random_sloka_reels"
     },
     {
       "label": "Saved Slokas",
@@ -5847,8 +5847,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "saved slokas",
-      "id": "preview_index_saved_slokas",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_saved_slokas"
     },
     {
       "label": "Per-Sloka Notes",
@@ -5861,8 +5861,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "per-sloka notes",
-      "id": "preview_index_per_sloka_notes",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_per_sloka_notes"
     },
     {
       "label": "Email and Password Authentication",
@@ -5875,8 +5875,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "email and password authentication",
-      "id": "preview_index_email_password_authentication",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_email_password_authentication"
     },
     {
       "label": "Account Data Synchronization",
@@ -5890,8 +5890,8 @@
       "rationale": "Saved verses, notes, and agenda records are scoped to the authenticated Supabase user while retaining local fallback data.",
       "community": 0,
       "norm_label": "account data synchronization",
-      "id": "preview_index_account_data_sync",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_account_data_sync"
     },
     {
       "label": "Family Agenda",
@@ -5904,8 +5904,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "family agenda",
-      "id": "preview_index_family_agenda",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_family_agenda"
     },
     {
       "label": "Pawukon Recurrence",
@@ -5919,8 +5919,8 @@
       "rationale": "Otonan, odalan, and other pawukon events recur from Sapta Wara, Panca Wara, and Wuku signatures on a 210-day cycle.",
       "community": 0,
       "norm_label": "pawukon recurrence",
-      "id": "preview_index_pawukon_recurrence",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_pawukon_recurrence"
     },
     {
       "label": "Gregorian-to-Pawukon Matching",
@@ -5933,8 +5933,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "gregorian-to-pawukon matching",
-      "id": "preview_index_gregorian_to_pawukon_matching",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_gregorian_to_pawukon_matching"
     },
     {
       "label": "Calendar ICS Export",
@@ -5947,8 +5947,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "calendar ics export",
-      "id": "preview_index_calendar_ics_export",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_calendar_ics_export"
     },
     {
       "label": "Balinese Calendar",
@@ -5961,8 +5961,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "balinese calendar",
-      "id": "preview_index_balinese_calendar",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_balinese_calendar"
     },
     {
       "label": "Dewasa Search",
@@ -5976,8 +5976,8 @@
       "rationale": "Dewasa results are guidance linked to external calendar sources, not absolute ritual decisions.",
       "community": 0,
       "norm_label": "dewasa search",
-      "id": "preview_index_dewasa_search",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_dewasa_search"
     },
     {
       "label": "Rahina Details",
@@ -5990,8 +5990,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "rahina details",
-      "id": "preview_index_rahina_details",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_rahina_details"
     },
     {
       "label": "Upakara and Prayers",
@@ -6005,8 +6005,8 @@
       "rationale": "Ritual guidance must respect desa kala patra and the authority of qualified religious practitioners.",
       "community": 22,
       "norm_label": "upakara and prayers",
-      "id": "preview_index_upakara_and_prayers",
-      "community_name": "Upakara And Prayers"
+      "community_name": "Upakara And Prayers",
+      "id": "preview_index_upakara_and_prayers"
     },
     {
       "label": "Panca Yadnya",
@@ -6019,8 +6019,8 @@
       "contributor": null,
       "community": 22,
       "norm_label": "panca yadnya",
-      "id": "preview_index_panca_yadnya",
-      "community_name": "Upakara And Prayers"
+      "community_name": "Upakara And Prayers",
+      "id": "preview_index_panca_yadnya"
     },
     {
       "label": "Daily Prayers",
@@ -6033,8 +6033,8 @@
       "contributor": null,
       "community": 22,
       "norm_label": "daily prayers",
-      "id": "preview_index_daily_prayers",
-      "community_name": "Upakara And Prayers"
+      "community_name": "Upakara And Prayers",
+      "id": "preview_index_daily_prayers"
     },
     {
       "label": "Sustainable Upakara",
@@ -6047,8 +6047,8 @@
       "contributor": null,
       "community": 22,
       "norm_label": "sustainable upakara",
-      "id": "preview_index_sustainable_upakara",
-      "community_name": "Upakara And Prayers"
+      "community_name": "Upakara And Prayers",
+      "id": "preview_index_sustainable_upakara"
     },
     {
       "label": "Adat Literacy",
@@ -6061,8 +6061,8 @@
       "contributor": null,
       "community": 17,
       "norm_label": "adat literacy",
-      "id": "preview_index_adat_literacy",
-      "community_name": "Adat Literacy"
+      "community_name": "Adat Literacy",
+      "id": "preview_index_adat_literacy"
     },
     {
       "label": "Balinese Language Learning",
@@ -6075,8 +6075,8 @@
       "contributor": null,
       "community": 46,
       "norm_label": "balinese language learning",
-      "id": "preview_index_balinese_language_learning",
-      "community_name": "Balinese Cultural Glossary"
+      "community_name": "Balinese Cultural Glossary",
+      "id": "preview_index_balinese_language_learning"
     },
     {
       "label": "Subak Knowledge",
@@ -6089,8 +6089,8 @@
       "contributor": null,
       "community": 17,
       "norm_label": "subak knowledge",
-      "id": "preview_index_subak_knowledge",
-      "community_name": "Adat Literacy"
+      "community_name": "Adat Literacy",
+      "id": "preview_index_subak_knowledge"
     },
     {
       "label": "Yadnya Planner",
@@ -6103,8 +6103,8 @@
       "contributor": null,
       "community": 22,
       "norm_label": "yadnya planner",
-      "id": "preview_index_yadnya_planner",
-      "community_name": "Upakara And Prayers"
+      "community_name": "Upakara And Prayers",
+      "id": "preview_index_yadnya_planner"
     },
     {
       "label": "Tamiu Guide",
@@ -6117,8 +6117,8 @@
       "contributor": null,
       "community": 17,
       "norm_label": "tamiu guide",
-      "id": "preview_index_tamiu_guide",
-      "community_name": "Adat Literacy"
+      "community_name": "Adat Literacy",
+      "id": "preview_index_tamiu_guide"
     },
     {
       "label": "Krama Rights",
@@ -6131,8 +6131,8 @@
       "contributor": null,
       "community": 17,
       "norm_label": "krama rights",
-      "id": "preview_index_krama_rights",
-      "community_name": "Adat Literacy"
+      "community_name": "Adat Literacy",
+      "id": "preview_index_krama_rights"
     },
     {
       "label": "Adat Help Router",
@@ -6145,8 +6145,8 @@
       "contributor": null,
       "community": 17,
       "norm_label": "adat help router",
-      "id": "preview_index_adat_help_router",
-      "community_name": "Adat Literacy"
+      "community_name": "Adat Literacy",
+      "id": "preview_index_adat_help_router"
     },
     {
       "label": "Balinese Cultural Glossary",
@@ -6159,8 +6159,8 @@
       "contributor": null,
       "community": 46,
       "norm_label": "balinese cultural glossary",
-      "id": "preview_index_glossary",
-      "community_name": "Balinese Cultural Glossary"
+      "community_name": "Balinese Cultural Glossary",
+      "id": "preview_index_glossary"
     },
     {
       "label": "Learning Quiz",
@@ -6173,8 +6173,8 @@
       "contributor": null,
       "community": 17,
       "norm_label": "learning quiz",
-      "id": "preview_index_learning_quiz",
-      "community_name": "Adat Literacy"
+      "community_name": "Adat Literacy",
+      "id": "preview_index_learning_quiz"
     },
     {
       "label": "Privacy Policy",
@@ -6187,8 +6187,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "privacy policy",
-      "id": "preview_index_privacy_policy",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_privacy_policy"
     },
     {
       "label": "Account Deletion",
@@ -6201,8 +6201,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "account deletion",
-      "id": "preview_index_account_deletion",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_account_deletion"
     },
     {
       "label": "Offline PWA",
@@ -6215,8 +6215,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "offline pwa",
-      "id": "preview_index_offline_pwa",
-      "community_name": "Atau Untuk File Lain"
+      "community_name": "Atau Untuk File Lain",
+      "id": "preview_index_offline_pwa"
     },
     {
       "label": "Gita Bali App Icon",
@@ -6229,8 +6229,8 @@
       "contributor": null,
       "community": 16,
       "norm_label": "gita bali app icon",
-      "id": "preview_assets_gita_bali_icon_180_gita_bali_app_icon",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_180_gita_bali_app_icon"
     },
     {
       "label": "Open Sacred Book",
@@ -6243,8 +6243,8 @@
       "contributor": null,
       "community": 16,
       "norm_label": "open sacred book",
-      "id": "preview_assets_gita_bali_icon_180_open_sacred_book",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_180_open_sacred_book"
     },
     {
       "label": "Golden Circular Emblem",
@@ -6257,8 +6257,8 @@
       "contributor": null,
       "community": 16,
       "norm_label": "golden circular emblem",
-      "id": "preview_assets_gita_bali_icon_180_golden_circular_emblem",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_180_golden_circular_emblem"
     },
     {
       "label": "Lotus Petal Ornament",
@@ -6271,8 +6271,8 @@
       "contributor": null,
       "community": 16,
       "norm_label": "lotus petal ornament",
-      "id": "preview_assets_gita_bali_icon_180_lotus_petals",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_180_lotus_petals"
     },
     {
       "label": "Maroon Rounded Tile",
@@ -6285,8 +6285,8 @@
       "contributor": null,
       "community": 16,
       "norm_label": "maroon rounded tile",
-      "id": "preview_assets_gita_bali_icon_180_maroon_rounded_tile",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_180_maroon_rounded_tile"
     },
     {
       "label": "Sacred Balinese Reading Identity",
@@ -6299,8 +6299,8 @@
       "contributor": null,
       "community": 16,
       "norm_label": "sacred balinese reading identity",
-      "id": "preview_assets_gita_bali_icon_180_sacred_balinese_reading_identity",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_180_sacred_balinese_reading_identity"
     },
     {
       "label": "Gita Bali App Icon",
@@ -6313,8 +6313,8 @@
       "contributor": null,
       "community": 19,
       "norm_label": "gita bali app icon",
-      "id": "preview_assets_gita_bali_icon_192_gita_bali_app_icon",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_192_gita_bali_app_icon"
     },
     {
       "label": "Open Scripture",
@@ -6327,8 +6327,8 @@
       "contributor": null,
       "community": 19,
       "norm_label": "open scripture",
-      "id": "preview_assets_gita_bali_icon_192_open_scripture",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_192_open_scripture"
     },
     {
       "label": "Lotus Mandala",
@@ -6341,8 +6341,8 @@
       "contributor": null,
       "community": 19,
       "norm_label": "lotus mandala",
-      "id": "preview_assets_gita_bali_icon_192_lotus_mandala",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_192_lotus_mandala"
     },
     {
       "label": "Sacred Reading",
@@ -6355,8 +6355,8 @@
       "contributor": null,
       "community": 19,
       "norm_label": "sacred reading",
-      "id": "preview_assets_gita_bali_icon_192_sacred_reading",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_192_sacred_reading"
     },
     {
       "label": "Earth-Tone Luxury Palette",
@@ -6369,8 +6369,8 @@
       "contributor": null,
       "community": 19,
       "norm_label": "earth-tone luxury palette",
-      "id": "preview_assets_gita_bali_icon_192_earth_tone_palette",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_192_earth_tone_palette"
     },
     {
       "label": "Gita Bali App Icon",
@@ -6383,8 +6383,8 @@
       "contributor": null,
       "community": 20,
       "norm_label": "gita bali app icon",
-      "id": "preview_assets_gita_bali_icon_512_gita_bali_app_icon",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_512_gita_bali_app_icon"
     },
     {
       "label": "Open Scripture",
@@ -6397,8 +6397,8 @@
       "contributor": null,
       "community": 20,
       "norm_label": "open scripture",
-      "id": "preview_assets_gita_bali_icon_512_open_scripture",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_512_open_scripture"
     },
     {
       "label": "Balinese Lotus Compass Motif",
@@ -6411,8 +6411,8 @@
       "contributor": null,
       "community": 20,
       "norm_label": "balinese lotus compass motif",
-      "id": "preview_assets_gita_bali_icon_512_balinese_lotus_compass_motif",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_512_balinese_lotus_compass_motif"
     },
     {
       "label": "Spiritual Reading",
@@ -6425,8 +6425,8 @@
       "contributor": null,
       "community": 20,
       "norm_label": "spiritual reading",
-      "id": "preview_assets_gita_bali_icon_512_spiritual_reading",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_512_spiritual_reading"
     },
     {
       "label": "Earth-Tone Maroon and Gold Palette",
@@ -6439,8 +6439,8 @@
       "contributor": null,
       "community": 20,
       "norm_label": "earth-tone maroon and gold palette",
-      "id": "preview_assets_gita_bali_icon_512_earth_tone_palette",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_512_earth_tone_palette"
     },
     {
       "label": "Gita Bali App Icon",
@@ -6453,8 +6453,8 @@
       "contributor": null,
       "community": 21,
       "norm_label": "gita bali app icon",
-      "id": "preview_assets_gita_bali_icon_gita_bali_app_icon",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_gita_bali_app_icon"
     },
     {
       "label": "Open Sacred Book",
@@ -6467,8 +6467,8 @@
       "contributor": null,
       "community": 21,
       "norm_label": "open sacred book",
-      "id": "preview_assets_gita_bali_icon_open_sacred_book",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_open_sacred_book"
     },
     {
       "label": "Four-Direction Ornament",
@@ -6481,8 +6481,8 @@
       "contributor": null,
       "community": 21,
       "norm_label": "four-direction ornament",
-      "id": "preview_assets_gita_bali_icon_four_direction_ornament",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_four_direction_ornament"
     },
     {
       "label": "Spiritual Reading Identity",
@@ -6495,8 +6495,8 @@
       "contributor": null,
       "community": 21,
       "norm_label": "spiritual reading identity",
-      "id": "preview_assets_gita_bali_icon_spiritual_reading_identity",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_spiritual_reading_identity"
     },
     {
       "label": "Balinese Visual Identity",
@@ -6509,8 +6509,8 @@
       "contributor": null,
       "community": 21,
       "norm_label": "balinese visual identity",
-      "id": "preview_assets_gita_bali_icon_balinese_visual_identity",
-      "community_name": "Gita Bali App Icon"
+      "community_name": "Gita Bali App Icon",
+      "id": "preview_assets_gita_bali_icon_balinese_visual_identity"
     },
     {
       "label": "Bhagavad Gita Chariot Scene",
@@ -6523,8 +6523,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "bhagavad gita chariot scene",
-      "id": "preview_assets_gita_bali_intro_bhagavad_gita_chariot_scene",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_bhagavad_gita_chariot_scene"
     },
     {
       "label": "Krishna",
@@ -6537,8 +6537,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "krishna",
-      "id": "preview_assets_gita_bali_intro_krishna",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_krishna"
     },
     {
       "label": "Arjuna",
@@ -6551,8 +6551,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "arjuna",
-      "id": "preview_assets_gita_bali_intro_arjuna",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_arjuna"
     },
     {
       "label": "Four White Horses",
@@ -6565,8 +6565,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "four white horses",
-      "id": "preview_assets_gita_bali_intro_four_white_horses",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_four_white_horses"
     },
     {
       "label": "Ornate Chariot and Parasol",
@@ -6579,8 +6579,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "ornate chariot and parasol",
-      "id": "preview_assets_gita_bali_intro_ornate_chariot_and_parasol",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_ornate_chariot_and_parasol"
     },
     {
       "label": "Sacred Counsel Between Krishna and Arjuna",
@@ -6593,8 +6593,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "sacred counsel between krishna and arjuna",
-      "id": "preview_assets_gita_bali_intro_sacred_counsel_between_krishna_and_arjuna",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_sacred_counsel_between_krishna_and_arjuna"
     },
     {
       "label": "Balinese Temple Architecture",
@@ -6607,8 +6607,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "balinese temple architecture",
-      "id": "preview_assets_gita_bali_intro_balinese_temple_architecture",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_balinese_temple_architecture"
     },
     {
       "label": "Candi Bentar Gateway",
@@ -6621,8 +6621,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "candi bentar gateway",
-      "id": "preview_assets_gita_bali_intro_candi_bentar_gateway",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_candi_bentar_gateway"
     },
     {
       "label": "Balinese Meru Tower",
@@ -6635,8 +6635,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "balinese meru tower",
-      "id": "preview_assets_gita_bali_intro_meru_tower",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_meru_tower"
     },
     {
       "label": "Volcanic Mountain Landscape",
@@ -6649,8 +6649,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "volcanic mountain landscape",
-      "id": "preview_assets_gita_bali_intro_volcanic_mountain_landscape",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_volcanic_mountain_landscape"
     },
     {
       "label": "Balinese Floral Ornamentation",
@@ -6663,8 +6663,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "balinese floral ornamentation",
-      "id": "preview_assets_gita_bali_intro_balinese_floral_ornamentation",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_balinese_floral_ornamentation"
     },
     {
       "label": "Watercolor and Ink Aesthetic",
@@ -6677,8 +6677,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "watercolor and ink aesthetic",
-      "id": "preview_assets_gita_bali_intro_watercolor_ink_aesthetic",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_watercolor_ink_aesthetic"
     },
     {
       "label": "Bhagavad Gita and Balinese Cultural Fusion",
@@ -6691,8 +6691,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "bhagavad gita and balinese cultural fusion",
-      "id": "preview_assets_gita_bali_intro_bhagavad_gita_and_balinese_cultural_fusion",
-      "community_name": "Bhagavad Gita Chariot Scene"
+      "community_name": "Bhagavad Gita Chariot Scene",
+      "id": "preview_assets_gita_bali_intro_bhagavad_gita_and_balinese_cultural_fusion"
     }
   ],
   "links": [
@@ -7864,7 +7864,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sw.js",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
       "source": "sw",
@@ -7886,7 +7886,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sw.js",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
       "source": "sw",
@@ -10211,5 +10211,5 @@
       "source_file": "preview/assets/gita-bali-intro.jpg"
     }
   ],
-  "built_at_commit": "2bcda83ee0bbd566092b6721f1afd413d8b0c68d"
+  "built_at_commit": "e2aae7ba7c497ee058ca53b6888d1669819a08ae"
 }

@@ -4470,19 +4470,46 @@
   }
   function showRandom() {
     var keys = Object.keys(chapters);
-    Promise.all([authReady].concat(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); }))).then(function(results){
-      var all=results.slice(1);
-      var verses=[]; all.forEach(function(data){ data.sloka.forEach(function(s){ if(readable(s)) verses.push({data:data, sloka:s}); }); });
+    var reflectionSource = "../data/random-reflections.json";
+    var reflectionRequest = fetch(reflectionSource).then(function (response) {
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      return response.json();
+    });
+    Promise.all([authReady, reflectionRequest].concat(keys.map(function(k){ return fetch(chapters[k]).then(function(r){return r.json();}); }))).then(function(results){
+      var reflectionConfig=results[1];
+      var all=results.slice(2);
+      var reflectionThemes=new Map();
+      (reflectionConfig.tema || []).forEach(function(theme){
+        (theme.sloka || []).forEach(function(reference){
+          reflectionThemes.set(String(reference), theme.label || "");
+        });
+      });
+      var verses=[];
+      all.forEach(function(data){
+        data.sloka.forEach(function(s){
+          var reference=String(data.bab) + "." + String(s.no);
+          if(readable(s) && reflectionThemes.has(reference)) {
+            verses.push({data:data, sloka:s, theme:reflectionThemes.get(reference)});
+          }
+        });
+      });
+      if (!verses.length) throw new Error("Daftar renungan kosong");
       document.body.classList.add("random-mode");
       home.hidden=true; chapterHero.hidden=true; reader.hidden=false; toolbar.hidden=true; resultMeta.hidden=true; list.classList.add("random-feed"); list.replaceChildren();
       var controls=make("div", "toolbar random-controls");
       var randomLanguages=make("div", "language-switch");
       var randomSelection=[];
+      var randomSeen=new Set();
+      var randomQueue=[];
       var randomStorageKey="gitaBaliRandomSelection";
+
+      function randomKey(pick) {
+        return String(pick.data.bab) + "-" + String(pick.sloka.no);
+      }
 
       function storeRandomSelection() {
         sessionStorage.setItem(randomStorageKey, JSON.stringify(randomSelection.map(function(pick){
-          return String(pick.data.bab) + "-" + String(pick.sloka.no);
+          return randomKey(pick);
         })));
       }
 
@@ -4517,10 +4544,33 @@
       scrollCue.append(make("span", "", "↓"));
       document.body.append(scrollCue);
       function showScrollCue() { scrollCue.classList.remove("is-hidden"); }
+      function refillRandomQueue() {
+        var available=verses.filter(function(pick){ return !randomSeen.has(randomKey(pick)); });
+        if (!available.length) {
+          randomSeen.clear();
+          available=verses.slice();
+        }
+        for (var i=available.length-1;i>0;i--) {
+          var swapIndex=Math.floor(Math.random()*(i+1));
+          var temporary=available[i];
+          available[i]=available[swapIndex];
+          available[swapIndex]=temporary;
+        }
+        randomQueue=available;
+      }
+      function takeRandomVerse() {
+        if (!randomQueue.length) refillRandomQueue();
+        var pick=randomQueue.pop();
+        randomSeen.add(randomKey(pick));
+        return pick;
+      }
       function addBatch(reset) {
-        if (reset) { randomSelection=[]; list.replaceChildren(); }
+        if (reset) {
+          randomSelection=[];
+          list.replaceChildren();
+        }
         for (var i=0;i<6;i++) {
-          var pick=verses[Math.floor(Math.random()*verses.length)];
+          var pick=takeRandomVerse();
           randomSelection.push(pick);
           state.data=pick.data;
           list.append(renderVerse(pick.sloka));
@@ -4535,7 +4585,10 @@
         try { storedRandomKeys=JSON.parse(sessionStorage.getItem(randomStorageKey) || "[]"); } catch (error) {}
         storedRandomKeys.forEach(function(key){
           var match=verses.find(function(pick){ return String(pick.data.bab) + "-" + String(pick.sloka.no) === String(key); });
-          if (match) randomSelection.push(match);
+          if (match) {
+            randomSelection.push(match);
+            randomSeen.add(randomKey(match));
+          }
         });
       }
       if (randomSelection.length) renderCurrentSelection(0); else addBatch(true);
