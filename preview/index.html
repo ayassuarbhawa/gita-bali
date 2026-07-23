@@ -360,6 +360,13 @@
     place-items: center;
     padding: clamp(3.5rem, 8vw, 7rem) 0;
   }
+  .home.compact-app-page {
+    min-height:0;
+    place-items:start center;
+    padding:clamp(1rem,3vw,2rem) 0 4rem;
+  }
+  .home.compact-app-page #app-view { width:100%; }
+  .home.compact-app-page .explore-grid { margin-top:0; }
   .home-inner { width: min(100%, 62rem); text-align: center; }
   .home-title {
     max-width: 11ch;
@@ -1337,7 +1344,6 @@
       height:100dvh;
       min-height:100vh;
       min-height:100dvh;
-      align-content:start;
       padding:max(5.25rem, calc(4.6rem + env(safe-area-inset-top))) 1.2rem max(1.25rem, env(safe-area-inset-bottom));
       border:0;
       background:transparent;
@@ -4389,6 +4395,7 @@
     document.title = "Kalender Bali — Gītā Bali";
   }
   function showExplore() {
+    home.classList.add("compact-app-page");
     document.querySelector(".home-inner").hidden = true;
     var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
     appView.hidden = false; appView.className = "app-grid explore-grid"; appView.replaceChildren(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"), intro,
@@ -4398,6 +4405,7 @@
     );
   }
   function showGroup(group) {
+    home.classList.add("compact-app-page");
     var ranges = { "1":[1,6], "2":[7,12], "3":[13,18] };
     var recaps = {
       1:["Arjuna Viṣāda Yoga — Kesedihan Arjuna", "Sāṅkhya Yoga — Jiwa dan kebijaksanaan", "Karma Yoga — Tindakan tanpa keterikatan", "Jñāna Karma Sannyāsa — Pengetahuan dan tindakan", "Karma Sannyāsa — Pelepasan melalui tindakan", "Ātma Saṃyama — Disiplin dan meditasi"],
