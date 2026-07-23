@@ -1,4 +1,4 @@
-const CACHE_NAME = "gita-bali-v14";
+const CACHE_NAME = "gita-bali-v15";
 const CORE_ASSETS = [
   "/",
   "/?mode=dashboard",
