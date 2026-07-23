@@ -1290,12 +1290,12 @@
       <form class="auth-form" id="auth-form">
         <label for="auth-email">Alamat email</label>
         <input id="auth-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="nama@email.com" required>
-        <label for="auth-password">Password</label>
-        <div class="password-field">
+        <label id="auth-password-label" for="auth-password">Password</label>
+        <div class="password-field" id="auth-password-wrap">
           <input id="auth-password" name="password" type="password" minlength="8" autocomplete="current-password" placeholder="Minimal 8 karakter" required>
           <button class="password-toggle" type="button" data-password-target="auth-password" aria-pressed="false">Lihat</button>
         </div>
-        <p class="password-hint">Gunakan minimal 8 karakter.</p>
+        <p class="password-hint" id="auth-password-hint">Gunakan minimal 8 karakter.</p>
         <div id="password-confirm-wrap" hidden>
           <label for="auth-password-confirm">Ulangi password</label>
           <div class="password-field">
@@ -1532,6 +1532,9 @@
   var state = { data: null, language: "id", query: "" };
   var supabaseUrl = "https://vekrbbnuzzoawkfsyfdo.supabase.co";
   var supabaseKey = "sb_publishable_6rzcP2Te_5oLb-_MxwHD9A_nLoIICMM";
+  // Supabase can consume and remove auth tokens from the URL during client
+  // initialization. Keep the original fragment so recovery remains detectable.
+  var initialAuthHash = window.location.hash;
   var authClient = window.supabase ? window.supabase.createClient(supabaseUrl, supabaseKey) : null;
   var account = { user: null, saved: new Set(), notes: new Map(), agenda: [] };
   var agendaSyncState = "unknown";
@@ -1641,16 +1644,27 @@
   function setAuthMode(modeName) {
     authMode = modeName;
     var signingUp = authMode === "signup";
-    document.getElementById("auth-title").textContent = signingUp ? "Buat akun baru." : "Masuk ke akunmu.";
-    document.getElementById("auth-copy").textContent = signingUp
-      ? "Daftar dengan email dan password agar catatanmu tersimpan lintas perangkat."
-      : "Gunakan email dan password untuk membuka sloka serta catatanmu.";
-    authSubmit.textContent = signingUp ? "Daftar akun" : "Masuk";
-    document.getElementById("auth-mode-toggle").textContent = signingUp ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar";
-    document.getElementById("auth-forgot").hidden = signingUp;
+    var forgotPassword = authMode === "forgot";
+    document.getElementById("auth-title").textContent = forgotPassword
+      ? "Pulihkan akunmu."
+      : (signingUp ? "Buat akun baru." : "Masuk ke akunmu.");
+    document.getElementById("auth-copy").textContent = forgotPassword
+      ? "Masukkan email akunmu. Kami akan mengirim tautan untuk membuat password baru."
+      : (signingUp
+        ? "Daftar dengan email dan password agar catatanmu tersimpan lintas perangkat."
+        : "Gunakan email dan password untuk membuka sloka serta catatanmu.");
+    authSubmit.textContent = forgotPassword ? "Kirim link pemulihan" : (signingUp ? "Daftar akun" : "Masuk");
+    document.getElementById("auth-mode-toggle").textContent = forgotPassword
+      ? "← Kembali ke masuk"
+      : (signingUp ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar");
+    document.getElementById("auth-forgot").hidden = signingUp || forgotPassword;
     document.getElementById("signup-service-note").hidden = !signingUp;
+    document.getElementById("auth-password-label").hidden = forgotPassword;
+    document.getElementById("auth-password-wrap").hidden = forgotPassword;
+    document.getElementById("auth-password-hint").hidden = forgotPassword;
     document.getElementById("password-confirm-wrap").hidden = !signingUp;
     document.getElementById("auth-password-confirm").required = signingUp;
+    document.getElementById("auth-password").required = !forgotPassword;
     document.getElementById("auth-password").autocomplete = signingUp ? "new-password" : "current-password";
     authMessage.textContent = "";
     authMessage.classList.remove("is-error");
@@ -1747,24 +1761,49 @@
       authTrigger.title = "Layanan akun belum dapat dimuat";
       return;
     }
-    var sessionResult = await authClient.auth.getSession();
-    if (sessionResult.error) notify("Sesi akun belum dapat diperiksa.");
-    await applySession(sessionResult.data.session);
+    var hashParams = new URLSearchParams(initialAuthHash.replace(/^#/, ""));
+    var recoveryRequested = mode === "reset-password" || hashParams.get("type") === "recovery";
+    var recoveryHandled = false;
+
+    async function showPasswordReset(session) {
+      if (recoveryHandled || !session) return;
+      recoveryHandled = true;
+      account.user = session.user || null;
+      updateAuthUI();
+      loginView.hidden = true;
+      accountView.hidden = true;
+      resetView.hidden = false;
+      hideAllPasswords();
+      if (!authDialog.open) authDialog.showModal();
+    }
+
+    // Subscribe before reading the session so the redirect event is not missed
+    // while Supabase processes the recovery token from the URL.
     authClient.auth.onAuthStateChange(function (event, session) {
-      if (event === "INITIAL_SESSION") return;
       if (event === "PASSWORD_RECOVERY") {
-        setTimeout(async function () {
-          await applySession(session);
-          loginView.hidden = true;
-          accountView.hidden = true;
-          resetView.hidden = false;
-          hideAllPasswords();
-          if (!authDialog.open) authDialog.showModal();
-        }, 0);
+        recoveryRequested = true;
+        setTimeout(function () { showPasswordReset(session); }, 0);
         return;
       }
+      if (event === "INITIAL_SESSION") return;
       setTimeout(function () { applySession(session); }, 0);
     });
+
+    var sessionResult = await authClient.auth.getSession();
+    if (sessionResult.error) notify("Sesi akun belum dapat diperiksa.");
+    if (recoveryRequested && sessionResult.data.session) {
+      await showPasswordReset(sessionResult.data.session);
+      return;
+    }
+    if (recoveryRequested && !sessionResult.data.session) {
+      updateAuthUI();
+      setAuthMode("forgot");
+      authMessage.classList.add("is-error");
+      authMessage.textContent = "Tautan pemulihan tidak valid atau sudah kedaluwarsa. Kirim tautan baru.";
+      if (!authDialog.open) authDialog.showModal();
+      return;
+    }
+    if (!recoveryHandled) await applySession(sessionResult.data.session);
   }
 
   function readable(sloka) {
@@ -2016,8 +2055,25 @@
     if (!authClient) return;
     authSubmit.disabled = true;
     authMessage.classList.remove("is-error");
-    authMessage.textContent = authMode === "signup" ? "Membuat akun…" : "Memeriksa akun…";
     var email = document.getElementById("auth-email").value.trim();
+
+    if (authMode === "forgot") {
+      authMessage.textContent = "Mengirim email pemulihan…";
+      var recoveryRedirectTo = location.protocol === "https:" && location.hostname !== "localhost"
+        ? location.origin + location.pathname + "?mode=reset-password"
+        : "https://gitabali.my.id/?mode=reset-password";
+      var recoveryResult = await authClient.auth.resetPasswordForEmail(email, { redirectTo: recoveryRedirectTo });
+      authSubmit.disabled = false;
+      if (recoveryResult.error) {
+        authMessage.classList.add("is-error");
+        authMessage.textContent = authErrorText(recoveryResult.error, "Email pemulihan belum dapat dikirim. Silakan coba lagi.");
+        return;
+      }
+      authMessage.textContent = "Link pemulihan sudah dikirim. Buka email, lalu tekan “Reset password”.";
+      return;
+    }
+
+    authMessage.textContent = authMode === "signup" ? "Membuat akun…" : "Memeriksa akun…";
     var password = document.getElementById("auth-password").value;
     var redirectTo = location.protocol === "http:" || location.protocol === "https:"
       ? location.origin + location.pathname + location.search
@@ -2053,22 +2109,9 @@
     setAuthMode(authMode === "signin" ? "signup" : "signin");
   });
 
-  document.getElementById("auth-forgot").addEventListener("click", async function () {
-    if (!authClient) return;
-    var emailInput = document.getElementById("auth-email");
-    if (!emailInput.reportValidity()) return;
-    authMessage.classList.remove("is-error");
-    authMessage.textContent = "Mengirim email pemulihan…";
-    var redirectTo = location.protocol === "http:" || location.protocol === "https:"
-      ? location.origin + location.pathname + location.search
-      : "https://gita-bali.vercel.app/";
-    var result = await authClient.auth.resetPasswordForEmail(emailInput.value.trim(), { redirectTo: redirectTo });
-    if (result.error) {
-      authMessage.classList.add("is-error");
-      authMessage.textContent = authErrorText(result.error, "Email pemulihan belum dapat dikirim. Silakan coba lagi.");
-      return;
-    }
-    authMessage.textContent = "Email pemulihan sudah dikirim.";
+  document.getElementById("auth-forgot").addEventListener("click", function () {
+    setAuthMode("forgot");
+    document.getElementById("auth-email").focus();
   });
 
   document.getElementById("reset-form").addEventListener("submit", async function (event) {
@@ -2089,11 +2132,12 @@
     document.getElementById("reset-submit").disabled = false;
     if (result.error) {
       message.classList.add("is-error");
-      message.textContent = "Password belum dapat diperbarui. Silakan coba lagi.";
+      message.textContent = authErrorText(result.error, "Password belum dapat diperbarui. Tautan mungkin sudah kedaluwarsa; kirim tautan baru.");
       return;
     }
     authDialog.close();
     notify("Password berhasil diperbarui.");
+    window.history.replaceState({}, "", "?mode=dashboard");
     window.location.reload();
   });
 

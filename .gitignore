@@ -1,3 +1,6 @@
 .DS_Store
 node_modules/
 .vercel
+graphify-out/cache/ast/
+graphify-out/cache/last_query_stamp
+graphify-out/20??-??-??/

@@ -1,13 +1,18 @@
-# Graph Report - /Users/ayas/gita-bali  (2026-07-22)
+# Graph Report - gita-bali  (2026-07-23)
 
 ## Corpus Check
-- 56 files · ~167,071 words
+- 51 files · ~167,348 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 491 nodes · 318 edges · 214 communities (36 shown, 178 thin omitted)
+- 495 nodes · 321 edges · 215 communities (37 shown, 178 thin omitted)
 - Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 37 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `2bcda83e`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Atau Untuk File Lain
@@ -224,6 +229,7 @@
 - Them Instead Of Reading
 - Types Are Gated On
 - Write Interpreter Path For
+- Backlog Fitur Literasi Bali
 
 ## God Nodes (most connected - your core abstractions)
 1. `required` - 9 edges
@@ -263,7 +269,7 @@
 - **Balinese Sacred Landscape** — preview_assets_gita_bali_intro_candi_bentar_gateway, preview_assets_gita_bali_intro_meru_tower, preview_assets_gita_bali_intro_volcanic_mountain_landscape, preview_assets_gita_bali_intro_balinese_floral_ornamentation [INFERRED 0.85]
 - **Gita Bali Visual Identity** — preview_assets_gita_bali_intro_bhagavad_gita_chariot_scene, preview_assets_gita_bali_intro_balinese_temple_architecture, preview_assets_gita_bali_intro_balinese_floral_ornamentation, preview_assets_gita_bali_intro_watercolor_ink_aesthetic [INFERRED 0.85]
 
-## Communities (214 total, 178 thin omitted)
+## Communities (215 total, 178 thin omitted)
 
 ### Community 0 - "Atau Untuk File Lain"
 Cohesion: 0.07
@@ -409,8 +415,12 @@ Nodes (3): or: graphify export html --no-viz, Step 9 - Save manifest, update cos
 Cohesion: 0.67
 Nodes (3): Step 4.5 - Graph health check (read-only integrity gate), Step 5 - Label communities, they never describe a graph that graph.json doesn't contain (#1392).
 
+### Community 214 - "Backlog Fitur Literasi Bali"
+Cohesion: 0.50
+Nodes (3): Backlog Fitur Literasi Bali, Prinsip tampilan, Prioritas utama
+
 ## Knowledge Gaps
-- **345 isolated node(s):** `categories`, `$schema`, `title`, `type`, `bab` (+340 more)
+- **347 isolated node(s):** `categories`, `$schema`, `title`, `type`, `bab` (+342 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **178 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -422,9 +432,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `properties` connect `Properties Code` to `Properties Code`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **Why does `items` connect `Properties Code` to `Properties Code`, `Required Code`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `categories`, `$schema`, `title` to the rest of the system?**
-  _345 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _347 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Atau Untuk File Lain` be split into smaller, more focused modules?**
   _Cohesion score 0.07226890756302522 - nodes in this community are weakly interconnected._
 - **Should `Properties Code` be split into smaller, more focused modules?**
