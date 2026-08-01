@@ -394,7 +394,11 @@
   .dashboard-tile span { color:var(--muted); }
   .dashboard-tile strong { display:block; margin-top:.4rem; color:var(--accent-dark); font-size:.95rem; line-height:1.3; }
   .dashboard-tile p { margin:.3rem 0 0; color:var(--muted); font:.68rem/1.45 system-ui,sans-serif; }
-  .portal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:1rem; text-align:left; }
+  .portal-categories { display:grid; gap:2rem; margin-top:1rem; text-align:left; }
+  .portal-category + .portal-category { padding-top:2rem; border-top:1px solid var(--line); }
+  .portal-category-title { margin:0 0 .8rem; color:var(--accent-dark); font:700 .76rem/1.3 system-ui,sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+  .portal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; text-align:left; }
+  .portal-category.is-four .portal-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .portal-heading { margin:clamp(2rem,5vw,3.5rem) 0 0; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.12em; text-align:left; text-transform:uppercase; }
   .portal-card { position:relative; min-height:13rem; overflow:hidden; }
   .portal-card::after { position:absolute; right:1.3rem; bottom:1rem; color:var(--gold); content:"→"; font:1.2rem/1 system-ui,sans-serif; transition:transform .2s ease; }
@@ -1229,7 +1233,11 @@
     .personal-dashboard { grid-template-columns:1fr 1fr; }
     .dashboard-welcome { grid-column:1 / -1; }
     .portal-heading { margin-top:1.5rem; }
+    .portal-categories { gap:1.4rem; }
+    .portal-category + .portal-category { padding-top:1.4rem; }
+    .portal-category-title { margin-bottom:.55rem; font-size:.68rem; }
     .portal-grid { grid-template-columns:1fr; gap:.55rem; }
+    .portal-category.is-four .portal-grid { grid-template-columns:1fr; }
     .portal-card {
       display:grid;
       min-height:0;
@@ -1606,18 +1614,36 @@
       <div class="dashboard-intro" id="dashboard-intro">
         <p class="eyebrow">Dashboard Sasana Bali</p>
         <h1 class="home-title" id="home-title">Om Swastiastu.</h1>
-        <p class="home-lead">Buka bacaan, doa, kidung, kalender, tradisi, pura, dan pengetahuan adat Bali dari satu halaman.</p>
+        <p class="home-lead">Buka bacaan, doa, kalender, agenda keluarga, yadnya, tradisi, pura, dan pengetahuan Bali dari satu halaman.</p>
       </div>
       <section class="personal-dashboard" id="personal-dashboard" aria-label="Ringkasan pribadi" hidden></section>
       <p class="portal-heading" id="portal-heading">Pilih ruang</p>
-      <nav class="portal-grid" id="portal-grid" aria-labelledby="portal-heading">
-        <a class="app-card portal-card" href="?mode=bhagawad-gita"><span class="app-icon">ॐ</span><strong>Bhagawad Gita</strong><p>Baca sloka, simpan renungan, dan lanjutkan perjalanan dalam 18 bab.</p></a>
-        <a class="app-card portal-card" href="?mode=daily-prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Baca mantra Hindu untuk kegiatan sehari-hari beserta artinya.</p></a>
-        <a class="app-card portal-card" href="?mode=kidung"><span class="app-icon">♫</span><strong>Kidung</strong><p>Buka lirik, Aksara Bali, transliterasi, dan arti kidung.</p></a>
-        <a class="app-card portal-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Lihat pawukon, rahinan, Tumpek, dan ala ayuning dewasa.</p></a>
-        <a class="app-card portal-card" href="?mode=traditions"><span class="app-icon">✦</span><strong>Tradisi</strong><p>Kenali tradisi hidup dari berbagai desa dan kabupaten di Bali.</p></a>
-        <a class="app-card portal-card" href="?mode=temples"><span class="app-icon">♜</span><strong>Pura-pura di Bali</strong><p>Temukan pura menurut kabupaten, alamat, dan sejarah singkatnya.</p></a>
-        <a class="app-card portal-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Adat</strong><p>Pelajari desa adat, awig-awig, pararem, dan kehidupan krama.</p></a>
+      <nav class="portal-categories" id="portal-grid" aria-labelledby="portal-heading">
+        <section class="portal-category" aria-labelledby="portal-rohani">
+          <h2 class="portal-category-title" id="portal-rohani">Ruang Rohani</h2>
+          <div class="portal-grid">
+            <a class="app-card portal-card" href="?mode=bhagawad-gita"><span class="app-icon">ॐ</span><strong>Bhagawad Gita</strong><p>Baca sloka, simpan renungan, dan lanjutkan perjalanan dalam 18 bab.</p></a>
+            <a class="app-card portal-card" href="?mode=daily-prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Baca mantra Hindu untuk kegiatan sehari-hari beserta artinya.</p></a>
+            <a class="app-card portal-card" href="?mode=kidung"><span class="app-icon">♫</span><strong>Kidung</strong><p>Buka lirik, Aksara Bali, transliterasi, dan arti kidung.</p></a>
+          </div>
+        </section>
+        <section class="portal-category" aria-labelledby="portal-waktu">
+          <h2 class="portal-category-title" id="portal-waktu">Waktu &amp; Keluarga</h2>
+          <div class="portal-grid">
+            <a class="app-card portal-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Lihat pawukon, rahinan, Tumpek, dan ala ayuning dewasa.</p></a>
+            <a class="app-card portal-card" href="?mode=agenda"><span class="app-icon">◷</span><strong>Agenda Keluarga</strong><p>Simpan otonan, piodalan, dan agenda keluarga.</p></a>
+            <a class="app-card portal-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Yadnya</strong><p>Kenali Panca Yadnya dan susun Rencana Yadnya keluarga.</p></a>
+          </div>
+        </section>
+        <section class="portal-category is-four" aria-labelledby="portal-warisan">
+          <h2 class="portal-category-title" id="portal-warisan">Warisan &amp; Pengetahuan</h2>
+          <div class="portal-grid">
+            <a class="app-card portal-card" href="?mode=traditions"><span class="app-icon">✦</span><strong>Tradisi</strong><p>Kenali tradisi hidup dari berbagai desa dan kabupaten di Bali.</p></a>
+            <a class="app-card portal-card" href="?mode=temples"><span class="app-icon">♜</span><strong>Pura-pura di Bali</strong><p>Temukan pura menurut kabupaten, alamat, dan sejarah singkatnya.</p></a>
+            <a class="app-card portal-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Adat</strong><p>Pelajari desa adat, awig-awig, pararem, dan kehidupan krama.</p></a>
+            <a class="app-card portal-card" href="?mode=other-info"><span class="app-icon">☷</span><strong>Informasi Lainnya</strong><p>Buka bahasa, aksara dan lontar, pustaka terverifikasi, serta jalur bantuan.</p></a>
+          </div>
+        </section>
       </nav>
       <section class="category-hero" id="category-hero" hidden><div class="category-hero-icons" id="category-hero-icons" aria-hidden="true"></div><p id="category-hero-copy"></p></section>
       <a class="category-back" id="category-back" href="?mode=dashboard" hidden>← Kembali ke Dashboard</a>
@@ -3346,10 +3372,12 @@
   }
   function hubForMode(activeMode) {
     if (["random", "explore", "saved", "notes"].includes(activeMode)) return { href:"?mode=bhagawad-gita", label:"Kembali ke Baca & Renungkan" };
-    if (["calendar", "daily-prayers", "kidung", "traditions", "temples"].includes(activeMode)) return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
+    if (["calendar", "daily-prayers", "kidung", "traditions", "temples", "agenda", "planner"].includes(activeMode)) return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
     if (activeMode === "temple") return { href:"?mode=temples", label:"Kembali ke Pura-pura di Bali" };
-    if (["upakara", "planner", "lestari", "agenda", "yadnya"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
-    if (["adat", "language", "subak", "tamiu", "rights", "help", "glossary", "library", "quiz"].includes(activeMode)) return { href:"?mode=adat-bahasa-alam", label:"Kembali ke Adat, Bahasa & Alam" };
+    if (activeMode === "yadnya") return { href:"?mode=planner", label:"Kembali ke Yadnya" };
+    if (["language", "help", "library"].includes(activeMode)) return { href:"?mode=other-info", label:"Kembali ke Informasi Lainnya" };
+    if (["upakara", "lestari"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
+    if (["adat", "subak", "tamiu", "rights", "glossary", "quiz"].includes(activeMode)) return { href:"?mode=adat-bahasa-alam", label:"Kembali ke Adat, Bahasa & Alam" };
     return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
   }
   function pageBack(href, label) {
@@ -3360,6 +3388,27 @@
     appView.hidden = false;
     appView.className = className || "upakara-page";
     appView.replaceChildren(pageBack(backHref, backLabel));
+  }
+  function showOtherInformation() {
+    prepareUpakaraPage("upakara-page", "?mode=dashboard", "Kembali ke Dashboard Ruang Baca");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Pengetahuan pendukung"),
+      make("h1", "", "Informasi Lainnya"),
+      make("p", "", "Pelajari bahasa dan pustaka Bali, atau temukan jalur bantuan yang sesuai dengan kebutuhanmu.")
+    );
+    var grid = make("div", "upakara-grid");
+    [
+      ["ᬅ", "Bahasa, Aksara & Lontar", "Belajar Bahasa Bali, aksara, dan cara merawat lontar.", "?mode=language"],
+      ["▤", "Pustaka Terverifikasi", "Buka sumber resmi, hukum adat, dan penelitian yang dapat ditelusuri.", "?mode=library"],
+      ["?", "Cari Jalur Bantuan", "Temukan pihak, lembaga, dan dokumen yang sesuai dengan masalahmu.", "?mode=help"]
+    ].forEach(function (item) {
+      var link = upakaraCard(item[1], item[2], item[3]);
+      link.querySelector(".app-icon").textContent = item[0];
+      grid.append(link);
+    });
+    appView.append(header, grid);
+    document.title = "Informasi Lainnya — Sasana Bali";
   }
   function showPrivacyPolicy() {
     prepareUpakaraPage("policy-page");
@@ -4158,7 +4207,7 @@
     });
     guideSection.append(guideGrid);
     var layout = make("div", "planner-layout");
-    var preparation = make("section", "planner-panel"); preparation.append(make("h2", "", "Rencana & checklist"));
+    var preparation = make("section", "planner-panel"); preparation.append(make("h2", "", "Rencana Yadnya & checklist"));
     var fields = make("div", "planner-fields");
     var nameField = make("div", "planner-field is-wide"); var nameLabel = make("label", "", "Nama rencana"); nameLabel.htmlFor = "plan-name";
     var nameInput = document.createElement("input"); nameInput.id = "plan-name"; nameInput.value = state.name || ""; nameInput.placeholder = "Contoh: Otonan Komang"; nameField.append(nameLabel, nameInput);
@@ -5178,6 +5227,7 @@
   }
   if (mode === "dashboard") { document.title = "Dashboard — Sasana Bali"; authReady.then(renderPersonalDashboard); return; }
   if (["bhagawad-gita", "upakara-waktu", "adat-bahasa-alam"].includes(mode)) { showFeatureCategory(mode); return; }
+  if (mode === "other-info") { showOtherInformation(); return; }
   if (mode === "privacy") { showPrivacyPolicy(); return; }
   if (mode === "account") { showAccountManager(); return; }
   if (mode === "agenda") { showFamilyAgenda(); return; }
