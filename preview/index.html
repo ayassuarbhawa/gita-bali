@@ -4118,6 +4118,22 @@
     function dateKey(date) { return date.getFullYear() + "-" + pad(date.getMonth() + 1) + "-" + pad(date.getDate()); }
     function sameDate(first, second) { return dateKey(first) === dateKey(second); }
     function sourceUrl(date) { return "https://m.kalenderbali.org/alaayu.php?bl=" + (date.getMonth() + 1) + "&tg=" + date.getDate() + "&th=" + date.getFullYear(); }
+    var tumpekDetails = [
+      { keys:["landep"], name:"Tumpek Landep", aspect:"Ketajaman pikiran dan teknologi", description:"Hari penghormatan kepada Sang Hyang Pasupati untuk memohon ketajaman pikiran. Dalam praktik masa kini juga menjadi momen merawat alat kerja, kendaraan, dan teknologi secara bertanggung jawab.", preparation:["Bersihkan dan periksa alat kerja, kendaraan, atau teknologi yang digunakan sehari-hari.", "Utamakan makna penyucian pikiran; benda adalah sarana untuk menjalankan dharma.", "Pastikan bentuk persembahyangan dan banten mengikuti dresta keluarga atau desa."] },
+      { keys:["wariga", "uduh", "bubuh", "pengatag", "pengarah"], name:"Tumpek Wariga", aspect:"Tumbuhan dan kesuburan", description:"Juga dikenal sebagai Tumpek Uduh, Bubuh, Pengatag, atau Pengarah. Hari untuk mengungkapkan syukur atas tumbuhan dan memohon kesuburan menjelang Galungan.", preparation:["Rawat tanaman dan lingkungan tanpa melukai atau mengeksploitasi alam.", "Kurangi sampah anorganik dan manfaatkan sisa organik secara bertanggung jawab.", "Siapkan persembahan menurut kebiasaan keluarga serta arahan pemangku."] },
+      { keys:["kuningan"], name:"Tumpek Kuningan", aspect:"Kerahayuan dan perlindungan", description:"Puncak rangkaian Kuningan untuk memohon kerahayuan, keselamatan, dan perlindungan. Persembahyangan umumnya dilaksanakan sebelum tengah hari sesuai tradisi setempat.", preparation:["Pastikan waktu persembahyangan dan sarana Kuningan menurut kebiasaan keluarga.", "Siapkan persembahan serta perlengkapan merajan sejak hari sebelumnya.", "Rencanakan pelepasan atau penyimpanan perlengkapan Galungan sesuai dresta setempat."] },
+      { keys:["krulut"], name:"Tumpek Krulut", aspect:"Kasih sayang dan seni suara", description:"Hari untuk menumbuhkan welas asih serta menghormati seni suara, khususnya gamelan, sebagai sarana membangun keharmonisan.", preparation:["Bersihkan dan rawat gamelan atau sarana seni yang menjadi tanggung jawab keluarga atau komunitas.", "Gunakan kegiatan seni untuk menguatkan kasih sayang dan keharmonisan, bukan sekadar seremoni.", "Koordinasikan persembahyangan dengan sekaa atau pengempon bila sarana merupakan milik bersama."] },
+      { keys:["kandang", "uye"], name:"Tumpek Kandang", aspect:"Satwa dan keseimbangan alam", description:"Juga dikenal sebagai Tumpek Uye. Hari untuk menghormati satwa sebagai bagian dari keseimbangan alam dan mengingat tanggung jawab manusia terhadap kesejahteraannya.", preparation:["Pastikan hewan mendapat makanan, air, tempat yang bersih, dan perawatan yang layak.", "Hindari perlakuan yang membuat hewan takut atau tersakiti demi keperluan dokumentasi.", "Siapkan persembahan secara sederhana sesuai dresta dan kemampuan keluarga."] },
+      { keys:["wayang"], name:"Tumpek Wayang", aspect:"Seni, tuntunan, dan penyucian", description:"Hari penghormatan terhadap seni wayang dan nilai tuntunan dharma di dalamnya. Tradisi penyucian yang berkaitan dengan kelahiran pada Wuku Wayang perlu mengikuti arahan rohaniwan.", preparation:["Rawat wayang dan perlengkapan seni dengan hormat bila menjadi tanggung jawab keluarga atau komunitas.", "Pelajari nilai tuntunan dharma dalam kisah pewayangan bersama keluarga.", "Untuk upacara khusus seperti sapuh leger, mintalah arahan dalang, pemangku, atau sulinggih yang berwenang."] }
+    ];
+    function tumpekForName(name) {
+      var normalized = String(name || "").toLowerCase();
+      return tumpekDetails.find(function (item) { return item.keys.some(function (key) { return normalized.indexOf(key) !== -1; }); }) || null;
+    }
+    function tumpekForDate(balineseDate) {
+      if (!balineseDate || String(balineseDate.saptaWara.name).toLowerCase() !== "saniscara" || String(balineseDate.pancaWara.name).toLowerCase() !== "kliwon") return null;
+      return tumpekForName(balineseDate.wuku.name);
+    }
     function calendarInfo(date) {
       if (!window.BalineseDate) return null;
       var balineseDate = new window.BalineseDate.BalineseDate(date);
@@ -4126,7 +4142,10 @@
       var quality = negativeEkaJala.has(ekaName) || negativePancaSuda.has(pancaName)
         ? "avoid"
         : (positiveEkaJala.has(ekaName) && positivePancaSuda.has(pancaName) ? "good" : "neutral");
-      var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(balineseDate).map(function (item) { return item.name; });
+      var seenRahinan = {};
+      var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(balineseDate).map(function (item) { return item && item.name ? String(item.name).trim() : ""; }).filter(function (name) { var key = name.toLowerCase(); if (!key || seenRahinan[key]) return false; seenRahinan[key] = true; return true; });
+      var calculatedTumpek = tumpekForDate(balineseDate);
+      if (calculatedTumpek && !rahinan.some(function (name) { return tumpekForName(name) === calculatedTumpek; })) rahinan.push(calculatedTumpek.name);
       return { date:balineseDate, quality:quality, rahinan:rahinan };
     }
 
@@ -4312,6 +4331,7 @@
     function rahinanPreparation(names) {
       if (!names.length) return null;
       var joined = names.join(" ").toLowerCase();
+      var selectedTumpek = names.map(tumpekForName).find(function (item) { return item; });
       var items = [
         "Konfirmasi bentuk persembahyangan dan banten dengan keluarga, pemangku, atau pengempon pura.",
         "Siapkan pakaian sembahyang, canang, dupa, bunga atau kwangen, serta sarana pribadi seperlunya.",
@@ -4325,8 +4345,10 @@
         items = ["Bersihkan buku, lontar, alat belajar, dan ruang belajar dengan penuh hormat.", "Siapkan sarana persembahyangan kepada Sang Hyang Aji Saraswati sesuai tradisi keluarga atau sekolah.", "Gunakan hari ini untuk membaca, merawat, dan menghargai sumber pengetahuan."];
       } else if (joined.indexOf("pagerwesi") !== -1) {
         items = ["Siapkan persembahyangan untuk memohon keteguhan pengetahuan dan perlindungan batin.", "Periksa jadwal persembahyangan keluarga atau pura setempat.", "Luangkan waktu untuk refleksi dan memperkuat komitmen menjalankan dharma."];
+      } else if (selectedTumpek) {
+        items = selectedTumpek.preparation;
       } else if (joined.indexOf("tumpek") !== -1) {
-        items = ["Baca nama Tumpek pada tanggal ini dan kenali aspek kehidupan yang dihormati.", "Siapkan sarana sesuai tradisi keluarga serta arahan pemangku.", "Hindari menyalin tata upacara daerah lain tanpa memastikan dresta setempat."];
+        items = ["Kenali nama Tumpek dan aspek kehidupan yang dihormati pada tanggal ini.", "Siapkan sarana sesuai tradisi keluarga serta arahan pemangku.", "Hindari menyalin tata upacara daerah lain tanpa memastikan dresta setempat."];
       } else if (joined.indexOf("purnama") !== -1 || joined.indexOf("tilem") !== -1) {
         items = ["Siapkan canang, dupa, bunga atau kwangen, dan pakaian sembahyang.", "Periksa jadwal persembahyangan di merajan atau pura yang akan dikunjungi.", "Luangkan waktu untuk penyucian diri, doa, dan refleksi."];
       } else if (joined.indexOf("kajeng kliwon") !== -1) {
@@ -4362,7 +4384,8 @@
         { name:"Eka Jala Rsi · " + data.ekaJalaRsi.name, description:positiveEkaJala.has(data.ekaJalaRsi.name) ? "Mengandung isyarat kerahayuan atau hasil yang mendukung." : (negativeEkaJala.has(data.ekaJalaRsi.name) ? "Mengandung isyarat agar kegiatan penting dipertimbangkan kembali." : "Watak hari perlu disesuaikan dengan jenis kegiatan."), quality:primaryQuality },
         { name:"Panca Suda · " + data.pancaSuda.name, description:pancaDescriptions[data.pancaSuda.name] || "Salah satu dasar membaca watak hari dalam wariga.", quality:primaryQuality }
       ];
-      var rahinan = info.rahinan.map(function (name) { return { name:name, description:"Rahinan atau hari suci pada penanggalan Bali.", quality:"neutral" }; });
+      var rahinan = info.rahinan.map(function (name) { var tumpek = tumpekForName(name); return { name:tumpek ? tumpek.name : name, description:tumpek ? tumpek.description : "Rahinan atau hari suci pada penanggalan Bali.", quality:"neutral" }; });
+      var tumpek = info.rahinan.map(tumpekForName).filter(function (item, index, all) { return item && all.indexOf(item) === index; }).map(function (item) { return { name:item.name + " · " + item.aspect, description:item.description, quality:"neutral" }; });
       var wariga = [
         { name:"Sasih", description:data.sasihDayInfo.name + " " + data.sasihDay + " · Sasih " + data.sasih.name + " · Tahun Saka " + data.saka },
         { name:"Triwara · Sadwara", description:data.triWara.name + " · " + data.sadWara.name },
@@ -4372,6 +4395,7 @@
       var primaryHeading = info.quality === "good" ? "Indikasi baik secara umum" : (info.quality === "avoid" ? "Pertimbangan hari" : "Watak hari");
       var groups = [renderGroup(primaryHeading, primary, primaryQuality)];
       if (rahinan.length) groups.push(renderGroup("Rahinan", rahinan, "neutral"));
+      if (tumpek.length) groups.push(renderGroup("Informasi Tumpek", tumpek, "neutral"));
       groups.push(renderGroup("Rincian penanggalan", wariga, "neutral"));
       var sourceLink = make("a", "calendar-source-link", "Lihat Ala Ayuning lengkap");
       sourceLink.href = sourceUrl(date);
