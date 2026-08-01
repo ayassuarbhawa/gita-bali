@@ -1,6 +1,6 @@
 # Backlog Fitur Literasi Bali
 
-Daftar ini menyimpan gagasan pengembangan Gītā Bali untuk dibahas dan dikerjakan bertahap.
+Daftar ini menyimpan gagasan pengembangan Sasana Bali untuk dibahas dan dikerjakan bertahap.
 
 ## Prioritas utama
 

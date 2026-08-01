@@ -1,4 +1,4 @@
-const CACHE_NAME = "gita-bali-v17";
+const CACHE_NAME = "sasana-bali-v18";
 const CORE_ASSETS = [
   "/",
   "/?mode=dashboard",
@@ -38,7 +38,7 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((key) => key.startsWith("gita-bali-") && key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.filter((key) => (key.startsWith("gita-bali-") || key.startsWith("sasana-bali-")) && key !== CACHE_NAME).map((key) => caches.delete(key))))
       .then(() => self.clients.claim())
   );
 });

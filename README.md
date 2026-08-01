@@ -1,4 +1,4 @@
-# Gita Bali — Fondasi Data
+# Sasana Bali — Fondasi Data
 
 Basis data Bhagawad Gita dengan terjemahan Bahasa Indonesia, Bahasa Bali, dan
 Bahasa Inggris.

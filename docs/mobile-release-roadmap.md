@@ -1,4 +1,4 @@
-# Roadmap aplikasi Gītā Bali
+# Roadmap aplikasi Sasana Bali
 
 Target akhir: satu basis produk untuk web, iOS, dan Android tanpa mengorbankan data akun atau pengalaman offline.
 

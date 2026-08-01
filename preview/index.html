@@ -7,11 +7,11 @@
 <meta name="theme-color" content="#642a21">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Gītā Bali">
+<meta name="apple-mobile-web-app-title" content="Sasana Bali">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/preview/assets/gita-bali-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/preview/assets/gita-bali-icon-180.png">
-<title>Gītā Bali</title>
+<title>Sasana Bali</title>
 <script>
   (function () {
     var params = new URLSearchParams(window.location.search);
@@ -382,7 +382,7 @@
     color: var(--muted);
     font-size: clamp(1.02rem, 2vw, 1.22rem);
   }
-  .personal-dashboard { display:grid; grid-template-columns:1.35fr repeat(3,minmax(0,1fr)); gap:.8rem; margin-top:2rem; text-align:left; }
+  .personal-dashboard { display:grid; grid-template-columns:1.25fr repeat(2,minmax(0,1fr)); gap:.8rem; margin-top:2rem; text-align:left; }
   .personal-dashboard[hidden] { display:none; }
   .dashboard-welcome, .dashboard-tile { padding:1.1rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.04); }
   .dashboard-welcome { color:#fff; background:var(--accent-dark); }
@@ -394,6 +394,13 @@
   .dashboard-tile span { color:var(--muted); }
   .dashboard-tile strong { display:block; margin-top:.4rem; color:var(--accent-dark); font-size:.95rem; line-height:1.3; }
   .dashboard-tile p { margin:.3rem 0 0; color:var(--muted); font:.68rem/1.45 system-ui,sans-serif; }
+  .portal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:1rem; text-align:left; }
+  .portal-heading { margin:clamp(2rem,5vw,3.5rem) 0 0; color:var(--muted); font:700 .65rem/1.3 system-ui,sans-serif; letter-spacing:.12em; text-align:left; text-transform:uppercase; }
+  .portal-card { position:relative; min-height:13rem; overflow:hidden; }
+  .portal-card::after { position:absolute; right:1.3rem; bottom:1rem; color:var(--gold); content:"→"; font:1.2rem/1 system-ui,sans-serif; transition:transform .2s ease; }
+  .portal-card:hover::after { transform:translateX(.25rem); }
+  .category-back { display:inline-flex; align-items:center; margin-bottom:1rem; color:var(--accent-dark); font:700 .72rem/1.2 system-ui,sans-serif; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
+  .feature-groups.is-category-view { margin-top:1.5rem; }
   .chapter-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -405,7 +412,7 @@
   .feature-groups { margin-top:clamp(2.5rem,6vw,4rem); text-align:left; }
   .feature-section + .feature-section { margin-top:2.5rem; padding-top:2.5rem; border-top:1px solid var(--line); }
   .feature-heading { display:flex; align-items:end; justify-content:space-between; gap:1rem; }
-  .feature-heading h2 { margin:0; color:var(--accent-dark); font-size:clamp(1.45rem,3vw,2rem); font-weight:400; }
+  .feature-heading h1 { margin:0; color:var(--accent-dark); font-size:clamp(1.45rem,3vw,2rem); font-weight:400; }
   .feature-heading p { max-width:30rem; margin:0; color:var(--muted); font:.78rem/1.5 system-ui,sans-serif; text-align:right; }
   .feature-section .app-grid { margin-top:1rem; }
   .feature-section .app-card { display:flex; min-width:0; flex-direction:column; }
@@ -1144,10 +1151,26 @@
       overflow:visible;
       font:.68rem/1.38 system-ui,sans-serif;
     }
-    .feature-section .feature-heading h2 { font-size:1.42rem; }
+    .feature-section .feature-heading h1 { font-size:1.42rem; }
     .feature-section .feature-heading p { font-size:.72rem; line-height:1.45; }
     .personal-dashboard { grid-template-columns:1fr 1fr; }
     .dashboard-welcome { grid-column:1 / -1; }
+    .portal-heading { margin-top:1.5rem; }
+    .portal-grid { grid-template-columns:1fr; gap:.55rem; }
+    .portal-card {
+      display:grid;
+      min-height:0;
+      grid-template-columns:2rem minmax(0,1fr);
+      grid-template-rows:auto auto;
+      align-content:center;
+      column-gap:.7rem;
+      padding:.75rem 2.6rem .75rem .85rem;
+    }
+    .portal-card .app-icon { grid-row:1 / 3; align-self:center; font-size:1.2rem; text-align:center; }
+    .portal-card strong { margin:0 0 .12rem; font-size:1.02rem; line-height:1.2; }
+    .portal-card p { display:-webkit-box; overflow:hidden; font:.68rem/1.35 system-ui,sans-serif; -webkit-box-orient:vertical; -webkit-line-clamp:2; }
+    .portal-card::after { top:50%; right:.9rem; bottom:auto; transform:translateY(-50%); }
+    .portal-card:hover::after { transform:translate(.2rem,-50%); }
     .feature-heading { display:block; }
     .feature-heading p { margin-top:.45rem; text-align:left; }
     .prayer-list { grid-template-columns:1fr; }
@@ -1384,6 +1407,11 @@
     50% { transform:translate(-50%, .35rem); }
   }
 
+  @media (max-width:24rem) {
+    .personal-dashboard { grid-template-columns:1fr; }
+    .dashboard-welcome { grid-column:auto; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .scroll-cue { animation:none !important; }
@@ -1400,16 +1428,16 @@
   <div class="intro-wash" aria-hidden="true"></div>
   <div class="intro-content">
     <p class="intro-kicker">Bhagawad Gita · Bali</p>
-    <h1 class="intro-title" id="intro-title">Gītā Bali</h1>
+    <h1 class="intro-title" id="intro-title">Sasana Bali</h1>
     <p class="intro-subtitle">Ruang perjumpaan antara kebijaksanaan Bhagawad Gita dan kehalusan jiwa Bali.</p>
     <span class="intro-line" aria-hidden="true"></span>
-    <button class="intro-enter" id="intro-enter" type="button">Baca Sekarang</button>
+    <button class="intro-enter" id="intro-enter" type="button">Buka</button>
   </div>
 </section>
 <a class="skip-link" href="#content">Lewati ke isi</a>
 <header class="site-header">
   <nav class="nav" aria-label="Navigasi utama">
-    <a class="brand" href="?mode=dashboard">GĪTĀ BALI <small>Ruang baca</small></a>
+    <a class="brand" href="?mode=dashboard">SASANA BALI <small>Ruang baca</small></a>
     <div class="nav-actions">
       <a class="nav-link" href="?mode=dashboard">Dashboard</a>
       <div class="nav-language" id="nav-language" role="group" aria-label="Bahasa tampilan">
@@ -1427,7 +1455,7 @@
   <div class="auth-card">
     <button class="auth-close" id="auth-close" type="button" aria-label="Tutup">×</button>
     <section id="login-view">
-      <p class="eyebrow">Akun Gītā Bali</p>
+      <p class="eyebrow">Akun Sasana Bali</p>
       <h2 id="auth-title">Masuk ke akunmu.</h2>
       <p class="auth-copy" id="auth-copy">Gunakan email dan password untuk membuka sloka serta catatanmu.</p>
       <p class="signup-service-note" id="signup-service-note" hidden>Email konfirmasi dikirim oleh layanan akun. Hindari menekan Daftar berulang kali; satu pendaftaran hanya memerlukan satu email.</p>
@@ -1491,13 +1519,22 @@
 <main id="content">
   <section class="home" id="home" aria-labelledby="home-title">
     <div class="home-inner">
-      <p class="eyebrow">Bhagawad Gita</p>
-      <h1 class="home-title" id="home-title">Ruang baca untuk kembali merenung.</h1>
-      <p class="home-lead">Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.</p>
+      <div class="dashboard-intro" id="dashboard-intro">
+        <p class="eyebrow">Dashboard Sasana Bali</p>
+        <h1 class="home-title" id="home-title">Om Swastiastu.</h1>
+        <p class="home-lead">Pilih ruang untuk membaca Bhagawad Gita, menyiapkan upakara, atau mempelajari adat dan kehidupan Bali.</p>
+      </div>
       <section class="personal-dashboard" id="personal-dashboard" aria-label="Ringkasan pribadi" hidden></section>
-      <div class="feature-groups" aria-label="Fitur utama">
-        <section class="feature-section" aria-labelledby="fitur-baca">
-          <div class="feature-heading"><h2 id="fitur-baca">Baca &amp; Renungkan</h2><p>Ruang pribadi untuk membaca sloka, menyimpan pilihan, dan menulis refleksi.</p></div>
+      <p class="portal-heading" id="portal-heading">Pilih ruang</p>
+      <nav class="portal-grid" id="portal-grid" aria-labelledby="portal-heading">
+        <a class="app-card portal-card" href="?mode=bhagawad-gita"><span class="app-icon">ॐ</span><strong>Bhagawad Gita</strong><p>Baca sloka, simpan renungan, dan lanjutkan perjalanan dalam 18 bab.</p></a>
+        <a class="app-card portal-card" href="?mode=upakara-waktu"><span class="app-icon">❋</span><strong>Upakara</strong><p>Buka panduan upakara, kalender Bali, rencana yadnya, dan agenda keluarga.</p></a>
+        <a class="app-card portal-card" href="?mode=adat-bahasa-alam"><span class="app-icon">⌂</span><strong>Adat</strong><p>Pelajari adat, Bahasa Bali, aksara, subak, alam, dan kehidupan krama.</p></a>
+      </nav>
+      <a class="category-back" id="category-back" href="?mode=dashboard" hidden>← Kembali ke Dashboard</a>
+      <div class="feature-groups" id="feature-groups" aria-label="Fitur utama" hidden>
+        <section class="feature-section" data-feature-category="bhagawad-gita" aria-labelledby="fitur-baca">
+          <div class="feature-heading"><h1 id="fitur-baca">Baca &amp; Renungkan</h1><p>Ruang pribadi untuk membaca sloka, menyimpan pilihan, dan menulis refleksi.</p></div>
           <div class="app-grid">
             <a class="app-card" href="?mode=random"><span class="app-icon">✦</span><strong>Sloka Acak</strong><p>Temukan satu sloka untuk direnungkan.</p></a>
             <a class="app-card" href="?mode=explore"><span class="app-icon">☷</span><strong>Jelajahi Gita</strong><p>Baca seluruh sloka dalam 18 bab.</p></a>
@@ -1505,8 +1542,8 @@
             <a class="app-card" href="?mode=notes"><span class="app-icon">✎</span><strong>Catatan</strong><p>Tulis dan kelola refleksi setiap sloka.</p></a>
           </div>
         </section>
-        <section class="feature-section" aria-labelledby="fitur-upakara">
-          <div class="feature-heading"><h2 id="fitur-upakara">Upakara &amp; Waktu</h2><p>Panduan persiapan yang tetap menghormati desa kala patra dan tuntunan rohaniwan.</p></div>
+        <section class="feature-section" data-feature-category="upakara-waktu" aria-labelledby="fitur-upakara">
+          <div class="feature-heading"><h1 id="fitur-upakara">Upakara &amp; Waktu</h1><p>Panduan persiapan yang tetap menghormati desa kala patra dan tuntunan rohaniwan.</p></div>
           <div class="app-grid">
             <a class="app-card" href="?mode=upakara"><span class="app-icon">❋</span><strong>Upakara &amp; Doa</strong><p>Pelajari Panca Yadnya, banten, dan doa harian.</p></a>
             <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Lihat pawukon, rahinan, dan ala ayuning dewasa.</p></a>
@@ -1515,8 +1552,8 @@
             <a class="app-card" href="?mode=agenda"><span class="app-icon">◷</span><strong>Agenda Keluarga Bali</strong><p>Simpan otonan, piodalan, dan agenda keluarga.</p></a>
           </div>
         </section>
-        <section class="feature-section" aria-labelledby="fitur-adat">
-          <div class="feature-heading"><h2 id="fitur-adat">Adat, Bahasa &amp; Alam</h2><p>Pengetahuan dasar untuk memahami kehidupan Bali dan menemukan sumber yang benar.</p></div>
+        <section class="feature-section" data-feature-category="adat-bahasa-alam" aria-labelledby="fitur-adat">
+          <div class="feature-heading"><h1 id="fitur-adat">Adat, Bahasa &amp; Alam</h1><p>Pengetahuan dasar untuk memahami kehidupan Bali dan menemukan sumber yang benar.</p></div>
           <div class="app-grid">
             <a class="app-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Mengenal Adat Bali</strong><p>Kenali desa adat, awig-awig, pararem, dan krama.</p></a>
             <a class="app-card" href="?mode=language"><span class="app-icon">ᬅ</span><strong>Bahasa, Aksara &amp; Lontar</strong><p>Belajar Bahasa Bali, aksara, dan perawatan lontar.</p></a>
@@ -1660,7 +1697,7 @@
 </main>
 
 <footer class="site-footer">
-  <span>Gītā Bali · Teks lintas bahasa untuk dibaca bersama.</span>
+  <span>Sasana Bali · Teks lintas bahasa untuk dibaca bersama.</span>
   <span><a href="?mode=privacy">Privasi</a> · <a href="?mode=account">Kelola akun</a> · <a href="#content">Kembali ke atas</a></span>
 </footer>
 
@@ -1689,11 +1726,22 @@
       "Pasang": "Pasang",
       "Masuk": "Mlebet",
       "Akun": "Akun",
-      "Baca Sekarang": "Maca Jani",
+      "Buka": "Muka",
       "Lewati ke isi": "Langkung ka isi",
       "Navigasi utama": "Navigasi utama",
       "Bahasa tampilan": "Basa tampilan",
       "Ruang perjumpaan antara kebijaksanaan Bhagawad Gita dan kehalusan jiwa Bali.": "Genah patemon antuk kawicaksanaan Bhagawad Gita miwah alusnyane manah Bali.",
+      "Dashboard Sasana Bali": "Dasbor Sasana Bali",
+      "Om Swastiastu.": "Om Swastiastu.",
+      "Pilih ruang untuk membaca Bhagawad Gita, menyiapkan upakara, atau mempelajari adat dan kehidupan Bali.": "Pilih genah anggén maca Bhagawad Gita, nyayagayang upakara, utawi melajahin adat miwah kauripan Bali.",
+      "Pilih ruang": "Pilih genah",
+      "Bhagawad Gita": "Bhagawad Gita",
+      "Upakara": "Upakara",
+      "Adat": "Adat",
+      "Baca sloka, simpan renungan, dan lanjutkan perjalanan dalam 18 bab.": "Wacén sloka, simpen pangresep, tur terusang lampah ring 18 bab.",
+      "Buka panduan upakara, kalender Bali, rencana yadnya, dan agenda keluarga.": "Muka tuntunan upakara, kalender Bali, rencana yadnya, miwah agenda kulawarga.",
+      "Pelajari adat, Bahasa Bali, aksara, subak, alam, dan kehidupan krama.": "Pelajahin adat, Basa Bali, aksara, subak, alam, miwah kauripan krama.",
+      "← Kembali ke Dashboard": "← Mawali ka Dasbor",
       "Ruang baca untuk kembali merenung.": "Genah maca anggén mawali manah.",
       "Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.": "Maca Bhagawad Gita, melajahin upakara, kalender, basa, miwah kauripan adat Bali ring asiki genah sane ayem tur aluh katelusurin.",
       "Baca & Renungkan": "Maca & Manah",
@@ -1754,17 +1802,21 @@
       "Belum ada agenda": "Durung wenten agenda",
       "Tambahkan otonan, odalan, atau kegiatan keluarga.": "Tambah otonan, odalan, utawi kegiatan kulawarga.",
       "Lanjut membaca": "Terusang maca",
-      "Mulai membaca": "Ngawitin maca",
       "Jelajahi Bhagawad Gita": "Jelajahin Bhagawad Gita",
       "Pilih bagian dan bab pertamamu.": "Pilih bagian miwah bab kapertama ragane.",
       "Kembali ke bacaan terakhir.": "Mawali ka wacaan pamuput.",
       "← Kembali": "← Mawali",
       "Kembali ke Dashboard Ruang Baca": "Mawali ka Dasbor Ruang Maca",
+      "Kembali ke Baca & Renungkan": "Mawali ka Maca & Manah",
+      "Kembali ke Upakara & Waktu": "Mawali ka Upakara & Kala",
+      "Kembali ke Adat, Bahasa & Alam": "Mawali ka Adat, Basa & Alam",
+      "Rahinan": "Rahinan",
+      "Tidak ada rahinan khusus": "Nenten wenten rahinan khusus",
       "Buka bagian →": "Buka bagian →",
       "Privasi": "Privasi",
       "Kelola akun": "Atur akun",
       "Kembali ke atas": "Mawali ka duur",
-      "Gītā Bali · Teks lintas bahasa untuk dibaca bersama.": "Gītā Bali · Teks lintas basa anggén kawacen sareng-sareng.",
+      "Sasana Bali · Teks lintas bahasa untuk dibaca bersama.": "Sasana Bali · Teks lintas basa anggén kawacen sareng-sareng.",
       "Kebijakan Privasi": "Kawijakan Privasi",
       "Kelola data & akun": "Atur data & akun",
       "Keluar dari akun": "Medal saking akun",
@@ -1801,7 +1853,7 @@
       "← Kembali ke masuk": "← Mawali ka mlebet",
       "Koneksi kembali aktif.": "Koneksi sampun aktif malih.",
       "Mode offline · bacaan dan perubahan lokal tetap tersedia": "Mode offline · wacaan miwah pauahan lokal tetep sayaga",
-      "Gītā Bali berhasil dipasang.": "Gītā Bali sampun kaplug.",
+      "Sasana Bali berhasil dipasang.": "Sasana Bali sampun kaplug.",
       "Kembali ke daftar bab": "Mawali ka daptar bab",
       "Pilih nomor sloka": "Pilih nomor sloka",
       "✦ Acak Lagi": "✦ Acak Malih",
@@ -2036,11 +2088,22 @@
       "Pasang": "Install",
       "Masuk": "Log in",
       "Akun": "Account",
-      "Baca Sekarang": "Read Now",
+      "Buka": "Open",
       "Lewati ke isi": "Skip to content",
       "Navigasi utama": "Main navigation",
       "Bahasa tampilan": "Display language",
       "Ruang perjumpaan antara kebijaksanaan Bhagawad Gita dan kehalusan jiwa Bali.": "A meeting place for the wisdom of the Bhagavad Gita and the gentle spirit of Bali.",
+      "Dashboard Sasana Bali": "Sasana Bali Dashboard",
+      "Om Swastiastu.": "Om Swastiastu.",
+      "Pilih ruang untuk membaca Bhagawad Gita, menyiapkan upakara, atau mempelajari adat dan kehidupan Bali.": "Choose a space to read the Bhagavad Gita, prepare ceremonies, or explore Balinese customs and life.",
+      "Pilih ruang": "Choose a space",
+      "Bhagawad Gita": "Bhagavad Gita",
+      "Upakara": "Upakara",
+      "Adat": "Adat",
+      "Baca sloka, simpan renungan, dan lanjutkan perjalanan dalam 18 bab.": "Read slokas, save reflections, and continue through all 18 chapters.",
+      "Buka panduan upakara, kalender Bali, rencana yadnya, dan agenda keluarga.": "Open ceremony guides, the Balinese calendar, Yadnya planning, and the family agenda.",
+      "Pelajari adat, Bahasa Bali, aksara, subak, alam, dan kehidupan krama.": "Explore adat, Balinese language and script, subak, nature, and community life.",
+      "← Kembali ke Dashboard": "← Back to Dashboard",
       "Ruang baca untuk kembali merenung.": "A reading space to return and reflect.",
       "Baca Bhagawad Gita, pelajari upakara, kalender, bahasa, dan kehidupan adat Bali dalam satu ruang yang tenang serta mudah ditelusuri.": "Read the Bhagavad Gita and explore Balinese ceremonies, calendars, language, and customary life in one calm, accessible space.",
       "Baca & Renungkan": "Read & Reflect",
@@ -2101,17 +2164,21 @@
       "Belum ada agenda": "No events yet",
       "Tambahkan otonan, odalan, atau kegiatan keluarga.": "Add an otonan, odalan, or family activity.",
       "Lanjut membaca": "Continue reading",
-      "Mulai membaca": "Start reading",
       "Jelajahi Bhagawad Gita": "Explore the Bhagavad Gita",
       "Pilih bagian dan bab pertamamu.": "Choose a part and your first chapter.",
       "Kembali ke bacaan terakhir.": "Return to your latest reading.",
       "← Kembali": "← Back",
       "Kembali ke Dashboard Ruang Baca": "Return to the Reading Room Dashboard",
+      "Kembali ke Baca & Renungkan": "Back to Read & Reflect",
+      "Kembali ke Upakara & Waktu": "Back to Ceremonies & Time",
+      "Kembali ke Adat, Bahasa & Alam": "Back to Adat, Language & Nature",
+      "Rahinan": "Rahinan",
+      "Tidak ada rahinan khusus": "No special rahinan",
       "Buka bagian →": "Open section →",
       "Privasi": "Privacy",
       "Kelola akun": "Manage account",
       "Kembali ke atas": "Back to top",
-      "Gītā Bali · Teks lintas bahasa untuk dibaca bersama.": "Gītā Bali · Multilingual texts to read together.",
+      "Sasana Bali · Teks lintas bahasa untuk dibaca bersama.": "Sasana Bali · Multilingual texts to read together.",
       "Kebijakan Privasi": "Privacy Policy",
       "Kelola data & akun": "Manage data & account",
       "Keluar dari akun": "Log out",
@@ -2148,7 +2215,7 @@
       "← Kembali ke masuk": "← Back to login",
       "Koneksi kembali aktif.": "You are back online.",
       "Mode offline · bacaan dan perubahan lokal tetap tersedia": "Offline mode · readings and local changes remain available",
-      "Gītā Bali berhasil dipasang.": "Gītā Bali was installed.",
+      "Sasana Bali berhasil dipasang.": "Sasana Bali was installed.",
       "Kembali ke daftar bab": "Back to chapter list",
       "Pilih nomor sloka": "Choose a verse number",
       "✦ Acak Lagi": "✦ Shuffle Again",
@@ -2479,6 +2546,11 @@
   var toastTimer;
   var introEnter = document.getElementById("intro-enter");
   var personalDashboard = document.getElementById("personal-dashboard");
+  var dashboardIntro = document.getElementById("dashboard-intro");
+  var portalHeading = document.getElementById("portal-heading");
+  var portalGrid = document.getElementById("portal-grid");
+  var categoryBack = document.getElementById("category-back");
+  var featureGroups = document.getElementById("feature-groups");
   var installTrigger = document.getElementById("install-trigger");
   var connectionStatus = document.getElementById("connection-status");
   var deferredInstallPrompt = null;
@@ -2522,7 +2594,7 @@
   window.addEventListener("appinstalled", function () {
     deferredInstallPrompt = null;
     installTrigger.hidden = true;
-    notify("Gītā Bali berhasil dipasang.");
+    notify("Sasana Bali berhasil dipasang.");
   });
 
   introEnter.addEventListener("click", function () {
@@ -2530,9 +2602,10 @@
     setTimeout(function () {
       document.documentElement.classList.remove("intro-ready", "intro-leaving");
       window.history.replaceState({}, "", "?mode=dashboard");
-      document.title = "Dashboard Ruang Baca — Gītā Bali";
+      document.title = "Dashboard — Sasana Bali";
       authReady.then(renderPersonalDashboard);
-      document.querySelector(".app-card").focus();
+      var firstPortal = document.querySelector(".portal-card");
+      if (firstPortal) firstPortal.focus();
     }, 760);
   });
 
@@ -2764,7 +2837,7 @@
     document.getElementById("translation-progress-label").textContent = t(progressLabels[state.language] || progressLabels.id);
     document.getElementById("content-progress").textContent = available + " / " + data.jumlah_sloka;
     document.getElementById("translation-progress").textContent = translated + " / " + data.jumlah_sloka;
-    document.title = mainTitle + " — Gītā Bali";
+    document.title = mainTitle + " — Sasana Bali";
   }
 
   function renderSources(data) {
@@ -3082,6 +3155,21 @@
     a.append(make("span", "app-icon", "→"), make("strong", "", title), make("p", "", text));
     return a;
   }
+  function showFeatureCategory(category) {
+    var section = featureGroups && featureGroups.querySelector('[data-feature-category="' + category + '"]');
+    if (!section) { window.location.replace("?mode=dashboard"); return; }
+    if (dashboardIntro) dashboardIntro.hidden = true;
+    if (personalDashboard) personalDashboard.hidden = true;
+    if (portalHeading) portalHeading.hidden = true;
+    if (portalGrid) portalGrid.hidden = true;
+    if (categoryBack) categoryBack.hidden = false;
+    featureGroups.hidden = false;
+    featureGroups.classList.add("is-category-view");
+    featureGroups.querySelectorAll("[data-feature-category]").forEach(function (item) { item.hidden = item !== section; });
+    var heading = section.querySelector("h1");
+    if (heading && heading.id) home.setAttribute("aria-labelledby", heading.id);
+    document.title = (heading ? heading.textContent : "Sasana Bali") + " — Sasana Bali";
+  }
   async function sharePlainText(title, content) {
     if (navigator.share) {
       try { await navigator.share({ title:title, text:content }); return true; } catch (error) { if (error && error.name === "AbortError") return false; }
@@ -3133,41 +3221,51 @@
     if (event.repeat210 || event.repeatRule === "pawukon210") while (date < today) date.setDate(date.getDate() + 210);
     return date;
   }
+  function dashboardTumpekName(balineseDate) {
+    if (!balineseDate || String(balineseDate.saptaWara.name).toLowerCase() !== "saniscara" || String(balineseDate.pancaWara.name).toLowerCase() !== "kliwon") return "";
+    var names = { landep:"Tumpek Landep", wariga:"Tumpek Wariga", kuningan:"Tumpek Kuningan", krulut:"Tumpek Krulut", uye:"Tumpek Kandang", wayang:"Tumpek Wayang" };
+    return names[String(balineseDate.wuku.name).toLowerCase()] || "";
+  }
   async function renderPersonalDashboard() {
-    if (!personalDashboard) return; personalDashboard.hidden = false;
+    if (!personalDashboard) return; personalDashboard.hidden = false; personalDashboard.setAttribute("aria-busy", "true");
     var locale = uiLanguage === "en" ? "en-US" : "id-ID";
     var events = await loadFamilyAgendaEvents(); var today = new Date(); var dayTitle = new Intl.DateTimeFormat(locale, { weekday:"long", day:"numeric", month:"long" }).format(today); var baliLine = t("Kalender Bali belum tersedia");
-    if (window.BalineseDate) { var baliDate = new window.BalineseDate.BalineseDate(today); var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(baliDate).map(function (item) { return item.name; }); baliLine = baliDate.saptaWara.name + " " + baliDate.pancaWara.name + " · Wuku " + baliDate.wuku.name + (rahinan.length ? " · " + rahinan.join(" · ") : ""); }
+    if (window.BalineseDate) { var baliDate = new window.BalineseDate.BalineseDate(today); var seenRahinan = {}; var rahinan = window.BalineseDate.BalineseDateUtil.getRahinan(baliDate).map(function (item) { return item && item.name ? String(item.name).trim() : ""; }).filter(function (name) { var key = name.toLowerCase(); if (!key || seenRahinan[key]) return false; seenRahinan[key] = true; return true; }); var tumpekName = dashboardTumpekName(baliDate); if (tumpekName && !rahinan.some(function (name) { return name.toLowerCase().indexOf(tumpekName.toLowerCase().replace("tumpek ", "")) !== -1; })) rahinan.push(tumpekName); baliLine = "Wuku " + baliDate.wuku.name + " · " + t("Rahinan") + ": " + (rahinan.length ? rahinan.join(" · ") : t("Tidak ada rahinan khusus")) + " · " + baliDate.saptaWara.name + " " + baliDate.pancaWara.name; }
     var sortedAgenda = events.slice().map(function (event) { return { event:event, date:dashboardAgendaDate(event) }; }).filter(function (item) { return !Number.isNaN(item.date.getTime()) && item.date >= new Date(today.getFullYear(), today.getMonth(), today.getDate()); }).sort(function (a,b) { return a.date - b.date; }); var next = sortedAgenda[0];
-    var progress = null; try { progress = JSON.parse(localStorage.getItem("gitaBaliLastRead") || "null"); } catch (error) {}
-    var accountSummary = account.saved.size + " sloka tersimpan · " + account.notes.size + " catatan" + (agendaSyncState === "ready" ? " · agenda tersinkron" : " · agenda tersimpan di perangkat");
-    if (uiLanguage === "en") accountSummary = account.saved.size + " saved sloka" + (account.saved.size === 1 ? "" : "s") + " · " + account.notes.size + " note" + (account.notes.size === 1 ? "" : "s") + (agendaSyncState === "ready" ? " · agenda synced" : " · agenda saved on this device");
-    if (uiLanguage === "ban") accountSummary = account.saved.size + " sloka kasimpen · " + account.notes.size + " catetan" + (agendaSyncState === "ready" ? " · agenda sampun selaras" : " · agenda kasimpen ring piranti");
-    var welcome = make("article", "dashboard-welcome"); welcome.append(make("span", "", account.user ? "Akun tersinkron" : "Dashboard Ruang Baca"), make("strong", "", account.user ? "Om swastyastu, " + account.user.email.split("@")[0] : "Om swastyastu"), make("p", "", accountSummary));
+    var accountSummary = account.saved.size + " sloka tersimpan · " + events.length + " agenda tersimpan";
+    if (uiLanguage === "en") accountSummary = account.saved.size + " saved sloka" + (account.saved.size === 1 ? "" : "s") + " · " + events.length + " saved event" + (events.length === 1 ? "" : "s");
+    if (uiLanguage === "ban") accountSummary = account.saved.size + " sloka kasimpen · " + events.length + " agenda kasimpen";
+    var welcome = make("article", "dashboard-welcome"); welcome.append(make("span", "", account.user ? "Akun tersinkron" : "Dashboard"), make("strong", "", account.user ? "Om Swastiastu, " + account.user.email.split("@")[0] : "Om Swastiastu"), make("p", "", accountSummary));
     function dashboardTile(label, title, textValue, href) { var tile = make("a", "dashboard-tile"); tile.href = href; tile.append(make("span", "", label), make("strong", "", title), make("p", "", textValue)); return tile; }
     var todayTile = dashboardTile("Hari ini", dayTitle, baliLine, "?mode=calendar&date=" + today.getFullYear() + "-" + String(today.getMonth()+1).padStart(2,"0") + "-" + String(today.getDate()).padStart(2,"0"));
     var agendaTile = next ? dashboardTile("Agenda terdekat", next.event.name, new Intl.DateTimeFormat(locale, { dateStyle:"long" }).format(next.date), "?mode=agenda") : dashboardTile("Agenda keluarga", "Belum ada agenda", "Tambahkan otonan, odalan, atau kegiatan keluarga.", "?mode=agenda");
-    var readingTile = progress && progress.chapter ? dashboardTile("Lanjut membaca", "Bab " + progress.chapter + " · Sloka " + progress.verse, "Kembali ke bacaan terakhir.", "?bab=" + progress.chapter + "#sloka-" + progress.chapter + "-" + progress.verse) : dashboardTile("Mulai membaca", "Jelajahi Bhagawad Gita", "Pilih bagian dan bab pertamamu.", "?mode=explore");
-    personalDashboard.replaceChildren(welcome, todayTile, agendaTile, readingTile);
+    personalDashboard.replaceChildren(welcome, todayTile, agendaTile);
+    personalDashboard.removeAttribute("aria-busy");
   }
   function upakaraCard(title, text, href) {
     var item = card(title, text, href);
     item.append(make("span", "card-action", "Buka bagian →"));
     return item;
   }
+  function hubForMode(activeMode) {
+    if (["random", "explore", "saved", "notes"].includes(activeMode)) return { href:"?mode=bhagawad-gita", label:"Kembali ke Baca & Renungkan" };
+    if (["upakara", "calendar", "planner", "lestari", "agenda"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
+    if (["adat", "language", "subak", "tamiu", "rights", "help", "glossary", "library", "quiz"].includes(activeMode)) return { href:"?mode=adat-bahasa-alam", label:"Kembali ke Adat, Bahasa & Alam" };
+    return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
+  }
   function pageBack(href, label) {
-    var back = make("a", "upakara-back", "← Kembali"); back.href = href || "?mode=dashboard"; back.setAttribute("aria-label", t(label || "Kembali ke Dashboard Ruang Baca")); return back;
+    var fallback = hubForMode(mode); var back = make("a", "upakara-back", "← Kembali"); back.href = href || fallback.href; back.setAttribute("aria-label", t(label || fallback.label)); return back;
   }
   function prepareUpakaraPage(className, backHref, backLabel) {
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = className || "upakara-page";
-    appView.replaceChildren(pageBack(backHref || "?mode=dashboard", backLabel || "Kembali ke Dashboard Ruang Baca"));
+    appView.replaceChildren(pageBack(backHref, backLabel));
   }
   function showPrivacyPolicy() {
     prepareUpakaraPage("policy-page");
     var header = make("header", "policy-header");
-    header.append(make("p", "eyebrow", "Transparansi data"), make("h1", "", "Kebijakan Privasi"), make("p", "", "Terakhir diperbarui 21 Juli 2026. Kebijakan ini berlaku untuk website dan aplikasi Gītā Bali."));
+    header.append(make("p", "eyebrow", "Transparansi data"), make("h1", "", "Kebijakan Privasi"), make("p", "", "Terakhir diperbarui 21 Juli 2026. Kebijakan ini berlaku untuk website dan aplikasi Sasana Bali."));
     var sections = make("div", "policy-sections");
     function policySection(title, paragraphs, items) {
       var section = make("section", "policy-section"); section.append(make("h2", "", title));
@@ -3175,8 +3273,8 @@
       if (items && items.length) { var listNode = document.createElement("ul"); items.forEach(function (text) { listNode.append(make("li", "", text)); }); section.append(listNode); }
       sections.append(section); return section;
     }
-    policySection("Data yang diproses", ["Gītā Bali hanya memproses data yang diperlukan untuk menjalankan fitur akun dan bacaan."], ["Alamat email dan identitas akun ketika kamu mendaftar.", "Sloka yang disimpan dan catatan pribadi yang kamu tulis.", "Agenda Keluarga, termasuk nama kegiatan, tanggal, pawukon, dan catatan yang kamu masukkan.", "Progres bacaan dan preferensi tampilan yang disimpan secara lokal di perangkat."]);
-    policySection("Tujuan penggunaan", ["Data digunakan untuk autentikasi, sinkronisasi antarperangkat, menampilkan kembali koleksi pribadi, dan menjalankan agenda. Gītā Bali tidak menjual data pribadi dan tidak menggunakan jaringan iklan atau pelacakan lintas aplikasi."]);
+    policySection("Data yang diproses", ["Sasana Bali hanya memproses data yang diperlukan untuk menjalankan fitur akun dan bacaan."], ["Alamat email dan identitas akun ketika kamu mendaftar.", "Sloka yang disimpan dan catatan pribadi yang kamu tulis.", "Agenda Keluarga, termasuk nama kegiatan, tanggal, pawukon, dan catatan yang kamu masukkan.", "Progres bacaan dan preferensi tampilan yang disimpan secara lokal di perangkat."]);
+    policySection("Tujuan penggunaan", ["Data digunakan untuk autentikasi, sinkronisasi antarperangkat, menampilkan kembali koleksi pribadi, dan menjalankan agenda. Sasana Bali tidak menjual data pribadi dan tidak menggunakan jaringan iklan atau pelacakan lintas aplikasi."]);
     var storage = policySection("Penyimpanan dan penyedia layanan", ["Data akun disimpan menggunakan Supabase. Sebagian data juga disimpan sebagai cache lokal agar aplikasi tetap berguna saat offline. Vercel digunakan untuk menyajikan website dan dapat memproses log teknis standar untuk keamanan serta keandalan layanan."]);
     var supabaseLink = make("a", "", "Kebijakan Privasi Supabase"); supabaseLink.href = "https://supabase.com/privacy"; supabaseLink.target = "_blank"; supabaseLink.rel = "noopener noreferrer";
     var vercelLink = make("a", "", "Kebijakan Privasi Vercel"); vercelLink.href = "https://vercel.com/legal/privacy-policy"; vercelLink.target = "_blank"; vercelLink.rel = "noopener noreferrer";
@@ -3184,12 +3282,12 @@
     policySection("Keamanan dan masa penyimpanan", ["Akses data akun dibatasi melalui autentikasi dan Row Level Security. Data disimpan selama akun aktif atau sampai kamu menghapus data tersebut. Tidak ada sistem yang sepenuhnya bebas risiko; karena itu jangan menulis informasi yang sangat sensitif di dalam catatan."]);
     var rights = policySection("Hak dan kendali pengguna", ["Kamu dapat mengunduh salinan data, menghapus catatan atau agenda satu per satu, dan meminta penghapusan akun permanen dari halaman Kelola Akun. Penghapusan akun menghapus akses beserta data akun yang tersimpan di layanan kami dan tidak dapat dibatalkan."]);
     var accountLink = make("a", "", "Buka Kelola Akun"); accountLink.href = "?mode=account"; rights.append(accountLink);
-    policySection("Anak-anak", ["Gītā Bali merupakan ruang pendidikan umum dan tidak secara sengaja mengumpulkan data anak di bawah usia minimum yang berlaku tanpa persetujuan orang tua atau wali."]);
+    policySection("Anak-anak", ["Sasana Bali merupakan ruang pendidikan umum dan tidak secara sengaja mengumpulkan data anak di bawah usia minimum yang berlaku tanpa persetujuan orang tua atau wali."]);
     policySection("Perubahan kebijakan", ["Jika kebijakan ini berubah secara material, tanggal pembaruan akan diganti dan pemberitahuan dapat ditampilkan di aplikasi."]);
     var contact = policySection("Kontak", ["Untuk pertanyaan privasi, koreksi data, atau kendala penghapusan akun, gunakan kanal dukungan resmi proyek."]);
-    var support = make("a", "", "Hubungi dukungan Gītā Bali"); support.href = "https://github.com/ayassuarbhawa/gita-bali/issues"; support.target = "_blank"; support.rel = "noopener noreferrer"; contact.append(support);
+    var support = make("a", "", "Hubungi dukungan Sasana Bali"); support.href = "https://github.com/ayassuarbhawa/gita-bali/issues"; support.target = "_blank"; support.rel = "noopener noreferrer"; contact.append(support);
     appView.append(header, sections);
-    document.title = "Kebijakan Privasi — Gītā Bali";
+    document.title = "Kebijakan Privasi — Sasana Bali";
   }
   function downloadJson(filename, value) {
     var blob = new Blob([JSON.stringify(value, null, 2)], { type:"application/json;charset=utf-8" });
@@ -3201,7 +3299,7 @@
   function showAccountManager() {
     prepareUpakaraPage("policy-page");
     var header = make("header", "policy-header");
-    header.append(make("p", "eyebrow", "Kendali pengguna"), make("h1", "", "Data & Akun"), make("p", "", "Unduh salinan data atau hapus akun Gītā Bali secara permanen."));
+    header.append(make("p", "eyebrow", "Kendali pengguna"), make("h1", "", "Data & Akun"), make("p", "", "Unduh salinan data atau hapus akun Sasana Bali secara permanen."));
     var manager = make("div", "account-manager"); var loading = make("p", "agenda-empty", "Memeriksa akun…"); manager.append(loading); appView.append(header, manager);
     authReady.then(function () {
       manager.replaceChildren();
@@ -3215,7 +3313,7 @@
         exportButton.disabled = true; exportButton.textContent = "Menyiapkan data…"; var agenda = await loadFamilyAgendaEvents();
         var saved = Array.from(account.saved).map(function (key) { var parts = key.split("-"); return { chapter:Number(parts[0]), verse:Number(parts[1]) }; });
         var notes = Array.from(account.notes.entries()).map(function (entry) { var parts = entry[0].split("-"); return { chapter:Number(parts[0]), verse:Number(parts[1]), content:entry[1] }; });
-        downloadJson("data-gita-bali-" + new Date().toISOString().slice(0,10) + ".json", { exported_at:new Date().toISOString(), account:{ id:account.user.id, email:account.user.email, created_at:account.user.created_at }, saved_slokas:saved, sloka_notes:notes, family_agenda:agenda });
+        downloadJson("data-sasana-bali-" + new Date().toISOString().slice(0,10) + ".json", { exported_at:new Date().toISOString(), account:{ id:account.user.id, email:account.user.email, created_at:account.user.created_at }, saved_slokas:saved, sloka_notes:notes, family_agenda:agenda });
         exportButton.disabled = false; exportButton.textContent = "Unduh data (.json)"; notify("Salinan data akun berhasil dibuat.");
       });
       var danger = make("section", "account-panel danger-panel"); danger.append(make("h2", "", "Hapus akun permanen"), make("p", "", "Tindakan ini menghapus akun, sloka tersimpan, catatan, dan Agenda Keluarga yang tersinkron. Data tidak dapat dipulihkan."));
@@ -3229,7 +3327,7 @@
       });
       manager.append(summary, danger);
     });
-    document.title = "Data & Akun — Gītā Bali";
+    document.title = "Data & Akun — Sasana Bali";
   }
   function showUpakaraHub() {
     prepareUpakaraPage("upakara-page");
@@ -3245,7 +3343,7 @@
       upakaraCard("Doa Sehari-hari", "Kumpulan mantra Hindu untuk mengawali dan menutup kegiatan harian, lengkap dengan artinya.", "?mode=daily-prayers")
     );
     appView.append(header, grid);
-    document.title = "Upakara & Doa — Gītā Bali";
+    document.title = "Upakara & Doa — Sasana Bali";
   }
   var yadnyaGuides = {
     dewa: {
@@ -3354,7 +3452,7 @@
     });
     var notice = make("p", "ritual-notice", "Catatan penting: bentuk dan kelengkapan upakara mengikuti desa, kala, patra; tingkat kanistama, madyama, utama; kemampuan keluarga; serta dresta setempat. Gunakan halaman ini sebagai pengenalan, lalu pastikan susunan banten dan mantra inti kepada pemangku, sulinggih, atau serati yang memahami tradisi wilayahmu.");
     appView.append(header, notice, grid);
-    document.title = "Panca Yadnya — Gītā Bali";
+    document.title = "Panca Yadnya — Sasana Bali";
   }
   function showYadnyaDetail(type) {
     var guide = yadnyaGuides[type];
@@ -3380,7 +3478,7 @@
     var sourceTwo = make("a", "", "Pedoman desa, kala, patra"); sourceTwo.href = "https://bali.kemenag.go.id/bangli/berita/26507/pembinaan-serati-banten";
     sources.append(sourceOne, " · ", sourceTwo);
     appView.append(header, notice, sections, sources);
-    document.title = guide.title + " — Gītā Bali";
+    document.title = guide.title + " — Sasana Bali";
   }
   function showDailyPrayers() {
     var prayers = [
@@ -3493,7 +3591,7 @@
     source.append(sourceLink, ". " + t("Ejaan ditata agar nyaman dibaca tanpa mengubah maksud doa."));
     appView.prepend(pageBack("?mode=upakara", "Kembali ke Upakara & Doa"));
     appView.append(header, prayerList, source);
-    document.title = "Doa Sehari-hari — Gītā Bali";
+    document.title = "Doa Sehari-hari — Sasana Bali";
   }
   function showAdatLiteracy() {
     prepareUpakaraPage("upakara-page");
@@ -3582,7 +3680,7 @@
     var ombudsman = make("a", "", "kajian Ombudsman Bali tentang desa adat dan desa dinas"); ombudsman.href = "https://ombudsman.go.id/perwakilan/news/r/pwk--ombudsman-bali-temukan-tumpang-tindih-kewenangan-desa-dinas-dan-adat";
     sources.append(jidhat, " dan ", ombudsman, ".");
     appView.append(header, notice, list, sources);
-    document.title = "Mengenal Adat Bali — Gītā Bali";
+    document.title = "Mengenal Adat Bali — Sasana Bali";
   }
   function showSustainableUpakara() {
     prepareUpakaraPage("upakara-page");
@@ -3618,7 +3716,7 @@
     var policy = make("a", "", "Pergub Bali Nomor 97 Tahun 2018 tentang pembatasan plastik sekali pakai"); policy.href = "https://jidhat.baliprov.go.id/";
     source.append(research, " dan ", policy, ".");
     appView.append(header, notice, steps, sorting, source);
-    document.title = "Upakara Lestari — Gītā Bali";
+    document.title = "Upakara Lestari — Sasana Bali";
   }
   function showBalineseLanguage() {
     prepareUpakaraPage("upakara-page");
@@ -3677,7 +3775,7 @@
     var preservation = make("a", "", "program pelestarian lontar Kementerian Agama"); preservation.href = "https://bimashindu.kemenag.go.id/berita-daerah/rawat-peradaban-masyarakat-dan-kemenag-bali-perkuat-sinergi-lestarikan-lontar-sebagai-warisan-dunia-jRSj6";
     sources.append(culture, " · ", regulation, " · ", preservation);
     appView.append(header, notice, phraseTitle, aksara, lontar, sources);
-    document.title = "Bahasa, Aksara & Lontar — Gītā Bali";
+    document.title = "Bahasa, Aksara & Lontar — Sasana Bali";
   }
   function showSubak() {
     prepareUpakaraPage("upakara-page");
@@ -3718,7 +3816,7 @@
     var research = make("a", "", "riset Udayana tentang pemantauan alih fungsi sawah"); research.href = "https://ojs.unud.ac.id/index.php/agrotrop/article/view/118173";
     sources.append(unesco, " · ", research);
     appView.append(header, notice, principles, list, action, sources);
-    document.title = "Subak & Alam Bali — Gītā Bali";
+    document.title = "Subak & Alam Bali — Sasana Bali";
   }
   function showYadnyaPlanner() {
     prepareUpakaraPage("upakara-page");
@@ -3790,7 +3888,7 @@
       state = collectState(); var tasks = Array.prototype.map.call(checklist.querySelectorAll(".planner-task"), function (label) { return (label.querySelector("input").checked ? "✓ " : "☐ ") + label.querySelector("span").textContent; });
       var budgetLines = Object.keys(state.budget).filter(function (category) { return state.budget[category] > 0; }).map(function (category) { return t(category) + ": " + new Intl.NumberFormat(displayLocale(), { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(state.budget[category]); });
       var amount = Object.keys(state.budget).reduce(function (sum, category) { return sum + state.budget[category]; }, 0);
-      var content = [state.name || t("Rencana Yadnya"), t("Jenis") + ": " + typeSelect.options[typeSelect.selectedIndex].text, state.date ? t("Tanggal") + ": " + new Intl.DateTimeFormat(displayLocale(), { dateStyle:"long" }).format(new Date(state.date + "T00:00:00")) : t("Tanggal belum ditentukan"), "", t("Checklist") + ":", tasks.join("\n"), "", t("Anggaran") + ":", budgetLines.length ? budgetLines.join("\n") : t("Belum diisi"), t("Total") + ": " + new Intl.NumberFormat(displayLocale(), { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(amount), "", t("Dibuat melalui Gītā Bali")].join("\n");
+      var content = [state.name || t("Rencana Yadnya"), t("Jenis") + ": " + typeSelect.options[typeSelect.selectedIndex].text, state.date ? t("Tanggal") + ": " + new Intl.DateTimeFormat(displayLocale(), { dateStyle:"long" }).format(new Date(state.date + "T00:00:00")) : t("Tanggal belum ditentukan"), "", t("Checklist") + ":", tasks.join("\n"), "", t("Anggaran") + ":", budgetLines.length ? budgetLines.join("\n") : t("Belum diisi"), t("Total") + ": " + new Intl.NumberFormat(displayLocale(), { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(amount), "", t("Dibuat melalui Sasana Bali")].join("\n");
       sharePlainText(state.name || "Rencana Yadnya", content);
     });
     resetButton.addEventListener("click", function () { if (!window.confirm("Kosongkan seluruh rencana dan anggaran di perangkat ini?")) return; localStorage.removeItem(storageKey); state = { name:"", type:"otonan", date:"", checks:{}, budget:{} }; nameInput.value = ""; typeSelect.value = "otonan"; dateInput.value = ""; Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].value = ""; }); renderChecklist(); updateTotal(); status.textContent = "Rencana telah dikosongkan."; });
@@ -3799,7 +3897,7 @@
     var costStudy = make("a", "", "kajian biaya upakara dan upacara tahun 2026"); costStudy.href = "https://brida.baliprov.go.id/rapat-persiapan-penyusunan-kerangka-acuan-kerja-kak-kajian-perhitungan-biaya-upakara-dan-upacara-keagamaan-di-bali-tahun-2026/";
     source.append(costStudy, ". Karena itu aplikasi tidak memberikan patokan harga universal.");
     appView.append(header, notice, layout, source);
-    document.title = "Rencana Yadnya — Gītā Bali";
+    document.title = "Rencana Yadnya — Sasana Bali";
   }
   function showTamiuGuide() {
     prepareUpakaraPage("upakara-page");
@@ -3828,7 +3926,7 @@
     var ombudsman = make("a", "", "kajian Ombudsman Bali tentang administrasi desa adat dan desa dinas"); ombudsman.href = "https://ombudsman.go.id/perwakilan/news/r/pwk--ombudsman-bali-temukan-tumpang-tindih-kewenangan-desa-dinas-dan-adat";
     sources.append(dpma, " · ", ombudsman);
     appView.append(header, notice, steps, list, sources);
-    document.title = "Panduan Krama Tamiu — Gītā Bali";
+    document.title = "Panduan Krama Tamiu — Sasana Bali";
   }
   function showKramaRights() {
     prepareUpakaraPage("upakara-page");
@@ -3851,7 +3949,7 @@
     var documents = make("a", "", "dokumen hukum adat resmi JIDHAT Bali"); documents.href = "https://jidhat.baliprov.go.id/";
     sources.append(druwe, " · ", women, " · ", documents);
     appView.append(header, notice, list, sources);
-    document.title = "Hak & Kehidupan Krama — Gītā Bali";
+    document.title = "Hak & Kehidupan Krama — Sasana Bali";
   }
   function showHelpRouter() {
     prepareUpakaraPage("upakara-page");
@@ -3881,7 +3979,7 @@
     var prepList = make("ul"); ["Kronologi singkat dengan tanggal dan tempat.", "Nama pihak atau instansi, tanpa menyebarkan data pribadi ke publik.", "Salinan dokumen; simpan dokumen asli di tempat aman.", "Pertanyaan yang ingin dijawab dan hasil yang diharapkan.", "Bukti bahwa klarifikasi awal sudah pernah dilakukan, jika aman."].forEach(function (item) { prepList.append(make("li", "", item)); }); preparation.append(prepList);
     var notice = make("p", "ritual-notice", "Fitur ini hanya membantu memilih pintu pertama. Ia tidak menilai benar-salah, tidak menggantikan nasihat hukum, dan tidak mengirim laporan secara otomatis.");
     appView.append(header, notice, picker, result, preparation);
-    document.title = "Cari Jalur Bantuan — Gītā Bali";
+    document.title = "Cari Jalur Bantuan — Sasana Bali";
   }
   function showGlossary() {
     prepareUpakaraPage("upakara-page");
@@ -3944,7 +4042,7 @@
     search.addEventListener("input", renderTerms); category.addEventListener("change", renderTerms); renderTerms();
     var source = make("p", "ritual-sources", "Rujukan istilah hukum adat dapat dibandingkan dengan dokumen resmi di "); var link = make("a", "", "JIDHAT Bali"); link.href = "https://jidhat.baliprov.go.id/"; source.append(link, ".");
     appView.append(header, notice, controls, count, grid, source);
-    document.title = "Glosarium Bali — Gītā Bali";
+    document.title = "Glosarium Bali — Sasana Bali";
   }
   function showLibrary() {
     prepareUpakaraPage("upakara-page");
@@ -3963,7 +4061,7 @@
     groups.forEach(function (group) { var section = make("section", "library-group"); section.append(make("h2", "", group.title), make("p", "", group.text)); var links = make("div", "library-links"); group.links.forEach(function (data) { var anchor = make("a", "library-link"); anchor.href = data[2]; anchor.append(make("strong", "", data[0] + " ↗"), make("span", "", data[1])); links.append(anchor); }); section.append(links); grid.append(section); });
     var checked = make("p", "ritual-sources", "Daftar diperiksa terakhir pada 21 Juli 2026. Tautan eksternal dapat berubah atau memperbarui isinya tanpa pemberitahuan.");
     appView.append(header, notice, grid, checked);
-    document.title = "Pustaka Terverifikasi — Gītā Bali";
+    document.title = "Pustaka Terverifikasi — Sasana Bali";
   }
   function showFamilyAgenda() {
     prepareUpakaraPage("upakara-page");
@@ -4019,7 +4117,7 @@
     function compactDate(date) { return String(date.getFullYear()) + String(date.getMonth() + 1).padStart(2, "0") + String(date.getDate()).padStart(2, "0"); }
     function compactStamp(date) { return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z"); }
     function buildCalendarFile() {
-      var lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Gita Bali//Agenda Keluarga//ID", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Agenda Keluarga Bali"];
+      var lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Sasana Bali//Agenda Keluarga//ID", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Agenda Keluarga Bali"];
       events.forEach(function (event) {
         var shownDate = effectiveDate(event); var description = [];
         if (event.pawukon) description.push(event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku);
@@ -4057,11 +4155,11 @@
     function updatePawukonPreview() { if (methodSelect.value === "date") { if (!dateInput.value) { pawukonPreview.textContent = "Pilih tanggal Masehi untuk melihat Sapta Wara, Panca Wara, dan Wukunya."; return; } var chosenDate = parseDate(dateInput.value); var dateSignature = signatureFromDate(chosenDate); pawukonPreview.textContent = dateSignature ? new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(chosenDate) + " adalah " + dateSignature.sapta + " " + dateSignature.panca + " · Wuku " + dateSignature.wuku + ". Agenda akan berulang setiap 210 hari." : "Padanan pawukon belum dapat dihitung. Periksa koneksi Kalender Bali."; return; } var signature = selectedSignature(); var next = findPawukonDate(signature, new Date()); pawukonPreview.textContent = next ? signature.sapta + " " + signature.panca + " · Wuku " + signature.wuku + " · tanggal berikutnya " + new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(next) : "Tanggal berikutnya belum dapat dihitung. Periksa koneksi Kalender Bali."; }
     typeSelect.addEventListener("change", updateAgendaMode); methodSelect.addEventListener("change", updateAgendaMode); dateInput.addEventListener("input", updatePawukonPreview); saptaSelect.addEventListener("change", updateWukuChoices); pancaSelect.addEventListener("change", updateWukuChoices); wukuSelect.addEventListener("change", updatePawukonPreview);
     form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; var pawukonMode = usesPawukon(); var dateMethod = pawukonMode && methodSelect.value === "date"; var selectedDate = dateMethod || !pawukonMode ? parseDate(dateInput.value) : null; var signature = pawukonMode ? (dateMethod ? signatureFromDate(selectedDate) : selectedSignature()) : null; var nextDate = dateMethod || !pawukonMode ? selectedDate : findPawukonDate(signature, new Date()); if (!nextDate || Number.isNaN(nextDate.getTime()) || (pawukonMode && !signature)) { notify("Tanggal agenda belum dapat dihitung."); return; } var savedEvent = { id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateValue(nextDate), note:noteInput.value.trim(), repeatRule:signature ? "pawukonSignature" : "", pawukon:signature }; events.push(savedEvent); saveEvents(savedEvent); form.reset(); updateWukuChoices(); updateAgendaMode(); renderEvents(); notify(account.user && agendaSyncState === "ready" ? "Agenda ditambahkan dan disinkronkan." : "Agenda keluarga ditambahkan."); });
-    shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); var pawukon = event.pawukon ? "\n  " + event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku : ""; return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + pawukon + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Gītā Bali"].join("\n")); });
+    shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); var pawukon = event.pawukon ? "\n  " + event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku : ""; return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + pawukon + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Sasana Bali"].join("\n")); });
     exportAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk diekspor."); return; } var blob = new Blob([buildCalendarFile()], { type:"text/calendar;charset=utf-8" }); var url = URL.createObjectURL(blob); var download = document.createElement("a"); download.href = url; download.download = "agenda-keluarga-bali.ics"; document.body.append(download); download.click(); download.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000); notify("File kalender dibuat dengan pengingat H-7 dan H-1."); });
     updateWukuChoices(); updateAgendaMode(); renderEvents(); appView.append(header, notice, syncStatus, form, toolbar, list);
     authReady.then(async function () { events = await loadFamilyAgendaEvents(); renderEvents(); syncStatus.textContent = !account.user ? "Agenda tersimpan di perangkat ini. Masuk agar dapat disinkronkan ke akunmu." : (agendaSyncState === "ready" ? "Agenda tersinkron dengan akun " + account.user.email + "." : (agendaSyncState === "missing" ? "Agenda aman tersimpan di perangkat. Sinkronisasi akun akan aktif setelah database agenda disiapkan." : "Agenda tersimpan di perangkat; sinkronisasi akan dicoba kembali saat koneksi tersedia.")); });
-    document.title = "Agenda Keluarga Bali — Gītā Bali";
+    document.title = "Agenda Keluarga Bali — Sasana Bali";
   }
   function showLearningQuiz() {
     prepareUpakaraPage("upakara-page");
@@ -4087,7 +4185,7 @@
     }
     function renderResult() { progress.replaceChildren(make("span", "", "Selesai"), make("span", "", score + " / " + questions.length)); card.replaceChildren(make("p", "quiz-score", score + "/" + questions.length), make("h2", "", score >= 8 ? "Pemahamanmu sudah kuat." : (score >= 5 ? "Dasarnya sudah terbentuk." : "Mari baca ulang beberapa bagian.")), make("p", "quiz-explanation", "Kuis menilai pemahaman dasar, bukan kewenangan untuk menetapkan upacara atau menyelesaikan perkara adat.")); var restart = make("button", "planner-button quiz-next", "Ulangi kuis"); restart.type = "button"; restart.addEventListener("click", function () { index = 0; score = 0; renderQuestion(); }); card.append(restart); }
     renderQuestion(); appView.append(header, shell);
-    document.title = "Belajar & Kuis Bali — Gītā Bali";
+    document.title = "Belajar & Kuis Bali — Sasana Bali";
   }
   function showCalendar() {
     var today = new Date();
@@ -4152,7 +4250,7 @@
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = "calendar-page";
-    appView.replaceChildren(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"));
+    appView.replaceChildren(pageBack("?mode=upakara-waktu", "Kembali ke Upakara & Waktu"));
 
     var header = make("header", "calendar-header");
     header.append(
@@ -4416,13 +4514,13 @@
     next.addEventListener("click", function () { changeMonth(1); });
     renderCalendar();
     loadDay(selectedDate, false);
-    document.title = "Kalender Bali — Gītā Bali";
+    document.title = "Kalender Bali — Sasana Bali";
   }
   function showExplore() {
     home.classList.add("compact-app-page");
     document.querySelector(".home-inner").hidden = true;
     var intro=make("div", "explore-intro"); intro.append(make("p", "eyebrow", "Bhagawad Gita"), make("h2", "", "Jelajahi Gita"), make("p", "", "Pilih satu bagian untuk memulai perjalananmu. Setiap bagian membuka daftar bab yang dapat dibaca satu per satu."));
-    appView.hidden = false; appView.className = "app-grid explore-grid"; appView.replaceChildren(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"), intro,
+    appView.hidden = false; appView.className = "app-grid explore-grid"; appView.replaceChildren(pageBack("?mode=bhagawad-gita", "Kembali ke Baca & Renungkan"), intro,
       card("Bagian Pertama", "Bab 1–6 · Karma Yoga dan hakikat jiwa.", "?mode=group&group=1"),
       card("Bagian Kedua", "Bab 7–12 · Pengetahuan spiritual dan Brahman.", "?mode=group&group=2"),
       card("Bagian Ketiga", "Bab 13–18 · Penyerahan diri dan pengabdian.", "?mode=group&group=3")
@@ -4489,15 +4587,15 @@
     stateBox.replaceChildren();
     var header = make("section", "collection-header");
     header.append(
-      make("p", "eyebrow", "Akun Gītā Bali"),
+      make("p", "eyebrow", "Akun Sasana Bali"),
       make("h1", "", collectionName),
       make("p", "", collectionType === "saved"
         ? "Kumpulan sloka yang kamu simpan untuk dibaca kembali."
         : "Refleksi pribadi yang terhubung dengan setiap sloka.")
     );
-    reader.insertBefore(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"), toolbar);
+    reader.insertBefore(pageBack("?mode=bhagawad-gita", "Kembali ke Baca & Renungkan"), toolbar);
     reader.insertBefore(header, toolbar);
-    document.title = collectionName + " — Gītā Bali";
+    document.title = collectionName + " — Sasana Bali";
     authReady.then(function () {
       if (!account.user) {
         showCollectionState("Masuk untuk melihat " + collectionName.toLowerCase(), "Data fitur ini disimpan terpisah untuk setiap akun.", true);
@@ -4593,7 +4691,7 @@
         randomLanguages.append(languageButton);
       });
       var shuffle=make("button", "verse-action", "✦ Acak Lagi"); shuffle.type="button";
-      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="?mode=dashboard"; randomBack.setAttribute("aria-label", t("Kembali ke Dashboard Ruang Baca"));
+      var randomBack=make("a", "reader-home-back", "←"); randomBack.href="?mode=bhagawad-gita"; randomBack.setAttribute("aria-label", t("Kembali ke Baca & Renungkan"));
       controls.append(randomBack, randomLanguages, shuffle); reader.insertBefore(controls, list);
       var scrollCue=make("div", "scroll-cue");
       scrollCue.setAttribute("aria-hidden", "true");
@@ -4717,7 +4815,8 @@
   if ("serviceWorker" in navigator && (window.location.protocol === "https:" || window.location.hostname === "localhost")) {
     window.addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
   }
-  if (mode === "dashboard") { document.title = "Dashboard Ruang Baca — Gītā Bali"; authReady.then(renderPersonalDashboard); return; }
+  if (mode === "dashboard") { document.title = "Dashboard — Sasana Bali"; authReady.then(renderPersonalDashboard); return; }
+  if (["bhagawad-gita", "upakara-waktu", "adat-bahasa-alam"].includes(mode)) { showFeatureCategory(mode); return; }
   if (mode === "privacy") { showPrivacyPolicy(); return; }
   if (mode === "account") { showAccountManager(); return; }
   if (mode === "agenda") { showFamilyAgenda(); return; }
@@ -4742,7 +4841,7 @@
   if (mode === "notes") { showCollection("notes"); return; }
   if (mode === "random") { showRandom(); return; }
   if (!chapters[chapter]) {
-    document.title = "Gītā Bali — Ruang Baca";
+    document.title = "Sasana Bali — Ruang Baca";
     return;
   }
 

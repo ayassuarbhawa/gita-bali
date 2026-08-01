@@ -68,7 +68,7 @@ module.exports = async function handler(request, response) {
   source.searchParams.set("tahun", String(year));
   try {
     const upstream = await fetch(source, {
-      headers: { "User-Agent": "Gita-Bali-Dewasa-Search/1.0" },
+      headers: { "User-Agent": "Sasana-Bali-Dewasa-Search/1.0" },
       signal: AbortSignal.timeout(9000)
     });
     if (!upstream.ok) throw new Error("Upstream " + upstream.status);

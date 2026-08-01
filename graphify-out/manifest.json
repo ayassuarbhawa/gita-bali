@@ -5,9 +5,9 @@
     "semantic_hash": "84b23710acdbeeba634c15c6b6c96b2c"
   },
   "api/dewasa.js": {
-    "mtime": 1784610890.2141583,
-    "ast_hash": "9cba826be81dafded5cc44076aa04d63",
-    "semantic_hash": "9cba826be81dafded5cc44076aa04d63"
+    "mtime": 1785574275.0132062,
+    "ast_hash": "9ff9a6422ca529c73afb85ff113cbc55",
+    "semantic_hash": ""
   },
   "data/bab-01.json": {
     "mtime": 1784545032.3781002,
@@ -115,8 +115,8 @@
     "semantic_hash": "de91b7fd1d8e6067f602f372cf50f20b"
   },
   "sw.js": {
-    "mtime": 1784824814.500304,
-    "ast_hash": "ceee4aa1928b8dab5c9e3b87b9f6903b",
+    "mtime": 1785574274.9993112,
+    "ast_hash": "a5ae69259c1bf7176a9f2a9aa4df0ae2",
     "semantic_hash": ""
   },
   "tools/stats.mjs": {
@@ -240,18 +240,18 @@
     "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
   },
   "README.md": {
-    "mtime": 1784625389.2893157,
-    "ast_hash": "867cff2c05bf2a39a811a1005dd1d91e",
-    "semantic_hash": "867cff2c05bf2a39a811a1005dd1d91e"
+    "mtime": 1785574275.0034056,
+    "ast_hash": "9526dec9ceb86d06372e08571074ecdb",
+    "semantic_hash": ""
   },
   "docs/mobile-release-roadmap.md": {
-    "mtime": 1784625389.2927294,
-    "ast_hash": "d17c45b89d0886f826dc735aced7de69",
-    "semantic_hash": "d17c45b89d0886f826dc735aced7de69"
+    "mtime": 1785574275.0087614,
+    "ast_hash": "d5d730469c2999b6a09fbe88ca912c3e",
+    "semantic_hash": ""
   },
   "preview/index.html": {
-    "mtime": 1785573308.330556,
-    "ast_hash": "e26e6f2826f46ba13f70c6f68a0a870f",
+    "mtime": 1785574844.5000658,
+    "ast_hash": "bc403bfa675e0b09114d02f3e98b8690",
     "semantic_hash": ""
   },
   "preview/assets/gita-bali-icon-180.png": {
@@ -270,9 +270,9 @@
     "semantic_hash": "fd0632f92c54cee67f8463d0bb038793"
   },
   "preview/assets/gita-bali-icon.svg": {
-    "mtime": 1784624476.989665,
-    "ast_hash": "15d499ef72b175a58821904707f3b6c3",
-    "semantic_hash": "15d499ef72b175a58821904707f3b6c3"
+    "mtime": 1785574274.9967062,
+    "ast_hash": "891fd5c0419d074b80b886d584d2fb2d",
+    "semantic_hash": ""
   },
   "preview/assets/gita-bali-intro.jpg": {
     "mtime": 1784555363.9522307,
@@ -280,8 +280,8 @@
     "semantic_hash": "be07fd0cbf54928f2d47c6edefa2f578"
   },
   "docs/feature-backlog-literasi-bali.md": {
-    "mtime": 1784782506.6968203,
-    "ast_hash": "4a29b3be35ad16ed9229c2224ccdf3f6",
+    "mtime": 1785574275.0110846,
+    "ast_hash": "42685d2ee050a5507a9799cafb0a775b",
     "semantic_hash": ""
   },
   "data/random-reflections.json": {
