@@ -112,7 +112,7 @@ pernah dikirim ke browser. Pengguna tetap harus memiliki sesi login yang sah
 dan mengetik konfirmasi `HAPUS` sebelum fungsi menerima permintaan.
 
 Kebijakan Privasi publik tersedia di
-<https://gita-bali.vercel.app/?mode=privacy>.
+<https://sasanabali.my.id/?mode=privacy>.
 
 Rencana menuju rilis iOS dan Android dicatat di
 `docs/mobile-release-roadmap.md`.

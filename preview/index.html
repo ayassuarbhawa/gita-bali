@@ -3078,7 +3078,7 @@
       authMessage.textContent = "Mengirim email pemulihan…";
       var recoveryRedirectTo = location.protocol === "https:" && location.hostname !== "localhost"
         ? location.origin + location.pathname + "?mode=reset-password"
-        : "https://gitabali.my.id/?mode=reset-password";
+        : "https://sasanabali.my.id/?mode=reset-password";
       var recoveryResult = await authClient.auth.resetPasswordForEmail(email, { redirectTo: recoveryRedirectTo });
       authSubmit.disabled = false;
       if (recoveryResult.error) {
@@ -3094,7 +3094,7 @@
     var password = document.getElementById("auth-password").value;
     var redirectTo = location.protocol === "http:" || location.protocol === "https:"
       ? location.origin + location.pathname + location.search
-      : "https://gita-bali.vercel.app/";
+      : "https://sasanabali.my.id/";
     if (authMode === "signup" && password !== document.getElementById("auth-password-confirm").value) {
       authSubmit.disabled = false;
       authMessage.classList.add("is-error");
