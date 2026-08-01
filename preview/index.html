@@ -462,6 +462,11 @@
   .upakara-grid .app-card { display:flex; min-height:14rem; flex-direction:column; }
   .upakara-grid .app-card p { line-height:1.65; }
   .upakara-grid .app-card .card-action { display:block; margin-top:auto; padding-top:1.2rem; color:var(--accent); font:700 .68rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .kidung-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; }
+  .kidung-card { padding:1rem 1.1rem; border:1px solid var(--line); border-radius:.9rem; background:var(--surface); }
+  .kidung-card span { color:var(--accent); font:700 .6rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .kidung-card h2 { margin:.55rem 0 .4rem; color:var(--accent-dark); font-size:1.15rem; }
+  .kidung-card p { margin:0; color:var(--muted); font:.82rem/1.55 system-ui,sans-serif; }
   .ritual-notice { margin:0 0 1.25rem; padding:1rem 1.1rem; border:1px solid rgba(182,139,58,.35); border-radius:1rem; color:#655b4d; background:#fbf5e5; font:.82rem/1.65 system-ui,sans-serif; }
   .ritual-sections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
   .ritual-section { padding:1.35rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.04); }
@@ -562,6 +567,20 @@
   .planner-button.is-secondary { color:var(--accent-dark); background:transparent; }
   .planner-status { margin:.75rem 0 0; color:var(--muted); font:.72rem/1.5 system-ui,sans-serif; }
   .planner-progress { margin:.85rem 0 0; color:var(--accent-dark); font:700 .72rem/1.5 system-ui,sans-serif; }
+  .yadnya-guide-section { margin:0 0 1.25rem; }
+  .yadnya-guide-section > h2, .planner-history > h2 { margin:0 0 .75rem; color:var(--accent-dark); font-size:1.3rem; }
+  .yadnya-guide-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.65rem; }
+  .yadnya-guide-card { display:block; min-height:7.2rem; padding:.9rem; border:1px solid var(--line); border-radius:.85rem; color:var(--ink); background:var(--surface); text-decoration:none; }
+  .yadnya-guide-card span { color:var(--accent); font:700 .6rem/1 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .yadnya-guide-card strong { display:block; margin:.5rem 0 .3rem; color:var(--accent-dark); font-size:.98rem; }
+  .yadnya-guide-card p { margin:0; color:var(--muted); font:.72rem/1.45 system-ui,sans-serif; }
+  .planner-history { margin-top:1.25rem; }
+  .planner-history-list { display:grid; gap:.65rem; }
+  .planner-history-item { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:.8rem; padding:.85rem 1rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface); }
+  .planner-history-item strong { display:block; color:var(--accent-dark); }
+  .planner-history-item p { margin:.25rem 0 0; color:var(--muted); font:.7rem/1.45 system-ui,sans-serif; }
+  .planner-history-actions { display:flex; gap:.4rem; }
+  .planner-history-actions button { min-height:2.2rem; padding:.5rem .7rem; }
   .tamiu-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.7rem; margin:1rem 0 1.5rem; }
   .tamiu-step { padding:1rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface); }
   .tamiu-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; }
@@ -614,6 +633,15 @@
   .agenda-actions { display:flex; align-items:center; gap:.4rem; }
   .agenda-open { display:grid; width:2.5rem; height:2.5rem; place-items:center; border:1px solid var(--line); border-radius:50%; color:var(--accent-dark); text-decoration:none; }
   .agenda-toolbar { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:.55rem; margin-top:1rem; }
+  .agenda-upcoming { margin-bottom:1rem; padding:.85rem 1rem; border:1px solid var(--line); border-radius:.85rem; background:var(--surface); }
+  .agenda-upcoming h2 { margin:0 0 .55rem; color:var(--accent-dark); font-size:1rem; }
+  .agenda-upcoming-list { display:grid; gap:.4rem; }
+  .agenda-upcoming-item { display:grid; grid-template-columns:auto 1fr; align-items:center; gap:.65rem; padding:.45rem 0; border-top:1px solid var(--line); }
+  .agenda-upcoming-item:first-child { border-top:0; }
+  .agenda-upcoming-date { min-width:3.6rem; color:var(--accent); font:700 .68rem/1.3 system-ui,sans-serif; text-align:center; }
+  .agenda-upcoming-item strong { color:var(--accent-dark); font-size:.82rem; }
+  .agenda-upcoming-item p { margin:.1rem 0 0; color:var(--muted); font:.66rem/1.35 system-ui,sans-serif; }
+  .agenda-sync-note { margin:.7rem 0 0; color:var(--muted); font:.66rem/1.45 system-ui,sans-serif; text-align:center; }
   .connection-status {
     position:fixed;
     z-index:90;
@@ -1192,13 +1220,16 @@
     .prayer-header { margin-bottom:1.5rem; }
     .upakara-page { margin:2.5rem auto; }
     .upakara-header { margin-bottom:1.5rem; }
-    .upakara-grid, .ritual-sections { grid-template-columns:1fr; }
+    .upakara-grid, .ritual-sections, .kidung-grid { grid-template-columns:1fr; }
     .upakara-grid.is-five .app-card:last-child { grid-column:auto; width:auto; }
     .upakara-grid .app-card { min-height:11rem; }
     .ritual-section.is-wide { grid-column:auto; }
     .knowledge-list, .eco-steps, .eco-sort, .phrase-grid, .learning-path, .subak-principles, .planner-layout, .tamiu-steps { grid-template-columns:1fr; }
     .planner-fields { grid-template-columns:1fr; }
     .planner-field.is-wide { grid-column:auto; }
+    .yadnya-guide-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .planner-history-item { grid-template-columns:1fr; }
+    .planner-history-actions { justify-content:flex-start; }
     .budget-row { grid-template-columns:1fr; gap:.3rem; }
     .budget-row input { text-align:left; }
     .glossary-controls, .glossary-grid, .library-grid { grid-template-columns:1fr; }
@@ -1560,11 +1591,11 @@
         <section class="feature-section" data-feature-category="upakara-waktu" aria-labelledby="fitur-upakara">
           <div class="feature-heading"><h1 id="fitur-upakara">Upakara &amp; Waktu</h1><p>Panduan persiapan yang tetap menghormati desa kala patra dan tuntunan rohaniwan.</p></div>
           <div class="app-grid">
-            <a class="app-card" href="?mode=upakara"><span class="app-icon">❋</span><strong>Upakara &amp; Doa</strong><p>Pelajari Panca Yadnya, banten, dan doa harian.</p></a>
-            <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Lihat pawukon, rahinan, dan ala ayuning dewasa.</p></a>
-            <a class="app-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Rencana Yadnya</strong><p>Susun checklist dan anggaran persiapan Yadnya.</p></a>
-            <a class="app-card" href="?mode=lestari"><span class="app-icon">♧</span><strong>Upakara Lestari</strong><p>Kurangi sampah upakara dengan tetap menjaga kesakralan.</p></a>
             <a class="app-card" href="?mode=agenda"><span class="app-icon">◷</span><strong>Agenda Keluarga Bali</strong><p>Simpan otonan, piodalan, dan agenda keluarga.</p></a>
+            <a class="app-card" href="?mode=daily-prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Baca kumpulan mantra Hindu untuk kegiatan sehari-hari.</p></a>
+            <a class="app-card" href="?mode=planner"><span class="app-icon">✓</span><strong>Yadnya</strong><p>Kenali Panca Yadnya, lalu susun checklist dan anggaran persiapannya.</p></a>
+            <a class="app-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Lihat pawukon, rahinan, dan ala ayuning dewasa.</p></a>
+            <a class="app-card" href="?mode=kidung"><span class="app-icon">♫</span><strong>Kidung</strong><p>Kenali kidung yang mengiringi berbagai pelaksanaan yadnya.</p></a>
           </div>
         </section>
         <section class="feature-section" data-feature-category="adat-bahasa-alam" aria-labelledby="fitur-adat">
@@ -3272,7 +3303,7 @@
   }
   function hubForMode(activeMode) {
     if (["random", "explore", "saved", "notes"].includes(activeMode)) return { href:"?mode=bhagawad-gita", label:"Kembali ke Baca & Renungkan" };
-    if (["upakara", "calendar", "planner", "lestari", "agenda"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
+    if (["upakara", "calendar", "planner", "lestari", "agenda", "daily-prayers", "yadnya", "kidung"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
     if (["adat", "language", "subak", "tamiu", "rights", "help", "glossary", "library", "quiz"].includes(activeMode)) return { href:"?mode=adat-bahasa-alam", label:"Kembali ke Adat, Bahasa & Alam" };
     return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
   }
@@ -3479,8 +3510,8 @@
   }
   function showYadnyaDetail(type) {
     var guide = yadnyaGuides[type];
-    if (!guide) { showPancaYadnya(); return; }
-    prepareUpakaraPage("upakara-page", "?mode=yadnya", "Kembali ke Panca Yadnya");
+    if (!guide) { showYadnyaPlanner(); return; }
+    prepareUpakaraPage("upakara-page", "?mode=planner", "Kembali ke Yadnya");
     var header = make("header", "upakara-header");
     header.append(make("p", "eyebrow", "Panduan pengantar"), make("h1", "", guide.title), make("p", "", guide.subtitle));
     var notice = make("p", "ritual-notice", "Panduan ini menjelaskan bentuk dasar dan bukan resep baku. Nama, jumlah, susunan banten, urutan upacara, dan mantra dapat berbeda menurut dresta serta tingkat upacara. Untuk pelaksanaan nyata, mintalah tuntunan pemangku, sulinggih, dan serati setempat.");
@@ -3612,9 +3643,38 @@
     var sourceLink = make("a", "", "Buku Doa dalam Agama Hindu — Pemerintah Provinsi Bali");
     sourceLink.href = "https://dpma.baliprov.go.id/wp-content/uploads/2022/03/PAKIS-Bali_Buku-Doa-Dalam-Agama-Hindu_compressed.pdf";
     source.append(sourceLink, ". " + t("Ejaan ditata agar nyaman dibaca tanpa mengubah maksud doa."));
-    appView.prepend(pageBack("?mode=upakara", "Kembali ke Upakara & Doa"));
+    appView.prepend(pageBack("?mode=upakara-waktu", "Kembali ke Upakara & Waktu"));
     appView.append(header, prayerList, source);
     document.title = "Doa Sehari-hari — Sasana Bali";
+  }
+  function showKidung() {
+    prepareUpakaraPage("upakara-page");
+    var header = make("header", "upakara-header");
+    header.append(
+      make("p", "eyebrow", "Dharma Gita"),
+      make("h1", "", "Kidung"),
+      make("p", "", "Pengantar untuk mengenali kidung yang lazim mengiringi yadnya. Pemilihan teks, bait, dan cara melantunkannya tetap mengikuti sekaa kidung serta tradisi setempat.")
+    );
+    var notice = make("p", "ritual-notice", "Kidung merupakan bagian dari praktik keagamaan dan tradisi lisan. Gunakan daftar ini sebagai pengenalan, lalu pelajari versi yang berlaku bersama guru, sekaa kidung, pemangku, atau rohaniwan di wilayahmu.");
+    var kidungData = [
+      { title:"Kawitan Wargasari", context:"Dewa Yadnya", description:"Kidung pembuka yang umum dilantunkan dalam persembahyangan dan upacara Dewa Yadnya untuk membangun suasana khidmat." },
+      { title:"Wargasari", context:"Dewa Yadnya", description:"Kidung tradisional yang memiliki beragam bait dan versi. Teks lengkapnya lebih luas daripada dua bait pembuka yang sering dikenal masyarakat." },
+      { title:"Aji Kembang & Indrawangsa", context:"Pitra Yadnya", description:"Dikenal dalam konteks rangkaian Pitra Yadnya. Bagian yang dipilih menyesuaikan tahap upacara dan tuntunan pelaksana." },
+      { title:"Tantri & Malat", context:"Manusa Yadnya", description:"Ditemukan dalam tradisi kidung untuk konteks Manusa Yadnya, dengan pemilihan cerita dan pupuh menurut kebiasaan setempat." },
+      { title:"Jerum", context:"Bhuta Yadnya", description:"Kidung yang dikaitkan dengan Bhuta Yadnya dan tema keharmonisan manusia dengan alam serta lingkungan." }
+    ];
+    var grid = make("div", "kidung-grid");
+    kidungData.forEach(function (item) {
+      var card = make("article", "kidung-card");
+      card.append(make("span", "", item.context), make("h2", "", item.title), make("p", "", item.description));
+      grid.append(card);
+    });
+    var sources = make("p", "ritual-sources", "Rujukan pengantar: ");
+    var isiArticle = make("a", "", "kajian praktik kidung oleh ISI Denpasar"); isiArticle.href = "https://repo.isi-dps.ac.id/5362/";
+    var isiTraining = make("a", "", "pembinaan Kidung Kawitan Wargasari oleh ISI Bali"); isiTraining.href = "https://jurnal2.isi-dps.ac.id/index.php/abdiwidya/article/view/5407";
+    sources.append(isiArticle, " · ", isiTraining, ".");
+    appView.append(header, notice, grid, sources);
+    document.title = "Kidung — Sasana Bali";
   }
   function showAdatLiteracy() {
     prepareUpakaraPage("upakara-page");
@@ -3844,6 +3904,7 @@
   function showYadnyaPlanner() {
     prepareUpakaraPage("upakara-page");
     var storageKey = "gitaBaliYadnyaPlannerV1";
+    var historyKey = "gitaBaliYadnyaHistoryV1";
     var templates = {
       otonan:["Pastikan hari otonan berdasarkan pawukon.", "Tentukan tingkat upacara bersama keluarga dan serati.", "Konfirmasi pemangku serta tempat pelaksanaan.", "Susun daftar banten, perlengkapan, dan pakaian.", "Bagikan tugas persiapan, konsumsi, dan kebersihan."],
       piodalan:["Konfirmasi hari piodalan dan jadwal persembahyangan.", "Koordinasikan kewajiban keluarga atau pengempon.", "Pastikan susunan banten bersama pemangku atau serati.", "Periksa kebersihan pelinggih dan perlengkapan.", "Siapkan pemilahan sisa organik dan residu."],
@@ -3854,14 +3915,24 @@
     };
     var budgetCategories = ["Banten & sarana", "Pemangku, sulinggih & punia", "Konsumsi", "Busana & perlengkapan", "Transportasi", "Kebersihan", "Cadangan"];
     var state = { name:"", type:"otonan", date:"", checks:{}, budget:{} };
+    var history = [];
     try {
       var saved = JSON.parse(localStorage.getItem(storageKey) || "null");
       if (saved && typeof saved === "object") state = Object.assign(state, saved);
+      var savedHistory = JSON.parse(localStorage.getItem(historyKey) || "[]");
+      if (Array.isArray(savedHistory)) history = savedHistory;
     } catch (error) {}
 
     var header = make("header", "upakara-header");
-    header.append(make("p", "eyebrow", "Perencana keluarga"), make("h1", "", "Rencana Yadnya"), make("p", "", "Catat persiapan dan estimasi biaya tanpa menetapkan harga atau bentuk upacara yang harus diikuti."));
+    header.append(make("p", "eyebrow", "Panduan & perencana keluarga"), make("h1", "", "Yadnya"), make("p", "", "Kenali Panca Yadnya, lalu catat persiapan dan estimasi biaya tanpa menetapkan bentuk upacara yang harus diikuti."));
     var notice = make("p", "ritual-notice", "Nilai anggaran diisi sendiri dan hanya menjadi alat perencanaan. Tingkat upacara, banten, dewasa, serta pihak yang memimpin tetap ditentukan melalui keluarga, desa kala patra, serati, pemangku, dan sulinggih.");
+    var guideSection = make("section", "yadnya-guide-section"); guideSection.append(make("h2", "", "Kenali Panca Yadnya"));
+    var guideGrid = make("div", "yadnya-guide-grid");
+    Object.keys(yadnyaGuides).forEach(function (key) {
+      var guide = yadnyaGuides[key]; var guideCard = make("a", "yadnya-guide-card"); guideCard.href = "?mode=yadnya&type=" + key;
+      guideCard.append(make("span", "", "Panduan"), make("strong", "", guide.title), make("p", "", guide.subtitle)); guideGrid.append(guideCard);
+    });
+    guideSection.append(guideGrid);
     var layout = make("div", "planner-layout");
     var preparation = make("section", "planner-panel"); preparation.append(make("h2", "", "Rencana & checklist"));
     var fields = make("div", "planner-fields");
@@ -3886,6 +3957,8 @@
     var actions = make("div", "planner-actions"); var saveButton = make("button", "planner-button", "Simpan rencana"); saveButton.type = "button"; var shareButton = make("button", "planner-button is-secondary", "Bagikan ringkasan"); shareButton.type = "button"; var resetButton = make("button", "planner-button is-secondary", "Kosongkan"); resetButton.type = "button"; actions.append(saveButton, shareButton, resetButton);
     var progress = make("p", "planner-progress", "0 dari 0 persiapan selesai");
     var status = make("p", "planner-status", "Rencana tersimpan secara lokal di perangkat ini."); preparation.append(progress); budgetPanel.append(budgetList, total, actions, status); layout.append(preparation, budgetPanel);
+    var historySection = make("section", "planner-history"); historySection.append(make("h2", "", "Riwayat rencana tersimpan"));
+    var historyList = make("div", "planner-history-list"); historySection.append(historyList);
 
     function renderChecklist() {
       checklist.replaceChildren();
@@ -3904,9 +3977,38 @@
       var budget = {}; Object.keys(budgetInputs).forEach(function (category) { budget[category] = Math.max(0, Number(budgetInputs[category].value) || 0); });
       return { name:nameInput.value.trim(), type:typeSelect.value, date:dateInput.value, checks:checks, budget:budget };
     }
+    function plannerTypeLabel(value) {
+      var labels = { otonan:"Otonan", piodalan:"Piodalan / Merajan", metatah:"Metatah", pawiwahan:"Pawiwahan", pitra:"Pitra Yadnya", lainnya:"Lainnya" };
+      return labels[value] || labels.lainnya;
+    }
+    function applyHistoryItem(item) {
+      state = { name:item.name || "", type:templates[item.type] ? item.type : "otonan", date:item.date || "", checks:Object.assign({}, item.checks || {}), budget:Object.assign({}, item.budget || {}) };
+      nameInput.value = state.name; typeSelect.value = state.type; dateInput.value = state.date;
+      Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].value = state.budget[category] || ""; });
+      renderChecklist(); updateTotal(); localStorage.setItem(storageKey, JSON.stringify(state));
+      status.textContent = "Rencana dari riwayat dibuka dan siap diperbarui."; window.scrollTo({ top:layout.offsetTop - 24, behavior:"smooth" });
+    }
+    function renderHistory() {
+      historyList.replaceChildren();
+      if (!history.length) { historyList.append(make("p", "planner-status", "Belum ada riwayat. Riwayat pertama akan muncul setelah rencana disimpan.")); return; }
+      history.forEach(function (item) {
+        var amount = Object.keys(item.budget || {}).reduce(function (sum, category) { return sum + (Number(item.budget[category]) || 0); }, 0);
+        var checks = Object.keys(item.checks || {}); var completed = checks.filter(function (key) { return item.checks[key]; }).length;
+        var savedAt = new Date(item.savedAt); var meta = [plannerTypeLabel(item.type), item.date ? new Intl.DateTimeFormat(displayLocale(), { dateStyle:"medium" }).format(new Date(item.date + "T00:00:00")) : "Tanggal belum ditentukan", completed + " persiapan selesai", new Intl.NumberFormat(displayLocale(), { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(amount)].join(" · ");
+        var info = make("div", ""); info.append(make("strong", "", item.name || plannerTypeLabel(item.type)), make("p", "", meta), make("p", "", "Disimpan " + new Intl.DateTimeFormat(displayLocale(), { dateStyle:"medium", timeStyle:"short" }).format(savedAt)));
+        var itemActions = make("div", "planner-history-actions");
+        var openButton = make("button", "planner-button is-secondary", "Buka"); openButton.type = "button"; openButton.addEventListener("click", function () { applyHistoryItem(item); });
+        var deleteButton = make("button", "planner-button is-secondary", "Hapus"); deleteButton.type = "button"; deleteButton.addEventListener("click", function () { history = history.filter(function (savedItem) { return savedItem.id !== item.id; }); localStorage.setItem(historyKey, JSON.stringify(history)); renderHistory(); notify("Riwayat rencana dihapus."); });
+        itemActions.append(openButton, deleteButton); var row = make("article", "planner-history-item"); row.append(info, itemActions); historyList.append(row);
+      });
+    }
     typeSelect.addEventListener("change", function () { state = collectState(); state.type = typeSelect.value; renderChecklist(); });
     Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].addEventListener("input", updateTotal); });
-    saveButton.addEventListener("click", function () { state = collectState(); localStorage.setItem(storageKey, JSON.stringify(state)); status.textContent = t("Tersimpan pada ") + new Intl.DateTimeFormat(displayLocale(), { hour:"2-digit", minute:"2-digit" }).format(new Date()) + "."; notify(t("Rencana yadnya disimpan.")); });
+    saveButton.addEventListener("click", function () {
+      state = collectState(); var now = new Date(); localStorage.setItem(storageKey, JSON.stringify(state));
+      history.unshift(Object.assign({ id:String(now.getTime()) + Math.random().toString(16).slice(2), savedAt:now.toISOString() }, JSON.parse(JSON.stringify(state)))); history = history.slice(0, 30); localStorage.setItem(historyKey, JSON.stringify(history)); renderHistory();
+      status.textContent = t("Tersimpan pada ") + new Intl.DateTimeFormat(displayLocale(), { hour:"2-digit", minute:"2-digit" }).format(now) + "."; notify(t("Rencana yadnya disimpan."));
+    });
     shareButton.addEventListener("click", function () {
       state = collectState(); var tasks = Array.prototype.map.call(checklist.querySelectorAll(".planner-task"), function (label) { return (label.querySelector("input").checked ? "✓ " : "☐ ") + label.querySelector("span").textContent; });
       var budgetLines = Object.keys(state.budget).filter(function (category) { return state.budget[category] > 0; }).map(function (category) { return t(category) + ": " + new Intl.NumberFormat(displayLocale(), { style:"currency", currency:"IDR", maximumFractionDigits:0 }).format(state.budget[category]); });
@@ -3915,12 +4017,12 @@
       sharePlainText(state.name || "Rencana Yadnya", content);
     });
     resetButton.addEventListener("click", function () { if (!window.confirm("Kosongkan seluruh rencana dan anggaran di perangkat ini?")) return; localStorage.removeItem(storageKey); state = { name:"", type:"otonan", date:"", checks:{}, budget:{} }; nameInput.value = ""; typeSelect.value = "otonan"; dateInput.value = ""; Object.keys(budgetInputs).forEach(function (category) { budgetInputs[category].value = ""; }); renderChecklist(); updateTotal(); status.textContent = "Rencana telah dikosongkan."; });
-    renderChecklist(); updateTotal();
+    renderChecklist(); updateTotal(); renderHistory();
     var source = make("p", "ritual-sources", "Catatan pengembangan: Pemerintah Provinsi Bali melalui BRIDA sedang menyiapkan ");
     var costStudy = make("a", "", "kajian biaya upakara dan upacara tahun 2026"); costStudy.href = "https://brida.baliprov.go.id/rapat-persiapan-penyusunan-kerangka-acuan-kerja-kak-kajian-perhitungan-biaya-upakara-dan-upacara-keagamaan-di-bali-tahun-2026/";
     source.append(costStudy, ". Karena itu aplikasi tidak memberikan patokan harga universal.");
-    appView.append(header, notice, layout, source);
-    document.title = "Rencana Yadnya — Sasana Bali";
+    appView.append(header, notice, guideSection, layout, historySection, source);
+    document.title = "Yadnya — Sasana Bali";
   }
   function showTamiuGuide() {
     prepareUpakaraPage("upakara-page");
@@ -4092,7 +4194,9 @@
     var header = make("header", "upakara-header");
     header.append(make("p", "eyebrow", "Pengingat keluarga"), make("h1", "", "Agenda Keluarga Bali"), make("p", "", "Catat kegiatan penting dan lihat urutannya berdasarkan tanggal terdekat."));
     var notice = make("p", "ritual-notice", "Untuk Otonan, Piodalan/Odalan, dan agenda pawukon lain, pilih Sapta Wara, Panca Wara, serta Wuku secara langsung atau masukkan tanggal Masehi agar padanan pawukonnya dihitung otomatis. Agenda berulang mengikuti siklus 210 hari.");
-    var syncStatus = make("p", "agenda-empty", account.user ? "Memeriksa sinkronisasi agenda…" : "Agenda tersimpan di perangkat ini. Masuk agar dapat disinkronkan ke akunmu.");
+    var upcoming = make("section", "agenda-upcoming"); upcoming.append(make("h2", "", "Jadwal berikutnya"));
+    var upcomingList = make("div", "agenda-upcoming-list"); upcoming.append(upcomingList);
+    var syncStatus = make("p", "agenda-sync-note", account.user ? "Memeriksa sinkronisasi agenda…" : "Tersimpan di perangkat · masuk untuk sinkronisasi akun.");
     var form = make("form", "agenda-form");
     var nameWrap = make("div", "agenda-field is-wide"); var nameLabel = make("label", "", "Nama agenda"); nameLabel.htmlFor = "agenda-name"; var nameInput = document.createElement("input"); nameInput.id = "agenda-name"; nameInput.required = true; nameInput.placeholder = "Contoh: Odalan Griya atau Otonan Made"; nameWrap.append(nameLabel, nameInput);
     var typeWrap = make("div", "agenda-field"); var typeLabel = make("label", "", "Jenis kegiatan"); typeLabel.htmlFor = "agenda-type"; var typeSelect = document.createElement("select"); typeSelect.id = "agenda-type";
@@ -4136,6 +4240,16 @@
       }
       return date;
     }
+    function renderUpcoming() {
+      upcomingList.replaceChildren();
+      var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }).slice(0, 3);
+      if (!sorted.length) { upcomingList.append(make("p", "planner-status", "Belum ada jadwal. Tambahkan agenda pertama di bawah.")); return; }
+      sorted.forEach(function (event) {
+        var shownDate = effectiveDate(event); var row = make("div", "agenda-upcoming-item");
+        var date = make("span", "agenda-upcoming-date", new Intl.DateTimeFormat(displayLocale(), { day:"2-digit", month:"short" }).format(shownDate));
+        var info = make("div", ""); info.append(make("strong", "", event.name), make("p", "", event.type + (event.pawukon ? " · Wuku " + event.pawukon.wuku : ""))); row.append(date, info); upcomingList.append(row);
+      });
+    }
     function escapeIcs(value) { return String(value || "").replace(/\\/g, "\\\\").replace(/\r?\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;"); }
     function compactDate(date) { return String(date.getFullYear()) + String(date.getMonth() + 1).padStart(2, "0") + String(date.getDate()).padStart(2, "0"); }
     function compactStamp(date) { return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z"); }
@@ -4153,7 +4267,7 @@
       return lines.join("\r\n");
     }
     function renderEvents() {
-      list.replaceChildren();
+      list.replaceChildren(); renderUpcoming();
       var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); });
       if (!sorted.length) { list.append(make("p", "agenda-empty", "Belum ada agenda. Tambahkan kegiatan pertama keluarga di atas.")); return; }
       sorted.forEach(function (event) {
@@ -4180,8 +4294,8 @@
     form.addEventListener("submit", function (event) { event.preventDefault(); if (!form.reportValidity()) return; var pawukonMode = usesPawukon(); var dateMethod = pawukonMode && methodSelect.value === "date"; var selectedDate = dateMethod || !pawukonMode ? parseDate(dateInput.value) : null; var signature = pawukonMode ? (dateMethod ? signatureFromDate(selectedDate) : selectedSignature()) : null; var nextDate = dateMethod || !pawukonMode ? selectedDate : findPawukonDate(signature, new Date()); if (!nextDate || Number.isNaN(nextDate.getTime()) || (pawukonMode && !signature)) { notify("Tanggal agenda belum dapat dihitung."); return; } var savedEvent = { id:String(Date.now()) + Math.random().toString(16).slice(2), name:nameInput.value.trim(), type:typeSelect.value, date:dateValue(nextDate), note:noteInput.value.trim(), repeatRule:signature ? "pawukonSignature" : "", pawukon:signature }; events.push(savedEvent); saveEvents(savedEvent); form.reset(); updateWukuChoices(); updateAgendaMode(); renderEvents(); notify(account.user && agendaSyncState === "ready" ? "Agenda ditambahkan dan disinkronkan." : "Agenda keluarga ditambahkan."); });
     shareAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk dibagikan."); return; } var sorted = events.slice().sort(function (a, b) { return effectiveDate(a) - effectiveDate(b); }); var lines = sorted.map(function (event) { var date = effectiveDate(event); var pawukon = event.pawukon ? "\n  " + event.pawukon.sapta + " " + event.pawukon.panca + " · Wuku " + event.pawukon.wuku : ""; return new Intl.DateTimeFormat("id-ID", { dateStyle:"long" }).format(date) + " — " + event.name + " (" + event.type + ")" + pawukon + (event.note ? "\n  " + event.note : ""); }); sharePlainText("Agenda Keluarga Bali", ["Agenda Keluarga Bali", "", lines.join("\n\n"), "", "Dibuat melalui Sasana Bali"].join("\n")); });
     exportAgenda.addEventListener("click", function () { if (!events.length) { notify("Belum ada agenda untuk diekspor."); return; } var blob = new Blob([buildCalendarFile()], { type:"text/calendar;charset=utf-8" }); var url = URL.createObjectURL(blob); var download = document.createElement("a"); download.href = url; download.download = "agenda-keluarga-bali.ics"; document.body.append(download); download.click(); download.remove(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000); notify("File kalender dibuat dengan pengingat H-7 dan H-1."); });
-    updateWukuChoices(); updateAgendaMode(); renderEvents(); appView.append(header, notice, syncStatus, form, toolbar, list);
-    authReady.then(async function () { events = await loadFamilyAgendaEvents(); renderEvents(); syncStatus.textContent = !account.user ? "Agenda tersimpan di perangkat ini. Masuk agar dapat disinkronkan ke akunmu." : (agendaSyncState === "ready" ? "Agenda tersinkron dengan akun " + account.user.email + "." : (agendaSyncState === "missing" ? "Agenda aman tersimpan di perangkat. Sinkronisasi akun akan aktif setelah database agenda disiapkan." : "Agenda tersimpan di perangkat; sinkronisasi akan dicoba kembali saat koneksi tersedia.")); });
+    updateWukuChoices(); updateAgendaMode(); renderEvents(); appView.append(header, notice, upcoming, form, toolbar, list, syncStatus);
+    authReady.then(async function () { events = await loadFamilyAgendaEvents(); renderEvents(); syncStatus.textContent = !account.user ? "Tersimpan di perangkat · masuk untuk sinkronisasi akun." : (agendaSyncState === "ready" ? "Tersinkron dengan " + account.user.email + "." : (agendaSyncState === "missing" ? "Tersimpan di perangkat · sinkronisasi akun belum aktif." : "Tersimpan di perangkat · sinkronisasi akan dicoba kembali.")); });
     document.title = "Agenda Keluarga Bali — Sasana Bali";
   }
   function showLearningQuiz() {
@@ -4853,9 +4967,10 @@
   if (mode === "language") { showBalineseLanguage(); return; }
   if (mode === "subak") { showSubak(); return; }
   if (mode === "adat") { showAdatLiteracy(); return; }
-  if (mode === "lestari") { showSustainableUpakara(); return; }
-  if (mode === "upakara" || mode === "prayers") { showUpakaraHub(); return; }
+  if (mode === "lestari") { window.location.replace("?mode=upakara-waktu"); return; }
+  if (mode === "upakara" || mode === "prayers") { showDailyPrayers(); return; }
   if (mode === "daily-prayers") { showDailyPrayers(); return; }
+  if (mode === "kidung") { showKidung(); return; }
   if (mode === "yadnya") { showYadnyaDetail(new URLSearchParams(window.location.search).get("type")); return; }
   if (mode === "calendar") { showCalendar(); return; }
   if (mode === "explore") { showExplore(); return; }
