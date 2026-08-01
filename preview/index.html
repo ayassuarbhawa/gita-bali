@@ -463,10 +463,20 @@
   .upakara-grid .app-card p { line-height:1.65; }
   .upakara-grid .app-card .card-action { display:block; margin-top:auto; padding-top:1.2rem; color:var(--accent); font:700 .68rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
   .kidung-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; }
-  .kidung-card { padding:1rem 1.1rem; border:1px solid var(--line); border-radius:.9rem; background:var(--surface); }
-  .kidung-card span { color:var(--accent); font:700 .6rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
-  .kidung-card h2 { margin:.55rem 0 .4rem; color:var(--accent-dark); font-size:1.15rem; }
-  .kidung-card p { margin:0; color:var(--muted); font:.82rem/1.55 system-ui,sans-serif; }
+  .kidung-card { border:1px solid var(--line); border-radius:.9rem; background:var(--surface); overflow:hidden; }
+  .kidung-card summary { display:grid; grid-template-columns:1fr auto; gap:.35rem .75rem; padding:1rem 1.1rem; cursor:pointer; list-style:none; }
+  .kidung-card summary::-webkit-details-marker { display:none; }
+  .kidung-card summary::after { grid-column:2; grid-row:1 / span 3; align-self:center; color:var(--accent); content:"+"; font:400 1.35rem/1 system-ui,sans-serif; }
+  .kidung-card[open] summary::after { content:"−"; }
+  .kidung-card summary span { color:var(--accent); font:700 .6rem/1.2 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .kidung-card summary h2 { margin:0; color:var(--accent-dark); font-size:1.15rem; }
+  .kidung-card summary p { margin:0; color:var(--muted); font:.76rem/1.5 system-ui,sans-serif; }
+  .kidung-content { padding:1rem 1.1rem 1.15rem; border-top:1px solid var(--line); }
+  .kidung-content-label { margin:0 0 .35rem; color:var(--accent); font:700 .58rem/1.3 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+  .kidung-script { margin:0 0 1rem; color:var(--accent-dark); font:400 1.35rem/1.85 "Noto Sans Balinese","Noto Serif Balinese",serif; white-space:pre-line; overflow-wrap:anywhere; }
+  .kidung-latin { margin:0 0 1rem; color:var(--ink); font:.88rem/1.65 Georgia,serif; font-style:italic; white-space:pre-line; }
+  .kidung-meaning { margin:0; color:var(--muted); font:.82rem/1.6 system-ui,sans-serif; }
+  .kidung-source { display:inline-block; margin-top:.85rem; color:var(--accent); font:700 .66rem/1.4 system-ui,sans-serif; text-underline-offset:.18rem; }
   .ritual-notice { margin:0 0 1.25rem; padding:1rem 1.1rem; border:1px solid rgba(182,139,58,.35); border-radius:1rem; color:#655b4d; background:#fbf5e5; font:.82rem/1.65 system-ui,sans-serif; }
   .ritual-sections { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
   .ritual-section { padding:1.35rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); box-shadow:0 8px 24px rgba(65,48,31,.04); }
@@ -513,6 +523,34 @@
   .knowledge-content ul { margin:.75rem 0 0; padding-left:1.25rem; color:var(--muted); font-size:.9rem; line-height:1.65; }
   .knowledge-content li + li { margin-top:.4rem; }
   .knowledge-note { margin-top:1rem !important; padding:.85rem; border-radius:.75rem; background:#f8f2e7; font:700 .74rem/1.55 system-ui,sans-serif !important; }
+  .directory-section + .directory-section { margin-top:1.6rem; }
+  .directory-heading { display:flex; align-items:center; gap:.75rem; margin:0 0 .7rem; color:var(--accent-dark); font-size:1.25rem; }
+  .directory-heading::before { width:1.8rem; height:1px; background:var(--gold); content:""; }
+  .directory-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .directory-list .knowledge-content strong { color:var(--accent-dark); }
+  .directory-address { padding:.75rem .85rem; border-radius:.75rem; background:#f8f2e7; color:var(--ink) !important; font:700 .76rem/1.55 system-ui,sans-serif !important; }
+  .directory-source { display:inline-block; margin-top:1rem; color:var(--accent-dark); font:700 .7rem/1.4 system-ui,sans-serif; text-underline-offset:.18rem; }
+  .temple-card-link { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:.85rem; min-height:7rem; padding:1.1rem 1.2rem; color:var(--ink); text-decoration:none; }
+  .temple-card-link::after { color:var(--accent); content:"→"; font:1.2rem/1 system-ui,sans-serif; transition:transform .2s ease; }
+  .temple-card-link:hover::after { transform:translateX(.25rem); }
+  .temple-card-link strong { display:block; color:var(--accent-dark); font-size:1.12rem; }
+  .temple-card-link p { margin:.35rem 0 0; color:var(--muted); font:.78rem/1.5 system-ui,sans-serif; }
+  .temple-detail-page { width:min(100%, 68rem); margin:clamp(2.5rem,7vw,5rem) auto; }
+  .temple-detail-header { max-width:52rem; margin:0 auto 2rem; text-align:center; }
+  .temple-detail-header h1 { margin:.3rem 0 0; color:var(--accent-dark); font-size:clamp(2.5rem,7vw,4.8rem); line-height:1; }
+  .temple-detail-header > p:last-child { margin:1rem auto 0; color:var(--muted); }
+  .temple-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin:0 0 1.5rem; }
+  .temple-gallery.is-single { grid-template-columns:1fr; }
+  .temple-photo { margin:0; overflow:hidden; border:1px solid var(--line); border-radius:1.15rem; background:var(--surface); box-shadow:0 12px 32px rgba(65,48,31,.08); }
+  .temple-photo img { display:block; width:100%; height:clamp(17rem,48vw,34rem); object-fit:cover; background:#e9e0d3; }
+  .temple-photo figcaption { padding:.75rem 1rem; color:var(--muted); font:.66rem/1.5 system-ui,sans-serif; }
+  .temple-photo a { color:var(--accent-dark); }
+  .temple-facts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+  .temple-fact { padding:1.3rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+  .temple-fact h2 { margin:0; color:var(--accent-dark); font-size:1.3rem; }
+  .temple-fact p { margin:.65rem 0 0; color:var(--muted); font:.9rem/1.75 system-ui,sans-serif; }
+  .temple-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.2rem; }
+  .temple-actions a { padding:.72rem .9rem; border:1px solid var(--line); border-radius:.7rem; color:var(--accent-dark); background:var(--surface); font:700 .7rem/1.2 system-ui,sans-serif; text-decoration:none; }
   .eco-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
   .eco-step { padding:1.25rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
   .eco-step span { color:var(--accent); font:700 .65rem/1 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; }
@@ -1224,7 +1262,8 @@
     .upakara-grid.is-five .app-card:last-child { grid-column:auto; width:auto; }
     .upakara-grid .app-card { min-height:11rem; }
     .ritual-section.is-wide { grid-column:auto; }
-    .knowledge-list, .eco-steps, .eco-sort, .phrase-grid, .learning-path, .subak-principles, .planner-layout, .tamiu-steps { grid-template-columns:1fr; }
+    .knowledge-list, .directory-list, .temple-gallery, .temple-facts, .eco-steps, .eco-sort, .phrase-grid, .learning-path, .subak-principles, .planner-layout, .tamiu-steps { grid-template-columns:1fr; }
+    .temple-photo img { height:clamp(16rem,75vw,28rem); }
     .planner-fields { grid-template-columns:1fr; }
     .planner-field.is-wide { grid-column:auto; }
     .yadnya-guide-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
@@ -1567,14 +1606,18 @@
       <div class="dashboard-intro" id="dashboard-intro">
         <p class="eyebrow">Dashboard Sasana Bali</p>
         <h1 class="home-title" id="home-title">Om Swastiastu.</h1>
-        <p class="home-lead">Pilih ruang untuk membaca Bhagawad Gita, menyiapkan upakara, atau mempelajari adat dan kehidupan Bali.</p>
+        <p class="home-lead">Buka bacaan, doa, kidung, kalender, tradisi, pura, dan pengetahuan adat Bali dari satu halaman.</p>
       </div>
       <section class="personal-dashboard" id="personal-dashboard" aria-label="Ringkasan pribadi" hidden></section>
       <p class="portal-heading" id="portal-heading">Pilih ruang</p>
       <nav class="portal-grid" id="portal-grid" aria-labelledby="portal-heading">
         <a class="app-card portal-card" href="?mode=bhagawad-gita"><span class="app-icon">ॐ</span><strong>Bhagawad Gita</strong><p>Baca sloka, simpan renungan, dan lanjutkan perjalanan dalam 18 bab.</p></a>
-        <a class="app-card portal-card" href="?mode=upakara-waktu"><span class="app-icon">❋</span><strong>Upakara</strong><p>Buka panduan upakara, kalender Bali, rencana yadnya, dan agenda keluarga.</p></a>
-        <a class="app-card portal-card" href="?mode=adat-bahasa-alam"><span class="app-icon">⌂</span><strong>Adat</strong><p>Pelajari adat, Bahasa Bali, aksara, subak, alam, dan kehidupan krama.</p></a>
+        <a class="app-card portal-card" href="?mode=daily-prayers"><span class="app-icon">❋</span><strong>Doa Sehari-hari</strong><p>Baca mantra Hindu untuk kegiatan sehari-hari beserta artinya.</p></a>
+        <a class="app-card portal-card" href="?mode=kidung"><span class="app-icon">♫</span><strong>Kidung</strong><p>Buka lirik, Aksara Bali, transliterasi, dan arti kidung.</p></a>
+        <a class="app-card portal-card" href="?mode=calendar"><span class="app-icon">◫</span><strong>Kalender Bali</strong><p>Lihat pawukon, rahinan, Tumpek, dan ala ayuning dewasa.</p></a>
+        <a class="app-card portal-card" href="?mode=traditions"><span class="app-icon">✦</span><strong>Tradisi</strong><p>Kenali tradisi hidup dari berbagai desa dan kabupaten di Bali.</p></a>
+        <a class="app-card portal-card" href="?mode=temples"><span class="app-icon">♜</span><strong>Pura-pura di Bali</strong><p>Temukan pura menurut kabupaten, alamat, dan sejarah singkatnya.</p></a>
+        <a class="app-card portal-card" href="?mode=adat"><span class="app-icon">⌂</span><strong>Adat</strong><p>Pelajari desa adat, awig-awig, pararem, dan kehidupan krama.</p></a>
       </nav>
       <section class="category-hero" id="category-hero" hidden><div class="category-hero-icons" id="category-hero-icons" aria-hidden="true"></div><p id="category-hero-copy"></p></section>
       <a class="category-back" id="category-back" href="?mode=dashboard" hidden>← Kembali ke Dashboard</a>
@@ -3303,7 +3346,9 @@
   }
   function hubForMode(activeMode) {
     if (["random", "explore", "saved", "notes"].includes(activeMode)) return { href:"?mode=bhagawad-gita", label:"Kembali ke Baca & Renungkan" };
-    if (["upakara", "calendar", "planner", "lestari", "agenda", "daily-prayers", "yadnya", "kidung"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
+    if (["calendar", "daily-prayers", "kidung", "traditions", "temples"].includes(activeMode)) return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
+    if (activeMode === "temple") return { href:"?mode=temples", label:"Kembali ke Pura-pura di Bali" };
+    if (["upakara", "planner", "lestari", "agenda", "yadnya"].includes(activeMode)) return { href:"?mode=upakara-waktu", label:"Kembali ke Upakara & Waktu" };
     if (["adat", "language", "subak", "tamiu", "rights", "help", "glossary", "library", "quiz"].includes(activeMode)) return { href:"?mode=adat-bahasa-alam", label:"Kembali ke Adat, Bahasa & Alam" };
     return { href:"?mode=dashboard", label:"Kembali ke Dashboard Ruang Baca" };
   }
@@ -3643,7 +3688,7 @@
     var sourceLink = make("a", "", "Buku Doa dalam Agama Hindu — Pemerintah Provinsi Bali");
     sourceLink.href = "https://dpma.baliprov.go.id/wp-content/uploads/2022/03/PAKIS-Bali_Buku-Doa-Dalam-Agama-Hindu_compressed.pdf";
     source.append(sourceLink, ". " + t("Ejaan ditata agar nyaman dibaca tanpa mengubah maksud doa."));
-    appView.prepend(pageBack("?mode=upakara-waktu", "Kembali ke Upakara & Waktu"));
+    appView.prepend(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"));
     appView.append(header, prayerList, source);
     document.title = "Doa Sehari-hari — Sasana Bali";
   }
@@ -3657,24 +3702,203 @@
     );
     var notice = make("p", "ritual-notice", "Kidung merupakan bagian dari praktik keagamaan dan tradisi lisan. Gunakan daftar ini sebagai pengenalan, lalu pelajari versi yang berlaku bersama guru, sekaa kidung, pemangku, atau rohaniwan di wilayahmu.");
     var kidungData = [
-      { title:"Kawitan Wargasari", context:"Dewa Yadnya", description:"Kidung pembuka yang umum dilantunkan dalam persembahyangan dan upacara Dewa Yadnya untuk membangun suasana khidmat." },
-      { title:"Wargasari", context:"Dewa Yadnya", description:"Kidung tradisional yang memiliki beragam bait dan versi. Teks lengkapnya lebih luas daripada dua bait pembuka yang sering dikenal masyarakat." },
-      { title:"Aji Kembang & Indrawangsa", context:"Pitra Yadnya", description:"Dikenal dalam konteks rangkaian Pitra Yadnya. Bagian yang dipilih menyesuaikan tahap upacara dan tuntunan pelaksana." },
-      { title:"Tantri & Malat", context:"Manusa Yadnya", description:"Ditemukan dalam tradisi kidung untuk konteks Manusa Yadnya, dengan pemilihan cerita dan pupuh menurut kebiasaan setempat." },
-      { title:"Jerum", context:"Bhuta Yadnya", description:"Kidung yang dikaitkan dengan Bhuta Yadnya dan tema keharmonisan manusia dengan alam serta lingkungan." }
+      {
+        title:"Kawitan Wargasari", context:"Dewa Yadnya", description:"Bait pembuka tentang keindahan alam pada musim bunga.",
+        script:"ᬧᬸᬃᬯᬓᬦᬶᬂ​ᬳᬗᬾᬭᬶᬧ᭄​ᬢᬭᬸᬫ᭄\nᬦᬶᬂ​ᬯᬦ​ᬳᬸᬓᬶᬃ​ᬓᬳᬤᬂ​ᬮᬩᬸᬄ\nᬓᬃᬢᬶᬓ​ᬧᬦᬤᬾᬗᬶᬂ​ᬲᬭᬶ\nᬳᬗᬬᭀᬦ᭄​ᬢᬂᬕᬸᬮᬶ​ᬓᬾᬢᬸᬃ\nᬳᬗ᭄ᬭᬶᬂ​ᬭᬶᬂ​ᬚᬂᬕ​ᬫᬸᬭᬾ",
+        latin:"Purwakaning angerip tarum\nNing wana ukir kahadang labuh\nKartika panadenging sari\nAngayon tangguli ketur\nAngring ring jangga mure",
+        meaning:"Pada awal mencipta keindahan, tampak panorama hutan pegunungan. Ketika bulan Kartika tiba, bunga-bunga bermekaran; tangguli, ketur, dan gadung menyebarkan keharumannya.",
+        source:"https://jurnal2.isi-dps.ac.id/index.php/abdiwidya/article/view/5407", sourceLabel:"Rujukan teks — ISI Bali"
+      },
+      {
+        title:"Wargasari — Ida Ratu", context:"Dewa Yadnya", description:"Permohonan anugerah ketika menghaturkan persembahan.",
+        script:"ᬳᬶᬤ​ᬭᬢᬸ​ᬲᬓᬶᬂ​ᬮᬸᬳᬸᬃ\nᬓᬯᬸᬮ​ᬦᬸᬦᬲ᭄​ᬮᬸᬕ᭄ᬭᬦᬾ\nᬫᬂᬤ​ᬲᬫ᭄ᬧᬸᬦ᭄​ᬢᬶᬢᬶᬬᬂ​ᬢᬦ᭄ᬤ᭄ᬭᬸᬄ\nᬫᬗᬬᬢ᭄​ᬪᬢᬭ​ᬫᬂᬓᬶᬦ᭄\nᬢᬶᬢᬶᬬᬂ​ᬗᬢᬸᬭᬂ​ᬧᬾᬚᬢᬶ\nᬘᬦᬂ​ᬲᬸᬘᬶ​ᬮᬦ᭄​ᬤᬓ᭄ᬲᬶᬦ\nᬲᬃᬯ​ᬲᬫ᭄ᬧᬸᬦ᭄​ᬧᬸᬧᬸᬢ᭄\nᬧ᭄ᬭᬢᬶᬂᬓᬳᬶᬂ​ᬲᬚᬶ",
+        latin:"Ida Ratu saking luhur\nKawula nunas lugrane\nMangda sampun titiang tandruh\nMangayat Bhatara mangkin\nTitiang ngaturang pejati\nCanang suci lan daksina\nSarwa sampun puput\nPratingkahing saji",
+        meaning:"Wahai para Dewata dari alam luhur, hamba memohon anugerah agar tidak ragu memuja. Kini hamba menghaturkan pejati, canang suci, dan daksina; seluruh kelengkapan sajian telah disiapkan.",
+        source:"https://repositori.kemendikdasmen.go.id/5207/1/b_fa216fba-9208-4eda-81c7-bbad97f409fa.pdf", sourceLabel:"Rujukan teks — buku Pendidikan Agama Hindu"
+      },
+      {
+        title:"Kidung Aji Kembang", context:"Pitra Yadnya", description:"Cuplikan tentang teratai putih dan arah timur dalam Dewata Nawa Sanga.",
+        script:"ᬭᬶᬂ​ᬧᬸᬃᬯ​ᬢᬸᬜ᭄ᬚᬸᬗᬾ​ᬧᬸᬢᬶᬄ\nᬳ᭄ᬬᬂ​ᬳᬶᬲ᭄ᬯᬭ​ᬤᬾᬯᬢᬦ᭄ᬜ\nᬭᬶᬂ​ᬧᬧᬸᬲᬸᬄ​ᬧ᭄ᬭᬾᬦᬳᬶᬭ\nᬳᬮᬶᬂᬕᬶᬄ​ᬲᬶᬭ​ᬓᬮᬶᬳᬦ᭄\nᬧᬦ᭄ᬢᬾᬲ᭄ᬢᬾ​ᬓᬾᬫ᭄ᬩᬗᬾ​ᬧᬾᬢᬓ᭄",
+        latin:"Ring purwa tunjunge putih\nHyang Iswara Dewatannya\nRing papusuh prenahira\nAlinggih sira kalihan\nPanteste kembange petak",
+        meaning:"Di arah timur terdapat teratai putih dengan Hyang Iswara sebagai dewatanya. Tempatnya dilambangkan pada jantung; bunga putih menjadi sarana yang sesuai untuk bagian ini.",
+        source:"https://wahyoesquares.blogspot.com/2012/06/telaah-puisi-aji-kembang.html", sourceLabel:"Rujukan teks — telaah Kidung Aji Kembang"
+      },
+      {
+        title:"Kawitan Tantri", context:"Manusa Yadnya", description:"Bait pembuka yang mengisahkan kemasyhuran raja di negeri Patali.",
+        script:"ᬯᬸᬯᬸᬲᬾᬦ᭄​ᬪᬸᬧᬢᬶ\nᬭᬶᬂ​ᬧᬢᬮᬶ​ᬦᬕᬦ᭄ᬢᬸᬦ᭄\nᬲᬸᬩᬕ​ᬯᬶᬃᬬ​ᬲᬶᬦᬶᬯᬶ\nᬓᬚ᭄ᬭᬶᬳᬶᬂ​ᬲᬂ​ᬧᬭ​ᬭᬢᬸ\nᬲᬮ᭄ᬯᬦᬶᬂ​ᬚᬫ᭄ᬩᬸ​ᬯᬃᬲᬤᬶ\nᬧ᭄ᬭᬲᬫ​ᬢᬸᬃ​ᬓᬾᬫ᭄ᬩᬂ​ᬢᬯᭀᬦ᭄",
+        latin:"Wuwusen Bhupati\nRing Patali nagantun\nSubaga wirya siniwi\nKajrihing sang para ratu\nSalwaning Jambu Warsadi\nPrasama tur kembang tawon",
+        meaning:"Tersebutlah Sang Prabu di negeri Patali, termasyhur dan berwibawa serta disegani para raja. Di seluruh wilayah Jambuwarsa, semuanya datang menghaturkan persembahan atau upeti.",
+        source:"https://jayapanguspress.penerbit.org/index.php/JPAH/article/download/3415/1692", sourceLabel:"Rujukan teks — kajian Dharmagita"
+      },
+      {
+        title:"Pupuh Jerum", context:"Bhuta Yadnya", description:"Cuplikan pangundang yang menekankan kelengkapan caru dan keharmonisan.",
+        script:"ᬓᬶᬤᬸᬂ​ᬧᬗᬸᬦ᭄ᬤᬂ​ᬭᬶᬂ​ᬪᬸᬢ\nᬩᬲ​ᬮᬸᬫ᭄ᬩ᭄ᬭᬄ​ᬧᬸᬧᬸᬄ​ᬚᬾᬭᬸᬫ᭄\nᬪᬸᬢ​ᬳᬲᬶᬄ​ᬯᬶᬟᬶ​ᬳᬲᬸᬂ\nᬘᬭᬸ​ᬧᬲᬚᬶᬦᬾ​ᬭᬾᬓᭀ\nᬕᬾᬦᬾᬧ᭄​ᬲᬳ​ᬳᬸᬧᬘᬭ\nᬫᬦᬸᬢ᭄​ᬯᬃᬦ​ᬮᬯᬦ᭄​ᬳᬸᬂᬕᬸᬄ\nᬲᬾᬓᬸᬮ᭄​ᬳᬶᬯᬓ᭄​ᬧᬤ​ᬩᬶᬦ\nᬳᭀᬮᬄ​ᬳᭀᬮᬳᬦ᭄​ᬲᬾᬤᬸᬮᬸᬃ",
+        latin:"Kidung pangundang ring bhuta\nBasa lumbrah pupuh Jerum\nBhuta asih Widhi asung\nCaru pasajine reko\nGenep saha upacara\nManut warna lawan ungguh\nSekul iwak pada bina\nOlah-olahan sedulur",
+        meaning:"Kidung ini menjadi pangundang bagi para bhuta dengan memakai Pupuh Jerum. Dengan anugerah Widhi diharapkan tercipta kedamaian; caru disiapkan lengkap menurut warna, tempat, lauk, dan olahan yang ditentukan.",
+        source:"https://ojs.mahadewa.ac.id/index.php/stilistika/article/view/1877", sourceLabel:"Rujukan teks — kajian Pupuh Jerum"
+      }
     ];
     var grid = make("div", "kidung-grid");
     kidungData.forEach(function (item) {
-      var card = make("article", "kidung-card");
-      card.append(make("span", "", item.context), make("h2", "", item.title), make("p", "", item.description));
-      grid.append(card);
+      var card = make("details", "kidung-card"); var summary = document.createElement("summary");
+      summary.append(make("span", "", item.context), make("h2", "", item.title), make("p", "", item.description));
+      var content = make("div", "kidung-content"); var script = make("p", "kidung-script", item.script); script.lang = "ban-Bali";
+      var sourceLink = make("a", "kidung-source", item.sourceLabel + " ↗"); sourceLink.href = item.source;
+      content.append(make("p", "kidung-content-label", "Aksara Bali"), script, make("p", "kidung-content-label", "Transliterasi Latin"), make("p", "kidung-latin", item.latin), make("p", "kidung-content-label", "Arti Bahasa Indonesia"), make("p", "kidung-meaning", item.meaning), sourceLink);
+      card.append(summary, content); grid.append(card);
     });
     var sources = make("p", "ritual-sources", "Rujukan pengantar: ");
     var isiArticle = make("a", "", "kajian praktik kidung oleh ISI Denpasar"); isiArticle.href = "https://repo.isi-dps.ac.id/5362/";
     var isiTraining = make("a", "", "pembinaan Kidung Kawitan Wargasari oleh ISI Bali"); isiTraining.href = "https://jurnal2.isi-dps.ac.id/index.php/abdiwidya/article/view/5407";
     sources.append(isiArticle, " · ", isiTraining, ".");
-    appView.append(header, notice, grid, sources);
+    var scriptNote = make("p", "ritual-notice", "Aksara Bali di bawah merupakan alih aksara Unicode dari teks Latin rujukan. Ejaan naskah, pemenggalan bait, dan pelafalan dapat berbeda menurut lontar, guru, serta tradisi setempat.");
+    appView.append(header, notice, scriptNote, grid, sources);
     document.title = "Kidung — Sasana Bali";
+  }
+  function showTraditions() {
+    prepareUpakaraPage("upakara-page", "?mode=dashboard", "Kembali ke Dashboard Ruang Baca");
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Warisan budaya hidup"), make("h1", "", "Tradisi Bali"), make("p", "", "Pengantar tradisi yang masih dijalankan oleh masyarakat di berbagai wilayah Bali. Buka setiap kartu untuk membaca waktu, latar, dan maknanya."));
+    var notice = make("p", "ritual-notice", "Tradisi adalah bagian dari kehidupan komunitas, bukan sekadar tontonan. Jadwal dapat berubah mengikuti kalender Bali dan keputusan desa adat. Hormati batas ruang, pakaian, larangan memotret, serta arahan prajuru setempat.");
+    var traditions = [
+      { title:"Omed-omedan", region:"Kota Denpasar · Banjar Kaja, Sesetan", time:"Ngembak Geni, sehari setelah Nyepi", summary:"Tradisi tarik-menarik yang melibatkan sekaa teruna-teruni dan diawali persembahyangan bersama.", history:"Omed-omedan diwariskan di Banjar Kaja Sesetan. Prosesi mempertemukan kelompok pemuda dan pemudi, disertai guyuran air dan gamelan baleganjur.", meaning:"Dipelihara sebagai ruang kebersamaan generasi muda dan simbol keseimbangan purusa-pradana menurut penjelasan tradisi setempat.", source:"https://www.pariwisata.denpasarkota.go.id/berita/med-medan", sourceLabel:"Dinas Pariwisata Kota Denpasar" },
+      { title:"Ngerebong", region:"Kota Denpasar · Desa Adat Kesiman", time:"Redite Pon Medangsia, delapan hari setelah Kuningan", summary:"Rangkaian upacara di kawasan Pura Petilan Pengerebongan yang mempertemukan tapakan dan masyarakat Kesiman.", history:"Dokumentasi Desa Kesiman Petilan menyebut Pangerebongan telah dikenal sebagai tradisi asli Denpasar dan tercatat dalam penelitian sejarah pura sejak abad ke-20.", meaning:"Rangkaian ini berkaitan dengan bhuta yadnya atau pacaruan serta pemeliharaan keseimbangan sekala-niskala.", source:"https://www.kesimanpetilan.denpasarkota.go.id/artikel/ngerebong-tradisi-asli-denpasar-sejak-tahun-1937", sourceLabel:"Desa Kesiman Petilan" },
+      { title:"Mekotek", region:"Kabupaten Badung · Desa Adat Munggu", time:"Hari Raya Kuningan", summary:"Ratusan warga menyatukan tongkat kayu pulet hingga membentuk kerucut yang kemudian bergerak mengelilingi desa.", history:"Tradisi ini dikaitkan dengan masa Kerajaan Mengwi pada 1700-an. Tombak besi yang dahulu digunakan kemudian diganti tongkat kayu untuk menjaga keselamatan.", meaning:"Mekotek dijalankan sebagai ungkapan syukur, penguat persaudaraan, dan ritual penolak bala bagi masyarakat Munggu.", source:"https://sita.badungkab.go.id/acara/tradisi-mekotek-desa-munggu-sejarah-makna-dan-kemeriahannya", sourceLabel:"SITA Kabupaten Badung" },
+      { title:"Siat Sampian", region:"Kabupaten Gianyar · Pura Samuan Tiga, Bedulu", time:"Dalam rangkaian pujawali Pura Samuan Tiga", summary:"Tradisi simbolik menggunakan sampian, rangkaian janur yang menjadi bagian sarana upacara.", history:"Siat Sampian dilaksanakan turun-temurun di Desa Bedulu dan menjadi salah satu bagian yang dikenal dalam rangkaian pujawali Pura Samuan Tiga.", meaning:"Prosesi menegaskan kebersamaan, pengabdian, dan penyucian dalam konteks upacara yang dipimpin komunitas setempat.", source:"https://ojs.mahadewa.ac.id/index.php/stilistika/article/download/2929/2270/12238", sourceLabel:"Kajian Siat Sampian, Universitas PGRI Mahadewa" },
+      { title:"Mekare-kare", region:"Kabupaten Karangasem · Tenganan Pegringsingan", time:"Rangkaian Usaba Sambah, menurut kalender Desa Tenganan", summary:"Tradisi yang dikenal sebagai perang pandan, dilaksanakan para lelaki dengan pandan berduri dan tameng rotan.", history:"Mekare-kare merupakan bagian puncak Usaba Sambah di Desa Bali Aga Tenganan Pegringsingan dan diwariskan bersama tata kehidupan desa serta tenun gringsing.", meaning:"Prosesi dihaturkan untuk menghormati Dewa Indra dan para leluhur; ketulusan persembahan menjadi nilai yang ditekankan masyarakat setempat.", source:"https://tourism.karangasemkab.go.id/data/mekare-kare-desa-tenganan-pegringsingan/", sourceLabel:"Disbudpar Kabupaten Karangasem" },
+      { title:"Nyakan Diwang", region:"Kabupaten Buleleng · Kecamatan Banjar dan desa-desa sekitarnya", time:"Ngembak Geni", summary:"Warga memasak di luar pekarangan atau di depan pintu rumah setelah pelaksanaan Nyepi.", history:"Tradisi ini masih dijalankan antara lain di Kayuputih, Dencarik, Banjar, Banyusri, Banyuatis, dan desa lain di Buleleng; Nyakan Diwang ditetapkan sebagai Warisan Budaya Takbenda pada 2018.", meaning:"Selain menyepikan dapur dan menyucikan lingkungan rumah, kegiatan ini membuka perjumpaan, berbagi makanan, dan memperkuat persaudaraan warga.", source:"https://banjar.bulelengkab.go.id/informasi/detail/artikel/46_nyakan-diwang-tradisi-unik-di-kecamatan-banjar-dan-maknanya-dalam-perayaan-nyepi-tahun-caka-1947", sourceLabel:"Kecamatan Banjar, Kabupaten Buleleng" },
+      { title:"Makepung", region:"Kabupaten Jembrana", time:"Kalender lomba ditetapkan pemerintah dan sekaa setempat", summary:"Tradisi pacuan pasangan kerbau yang berkembang dari kehidupan agraris dan kegiatan membajak sawah.", history:"Makepung lahir ketika para petani mengadu keterampilan kerbau yang menarik lampit. Tradisi ini kemudian berkembang menjadi identitas budaya Jembrana dan ditetapkan sebagai Warisan Budaya Takbenda.", meaning:"Makepung membawa nilai kerja sama, sportivitas, keterampilan merawat kerbau, dan ingatan atas budaya pertanian Jembrana.", source:"https://repositori.kemendikdasmen.go.id/29928/", sourceLabel:"Balai Pelestarian Nilai Budaya, Kemendikbud" },
+      { title:"Dewa Masraman", region:"Kabupaten Klungkung · Desa Paksebali, Dawan", time:"Rahina Manis Kuningan", summary:"Rangkaian sakral yang dikenal melalui pertemuan atau masraman jempana di Pura Panti Timbrah.", history:"Dewa Masraman diwariskan oleh masyarakat Paksebali dan telah ditetapkan sebagai Warisan Budaya Takbenda Indonesia.", meaning:"Tradisi ini menjadi wujud bakti sekaligus pengikat kebersamaan warga dalam rangkaian hari suci Kuningan.", source:"https://klungkungkab.go.id/berita/detail/pembukaan-pesta-kesenian-bali-xliv-tahun-2022", sourceLabel:"Pemerintah Kabupaten Klungkung" }
+    ];
+    var list = make("div", "knowledge-list");
+    traditions.forEach(function (item, index) {
+      var details = make("details", "knowledge-card"); var summary = document.createElement("summary");
+      summary.append(make("span", "knowledge-icon", String(index + 1).padStart(2, "0")), make("strong", "knowledge-title", item.title));
+      var content = make("div", "knowledge-content");
+      content.append(make("p", "directory-address", item.region + " · " + item.time), make("p", "", item.summary), make("p", "", item.history), make("p", "knowledge-note", item.meaning));
+      var source = make("a", "directory-source", "Baca sumber ↗"); source.href = item.source; content.append(source);
+      details.append(summary, content); list.append(details);
+    });
+    appView.append(header, notice, list);
+    document.title = "Tradisi Bali — Sasana Bali";
+  }
+  function templeDirectoryData() {
+    return [
+      {
+        slug:"jagatnatha", region:"Kota Denpasar", title:"Pura Agung Jagatnatha", address:"Jl. Mayor Wisnu, Dangin Puri, Denpasar Utara; di sisi timur Lapangan Puputan Badung",
+        history:"Gagasan pembangunan Pura Agung Jagatnatha lahir dari kebutuhan umat Hindu yang merantau dan tinggal di Denpasar tetapi tidak memiliki sanggah atau merajan keluarga di kota. Pasamuhan Parisada Dharma Hindu Bali pada 20 November 1961 mengusulkan sebuah pura yang dapat didatangi seluruh umat. Pemerintah Bali menyetujui pembangunan pada 1963; setelah sempat terhambat situasi politik 1965, pura diselesaikan dan dipelaspas pada 13 Mei 1968.",
+        significance:"Jagatnatha berfungsi sebagai tempat persembahyangan umum di pusat Denpasar. Padmasana utamanya ditujukan kepada Ida Sang Hyang Widhi Wasa dan menjadi pusat perhatian ketika Purnama, Tilem, Galungan, Kuningan, serta hari suci lainnya.",
+        architecture:"Kompleksnya menampilkan Padmasana tinggi yang berorientasi ke arah kaja-kangin, menuju Gunung Agung. Letaknya berdekatan dengan Museum Bali dan Lapangan Puputan Badung, sehingga pura menjadi bagian penting lanskap sejarah dan budaya pusat kota.",
+        visit:"Kegiatan persembahyangan dapat membuat area sangat ramai pada hari suci. Dahulukan umat yang bersembahyang, gunakan pakaian adat atau kain dan selendang sesuai ketentuan, serta tanyakan sebelum memotret upacara.",
+        source:"https://denpasartourism.com/en/article/pura-agung-jagatnatha",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Pura_Jagatnatha_in_Denpasar_4.jpg/1280px-Pura_Jagatnatha_in_Denpasar_4.jpg", page:"https://commons.wikimedia.org/wiki/File:Pura_Jagatnatha_in_Denpasar_4.jpg", author:"Christophe95", license:"CC BY-SA 4.0", alt:"Bangunan dan halaman Pura Agung Jagatnatha di Denpasar" }]
+      },
+      {
+        slug:"uluwatu", region:"Kabupaten Badung", title:"Pura Luhur Uluwatu", address:"Desa Pecatu, Kecamatan Kuta Selatan, Kabupaten Badung",
+        history:"Pura Luhur Uluwatu berdiri di ujung tebing kapur selatan Bali. Sumber Pemerintah Kabupaten Badung mengaitkan pendiriannya pada abad ke-11 dengan Mpu Kuturan, yang menata ajaran dan kehidupan keagamaan masyarakat Bali. Tempat ini kemudian juga dikaitkan dengan perjalanan Dang Hyang Nirartha, yang menggunakan Uluwatu sebagai tempat pemujaan.",
+        significance:"Dalam pengider-ider Bali, Uluwatu berada di arah barat daya dan menjadi tempat pemujaan Batara Siwa Rudra. Kedudukannya sebagai salah satu kahyangan jagat membuat fungsi pura jauh melampaui perannya sebagai tujuan wisata tebing.",
+        architecture:"Nama Uluwatu berasal dari ulu, yang berarti ujung atau puncak, dan watu, yang berarti batu. Kompleks pura mengikuti pembagian ruang tri mandala dan menyatu dengan tebing yang menghadap Samudra Hindia.",
+        visit:"Jalur berada dekat tebing dan dihuni kelompok kera. Simpan kacamata serta barang kecil, jangan memberi makan satwa tanpa arahan, dan jangan memasuki ruang yang dibatasi bagi pemedek atau pengempon.",
+        source:"https://disdukkbpppa.badungkab.go.id/artikel/17913-uluwatu",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/c/ca/Uluwatu%2C_Bali%2C_Indonesia.jpg", page:"https://commons.wikimedia.org/wiki/File:Uluwatu,_Bali,_Indonesia.jpg", author:"Alfianda Kurniawan", license:"CC BY-SA 4.0", alt:"Pura Luhur Uluwatu terlihat dari seberang tebing di tepi laut" }]
+      },
+      {
+        slug:"kehen", region:"Kabupaten Bangli", title:"Pura Kehen", address:"Banjar Pekuwon, Desa Adat Cempaga, Kecamatan Bangli, Kabupaten Bangli",
+        history:"Pura Kehen termasuk pura tua yang berkaitan erat dengan sejarah Bangli. Tiga prasasti tembaga yang tersimpan di pura menjadi jejak penting: prasasti pertama diperkirakan berasal dari sekitar abad ke-9 dan menyebut Hyang Api; prasasti kedua menyebut Senapati Kuturan; sedangkan prasasti bertahun 1204 Masehi menyebut Hyang Kehen dan Raja Bhatara Guru Sri Adhikunti Ketana.",
+        significance:"Nama Kehen sering dihubungkan dengan api atau Hyang Api. Pura disungsung masyarakat Bangli dan piodalannya berlangsung pada Buda Kliwon Sinta, bertepatan dengan Pagerwesi.",
+        architecture:"Pura berdiri di kaki selatan Bukit Bangli dan dicapai melalui tangga bertingkat. Gerbang, halaman berteras, meru, serta pohon tua di dalam kompleks membentuk suasana khas pura pegunungan Bangli.",
+        visit:"Tangga menuju pura cukup tinggi. Kenakan alas kaki yang aman sampai batas pelepasan, hormati area yang sedang dipakai upacara, dan konfirmasikan aturan kunjungan kepada petugas setempat.",
+        source:"https://disparbud.banglikab.go.id/berita/pura-kehen-dan-sejarahnya",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Pura_Kehen.jpg/1280px-Pura_Kehen.jpg", page:"https://commons.wikimedia.org/wiki/File:Pura_Kehen.jpg", author:"Philip Nalangan", license:"CC BY 4.0", alt:"Gerbang dan tangga utama Pura Kehen di Bangli" }]
+      },
+      {
+        slug:"pulaki", region:"Kabupaten Buleleng", title:"Pura Pulaki", address:"Desa Banyupoh, Kecamatan Gerokgak, di tepi Jalan Singaraja–Gilimanuk, Kabupaten Buleleng",
+        history:"Kisah Pura Pulaki berkaitan dengan perjalanan Dang Hyang Nirartha dari Blambangan menuju pusat Kerajaan Gelgel pada masa Dalem Waturenggong. Pemerintah Buleleng juga mencatat penemuan alat-alat batu di kawasan Pura Melanting pada 1987; temuan itu menunjukkan bahwa lingkungan Pulaki memiliki lapisan aktivitas manusia yang lebih tua daripada kisah perjalanan sang pendeta.",
+        significance:"Pulaki merupakan kahyangan jagat dan pusat dari rangkaian pura pasanakannya, antara lain Pura Melanting, Kerta Kawat, Pemuteran, dan Pabean. Urutan persembahyangan saat piodalan mengikuti tata yang dipelihara pengempon setempat.",
+        architecture:"Kompleks berada di antara lereng pegunungan berbatu dan pesisir utara Bali. Perpaduan bukit, halaman pura, dan laut membentuk orientasi ruang yang khas kawasan Banyupoh.",
+        visit:"Kera hidup di sekitar kawasan pura. Jaga makanan dan barang bawaan, hindari menyentuh satwa, serta ikuti urutan dan batas persembahyangan yang disampaikan pengempon.",
+        source:"https://disbudpar.bulelengkab.go.id/informasi/detail/artikel/pura-pulaki-87",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pulaki_Great_Temple.jpg/1280px-Pulaki_Great_Temple.jpg", page:"https://commons.wikimedia.org/wiki/File:Pulaki_Great_Temple.jpg", author:"DayakSibiriak", license:"CC BY-SA 4.0", alt:"Halaman dan pelinggih Pura Agung Pulaki di Buleleng" }]
+      },
+      {
+        slug:"tirta-empul", region:"Kabupaten Gianyar", title:"Pura Tirta Empul", address:"Desa Manukaya, Kecamatan Tampaksiring, Kabupaten Gianyar",
+        history:"Pura Tirta Empul dibangun sekitar 962 Masehi pada masa Raja Candrabhaya Warmadewa. Namanya berarti mata air suci yang menyembur dari tanah. Dalam kisah Mayadenawa, mata air ini dikaitkan dengan Dewa Indra yang menciptakan tirta untuk memulihkan pasukannya.",
+        significance:"Mata air Tirta Empul mengalir menuju kolam pancuran dan digunakan umat Hindu untuk melukat atau penyucian diri. Air suci tersebut merupakan pusat makna pura, bukan sekadar fasilitas pemandian.",
+        architecture:"Kompleks tersusun dalam tiga mandala: halaman luar, area kolam dan mata air, serta jeroan sebagai ruang persembahyangan. Pelinggih, kolam batu, dan aliran air membentuk satu kesatuan ritual.",
+        visit:"Tidak semua pancuran memiliki fungsi yang sama; beberapa digunakan untuk keperluan upacara tertentu. Jangan mengikuti urutan berdasarkan perkiraan. Mintalah penjelasan petugas atau pemangku dan gunakan pakaian khusus melukat bila diperlukan.",
+        source:"https://www.indonesia.travel/id/id/travel-ideas/pilgrimage/pura-tirta-empul",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pura_Tirta_Empul%2C_Ubud%2C_Bali%2C_Indonesia.JPG/1280px-Pura_Tirta_Empul%2C_Ubud%2C_Bali%2C_Indonesia.JPG", page:"https://commons.wikimedia.org/wiki/File:Pura_Tirta_Empul,_Ubud,_Bali,_Indonesia.JPG", author:"Saranabhi", license:"CC BY-SA 3.0", alt:"Kolam pancuran suci di kompleks Pura Tirta Empul" }]
+      },
+      {
+        slug:"rambut-siwi", region:"Kabupaten Jembrana", title:"Pura Rambut Siwi", address:"Desa Yeh Embang Kangin, Kecamatan Mendoyo, Kabupaten Jembrana, Bali 82261",
+        history:"Pura Rambut Siwi disebut telah ada sejak abad ke-15 dan berkaitan dengan perjalanan Dang Hyang Nirartha di pesisir barat Bali. Menurut cerita yang dipelihara masyarakat, warga memohon rambut sang pendeta untuk disimpan dan dipuja setelah menerima ajaran serta pertolongannya; dari kisah itu lahir nama Rambut Siwi.",
+        significance:"Pura ini merupakan tempat suci penting di pesisir Jembrana. Posisinya juga menghubungkan perjalanan darat Denpasar–Gilimanuk dengan ruang persembahyangan dan bentang pertanian masyarakat Mendoyo.",
+        architecture:"Kompleks utama berdiri di atas tebing yang menghadap laut, dengan bagian lain berada dekat jalan raya. Tangga, candi bentar, halaman bertingkat, pantai, dan hamparan sawah menjadi satu lanskap budaya.",
+        visit:"Bedakan kompleks utama di tebing dengan area pesanggrahan dekat jalan. Tanyakan arah persembahyangan, hormati kegiatan petani dan warga, serta jangan memasuki batas suci hanya untuk mengambil foto laut.",
+        source:"https://pariwisata.jembranakab.go.id/view-dtw/pura-rambut-siwi",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Pura_Rambut_Siwi_entrance.jpg/1280px-Pura_Rambut_Siwi_entrance.jpg", page:"https://commons.wikimedia.org/wiki/File:Pura_Rambut_Siwi_entrance.jpg", author:"Baldersdod", license:"CC BY-SA 4.0", alt:"Gerbang masuk Pura Rambut Siwi di Jembrana" }]
+      },
+      {
+        slug:"besakih", region:"Kabupaten Karangasem", title:"Pura Agung Besakih", address:"Desa Besakih, Kecamatan Rendang, Kabupaten Karangasem",
+        history:"Besakih berkembang sebagai kompleks tempat suci di lereng Gunung Agung. Catatan tertulis mengenai keberadaannya disebut berasal dari 1007 Masehi, dan sejak abad ke-15 Besakih telah dipandang sebagai pusat penting kehidupan Hindu di Bali. Nama Besakih dikaitkan dengan Basuki atau Wasuki, yang bermakna keselamatan dan juga mengingatkan pada Naga Basuki.",
+        significance:"Besakih dikenal sebagai huluning Bali rajya dan sering disebut Pura Ibu. Kompleksnya menjadi tempat upacara besar lintas wilayah, sementara masing-masing pura di dalamnya memiliki fungsi, pengempon, dan tata persembahyangan sendiri.",
+        architecture:"Besakih bukan satu bangunan tunggal, melainkan kompleks puluhan pura yang mengikuti punggung lereng. Pura Penataran Agung menjadi pusat utama, dengan meru, tangga, pelataran, dan gerbang yang tersusun naik menuju Gunung Agung.",
+        visit:"Luas dan tata upacaranya membuat kunjungan perlu mengikuti jalur resmi. Jangan menganggap semua halaman terbuka untuk wisatawan; dahulukan pemedek, periksa hari upacara, dan gunakan pemandu resmi bila membutuhkan penjelasan.",
+        source:"https://www.indonesia.travel/id/id/destination/bali-nusa-tenggara/bali/bali---pura-besakih",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Besakih_Temple_Bali_Indonesia.jpg/1280px-Besakih_Temple_Bali_Indonesia.jpg", page:"https://commons.wikimedia.org/wiki/File:Besakih_Temple_Bali_Indonesia.jpg", author:"Philip Nalangan", license:"CC BY 4.0", alt:"Kompleks Pura Besakih di lereng Gunung Agung" }]
+      },
+      {
+        slug:"goa-lawah", region:"Kabupaten Klungkung", title:"Pura Goa Lawah", address:"Desa Pesinggahan, Kecamatan Dawan, Kabupaten Klungkung",
+        history:"Menurut Lontar Usana Bali dan Babad Pasek, Pura Goa Lawah didirikan pada 929 Saka atau sekitar abad ke-11 atas prakarsa Mpu Kuturan. Tokoh ini dikenal dalam tradisi Bali sebagai penata kehidupan keagamaan dan pembangunan tempat suci. Gua alami yang dihuni ribuan kelelawar menjadi pusat terbentuknya kompleks pura.",
+        significance:"Goa Lawah merupakan kahyangan jagat dan penting dalam rangkaian upacara yang berkaitan dengan laut, gunung, leluhur, serta perjalanan penyucian setelah upacara kematian. Makna tersebut dipelihara melalui tata ritual setempat.",
+        architecture:"Pelinggih dan halaman pura tersusun tepat di depan mulut gua. Lokasinya berada di jalur pesisir Pesinggahan, berhadapan dengan laut dan terhubung secara simbolik dengan arah Gunung Agung serta Besakih.",
+        visit:"Kelelawar dan satwa di gua tidak boleh diganggu. Hindari lampu kilat, suara keras, dan mendekati mulut gua ketika upacara berlangsung; berdirilah di area yang diarahkan petugas.",
+        source:"https://dispar.klungkungkab.go.id/goa-lawah/",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Goa_Lawah_Temple_%2817058392895%29.jpg/1280px-Goa_Lawah_Temple_%2817058392895%29.jpg", page:"https://commons.wikimedia.org/wiki/File:Goa_Lawah_Temple_(17058392895).jpg", author:"Jorge Láscar", license:"CC BY 2.0", alt:"Pelinggih di depan gua kelelawar Pura Goa Lawah" }]
+      },
+      {
+        slug:"tanah-lot", region:"Kabupaten Tabanan", title:"Pura Tanah Lot", address:"Jl. Raya Tanah Lot, Desa Beraban, Kecamatan Kediri, Kabupaten Tabanan, Bali 82121",
+        history:"Pura Tanah Lot diyakini berasal dari abad ke-16 dan berkaitan dengan perjalanan Dang Hyang Nirartha di pesisir selatan Bali. Dalam kisah setempat, sang pendeta melihat kesucian batu Gili Beo dan mendorong pembangunan tempat pemujaan di sana. Pura kemudian ditujukan kepada Bhatara Segara.",
+        significance:"Tanah Lot merupakan pura laut yang menjaga hubungan spiritual masyarakat dengan segara. Piodalannya berlangsung setiap 210 hari pada Buda Cemeng Langkir dan menjadi momentum persembahyangan, bukan hanya pertunjukan bagi pengunjung.",
+        architecture:"Bangunan suci berdiri di atas formasi batu lepas pantai yang terus dibentuk ombak. Saat pasang, pura tampak terpisah dari daratan; saat surut, area batu dapat didekati melalui jalur yang tetap harus mengikuti batas pengempon.",
+        visit:"Kondisi ombak dan pasang berubah cepat. Jangan memaksa menyeberang atau memasuki area utama tanpa izin. Beri ruang bagi prosesi, jangan menyentuh sarana upacara, dan patuhi petugas keselamatan kawasan.",
+        source:"https://www.indonesia.travel/id/id/destination/bali-nusa-tenggara/bali/tanah-lot",
+        images:[{ url:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Pura_tanah_lot%2C_Bali.jpg/1280px-Pura_tanah_lot%2C_Bali.jpg", page:"https://commons.wikimedia.org/wiki/File:Pura_tanah_lot,_Bali.jpg", author:"Annisa Rofiatul Amaliah", license:"CC BY-SA 4.0", alt:"Pura Tanah Lot berdiri di atas batu karang di laut" }]
+      }
+    ];
+  }
+  function showTempleDirectory() {
+    prepareUpakaraPage("upakara-page", "?mode=dashboard", "Kembali ke Dashboard Ruang Baca");
+    var header = make("header", "upakara-header");
+    header.append(make("p", "eyebrow", "Peta awal tempat suci"), make("h1", "", "Pura-pura di Bali"), make("p", "", "Pilih pura untuk membaca sejarah, makna, arsitektur, etika kunjungan, dan melihat fotonya."));
+    var notice = make("p", "ritual-notice", "Pura adalah tempat suci yang aktif digunakan untuk persembahyangan. Sebelum datang, periksa piodalan atau pembatasan setempat, gunakan pakaian yang pantas, dan ikuti arahan pengempon atau petugas pura.");
+    var sections = make("div", "temple-directory");
+    templeDirectoryData().forEach(function (item, index) {
+      var section = make("section", "directory-section"); section.append(make("h2", "directory-heading", item.region));
+      var list = make("div", "directory-list"); var card = make("a", "knowledge-card temple-card-link"); card.href = "?mode=temple&slug=" + encodeURIComponent(item.slug);
+      var copy = make("div", ""); copy.append(make("strong", "", item.title), make("p", "", item.history.split(". ")[0] + "."));
+      card.append(make("span", "knowledge-icon", String(index + 1).padStart(2, "0")), copy); list.append(card); section.append(list); sections.append(section);
+    });
+    appView.append(header, notice, sections);
+    document.title = "Pura-pura di Bali — Sasana Bali";
+  }
+  function showTempleDetail(slug) {
+    var temple = templeDirectoryData().find(function (item) { return item.slug === slug; });
+    if (!temple) { window.location.replace("?mode=temples"); return; }
+    prepareUpakaraPage("temple-detail-page", "?mode=temples", "Kembali ke Pura-pura di Bali");
+    var header = make("header", "temple-detail-header");
+    header.append(make("p", "eyebrow", temple.region), make("h1", "", temple.title), make("p", "", temple.address));
+    var gallery = make("div", "temple-gallery" + (temple.images.length === 1 ? " is-single" : ""));
+    temple.images.forEach(function (photo) {
+      var figure = make("figure", "temple-photo"); var image = document.createElement("img"); image.src = photo.url; image.alt = photo.alt; image.loading = "lazy"; image.decoding = "async";
+      var caption = make("figcaption", "", "Foto: " + photo.author + " · " + photo.license + " · "); var credit = make("a", "", "Wikimedia Commons"); credit.href = photo.page; caption.append(credit); figure.append(image, caption); gallery.append(figure);
+    });
+    var notice = make("p", "ritual-notice", "Ringkasan ini merupakan pengantar sejarah dan etika. Untuk penjelasan teologis, urutan persembahyangan, atau pelaksanaan upacara, ikuti tuntunan pengempon, pemangku, atau rohaniwan setempat.");
+    var facts = make("div", "temple-facts");
+    [["Sejarah", temple.history], ["Kedudukan & makna", temple.significance], ["Ruang & arsitektur", temple.architecture], ["Etika berkunjung", temple.visit]].forEach(function (fact) { var section = make("section", "temple-fact"); section.append(make("h2", "", fact[0]), make("p", "", fact[1])); facts.append(section); });
+    var actions = make("div", "temple-actions"); var source = make("a", "", "Baca sumber sejarah ↗"); source.href = temple.source; var map = make("a", "", "Buka alamat di peta ↗"); map.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(temple.title + " " + temple.address); actions.append(source, map);
+    appView.append(header, gallery, notice, facts, actions);
+    document.title = temple.title + " — Sasana Bali";
   }
   function showAdatLiteracy() {
     prepareUpakaraPage("upakara-page");
@@ -4387,7 +4611,7 @@
     document.querySelector(".home-inner").hidden = true;
     appView.hidden = false;
     appView.className = "calendar-page";
-    appView.replaceChildren(pageBack("?mode=upakara-waktu", "Kembali ke Upakara & Waktu"));
+    appView.replaceChildren(pageBack("?mode=dashboard", "Kembali ke Dashboard Ruang Baca"));
 
     var header = make("header", "calendar-header");
     header.append(
@@ -4971,6 +5195,9 @@
   if (mode === "upakara" || mode === "prayers") { showDailyPrayers(); return; }
   if (mode === "daily-prayers") { showDailyPrayers(); return; }
   if (mode === "kidung") { showKidung(); return; }
+  if (mode === "traditions") { showTraditions(); return; }
+  if (mode === "temples") { showTempleDirectory(); return; }
+  if (mode === "temple") { showTempleDetail(new URLSearchParams(window.location.search).get("slug")); return; }
   if (mode === "yadnya") { showYadnyaDetail(new URLSearchParams(window.location.search).get("type")); return; }
   if (mode === "calendar") { showCalendar(); return; }
   if (mode === "explore") { showExplore(); return; }
